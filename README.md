@@ -1,76 +1,43 @@
 # UCT Handbook Dataset Project
 
-Structured extraction of academic offerings and fees from University of Cape Town
-faculty handbooks, to analyse changes in credit load and the associated fee
+Structured extraction of academic offerings and fees from University of Cape
+Town handbooks, to analyse changes in credit load and the associated fee
 implications across faculties and across years.
 
 ## Objective
 
 UCT has been undergoing a major re-think of curriculum credit loads, with some
 changes already implemented. This repository converts the published faculty
-handbooks (PDF) and the student fees handbook into relational tables so that:
+handbooks (PDF) and the student fees handbooks into relational tables so that:
 
-1. Every degree programme's curriculum (courses, credits, NQF levels, per year of
-   study) is captured as data.
-2. An **"ideal student"** — a deterministic, documented selection of courses per
-   programme-year, including a defensible treatment of electives — can be costed
-   in credits and Rand.
-3. When multiple years of handbooks are supplied, credit-load and fee trends can
-   be compared across editions.
+1. Every degree programme's curriculum (courses, credits, NQF levels, per year
+   of study) is captured as data, with page-level provenance.
+2. An **"ideal student"** — a deterministic, documented selection of courses
+   per specialisation-year, including a defensible treatment of electives —
+   can be costed in credits and Rand.
+3. Credit-load and fee trends can be compared across handbook editions.
 
-2025 handbooks are currently loaded; the pipeline is designed so additional years
-are simply dropped into the raw folder and re-run.
+**Current coverage: Commerce + Fees for 2021–2026** (six editions,
+14,282 main-dataset rows). The credit re-think is already visible in the
+data — e.g. BCom Actuarial Science year 1 drops from 185 to 180 credits at
+the 2024 edition. Other faculties (EBE, FHS, HUM, LAW, SCI) have 2025 books
+loaded and extractors pending.
 
-## Repository layout
+## Quick start
 
-```
-uct-handbook-project/
-├── faculty-handbooks-undergraduate/   # RAW input PDFs (never edited)
-│   ├── 2025-com-ug.pdf                #   convention: YYYY-<fac>-ug.pdf
-│   └── 2025-_fees.pdf                 #   convention: YYYY-_fees.pdf
-├── common/                            # shared parsing utilities (all faculties)
-├── extractors/                        # ONE extractor package PER faculty
-│   ├── com/   ├── ebe/   ├── fhs/
-│   ├── hum/   ├── law/   ├── sci/
-│   └── fees/                          # fees handbook extractor
-├── data/
-│   ├── interim/                       # per-page text dumps, intermediate JSON (gitignored)
-│   └── processed/                     # final output tables (CSV, versioned in git)
-├── validation/                        # cross-check scripts and exception reports
-├── analysis/                          # trend analysis once >1 year is loaded
-└── docs/                              # design notes and per-faculty review docs
+```bash
+pip install -r requirements.txt
+python run_pipeline.py --years all
 ```
 
-Faculty codes: `com` Commerce, `ebe` Engineering & the Built Environment,
-`fhs` Health Sciences, `hum` Humanities, `law` Law, `sci` Science.
+The batch runner discovers every year with both a Commerce and a fees PDF in
+`faculty-handbooks-undergraduate/`, and runs the full pipeline per year
+(fees extractor → Commerce extractor → main-dataset assembly → validation).
+Writers are **merge-by-year**: re-running a year replaces exactly that year's
+rows and leaves every other year byte-identical, so pipeline runs are
+reviewable as single-year git diffs.
 
-**Why one extractor per faculty:** the faculties present curricula differently
-(Commerce/EBE publish explicit per-year tables per specialisation; Humanities and
-Science define majors plus composition rules). Extraction logic is therefore
-faculty-specific by design; only genuinely shared code (course-code grammar,
-credit-line parsing, PDF-to-text) lives in `common/`.
-
-## The main dataset (single source of truth)
-
-**`data/processed/main_dataset.csv`** — one row per specialisation ×
-study-year × course-slot, joining degree, credit, course and fee information,
-with an **`ideal_student`** boolean marking the rows a deterministic "ideal
-student" takes (electives resolved by documented rules). Everything else is a
-building block or a check against it. All tables carry a `year` column so
-multiple handbook editions coexist side by side.
-
-| Table | Grain | Purpose |
-|---|---|---|
-| `main_dataset` | specialisation × study-year × course-slot | **single source of truth** incl. `ideal_student` flag |
-| `ideal_student_summary` | specialisation × study-year | computed credits + cost vs stated/published values |
-| `specialisations` | one row per plan/specialisation code | degree + specialisation register (73 in COM 2025) |
-| `curriculum` | one row per course-slot per spec-year | the curriculum tables as data |
-| `curriculum_totals` | one row per spec-year | handbook-stated total credits (validation anchor) |
-| `courses` | one row per course | catalogue: credits, NQF level, convener, requirements |
-| `course_fees` | one row per course code | Rand fee from fees book §12 |
-| `programme_fees_published` | one row per programme-year | published "typical" annual fee from fees book §11 |
-
-Pipeline (run from the repo root, in order):
+Individual steps can also be run per year:
 
 ```bash
 python -m extractors.fees.extract --year 2025
@@ -79,18 +46,64 @@ python build_main_dataset.py --year 2025
 python validation/validate.py --year 2025
 ```
 
-See [docs/commerce-review-and-proposal.md](docs/commerce-review-and-proposal.md)
-for the design and [docs/REPLICATION.md](docs/REPLICATION.md) for the detailed
-process log, hazard catalogue, and how to add future handbook years.
+## Repository layout
 
-## Baseline
+```
+uct-handbook-project/
+├── faculty-handbooks-undergraduate/   # RAW input PDFs (immutable)
+│   ├── YYYY-com-ug.pdf                #   faculty books: YYYY-<fac>-ug.pdf
+│   └── YYYY-_fees.pdf                 #   fees books:    YYYY-_fees.pdf
+├── run_pipeline.py                    # batch runner (all years / range / list)
+├── build_main_dataset.py              # assembles the single source of truth
+├── common/                            # shared utilities (PDF text, grammar, CSV io)
+├── extractors/                        # ONE extractor package PER faculty
+│   ├── com/                           #   built (2021-2026)
+│   ├── fees/                          #   built (2021-2026)
+│   └── ebe/ fhs/ hum/ law/ sci/       #   pending
+├── data/
+│   ├── interim/                       # per-page text dumps (gitignored)
+│   └── processed/                     # output tables, all years side by side (committed)
+├── validation/                        # validate.py + per-year exception reports
+├── analysis/                          # trend analysis (next phase)
+└── docs/
+    ├── USER-MANUAL.md                 # manual for reviewers / deans
+    ├── REPLICATION.md                 # detailed process log + hazard catalogue
+    └── commerce-review-and-proposal.md  # original design document
+```
 
-The git tag **`baseline-2025`** marks the dataset built from the 2025
-handbooks — the **initial state before further credit re-think editions are
-introduced**. 2025 validation: 217/266 spec-years reconcile credits exactly
-with the handbook's stated totals; median fee delta vs published programme
-fees is 0.0%; every remaining discrepancy is listed in `validation/` with
-provenance.
+## The main dataset (single source of truth)
+
+**`data/processed/main_dataset.csv`** — one row per specialisation ×
+study-year × course-slot, joining degree, credit, course and fee information,
+with an **`ideal_student`** boolean marking the rows a deterministic "ideal
+student" takes. Everything else is a building block or a check against it.
+All tables carry a `year` column so editions sit side by side.
+
+| Table | Grain | Purpose |
+|---|---|---|
+| `main_dataset` | specialisation × study-year × course-slot | **single source of truth** incl. `ideal_student` flag |
+| `ideal_student_summary` | specialisation × study-year | computed credits + cost vs stated/published values |
+| `specialisations` | one row per plan/specialisation code per year | degree + specialisation register |
+| `curriculum` | one row per course-slot per spec-year | the curriculum tables as data |
+| `curriculum_totals` | one row per spec-year | handbook-stated total credits (validation anchor) |
+| `courses` | one row per course per year | catalogue: credits, NQF level, convener, requirements |
+| `course_fees` | one row per course code per year | Rand fee from the fees book |
+| `programme_fees_published` | one row per programme-year | published "typical" annual fee |
+
+## Data quality at a glance (2021–2026)
+
+| Year | Specialisations | Curriculum rows | Credit check OK | Published-fee coverage |
+|---|---|---|---|---|
+| 2021 | 71 | 2,434 | 218/269 | 164/269 |
+| 2022 | 69 | 2,468 | 216/261 | 160/261 |
+| 2023 | 71 | 2,491 | 209/265 | 158/265 |
+| 2024 | 72 | 2,318 | 181/255 | 178/255 |
+| 2025 | 73 | 2,323 | 217/266 | 180/266 |
+| 2026 | 70 | 2,248 | 199/258 | 172/258 |
+
+Every discrepancy is itemised with page provenance in `validation/`; most
+"mismatches" are the handbooks' own arithmetic quirks, preserved rather than
+silently corrected (see the user manual's caveats section).
 
 ## Key identifiers
 
@@ -99,26 +112,33 @@ provenance.
   (`CB004`), last 5 = department/stream code (`FTX04`). In Science and
   Humanities these are majors with prefixes like `SB001`/`HB001` + department
   code (e.g. `HB001SOC01`).
-- **Course code** (e.g. `ACC1006F`): 3-letter department + level digit + 3-digit
-  distinguisher + period suffix (`F` first semester, `S` second semester,
+- **Course code** (e.g. `ACC1006F`): 3-letter department + level digit +
+  3-digit distinguisher + period suffix (`F` first semester, `S` second,
   `W` whole year, `H` year-long half-course, `Z` non-standard, `P/U/L`
   summer/winter terms).
 
-## Getting started
+## Documentation
 
-```bash
-pip install -r requirements.txt
-```
+- **[docs/USER-MANUAL.md](docs/USER-MANUAL.md)** — for reviewers and deans:
+  what the dataset contains, how to read it, the ideal-student definition,
+  validation results, caveats, and how to query it (no technical background
+  assumed). A Word copy for circulation sits alongside it.
+- **[docs/REPLICATION.md](docs/REPLICATION.md)** — the authoritative process
+  log: pipeline details, per-edition layout contracts, the 21-entry hazard
+  catalogue, and the procedure for onboarding new years and faculties.
+- **[docs/commerce-review-and-proposal.md](docs/commerce-review-and-proposal.md)**
+  — the original Commerce review and design document.
 
-Current status:
+## Status
 
 - [x] Repo scaffold, Commerce handbook review, schema proposal
-- [x] `extractors/fees` — course fee table + published programme fees
-- [x] `extractors/com` — 73 specialisations, curricula, course catalogue
+- [x] `extractors/fees` + `extractors/com` — six editions each (2021–2026)
 - [x] `build_main_dataset.py` — main dataset with `ideal_student` flag
-- [x] `validation` — credit totals + fee cross-checks (tag `baseline-2025`)
-- [x] Multi-year COM + fees: 2021-2026 batch-processed via `run_pipeline.py`
-      (14,282 main-dataset rows; merge-by-year writers keep prior years
-      byte-identical)
+- [x] `validation` — credit totals + fee cross-checks, per-year reports
+- [x] Batch processing (`run_pipeline.py`) with merge-by-year writers
+- [x] User manual for reviewers/deans
 - [ ] Remaining faculties: EBE, LAW, FHS, then SCI, HUM
 - [ ] Trend analysis across editions (`analysis/`)
+
+Git tags: `baseline-2025` (the pre-change initial state) and
+`data-2021-2026` (the multi-year load).

@@ -16,17 +16,31 @@ year is loaded.
 ## Pipeline
 
 ```
+python run_pipeline.py --years all      # batch: fees -> com -> assemble -> validate
+```
+
+or per year / per step:
+
+```
 python -m extractors.fees.extract --year YYYY
 python -m extractors.com.extract  --year YYYY
 python build_main_dataset.py      --year YYYY
 python validation/validate.py     --year YYYY
 ```
 
-`data/processed/main_dataset.csv` is the **single source of truth**: one row
-per specialisation x study-year x course-slot with degree, credit, course and
-fee columns and an `ideal_student` boolean. `docs/REPLICATION.md` is the
-authoritative process log: read it (especially the hazard catalogue) before
-touching any parser or onboarding a new handbook year.
+COM + fees are loaded for **2021-2026**. Writers are merge-by-year
+(`common/csv_io.py`): re-running a year replaces only that year's rows —
+after any parser change, verify prior years' rows are byte-identical (the
+2025 baseline especially). `data/processed/main_dataset.csv` is the **single
+source of truth**: one row per specialisation x study-year x course-slot with
+degree, credit, course and fee columns and an `ideal_student` boolean.
+
+`docs/REPLICATION.md` is the authoritative process log: read it (especially
+the hazard catalogue H1-H21, which includes per-edition layout drift — 2024
+Title-Case/inline-code headings, 2026 per-degree headers and HEQSF wording)
+before touching any parser or onboarding a new handbook year.
+`docs/USER-MANUAL.md` is the reviewer/dean-facing manual — update it when
+tables, rules, or coverage change.
 
 ## Ground rules
 

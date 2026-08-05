@@ -2,6 +2,15 @@
 
 *Based on inspection of `2025-com-ug.pdf` (303 pp) and `2025-_fees.pdf` (154 pp), August 2026.*
 
+> **Status (2026-08-05): implemented.** This is the original design document,
+> kept for the record. The pipeline it proposes is built and has processed
+> Commerce + fees for 2021–2026; the register table proposed here as
+> `programmes` was renamed **`specialisations`** (one row per plan code), and
+> the derived `ideal_student` table became a flag inside `main_dataset.csv`
+> plus the `ideal_student_summary.csv` roll-up. For current operational
+> detail see [REPLICATION.md](REPLICATION.md); for the reader-facing guide
+> see [USER-MANUAL.md](USER-MANUAL.md).
+
 ## 1. What the Commerce handbook contains
 
 The 2025 Commerce undergraduate handbook is the most structured of the six
