@@ -126,6 +126,7 @@ def parse_section11(dump_path: Path, pages: tuple, year: int):
     label_buf: list[str] = []
     active_label = ""
     degree_context = ""
+    last_dotted_label = ""
 
     for page_no, text in iter_pages(dump_path):
         if page_no < first or page_no > last:
@@ -138,6 +139,7 @@ def parse_section11(dump_path: Path, pages: tuple, year: int):
             if fh:
                 faculty = fh.group(1).title()
                 label_buf, active_label, degree_context = [], "", ""
+                last_dotted_label = ""
                 continue
             if not faculty or faculty.startswith("Typical"):
                 continue  # still in 11.1 or preamble
@@ -146,7 +148,13 @@ def parse_section11(dump_path: Path, pages: tuple, year: int):
             if m:
                 study_year = int(m.group("year"))
                 note = (m.group("pre") + " " + m.group("post")).strip(" .…")
-                if study_year == 1 and label_buf:
+                if study_year == 1 and not label_buf and last_dotted_label:
+                    # Year rows directly after a dotted single-line fee belong
+                    # to that programme (e.g. PG blocks listing "Full Time"
+                    # then part-time per-year fees).
+                    active_label = last_dotted_label
+                elif study_year == 1 and label_buf:
+                    last_dotted_label = ""
                     new_label = re.sub(r"^Degrees\s+", "", " ".join(label_buf).strip())
                     if DEGREE_KEYWORD.search(new_label):
                         # Context for stream sub-blocks = label minus its own
@@ -176,6 +184,7 @@ def parse_section11(dump_path: Path, pages: tuple, year: int):
                 if label_buf:
                     label = (" ".join(label_buf) + " " + label).strip()
                     label_buf = []
+                last_dotted_label = label
                 rows.append({
                     "year": year,
                     "faculty_section": faculty,
