@@ -16,6 +16,7 @@ import csv
 import re
 from pathlib import Path
 
+from common.csv_io import write_year_rows
 from common.pdf_text import dump_pages, iter_pages
 from extractors.fees.overrides import COURSE_FEE_ADDITIONS
 
@@ -242,8 +243,9 @@ def main():
         seen.add(key)
         deduped.append(r)
 
-    write_csv(ROOT / "data" / "processed" / "course_fees.csv", deduped)
-    write_csv(ROOT / "data" / "processed" / "programme_fees_published.csv", prog)
+    write_year_rows(ROOT / "data" / "processed" / "course_fees.csv", deduped, args.year)
+    write_year_rows(ROOT / "data" / "processed" / "programme_fees_published.csv",
+                    prog, args.year)
     write_csv(ROOT / "validation" / f"fees_unparsed_{args.year}.csv",
               unparsed12 + unparsed11)
 

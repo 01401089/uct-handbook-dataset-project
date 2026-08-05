@@ -31,6 +31,7 @@ import csv
 import re
 from pathlib import Path
 
+from common.csv_io import write_year_rows
 from common.pdf_text import dump_pages, iter_pages
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -41,8 +42,19 @@ FACULTY = "COM"
 # ---------------------------------------------------------------------------
 
 PLAN_CODE_LINE = re.compile(r"^\[(C[BU][0-9O]{2,3}[A-Z]{3}\d{2})\]\s*$")
-PLAN_CODE_INLINE = re.compile(  # Advanced Diploma headings carry the code inline
-    r"^(?P<title>(?:Advanced|Postgraduate) Diploma in .+?)\s*\[(?P<code>C[BU][0-9O]{2,3}[A-Z]{3}\d{2})\]")
+# 2024-style headings carry the code inline at the end of the title line
+# (any case); the [^.\[] guard excludes dotted TOC entries.
+PLAN_CODE_INLINE = re.compile(
+    r"^(?P<title>(?:Bachelor of|Advanced Diploma|Postgraduate Diploma)[^.\[]{3,120}?)\s*"
+    r"\[(?P<code>C[BU][0-9O]{2,3}[A-Z]{3}\d{2})\]\s*$", re.I)
+
+# Known programme-code families (documented in CLAUDE.md). Used as the variant
+# fallback when neither a page-header hint nor an umbrella line applies.
+VARIANT_BY_PROGCODE = {
+    "CB001": "regular", "CB003": "regular", "CB004": "regular", "CB019": "regular",
+    "CB023": "augmented", "CB024": "augmented", "CB025": "augmented", "CB026": "augmented",
+    "CB011": "extended", "CB015": "extended", "CB018": "extended", "CB020": "extended",
+}
 
 TITLE_START = re.compile(r"^(Bachelor of|Advanced Diploma in|Postgraduate Diploma in)")
 UMBRELLA = re.compile(
@@ -116,7 +128,8 @@ ADVDIP_LABELS = [
      ("alternative", "approved elective pool")),
 ]
 
-CREDITS_LINE = re.compile(r"^(?P<credits>\d{1,3})\s+NQF credits at NQF level (?P<level>\d{1,2})\b")
+CREDITS_LINE = re.compile(
+    r"^(?P<credits>\d{1,3})\s+NQF credits at (?:NQF|HEQSF) level (?P<level>\d{1,2})\b")
 COURSE_HEADING = re.compile(r"^(?P<code>[A-Z]{3}\d{4}[A-Z])\s+(?P<title>\S.{2,90})$")
 FIELD_LINE = re.compile(
     r"^(Convener|Course convener|Co-convener|Course entry requirements|Course outline"
@@ -168,12 +181,14 @@ def parse_degree(title: str) -> tuple[str, str, str]:
                r"|Academic Development)\b", "", t)
     m = re.match(
         r"^(?P<deg>Bachelor of (?:Business Science|Commerce)|Advanced Diploma|Postgraduate Diploma)"
-        r"(?: in (?P<field>[^\[]+?))?(?: specialising in (?P<spec>.+))?$", t)
+        r"(?: in (?P<field>[^\[]+?))?(?: specialising in (?P<spec>.+))?$", t, re.I)
     if not m:
         return t, "", ""
-    deg = m.group("deg")
-    abbrev = {"Bachelor of Business Science": "BBusSc", "Bachelor of Commerce": "BCom",
-              "Advanced Diploma": "AdvDip", "Postgraduate Diploma": "PGDip"}[deg]
+    canon = {"bachelor of business science": ("Bachelor of Business Science", "BBusSc"),
+             "bachelor of commerce": ("Bachelor of Commerce", "BCom"),
+             "advanced diploma": ("Advanced Diploma", "AdvDip"),
+             "postgraduate diploma": ("Postgraduate Diploma", "PGDip")}
+    deg, abbrev = canon[m.group("deg").lower()]
     field, spec = m.group("field") or "", m.group("spec") or ""
     if deg.startswith("Advanced") or deg.startswith("Postgraduate"):
         spec = field or spec
@@ -186,9 +201,30 @@ def parse_degree(title: str) -> tuple[str, str, str]:
 # Programme-section parser
 # ---------------------------------------------------------------------------
 
-def classify_pages(dump_path: Path) -> dict:
-    """Map each page to a section based on its running header line."""
-    sections = {}
+# Running-header families across editions:
+#   2021-2025: "PROGRAMMES OF STUDY 44" / "DEPARTMENTS IN THE FACULTY ..."
+#   2024:      Title Case + "Departments offering courses to the Faculty ..."
+#   2026:      per-degree headers ("BACHELOR OF COMMERCE AUGMENTED 15") and
+#              per-department headers ("SCHOOL OF ECONOMICS 121")
+PROG_PAGE = re.compile(
+    r"^(?:\d+\s+)?(?:RULES FOR ADVANCED DIPLOMAS|PROGRAMMES OF STUDY"
+    r"|BACHELOR OF (?:COMMERCE|BUSINESS SCIENCE)(?: AUGMENTED| EXTENDED)?)"
+    r"(?:\s+\d+)?\s*$", re.I)
+CAT_PAGE = re.compile(
+    r"^(?:\d+\s+)?(?:DEPARTMENTS IN THE FACULTY.*|FACULTIES AND DEPARTMENTS.*"
+    r"|DEPARTMENTS OFFERING COURSES.*|COLLEGE OF .+|SCHOOL OF .+|DEPARTMENT OF .+"
+    r"|GRADUATE SCHOOL OF BUSINESS|NELSON MANDELA SCHOOL.*|EDUCATION DEVELOPMENT UNIT.*)"
+    r"(?:\s+\d+)?\s*$", re.I)
+
+
+def classify_pages(dump_path: Path) -> tuple[dict, dict]:
+    """Map each page to a section based on its running header line.
+
+    Returns (sections, variant_hints): variant_hints carries the programme
+    variant when the page header itself states it (2026-style per-degree
+    headers), else None.
+    """
+    sections, hints = {}, {}
     for page_no, text in iter_pages(dump_path):
         head = ""
         for line in text.splitlines():
@@ -196,24 +232,41 @@ def classify_pages(dump_path: Path) -> dict:
             if line:
                 head = line
                 break
-        if re.match(r"^(?:\d+\s+)?(?:RULES FOR ADVANCED DIPLOMAS|PROGRAMMES OF STUDY)", head):
+        if PROG_PAGE.match(head):
             sections[page_no] = "programmes"
-        elif re.match(r"^(?:\d+\s+)?(?:DEPARTMENTS IN THE FACULTY|FACULTIES AND DEPARTMENTS)", head):
+            if re.search(r"BACHELOR OF", head, re.I):
+                low = head.lower()
+                hints[page_no] = ("augmented" if "augmented" in low
+                                  else "extended" if "extended" in low
+                                  else "regular")
+        elif CAT_PAGE.match(head):
             sections[page_no] = "catalogue"
-    return sections
+    return sections, hints
 
 
-def parse_programmes(dump_path: Path, sections: dict, year: int):
-    programmes, curriculum, totals, unparsed = [], [], {}, []
-
-    lines = []  # (page_no, text) for all programme-section pages, in order
+def collect_section_lines(dump_path: Path, sections: dict, which: str):
+    """(page_no, line) pairs for pages of a section, dropping each page's
+    running-header line (the first non-empty line) and column headers."""
+    lines = []
     for page_no, text in iter_pages(dump_path):
-        if sections.get(page_no) != "programmes":
+        if sections.get(page_no) != which:
             continue
+        first_seen = False
         for raw in text.splitlines():
             line = raw.strip()
-            if line and not PAGE_HEADER.match(line) and not COLUMN_HEADER.match(line):
+            if not line:
+                continue
+            if not first_seen:
+                first_seen = True  # running header — always skip
+                continue
+            if not PAGE_HEADER.match(line) and not COLUMN_HEADER.match(line):
                 lines.append((page_no, line))
+    return lines
+
+
+def parse_programmes(dump_path: Path, sections: dict, hints: dict, year: int):
+    programmes, curriculum, totals, unparsed = [], [], {}, []
+    lines = collect_section_lines(dump_path, sections, "programmes")
 
     variant = "regular"
     prog = None            # current programme dict
@@ -247,7 +300,11 @@ def parse_programmes(dump_path: Path, sections: dict, year: int):
             "plan_code_raw": plan_raw if plan_raw != code else "",
             "programme_code": code[:5], "dept_code": code[5:],
             "degree_name": deg, "degree_abbrev": abbrev, "specialisation": spec,
-            "variant": variant, "source_page": page_no, "notes": [],
+            # Precedence: page-header hint (2026 layout) > known programme-code
+            # family > umbrella-line tracking (2021-2025 layouts).
+            "variant": (hints.get(page_no) or VARIANT_BY_PROGCODE.get(code[:5])
+                        or variant),
+            "source_page": page_no, "notes": [],
         }
         if code in seen_codes:
             prog["notes"].append(f"DUPLICATE plan code block on p{page_no}")
@@ -538,14 +595,7 @@ def parse_programmes(dump_path: Path, sections: dict, year: int):
 
 def parse_catalogue(dump_path: Path, sections: dict, year: int):
     courses, unparsed = [], []
-    pages = [(p, t) for p, t in iter_pages(dump_path) if sections.get(p) == "catalogue"]
-
-    lines = []
-    for page_no, text in pages:
-        for raw in text.splitlines():
-            line = raw.strip()
-            if line and not PAGE_HEADER.match(line):
-                lines.append((page_no, line))
+    lines = collect_section_lines(dump_path, sections, "catalogue")
 
     course = None
     field = None
@@ -625,18 +675,22 @@ def main():
         n = dump_pages(pdf, dump)
         print(f"dumped {n} pages -> {dump.relative_to(ROOT)}")
 
-    sections = classify_pages(dump)
+    sections, hints = classify_pages(dump)
     n_prog = sum(1 for v in sections.values() if v == "programmes")
     n_cat = sum(1 for v in sections.values() if v == "catalogue")
     print(f"programme pages: {n_prog}, catalogue pages: {n_cat}")
 
-    programmes, curriculum, totals, unp1 = parse_programmes(dump, sections, args.year)
+    programmes, curriculum, totals, unp1 = parse_programmes(dump, sections, hints, args.year)
     courses, unp2 = parse_catalogue(dump, sections, args.year)
 
-    write_csv(ROOT / "data" / "processed" / "specialisations.csv", programmes)
-    write_csv(ROOT / "data" / "processed" / "curriculum.csv", curriculum)
-    write_csv(ROOT / "data" / "processed" / "curriculum_totals.csv", totals)
-    write_csv(ROOT / "data" / "processed" / "courses.csv", courses)
+    write_year_rows(ROOT / "data" / "processed" / "specialisations.csv",
+                    programmes, args.year)
+    write_year_rows(ROOT / "data" / "processed" / "curriculum.csv",
+                    curriculum, args.year)
+    write_year_rows(ROOT / "data" / "processed" / "curriculum_totals.csv",
+                    totals, args.year)
+    write_year_rows(ROOT / "data" / "processed" / "courses.csv",
+                    courses, args.year)
     if unp1 or unp2:
         write_csv(ROOT / "validation" / f"com_unparsed_{args.year}.csv", unp1 + unp2)
 

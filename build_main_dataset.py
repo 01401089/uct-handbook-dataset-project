@@ -32,6 +32,8 @@ import statistics
 from collections import defaultdict
 from pathlib import Path
 
+from common.csv_io import write_year_rows
+
 ROOT = Path(__file__).resolve().parent
 PROC = ROOT / "data" / "processed"
 
@@ -39,13 +41,6 @@ PROC = ROOT / "data" / "processed"
 def read(name):
     with open(PROC / name, encoding="utf-8-sig") as f:
         return list(csv.DictReader(f))
-
-
-def write(name, rows):
-    with open(PROC / name, "w", newline="", encoding="utf-8-sig") as f:
-        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
-        w.writeheader()
-        w.writerows(rows)
 
 
 # --- published-fee label matching -------------------------------------------
@@ -308,8 +303,8 @@ def main():
                               if pub and fee_total else ""),
         })
 
-    write("main_dataset.csv", main_rows)
-    write("ideal_student_summary.csv", summary)
+    write_year_rows(PROC / "main_dataset.csv", main_rows, y)
+    write_year_rows(PROC / "ideal_student_summary.csv", summary, y)
 
     n_ideal = sum(1 for r in main_rows if r["ideal_student"])
     print(f"main_dataset: {len(main_rows)} rows ({n_ideal} ideal-student rows)")

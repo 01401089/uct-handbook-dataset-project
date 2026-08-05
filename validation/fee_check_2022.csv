@@ -1,0 +1,161 @@
+﻿year,plan_code,study_year,variant,specialisation,fee_ideal_zar,fee_estimated_component_zar,fee_published_zar,fee_delta_pct,fee_match_method,status
+2022,CB001ACC03,1,regular,Financial Accounting: Accounting with Law,71440,0,71440,0.0,label_match,OK
+2022,CB001ACC03,2,regular,Financial Accounting: Accounting with Law,77270,0,77270,0.0,label_match,OK
+2022,CB001ACC03,3,regular,Financial Accounting: Accounting with Law,68540,0,68540,0.0,label_match,OK
+2022,CB001ACC04,1,regular,Financial Accounting: Chartered Accountant,71440,0,71440,0.0,label_match,OK
+2022,CB001ACC04,2,regular,Financial Accounting: Chartered Accountant,79610,0,79610,0.0,label_match,OK
+2022,CB001ACC04,3,regular,Financial Accounting: Chartered Accountant,70030,0,70030,0.0,label_match,OK
+2022,CB001ACC08,1,regular,Financial Accounting: General Accounting,71440,0,71440,0.0,label_match,OK
+2022,CB001ACC08,2,regular,Financial Accounting: General Accounting,70880,0,70880,0.0,label_match,OK
+2022,CB001ACC08,3,regular,Financial Accounting: General Accounting,69790,0,69790,0.0,label_match,OK
+2022,CB001BUS06,1,regular,Management Studies,88550,0,88290,0.3,label_match,OK
+2022,CB001BUS06,2,regular,Management Studies,83050,17940,83050,0.0,label_match,OK
+2022,CB001BUS06,3,regular,Management Studies,21428,12458,71680,-70.1,label_match,MISMATCH
+2022,CB001ECO02,1,regular,Economics and Finance,80350,0,80350,0.0,label_match,OK
+2022,CB001ECO02,2,regular,Economics and Finance,73550,0,73550,0.0,label_match,OK
+2022,CB001ECO02,3,regular,Economics and Finance,71520,8970,71520,0.0,label_match,OK
+2022,CB001ECO03,1,regular,Economics with Law,71440,0,71440,0.0,label_match,OK
+2022,CB001ECO03,2,regular,Economics with Law,76520,0,77380,-1.1,label_match,OK
+2022,CB001ECO03,3,regular,Economics with Law,68650,0,68650,0.0,label_match,OK
+2022,CB001ECO04,1,regular,Economics and Statistics,80350,0,80090,0.3,label_match,OK
+2022,CB001ECO04,2,regular,Economics and Statistics,101710,0,75870,34.1,label_match,MISMATCH
+2022,CB001ECO04,3,regular,Economics and Statistics,114130,0,88460,29.0,label_match,MISMATCH
+2022,CB001INF01,1,regular,Information Systems,70930,0,70670,0.4,label_match,OK
+2022,CB001INF01,2,regular,Information Systems,71570,8970,71570,0.0,label_match,OK
+2022,CB001INF01,3,regular,Information Systems,80380,17940,80380,0.0,label_match,OK
+2022,CB001INF06,1,regular,Information Systems and Computer Science,71120,0,70970,0.2,label_match,OK
+2022,CB001INF06,2,regular,Information Systems and Computer Science,78210,0,78210,0.0,label_match,OK
+2022,CB001INF06,3,regular,Information Systems and Computer Science,70520,0,70520,0.0,label_match,OK
+2022,CB001INF11,1,regular,Information Systems and Finance,80350,0,80090,0.3,label_match,OK
+2022,CB001INF11,2,regular,Information Systems and Finance,80030,0,80030,0.0,label_match,OK
+2022,CB001INF11,3,regular,Information Systems and Finance,74080,0,74080,0.0,label_match,OK
+2022,CB001PHI03,1,regular,"Philosophy, Politics & Economics",69120,0,69120,0.0,label_match,OK
+2022,CB001PHI03,2,regular,"Philosophy, Politics & Economics",114950,0,82520,39.3,label_match,MISMATCH
+2022,CB001PHI03,3,regular,"Philosophy, Politics & Economics",91770,10810,77280,18.8,label_match,MISMATCH
+2022,CB004BUS07,1,regular,Marketing,80350,0,80350,0.0,label_match,OK
+2022,CB004BUS07,2,regular,Marketing,82280,0,82280,0.0,label_match,OK
+2022,CB004BUS07,3,regular,Marketing,89080,8970,80110,11.2,label_match,MISMATCH
+2022,CB004BUS07,4,regular,Marketing,87950,0,87950,0.0,label_match,OK
+2022,CB004BUS08,1,regular,Organisational Psychology,78630,0,78630,0.0,label_match,OK
+2022,CB004BUS08,2,regular,Organisational Psychology,80730,0,80730,0.0,label_match,OK
+2022,CB004BUS08,3,regular,Organisational Psychology,85960,8970,85960,0.0,label_match,OK
+2022,CB004BUS08,4,regular,Organisational Psychology,71770,0,83620,-14.2,label_match,MISMATCH
+2022,CB004BUS22,1,regular,Analytics,88650,0,88650,0.0,label_match,OK
+2022,CB004BUS22,2,regular,Analytics,90380,0,90380,0.0,label_match,OK
+2022,CB004BUS22,3,regular,Analytics,119250,0,108410,10.0,label_match,MISMATCH
+2022,CB004BUS22,4,regular,Analytics,74050,0,74050,0.0,label_match,OK
+2022,CB004CSC05,1,regular,Computer Science,70710,0,70860,-0.2,label_match,OK
+2022,CB004CSC05,2,regular,Computer Science,79200,0,79200,0.0,label_match,OK
+2022,CB004CSC05,3,regular,Computer Science,87690,0,87690,0.0,label_match,OK
+2022,CB004CSC05,4,regular,Computer Science,108160,0,67360,60.6,label_match,MISMATCH
+2022,CB004ECO01,1,regular,Economics,80350,0,80350,0.0,label_match,OK
+2022,CB004ECO01,2,regular,Economics,76110,0,76110,0.0,label_match,OK
+2022,CB004ECO01,3,regular,Economics,130150,8970,88840,46.5,label_match,MISMATCH
+2022,CB004ECO01,4,regular,Economics,89590,0,89590,0.0,label_match,OK
+2022,CB004ECO03,1,regular,Economics with Law,80350,0,80350,0.0,label_match,OK
+2022,CB004ECO03,2,regular,Economics with Law,80180,0,80180,0.0,label_match,OK
+2022,CB004ECO03,3,regular,Economics with Law,77380,8970,77380,0.0,label_match,OK
+2022,CB004ECO03,4,regular,Economics with Law,98560,0,98560,0.0,label_match,OK
+2022,CB004FTX04,1,regular,Finance with Accounting,80350,0,80350,0.0,label_match,OK
+2022,CB004FTX04,2,regular,Finance with Accounting,81510,0,81510,0.0,label_match,OK
+2022,CB004FTX04,3,regular,Finance with Accounting,88740,0,88740,0.0,label_match,OK
+2022,CB004FTX04,4,regular,Finance with Accounting,80510,0,80510,0.0,label_match,OK
+2022,CB004FTX05,1,regular,Finance,80350,0,80350,0.0,label_match,OK
+2022,CB004FTX05,2,regular,Finance,82280,0,82280,0.0,label_match,OK
+2022,CB004FTX05,3,regular,Finance,89000,8970,44150,101.6,label_match,MISMATCH
+2022,CB004FTX05,4,regular,Finance,71540,0,71540,0.0,label_match,OK
+2022,CB004INF01,1,regular,Information Systems,88550,0,88290,0.3,label_match,OK
+2022,CB004INF01,2,regular,Information Systems,83360,0,83360,0.0,label_match,OK
+2022,CB004INF01,3,regular,Information Systems,80380,0,80380,0.0,label_match,OK
+2022,CB004INF01,4,regular,Information Systems,82260,0,82260,0.0,label_match,OK
+2022,CB011ACC04,1,extended,Financial Accounting: Chartered Accountant,116230,0,62470,86.1,ad_duration,MISMATCH
+2022,CB011ACC04,2,extended,Financial Accounting: Chartered Accountant,124090,0,61910,100.4,ad_duration,MISMATCH
+2022,CB011ACC04,3,extended,Financial Accounting: Chartered Accountant,120470,0,60900,97.8,ad_duration,MISMATCH
+2022,CB011ACC04,4,extended,Financial Accounting: Chartered Accountant,95370,0,53630,77.8,ad_duration,MISMATCH
+2022,CB011ACC08,1,extended,Financial Accounting: General Accounting,62470,0,62470,0.0,ad_duration,OK
+2022,CB011ACC08,2,extended,Financial Accounting: General Accounting,52940,0,52940,0.0,ad_duration,OK
+2022,CB011ACC08,3,extended,Financial Accounting: General Accounting,44740,0,44740,0.0,ad_duration,OK
+2022,CB011ACC08,4,extended,Financial Accounting: General Accounting,51960,0,51960,0.0,ad_duration,OK
+2022,CB011ECO02,1,extended,Economics and Finance,53500,0,53500,0.0,ad_duration,OK
+2022,CB011ECO02,2,extended,Economics and Finance,52990,0,52990,0.0,ad_duration,OK
+2022,CB011ECO02,3,extended,Economics and Finance,56140,0,56140,0.0,ad_duration,OK
+2022,CB011ECO02,4,extended,Economics and Finance,62790,8970,62790,0.0,ad_duration,OK
+2022,CB011ECO04,1,extended,Economics and Statistics,116230,0,53500,117.3,ad_duration,MISMATCH
+2022,CB011ECO04,2,extended,Economics and Statistics,105450,0,52730,100.0,ad_duration,MISMATCH
+2022,CB011ECO04,3,extended,Economics and Statistics,121160,8970,67670,79.0,ad_duration,MISMATCH
+2022,CB011ECO04,4,extended,Economics and Statistics,130200,8970,79490,63.8,ad_duration,MISMATCH
+2022,CB011INF01,1,extended,Information Systems,53760,0,62730,-14.3,ad_duration,MISMATCH
+2022,CB011INF01,2,extended,Information Systems,53890,0,53890,0.0,ad_duration,OK
+2022,CB011INF01,3,extended,Information Systems,62360,8910,62420,-0.1,ad_duration,OK
+2022,CB011INF01,4,extended,Information Systems,52810,17940,61780,-14.5,ad_duration,MISMATCH
+2022,CB011INF06,1,extended,Information Systems and Computer Science,53500,0,53500,0.0,ad_duration,OK
+2022,CB011INF06,2,extended,Information Systems and Computer Science,52230,0,52230,0.0,ad_duration,OK
+2022,CB011INF06,3,extended,Information Systems and Computer Science,52570,0,52570,0.0,ad_duration,OK
+2022,CB011INF06,4,extended,Information Systems and Computer Science,61550,0,61550,0.0,ad_duration,OK
+2022,CB011INF11,1,extended,Information Systems and Finance,62730,0,62470,0.4,ad_duration,OK
+2022,CB011INF11,2,extended,Information Systems and Finance,53630,0,53630,0.0,ad_duration,OK
+2022,CB011INF11,3,extended,Information Systems and Finance,62730,0,62730,0.0,ad_duration,OK
+2022,CB011INF11,4,extended,Information Systems and Finance,55370,0,55370,0.0,ad_duration,OK
+2022,CB011PHI03,1,extended,"Philosophy, Politics & Economics",51180,0,51180,0.0,ad_duration,OK
+2022,CB011PHI03,2,extended,"Philosophy, Politics & Economics",53560,0,53560,0.0,ad_duration,OK
+2022,CB011PHI03,3,extended,"Philosophy, Politics & Economics",90140,0,46900,92.2,ad_duration,MISMATCH
+2022,CB011PHI03,4,extended,"Philosophy, Politics & Economics",91770,10810,75440,21.6,ad_duration,MISMATCH
+2022,CB019BUS01,1,regular,Actuarial Science,88910,0,88910,0.0,label_match,OK
+2022,CB019BUS01,2,regular,Actuarial Science,91430,0,91430,0.0,label_match,OK
+2022,CB019BUS01,3,regular,Actuarial Science,80860,0,80860,0.0,label_match,OK
+2022,CB019BUS09,1,regular,Actuarial Science: Quantitative Finance,88910,0,88910,0.0,label_match,OK
+2022,CB019BUS09,2,regular,Actuarial Science: Quantitative Finance,91430,0,91430,0.0,label_match,OK
+2022,CB019BUS09,3,regular,Actuarial Science: Quantitative Finance,87620,0,87620,0.0,label_match,OK
+2022,CB020BUS01,1,extended,Actuarial Science,53500,0,53500,0.0,ad_duration,OK
+2022,CB020BUS01,2,extended,Actuarial Science,53500,0,53500,0.0,ad_duration,OK
+2022,CB020BUS01,3,extended,Actuarial Science,73490,0,73490,0.0,ad_duration,OK
+2022,CB020BUS01,4,extended,Actuarial Science,80860,0,80860,0.0,ad_duration,OK
+2022,CB020BUS09,1,extended,Actuarial Science: Quantitative Finance,53500,0,53500,0.0,ad_duration,OK
+2022,CB020BUS09,2,extended,Actuarial Science: Quantitative Finance,61700,0,61700,0.0,ad_duration,OK
+2022,CB020BUS09,3,extended,Actuarial Science: Quantitative Finance,65290,0,65290,0.0,ad_duration,OK
+2022,CB020BUS09,4,extended,Actuarial Science: Quantitative Finance,87620,0,87620,0.0,ad_duration,OK
+2022,CB023ACC03,1,augmented,Financial Accounting: Accounting with Law,71440,0,53760,32.9,label_match,MISMATCH
+2022,CB023ACC03,2,augmented,Financial Accounting: Accounting with Law,77270,0,62180,24.3,label_match,MISMATCH
+2022,CB023ACC03,3,augmented,Financial Accounting: Accounting with Law,68540,0,59570,15.1,label_match,MISMATCH
+2022,CB023BUS06,1,augmented,Management Studies,88550,0,61700,43.5,label_match,MISMATCH
+2022,CB023BUS06,2,augmented,Management Studies,83050,17940,53440,55.4,label_match,MISMATCH
+2022,CB023BUS06,3,augmented,Management Studies,8970,0,65110,-86.2,label_match,MISMATCH
+2022,CB023ECO03,1,augmented,Economics with Law,71440,0,62470,14.4,label_match,MISMATCH
+2022,CB023ECO03,2,augmented,Economics with Law,76520,0,52720,45.1,label_match,MISMATCH
+2022,CB023ECO03,3,augmented,Economics with Law,68650,0,50710,35.4,label_match,MISMATCH
+2022,CB024BUS07,1,augmented,Marketing,80350,0,70670,13.7,label_match,MISMATCH
+2022,CB024BUS07,2,augmented,Marketing,82280,0,65290,26.0,label_match,MISMATCH
+2022,CB024BUS07,3,augmented,Marketing,89080,8970,62550,42.4,label_match,MISMATCH
+2022,CB024BUS07,4,augmented,Marketing,87950,0,62170,41.5,label_match,MISMATCH
+2022,CB024BUS08,1,augmented,Organisational Psychology,78630,0,60750,29.4,label_match,MISMATCH
+2022,CB024BUS08,2,augmented,Organisational Psychology,80730,0,65290,23.6,label_match,MISMATCH
+2022,CB024BUS08,3,augmented,Organisational Psychology,85960,8970,62020,38.6,label_match,MISMATCH
+2022,CB024BUS08,4,augmented,Organisational Psychology,83620,0,57260,46.0,label_match,MISMATCH
+2022,CB024CSC05,1,augmented,Computer Science,70710,0,53240,32.8,label_match,MISMATCH
+2022,CB024CSC05,2,augmented,Computer Science,79200,0,61460,28.9,label_match,MISMATCH
+2022,CB024CSC05,3,augmented,Computer Science,87690,0,61500,42.6,label_match,MISMATCH
+2022,CB024CSC05,4,augmented,Computer Science,108160,0,61550,75.7,label_match,MISMATCH
+2022,CB024ECO01,1,augmented,Economics,80350,0,62470,28.6,label_match,MISMATCH
+2022,CB024ECO01,2,augmented,Economics,76110,0,61960,22.8,label_match,MISMATCH
+2022,CB024ECO01,3,augmented,Economics,130150,8970,67670,92.3,label_match,MISMATCH
+2022,CB024ECO01,4,augmented,Economics,89590,0,44850,99.8,label_match,MISMATCH
+2022,CB024ECO03,1,augmented,Economics with Law,80350,0,62470,28.6,label_match,MISMATCH
+2022,CB024ECO03,2,augmented,Economics with Law,80180,0,56320,42.4,label_match,MISMATCH
+2022,CB024ECO03,3,augmented,Economics with Law,77380,8970,59440,30.2,label_match,MISMATCH
+2022,CB024ECO03,4,augmented,Economics with Law,98560,0,68650,43.6,label_match,MISMATCH
+2022,CB024FTX04,1,augmented,Finance with Accounting,80350,0,61700,30.2,label_match,MISMATCH
+2022,CB024FTX04,2,augmented,Finance with Accounting,81510,0,61720,32.1,label_match,MISMATCH
+2022,CB024FTX04,3,augmented,Finance with Accounting,88740,0,83180,6.7,label_match,MISMATCH
+2022,CB024FTX04,4,augmented,Finance with Accounting,80510,0,70800,13.7,label_match,MISMATCH
+2022,CB024FTX05,1,augmented,Finance,80350,0,53500,50.2,label_match,MISMATCH
+2022,CB024FTX05,2,augmented,Finance,82280,0,73490,12.0,label_match,MISMATCH
+2022,CB024FTX05,3,augmented,Finance,80030,0,44530,79.7,label_match,MISMATCH
+2022,CB024FTX05,4,augmented,Finance,71540,0,71140,0.6,label_match,OK
+2022,CB024INF01,1,augmented,Information Systems,88550,0,61440,44.1,label_match,MISMATCH
+2022,CB024INF01,2,augmented,Information Systems,83360,0,62730,32.9,label_match,MISMATCH
+2022,CB024INF01,3,augmented,Information Systems,80380,0,74150,8.4,label_match,MISMATCH
+2022,CB024INF01,4,augmented,Information Systems,82260,0,71650,14.8,label_match,MISMATCH
+2022,CB025BUS09,1,augmented,Actuarial Science: Quantitative Finance,88910,0,53500,66.2,label_match,MISMATCH
+2022,CB025BUS09,2,augmented,Actuarial Science: Quantitative Finance,91430,0,53500,70.9,label_match,MISMATCH
+2022,CB025BUS09,3,augmented,Actuarial Science: Quantitative Finance,96590,0,73490,31.4,label_match,MISMATCH
+2022,CB025BUS09,4,augmented,Actuarial Science: Quantitative Finance,71450,0,95590,-25.3,label_match,MISMATCH

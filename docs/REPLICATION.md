@@ -175,23 +175,58 @@ files with written rationale, never by editing outputs.
 | H16 | AD fees published once for two variants | 5-year block vs 4-year augmented | duration-aware matching (`ad_duration`) |
 | H17 | Specialisation renames between books | fees "Analytics" vs handbook "Statistics and Data Sciences" | alias table in `build_main_dataset.py` |
 
-## 5. Adding a new handbook year (e.g. 2026)
+## 5. Adding a new handbook year — batch processing
 
-1. Drop `2026-com-ug.pdf` and `2026-_fees.pdf` into
-   `faculty-handbooks-undergraduate/`.
-2. Run the four pipeline commands with `--year 2026`.
-3. Review the console yields against this document's 2025 numbers — big drops
-   mean the layout changed; check `validation/*_2026.csv` and the parser's
-   "Layout facts" docstring before touching code.
-4. New specialisation names or renames → extend `SPEC_ALIASES`;
-   genuine print defects → add to the relevant `overrides` file **with the
-   reason and source page**.
-5. Commit the new processed CSVs (rows are additive — the `year` column keeps
-   editions side by side; existing 2025 rows must not change) and tag
-   `data-2026`.
-6. Trend analysis then compares plan codes across years (`analysis/`).
+Drop `YYYY-com-ug.pdf` and `YYYY-_fees.pdf` into
+`faculty-handbooks-undergraduate/`, then:
 
-## 6. Extending to the other faculties
+```bash
+python run_pipeline.py --years all        # or --years 2027, or --years 2021-2027
+```
+
+The runner executes fees → com → assemble → validate per year and prints a
+yield summary. Writers are **merge-by-year**: re-running a year replaces
+exactly that year's rows in the processed CSVs and leaves every other year
+byte-identical (verified for the 2025 baseline on every change). Then:
+
+1. Compare the new year's yields to the table in §6 — a large drop means the
+   layout changed; check the header families first (Hazards H18-H20).
+2. New specialisation names/renames → extend `SPEC_ALIASES`; print defects →
+   the relevant `overrides` file **with reason and source page**.
+3. Commit the updated CSVs and validation reports; existing years' rows must
+   show no diff.
+
+## 6. Multi-year status (2021-2026 COM + fees, processed 2026-08-05)
+
+| Year | Specialisations | Curriculum rows | Credit check OK | Published-fee coverage |
+|---|---|---|---|---|
+| 2021 | 71 | 2,434 | 218/269 | 164/269 |
+| 2022 | 69 | 2,468 | 216/261 | 160/261 |
+| 2023 | 71 | 2,491 | 209/265 | 158/265 |
+| 2024 | 72 | 2,318 | 181/255 | 178/255 |
+| 2025 (baseline) | 73 | 2,323 | 217/266 | 180/266 |
+| 2026 | 70 | 2,248 | 199/258 | 172/258 |
+
+Main dataset: **14,282 rows** across six editions; summary: 1,574
+specialisation-years. The credit re-think is visible directly, e.g.
+CB019BUS01 (BCom Actuarial Science) year 1: 185 credits (2021-2023) → 180
+credits (2024-2026), with computed ideal fees equal to the published fee to
+the rand in 2021-2025.
+
+Layout drift encountered and handled across editions:
+
+| # | Hazard | Edition | Handling |
+|---|---|---|---|
+| H18 | Title-Case running headers; catalogue section renamed "Departments offering courses to the Faculty of Commerce" | 2024 | case-insensitive page classification + extra header family |
+| H19 | Plan codes printed inline at the end of the title line (Title Case and UPPERCASE) | 2024 | generalised inline-heading rule; case-insensitive degree parsing |
+| H20 | Per-degree/per-department running headers ("BACHELOR OF COMMERCE AUGMENTED 15"), no "Programmes of Study" header | 2026 | degree/department header families; variant read from the page header |
+| H21 | "NQF credits at HEQSF level N" wording | 2026 | credits-line accepts NQF and HEQSF |
+
+Variant assignment precedence (robust across all layouts): page-header hint
+(2026) → known programme-code family map (`VARIANT_BY_PROGCODE`) → umbrella-
+line tracking (2021-2025).
+
+## 7. Extending to the other faculties
 
 One extractor package per faculty (`extractors/ebe/` etc.), same output
 schemas, same pipeline position as `extractors/com/`. Recommended order:

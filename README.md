@@ -117,5 +117,8 @@ Current status:
 - [x] `extractors/com` — 73 specialisations, curricula, course catalogue
 - [x] `build_main_dataset.py` — main dataset with `ideal_student` flag
 - [x] `validation` — credit totals + fee cross-checks (tag `baseline-2025`)
+- [x] Multi-year COM + fees: 2021-2026 batch-processed via `run_pipeline.py`
+      (14,282 main-dataset rows; merge-by-year writers keep prior years
+      byte-identical)
 - [ ] Remaining faculties: EBE, LAW, FHS, then SCI, HUM
-- [ ] Multi-year loading and trend analysis
+- [ ] Trend analysis across editions (`analysis/`)

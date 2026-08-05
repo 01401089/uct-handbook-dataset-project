@@ -1,0 +1,266 @@
+﻿year,plan_code,study_year,variant,specialisation,credits_ideal,credits_stated,credit_delta,stated_is_minimum,status
+2023,CB001ACC03,1,regular,Financial Accounting: Accounting with Law,146,146,0,False,OK
+2023,CB001ACC03,2,regular,Financial Accounting: Accounting with Law,162,162,0,False,OK
+2023,CB001ACC03,3,regular,Financial Accounting: Accounting with Law,144,144,0,False,OK
+2023,CB001ACC04,1,regular,Financial Accounting: Chartered Accountant,146,146,0,False,OK
+2023,CB001ACC04,2,regular,Financial Accounting: Chartered Accountant,162,162,0,False,OK
+2023,CB001ACC04,3,regular,Financial Accounting: Chartered Accountant,138,144,-6,False,MISMATCH
+2023,CB001ACC08,1,regular,,146,146,0,False,OK
+2023,CB001ACC08,2,regular,,144,144,0,False,OK
+2023,CB001ACC08,3,regular,,138,138,0,False,OK
+2023,CB001BUS06,1,regular,Management Studies,203,185,18,False,MISMATCH
+2023,CB001BUS06,2,regular,Management Studies,168,168,0,False,OK
+2023,CB001BUS06,3,regular,Management Studies,43,144,-101,False,MISMATCH
+2023,CB001ECO02,1,regular,Economics and Finance,167,167,0,False,OK
+2023,CB001ECO02,2,regular,Economics and Finance,150,150,0,True,OK
+2023,CB001ECO02,3,regular,Economics and Finance,144,144,0,False,OK
+2023,CB001ECO03,1,regular,Economics with Law,149,149,0,False,OK
+2023,CB001ECO03,2,regular,Economics with Law,162,162,0,True,OK
+2023,CB001ECO03,3,regular,Economics with Law,144,162,-18,False,MISMATCH
+2023,CB001ECO04,1,regular,Economics and Statistics,185,167,18,False,MISMATCH
+2023,CB001ECO04,2,regular,Economics and Statistics,210,156,54,False,MISMATCH
+2023,CB001ECO04,3,regular,Economics and Statistics,234,180,54,False,UNRESOLVED_SLOTS
+2023,CB001INF01,1,regular,Information Systems,149,149,0,False,OK
+2023,CB001INF01,2,regular,Information Systems,144,144,0,False,OK
+2023,CB001INF01,3,regular,Information Systems,156,156,0,False,OK
+2023,CB001INF06,1,regular,Information Systems and Computer Science,167,149,18,False,MISMATCH
+2023,CB001INF06,2,regular,Information Systems and Computer Science,162,162,0,False,OK
+2023,CB001INF06,3,regular,Information Systems and Computer Science,144,144,0,False,OK
+2023,CB001INF11,1,regular,Information Systems and Finance,167,167,0,False,OK
+2023,CB001INF11,2,regular,Information Systems and Finance,162,162,0,False,OK
+2023,CB001INF11,3,regular,Information Systems and Finance,150,150,0,False,OK
+2023,CB001PHI03,1,regular,"Philosophy, Politics & Economics",149,149,0,False,OK
+2023,CB001PHI03,2,regular,"Philosophy, Politics & Economics",246,174,72,False,MISMATCH
+2023,CB001PHI03,3,regular,"Philosophy, Politics & Economics",222,168,54,False,UNRESOLVED_SLOTS
+2023,CB004BUS07,1,regular,Marketing,167,167,0,False,OK
+2023,CB004BUS07,2,regular,Marketing,168,168,0,False,OK
+2023,CB004BUS07,3,regular,Marketing,198,180,18,False,MISMATCH
+2023,CB004BUS07,4,regular,Marketing,180,180,0,False,OK
+2023,CB004BUS08,1,regular,Organisational Psychology,167,167,0,False,OK
+2023,CB004BUS08,2,regular,Organisational Psychology,162,162,0,False,OK
+2023,CB004BUS08,3,regular,Organisational Psychology,298,180,118,False,MISMATCH
+2023,CB004BUS08,4,regular,Organisational Psychology,156,156,0,False,OK
+2023,CB004BUS22,1,regular,Analytics,185,185,0,False,OK
+2023,CB004BUS22,2,regular,Analytics,186,186,0,False,OK
+2023,CB004BUS22,3,regular,Analytics,210,198,12,True,OK
+2023,CB004BUS22,4,regular,Analytics,178,178,0,False,OK
+2023,CB004CSC05,1,regular,Computer Science,149,185,-36,False,MISMATCH
+2023,CB004CSC05,2,regular,Computer Science,162,162,0,False,OK
+2023,CB004CSC05,3,regular,Computer Science,180,180,0,False,OK
+2023,CB004CSC05,4,regular,Computer Science,262,160,102,False,MISMATCH
+2023,CB004ECO01,1,regular,Economics,167,167,0,False,OK
+2023,CB004ECO01,2,regular,Economics,156,150,6,False,MISMATCH
+2023,CB004ECO01,3,regular,Economics,228,162,66,False,UNRESOLVED_SLOTS
+2023,CB004ECO01,4,regular,Economics,156,156,0,False,OK
+2023,CB004ECO03,1,regular,Economics with Law,167,167,0,False,OK
+2023,CB004ECO03,2,regular,Economics with Law,168,168,0,False,OK
+2023,CB004ECO03,3,regular,Economics with Law,162,162,0,False,OK
+2023,CB004ECO03,4,regular,Economics with Law,174,174,0,False,OK
+2023,CB004FTX04,1,regular,Finance with Accounting,164,167,-3,False,MISMATCH
+2023,CB004FTX04,2,regular,Finance with Accounting,162,162,0,False,OK
+2023,CB004FTX04,3,regular,Finance with Accounting,180,180,0,False,OK
+2023,CB004FTX04,4,regular,Finance with Accounting,162,162,0,False,OK
+2023,CB004FTX05,1,regular,Finance,167,185,-18,False,MISMATCH
+2023,CB004FTX05,2,regular,Finance,168,168,0,False,OK
+2023,CB004FTX05,3,regular,Finance,180,180,0,False,OK
+2023,CB004FTX05,4,regular,Finance,144,144,0,False,OK
+2023,CB004INF01,1,regular,Information Systems,185,185,0,False,OK
+2023,CB004INF01,2,regular,Information Systems,168,168,0,False,OK
+2023,CB004INF01,3,regular,Information Systems,156,156,0,False,OK
+2023,CB004INF01,4,regular,Information Systems,176,176,0,False,OK
+2023,CB011ACC03,1,extended,Financial Accounting: Accounting with Law,92,110,-18,False,MISMATCH
+2023,CB011ACC03,2,extended,Financial Accounting: Accounting with Law,126,126,0,False,OK
+2023,CB011ACC03,3,extended,Financial Accounting: Accounting with Law,126,126,0,False,OK
+2023,CB011ACC03,4,extended,Financial Accounting: Accounting with Law,90,90,0,False,OK
+2023,CB011ACC04,1,extended,Financial Accounting: Chartered Accountant,128,128,0,False,OK
+2023,CB011ACC04,2,extended,Financial Accounting: Chartered Accountant,126,126,0,False,OK
+2023,CB011ACC04,3,extended,Financial Accounting: Chartered Accountant,120,120,0,False,OK
+2023,CB011ACC04,4,extended,Financial Accounting: Chartered Accountant,108,108,0,False,OK
+2023,CB011ACC08,1,extended,Financial Accounting: General Accounting,128,128,0,False,OK
+2023,CB011ACC08,2,extended,Financial Accounting: General Accounting,108,108,0,False,OK
+2023,CB011ACC08,3,extended,Financial Accounting: General Accounting,90,90,0,False,OK
+2023,CB011ACC08,4,extended,Financial Accounting: General Accounting,102,108,-6,False,MISMATCH
+2023,CB011BUS06,1,extended,,131,131,0,False,OK
+2023,CB011BUS06,2,extended,,108,108,0,False,OK
+2023,CB011BUS06,3,extended,,132,132,0,False,OK
+2023,CB011BUS06,4,extended,,18,126,-108,False,MISMATCH
+2023,CB011ECO02,1,extended,Economics and Finance,113,113,0,False,OK
+2023,CB011ECO02,2,extended,Economics and Finance,108,108,0,False,OK
+2023,CB011ECO02,3,extended,Economics and Finance,114,132,-18,False,MISMATCH
+2023,CB011ECO02,4,extended,Economics and Finance,126,108,18,False,MISMATCH
+2023,CB011ECO04,1,extended,Economics and Statistics,244,131,113,False,MISMATCH
+2023,CB011ECO04,2,extended,Economics and Statistics,216,108,108,False,MISMATCH
+2023,CB011ECO04,3,extended,Economics and Statistics,252,108,144,False,MISMATCH
+2023,CB011ECO04,4,extended,Economics and Statistics,270,198,72,False,MISMATCH
+2023,CB011INF01,1,extended,Information Systems,113,113,0,False,OK
+2023,CB011INF01,2,extended,Information Systems,108,108,0,False,OK
+2023,CB011INF01,3,extended,Information Systems,120,120,0,False,OK
+2023,CB011INF01,4,extended,Information Systems,108,108,0,False,OK
+2023,CB011INF06,1,extended,Information Systems and Computer Science,113,113,0,False,OK
+2023,CB011INF06,2,extended,Information Systems and Computer Science,108,108,0,False,OK
+2023,CB011INF06,3,extended,Information Systems and Computer Science,108,108,0,False,OK
+2023,CB011INF06,4,extended,Information Systems and Computer Science,126,126,0,False,OK
+2023,CB011INF11,1,extended,Information Systems and Finance,131,131,0,False,OK
+2023,CB011INF11,2,extended,Information Systems and Finance,108,108,0,False,OK
+2023,CB011INF11,3,extended,Information Systems and Finance,126,126,0,False,OK
+2023,CB011INF11,4,extended,Information Systems and Finance,114,114,0,False,OK
+2023,CB011PHI03,1,extended,"Philosophy, Politics & Economics",113,113,0,False,OK
+2023,CB011PHI03,2,extended,"Philosophy, Politics & Economics",108,108,0,False,OK
+2023,CB011PHI03,3,extended,"Philosophy, Politics & Economics",198,102,96,False,MISMATCH
+2023,CB011PHI03,4,extended,"Philosophy, Politics & Economics",222,162,60,True,UNRESOLVED_SLOTS
+2023,CB015BUS07,1,extended,,131,131,0,False,OK
+2023,CB015BUS07,2,extended,,132,132,0,False,OK
+2023,CB015BUS07,3,extended,,108,108,0,False,OK
+2023,CB015BUS07,4,extended,,162,144,18,False,MISMATCH
+2023,CB015BUS07,5,extended,,180,180,0,False,OK
+2023,CB015BUS08,1,extended,,131,131,0,False,OK
+2023,CB015BUS08,2,extended,,132,132,0,False,OK
+2023,CB015BUS08,3,extended,,126,126,0,False,OK
+2023,CB015BUS08,4,extended,,138,120,18,False,MISMATCH
+2023,CB015BUS08,5,extended,,36,156,-120,False,MISMATCH
+2023,CB015BUS22,1,extended,,113,113,0,False,OK
+2023,CB015BUS22,2,extended,,108,108,0,False,OK
+2023,CB015BUS22,3,extended,,168,168,0,False,OK
+2023,CB015BUS22,4,extended,,192,180,12,True,OK
+2023,CB015BUS22,5,extended,,178,178,0,False,OK
+2023,CB015CSC05,1,extended,,113,113,0,False,OK
+2023,CB015CSC05,2,extended,,126,126,0,False,OK
+2023,CB015CSC05,3,extended,,126,126,0,False,OK
+2023,CB015CSC05,4,extended,,126,126,0,False,OK
+2023,CB015CSC05,5,extended,,262,160,102,False,MISMATCH
+2023,CB015ECO01,1,extended,,131,131,0,False,OK
+2023,CB015ECO01,2,extended,,126,126,0,False,OK
+2023,CB015ECO01,3,extended,,138,138,0,False,OK
+2023,CB015ECO01,4,extended,,156,90,66,True,UNRESOLVED_SLOTS
+2023,CB015ECO01,5,extended,,156,156,0,False,OK
+2023,CB015ECO03,1,extended,,131,131,0,False,OK
+2023,CB015ECO03,2,extended,,114,114,0,False,OK
+2023,CB015ECO03,3,extended,,126,126,0,False,OK
+2023,CB015ECO03,4,extended,,144,144,0,False,OK
+2023,CB015ECO03,5,extended,,156,166,-10,False,MISMATCH
+2023,CB015FTX04,1,extended,,131,131,0,False,OK
+2023,CB015FTX04,2,extended,,135,135,0,False,OK
+2023,CB015FTX04,3,extended,,168,168,0,False,OK
+2023,CB015FTX04,4,extended,,144,144,0,False,OK
+2023,CB015FTX04,5,extended,,144,144,0,False,OK
+2023,CB015FTX05,1,extended,,149,131,18,False,MISMATCH
+2023,CB015FTX05,2,extended,,132,150,-18,False,MISMATCH
+2023,CB015FTX05,3,extended,,90,90,0,False,OK
+2023,CB015FTX05,4,extended,,144,144,0,False,OK
+2023,CB015FTX05,5,extended,,144,144,0,False,OK
+2023,CB015INF01,1,extended,,131,131,0,False,OK
+2023,CB015INF01,2,extended,,108,108,0,False,OK
+2023,CB015INF01,3,extended,,150,150,0,False,OK
+2023,CB015INF01,4,extended,,120,120,0,False,OK
+2023,CB015INF01,5,extended,,176,176,0,False,OK
+2023,CB018BUS01,1,extended,,113,113,0,False,OK
+2023,CB018BUS01,2,extended,,108,108,0,False,OK
+2023,CB018BUS01,3,extended,,150,150,0,False,OK
+2023,CB018BUS01,4,extended,,180,180,0,False,OK
+2023,CB018BUS01,5,extended,,174,174,0,False,OK
+2023,CB018BUS09,1,extended,,113,113,0,False,OK
+2023,CB018BUS09,2,extended,,108,108,0,False,OK
+2023,CB018BUS09,3,extended,,150,150,0,False,OK
+2023,CB018BUS09,4,extended,,198,198,0,False,OK
+2023,CB018BUS09,5,extended,,147,147,0,False,OK
+2023,CB019BUS01,1,regular,Actuarial Science,185,185,0,False,OK
+2023,CB019BUS01,2,regular,Actuarial Science,186,186,0,False,OK
+2023,CB019BUS01,3,regular,Actuarial Science,162,162,0,False,OK
+2023,CB019BUS09,1,regular,Actuarial Science: Quantitative Finance,185,185,0,False,OK
+2023,CB019BUS09,2,regular,Actuarial Science: Quantitative Finance,186,186,0,False,OK
+2023,CB019BUS09,3,regular,Actuarial Science: Quantitative Finance,180,180,0,False,OK
+2023,CB020BUS01,1,extended,Actuarial Science,113,113,0,False,OK
+2023,CB020BUS01,2,extended,Actuarial Science,108,108,0,False,OK
+2023,CB020BUS01,3,extended,Actuarial Science,150,150,0,False,OK
+2023,CB020BUS01,4,extended,Actuarial Science,162,162,0,False,OK
+2023,CB020BUS09,1,extended,Actuarial Science: Quantitative Finance,113,113,0,False,OK
+2023,CB020BUS09,2,extended,Actuarial Science: Quantitative Finance,126,126,0,False,OK
+2023,CB020BUS09,3,extended,Actuarial Science: Quantitative Finance,132,132,0,False,OK
+2023,CB020BUS09,4,extended,Actuarial Science: Quantitative Finance,180,180,0,False,OK
+2023,CB023ACC03,1,augmented,Financial Accounting: Accounting with Law,146,146,0,False,OK
+2023,CB023ACC03,2,augmented,Financial Accounting: Accounting with Law,162,162,0,False,OK
+2023,CB023ACC03,3,augmented,Financial Accounting: Accounting with Law,144,144,0,False,OK
+2023,CB023ACC04,1,augmented,Financial Accounting: Chartered Accountant,146,146,0,False,OK
+2023,CB023ACC04,2,augmented,Financial Accounting: Chartered Accountant,162,162,0,False,OK
+2023,CB023ACC04,3,augmented,Financial Accounting: Chartered Accountant,138,138,0,False,OK
+2023,CB023ACC08,1,augmented,Financial Accounting: General Accounting,146,146,0,False,OK
+2023,CB023ACC08,2,augmented,Financial Accounting: General Accounting,144,144,0,False,OK
+2023,CB023ACC08,3,augmented,Financial Accounting: General Accounting,138,138,0,False,OK
+2023,CB023BUS06,1,augmented,Management Studies,203,185,18,False,MISMATCH
+2023,CB023BUS06,2,augmented,Management Studies,168,168,0,False,OK
+2023,CB023BUS06,3,augmented,Management Studies,18,18,0,False,UNRESOLVED_SLOTS
+2023,CB023ECO02,1,augmented,Economics and Finance,167,167,0,False,OK
+2023,CB023ECO02,2,augmented,Economics and Finance,150,150,0,True,OK
+2023,CB023ECO02,3,augmented,Economics and Finance,144,144,0,False,OK
+2023,CB023ECO03,1,augmented,Economics with Law,149,149,0,False,OK
+2023,CB023ECO03,2,augmented,Economics with Law,162,162,0,True,OK
+2023,CB023ECO03,3,augmented,Economics with Law,144,144,0,False,OK
+2023,CB023ECO04,1,augmented,Economics and Statistics,185,167,18,False,MISMATCH
+2023,CB023ECO04,2,augmented,Economics and Statistics,210,156,54,True,OK
+2023,CB023ECO04,3,augmented,Economics and Statistics,252,180,72,False,MISMATCH
+2023,CB023INF01,1,augmented,Information Systems,149,149,0,False,OK
+2023,CB023INF01,2,augmented,Information Systems,144,144,0,False,OK
+2023,CB023INF01,3,augmented,Information Systems,156,156,0,False,OK
+2023,CB023INF06,1,augmented,Information Systems and Computer Science,167,149,18,False,MISMATCH
+2023,CB023INF06,2,augmented,Information Systems and Computer Science,162,162,0,False,OK
+2023,CB023INF06,3,augmented,Information Systems and Computer Science,144,144,0,False,OK
+2023,CB023INF11,1,augmented,Information Systems and Finance,167,167,0,False,OK
+2023,CB023INF11,2,augmented,Information Systems and Finance,162,162,0,False,OK
+2023,CB023INF11,3,augmented,Information Systems and Finance,150,150,0,False,OK
+2023,CB023PHI03,1,augmented,"Philosophy, Politics & Economics",149,149,0,False,OK
+2023,CB023PHI03,2,augmented,"Philosophy, Politics & Economics",246,174,72,False,MISMATCH
+2023,CB023PHI03,3,augmented,"Philosophy, Politics & Economics",222,168,54,False,UNRESOLVED_SLOTS
+2023,CB024BUS07,1,augmented,Marketing,167,167,0,False,OK
+2023,CB024BUS07,2,augmented,Marketing,168,168,0,False,OK
+2023,CB024BUS07,3,augmented,Marketing,198,180,18,False,MISMATCH
+2023,CB024BUS07,4,augmented,Marketing,180,180,0,False,OK
+2023,CB024BUS08,1,augmented,Organisational Psychology,167,167,0,False,OK
+2023,CB024BUS08,2,augmented,Organisational Psychology,162,162,0,False,OK
+2023,CB024BUS08,3,augmented,Organisational Psychology,198,180,18,False,MISMATCH
+2023,CB024BUS08,4,augmented,Organisational Psychology,36,156,-120,False,MISMATCH
+2023,CB024BUS22,1,augmented,,185,185,0,False,OK
+2023,CB024BUS22,2,augmented,,186,186,0,False,OK
+2023,CB024BUS22,3,augmented,,210,198,12,True,OK
+2023,CB024BUS22,4,augmented,,178,178,0,False,OK
+2023,CB024CSC05,1,augmented,Computer Science,149,185,-36,False,MISMATCH
+2023,CB024CSC05,2,augmented,Computer Science,162,162,0,False,OK
+2023,CB024CSC05,3,augmented,Computer Science,180,180,0,False,OK
+2023,CB024CSC05,4,augmented,Computer Science,262,160,102,False,MISMATCH
+2023,CB024ECO01,1,augmented,Economics,167,167,0,False,OK
+2023,CB024ECO01,2,augmented,Economics,156,156,0,True,OK
+2023,CB024ECO01,3,augmented,Economics,228,162,66,True,UNRESOLVED_SLOTS
+2023,CB024ECO01,4,augmented,Economics,156,156,0,False,OK
+2023,CB024ECO03,1,augmented,Economics with Law,167,167,0,False,OK
+2023,CB024ECO03,2,augmented,Economics with Law,168,168,0,False,OK
+2023,CB024ECO03,3,augmented,Economics with Law,162,162,0,False,OK
+2023,CB024ECO03,4,augmented,Economics with Law,174,174,0,False,OK
+2023,CB024FTX04,1,augmented,Finance with Accounting,164,164,0,False,OK
+2023,CB024FTX04,2,augmented,Finance with Accounting,162,162,0,False,OK
+2023,CB024FTX04,3,augmented,Finance with Accounting,180,180,0,False,OK
+2023,CB024FTX04,4,augmented,Finance with Accounting,162,162,0,False,OK
+2023,CB024FTX05,1,augmented,Finance,167,182,-15,False,MISMATCH
+2023,CB024FTX05,2,augmented,Finance,168,168,0,False,OK
+2023,CB024FTX05,3,augmented,Finance,162,180,-18,False,MISMATCH
+2023,CB024FTX05,4,augmented,Finance,144,144,0,False,OK
+2023,CB024INF01,1,augmented,Information Systems,185,185,0,False,OK
+2023,CB024INF01,2,augmented,Information Systems,168,168,0,False,OK
+2023,CB024INF01,3,augmented,Information Systems,156,156,0,False,OK
+2023,CB024INF01,4,augmented,Information Systems,176,176,0,False,OK
+2023,CB025BUS01,1,augmented,Actuarial Science,185,185,0,False,OK
+2023,CB025BUS01,2,augmented,Actuarial Science,186,186,0,False,OK
+2023,CB025BUS01,3,augmented,Actuarial Science,180,180,0,False,OK
+2023,CB025BUS01,4,augmented,Actuarial Science,174,174,0,False,OK
+2023,CB025BUS09,1,augmented,Actuarial Science: Quantitative Finance,185,185,0,False,OK
+2023,CB025BUS09,2,augmented,Actuarial Science: Quantitative Finance,186,186,0,False,OK
+2023,CB025BUS09,3,augmented,Actuarial Science: Quantitative Finance,198,198,0,False,OK
+2023,CB025BUS09,4,augmented,Actuarial Science: Quantitative Finance,147,147,0,False,OK
+2023,CB026BUS01,1,augmented,Actuarial Science,185,185,0,False,OK
+2023,CB026BUS01,2,augmented,Actuarial Science,186,186,0,False,OK
+2023,CB026BUS01,3,augmented,Actuarial Science,162,162,0,False,OK
+2023,CB026BUS09,1,augmented,Actuarial Science: Quantitative Finance,185,185,0,False,OK
+2023,CB026BUS09,2,augmented,Actuarial Science: Quantitative Finance,186,186,0,False,OK
+2023,CB026BUS09,3,augmented,Actuarial Science: Quantitative Finance,180,180,0,False,OK
+2023,CU017ACC01,1,regular,Accounting,370,185,185,False,MISMATCH
+2023,CU017ACC01,2,regular,Accounting,372,186,186,False,MISMATCH
+2023,CU017ACC01,3,regular,Accounting,378,198,180,False,MISMATCH
+2023,CU017ACC01,4,regular,Accounting,321,147,174,False,MISMATCH
