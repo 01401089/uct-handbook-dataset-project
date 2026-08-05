@@ -7,8 +7,26 @@ Guidance for working in this repository.
 Extract structured data from UCT faculty handbooks (PDF) and the student fees
 handbook into relational CSV tables, to analyse credit-load changes and their fee
 implications across faculties and handbook years. UCT is re-thinking curriculum
-credit loads; this dataset measures the change. 2025 books are loaded now; more
-years will be added later, so **every output table carries a `year` column**.
+credit loads; this dataset measures the change. **The 2025 books are the
+baseline — the initial state before credit re-think editions arrive** (git tag
+`baseline-2025`). More years will be added later, so **every output table
+carries a `year` column** and existing years' rows must never change when a new
+year is loaded.
+
+## Pipeline
+
+```
+python -m extractors.fees.extract --year YYYY
+python -m extractors.com.extract  --year YYYY
+python build_main_dataset.py      --year YYYY
+python validation/validate.py     --year YYYY
+```
+
+`data/processed/main_dataset.csv` is the **single source of truth**: one row
+per specialisation x study-year x course-slot with degree, credit, course and
+fee columns and an `ideal_student` boolean. `docs/REPLICATION.md` is the
+authoritative process log: read it (especially the hazard catalogue) before
+touching any parser or onboarding a new handbook year.
 
 ## Ground rules
 

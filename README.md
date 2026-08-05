@@ -50,22 +50,47 @@ Science define majors plus composition rules). Extraction logic is therefore
 faculty-specific by design; only genuinely shared code (course-code grammar,
 credit-line parsing, PDF-to-text) lives in `common/`.
 
-## Output tables (target schema)
+## The main dataset (single source of truth)
 
-All tables carry a `year` column (handbook edition) so multiple editions coexist.
+**`data/processed/main_dataset.csv`** — one row per specialisation ×
+study-year × course-slot, joining degree, credit, course and fee information,
+with an **`ideal_student`** boolean marking the rows a deterministic "ideal
+student" takes (electives resolved by documented rules). Everything else is a
+building block or a check against it. All tables carry a `year` column so
+multiple handbook editions coexist side by side.
 
 | Table | Grain | Purpose |
 |---|---|---|
-| `programmes` | one row per plan code | degree + specialisation register |
-| `curriculum` | one row per course-slot per plan-year | the curriculum tables as data |
-| `curriculum_totals` | one row per plan-year | handbook-stated total credits (validation anchor) |
-| `courses` | one row per course | title, credits, NQF level, convener, entry requirements |
+| `main_dataset` | specialisation × study-year × course-slot | **single source of truth** incl. `ideal_student` flag |
+| `ideal_student_summary` | specialisation × study-year | computed credits + cost vs stated/published values |
+| `specialisations` | one row per plan/specialisation code | degree + specialisation register (73 in COM 2025) |
+| `curriculum` | one row per course-slot per spec-year | the curriculum tables as data |
+| `curriculum_totals` | one row per spec-year | handbook-stated total credits (validation anchor) |
+| `courses` | one row per course | catalogue: credits, NQF level, convener, requirements |
 | `course_fees` | one row per course code | Rand fee from fees book §12 |
 | `programme_fees_published` | one row per programme-year | published "typical" annual fee from fees book §11 |
-| `ideal_student` | one row per plan-year (derived) | computed credits + cost vs stated/published values |
+
+Pipeline (run from the repo root, in order):
+
+```bash
+python -m extractors.fees.extract --year 2025
+python -m extractors.com.extract --year 2025
+python build_main_dataset.py --year 2025
+python validation/validate.py --year 2025
+```
 
 See [docs/commerce-review-and-proposal.md](docs/commerce-review-and-proposal.md)
-for the full schema, the ideal-student rules, and the build roadmap.
+for the design and [docs/REPLICATION.md](docs/REPLICATION.md) for the detailed
+process log, hazard catalogue, and how to add future handbook years.
+
+## Baseline
+
+The git tag **`baseline-2025`** marks the dataset built from the 2025
+handbooks — the **initial state before further credit re-think editions are
+introduced**. 2025 validation: 217/266 spec-years reconcile credits exactly
+with the handbook's stated totals; median fee delta vs published programme
+fees is 0.0%; every remaining discrepancy is listed in `validation/` with
+provenance.
 
 ## Key identifiers
 
@@ -85,12 +110,12 @@ for the full schema, the ideal-student rules, and the build roadmap.
 pip install -r requirements.txt
 ```
 
-Extractors are run per faculty from the repo root (each `extractors/<fac>/`
-package documents its own entry point as it is built). Current status:
+Current status:
 
 - [x] Repo scaffold, Commerce handbook review, schema proposal
-- [ ] `extractors/fees` — course fee table + published programme fees
-- [ ] `extractors/com` — programmes, curricula, courses
-- [ ] `validation` — credit totals + fee cross-checks
+- [x] `extractors/fees` — course fee table + published programme fees
+- [x] `extractors/com` — 73 specialisations, curricula, course catalogue
+- [x] `build_main_dataset.py` — main dataset with `ideal_student` flag
+- [x] `validation` — credit totals + fee cross-checks (tag `baseline-2025`)
 - [ ] Remaining faculties: EBE, LAW, FHS, then SCI, HUM
 - [ ] Multi-year loading and trend analysis
