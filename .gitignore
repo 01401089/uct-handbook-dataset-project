@@ -6,7 +6,7 @@ venv/
 *.egg-info/
 
 # Data pipeline
-data/interim/
+data/interim/*
 !data/interim/.gitkeep
 
 # OS / editor
