@@ -26,8 +26,9 @@ number can be traced back to the page of the handbook it came from.
 | Faculty of Commerce undergraduate handbook | 2021–2026 | complete |
 | Engineering & the Built Environment undergraduate handbook | 2021–2026 | complete (adjudication review pending) |
 | Faculty of Law undergraduate handbook (LLB streams) | 2021–2026 | complete |
+| Faculty of Health Sciences undergraduate handbook | 2021–2026 | complete (adjudication review pending) |
 | Student Fees handbook (course fees + published programme fees) | 2021–2026 | complete |
-| Health Sciences, Humanities, Science handbooks | 2025 books on file | extraction pending |
+| Humanities, Science handbooks | 2025 books on file | extraction pending |
 
 The 2025 edition is treated as the **baseline** — the recorded state of the
 curriculum against which the credit re-think editions are compared. Across
@@ -220,25 +221,26 @@ validation triangle:
 Results for the current load, after the final-clean layer
 (consistent / resolved / unresolved per faculty):
 
-| Year | Commerce | EBE | Law |
-|---|---|---|---|
-| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 |
-| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 |
-| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 |
-| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 |
-| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 |
-| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 |
+| Year | Commerce | EBE | Law | Health Sciences |
+|---|---|---|---|---|
+| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 | 7 / 0 / 12 |
+| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 | 8 / 0 / 11 |
+| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 | 14 / 0 / 11 |
+| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 | 14 / 0 / 11 |
+| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 | 11 / 0 / 12 |
+| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 | 10 / 0 / 13 |
 
-80% of the 2,222 specialisation-years are fully resolved at high or medium
+78% of the 2,356 specialisation-years are fully resolved at high or medium
 confidence. The unresolved remainder carries the computed value at low
 confidence and is individually listed, with suggested actions, in
 `validation/pending_adjudication_<year>.csv`. Commerce's register has been
-provisionally seeded; **EBE's adjudication pass has not yet been done**,
-which is why its unresolved counts are proportionally higher. Law's
-unresolved rows are all the legacy five-year stream, which prints no credit
-totals; its two active streams reconcile exactly in every edition (and the
-graduate stream's computed first-year cost matches the published fee to the
-rand).
+provisionally seeded; the EBE, Law and Health Sciences adjudication passes
+have not yet been done. Law's unresolved rows are all the legacy five-year
+stream (no printed totals); Health Sciences' are dominated by the combined
+Audiology / Speech-Language Pathology block, whose interleaved curricula
+await a dedicated splitter. Highlights: the MBChB reconciles all six years
+exactly, with years 1–3 computed fees matching the published figures to the
+rand; Law's graduate-stream first-year cost likewise matches to the rand.
 
 Where computed fees can be compared with published fees, the **median
 difference is 0.0%** — for most programmes the computation reproduces UCT's

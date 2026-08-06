@@ -20,7 +20,7 @@ RAW = ROOT / "faculty-handbooks-undergraduate"
 
 # Faculty extractors run when the year's PDF is present; fees always runs.
 FACULTY_EXTRACTORS = [
-    ("com", "com"), ("ebe", "ebe"), ("law", "law"),   # (step name, pdf slug)
+    ("com", "com"), ("ebe", "ebe"), ("law", "law"), ("fhs", "fhs"),
 ]
 
 
@@ -83,7 +83,7 @@ def main():
         year_steps = steps_for(year)
         for name, cmd in year_steps:
             full = cmd + ["--year", str(year)]
-            if args.skip_dump and name in ("fees", "com", "ebe", "law"):
+            if args.skip_dump and name in ("fees", "com", "ebe", "law", "fhs"):
                 full.append("--skip-dump")
             r = subprocess.run(full, cwd=ROOT, capture_output=True, text=True)
             out = (r.stdout + r.stderr).strip()

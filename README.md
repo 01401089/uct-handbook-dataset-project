@@ -17,12 +17,12 @@ handbooks (PDF) and the student fees handbooks into relational tables so that:
    can be costed in credits and Rand.
 3. Credit-load and fee trends can be compared across handbook editions.
 
-**Current coverage: Commerce + EBE + Law + Fees for 2021–2026** (six
-editions, 19,251 main-dataset rows across 613 specialisation register
-entries). The credit re-think is already visible in the data — e.g. BCom
-Actuarial Science year 1 drops from 185 to 180 credits at the 2024 edition.
-Remaining faculties (FHS, HUM, SCI) have 2025 books loaded and extractors
-pending.
+**Current coverage: Commerce + EBE + Law + Health Sciences + Fees for
+2021–2026** (six editions, 20,438 main-dataset rows across 696
+specialisation register entries). The credit re-think is already visible in
+the data — e.g. BCom Actuarial Science year 1 drops from 185 to 180 credits
+at the 2024 edition. Remaining faculties (HUM, SCI) have 2025 books loaded
+and extractors pending.
 
 ## Quick start
 
@@ -67,8 +67,9 @@ uct-handbook-project/
 │   ├── com/                           #   built (2021-2026)
 │   ├── ebe/                           #   built (2021-2026)
 │   ├── law/                           #   built (2021-2026)
+│   ├── fhs/                           #   built (2021-2026, bespoke parser)
 │   ├── fees/                          #   built (2021-2026)
-│   └── fhs/ hum/ sci/                 #   pending
+│   └── hum/ sci/                      #   pending
 ├── resolutions/                       # per-faculty adjudication registers
 ├── data/
 │   ├── interim/                       # per-page text dumps (gitignored)
@@ -107,27 +108,29 @@ rationale and PDF page evidence.
 
 Consistent / resolved / unresolved per faculty:
 
-| Year | COM | EBE | LAW |
-|---|---|---|---|
-| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 |
-| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 |
-| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 |
-| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 |
-| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 |
-| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 |
+| Year | COM | EBE | LAW | FHS |
+|---|---|---|---|---|
+| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 | 7 / 0 / 12 |
+| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 | 8 / 0 / 11 |
+| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 | 14 / 0 / 11 |
+| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 | 14 / 0 / 11 |
+| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 | 11 / 0 / 12 |
+| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 | 10 / 0 / 13 |
 
-Across 2,222 specialisation-years: **1,702 consistent, 81 resolved by
-rules/adjudications, 439 unresolved** (flagged at low confidence, carried at
+Across 2,356 specialisation-years: **1,766 consistent, 81 resolved by
+rules/adjudications, 509 unresolved** (flagged at low confidence, carried at
 the computed value, enumerated with suggested actions in
 `validation/pending_adjudication_<year>.csv`). Commerce's register has been
-provisionally seeded; the EBE adjudication pass is pending (DEV-TODO.md).
-LAW's unresolved rows are all the legacy five-year stream, which prints no
-credit totals; its two active streams reconcile exactly in every edition.
-Computed fees reconcile with published fees at **median delta 0.0%** for COM
-and EBE; LAW publishes one flat annual fee per stream (matched as
-`flat_annual`), so per-year comparisons legitimately diverge. As-printed
-handbook defects are preserved in the base layer and resolved — never
-silently corrected — in the final layer.
+provisionally seeded; the EBE, LAW and FHS adjudication passes are pending
+(DEV-TODO.md). LAW's unresolved rows are all the legacy five-year stream
+(prints no totals); FHS's are dominated by the combined Audiology /
+Speech-Language block, whose interleaved sub-tables need a dedicated
+splitter. The MBChB reconciles all six years exactly, with years 1–3 fees
+matching published figures to the rand. Computed fees reconcile at **median
+delta 0.0%** for COM, EBE and FHS; LAW publishes one flat annual fee per
+stream (`flat_annual`), so per-year comparisons legitimately diverge.
+As-printed handbook defects are preserved in the base layer and resolved —
+never silently corrected — in the final layer.
 
 ## Key identifiers
 
@@ -165,9 +168,11 @@ silently corrected — in the final layer.
 - [x] EBE extractor (2021–2026) on the shared engine (`common/handbook_parser.py`)
 - [x] LAW extractor (2021–2026): LLB streams incl. level-based totals and
       flat-annual published fees
-- [ ] Review of the 44 provisional COM adjudications; EBE + LAW adjudication
-      passes (`DEV-TODO.md` documents the workflow)
-- [ ] Remaining faculties: FHS, then SCI, HUM
+- [x] FHS extractor (2021–2026): bespoke parser (multi-code blocks,
+      trailing totals, six-year MBChB) reusing the shared grammar
+- [ ] Review of the 44 provisional COM adjudications; EBE + LAW + FHS
+      adjudication passes (`DEV-TODO.md` documents the workflow)
+- [ ] Remaining faculties: SCI, HUM (majors + composition rules)
 - [ ] Trend analysis across editions (`analysis/`)
 
 Git tags: `baseline-2025` (the pre-change initial state) and

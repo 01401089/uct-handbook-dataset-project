@@ -219,3 +219,7 @@
 2021,LP001,1,regular,Graduate LLB Stream,62840,0,62840,0.0,flat_annual,OK
 2021,LP001,2,regular,Graduate LLB Stream,71700,0,62840,14.1,flat_annual,MISMATCH
 2021,LP001,3,regular,Graduate LLB Stream,73290,14220,62840,16.6,flat_annual,MISMATCH
+2021,MB010,1,regular,Speech-Language Pathology,83390,0,76280,9.3,duration,MISMATCH
+2021,MB010,2,regular,Speech-Language Pathology,162390,0,71760,126.3,duration,MISMATCH
+2021,MB010,3,regular,Speech-Language Pathology,136480,0,73060,86.8,duration,MISMATCH
+2021,MB010,4,regular,Speech-Language Pathology,125470,0,72710,72.6,duration,MISMATCH

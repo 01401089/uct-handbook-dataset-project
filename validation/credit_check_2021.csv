@@ -375,3 +375,22 @@
 2021,LP001,1,regular,Graduate LLB Stream,144,144,0,False,OK
 2021,LP001,2,regular,Graduate LLB Stream,180,180,0,False,OK
 2021,LP001,3,regular,Graduate LLB Stream,180,180,0,False,OK
+2021,MB003AHS09,,extended,,112,,,False,NO_STATED_TOTAL
+2021,MB003AHS09,1,extended,,144,144,0,False,OK
+2021,MB003AHS09,2,extended,,267,123,144,False,MISMATCH
+2021,MB003AHS09,3,extended,,148,148,0,False,OK
+2021,MB003AHS09,4,extended,,144,144,0,False,OK
+2021,MB004AHS08,,extended,,136,,,False,NO_STATED_TOTAL
+2021,MB004AHS08,1,extended,,142,142,0,False,OK
+2021,MB004AHS08,2,extended,,329,164,165,False,MISMATCH
+2021,MB004AHS08,3,extended,,150,150,0,False,OK
+2021,MB004AHS08,4,extended,,132,132,0,False,OK
+2021,MB010,,regular,Speech-Language Pathology,236,,,False,NO_STATED_TOTAL
+2021,MB010,1,regular,Speech-Language Pathology,194,176,18,False,MISMATCH
+2021,MB010,2,regular,Speech-Language Pathology,443,162,281,False,MISMATCH
+2021,MB010,3,regular,Speech-Language Pathology,262,140,122,False,MISMATCH
+2021,MB010,4,regular,Speech-Language Pathology,214,124,90,False,MISMATCH
+2021,MB026,1,regular,,201,,,False,NO_STATED_TOTAL
+2021,MB026,2,regular,,817,,,False,NO_STATED_TOTAL
+2021,MU002AHS21,,regular,,120,,,False,NO_STATED_TOTAL
+2021,MU003MDN27,1,regular,ADVANCED DIPLOMA IN COSMETIC FORMULATION SCIENCE Convener: Professor N Khuma,120,120,0,False,OK

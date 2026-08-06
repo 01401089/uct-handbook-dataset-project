@@ -234,3 +234,21 @@
 2024,LP001,1,regular,Graduate LLB Stream,72020,0,72020,0.0,flat_annual,OK
 2024,LP001,2,regular,Graduate LLB Stream,84480,0,72020,17.3,flat_annual,MISMATCH
 2024,LP001,3,regular,Graduate LLB Stream,77100,9360,72020,7.1,flat_annual,MISMATCH
+2024,MB003AHS09,1,regular,Occupational Therapy,79820,0,79820,0.0,duration,OK
+2024,MB003AHS09,2,regular,Occupational Therapy,73800,0,73800,0.0,duration,OK
+2024,MB003AHS09,3,regular,Occupational Therapy,67780,0,67780,0.0,duration,OK
+2024,MB003AHS09,4,regular,Occupational Therapy,86140,0,86140,0.0,duration,OK
+2024,MB004AHS08,1,regular,Physiotherapy,75820,0,75820,0.0,duration,OK
+2024,MB004AHS08,2,regular,Physiotherapy,95690,0,95690,0.0,duration,OK
+2024,MB004AHS08,3,regular,Physiotherapy,69350,0,69350,0.0,duration,OK
+2024,MB004AHS08,4,regular,Physiotherapy,78240,0,78240,0.0,duration,OK
+2024,MB011,1,regular,Audiology,95630,0,86710,10.3,duration,MISMATCH
+2024,MB011,2,regular,Audiology,190400,0,90440,110.5,duration,MISMATCH
+2024,MB011,3,regular,Audiology,152220,0,82100,85.4,duration,MISMATCH
+2024,MB011,4,regular,Audiology,143740,0,83300,72.6,duration,MISMATCH
+2024,MB014,1,regular,Medicine,102470,0,102470,0.0,duration,OK
+2024,MB014,2,regular,Medicine,120950,0,120950,0.0,duration,OK
+2024,MB014,3,regular,Medicine,127620,0,127620,0.0,duration,OK
+2024,MB014,4,regular,Medicine,73730,0,124770,-40.9,duration,MISMATCH
+2024,MB014,5,regular,Medicine,17030,0,99560,-82.9,duration,MISMATCH
+2024,MB014,6,regular,Medicine,14700,0,124840,-88.2,duration,MISMATCH

@@ -60,15 +60,29 @@ pending reports. Known clusters to adjudicate (same workflow as §1):
 - The two-year graduate LLB stream shares LP001's printed table; if
   stream-level analysis is wanted, model it as a variant.
 
-## 4. Remaining faculties
+## 4. FHS follow-ups
 
-- FHS (likely the shared engine + a FacultyConfig), then SCI and HUM
-  (major + composition rules — the ideal student is constructed from the
-  faculty rules section, not read off a table; probably a bespoke parser).
+- **Audiology / Speech-Language combined block**: the two degrees' sub-
+  tables interleave inside one block with shared slashed totals; a dedicated
+  sub-splitter (detect the per-degree sub-headings between tables) would
+  separate MB011/MB019 from MB010/MB018 curricula and clear most FHS
+  unresolved spec-years.
+- MBChB clinical-year fees: years 4–6 computed fees are far below published
+  (many clinical rotation codes have no §12 fee row) — confirm billing
+  model with the fees office before adjudicating.
+- 39 curriculum rows carry no study_year (orphans outside any table
+  context) — inspect and either home or exclude via register.
+- FHS adjudication pass (registers empty).
+
+## 5. Remaining faculties
+
+- SCI and HUM (major + composition rules — the ideal student is constructed
+  from the faculty rules section, not read off a table; bespoke parsers in
+  the FHS mould reusing the shared grammar).
 - Each faculty gets `extractors/<fac>/`, a `resolutions/<fac>.csv`, and its
   own hazard notes in REPLICATION.md.
 
-## 5. Analysis layer
+## 6. Analysis layer
 
 - `analysis/` trend queries over `ideal_student_summary_final.csv`:
   credit-load and cost per specialisation across editions, faculty-level
@@ -76,7 +90,7 @@ pending reports. Known clusters to adjudicate (same workflow as §1):
 - Flag credit-re-think transition points automatically (year-over-year
   final_credits changes per plan code).
 
-## 6. Smaller engineering items
+## 7. Smaller engineering items
 
 - `run_pipeline.py`: parallelise the per-year loop (years are independent).
 - Course catalogue coverage: ~50-100 curriculum courses per year have no

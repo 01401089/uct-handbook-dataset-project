@@ -376,3 +376,22 @@
 2022,LP001,1,regular,Graduate LLB Stream,144,144,0,False,OK
 2022,LP001,2,regular,Graduate LLB Stream,180,180,0,False,OK
 2022,LP001,3,regular,Graduate LLB Stream,180,180,0,False,OK
+2022,MB003,,regular,,60,,,False,NO_STATED_TOTAL
+2022,MB003,1,regular,,144,144,0,False,OK
+2022,MB003,2,regular,,133,123,10,False,MISMATCH
+2022,MB003,3,regular,,148,148,0,False,OK
+2022,MB003,4,regular,,144,144,0,False,OK
+2022,MB004,,regular,,60,,,False,NO_STATED_TOTAL
+2022,MB004,1,regular,,142,142,0,False,OK
+2022,MB004,2,regular,,182,164,18,False,MISMATCH
+2022,MB004,3,regular,,150,150,0,False,OK
+2022,MB004,4,regular,,132,132,0,False,OK
+2022,MB010,,regular,Speech-Language Pathology,60,,,False,NO_STATED_TOTAL
+2022,MB010,1,regular,Speech-Language Pathology,194,176,18,False,MISMATCH
+2022,MB010,2,regular,Speech-Language Pathology,433,162,271,False,MISMATCH
+2022,MB010,3,regular,Speech-Language Pathology,266,140,126,False,MISMATCH
+2022,MB010,4,regular,Speech-Language Pathology,214,124,90,False,MISMATCH
+2022,MB020,1,regular,,120,60,60,False,MISMATCH
+2022,MB020,2,regular,,817,,,False,NO_STATED_TOTAL
+2022,MU003MDN27,1,regular,,120,120,0,False,OK
+2022,MU004AHS21,1,regular,,120,120,0,False,OK

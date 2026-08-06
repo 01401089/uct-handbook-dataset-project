@@ -223,3 +223,7 @@
 2022,LP001,1,regular,Graduate LLB Stream,65540,0,65540,0.0,flat_annual,OK
 2022,LP001,2,regular,Graduate LLB Stream,76860,0,65540,17.3,flat_annual,MISMATCH
 2022,LP001,3,regular,Graduate LLB Stream,70350,8740,65540,7.3,flat_annual,MISMATCH
+2022,MB010,1,regular,Speech-Language Pathology,86960,0,79540,9.3,duration,MISMATCH
+2022,MB010,2,regular,Speech-Language Pathology,169330,0,74820,126.3,duration,MISMATCH
+2022,MB010,3,regular,Speech-Language Pathology,142320,0,70000,103.3,duration,MISMATCH
+2022,MB010,4,regular,Speech-Language Pathology,130800,0,75800,72.6,duration,MISMATCH

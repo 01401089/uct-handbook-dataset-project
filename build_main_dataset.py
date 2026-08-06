@@ -152,6 +152,7 @@ def match_published_fees(prog_fees, specialisations, duration_by_plan):
         section = ("Commerce" if r["faculty_section"] == "Commerce"
                    else "EBE" if r["faculty_section"].startswith("Engineering")
                    else "LAW" if r["faculty_section"].startswith("Law")
+                   else "FHS" if r["faculty_section"].startswith("Health")
                    else None)
         if section is None:
             continue
@@ -176,6 +177,36 @@ def match_published_fees(prog_fees, specialisations, duration_by_plan):
                     plans, method = matching, "ad_duration"
                 else:
                     method = "ad_shared"
+            else:
+                method = "label_match"
+        elif section == "FHS":
+            # Five UG degrees publish clean per-year blocks; everything else
+            # in the Health Sciences pages is postgraduate noise.
+            if re.search(r"PG Dip|Master|MPhil|MMed|PhD|Dissertation|Honours"
+                         r"|Postgrad|\bMD\b|Diploma", label, re.I):
+                unmatched.append(label)
+                continue
+            fhs_map = [(r"MBChB", "MBChB"), (r"Audiology", "BSc(Audiology)"),
+                       (r"Speech", "BSc(SLP)"),
+                       (r"Occupational Therapy", "BSc(OT)"),
+                       (r"Physiotherapy", "BSc(Physio)")]
+            abbrev = next((a for pat, a in fhs_map if re.search(pat, label, re.I)),
+                          None)
+            if not abbrev:
+                unmatched.append(label)
+                continue
+            plans = [p for (a, _ad, _s), ps in by_key.items() if a == abbrev
+                     for p in ps]
+            if not plans:
+                unmatched.append(label)
+                continue
+            if len(plans) > 1:
+                matching = [p for p in plans
+                            if duration_by_plan.get(p) == len(years)]
+                if matching:
+                    plans, method = matching, "duration"
+                else:
+                    method = "shared"
             else:
                 method = "label_match"
         elif section == "LAW":
@@ -276,8 +307,9 @@ def main():
     fee_idx = build_fee_index(course_fees)
     duration_by_plan = defaultdict(int)
     for r in cur:
-        duration_by_plan[r["plan_code"]] = max(duration_by_plan[r["plan_code"]],
-                                               int(r["study_year"]))
+        if r["study_year"]:  # FHS rows without a resolvable year stay blank
+            duration_by_plan[r["plan_code"]] = max(
+                duration_by_plan[r["plan_code"]], int(r["study_year"]))
     fee_map, unmatched_labels = match_published_fees(prog_fees, specs, duration_by_plan)
     stated = {(t["plan_code"], t["study_year"], t["table_index"]):
               (int(t["stated_total_credits"]), t["is_minimum"] == "True") for t in totals}

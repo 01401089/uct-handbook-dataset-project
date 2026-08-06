@@ -366,3 +366,26 @@
 2025,LP001,1,regular,Graduate LLB Stream,144,144,0,False,OK
 2025,LP001,2,regular,Graduate LLB Stream,180,180,0,False,OK
 2025,LP001,3,regular,Graduate LLB Stream,180,180,0,False,OK
+2025,MB001DOM02,,regular,,455,,,False,NO_STATED_TOTAL
+2025,MB003AHS09,1,regular,Occupational Therapy,144,144,0,False,OK
+2025,MB003AHS09,2,regular,Occupational Therapy,143,123,20,False,MISMATCH
+2025,MB003AHS09,3,regular,Occupational Therapy,148,148,0,False,OK
+2025,MB003AHS09,4,regular,Occupational Therapy,144,144,0,False,OK
+2025,MB004AHS08,1,regular,Physiotherapy,142,142,0,False,OK
+2025,MB004AHS08,2,regular,Physiotherapy,182,164,18,False,MISMATCH
+2025,MB004AHS08,3,regular,Physiotherapy,170,170,0,False,OK
+2025,MB004AHS08,4,regular,Physiotherapy,156,132,24,False,MISMATCH
+2025,MB011,1,regular,Audiology,194,176,18,False,MISMATCH
+2025,MB011,2,regular,Audiology,451,162,289,False,MISMATCH
+2025,MB011,3,regular,Audiology,258,140,118,False,MISMATCH
+2025,MB011,4,regular,Audiology,214,124,90,False,MISMATCH
+2025,MB014,1,regular,Medicine,167,167,0,False,OK
+2025,MB014,2,regular,Medicine,165,165,0,False,OK
+2025,MB014,3,regular,Medicine,198,198,0,False,OK
+2025,MB014,4,regular,Medicine,220,220,0,False,OK
+2025,MB014,5,regular,Medicine,210,210,0,False,OK
+2025,MB014,6,regular,Medicine,254,254,0,False,OK
+2025,MB020,1,regular,Medicine,180,,,False,NO_STATED_TOTAL
+2025,MU002AHS21,1,regular,HIGHER CERTIFICATE IN DISABILITY PRACTICE,180,120,60,False,MISMATCH
+2025,MU002AHS21,2,regular,HIGHER CERTIFICATE IN DISABILITY PRACTICE,221,,,False,NO_STATED_TOTAL
+2025,MU003MDN27,1,regular,ADVANCED DIPLOMA IN COSMETIC FORMULATION SCIENCE,105,120,-15,False,MISMATCH

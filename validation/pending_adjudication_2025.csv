@@ -75,3 +75,15 @@
 2025,LB003,3,NO_STATED_TOTAL,120,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
 2025,LB003,4,NO_STATED_TOTAL,144,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
 2025,LB003,5,NO_STATED_TOTAL,180,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2025,MB001DOM02,,NO_STATED_TOTAL,455,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2025,MB003AHS09,2,MISMATCH,143,123,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2025,MB004AHS08,2,MISMATCH,182,164,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2025,MB004AHS08,4,MISMATCH,156,132,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2025,MB011,1,MISMATCH,194,176,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2025,MB011,2,MISMATCH,451,162,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2025,MB011,3,MISMATCH,258,140,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2025,MB011,4,MISMATCH,214,124,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2025,MB020,1,NO_STATED_TOTAL,180,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2025,MU002AHS21,1,MISMATCH,180,120,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2025,MU002AHS21,2,NO_STATED_TOTAL,221,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2025,MU003MDN27,1,MISMATCH,105,120,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules

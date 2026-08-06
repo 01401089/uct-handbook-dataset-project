@@ -235,6 +235,9 @@ Layout drift encountered and handled across editions:
 | H29 | Level-based totals with two wordings | LAW: "Total credits for Preliminary Level … 144" vs "… for first (Preliminary) year … 144"; stream grand totals must NOT match | faculty `total_line` override; grand totals excluded by pattern |
 | H30 | Slot credits on a continuation line | LAW: "Two semester courses in a single language, …" + "…… 36 5" | `extra_elective_nocred` + credits-continuation merge |
 | H31 | Section running header mislabelled by the book | LAW 2026 prints "COURSE OUTLINES (LLB)" over the rules-section pages | content reclassification (`content_reclassify`): programme signatures override the header |
+| H32 | Multi-code programme blocks with shared curricula | FHS: "[MB014, MB020]", "[BSc Audiology MB011/MB019 & BSc Speech-Language Pathology MB010/MB018]" | bespoke FHS parser: primary code carries the curriculum, siblings noted; per-segment degree pairing |
+| H33 | Trailing totals with slashed variant values | FHS: rows print BEFORE "Total NQF credits for year 2 … 162/168" | rows buffer until the next total/heading stamps their year; slash → credits + stated_total_max |
+| H34 | Multi-line code brackets and programme-vs-plan code mixes | FHS 2021-2023: "[Programme code: MB003 or MB016 … Plan code: MB003AHS09." | closing bracket optional; 10-char plan codes take precedence over 5-char programme codes they subsume |
 
 Failing to recognise a heading is the costliest hazard class: the previous
 block silently **swallows** the next programme's tables (doubling its row
@@ -302,33 +305,44 @@ its own faculty's rows.
   method `flat_annual`; per-year divergence from the flat figure is expected
   and is not a data defect.
 
-## 8. Multi-year status (COM + EBE + LAW, final layer 2026-08-06)
+**FHS (bespoke parser, `extractors/fhs/extract.py`).** FHS does not fit the
+block engine: programme blocks are bracket lines carrying one or more MB
+codes with shared curricula (H32), totals trail their tables with several
+wordings and slashed variant values (H33), the MBChB runs SIX years with
+rule-prefixed headings ("FBA3.8 Sixth Year"), and 2022-2023 use per-degree
+running headers while 2021-2023 print multi-line brackets (H34). The parser
+reuses the shared grammar (course rows, OR handling) and the engine's
+catalogue parser/classifier. Conventions: primary code carries the
+curriculum; second code of a pair is the intervention/extended variant;
+known residual — the combined Audiology/Speech-Language block interleaves
+both degrees' sub-tables before shared totals and needs a dedicated
+splitter (its spec-years are flagged unresolved; see DEV-TODO.md).
+
+## 8. Multi-year status (COM + EBE + LAW + FHS, final layer 2026-08-06)
 
 Consistent / resolved / unresolved per faculty:
 
-| Year | COM | EBE | LAW |
-|---|---|---|---|
-| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 |
-| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 |
-| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 |
-| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 |
-| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 |
-| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 |
+| Year | COM | EBE | LAW | FHS |
+|---|---|---|---|---|
+| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 | 7 / 0 / 12 |
+| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 | 8 / 0 / 11 |
+| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 | 14 / 0 / 11 |
+| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 | 14 / 0 / 11 |
+| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 | 11 / 0 / 12 |
+| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 | 10 / 0 / 13 |
 
-Main dataset: **19,251 rows** (COM 14,282 + EBE 4,536 + LAW 433); 613
-specialisation register entries; 2,222 specialisation-years (1,702
-consistent, 81 resolved, 439 unresolved pending adjudication — the EBE and
-LAW registers are empty until their review passes, see DEV-TODO.md; LAW's
-unresolved rows are entirely the legacy LB003 stream, which prints no
-totals). Median computed-vs-published fee delta is 0.0% for COM and EBE;
-LAW's flat-annual published fees make per-year deltas structurally
-divergent (LP001 year 1 matches to the rand).
+Main dataset: **20,438 rows** (COM 14,282 + EBE 4,536 + LAW 433 + FHS
+1,187); 696 specialisation register entries; 2,356 specialisation-years
+(1,766 consistent, 81 resolved, 509 unresolved pending adjudication — the
+EBE/LAW/FHS registers are empty until their review passes, see DEV-TODO.md).
+Median computed-vs-published fee delta is 0.0% for COM, EBE and FHS (the
+MBChB's years 1-3 match to the rand); LAW's flat-annual published fees make
+per-year deltas structurally divergent (LP001 year 1 matches to the rand).
 
 ## 9. Extending to the remaining faculties
 
-FHS next (likely the same publisher template → a `FacultyConfig`), then SCI
-and HUM — for those two the unit of extraction is the *major* (`SB…`/`HB…`
-plan codes) plus the degree-composition rules from the faculty rules
-section, from which the ideal student's curriculum is constructed rather
-than read off a table; they will likely need their own parser rather than
-the shared engine.
+SCI and HUM remain — the unit of extraction there is the *major*
+(`SB…`/`HB…` plan codes) plus the degree-composition rules from the faculty
+rules section, from which the ideal student's curriculum is constructed
+rather than read off a table; expect bespoke parsers in the FHS mould
+(reusing the shared grammar and catalogue parser).
