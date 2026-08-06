@@ -1,0 +1,449 @@
+# UCT Handbook Dataset — User Manual
+
+*For reviewers, deans, and faculty planning teams.*
+*Dataset version: all six faculties (Commerce, EBE, Law, Health Sciences,
+Science, Humanities) + Fees, 2021–2026 editions (August 2026).*
+
+---
+
+## 1. Purpose
+
+The University has been re-thinking curriculum credit loads, and some changes
+are already in effect. To evaluate those changes, we need to answer, per
+degree programme, three questions:
+
+1. **How many credits does a student actually carry each year of study, and
+   how has that changed across handbook editions?**
+2. **What does that credit load cost, and how has the cost moved with it?**
+3. **What do the faculty rules say the whole degree must total — and when
+   did that requirement change?** The rules sections print each degree's
+   minimum credits, and the re-think is written into them directly: the
+   BBusSc minimum fell from 623 to 528 credits at the 2025 edition (its
+   Actuarial Science stream from 681 to 528), the engineering faculty's
+   4-year minimum from 576 to 560 at 2026, and the undergraduate LLB's
+   stream total from 660 to 637 at 2026.
+
+The published handbooks contain the answers, but as narrative PDF documents.
+This project converts them into a single analysable dataset in which every
+number can be traced back to the page of the handbook it came from.
+
+## 2. What is covered
+
+| Content | Editions | Status |
+|---|---|---|
+| Faculty of Commerce undergraduate handbook | 2021–2026 | complete |
+| Engineering & the Built Environment undergraduate handbook | 2021–2026 | complete (adjudication review pending) |
+| Faculty of Law undergraduate handbook (LLB streams) | 2021–2026 | complete |
+| Faculty of Health Sciences undergraduate handbook | 2021–2026 | complete (adjudication review pending) |
+| Faculty of Science undergraduate handbook (majors) | 2021–2026 | complete |
+| Faculty of Humanities undergraduate handbook (majors) | 2021–2026 | complete |
+| Student Fees handbook (course fees + published programme fees) | 2021–2026 | complete |
+
+The 2025 edition is treated as the **baseline** — the recorded state of the
+curriculum against which the credit re-think editions are compared (note
+that the rules layer shows some re-think changes landing *at* or *before*
+that baseline: the BBusSc minimum-credit cut arrives in the 2025 edition
+itself, the BCom's 450→440 as early as 2022 — the `degree_rules` table
+dates each change per degree). Across the six editions the dataset holds
+**24,536 curriculum records** spanning all six faculties: 71–75 Commerce
+specialisations per year (including the Academic Development augmented and
+extended variants and the Advanced Diplomas), ~26 EBE specialisations per
+year (including the 5-year Extended Curriculum Programmes), the three LLB
+streams (graduate, four-year undergraduate, and the legacy five-year
+stream), the Health Sciences professional degrees (MBChB and the four-year
+AHS programmes with their intervention-programme variants), ~22 Science
+majors, and ~40 Humanities majors serving both the BA and the BSocSc. In
+EBE, elective loads are printed as ranges ("0–48 credits"); the ideal
+student takes the minimum, and both ends of the range are retained. Law
+publishes one flat annual fee per stream rather than per-year figures, and
+Science/Humanities one per-year fee per degree covering every major; the
+dataset applies these to the relevant years and labels the match
+accordingly (§8, caveat 8).
+
+The dataset now comes in **two layers**:
+
+- the **as-printed layer** — exactly what the handbooks print, including
+  their own defects, preserved for audit;
+- the **final-clean layer** (`main_dataset_final.csv`,
+  `ideal_student_summary_final.csv`) — the same data with those defects
+  resolved by documented, justified rules and case-by-case adjudications.
+
+**Analysts should use the final-clean tables; auditors and replicators the
+as-printed ones.** Section 6 describes both.
+
+## 3. How the dataset was produced — and why it can be trusted
+
+The conversion is fully programmatic. The same software reads each PDF,
+recognises the handbook's structures (programme headings, curriculum tables,
+course descriptions, fee tables), and writes the output tables. Four
+integrity rules apply throughout:
+
+1. **Source PDFs are never edited.** They are stored read-only in the
+   repository, and every published edition is kept.
+2. **Every record carries provenance.** Each row records the handbook year
+   and the PDF page it came from, so any value can be checked against the
+   original in seconds.
+3. **No manual edits to outputs.** If the software misreads something, the
+   software is fixed and re-run. Where the *handbook itself* contains a
+   defect (a misprinted total, a missing rule), the correction is recorded in
+   a documented "overrides" file stating the reason and the source page — or
+   the defect is left in place and flagged, never silently changed.
+4. **Everything is version-controlled.** The full history of the dataset and
+   the software that built it is kept in git; re-running any year reproduces
+   the same output, and re-processing one year cannot alter another year's
+   records.
+
+## 4. Key concepts
+
+**Specialisation code (plan code).** The fundamental unit of the dataset,
+e.g. `CB004FTX04` — Bachelor of Business Science specialising in Finance with
+Accounting. The first five characters identify the programme family
+(`CB004`), the last five the department/stream (`FTX04`). Commerce publishes
+each specialisation in up to three **variants**:
+
+- *regular* — the standard curriculum;
+- *augmented* — Academic Development, same duration with additional support
+  courses;
+- *extended* — Academic Development, the curriculum spread over an extra year.
+
+Each variant has its own specialisation code and is a separate row-set in the
+dataset, so comparisons can be like-for-like.
+
+**Course code.** E.g. `ACC1006F`: department (`ACC`), year-level digit
+(`1`), course number (`006`), and period (`F` first semester, `S` second,
+`W` whole year, `H` year-long half-course).
+
+**NQF credits and levels.** Credits measure notional learning time (1 credit
+= 10 notional hours; a standard semester course is 18 credits). Levels 5–8
+grade the qualification ladder: level 7 is the exit of a 3-year bachelor's,
+level 8 of a 4-year professional bachelor's.
+
+## 5. The "ideal student"
+
+Handbooks list more courses than any one student takes: they contain
+either/or choices, option blocks, and elective slots. Credit load and cost
+must therefore be computed from *a defensible selection*, not from everything
+on offer. The dataset defines the **ideal student** by deterministic,
+uniformly applied rules:
+
+| Structure in the handbook | Rule |
+|---|---|
+| Core (compulsory) course | Taken. |
+| "A **or** B" choices | The first-listed option is taken (handbooks list the default path first). The alternatives remain in the dataset, so "what if the student took B" is a filter, not a re-count. |
+| "Choose *n* from the following" menus | The first *n* menu entries are taken; the menu and the pick-count are recorded. |
+| Named option streams (e.g. Mathematical Statistics Option vs Applied Statistics Option) | The first-printed stream is taken. |
+| Elective slots ("Four electives at NQF level 6 … 72 credits") | The slot is taken at its stated credits. If the handbook omits the slot's credits, they are inferred from the year's stated credit total and flagged as inferred. |
+| "Minimum of *N* credits" years | The ideal student takes exactly the minimum. |
+
+Every curriculum row carries an **`ideal_student`** true/false flag applying
+these rules, so the ideal student is visible *inside* the main dataset rather
+than in a separate calculation.
+
+**Costing.** Each taken course is priced at its exact fee from the fees book
+(course-code to course-code). Elective slots, which name no specific course,
+are priced at the *median* fee of same-level courses in the departments that
+specialisation draws on, scaled to the slot's credits — and always flagged as
+estimates, with the estimated component reported separately in the summary
+table.
+
+## 6. The tables
+
+All tables are CSV files in `data/processed/` and open directly in Excel.
+Every table has a `year` column (handbook edition) — filter on it first.
+
+### 6.1 `main_dataset.csv` — the single source of truth
+
+One row per specialisation × year-of-study × course-slot. Key columns:
+
+| Column | Meaning |
+|---|---|
+| `year` | handbook edition (2021–2026) |
+| `plan_code`, `specialisation`, `degree_abbrev`, `variant` | which programme this row belongs to |
+| `study_year` | year of study within the programme (1–5) |
+| `course_code`, `course_title` | the course (blank code for elective slots) |
+| `nqf_credits`, `nqf_level` | credit value and NQF level as printed |
+| `requirement` | `core` / `option` (a choice) / `elective` (a slot) / `alternative` (listed but not counted) |
+| `choice_group`, `choice_member`, `choice_pick_n` | which choice this row belongs to, its position, and how many are taken |
+| `ideal_student` | **True if the ideal student takes this row** |
+| `credits_inferred` | True where slot credits were derived from the year total |
+| `fee_zar`, `fee_source` | the Rand fee and how it was resolved (`exact`, `variant:…`, `estimated_median`) |
+| `source_page` | PDF page in that year's handbook |
+
+### 6.2 `ideal_student_summary.csv` — one row per specialisation-year
+
+The roll-up used for most review questions:
+
+| Column | Meaning |
+|---|---|
+| `credits_ideal` | credits the ideal student carries that year |
+| `credits_stated` / `credit_delta` | the handbook's own printed total, and the difference |
+| `fee_ideal_zar` | computed cost of the ideal student's year |
+| `fee_estimated_component_zar` | how much of that is elective-slot estimation |
+| `fee_published_zar` / `fee_delta_pct` | UCT's published "typical" fee for that programme-year, and the percentage difference |
+| `fee_match_method` | how the published fee was matched (see §8, caveat 4) |
+
+### 6.3 Supporting tables
+
+`specialisations` (the register, per year), `curriculum` and
+`curriculum_totals` (the raw curriculum tables and their printed totals),
+`courses` (course catalogue: convener, entry requirements, assessment),
+`course_fees` (every course's fee), `programme_fees_published` (the fees
+book's typical annual fees as printed), and `degree_rules` — the **rules
+layer**: every degree-level rule the faculty-rules sections print
+(minimum total credits, level-specific requirements, durations, LAW's
+stream grand totals), one row per printed statement with the rule
+reference, the handbook page, and a verbatim quote. This is the table
+that answers question 3 of §1 and anchors the whole-degree validation
+check (§7).
+
+### 6.4 `main_dataset_final.csv` — the final-clean dataset
+
+Every row of `main_dataset.csv` with its original columns untouched, plus:
+
+| Column | Meaning |
+|---|---|
+| `final_included` | True if the row counts in the final ideal-student selection (differs from `ideal_student` only where an adjudication changed a choice) |
+| `resolution_class` | `none` / `R1a` (arithmetic rule) / `R2a` (cross-edition rule) / `R3` (adjudication) |
+| `resolution_ref` | the rule or register entry (e.g. `COM-2025-008`) that applied |
+| `final_note` | explanation where the row's inclusion changed |
+
+### 6.5 `ideal_student_summary_final.csv` — the final roll-up
+
+The summary table analysts should use. Adds to §6.2's columns:
+
+| Column | Meaning |
+|---|---|
+| `final_credits` | the resolved credit load for the year |
+| `credits_stated_corrected` | filled where a misprinted total was corrected by adjudication |
+| `final_credit_status` | `consistent` / `resolved_computed` / `resolved_manual` / `unresolved` / `no_anchor` (Science and Humanities majors — no per-year total exists to reconcile against) |
+| `final_fee_zar` / `final_fee_status` | resolved cost; `reconciled` / `published_divergent` / `no_published` |
+| `confidence` | `high` (arithmetic or adjudicated) / `medium` (cross-edition) / `low` (default policy) |
+| `resolution_rationale` | the written justification, in full sentences |
+
+How discrepancies are resolved — the rule order, the evidence each rule
+demands, and worked examples — is documented in
+[FINAL-DATASET-METHOD.md](FINAL-DATASET-METHOD.md). In short: printed
+arithmetic identities and corroborated cross-edition evidence resolve
+automatically; genuine ambiguities are adjudicated case-by-case in
+reviewable per-faculty registers (`resolutions/<faculty>.csv` — Commerce's
+is the only seeded one so far) with rationale and page evidence; everything
+else is flagged `unresolved` at `low` confidence rather than silently
+guessed.
+
+## 7. How the data is validated
+
+Each specialisation-year is checked from two independent directions — a
+validation triangle — and, since the rules layer was added, each whole
+specialisation from a third:
+
+```
+   curriculum (courses + credits)  ×  course fees   →  computed year cost
+        ↕ compared with                                  ↕ compared with
+   the handbook's printed                       the fees book's published
+   "Total credits per year"                     typical fee for that year
+        ↕ and, summed across all study years, compared with
+   the faculty rules' printed minimum credits for the whole degree
+```
+
+The third leg (`validation/degree_check_<year>.csv`) catches what per-year
+checks cannot — a silently missing year-table, or a handbook whose own
+sections disagree. First-run examples: the graduate LLB sums to its
+printed 504-credit stream total exactly in all six editions; the 2026
+Architectural Studies curriculum sums 56 credits below the faculty rule's
+3-year minimum; the 2026 Property Studies stated minimum still says 452
+while its own year tables sum to 411.
+
+Results for the current load, after the final-clean layer
+(consistent / resolved / unresolved per faculty):
+
+| Year | Commerce | EBE | Law | Health Sciences | Science / Humanities majors |
+|---|---|---|---|---|---|
+| 2021 | 227 / 17 / 30 | 85 / 0 / 5 | 11 / 0 / 1 | 7 / 0 / 12 | 155 no-anchor |
+| 2022 | 240 / 11 / 24 | 86 / 0 / 4 | 11 / 0 / 1 | 8 / 0 / 11 | 154 no-anchor |
+| 2023 | 225 / 15 / 36 | 88 / 0 / 2 | 11 / 0 / 1 | 14 / 0 / 11 | 148 no-anchor |
+| 2024 | 203 / 13 / 55 | 86 / 0 / 4 | 10 / 0 / 2 | 14 / 0 / 11 | 154 no-anchor |
+| 2025 | 219 / 13 / 36 | 84 / 0 / 6 | 10 / 0 / 2 | 11 / 0 / 12 | 157 no-anchor |
+| 2026 | 202 / 11 / 48 | 80 / 0 / 10 | 7 / 0 / 0 | 10 / 0 / 13 | 153 no-anchor |
+
+Of the 2,366 specialisation-years that have a printed per-year anchor, 86%
+are consistent or resolved at high or medium confidence; the 921 Science
+and Humanities major-years carry `no_anchor` — the handbooks print no
+per-year totals for majors, so there is nothing to reconcile against
+(caveat 8). The unresolved remainder carries the computed value
+at low confidence and is individually listed, with suggested actions, in
+`validation/pending_adjudication_<year>.csv`. Commerce's register has been
+provisionally seeded; the EBE, Law and Health Sciences adjudication passes
+have not yet been done — though the August 2026 parser refinements
+resolved most of what those passes had queued (EBE's unresolved count fell
+from 185 to 31 once its elective-menu sections parsed correctly; Law's
+legacy five-year stream turned out to print totals in an unrecognised
+wording and now reconciles to its printed 660-credit stream total).
+Health Sciences' unresolved rows are dominated by the combined Audiology /
+Speech-Language Pathology block, whose interleaved curricula await a
+dedicated splitter. Highlights: the MBChB reconciles all six years
+exactly, with years 1–3 computed fees matching the published figures to the
+rand; Law's graduate-stream first-year cost likewise matches to the rand.
+
+Where computed fees can be compared with published fees, the **median
+difference is 0.0%** — for most programmes the computation reproduces UCT's
+own published figure to the rand.
+
+**A "mismatch" is a finding, not an error.** Every one is listed, with page
+references, in the `validation/` reports (`credit_check_<year>.csv`,
+`fee_check_<year>.csv`). On inspection, most mismatches are defects or
+ambiguities in the handbooks themselves, which the dataset deliberately
+preserves and surfaces rather than papering over. Real examples:
+
+- a printed year total of **382** credits where the table sums to 182 (2025,
+  CB025BUS09 year 1 — a misprint);
+- year totals that **count both branches of an either/or choice** (2025,
+  CB001INF01 year 1: rows sum to 150 taking one branch, 168 taking both; the
+  printed total is 168);
+- final-year course menus whose **selection rule is missing from the page**
+  (the Computer Science stream's 4th-year module list in the 2023 and 2025
+  editions — the 2022/2024/2026 editions print "required to take two
+  options", and the register cites them as cross-edition evidence; the
+  faculty-rules sections never state the rule in any edition);
+- a stated total **excluding a course that is listed** in the same table
+  (CB011ACC08 year 2).
+
+These lists are themselves a useful review product: they show where the
+published handbooks would benefit from editorial correction.
+
+## 8. Caveats and limitations
+
+1. **Elective costs are estimates.** Slots naming no course are priced at a
+   credit-scaled median (§5). The estimated component is always reported
+   separately (`fee_estimated_component_zar`), so it can be excluded from any
+   analysis that requires exact figures.
+2. **The ideal student is a convention.** "First-listed option" is a
+   documented, consistent convention — not a claim about actual student
+   behaviour. Because alternatives are retained, sensitivity checks are
+   straightforward.
+3. **Handbook defects are preserved.** Where the handbook's own numbers
+   disagree, the dataset records what is printed and flags the disagreement
+   (§7). Corrections are only applied through the documented overrides
+   process (§10).
+4. **Published-fee matching is by name.** The fees book labels programmes by
+   name, not by specialisation code, and names drift between books
+   ("Analytics" vs "Statistics and Data Sciences"). Matching is rule-based
+   with a curated alias list; the method used is recorded per row
+   (`fee_match_method`), and unmatched labels are reported. Academic
+   Development fees are published once per specialisation — they are assigned
+   to the variant whose duration matches the published block, and flagged
+   where ambiguity remains.
+5. **Older editions are noisier.** The 2021–2023 fee sections reconcile at a
+   somewhat lower rate than 2024–2026; their mismatch lists are
+   correspondingly longer.
+6. **Degree minimums don't exist for every programme.** The rules layer
+   covers the mainstream COM degrees, the EBE programmes and the LLB
+   streams; Commerce's Academic Development variants and the Health
+   Sciences professional degrees print durations but no minimum-credit
+   rule, so their `degree_check` rows read `NO_RULE`. The EBE handbook
+   also carries its own disclaimer — "Students should ignore NQF credit
+   values, and complete their degrees by faculty rules for number of
+   courses" — worth remembering when comparing EBE credit sums across
+   editions.
+7. **Zero-credit and cross-listed courses exist** (e.g. a 0-credit
+   programming assessment) and are represented as printed.
+8. **Science and Humanities curricula are majors, not whole degrees.**
+   A BSc/BA/BSocSc student combines majors and electives under the
+   faculty's composition rules, so a major's credit sum is deliberately
+   below the degree total. Majors print no per-year credit totals; their
+   spec-years carry the status `no_anchor` (nothing to reconcile against
+   per year), and the degree-level minima — SCI: 360 credits from the 2025
+   edition ("nine full-year courses" before); HUM: 20 semester courses,
+   10 senior, 2 majors — live in `degree_rules.csv`. Published fees for
+   these faculties are per degree, applied to every major
+   (`degree_flat`), so per-major fee deltas are indicative only.
+
+## 9. Worked examples
+
+**"How did the credit load of BCom Actuarial Science change?"**
+Open `ideal_student_summary.csv`, filter `plan_code = CB019BUS01`,
+`study_year = 1`:
+
+| Edition | Ideal credits | Stated total | Computed fee | Published fee |
+|---|---|---|---|---|
+| 2021 | 185 | 185 | R85,250 | R85,250 |
+| 2022 | 185 | 185 | R88,910 | R88,910 |
+| 2023 | 185 | 185 | R93,850 | R93,850 |
+| 2024 | 180 | 180 | R98,140 | R98,140 |
+| 2025 | 180 | 180 | R103,890 | R103,890 |
+| 2026 | 180 | 180 | R110,160 | R110,580 |
+
+The credit re-think is visible at the 2024 edition (−5 credits), and the
+computed cost matches the published fee to the rand in 2021–2025 (−0.4% in
+2026).
+
+**"What exactly does that student take in 2024?"**
+Open `main_dataset.csv`, filter `year = 2024`, `plan_code = CB019BUS01`,
+`study_year = 1`, `ideal_student = True` — the course list, each course's
+credits and fee, and the page each row came from.
+
+**"When did the faculty change what the whole degree must total?"**
+Open `degree_rules.csv`, filter `degree_scope = Bachelor of Business
+Science`, and read `min_total_credits` across editions: 623 credits
+(2021–2024), then 528 from the 2025 edition — with the level-8 requirement
+rising from 96 to 120 credits at the same moment. Every row carries the
+rule reference (FBB2), the page, and the printed sentence.
+
+**"Which programmes' handbook entries need editorial attention?"**
+Open `validation/credit_check_<year>.csv` and filter `status = MISMATCH`;
+for whole-degree disagreements (a curriculum below its own faculty's
+minimum, a stated total the tables no longer support), open
+`validation/degree_check_<year>.csv` and filter `status = BELOW_MIN`.
+
+## 10. Raising corrections
+
+If a reviewer finds a value that misrepresents the handbook:
+
+1. Check the row's `source_page` against the PDF in
+   `faculty-handbooks-undergraduate/`.
+2. **If the software misread the page** (the PDF prints the right value), the
+   parser or its overrides file is fixed and the year re-run — other years
+   are provably unaffected.
+3. **If the handbook itself is wrong or ambiguous**, the decision is entered
+   in the faculty's adjudication register (`resolutions/<faculty>.csv`,
+   e.g. `resolutions/com.csv`) with its rationale
+   and page evidence, and the final layer re-run. The as-printed record is
+   never altered; the final tables carry the resolution with its register
+   reference, so every correction is visible, attributable, and reversible.
+
+Forty-four provisional adjudications (marked *"provisional (Claude), pending
+review"*) currently await confirmation — reviewing them is the most valuable
+contribution a reader of this manual can make. They are listed in
+`resolutions/com.csv` with their reasoning spelled out.
+
+## 11. Glossary
+
+| Term | Meaning |
+|---|---|
+| **Specialisation / plan code** | 10-character code identifying a full degree programme (§4) |
+| **Variant** | regular / augmented / extended presentation of a specialisation |
+| **NQF credit** | 10 notional learning hours; 18 = standard semester course |
+| **NQF level** | qualification-ladder level (5–8 for undergraduate work) |
+| **Ideal student** | the deterministic course selection defined in §5 |
+| **Stated total** | the "Total credits per year" figure printed in the handbook |
+| **Published fee** | the "typical annual fee" printed in the fees book |
+| **Elective slot** | a curriculum line reserving credits without naming a course |
+| **Provenance** | the `year` + `source_page` columns tracing a row to its PDF page |
+| **Overrides** | documented, reviewable corrections applied at build time |
+
+## 12. File inventory
+
+| Location | Contents |
+|---|---|
+| `faculty-handbooks-undergraduate/` | source PDFs, read-only |
+| `data/processed/main_dataset_final.csv` | **the final-clean dataset — use this for analysis** (§6.4) |
+| `data/processed/ideal_student_summary_final.csv` | final per specialisation-year roll-up (§6.5) |
+| `data/processed/main_dataset.csv` | as-printed dataset (§6.1) — audit/replication |
+| `data/processed/ideal_student_summary.csv` | as-printed roll-up (§6.2) |
+| `data/processed/degree_rules.csv` | the rules layer: printed degree minimums, durations, stream totals (§6.3) |
+| `validation/degree_check_<year>.csv` | whole-degree reconciliation against the rules layer (§7) |
+| `data/processed/*.csv` | supporting tables (§6.3) |
+| `resolutions/<faculty>.csv` | per-faculty adjudication registers with rationales (§10) |
+| `validation/*.csv` | exception reports, resolution logs, pending adjudications (§7) |
+| `docs/FINAL-DATASET-METHOD.md` | how the final layer resolves discrepancies |
+| `docs/REPLICATION.md` | technical process log and hazard catalogue |
+| `docs/commerce-review-and-proposal.md` | original design document |

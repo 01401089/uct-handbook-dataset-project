@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+  /* UCT Brand Colors */
+  --uct-dark-blue: #00243A;
+  --uct-blue: #009ADA;
+  --uct-black: #000000;
+  
+  /* Additional UI Palette (Dark Mode Base) */
+  --bg-main: #0B0F19; /* Very dark slate for background */
+  --bg-panel: rgba(16, 24, 39, 0.7); /* Translucent panel */
+  --bg-panel-solid: #101827;
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-active: rgba(0, 154, 218, 0.5); /* UCT blue border */
+  
+  /* Text */
+  --text-main: #F3F4F6;
+  --text-muted: #9CA3AF;
+  
+  /* Accents */
+  --accent-teal: #14B8A6;
+  --accent-magenta: #D946EF;
+  --accent-warning: #F59E0B;
+  --accent-error: #EF4444;
+  --accent-success: #10B981;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(0, 36, 58, 0.4), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(0, 154, 218, 0.15), transparent 25%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: var(--bg-panel);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.glass-card {
+  background: var(--bg-panel);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-active);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography Utilities */
+.text-gradient {
+  background: linear-gradient(135deg, var(--uct-blue), var(--accent-teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-uct {
+  background: linear-gradient(135deg, #fff, var(--uct-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Base Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--uct-blue);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #0089C5;
+  box-shadow: 0 0 10px rgba(0, 154, 218, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--uct-blue);
+  color: var(--uct-blue);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Markdown Content Styling */
+.markdown-body {
+  line-height: 1.7;
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+.markdown-body h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #fff, var(--uct-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.markdown-body h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--uct-blue);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.4rem;
+}
+
+.markdown-body h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent-teal);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body p {
+  margin-bottom: 1.2rem;
+}
+
+.markdown-body a {
+  color: var(--uct-blue);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--uct-blue);
+  transition: all 0.2s ease;
+}
+
+.markdown-body a:hover {
+  color: var(--accent-teal);
+  border-bottom-style: solid;
+  border-bottom-color: var(--accent-teal);
+}
+
+/* Lists styling - crucial since reset overrides them */
+.markdown-body ul {
+  list-style-type: disc !important;
+  margin-left: 1.5rem !important;
+  margin-bottom: 1.2rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.markdown-body ol {
+  list-style-type: decimal !important;
+  margin-left: 1.5rem !important;
+  margin-bottom: 1.2rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.markdown-body li {
+  margin-bottom: 0.4rem;
+  display: list-item !important;
+}
+
+.markdown-body li > ul,
+.markdown-body li > ol {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Blockquotes */
+.markdown-body blockquote {
+  border-left: 4px solid var(--uct-blue);
+  padding: 0.75rem 1.25rem;
+  background: rgba(0, 154, 218, 0.05);
+  color: var(--text-muted);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
+/* Inline code and Code blocks */
+.markdown-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--accent-teal);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.markdown-body pre {
+  background: rgba(16, 24, 39, 0.9);
+  border: 1px solid var(--border-light);
+  padding: 1.25rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.markdown-body pre code {
+  background: transparent;
+  color: var(--text-main);
+  padding: 0;
+  font-size: 0.9rem;
+  display: block;
+}
+
+/* Horizontal rule */
+.markdown-body hr {
+  border: 0;
+  height: 1px;
+  background: var(--border-light);
+  margin: 2rem 0;
+}
+
+/* Responsive Table styling - very detailed & premium */
+.markdown-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.markdown-body th {
+  background: rgba(0, 36, 58, 0.8);
+  color: var(--text-main);
+  font-weight: 600;
+  padding: 0.85rem 1rem;
+  border-bottom: 2px solid var(--border-light);
+}
+
+.markdown-body td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-muted);
+}
+
+.markdown-body tr:last-child td {
+  border-bottom: none;
+}
+
+.markdown-body tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.markdown-body tr:hover {
+  background: rgba(0, 154, 218, 0.05);
+}
+
