@@ -71,8 +71,8 @@
 2025,COM,CB026BUS09,BCom,Actuarial Science: Quantitative Finance,augmented,3,548,,,,NO_RULE,0,
 2025,COM,CU017ACC01,AdvDip,Accounting,regular,1,174,,,,NO_RULE,0,
 2025,COM,CU020BUS01,AdvDip,Actuarial Science,regular,1,180,,,,NO_RULE,0,
-2025,EBE,EB001CHE01,,,regular,4,496,436,programme rule p43,60,OK,0,
-2025,EBE,EB002CIV01,BSc(Eng),Civil Engineering,regular,4,562,576,faculty rule FB3.2 (4yr),-14,BELOW_MIN,1,
+2025,EBE,EB001CHE01,,,regular,4,496,576,faculty rule FB3.2 (4yr),-80,ELECTIVE_GAP,0,
+2025,EBE,EB002CIV01,BSc(Eng),Civil Engineering,regular,4,562,560,programme rule p44 (registered in 2025),2,OK,1,
 2025,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,576,576,programme rule p67,0,OK,0,
 2025,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,560,560,programme rule p52 (registered in 2025),0,OK,0,
 2025,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,576,576,programme rule p71,0,OK,0,
@@ -83,8 +83,8 @@
 2025,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,4,578,576,programme rule p28,2,OK,0,
 2025,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,4,608,576,programme rule p31,32,OK,0,
 2025,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,576,560,programme rule p56 (registered in 2025),16,OK,0,
-2025,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,520,436,programme rule p43,84,OK,0,ECP twin EB001CHE01: totals differ by +24
-2025,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,5,566,576,faculty rule FB3.2 (4yr),-10,BELOW_MIN,1,ECP twin EB002CIV01: totals differ by +4
+2025,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,520,576,faculty rule FB3.2 (4yr),-56,ELECTIVE_GAP,0,ECP twin EB001CHE01: totals differ by +24
+2025,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,5,566,560,programme rule p44 (registered in 2025),6,OK,1,ECP twin EB002CIV01: totals differ by +4
 2025,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,576,576,programme rule p69,0,OK,0,ECP twin EB005MEC01: totals match
 2025,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,568,560,programme rule p54 (registered in 2025),8,OK,0,ECP twin EB009EEE01: totals differ by +8
 2025,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,576,576,programme rule p73,0,OK,0,ECP twin EB010MEC05: totals match

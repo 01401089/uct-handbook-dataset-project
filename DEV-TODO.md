@@ -38,15 +38,17 @@ confidence (`validation/pending_adjudication_<year>.csv`).
 report interactively (show row + PDF page reference, prompt for a decision,
 append the register row) would make a review session ~10× faster.
 
-## 2. EBE adjudication pass (register is empty)
+## 2. EBE adjudication pass (register is empty; queue much reduced)
 
-EBE 2021-2026 is extracted (~90 spec-years/year, ~62% consistent) but
-`resolutions/ebe.csv` has no entries yet: ~185 EBE spec-years sit in the
-pending reports. Known clusters to adjudicate (same workflow as §1):
-- Construction/Property Studies (EB015CON04, EB017CON03): stream/variant
-  tables and elective menus inflate row sums (~2× published fees).
-- Small −16…−42 gaps in engineering years: elective-range minimums vs stated
-  range minimums don't always coincide; decide per family.
+The 2026-08 engine fixes (hazards H37-H39: footnote-marked year headings,
+elective-core menus, optional-courses sections, "(minimum)" totals, five
+slot-line shapes) resolved most of what this pass had queued — EBE is now
+**509 consistent / 31 unresolved** spec-years (was 344/185). Remaining:
+- Work the ~31 residuals in `validation/pending_adjudication_<year>.csv`
+  (mostly small gaps and the 2026 phase-in years); check
+  `validation/degree_check_<year>.csv` BELOW_MIN rows first — 2026 BAS
+  (376 vs the 432 rule) and 2026 Property Studies (411 vs its stated 452)
+  are handbook-side inconsistencies needing adjudication entries.
 - Sub-stream plan codes (Geomatics EB019APG11/EB819APG11): the suppressed
   second stream (EGS specialisation) could be captured via a plan-code
   suffix scheme (e.g. `EB019APG11/B`) if stream-level analysis is wanted;
@@ -54,9 +56,13 @@ pending reports. Known clusters to adjudicate (same workflow as §1):
 
 ## 3. LAW follow-ups
 
-- Adjudicate the legacy five-year stream (LB003): no printed totals →
-  25 spec-years flagged unresolved; `accept_computed` entries with rationale
-  would clear them (stream retired after 2019, absent from 2026).
+- ~~Adjudicate LB003 (25 unresolved spec-years, "no printed totals")~~ —
+  **superseded 2026-08-06**: LB003 *does* print per-year totals in a third
+  wording, and wraps discontinued-course rows before their credits (hazard
+  H40); both are parsed now and LB003 reconciles to its printed 660-credit
+  stream total. 7 spec-years remain unresolved — the 2024/2025 editions
+  drop discontinued rows from print (genuine drift); adjudicate those from
+  the pending reports.
 - The two-year graduate LLB stream shares LP001's printed table; if
   stream-level analysis is wanted, model it as a variant.
 
@@ -88,7 +94,31 @@ pending reports. Known clusters to adjudicate (same workflow as §1):
   credit-load and cost per specialisation across editions, faculty-level
   aggregates, augmented/extended vs regular comparisons.
 - Flag credit-re-think transition points automatically (year-over-year
-  final_credits changes per plan code).
+  final_credits changes per plan code) — and join them against
+  `degree_rules.csv` rule changes (BBusSc 623→528 at 2025, EBE FB3.2
+  576→560 at 2026, LLB 660→637 at 2026) to separate rule-driven cuts from
+  curriculum-table drift.
+
+## 6b. Rules-layer follow-ups (from the 2026-08 rules sweep)
+
+Optional tables the rules sections could still yield (evidence and page
+refs in the sweep notes; build only if analysis needs them):
+- **Progression ladders**: minimum cumulative semester-courses per year of
+  registration (COM FBx3.2 families, stable 2021-2026) — a plausibility
+  check on per-year course counts.
+- **AD↔mainstream substitution maps**: printed 2021-2023 only (COM
+  FBD1.2/FBE1.2/FBH1/FBI1: ACC1106F↔ACC1006F, …) — would align augmented
+  variants to mainstream courses for like-for-like cost comparison.
+- **EBE elective-category minima**: the per-programme "ELECTIVE COURSES"
+  category rules (Chemical: science ≥42, humanities ≥18→15, advanced
+  engineering ≥32, free ≥16→12; sum 126→104 at 2025) — closes the "0-48"
+  ranges more precisely than the range minimum.
+- **Choice-menu cardinality imputation**: pin the CSC 4th-year menus in
+  2023/2025 to "pick 2" via the sibling editions (needs the faculty
+  confirmation queued in §1.3).
+- **Handbook 3 (General Rules)** is cited normatively by every faculty's
+  rules (credit/exemption rules GB2/GB3); source it if exemption modelling
+  is ever needed.
 
 ## 7. Smaller engineering items
 

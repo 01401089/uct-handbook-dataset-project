@@ -238,6 +238,12 @@ Layout drift encountered and handled across editions:
 | H32 | Multi-code programme blocks with shared curricula | FHS: "[MB014, MB020]", "[BSc Audiology MB011/MB019 & BSc Speech-Language Pathology MB010/MB018]" | bespoke FHS parser: primary code carries the curriculum, siblings noted; per-segment degree pairing |
 | H33 | Trailing totals with slashed variant values | FHS: rows print BEFORE "Total NQF credits for year 2 … 162/168" | rows buffer until the next total/heading stamps their year; slash → credits + stated_total_max |
 | H34 | Multi-line code brackets and programme-vs-plan code mixes | FHS 2021-2023: "[Programme code: MB003 or MB016 … Plan code: MB003AHS09." | closing bracket optional; 10-char plan codes take precedence over 5-char programme codes they subsume |
+| H35 | Rule-code families re-assigned wholesale between editions | COM 2023→2024: FBE = BBusSc-ActSci-AD becomes BCom, FBF = BCom becomes BCom-ActSci, FBG/FBH/FBI likewise; EBE 2025 renumbers FB8.2-FB8.14 | rules layer keys on the degree heading text, never the rule code (`degree_rules.csv` carries the code as provenance only) |
+| H36 | Rule sentences wrap mid-clause; three surface forms | COM "…528 NQF credits of ⏎ which 120 NQF credits…"; "of which"/"with a minimum of"; "will be"/"must be"; HEQSF (2021); "120NQF" missing space (2024) | whitespace-collapsed multi-line windows + tolerant grammar in `common/degree_rules.py` |
+| H37 | Year headings with trailing footnote markers | EBE 2025/2026: "First Year Core Courses (EE)*†" | marker-tolerant year-heading grammar; unrecognised, the whole year-table is silently lost (EE/EC 2025-2026 year 1-2) |
+| H38 | In-year elective menus and optional courses counted as core | EBE "(Ordinal) Year (Further) Elective Core Courses (EE/EC/ME)", "Optional Courses"; totals "Total credits per year (minimum) … 138" | `elective_core_heading`/`optional_heading` → alternative rows; select-instructions → min-credit slot or pick-n menu; "(minimum)" totals accepted |
+| H39 | Elective slot lines in five shapes, incl. level-range tails | "Electives … 18", "Elective … 18 5", "F/S/P/L *Approved Complementary Studies Elective … 18 7", "…Open electives …Totalling at least … 24 5-8" | widened EBE `extra_elective` with a dotted-leader guard so prose never matches |
+| H40 | Course rows wrapped before their credits; third totals wording | LAW LB003: "PVL1006W … (No longer on" / "offer after 2019) … 36 5"; "Total credits for first year … 90" | `course_row_nocred` + `course_cred_cont` continuation; total grammar accepts the bare-ordinal wording |
 
 Failing to recognise a heading is the costliest hazard class: the previous
 block silently **swallows** the next programme's tables (doubling its row
@@ -276,6 +282,22 @@ layout drift, unlike COM):
   EGS) share one plan code — the second block is DUPLICATE-flagged and its
   rows suppressed (first-listed stream is the ideal), as is the transferee
   access programme that reuses `EB001CHE01`/`EB002CIV01` (see DEV-TODO).
+- The Electrical/Mechatronics/Mechanical families print **in-year elective
+  menus** under "(Ordinal) Year (Further) Elective Core Courses (EE/EC/ME)"
+  headings, plus "Optional Courses" sections (H38). Menu rows are
+  `alternative`; the printed instruction decides the ideal load — "Select
+  courses amounting to at least 48 credits from the following:" becomes a
+  48-credit minimum elective slot, "Select two out of the following three
+  courses." a pick-2 menu. "(minimum)"-qualified totals ("Total credits per
+  year (minimum) … 138") are captured with `is_minimum`. 2025/2026 add
+  footnote markers to year headings ("First Year Core Courses (EE)*†", H37)
+  — unrecognised, they silently cost whole year-tables. Slot lines come in
+  five shapes (H39): "Approved elective courses … 0-48", bare
+  "Electives … 18" (2021 Property Studies), "Elective … 18 5" (Geomatics),
+  "F/S/P/L *Approved Complementary Studies Elective F/S/P/L … 18 7", and
+  the Mechanical year-4 pair with level-range tails ("… 18 5-8",
+  "**Approved F and S Open electives …Totalling at least … 24 5-8").
+  These fixes moved EBE from ~62% to **94% consistent** spec-years.
 - Published-fee labels ("BSc Eng (Chemical)") are matched by an EBE-specific
   label parser; ECP variants are not published separately — duration
   matching assigns each block to the right variant.
@@ -290,10 +312,17 @@ its own faculty's rows.
   streams with 5-character programme codes and no department suffix —
   `[LP001]` graduate LLB, `[LB002]` four-year undergraduate LLB, `[LB003]`
   legacy five-year stream (no new intake after 2019 → variant `extended`;
-  absent from 2026; prints no credit totals, so its spec-years are flagged
-  unresolved by design).
+  absent from 2026).
 - Year headings: "First Year YEAR 1 (PRELIMINARY LEVEL)" (LB003 uses
-  COM-style "Core Modules"); totals are per level with two wordings (H29).
+  COM-style "Core Modules"); totals are per level with THREE wordings —
+  H29's two plus LB003's bare "Total credits for first year … 90" (H40;
+  the earlier belief that LB003 "prints no credit totals" was wrong — the
+  wording was simply unmatched). LB003 also wraps discontinued-course rows
+  before their credits ("PVL1006W … (No longer on" / "offer after 2019) …
+  36 5") — recovered by `course_row_nocred` + `course_cred_cont` (H40);
+  with both fixes LB003 reconciles (its printed years sum to the printed
+  660 stream total; the 2024/2025 editions drop discontinued rows and are
+  flagged, correctly, as findings).
 - Cross-faculty requirement lines ("AND two semester courses in another
   faculty … 36 5") are captured as elective slots via the LAW
   `extra_elective` grammar; wrapped descriptions merge with their
@@ -318,26 +347,31 @@ known residual — the combined Audiology/Speech-Language block interleaves
 both degrees' sub-tables before shared totals and needs a dedicated
 splitter (its spec-years are flagged unresolved; see DEV-TODO.md).
 
-## 8. Multi-year status (COM + EBE + LAW + FHS, final layer 2026-08-06)
+## 8. Multi-year status (COM + EBE + LAW + FHS, final layer 2026-08-06,
+after the H37-H40 engine fixes)
 
 Consistent / resolved / unresolved per faculty:
 
 | Year | COM | EBE | LAW | FHS |
 |---|---|---|---|---|
-| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 | 7 / 0 / 12 |
-| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 | 8 / 0 / 11 |
-| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 | 14 / 0 / 11 |
-| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 | 14 / 0 / 11 |
-| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 | 11 / 0 / 12 |
-| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 | 10 / 0 / 13 |
+| 2021 | 227 / 17 / 30 | 85 / 0 / 5 | 11 / 0 / 1 | 7 / 0 / 12 |
+| 2022 | 240 / 11 / 24 | 86 / 0 / 4 | 11 / 0 / 1 | 8 / 0 / 11 |
+| 2023 | 225 / 15 / 36 | 88 / 0 / 2 | 11 / 0 / 1 | 14 / 0 / 11 |
+| 2024 | 203 / 13 / 55 | 86 / 0 / 4 | 10 / 0 / 2 | 14 / 0 / 11 |
+| 2025 | 219 / 13 / 36 | 84 / 0 / 6 | 10 / 0 / 2 | 11 / 0 / 12 |
+| 2026 | 202 / 11 / 48 | 80 / 0 / 10 | 7 / 0 / 0 | 10 / 0 / 13 |
 
-Main dataset: **20,438 rows** (COM 14,282 + EBE 4,536 + LAW 433 + FHS
-1,187); 696 specialisation register entries; 2,356 specialisation-years
-(1,766 consistent, 81 resolved, 509 unresolved pending adjudication — the
-EBE/LAW/FHS registers are empty until their review passes, see DEV-TODO.md).
-Median computed-vs-published fee delta is 0.0% for COM, EBE and FHS (the
-MBChB's years 1-3 match to the rand); LAW's flat-annual published fees make
-per-year deltas structurally divergent (LP001 year 1 matches to the rand).
+Main dataset: **20,649 rows** (COM 14,282 + EBE 4,729 + LAW 451 + FHS
+1,187); 2,366 specialisation-years (1,949 consistent, 80 resolved, 337
+unresolved pending adjudication). The H37-H40 fixes resolved what DEV-TODO
+had queued as adjudication clusters: EBE went from 344/185
+consistent/unresolved to **509/31**, LAW from 42/25 to **60/7** (the
+remaining LAW 7 are LB003 2024/2025 years whose printed tables drop
+discontinued courses — genuine print drift, listed in the pending
+reports). Median computed-vs-published fee delta is 0.0% for COM, EBE and
+FHS (the MBChB's years 1-3 match to the rand); LAW's flat-annual published
+fees make per-year deltas structurally divergent (LP001 year 1 matches to
+the rand).
 
 ## 9. Extending to the remaining faculties
 
@@ -346,3 +380,53 @@ SCI and HUM remain — the unit of extraction there is the *major*
 rules section, from which the ideal student's curriculum is constructed
 rather than read off a table; expect bespoke parsers in the FHS mould
 (reusing the shared grammar and catalogue parser).
+
+## 10. The rules layer (`degree_rules.csv`, added 2026-08-06)
+
+The faculty-rules sections — never previously parsed — print degree-level
+facts the curriculum tables cannot supply: **minimum total credits for the
+degree**, level-specific credit requirements, durations, and (LAW)
+whole-stream grand totals. `common/degree_rules.py` extracts them into
+`data/processed/degree_rules.csv` (one row per printed rule statement,
+with `source_page` and a verbatim `quote`; merged by year and faculty like
+every shared table). Each faculty extractor runs it after its main parse.
+
+**Why it matters — the credit re-think is written into the rules:**
+
+| Degree (COM, rule FBx2) | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
+|---|---|---|---|---|---|---|
+| BBusSc | 623 (96@L8) | 623 | 623 | 623 | **528 (120@L8)** | 528 |
+| BBusSc Actuarial Science | 681 (96@L8) | 681 | 681 | 681 | **528 (120@L8)** | 528 |
+| BCom | 450 | **440** | 440 | 440 | 440 | 440 |
+| BCom Actuarial Science | 528 | 528 | 528 | 528 | 528 | 528 |
+
+EBE's blanket rule FB3.2 (4-year degrees ≥ 576 / 3-year ≥ 432) drops to
+**560** in 2026 — after the departments moved first (Electrical prints
+cohort-split minima from 2025, "registers in 2025 … 560 / registered
+before 2025 … 576"; Mechanical follows in 2026; Civil prints "576 (or 560
+if admitted … from 2025)"; Geomatics phases in 519/511 totals in 2026).
+LAW prints stream grand totals every edition: graduate LLB 504 (flat),
+4-year undergraduate LLB 660 → **637 in 2026**, legacy LB003 660. FHS
+professional degrees are duration-ruled, not credit-ruled (the one credit
+rule is FBC3.1, intercalated BSc(Med) ≥ 360).
+
+Notable negative finding: the rules sections do **not** print the missing
+selection rules for the COM unlabelled choice menus (CSC 4th year, PPE
+year 2, senior Economics) — but sibling editions' Programmes of Study do
+("required to take two options", 2022/2024/2026), which is now cited as
+evidence in the affected `resolutions/com.csv` entries.
+
+**Validation.** `validate_final.py` step 5 reconciles each
+specialisation's whole-degree credit sum against the applicable rule
+(`validation/degree_check_<year>.csv`; statuses OK / BELOW_MIN /
+ELECTIVE_GAP / NO_RULE — see the docstring). It also checks the EBE
+5-year-ECP invariant (EB8xx totals must equal their EB0xx twin's).
+Results are findings, never failures. Highlights of the first run:
+LP001 sums to its printed 504 **exactly in all six editions**; the 2026
+BAS curriculum (376) sits 56 credits below FB3.2's 3-year minimum, and
+the 2026 Property Studies stated minimum (452) exceeds its own table sums
+(411) — both genuine handbook inconsistencies now surfaced mechanically.
+
+Parsing contract (hazards H35/H36): key on the degree-heading text, never
+the rule code; whitespace-collapse before matching; expect HEQSF wording
+in 2021 and cohort-split sentences from 2025.

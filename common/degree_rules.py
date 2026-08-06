@@ -254,7 +254,11 @@ def _ebe_rules(year, dump_path):
     for i, (page_no, line) in enumerate(stream):
         win = _window(all_lines, i)
         m = EBE_MIN.search(win)
-        if m and m.group(0).lower().startswith(("a candidate", "students")):
+        # Anchor to the sentence's own first line (m.start() == 0), else the
+        # same sentence re-matches in earlier overlapping windows and binds
+        # the previous block's plan code.
+        if m and m.start() == 0 and \
+                m.group(0).lower().startswith(("a candidate", "students")):
             hint = hint_for(i)
             key = (hint, m.group("total"), m.group("cohort")[:40])
             if key in seen_sent:

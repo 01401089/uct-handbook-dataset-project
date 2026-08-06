@@ -115,7 +115,10 @@ def degree_check(year: str, summ: list[dict], final_rows: list[dict]) -> None:
             com_by_scope.setdefault(r["degree_scope"], r)
     ebe_by_code = {}
     for r in rules:
-        if r["faculty"] == "EBE" and r["plan_code_hint"]:
+        # Transferee/access-route minima describe a different entry route,
+        # not the mainstream degree the plan code's spec-years model.
+        if r["faculty"] == "EBE" and r["plan_code_hint"] \
+                and "transferee" not in r["degree_scope"]:
             ebe_by_code.setdefault(r["plan_code_hint"], []).append(r)
     ebe_blanket = {("4yr" if "4-year" in r["degree_scope"] else "3yr"): r
                    for r in rules

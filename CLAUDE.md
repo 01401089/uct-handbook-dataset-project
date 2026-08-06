@@ -56,11 +56,22 @@ after onboarding any new year. A doubled row-sum (exactly 2x stated) means a
 swallowed programme heading — see hazards H22-H24.
 
 `docs/REPLICATION.md` is the authoritative process log: read it (especially
-the hazard catalogue H1-H21, which includes per-edition layout drift — 2024
+the hazard catalogue H1-H40, which includes per-edition layout drift — 2024
 Title-Case/inline-code headings, 2026 per-degree headers and HEQSF wording)
 before touching any parser or onboarding a new handbook year.
 `docs/USER-MANUAL.md` is the reviewer/dean-facing manual — update it when
 tables, rules, or coverage change.
+
+**The rules layer.** The faculty-rules sections print degree-level minimum
+credits, durations and (LAW) stream grand totals; `common/degree_rules.py`
+extracts them to `data/processed/degree_rules.csv` (run by each extractor),
+and `validate_final.py` reconciles every specialisation's whole-degree
+credit sum against them (`validation/degree_check_<year>.csv`). The credit
+re-think is recorded in these rules directly (BBusSc 623→528 at 2025, EBE
+FB3.2 576→560 at 2026, LLB 660→637 at 2026). Ground rule: **key rules on
+the degree-heading text, never the rule code** — COM re-assigned its
+rule-code families wholesale between 2023 and 2024 (H35), and sentences
+wrap mid-clause (H36). See docs/REPLICATION.md §10.
 
 ## Ground rules
 

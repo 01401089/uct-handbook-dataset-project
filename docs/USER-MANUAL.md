@@ -1,7 +1,8 @@
 # UCT Handbook Dataset — User Manual
 
 *For reviewers, deans, and faculty planning teams.*
-*Dataset version: Commerce + Fees, 2021–2026 editions (August 2026).*
+*Dataset version: Commerce + EBE + Law + Health Sciences + Fees,
+2021–2026 editions (August 2026).*
 
 ---
 
@@ -9,11 +10,18 @@
 
 The University has been re-thinking curriculum credit loads, and some changes
 are already in effect. To evaluate those changes, we need to answer, per
-degree programme and per year of study, two questions:
+degree programme, three questions:
 
-1. **How many credits does a student actually carry, and how has that changed
-   across handbook editions?**
+1. **How many credits does a student actually carry each year of study, and
+   how has that changed across handbook editions?**
 2. **What does that credit load cost, and how has the cost moved with it?**
+3. **What do the faculty rules say the whole degree must total — and when
+   did that requirement change?** The rules sections print each degree's
+   minimum credits, and the re-think is written into them directly: the
+   BBusSc minimum fell from 623 to 528 credits at the 2025 edition (its
+   Actuarial Science stream from 681 to 528), the engineering faculty's
+   4-year minimum from 576 to 560 at 2026, and the undergraduate LLB's
+   stream total from 660 to 637 at 2026.
 
 The published handbooks contain the answers, but as narrative PDF documents.
 This project converts them into a single analysable dataset in which every
@@ -31,17 +39,22 @@ number can be traced back to the page of the handbook it came from.
 | Humanities, Science handbooks | 2025 books on file | extraction pending |
 
 The 2025 edition is treated as the **baseline** — the recorded state of the
-curriculum against which the credit re-think editions are compared. Across
-the six editions the dataset holds **19,251 curriculum records**: 71–75
-Commerce specialisations per year (including the Academic Development
-augmented and extended variants and the Advanced Diplomas), ~25 EBE
-specialisations per year (including the 5-year Extended Curriculum
-Programmes), and the three LLB streams (graduate, four-year undergraduate,
-and the legacy five-year stream). In EBE, elective loads are printed as
-ranges ("0–48 credits"); the ideal student takes the minimum, and both ends
-of the range are retained. Law publishes one flat annual fee per stream
-rather than per-year figures; the dataset applies it to every year of the
-stream and labels the match accordingly.
+curriculum against which the credit re-think editions are compared (note
+that the rules layer shows some re-think changes landing *at* or *before*
+that baseline: the BBusSc minimum-credit cut arrives in the 2025 edition
+itself, the BCom's 450→440 as early as 2022 — the `degree_rules` table
+dates each change per degree). Across the six editions the dataset holds
+**20,649 curriculum records**: 71–75 Commerce specialisations per year
+(including the Academic Development augmented and extended variants and
+the Advanced Diplomas), ~26 EBE specialisations per year (including the
+5-year Extended Curriculum Programmes), the three LLB streams (graduate,
+four-year undergraduate, and the legacy five-year stream), and the Health
+Sciences professional degrees (MBChB and the four-year AHS programmes with
+their intervention-programme variants). In EBE, elective loads are printed
+as ranges ("0–48 credits"); the ideal student takes the minimum, and both
+ends of the range are retained. Law publishes one flat annual fee per
+stream rather than per-year figures; the dataset applies it to every year
+of the stream and labels the match accordingly.
 
 The dataset now comes in **two layers**:
 
@@ -171,7 +184,13 @@ The roll-up used for most review questions:
 `curriculum_totals` (the raw curriculum tables and their printed totals),
 `courses` (course catalogue: convener, entry requirements, assessment),
 `course_fees` (every course's fee), `programme_fees_published` (the fees
-book's typical annual fees as printed).
+book's typical annual fees as printed), and `degree_rules` — the **rules
+layer**: every degree-level rule the faculty-rules sections print
+(minimum total credits, level-specific requirements, durations, LAW's
+stream grand totals), one row per printed statement with the rule
+reference, the handbook page, and a verbatim quote. This is the table
+that answers question 3 of §1 and anchors the whole-degree validation
+check (§7).
 
 ### 6.4 `main_dataset_final.csv` — the final-clean dataset
 
@@ -209,36 +228,51 @@ than silently guessed.
 ## 7. How the data is validated
 
 Each specialisation-year is checked from two independent directions — a
-validation triangle:
+validation triangle — and, since the rules layer was added, each whole
+specialisation from a third:
 
 ```
    curriculum (courses + credits)  ×  course fees   →  computed year cost
         ↕ compared with                                  ↕ compared with
    the handbook's printed                       the fees book's published
    "Total credits per year"                     typical fee for that year
+        ↕ and, summed across all study years, compared with
+   the faculty rules' printed minimum credits for the whole degree
 ```
+
+The third leg (`validation/degree_check_<year>.csv`) catches what per-year
+checks cannot — a silently missing year-table, or a handbook whose own
+sections disagree. First-run examples: the graduate LLB sums to its
+printed 504-credit stream total exactly in all six editions; the 2026
+Architectural Studies curriculum sums 56 credits below the faculty rule's
+3-year minimum; the 2026 Property Studies stated minimum still says 452
+while its own year tables sum to 411.
 
 Results for the current load, after the final-clean layer
 (consistent / resolved / unresolved per faculty):
 
 | Year | Commerce | EBE | Law | Health Sciences |
 |---|---|---|---|---|
-| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 | 7 / 0 / 12 |
-| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 | 8 / 0 / 11 |
-| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 | 14 / 0 / 11 |
-| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 | 14 / 0 / 11 |
-| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 | 11 / 0 / 12 |
-| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 | 10 / 0 / 13 |
+| 2021 | 227 / 17 / 30 | 85 / 0 / 5 | 11 / 0 / 1 | 7 / 0 / 12 |
+| 2022 | 240 / 11 / 24 | 86 / 0 / 4 | 11 / 0 / 1 | 8 / 0 / 11 |
+| 2023 | 225 / 15 / 36 | 88 / 0 / 2 | 11 / 0 / 1 | 14 / 0 / 11 |
+| 2024 | 203 / 13 / 55 | 86 / 0 / 4 | 10 / 0 / 2 | 14 / 0 / 11 |
+| 2025 | 219 / 13 / 36 | 84 / 0 / 6 | 10 / 0 / 2 | 11 / 0 / 12 |
+| 2026 | 202 / 11 / 48 | 80 / 0 / 10 | 7 / 0 / 0 | 10 / 0 / 13 |
 
-78% of the 2,356 specialisation-years are fully resolved at high or medium
-confidence. The unresolved remainder carries the computed value at low
-confidence and is individually listed, with suggested actions, in
+86% of the 2,366 specialisation-years are consistent or resolved at high
+or medium confidence. The unresolved remainder carries the computed value
+at low confidence and is individually listed, with suggested actions, in
 `validation/pending_adjudication_<year>.csv`. Commerce's register has been
 provisionally seeded; the EBE, Law and Health Sciences adjudication passes
-have not yet been done. Law's unresolved rows are all the legacy five-year
-stream (no printed totals); Health Sciences' are dominated by the combined
-Audiology / Speech-Language Pathology block, whose interleaved curricula
-await a dedicated splitter. Highlights: the MBChB reconciles all six years
+have not yet been done — though the August 2026 parser refinements
+resolved most of what those passes had queued (EBE's unresolved count fell
+from 185 to 31 once its elective-menu sections parsed correctly; Law's
+legacy five-year stream turned out to print totals in an unrecognised
+wording and now reconciles to its printed 660-credit stream total).
+Health Sciences' unresolved rows are dominated by the combined Audiology /
+Speech-Language Pathology block, whose interleaved curricula await a
+dedicated splitter. Highlights: the MBChB reconciles all six years
 exactly, with years 1–3 computed fees matching the published figures to the
 rand; Law's graduate-stream first-year cost likewise matches to the rand.
 
@@ -257,8 +291,11 @@ preserves and surfaces rather than papering over. Real examples:
 - year totals that **count both branches of an either/or choice** (2025,
   CB001INF01 year 1: rows sum to 150 taking one branch, 168 taking both; the
   printed total is 168);
-- final-year course menus whose **selection rule is printed nowhere** (the
-  Computer Science stream's 4th-year module list);
+- final-year course menus whose **selection rule is missing from the page**
+  (the Computer Science stream's 4th-year module list in the 2023 and 2025
+  editions — the 2022/2024/2026 editions print "required to take two
+  options", and the register cites them as cross-edition evidence; the
+  faculty-rules sections never state the rule in any edition);
 - a stated total **excluding a course that is listed** in the same table
   (CB011ACC08 year 2).
 
@@ -290,12 +327,21 @@ published handbooks would benefit from editorial correction.
 5. **Older editions are noisier.** The 2021–2023 fee sections reconcile at a
    somewhat lower rate than 2024–2026; their mismatch lists are
    correspondingly longer.
-6. **Zero-credit and cross-listed courses exist** (e.g. a 0-credit
+6. **Degree minimums don't exist for every programme.** The rules layer
+   covers the mainstream COM degrees, the EBE programmes and the LLB
+   streams; Commerce's Academic Development variants and the Health
+   Sciences professional degrees print durations but no minimum-credit
+   rule, so their `degree_check` rows read `NO_RULE`. The EBE handbook
+   also carries its own disclaimer — "Students should ignore NQF credit
+   values, and complete their degrees by faculty rules for number of
+   courses" — worth remembering when comparing EBE credit sums across
+   editions.
+7. **Zero-credit and cross-listed courses exist** (e.g. a 0-credit
    programming assessment) and are represented as printed.
-7. **Coverage is Commerce-first.** Conclusions about other faculties must
-   wait for their extractors; their handbook structures differ (Science and
-   Humanities in particular define majors plus composition rules rather than
-   per-specialisation tables).
+8. **Science and Humanities are not yet covered.** Their handbook
+   structures differ fundamentally (majors plus composition rules rather
+   than per-specialisation tables); conclusions about those faculties must
+   wait for their extractors.
 
 ## 9. Worked examples
 
@@ -321,8 +367,18 @@ Open `main_dataset.csv`, filter `year = 2024`, `plan_code = CB019BUS01`,
 `study_year = 1`, `ideal_student = True` — the course list, each course's
 credits and fee, and the page each row came from.
 
+**"When did the faculty change what the whole degree must total?"**
+Open `degree_rules.csv`, filter `degree_scope = Bachelor of Business
+Science`, and read `min_total_credits` across editions: 623 credits
+(2021–2024), then 528 from the 2025 edition — with the level-8 requirement
+rising from 96 to 120 credits at the same moment. Every row carries the
+rule reference (FBB2), the page, and the printed sentence.
+
 **"Which programmes' handbook entries need editorial attention?"**
-Open `validation/credit_check_<year>.csv` and filter `status = MISMATCH`.
+Open `validation/credit_check_<year>.csv` and filter `status = MISMATCH`;
+for whole-degree disagreements (a curriculum below its own faculty's
+minimum, a stated total the tables no longer support), open
+`validation/degree_check_<year>.csv` and filter `status = BELOW_MIN`.
 
 ## 10. Raising corrections
 
@@ -368,6 +424,8 @@ contribution a reader of this manual can make. They are listed in
 | `data/processed/ideal_student_summary_final.csv` | final per specialisation-year roll-up (§6.5) |
 | `data/processed/main_dataset.csv` | as-printed dataset (§6.1) — audit/replication |
 | `data/processed/ideal_student_summary.csv` | as-printed roll-up (§6.2) |
+| `data/processed/degree_rules.csv` | the rules layer: printed degree minimums, durations, stream totals (§6.3) |
+| `validation/degree_check_<year>.csv` | whole-degree reconciliation against the rules layer (§7) |
 | `data/processed/*.csv` | supporting tables (§6.3) |
 | `resolutions/com.csv` | the adjudication register with rationales (§10) |
 | `validation/*.csv` | exception reports, resolution logs, pending adjudications (§7) |
