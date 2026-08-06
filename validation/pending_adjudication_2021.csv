@@ -37,36 +37,11 @@
 2021,CB024FTX05,3,MISMATCH,162,180,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2021,EB001CHE01,3,MISMATCH,126,142,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2021,EB002CIV01,3,MISMATCH,134,152,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB005MEC01,4,MISMATCH,102,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB009EEE01,3,MISMATCH,128,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB009EEE01,4,NO_STATED_TOTAL,258,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,EB010MEC05,4,MISMATCH,126,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB011EEE05,3,MISMATCH,128,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB011EEE05,4,NO_STATED_TOTAL,224,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,EB017CON03,3,MISMATCH,350,148,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB019APG09,1,MISMATCH,106,124,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB022EEE02,3,NO_STATED_TOTAL,160,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,EB022EEE02,4,NO_STATED_TOTAL,218,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2021,EB010MEC05,4,MISMATCH,156,144,R2b,check_extraction,"stated total matches OK editions 2022, 2023, 2024, 2025 but the extracted course set is unique to this edition — possible extraction gap"
+2021,EB010MEC05,4,MISMATCH,156,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2021,EB801CHE01,4,MISMATCH,110,126,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB801CHE01,5,MISMATCH,112,128,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2021,EB802CIV01,4,MISMATCH,108,126,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB805MEC01,3,MISMATCH,96,114,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB805MEC01,5,MISMATCH,102,126,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB809EEE01,4,MISMATCH,106,122,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB809EEE01,5,NO_STATED_TOTAL,248,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,EB810MEC05,3,MISMATCH,96,114,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB810MEC05,5,MISMATCH,114,126,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB811EEE05,4,MISMATCH,106,122,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB811EEE05,5,NO_STATED_TOTAL,224,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,EB819APG09,2,MISMATCH,92,110,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB822EEE02,3,MISMATCH,104,120,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2021,EB822EEE02,4,NO_STATED_TOTAL,146,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,EB822EEE02,5,NO_STATED_TOTAL,208,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,LB003,1,NO_STATED_TOTAL,36,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,LB003,2,NO_STATED_TOTAL,72,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,LB003,3,NO_STATED_TOTAL,108,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,LB003,4,NO_STATED_TOTAL,144,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2021,LB003,5,NO_STATED_TOTAL,180,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2021,LB003,5,UNRESOLVED_SLOTS,180,180,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
 2021,MB003AHS09,,NO_STATED_TOTAL,112,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
 2021,MB003AHS09,2,MISMATCH,267,123,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2021,MB004AHS08,,NO_STATED_TOTAL,136,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against

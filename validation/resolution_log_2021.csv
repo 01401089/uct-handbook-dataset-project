@@ -2,18 +2,17 @@
 2021,CB001BUS06,3,R3,accept_stated,COM-2021-001,43,144,144,row sum 43 vs stated 144 (handbook p93); stated totals across affected editions: ['144'],high
 2021,CB001ECO03,3,R1a,accept_computed,R1a,144,162,144,non-taken choice credits = 18 (one choice group),high
 2021,CB004ECO01,2,R2a,accept_computed,R2a,156,150,156,"corroborated by 2022, 2025, 2026",medium
-2021,CB004ECO01,3,R3,accept_stated,COM-2021-002,282,162,162,row sum 282 vs stated 162 (handbook p44); stated totals across affected editions: ['162'],high
+2021,CB004ECO01,3,R3,accept_stated,COM-2021-002,282,162,162,"row sum 282 vs stated 162 (handbook p44); stated totals across affected editions: ['162']; rules-layer sweep 2026-08-06: the faculty-rules sections never print this menu's selection rule; sibling editions' Programmes of Study print 'Business Science (Economics stream) students are required to take three options' (2022 pp.47/78/80, 2024 pp.34/44/55) — note 2026 changes the instruction to 'two options' (pp.55/70/84).",high
 2021,CB004ECO03,3,R2a,accept_computed,R2a,162,144,162,"corroborated by 2022, 2023",medium
 2021,CB004FTX05,3,R3,accept_stated,COM-2021-003,18,180,180,row sum 18 vs stated 180 (handbook p39); stated totals across affected editions: ['180'],high
 2021,CB011ACC08,3,R1a,accept_computed,R1a,108,126,108,non-taken choice credits = 18 (all choice groups),high
 2021,CB011BUS06,4,R3,accept_stated,COM-2021-004,18,126,126,row sum 18 vs stated 126 (handbook p127); stated totals across affected editions: ['126'],high
-2021,CB011ECO03,2,R3,accept_stated,COM-2021-005,204,108,108,row sum 204 vs stated 108 (handbook p122); stated totals across affected editions: ['108'],high
+2021,CB011ECO03,2,R3,accept_stated,COM-2021-005,204,108,108,"row sum 204 vs stated 108 (handbook p122); stated totals across affected editions: ['108']; rules-layer sweep 2026-08-06: the faculty-rules sections never print this menu's selection rule; sibling editions' Programmes of Study print 'Business Science (Economics stream) students are required to take three options' (2022 pp.47/78/80, 2024 pp.34/44/55) — note 2026 changes the instruction to 'two options' (pp.55/70/84).",high
 2021,CB011ECO03,4,R1a,accept_computed,R1a,108,198,108,non-taken choice credits = 90 (all choice groups),high
-2021,CB011PHI03,3,R3,accept_stated,COM-2021-006,198,102,102,row sum 198 vs stated 102 (handbook p118); stated totals across affected editions: ['102'],high
+2021,CB011PHI03,3,R3,accept_stated,COM-2021-006,198,102,102,row sum 198 vs stated 102 (handbook p118); stated totals across affected editions: ['102']; rules-layer sweep 2026-08-06: no selection rule for this menu is printed in any faculty-rules section or any sibling edition 2021-2026 — accept_stated remains the only defensible action.,high
 2021,CB015CSC05,3,R2a,accept_computed,R2a,126,132,126,"corroborated by 2022, 2023, 2024",medium
 2021,CB015ECO01,4,R3,accept_stated,COM-2021-007,210,90,90,row sum 210 vs stated 90 (handbook p74); stated totals across affected editions: ['90'],high
 2021,CB023ECO02,2,R2a,accept_computed,R2a,150,162,150,"corroborated by 2022, 2023",medium
 2021,CB023INF06,2,R2a,accept_computed,R2a,162,324,162,"corroborated by 2022, 2023, 2025, 2026",medium
 2021,CB024ECO01,2,R2a,accept_computed,R2a,156,150,156,"corroborated by 2022, 2023, 2024, 2025, 2026",medium
-2021,CB024ECO01,3,R3,accept_stated,COM-2021-008,264,162,162,row sum 264 vs stated 162 (handbook p59); stated totals across affected editions: ['162'],high
-2021,EB819APG09,3,R2a,accept_computed,R2a,90,102,90,"corroborated by 2022, 2023, 2024",medium
+2021,CB024ECO01,3,R3,accept_stated,COM-2021-008,264,162,162,"row sum 264 vs stated 162 (handbook p59); stated totals across affected editions: ['162']; rules-layer sweep 2026-08-06: the faculty-rules sections never print this menu's selection rule; sibling editions' Programmes of Study print 'Business Science (Economics stream) students are required to take three options' (2022 pp.47/78/80, 2024 pp.34/44/55) — note 2026 changes the instruction to 'two options' (pp.55/70/84).",high

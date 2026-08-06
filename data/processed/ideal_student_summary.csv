@@ -284,19 +284,19 @@
 2021,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,1,144,0,144,False,0,68350,0,0,72350,BSc Eng (Mechanical),duration,-5.5
 2021,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,2,144,0,144,False,0,59470,0,0,73470,BSc Eng (Mechanical),duration,-19.1
 2021,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,3,144,0,144,False,0,68210,0,0,76210,BSc Eng (Mechanical),duration,-10.5
-2021,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,102,0,144,False,-42,54480,0,0,54480,BSc Eng (Mechanical),duration,0.0
+2021,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,144,0,144,False,0,63020,8540,1,54480,BSc Eng (Mechanical),duration,15.7
 2021,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,1,148,0,148,False,0,71700,0,0,78840,BSc Eng (Electrical),duration,-9.1
 2021,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,2,144,0,144,False,0,78840,0,0,78840,BSc Eng (Electrical),duration,0.0
-2021,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,128,0,144,False,-16,56700,0,0,65700,BSc Eng (Electrical),duration,-13.7
-2021,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,258,0,,False,,109700,0,0,44650,BSc Eng (Electrical),duration,145.7
+2021,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,144,0,144,False,0,64291,7591,0,65700,BSc Eng (Electrical),duration,-2.1
+2021,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,172,0,140,True,32,63433,22773,0,44650,BSc Eng (Electrical),duration,42.1
 2021,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,1,144,0,144,False,0,68350,0,0,,,unmatched,
 2021,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,2,144,0,144,False,0,59470,0,0,,,unmatched,
 2021,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,3,144,0,144,False,0,76340,0,0,,,unmatched,
-2021,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,126,0,144,False,-18,67310,0,0,,,unmatched,
+2021,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,156,0,144,False,12,81543,14233,0,,,unmatched,
 2021,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,148,0,148,False,0,71700,0,0,71700,BSc Eng (Mechatronics),duration,0.0
 2021,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,2,144,0,144,False,0,78840,0,0,78540,BSc Eng (Mechatronics),duration,0.4
-2021,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,128,0,144,False,-16,58930,0,0,76930,BSc Eng (Mechatronics),duration,-23.4
-2021,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,224,0,,False,,93500,0,0,65450,BSc Eng (Mechatronics),duration,42.9
+2021,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,144,0,144,False,0,66521,7591,0,76930,BSc Eng (Mechatronics),duration,-13.5
+2021,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,138,0,136,True,2,47423,22773,0,65450,BSc Eng (Mechatronics),duration,-27.5
 2021,EBE,EB012APG01,BAS,,regular,1,144,0,144,False,0,71440,0,2,71440,Bachelor of Architectural Studies,label_match,0.0
 2021,EBE,EB012APG01,BAS,,regular,2,144,0,144,False,0,68170,0,0,68170,Bachelor of Architectural Studies,label_match,0.0
 2021,EBE,EB012APG01,BAS,,regular,3,144,0,144,False,0,71240,0,0,71240,Bachelor of Architectural Studies,label_match,0.0
@@ -305,8 +305,8 @@
 2021,EBE,EB015CON04,BSc(ConStud),,regular,3,156,0,156,False,0,57350,0,0,71350,BSc in Construction Studies,label_match,-19.6
 2021,EBE,EB017CON03,BSc(PropStud),,regular,1,152,0,152,False,0,71690,0,0,57600,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,24.5
 2021,EBE,EB017CON03,BSc(PropStud),,regular,2,154,0,154,False,0,59680,0,0,52200,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,14.3
-2021,EBE,EB017CON03,BSc(PropStud),,regular,3,350,0,148,False,202,161450,0,0,61920,BSc in Property Studies,label_match,160.7
-2021,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,106,0,124,False,-18,49850,0,0,67280,courses BSc (Geomatics),duration,-25.9
+2021,EBE,EB017CON03,BSc(PropStud),,regular,3,148,0,148,False,0,67600,8600,0,61920,BSc in Property Studies,label_match,9.2
+2021,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,124,0,124,False,0,58390,8540,0,67280,courses BSc (Geomatics),duration,-13.2
 2021,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,2,148,0,148,False,0,72630,0,0,84650,courses BSc (Geomatics),duration,-14.2
 2021,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,3,144,0,144,False,0,52650,0,2,75750,courses BSc (Geomatics),duration,-30.5
 2021,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,4,150,0,150,False,0,77070,0,0,77070,courses BSc (Geomatics),duration,0.0
@@ -316,13 +316,13 @@
 2021,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,4,180,0,180,False,0,90340,0,0,77070,courses BSc (Geomatics),duration,17.2
 2021,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,1,148,0,148,False,0,71700,0,0,71700,BSc Eng (Electrical & Computer),duration,0.0
 2021,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,2,144,0,144,False,0,78840,0,0,75150,BSc Eng (Electrical & Computer),duration,4.9
-2021,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,160,0,,False,,72020,0,0,62860,BSc Eng (Electrical & Computer),duration,14.6
-2021,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,218,0,,False,,88790,0,0,33670,BSc Eng (Electrical & Computer),duration,163.7
+2021,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,160,0,152,True,8,71308,7338,0,62860,BSc Eng (Electrical & Computer),duration,13.4
+2021,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,138,0,136,True,2,47423,22773,0,33670,BSc Eng (Electrical & Computer),duration,40.8
 2021,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,1,102,0,102,False,0,48130,0,0,,,unmatched,
 2021,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,2,112,0,112,True,0,54120,17080,0,,,unmatched,
 2021,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,3,112,0,112,True,0,59030,17080,0,,,unmatched,
 2021,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,4,110,0,126,True,-16,27931,16131,0,,,unmatched,
-2021,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,112,0,128,False,-16,63240,0,0,,,unmatched,
+2021,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,128,0,128,False,0,70831,7591,0,,,unmatched,
 2021,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,1,104,0,104,False,0,50220,0,0,,,unmatched,
 2021,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,2,104,0,104,False,0,47370,0,0,,,unmatched,
 2021,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,3,124,0,124,False,0,54220,0,0,,,unmatched,
@@ -330,27 +330,27 @@
 2021,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,5,126,0,126,False,0,70060,0,0,,,unmatched,
 2021,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,1,102,0,102,False,0,51170,0,0,,,unmatched,
 2021,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,2,98,0,98,False,0,38220,0,0,,,unmatched,
-2021,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,96,0,114,False,-18,42790,0,0,,,unmatched,
+2021,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,114,0,114,False,0,51330,8540,0,,,unmatched,
 2021,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,4,136,0,136,False,0,63850,0,0,,,unmatched,
-2021,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,102,0,126,False,-24,54480,0,0,,,unmatched,
+2021,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,126,0,126,False,0,65867,11387,0,,,unmatched,
 2021,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,1,96,0,96,False,0,47180,0,0,,,unmatched,
 2021,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,2,116,0,116,False,0,59670,0,0,,,unmatched,
 2021,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,3,112,0,112,False,0,51790,0,0,,,unmatched,
-2021,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,106,0,122,False,-16,52900,0,0,,,unmatched,
-2021,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,248,0,,False,,105400,0,0,,,unmatched,
+2021,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,122,0,122,False,0,60238,7338,0,,,unmatched,
+2021,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,162,0,128,True,34,59133,22773,0,,,unmatched,
 2021,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,1,102,0,102,False,0,51170,0,0,,,unmatched,
 2021,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,2,98,0,98,False,0,38220,0,0,,,unmatched,
-2021,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,96,0,114,False,-18,42790,0,0,,,unmatched,
+2021,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,114,0,114,False,0,51330,8540,0,,,unmatched,
 2021,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,4,136,0,136,False,0,71980,0,0,,,unmatched,
-2021,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,114,0,126,False,-12,60900,0,0,,,unmatched,
+2021,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,126,0,126,False,0,66593,5693,0,,,unmatched,
 2021,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,96,False,0,47180,0,0,,,unmatched,
 2021,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,116,0,116,False,0,59670,0,0,,,unmatched,
 2021,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,112,0,112,False,0,51790,0,0,,,unmatched,
-2021,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,106,0,122,False,-16,55130,0,0,,,unmatched,
-2021,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,224,0,,False,,93030,0,0,,,unmatched,
+2021,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,122,0,122,False,0,62721,7591,0,,,unmatched,
+2021,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,128,0,128,True,0,43123,22773,0,,,unmatched,
 2021,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,1,124,0,124,False,0,58390,0,0,,,unmatched,
-2021,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,92,0,110,False,-18,44590,0,0,,,unmatched,
-2021,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,90,0,102,False,-12,33580,0,2,,,unmatched,
+2021,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,110,0,110,False,0,53130,8540,0,,,unmatched,
+2021,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,102,0,102,False,0,39083,5503,2,,,unmatched,
 2021,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,4,136,0,136,False,0,62870,0,0,,,unmatched,
 2021,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,5,106,0,106,False,0,52770,0,0,,,unmatched,
 2021,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,1,126,0,126,False,0,59310,0,0,,,unmatched,
@@ -360,18 +360,18 @@
 2021,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,5,80,0,80,False,0,40450,0,0,,,unmatched,
 2021,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,96,False,0,47180,0,0,,,unmatched,
 2021,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,116,0,116,False,0,59670,0,0,,,unmatched,
-2021,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,104,0,120,False,-16,54750,0,0,,,unmatched,
-2021,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,146,0,,False,,65260,0,0,,,unmatched,
-2021,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,208,0,,False,,84490,0,0,,,unmatched,
+2021,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,120,0,120,False,0,62341,7591,0,,,unmatched,
+2021,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,130,0,122,True,8,57210,0,0,,,unmatched,
+2021,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,128,0,128,True,0,43123,22773,0,,,unmatched,
 2021,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,1,144,0,144,False,0,65580,25620,0,63300,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,3.6
 2021,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,2,156,0,156,False,0,71273,39853,0,63300,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,12.6
 2021,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,3,180,0,180,False,0,71700,0,0,63300,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,13.3
 2021,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,4,180,0,180,False,0,74390,15320,0,63300,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,17.5
-2021,LAW,LB003,LLB,Five-year stream,extended,1,36,0,,False,,16320,0,0,,,unmatched,
-2021,LAW,LB003,LLB,Five-year stream,extended,2,72,0,,False,,31260,15560,0,,,unmatched,
-2021,LAW,LB003,LLB,Five-year stream,extended,3,108,1,,False,,45450,15560,1,,,unmatched,
-2021,LAW,LB003,LLB,Five-year stream,extended,4,144,0,,False,,57530,0,0,,,unmatched,
-2021,LAW,LB003,LLB,Five-year stream,extended,5,180,0,,False,,77510,18440,0,,,unmatched,
+2021,LAW,LB003,LLB,Five-year stream,extended,1,90,0,90,False,0,16320,0,2,,,unmatched,
+2021,LAW,LB003,LLB,Five-year stream,extended,2,90,0,90,False,0,39120,15560,0,,,unmatched,
+2021,LAW,LB003,LLB,Five-year stream,extended,3,156,0,156,False,0,70037,40147,0,,,unmatched,
+2021,LAW,LB003,LLB,Five-year stream,extended,4,144,0,144,False,0,57530,0,0,,,unmatched,
+2021,LAW,LB003,LLB,Five-year stream,extended,5,180,1,180,False,0,77510,18440,1,,,unmatched,
 2021,LAW,LP001,LLB,Graduate LLB Stream,regular,1,144,0,144,False,0,62840,0,0,62840,Graduate LLB,flat_annual,0.0
 2021,LAW,LP001,LLB,Graduate LLB Stream,regular,2,180,0,180,False,0,71700,0,0,62840,Graduate LLB,flat_annual,14.1
 2021,LAW,LP001,LLB,Graduate LLB Stream,regular,3,180,0,180,False,0,73290,14220,0,62840,Graduate LLB,flat_annual,16.6
@@ -680,19 +680,19 @@
 2022,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,1,144,0,144,False,0,75480,0,0,75480,BSc Eng (Mechanical),duration,0.0
 2022,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,2,144,0,144,False,0,76630,0,0,76630,BSc Eng (Mechanical),duration,0.0
 2022,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,3,144,0,144,False,0,79520,0,0,79520,BSc Eng (Mechanical),duration,0.0
-2022,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,102,0,144,False,-42,56830,0,0,79930,BSc Eng (Mechanical),duration,-28.9
+2022,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,144,0,144,False,0,77620,20790,0,79930,BSc Eng (Mechanical),duration,-2.9
 2022,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,1,148,0,148,False,0,74800,0,0,74800,BSc Eng (Electrical),duration,0.0
 2022,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,2,144,0,144,False,0,82230,0,0,82230,BSc Eng (Electrical),duration,0.0
-2022,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,128,0,,False,,67520,0,0,77520,BSc Eng (Electrical),duration,-12.9
-2022,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,224,0,,False,,119530,0,0,73890,BSc Eng (Electrical),duration,61.8
+2022,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,146,0,146,True,0,76430,8910,0,77520,BSc Eng (Electrical),duration,-1.4
+2022,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,138,0,138,True,0,71250,23760,0,73890,BSc Eng (Electrical),duration,-3.6
 2022,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,1,144,0,144,False,0,75480,0,0,75480,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2022,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,2,144,0,144,False,0,76630,0,0,76630,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2022,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,3,144,0,144,False,0,79650,0,0,79650,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
-2022,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,114,0,144,False,-30,63530,0,0,80030,BSc Eng (Mechanical and Mechatronic Engineering),duration,-20.6
-2022,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,148,0,,False,,74800,0,0,74800,BSc Eng (Mechatronics),duration,0.0
-2022,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,2,144,0,,False,,82230,0,0,82230,BSc Eng (Mechatronics),duration,0.0
-2022,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,128,0,,False,,69840,0,0,79840,BSc Eng (Mechatronics),duration,-12.5
-2022,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,206,0,,False,,110420,0,0,73890,BSc Eng (Mechatronics),duration,49.4
+2022,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,144,0,144,False,0,78380,14850,0,80030,BSc Eng (Mechanical and Mechatronic Engineering),duration,-2.1
+2022,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,148,0,148,True,0,74800,0,0,74800,BSc Eng (Mechatronics),duration,0.0
+2022,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,2,144,0,144,True,0,82230,0,0,82230,BSc Eng (Mechatronics),duration,0.0
+2022,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,146,0,146,True,0,78750,8910,0,79840,BSc Eng (Mechatronics),duration,-1.4
+2022,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,138,0,138,True,0,71250,23760,0,73890,BSc Eng (Mechatronics),duration,-3.6
 2022,EBE,EB012APG01,BAS,,regular,1,144,0,144,False,0,74490,0,2,74490,Bachelor of Architectural Studies,label_match,0.0
 2022,EBE,EB012APG01,BAS,,regular,2,144,0,144,False,0,71100,0,0,71100,Bachelor of Architectural Studies,label_match,0.0
 2022,EBE,EB012APG01,BAS,,regular,3,144,0,144,False,0,74300,0,0,74300,Bachelor of Architectural Studies,label_match,0.0
@@ -702,7 +702,7 @@
 2022,EBE,EB017CON03,BSc(PropStud),,regular,1,152,0,152,False,0,74760,0,0,40390,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,85.1
 2022,EBE,EB017CON03,BSc(PropStud),,regular,2,154,0,154,False,0,74750,0,0,34890,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,114.2
 2022,EBE,EB017CON03,BSc(PropStud),,regular,3,162,0,162,False,0,79360,0,0,79360,BSc in Property Studies,label_match,0.0
-2022,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,106,0,124,False,-18,52000,0,0,64000,courses BSc (Geomatics),duration,-18.8
+2022,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,124,0,124,False,0,60910,8910,0,64000,courses BSc (Geomatics),duration,-4.8
 2022,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,2,148,0,148,False,0,75740,0,0,85120,courses BSc (Geomatics),duration,-11.0
 2022,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,3,144,0,144,False,0,74730,0,0,74730,courses BSc (Geomatics),duration,0.0
 2022,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,4,150,0,150,False,0,80360,0,0,80360,courses BSc (Geomatics),duration,0.0
@@ -712,13 +712,13 @@
 2022,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,4,180,0,180,False,0,94200,0,0,80360,courses BSc (Geomatics),duration,17.2
 2022,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,1,148,0,148,False,0,74800,0,0,74800,BSc Eng (Electrical & Computer),duration,0.0
 2022,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,2,144,0,144,False,0,82230,0,0,82230,BSc Eng (Electrical & Computer),duration,0.0
-2022,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,160,0,,False,,83480,0,0,75080,BSc Eng (Electrical & Computer),duration,11.2
-2022,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,184,0,,False,,97710,0,0,73890,BSc Eng (Electrical & Computer),duration,32.2
+2022,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,162,0,154,True,8,83480,8400,0,75080,BSc Eng (Electrical & Computer),duration,11.2
+2022,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,138,0,138,True,0,71250,23760,0,73890,BSc Eng (Electrical & Computer),duration,-3.6
 2022,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,1,102,0,102,False,0,50200,0,0,,,unmatched,
 2022,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,2,112,0,112,True,0,56440,17820,0,,,unmatched,
 2022,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,3,112,0,112,True,0,61560,17820,0,,,unmatched,
 2022,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,4,110,0,126,True,-16,58320,16830,0,,,unmatched,
-2022,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,112,0,128,False,-16,65940,0,0,,,unmatched,
+2022,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,128,0,128,False,0,73860,7920,0,,,unmatched,
 2022,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,1,104,0,104,False,0,52070,0,0,74600,BSc Eng (Civil),shared,-30.2
 2022,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,2,104,0,104,False,0,52390,0,0,73590,BSc Eng (Civil),shared,-28.8
 2022,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,3,124,0,124,False,0,55150,0,0,63980,BSc Eng (Civil),shared,-13.8
@@ -726,27 +726,27 @@
 2022,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,5,126,0,126,False,0,70430,0,0,,,unmatched,
 2022,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,1,102,0,102,False,0,53380,0,0,,,unmatched,
 2022,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,2,98,0,98,False,0,50300,0,0,,,unmatched,
-2022,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,96,0,114,False,-18,52980,0,0,,,unmatched,
+2022,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,114,0,114,False,0,61890,8910,0,,,unmatched,
 2022,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,4,136,0,136,False,0,74970,0,0,,,unmatched,
-2022,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,102,0,126,False,-24,56830,0,0,,,unmatched,
+2022,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,126,0,126,False,0,68710,11880,0,,,unmatched,
 2022,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,1,96,0,96,False,0,49220,0,0,,,unmatched,
 2022,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,2,116,0,116,False,0,62240,0,0,,,unmatched,
 2022,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,3,112,0,112,False,0,62370,0,0,,,unmatched,
-2022,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,106,0,,False,,55210,0,0,,,unmatched,
-2022,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,214,0,,False,,115040,0,0,,,unmatched,
+2022,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,124,0,124,True,0,63610,8400,0,,,unmatched,
+2022,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,128,0,128,True,0,66760,23760,0,,,unmatched,
 2022,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,1,102,0,102,False,0,53380,0,0,,,unmatched,
 2022,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,2,98,0,98,False,0,50300,0,0,,,unmatched,
-2022,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,96,0,114,False,-18,52980,0,0,,,unmatched,
+2022,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,114,0,114,False,0,61890,8910,0,,,unmatched,
 2022,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,4,136,0,136,False,0,75100,0,0,,,unmatched,
-2022,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,114,0,126,False,-12,63530,0,0,,,unmatched,
-2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,,False,,49220,0,0,,,unmatched,
-2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,116,0,,False,,62240,0,0,,,unmatched,
-2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,112,0,,False,,62370,0,0,,,unmatched,
-2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,106,0,,False,,57530,0,0,,,unmatched,
-2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,206,0,,False,,109930,0,0,,,unmatched,
+2022,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,126,0,126,False,0,69470,5940,0,,,unmatched,
+2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,96,True,0,49220,0,0,,,unmatched,
+2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,116,0,116,True,0,62240,0,0,,,unmatched,
+2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,112,0,112,True,0,62370,0,0,,,unmatched,
+2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,124,0,124,True,0,66440,8910,0,,,unmatched,
+2022,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,128,0,128,True,0,66760,23760,0,,,unmatched,
 2022,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,1,124,0,124,False,0,60910,0,0,,,unmatched,
-2022,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,92,0,110,False,-18,46500,0,0,,,unmatched,
-2022,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,90,0,90,False,0,47550,0,0,,,unmatched,
+2022,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,110,0,110,False,0,55410,8910,0,,,unmatched,
+2022,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,90,0,90,False,0,47550,0,1,,,unmatched,
 2022,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,4,136,0,136,False,0,72860,0,0,,,unmatched,
 2022,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,5,106,0,106,False,0,55010,0,0,,,unmatched,
 2022,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,1,126,0,126,False,0,61870,0,0,,,unmatched,
@@ -754,20 +754,20 @@
 2022,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,3,150,0,150,False,0,76900,0,0,,,unmatched,
 2022,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,4,142,0,142,False,0,73780,0,0,,,unmatched,
 2022,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,5,80,0,80,False,0,42180,0,0,,,unmatched,
-2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,,False,,49220,0,0,,,unmatched,
-2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,116,0,,False,,62240,0,0,,,unmatched,
-2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,104,0,,False,,57100,0,0,,,unmatched,
-2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,146,0,,False,,76440,0,0,,,unmatched,
-2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,174,0,,False,,93220,0,0,,,unmatched,
+2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,96,True,0,49220,0,0,,,unmatched,
+2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,116,0,116,True,0,62240,0,0,,,unmatched,
+2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,122,0,122,True,0,66010,8910,0,,,unmatched,
+2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,130,0,122,True,8,68040,0,0,,,unmatched,
+2022,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,128,0,128,True,0,66760,23760,0,,,unmatched,
 2022,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,1,144,0,144,False,0,68410,26730,0,66010,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,3.6
 2022,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,2,156,0,156,False,0,74350,41580,0,66010,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,12.6
 2022,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,3,180,0,180,False,0,76860,0,0,66010,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,16.4
 2022,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,4,180,0,180,False,0,76450,14840,0,66010,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,15.8
-2022,LAW,LB003,LLB,Five-year stream,extended,1,36,0,,False,,17020,0,0,,,unmatched,
-2022,LAW,LB003,LLB,Five-year stream,extended,2,72,0,,False,,16220,16220,1,,,unmatched,
-2022,LAW,LB003,LLB,Five-year stream,extended,3,108,1,,False,,47390,16220,1,,,unmatched,
-2022,LAW,LB003,LLB,Five-year stream,extended,4,144,0,,False,,62090,0,0,,,unmatched,
-2022,LAW,LB003,LLB,Five-year stream,extended,5,180,0,,False,,80850,19240,0,,,unmatched,
+2022,LAW,LB003,LLB,Five-year stream,extended,1,90,0,90,False,0,17020,0,2,,,unmatched,
+2022,LAW,LB003,LLB,Five-year stream,extended,2,90,0,90,False,0,16220,16220,2,,,unmatched,
+2022,LAW,LB003,LLB,Five-year stream,extended,3,156,0,156,False,0,73043,41873,0,,,unmatched,
+2022,LAW,LB003,LLB,Five-year stream,extended,4,144,0,144,False,0,62090,0,0,,,unmatched,
+2022,LAW,LB003,LLB,Five-year stream,extended,5,180,1,180,False,0,80850,19240,1,,,unmatched,
 2022,LAW,LP001,LLB,Graduate LLB Stream,regular,1,144,0,144,False,0,65540,0,0,65540,Graduate LLB,flat_annual,0.0
 2022,LAW,LP001,LLB,Graduate LLB Stream,regular,2,180,0,180,False,0,76860,0,0,65540,Graduate LLB,flat_annual,17.3
 2022,LAW,LP001,LLB,Graduate LLB Stream,regular,3,180,0,180,False,0,70350,8740,0,65540,Graduate LLB,flat_annual,7.3
@@ -1077,19 +1077,19 @@
 2023,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,1,144,0,144,False,0,80050,0,0,80050,BSc Eng (Mechanical),duration,0.0
 2023,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,2,144,0,144,False,0,80590,0,0,80590,BSc Eng (Mechanical),duration,0.0
 2023,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,3,144,0,144,False,0,83650,0,0,83650,BSc Eng (Mechanical),duration,0.0
-2023,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,102,0,144,False,-42,59760,0,0,82000,BSc Eng (Mechanical),duration,-27.1
+2023,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,144,0,144,False,0,81623,21863,0,82000,BSc Eng (Mechanical),duration,-0.5
 2023,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,1,148,0,148,False,0,80380,0,0,80380,BSc Eng (Electrical),duration,0.0
 2023,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,2,144,0,144,False,0,86450,0,0,86450,BSc Eng (Electrical),duration,0.0
-2023,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,128,0,,False,,71510,0,0,81510,BSc Eng (Electrical),duration,-12.3
-2023,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,206,0,,False,,116330,0,0,78040,BSc Eng (Electrical),duration,49.1
+2023,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,146,0,146,True,0,80880,9370,0,81510,BSc Eng (Electrical),duration,-0.8
+2023,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,138,0,138,True,0,74917,24987,0,78040,BSc Eng (Electrical),duration,-4.0
 2023,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,1,144,0,144,False,0,80050,0,0,80050,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2023,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,2,144,0,144,False,0,80590,0,0,80590,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2023,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,3,144,0,144,False,0,83790,0,0,83790,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
-2023,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,114,0,144,False,-30,66810,0,0,82800,BSc Eng (Mechanical and Mechatronic Engineering),duration,-19.3
-2023,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,148,0,,False,,80380,0,0,80380,BSc Eng (Mechatronics),duration,0.0
-2023,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,2,144,0,,False,,86450,0,0,86450,BSc Eng (Mechatronics),duration,0.0
-2023,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,128,0,,False,,73960,0,0,83960,BSc Eng (Mechatronics),duration,-11.9
-2023,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,206,0,,False,,116120,0,0,78040,BSc Eng (Mechatronics),duration,48.8
+2023,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,144,0,144,False,0,82427,15617,0,82800,BSc Eng (Mechanical and Mechatronic Engineering),duration,-0.5
+2023,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,148,0,148,True,0,80380,0,0,80380,BSc Eng (Mechatronics),duration,0.0
+2023,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,2,144,0,144,True,0,86450,0,0,86450,BSc Eng (Mechatronics),duration,0.0
+2023,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,146,0,146,True,0,83330,9370,0,83960,BSc Eng (Mechatronics),duration,-0.8
+2023,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,138,0,138,True,0,74917,24987,0,78040,BSc Eng (Mechatronics),duration,-4.0
 2023,EBE,EB012APG01,BAS,,regular,1,144,0,144,False,0,78330,0,2,78330,Bachelor of Architectural Studies,label_match,0.0
 2023,EBE,EB012APG01,BAS,,regular,2,144,0,144,False,0,74770,0,0,74770,Bachelor of Architectural Studies,label_match,0.0
 2023,EBE,EB012APG01,BAS,,regular,3,144,0,144,False,0,78130,0,0,78130,Bachelor of Architectural Studies,label_match,0.0
@@ -1099,7 +1099,7 @@
 2023,EBE,EB017CON03,BSc(PropStud),,regular,1,152,0,152,False,0,78800,0,0,40000,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,97.0
 2023,EBE,EB017CON03,BSc(PropStud),,regular,2,154,0,154,False,0,78610,0,0,40000,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,96.5
 2023,EBE,EB017CON03,BSc(PropStud),,regular,3,162,0,162,False,0,83500,0,0,83500,BSc in Property Studies,label_match,0.0
-2023,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,106,0,124,False,-18,54890,0,0,66260,courses BSc (Geomatics),duration,-17.2
+2023,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,124,0,124,False,0,64260,9370,0,66260,courses BSc (Geomatics),duration,-3.0
 2023,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,2,148,0,148,False,0,79620,0,0,79620,courses BSc (Geomatics),duration,0.0
 2023,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,3,144,0,144,False,0,78590,0,0,78590,courses BSc (Geomatics),duration,0.0
 2023,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,4,150,0,150,False,0,84480,0,0,84480,courses BSc (Geomatics),duration,0.0
@@ -1109,13 +1109,13 @@
 2023,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,4,180,0,180,False,0,99030,0,0,84480,courses BSc (Geomatics),duration,17.2
 2023,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,1,148,0,148,False,0,80380,0,0,80380,BSc Eng (Electrical & Computer),duration,0.0
 2023,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,2,144,0,144,False,0,86450,0,0,86450,BSc Eng (Electrical & Computer),duration,0.0
-2023,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,160,0,,False,,88290,0,0,89460,BSc Eng (Electrical & Computer),duration,-1.3
-2023,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,182,0,,False,,102750,0,0,76130,BSc Eng (Electrical & Computer),duration,35.0
+2023,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,162,0,154,True,8,88290,8830,0,89460,BSc Eng (Electrical & Computer),duration,-1.3
+2023,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,138,0,138,True,0,74917,24987,0,76130,BSc Eng (Electrical & Computer),duration,-1.6
 2023,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,1,102,0,102,False,0,53130,0,0,,,unmatched,
 2023,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,2,112,0,112,True,0,60010,19420,0,,,unmatched,
 2023,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,3,112,0,112,True,0,65400,19420,0,,,unmatched,
 2023,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,4,126,0,126,True,0,71171,18341,0,,,unmatched,
-2023,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,112,0,128,False,-16,69320,0,0,,,unmatched,
+2023,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,128,0,128,False,0,77951,8631,0,,,unmatched,
 2023,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,1,104,0,104,False,0,55220,0,0,,,unmatched,
 2023,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,2,104,0,104,False,0,56310,0,0,,,unmatched,
 2023,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,3,124,0,124,False,0,67130,0,0,,,unmatched,
@@ -1123,27 +1123,27 @@
 2023,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,5,126,0,126,False,0,76800,0,0,,,unmatched,
 2023,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,1,102,0,102,False,0,56470,0,0,,,unmatched,
 2023,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,2,98,0,98,False,0,53230,0,0,,,unmatched,
-2023,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,100,0,118,False,-18,57980,0,0,,,unmatched,
+2023,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,118,0,118,False,0,67350,9370,0,,,unmatched,
 2023,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,4,132,0,132,False,0,76610,0,0,,,unmatched,
-2023,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,102,0,126,False,-24,59760,0,0,,,unmatched,
+2023,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,126,0,126,False,0,72253,12493,0,,,unmatched,
 2023,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,1,96,0,96,False,0,53480,0,0,,,unmatched,
 2023,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,2,116,0,116,False,0,65430,0,0,,,unmatched,
 2023,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,3,112,0,112,False,0,65580,0,0,,,unmatched,
-2023,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,106,0,,False,,58570,0,0,,,unmatched,
-2023,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,196,0,,False,,111610,0,0,,,unmatched,
+2023,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,124,0,124,True,0,67400,8830,0,,,unmatched,
+2023,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,128,0,128,True,0,70197,24987,0,,,unmatched,
 2023,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,1,102,0,102,False,0,56470,0,0,,,unmatched,
 2023,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,2,98,0,98,False,0,53230,0,0,,,unmatched,
-2023,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,100,0,118,False,-18,57980,0,0,,,unmatched,
+2023,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,118,0,118,False,0,67350,9370,0,,,unmatched,
 2023,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,4,132,0,132,False,0,76750,0,0,,,unmatched,
-2023,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,114,0,126,False,-12,66810,0,0,,,unmatched,
-2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,,False,,53480,0,0,,,unmatched,
-2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,116,0,,False,,65430,0,0,,,unmatched,
-2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,112,0,,False,,65580,0,0,,,unmatched,
-2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,106,0,,False,,61020,0,0,,,unmatched,
-2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,204,0,,False,,115610,0,0,,,unmatched,
+2023,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,126,0,126,False,0,73057,6247,0,,,unmatched,
+2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,96,True,0,53480,0,0,,,unmatched,
+2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,116,0,116,True,0,65430,0,0,,,unmatched,
+2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,112,0,112,True,0,65580,0,0,,,unmatched,
+2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,124,0,124,True,0,70390,9370,0,,,unmatched,
+2023,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,128,0,128,True,0,70197,24987,0,,,unmatched,
 2023,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,1,124,0,124,False,0,64600,0,0,,,unmatched,
-2023,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,92,0,110,False,-18,49220,0,0,,,unmatched,
-2023,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,90,0,90,False,0,49990,0,0,,,unmatched,
+2023,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,110,0,110,False,0,58590,9370,0,,,unmatched,
+2023,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,90,0,90,False,0,49990,0,1,,,unmatched,
 2023,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,4,136,0,136,False,0,76620,0,0,,,unmatched,
 2023,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,5,106,0,106,False,0,57830,0,0,,,unmatched,
 2023,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,1,126,0,126,False,0,65610,0,0,,,unmatched,
@@ -1151,20 +1151,20 @@
 2023,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,3,150,0,150,False,0,80850,0,0,,,unmatched,
 2023,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,4,142,0,142,False,0,77580,0,0,,,unmatched,
 2023,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,5,80,0,80,False,0,44340,0,0,,,unmatched,
-2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,,False,,53480,0,0,,,unmatched,
-2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,116,0,,False,,65430,0,0,,,unmatched,
-2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,104,0,,False,,60040,0,0,,,unmatched,
-2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,146,0,,False,,80890,0,0,,,unmatched,
-2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,172,0,,False,,98030,0,0,,,unmatched,
+2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,96,True,0,53480,0,0,,,unmatched,
+2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,116,0,116,True,0,65430,0,0,,,unmatched,
+2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,122,0,122,True,0,69410,9370,0,,,unmatched,
+2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,130,0,122,True,8,72060,0,0,,,unmatched,
+2023,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,128,0,128,True,0,70197,24987,0,,,unmatched,
 2023,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,1,144,0,144,False,0,71930,28110,0,69410,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,3.6
 2023,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,2,156,0,156,False,0,78177,43727,0,69410,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,12.6
 2023,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,3,180,0,180,False,0,80810,0,0,69410,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,16.4
 2023,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,4,180,0,180,False,0,73720,8940,0,69410,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,6.2
-2023,LAW,LB003,LLB,Five-year stream,extended,1,36,0,,False,,17900,0,0,,,unmatched,
-2023,LAW,LB003,LLB,Five-year stream,extended,2,72,0,,False,,17060,17060,1,,,unmatched,
-2023,LAW,LB003,LLB,Five-year stream,extended,3,108,1,,False,,49830,17060,1,,,unmatched,
-2023,LAW,LB003,LLB,Five-year stream,extended,4,144,0,,False,,65280,0,0,,,unmatched,
-2023,LAW,LB003,LLB,Five-year stream,extended,5,180,0,,False,,85020,20240,0,,,unmatched,
+2023,LAW,LB003,LLB,Five-year stream,extended,1,90,0,90,False,0,17900,0,2,,,unmatched,
+2023,LAW,LB003,LLB,Five-year stream,extended,2,90,0,90,False,0,17060,17060,2,,,unmatched,
+2023,LAW,LB003,LLB,Five-year stream,extended,3,156,0,156,False,0,76817,44047,0,,,unmatched,
+2023,LAW,LB003,LLB,Five-year stream,extended,4,144,0,144,False,0,65280,0,0,,,unmatched,
+2023,LAW,LB003,LLB,Five-year stream,extended,5,180,1,180,False,0,85020,20240,1,,,unmatched,
 2023,LAW,LP001,LLB,Graduate LLB Stream,regular,1,144,0,144,False,0,68900,0,0,68900,Graduate LLB,flat_annual,0.0
 2023,LAW,LP001,LLB,Graduate LLB Stream,regular,2,180,0,180,False,0,80810,0,0,68900,Graduate LLB,flat_annual,17.3
 2023,LAW,LP001,LLB,Graduate LLB Stream,regular,3,180,0,180,False,0,73720,8940,0,68900,Graduate LLB,flat_annual,7.0
@@ -1475,19 +1475,19 @@
 2024,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,1,144,0,144,False,0,83710,0,0,83710,BSc Eng (Mechanical),duration,0.0
 2024,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,2,144,0,144,False,0,84280,0,0,84280,BSc Eng (Mechanical),duration,0.0
 2024,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,3,144,0,144,False,0,87480,0,0,87480,BSc Eng (Mechanical),duration,0.0
-2024,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,102,0,144,False,-42,62470,0,0,84710,BSc Eng (Mechanical),duration,-26.3
+2024,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,144,0,144,False,0,85337,22867,0,84710,BSc Eng (Mechanical),duration,0.7
 2024,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,1,148,0,148,False,0,84060,0,0,84060,BSc Eng (Electrical),duration,0.0
 2024,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,2,144,0,144,False,0,90390,0,0,90390,BSc Eng (Electrical),duration,0.0
-2024,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,128,0,,False,,74760,0,0,84760,BSc Eng (Electrical),duration,-11.8
-2024,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,206,0,,False,,121630,0,0,81600,BSc Eng (Electrical),duration,49.1
+2024,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,146,0,146,True,0,84560,9800,0,84760,BSc Eng (Electrical),duration,-0.2
+2024,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,138,0,138,True,0,78333,26133,0,81600,BSc Eng (Electrical),duration,-4.0
 2024,EBE,EB010MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,regular,1,144,0,144,False,0,83710,0,0,83710,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2024,EBE,EB010MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,regular,2,144,0,144,False,0,84280,0,0,84280,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2024,EBE,EB010MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,regular,3,144,0,144,False,0,87620,0,0,87620,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
-2024,EBE,EB010MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,regular,4,114,0,144,False,-30,69850,0,0,85840,BSc Eng (Mechanical and Mechatronic Engineering),duration,-18.6
-2024,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,148,0,,False,,84060,0,0,84060,BSc Eng (Mechatronics),duration,0.0
-2024,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,2,144,0,,False,,90390,0,0,90390,BSc Eng (Mechatronics),duration,0.0
-2024,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,128,0,,False,,77330,0,0,87330,BSc Eng (Mechatronics),duration,-11.5
-2024,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,206,0,,False,,117010,0,1,81600,BSc Eng (Mechatronics),duration,43.4
+2024,EBE,EB010MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,regular,4,144,0,144,False,0,86183,16333,0,85840,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.4
+2024,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,148,0,148,True,0,84060,0,0,84060,BSc Eng (Mechatronics),duration,0.0
+2024,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,2,144,0,144,True,0,90390,0,0,90390,BSc Eng (Mechatronics),duration,0.0
+2024,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,146,0,146,True,0,87130,9800,0,87330,BSc Eng (Mechatronics),duration,-0.2
+2024,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,138,0,138,True,0,78333,26133,0,81600,BSc Eng (Mechatronics),duration,-4.0
 2024,EBE,EB012APG01,BAS,,regular,1,144,0,144,False,0,81890,0,2,81890,Bachelor of Architectural Studies,label_match,0.0
 2024,EBE,EB012APG01,BAS,,regular,2,144,0,144,False,0,78170,0,0,78170,Bachelor of Architectural Studies,label_match,0.0
 2024,EBE,EB012APG01,BAS,,regular,3,144,0,144,False,0,81680,0,0,81680,Bachelor of Architectural Studies,label_match,0.0
@@ -1497,9 +1497,9 @@
 2024,EBE,EB017CON03,BSc(PropStud),,regular,1,152,0,152,False,0,82420,0,0,44410,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,85.6
 2024,EBE,EB017CON03,BSc(PropStud),,regular,2,154,0,154,False,0,82200,0,0,38350,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,114.3
 2024,EBE,EB017CON03,BSc(PropStud),,regular,3,146,0,146,False,0,78700,0,0,78700,BSc in Property Studies,label_match,0.0
-2024,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,106,0,124,False,-18,57400,0,0,68770,courses BSc (Geomatics),duration,-16.5
+2024,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,124,0,124,False,0,67200,9800,0,68770,courses BSc (Geomatics),duration,-2.3
 2024,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,2,148,0,148,False,0,84220,0,0,84220,courses BSc (Geomatics),duration,0.0
-2024,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,3,144,0,144,False,0,82170,0,0,82170,courses BSc (Geomatics),duration,0.0
+2024,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,3,144,0,144,False,0,82170,0,1,82170,courses BSc (Geomatics),duration,0.0
 2024,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,4,150,0,150,False,0,88320,0,0,88320,courses BSc (Geomatics),duration,0.0
 2024,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,1,126,0,126,False,0,68040,0,0,68770,courses BSc (Geomatics),duration,-1.1
 2024,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,2,148,0,148,False,0,84220,0,0,84220,courses BSc (Geomatics),duration,0.0
@@ -1507,13 +1507,13 @@
 2024,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,4,180,0,180,False,0,103510,0,0,88320,courses BSc (Geomatics),duration,17.2
 2024,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,1,148,0,148,False,0,84060,0,0,84060,BSc Eng (Electrical & Computer),duration,0.0
 2024,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,2,144,0,144,False,0,90390,0,0,90390,BSc Eng (Electrical & Computer),duration,0.0
-2024,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,160,0,,False,,92300,0,0,93070,BSc Eng (Electrical & Computer),duration,-0.8
-2024,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,182,0,,False,,107430,0,0,79600,BSc Eng (Electrical & Computer),duration,35.0
+2024,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,162,0,154,True,8,92300,9230,0,93070,BSc Eng (Electrical & Computer),duration,-0.8
+2024,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,138,0,138,True,0,78333,26133,0,79600,BSc Eng (Electrical & Computer),duration,-1.6
 2024,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,1,102,0,102,False,0,55550,0,0,,,unmatched,
 2024,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,2,112,0,112,True,0,62040,19600,0,,,unmatched,
 2024,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,3,112,0,112,True,0,67660,19600,0,,,unmatched,
 2024,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,4,110,0,126,True,-16,64101,18511,0,,,unmatched,
-2024,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,112,0,128,False,-16,72460,0,0,,,unmatched,
+2024,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,128,0,128,False,0,81171,8711,0,,,unmatched,
 2024,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,1,104,0,104,False,0,57750,0,0,,,unmatched,
 2024,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,2,104,0,104,False,0,58900,0,0,,,unmatched,
 2024,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,3,124,0,124,False,0,70220,0,0,,,unmatched,
@@ -1521,27 +1521,27 @@
 2024,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,5,126,0,126,False,0,80290,0,0,,,unmatched,
 2024,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,1,102,0,102,False,0,59050,0,0,,,unmatched,
 2024,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,2,98,0,98,False,0,55670,0,0,,,unmatched,
-2024,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,100,0,118,False,-18,60630,0,0,,,unmatched,
+2024,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,118,0,118,False,0,70430,9800,0,,,unmatched,
 2024,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,4,132,0,132,False,0,80120,0,0,,,unmatched,
-2024,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,102,0,126,False,-24,62470,0,0,,,unmatched,
+2024,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,126,0,126,False,0,75537,13067,0,,,unmatched,
 2024,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,1,96,0,96,False,0,55920,0,0,,,unmatched,
 2024,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,2,116,0,116,False,0,68430,0,0,,,unmatched,
 2024,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,3,112,0,112,False,0,68560,0,0,,,unmatched,
-2024,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,106,0,,False,,61240,0,0,,,unmatched,
-2024,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,196,0,,False,,116690,0,0,,,unmatched,
+2024,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,124,0,124,True,0,70470,9230,0,,,unmatched,
+2024,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,128,0,128,True,0,73393,26133,0,,,unmatched,
 2024,EBE,EB810MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,extended,1,102,0,102,False,0,59050,0,0,,,unmatched,
 2024,EBE,EB810MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,extended,2,98,0,98,False,0,55670,0,0,,,unmatched,
-2024,EBE,EB810MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,extended,3,100,0,118,False,-18,60630,0,0,,,unmatched,
+2024,EBE,EB810MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,extended,3,118,0,118,False,0,70430,9800,0,,,unmatched,
 2024,EBE,EB810MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,extended,4,132,0,132,False,0,80260,0,0,,,unmatched,
-2024,EBE,EB810MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,extended,5,114,0,126,False,-12,69850,0,0,,,unmatched,
-2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,,False,,55920,0,0,,,unmatched,
-2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,116,0,,False,,68430,0,0,,,unmatched,
-2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,112,0,,False,,68560,0,0,,,unmatched,
-2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,106,0,,False,,63810,0,0,,,unmatched,
-2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,204,0,,False,,116470,0,1,,,unmatched,
+2024,EBE,EB810MEC05,BSc(Eng),Mechanical and Mechatronic Engineering,extended,5,126,0,126,False,0,76383,6533,0,,,unmatched,
+2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,96,True,0,55920,0,0,,,unmatched,
+2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,116,0,116,True,0,68430,0,0,,,unmatched,
+2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,112,0,112,True,0,68560,0,0,,,unmatched,
+2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,124,0,124,True,0,73610,9800,0,,,unmatched,
+2024,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,128,0,128,True,0,73393,26133,0,,,unmatched,
 2024,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,1,124,0,124,False,0,67550,0,0,,,unmatched,
-2024,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,92,0,110,False,-18,51470,0,0,,,unmatched,
-2024,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,90,0,90,False,0,52260,0,0,,,unmatched,
+2024,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,110,0,110,False,0,61270,9800,0,,,unmatched,
+2024,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,90,0,90,False,0,52260,0,1,,,unmatched,
 2024,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,4,136,0,136,False,0,80110,0,0,,,unmatched,
 2024,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,5,106,0,106,False,0,60460,0,0,,,unmatched,
 2024,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,1,126,0,126,False,0,68610,0,0,,,unmatched,
@@ -1549,20 +1549,20 @@
 2024,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,3,150,0,150,False,0,84520,0,0,,,unmatched,
 2024,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,4,142,0,142,False,0,81090,0,0,,,unmatched,
 2024,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,5,80,0,80,False,0,46350,0,0,,,unmatched,
-2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,,False,,55920,0,0,,,unmatched,
-2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,116,0,,False,,68430,0,0,,,unmatched,
-2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,104,0,,False,,62770,0,0,,,unmatched,
-2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,146,0,,False,,84570,0,0,,,unmatched,
-2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,172,0,,False,,102490,0,0,,,unmatched,
+2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,96,True,0,55920,0,0,,,unmatched,
+2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,116,0,116,True,0,68430,0,0,,,unmatched,
+2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,122,0,122,True,0,72570,9800,0,,,unmatched,
+2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,130,0,122,True,8,75340,0,0,,,unmatched,
+2024,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,128,0,128,True,0,73393,26133,0,,,unmatched,
 2024,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,1,144,0,144,False,0,75210,29400,0,72570,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,3.6
 2024,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,2,156,0,156,False,0,81743,45733,0,72570,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,12.6
 2024,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,3,180,0,180,False,0,84480,0,1,72570,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,16.4
 2024,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,4,180,0,180,False,0,77100,9360,0,72570,Degrees Undergraduate LLB Regular curriculum 1st Year – depending on electives,flat_annual,6.2
-2024,LAW,LB003,LLB,Five-year stream,extended,1,36,0,,False,,18720,0,0,,,unmatched,
-2024,LAW,LB003,LLB,Five-year stream,extended,2,72,0,,False,,17840,17840,1,,,unmatched,
-2024,LAW,LB003,LLB,Five-year stream,extended,3,108,1,,False,,52090,17840,1,,,unmatched,
-2024,LAW,LB003,LLB,Five-year stream,extended,4,144,0,,False,,68250,0,1,,,unmatched,
-2024,LAW,LB003,LLB,Five-year stream,extended,5,180,0,,False,,88900,21160,0,,,unmatched,
+2024,LAW,LB003,LLB,Five-year stream,extended,1,90,0,90,False,0,18720,0,2,,,unmatched,
+2024,LAW,LB003,LLB,Five-year stream,extended,2,72,0,90,False,-18,17840,17840,1,,,unmatched,
+2024,LAW,LB003,LLB,Five-year stream,extended,3,156,0,156,False,0,80303,46053,0,,,unmatched,
+2024,LAW,LB003,LLB,Five-year stream,extended,4,144,0,144,False,0,68250,0,1,,,unmatched,
+2024,LAW,LB003,LLB,Five-year stream,extended,5,180,1,180,False,0,88900,21160,1,,,unmatched,
 2024,LAW,LP001,LLB,Graduate LLB Stream,regular,1,144,0,144,False,0,72020,0,0,72020,Graduate LLB,flat_annual,0.0
 2024,LAW,LP001,LLB,Graduate LLB Stream,regular,2,180,0,180,False,0,84480,0,1,72020,Graduate LLB,flat_annual,17.3
 2024,LAW,LP001,LLB,Graduate LLB Stream,regular,3,180,0,180,False,0,77100,9360,0,72020,Graduate LLB,flat_annual,7.1
@@ -1870,17 +1870,19 @@
 2025,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,1,144,0,144,False,0,88590,0,0,88590,BSc Eng (Mechanical),duration,0.0
 2025,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,2,144,0,144,False,0,89190,0,0,88040,BSc Eng (Mechanical),duration,1.3
 2025,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,3,144,0,144,False,0,92600,0,0,95780,BSc Eng (Mechanical),duration,-3.3
-2025,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,102,0,144,False,-42,66110,0,0,85990,BSc Eng (Mechanical),duration,-23.1
+2025,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,144,0,144,False,0,90307,24197,0,85990,BSc Eng (Mechanical),duration,5.0
+2025,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,1,132,0,132,False,0,79461,0,0,79460,BSc Eng (Electrical),duration,0.0
 2025,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,2,144,0,144,False,0,95660,0,0,95660,BSc Eng (Electrical),duration,0.0
-2025,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,128,0,,False,,79141,0,0,89140,BSc Eng (Electrical),duration,-11.2
-2025,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,198,0,,False,,123850,0,0,96130,BSc Eng (Electrical),duration,28.8
+2025,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,146,0,146,True,0,89401,10260,0,89140,BSc Eng (Electrical),duration,0.3
+2025,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,138,0,138,True,0,82610,27360,0,96130,BSc Eng (Electrical),duration,-14.1
 2025,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,1,144,0,144,False,0,88590,0,0,88590,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2025,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,2,144,0,144,False,0,89190,0,0,89190,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2025,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,3,144,0,144,False,0,92750,0,0,92750,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
-2025,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,114,0,144,False,-30,73920,0,0,88790,BSc Eng (Mechanical and Mechatronic Engineering),duration,-16.7
-2025,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,276,0,,False,,175121,0,0,79460,BSc Eng (Mechatronics),duration,120.4
-2025,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,128,0,,False,,81851,0,0,91850,BSc Eng (Mechatronics),duration,-10.9
-2025,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,198,0,,False,,123850,0,0,96130,BSc Eng (Mechatronics),duration,28.8
+2025,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,144,0,144,False,0,91203,17283,0,88790,BSc Eng (Mechanical and Mechatronic Engineering),duration,2.7
+2025,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,132,0,148,True,-16,79461,0,0,79460,BSc Eng (Mechatronics),duration,0.0
+2025,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,2,144,0,144,True,0,95660,0,0,95660,BSc Eng (Mechatronics),duration,0.0
+2025,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,146,0,146,True,0,92111,10260,0,91850,BSc Eng (Mechatronics),duration,0.3
+2025,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,138,0,138,True,0,82610,27360,0,96130,BSc Eng (Mechatronics),duration,-14.1
 2025,EBE,EB012APG01,BAS,,regular,1,144,0,144,False,0,86660,0,2,86660,Bachelor of Architectural Studies,label_match,0.0
 2025,EBE,EB012APG01,BAS,,regular,2,144,0,144,False,0,82740,0,0,83870,Bachelor of Architectural Studies,label_match,-1.3
 2025,EBE,EB012APG01,BAS,,regular,3,144,0,144,False,0,86450,0,0,86450,Bachelor of Architectural Studies,label_match,0.0
@@ -1890,22 +1892,23 @@
 2025,EBE,EB017CON03,BSc(PropStud),,regular,1,152,0,152,False,0,87220,0,0,47991,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,81.7
 2025,EBE,EB017CON03,BSc(PropStud),,regular,2,151,0,151,False,0,87040,0,0,40590,BSc in Property Studies | MPhil In Conservation of Built Environment,label_match,114.4
 2025,EBE,EB017CON03,BSc(PropStud),,regular,3,146,0,146,False,0,83340,0,0,83340,BSc in Property Studies,label_match,0.0
-2025,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,106,0,124,False,-18,60750,0,0,71120,courses BSc (Geomatics),duration,-14.6
+2025,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,124,0,124,False,0,71120,10370,0,71120,courses BSc (Geomatics),duration,0.0
 2025,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,2,148,0,148,False,0,89120,0,0,89120,courses BSc (Geomatics),duration,0.0
-2025,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,3,144,0,156,False,-12,86970,0,0,93840,courses BSc (Geomatics),duration,-7.3
+2025,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,3,156,0,156,False,0,93810,6840,0,93840,courses BSc (Geomatics),duration,-0.0
 2025,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,4,150,0,150,False,0,93470,0,0,93470,courses BSc (Geomatics),duration,0.0
 2025,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,1,126,0,126,False,0,72010,0,0,71120,courses BSc (Geomatics),duration,1.3
 2025,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,2,148,0,148,False,0,89120,0,0,89120,courses BSc (Geomatics),duration,0.0
 2025,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,3,154,0,154,False,0,91151,0,0,93840,courses BSc (Geomatics),duration,-2.9
 2025,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,4,180,0,180,False,0,109550,0,0,93470,courses BSc (Geomatics),duration,17.2
+2025,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,1,132,0,132,False,0,79461,0,0,79460,BSc Eng (Electrical & Computer),duration,0.0
 2025,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,2,144,0,144,False,0,95660,0,0,95660,BSc Eng (Electrical & Computer),duration,0.0
-2025,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,160,0,,False,,97701,0,0,97930,BSc Eng (Electrical & Computer),duration,-0.2
-2025,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,190,0,,False,,118140,0,0,96130,BSc Eng (Electrical & Computer),duration,22.9
+2025,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,162,0,154,True,8,98191,10260,0,97930,BSc Eng (Electrical & Computer),duration,0.3
+2025,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,138,0,138,True,0,82610,27360,0,96130,BSc Eng (Electrical & Computer),duration,-14.1
 2025,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,1,102,0,102,False,0,58790,0,0,,,unmatched,
 2025,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,2,88,0,88,True,0,51823,6913,0,,,unmatched,
 2025,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,3,88,0,88,True,0,57773,6913,0,,,unmatched,
 2025,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,4,114,0,114,True,0,67648,9218,0,,,unmatched,
-2025,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,112,0,128,False,-16,76690,0,0,,,unmatched,
+2025,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,128,0,128,False,0,85908,9218,0,,,unmatched,
 2025,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,1,112,0,112,False,0,65090,0,0,,,unmatched,
 2025,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,2,108,0,108,False,0,66900,0,0,,,unmatched,
 2025,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,3,112,0,112,False,0,63940,0,0,,,unmatched,
@@ -1913,27 +1916,27 @@
 2025,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,5,126,0,126,False,0,84960,0,0,,,unmatched,
 2025,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,1,102,0,102,False,0,62490,0,0,,,unmatched,
 2025,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,2,98,0,98,False,0,58920,0,0,,,unmatched,
-2025,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,100,0,118,False,-18,64160,0,0,,,unmatched,
+2025,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,118,0,118,False,0,74530,10370,0,,,unmatched,
 2025,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,4,132,0,132,False,0,84810,0,0,,,unmatched,
-2025,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,102,0,126,False,-24,66110,0,0,,,unmatched,
+2025,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,126,0,126,False,0,79937,13827,0,,,unmatched,
 2025,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,1,96,0,96,False,0,59180,0,0,,,unmatched,
 2025,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,2,116,0,116,False,0,72421,0,0,,,unmatched,
 2025,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,3,104,0,104,False,0,68300,0,0,,,unmatched,
-2025,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,106,0,,False,,64831,0,0,,,unmatched,
-2025,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,188,0,,False,,118620,0,0,,,unmatched,
+2025,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,124,0,124,True,0,75091,10260,0,,,unmatched,
+2025,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,128,0,128,True,0,77380,27360,0,,,unmatched,
 2025,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,1,102,0,102,False,0,62490,0,0,,,unmatched,
 2025,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,2,98,0,98,False,0,58920,0,0,,,unmatched,
-2025,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,100,0,118,False,-18,64160,0,0,,,unmatched,
+2025,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,118,0,118,False,0,74530,10370,0,,,unmatched,
 2025,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,4,132,0,132,False,0,84960,0,0,,,unmatched,
-2025,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,114,0,126,False,-12,73920,0,0,,,unmatched,
-2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,,False,,59180,0,0,,,unmatched,
-2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,116,0,,False,,72421,0,0,,,unmatched,
-2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,104,0,,False,,68300,0,0,,,unmatched,
-2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,96,0,,False,,62311,0,0,,,unmatched,
-2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,198,0,,False,,123850,0,0,,,unmatched,
+2025,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,126,0,126,False,0,80833,6913,0,,,unmatched,
+2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,96,True,0,59180,0,0,,,unmatched,
+2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,116,0,116,True,0,72421,0,0,,,unmatched,
+2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,104,0,112,True,-8,68300,0,0,,,unmatched,
+2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,114,0,124,True,-10,72571,10260,0,,,unmatched,
+2025,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,138,0,128,True,10,82610,27360,0,,,unmatched,
 2025,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,1,106,0,106,False,0,60750,0,0,,,unmatched,
-2025,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,110,0,128,False,-18,65480,0,0,,,unmatched,
-2025,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,90,0,102,False,-12,55310,0,0,,,unmatched,
+2025,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,128,0,128,False,0,75850,10370,0,,,unmatched,
+2025,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,102,0,102,False,0,62150,6840,0,,,unmatched,
 2025,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,4,136,0,136,False,0,84790,0,0,,,unmatched,
 2025,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,5,106,0,106,False,0,63980,0,0,,,unmatched,
 2025,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,1,108,0,108,False,0,61870,0,0,,,unmatched,
@@ -1941,20 +1944,20 @@
 2025,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,3,150,0,150,False,0,89461,0,0,,,unmatched,
 2025,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,4,142,0,142,False,0,85820,0,0,,,unmatched,
 2025,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,5,80,0,80,False,0,49060,0,0,,,unmatched,
-2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,,False,,59180,0,0,,,unmatched,
-2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,116,0,,False,,72421,0,0,,,unmatched,
-2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,96,0,,False,,62170,0,0,,,unmatched,
-2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,146,0,,False,,89521,0,0,,,unmatched,
-2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,172,0,,False,,108250,0,0,,,unmatched,
+2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,96,True,0,59180,0,0,,,unmatched,
+2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,116,0,116,True,0,72421,0,0,,,unmatched,
+2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,114,0,122,True,-8,72430,10260,0,,,unmatched,
+2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,130,0,122,True,8,79751,0,0,,,unmatched,
+2025,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,128,0,128,True,0,77380,27360,0,,,unmatched,
 2025,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,1,144,0,144,False,0,79600,31110,0,76810,Degrees Undergraduate LLB Regular curriculum 1st Year-depending on electives,flat_annual,3.6
 2025,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,2,156,0,156,False,0,83180,45060,0,76810,Degrees Undergraduate LLB Regular curriculum 1st Year-depending on electives,flat_annual,8.3
 2025,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,3,180,0,180,False,0,89440,0,1,76810,Degrees Undergraduate LLB Regular curriculum 1st Year-depending on electives,flat_annual,16.4
 2025,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,4,180,0,180,False,0,90300,18580,0,76810,Degrees Undergraduate LLB Regular curriculum 1st Year-depending on electives,flat_annual,17.6
-2025,LAW,LB003,LLB,Five-year stream,extended,1,54,0,,False,,19810,0,1,,,unmatched,
-2025,LAW,LB003,LLB,Five-year stream,extended,2,72,0,,False,,18880,18880,1,,,unmatched,
-2025,LAW,LB003,LLB,Five-year stream,extended,3,120,0,,False,,69807,33547,0,,,unmatched,
-2025,LAW,LB003,LLB,Five-year stream,extended,4,144,0,,False,,72260,0,1,,,unmatched,
-2025,LAW,LB003,LLB,Five-year stream,extended,5,180,1,,False,,94120,22400,1,,,unmatched,
+2025,LAW,LB003,LLB,Five-year stream,extended,1,90,0,90,False,0,19810,0,2,,,unmatched,
+2025,LAW,LB003,LLB,Five-year stream,extended,2,90,0,90,False,0,18880,18880,2,,,unmatched,
+2025,LAW,LB003,LLB,Five-year stream,extended,3,120,0,156,False,-36,69807,33547,0,,,unmatched,
+2025,LAW,LB003,LLB,Five-year stream,extended,4,144,0,144,False,0,72260,0,1,,,unmatched,
+2025,LAW,LB003,LLB,Five-year stream,extended,5,180,2,180,False,0,94120,22400,2,,,unmatched,
 2025,LAW,LP001,LLB,Graduate LLB Stream,regular,1,144,0,144,False,0,76240,0,0,76240,Graduate LLB,flat_annual,0.0
 2025,LAW,LP001,LLB,Graduate LLB Stream,regular,2,180,0,180,False,0,89440,0,1,76240,Graduate LLB,flat_annual,17.3
 2025,LAW,LP001,LLB,Graduate LLB Stream,regular,3,180,0,180,False,0,88660,16940,0,76240,Graduate LLB,flat_annual,16.3
@@ -2253,17 +2256,19 @@
 2026,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,1,130,0,130,False,0,83320,0,0,83320,BSc Eng (Mechanical),duration,0.0
 2026,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,2,144,0,144,False,0,93400,0,0,93400,BSc Eng (Mechanical),duration,0.0
 2026,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,3,144,0,144,False,0,96980,0,0,96980,BSc Eng (Mechanical),duration,0.0
-2026,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,144,0,144,False,0,94570,25340,0,93260,BSc Eng (Mechanical),duration,1.4
+2026,EBE,EB005MEC01,BSc(Eng),Mechanical Engineering,regular,4,144,1,144,False,0,94570,25340,1,93260,BSc Eng (Mechanical),duration,1.4
+2026,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,1,132,0,132,False,0,83200,0,0,82820,BSc Eng (Electrical),duration,0.5
 2026,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,2,144,0,144,False,0,96100,0,0,96100,BSc Eng (Electrical),duration,0.0
-2026,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,128,0,,False,,82870,0,0,92750,BSc Eng (Electrical),duration,-10.7
-2026,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,186,0,,False,,119280,0,0,84310,BSc Eng (Electrical),duration,41.5
+2026,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,3,146,0,146,True,0,93730,10860,0,92750,BSc Eng (Electrical),duration,1.1
+2026,EBE,EB009EEE01,BSc(Eng),Electrical Engineering,regular,4,138,0,138,True,0,86800,28960,0,84310,BSc Eng (Electrical),duration,3.0
 2026,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,1,130,0,130,False,0,83320,0,0,83320,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2026,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,2,144,0,144,False,0,93400,0,0,93400,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
 2026,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,3,144,0,144,False,0,97130,0,0,97130,BSc Eng (Mechanical and Mechatronic Engineering),duration,0.0
-2026,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,144,0,144,False,0,95510,18100,0,101440,BSc Eng (Mechanical and Mechatronic Engineering),duration,-5.8
-2026,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,276,0,,False,,179300,0,0,82820,BSc Eng (Mechatronics),duration,116.5
-2026,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,128,0,,False,,85710,0,0,93380,BSc Eng (Mechatronics),duration,-8.2
-2026,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,186,0,,False,,119280,0,0,100650,BSc Eng (Mechatronics),duration,18.5
+2026,EBE,EB010MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,regular,4,144,1,144,False,0,95510,18100,1,101440,BSc Eng (Mechanical and Mechatronic Engineering),duration,-5.8
+2026,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,1,132,0,132,True,0,83200,0,0,82820,BSc Eng (Mechatronics),duration,0.5
+2026,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,2,144,0,136,True,8,96100,0,0,90610,BSc Eng (Mechatronics),duration,6.1
+2026,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,3,146,0,146,True,0,96570,10860,0,93380,BSc Eng (Mechatronics),duration,3.4
+2026,EBE,EB011EEE05,BSc(Eng),Mechatronics,regular,4,138,0,138,True,0,86800,28960,0,100650,BSc Eng (Mechatronics),duration,-13.8
 2026,EBE,EB012APG01,BAS,,regular,1,120,0,120,False,0,75610,0,0,75610,Bachelor of Architectural Studies,label_match,0.0
 2026,EBE,EB012APG01,BAS,,regular,2,128,0,128,False,0,78840,0,0,80070,Bachelor of Architectural Studies,label_match,-1.5
 2026,EBE,EB012APG01,BAS,,regular,3,128,0,128,False,0,82510,0,0,82510,Bachelor of Architectural Studies,label_match,0.0
@@ -2275,19 +2280,21 @@
 2026,EBE,EB017CON03,BSc(PropStud),,regular,3,126,0,126,False,0,87260,0,0,87260,BSc in Property Studies,label_match,0.0
 2026,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,1,117,0,117,False,0,70310,0,0,73930,courses BSc (Geomatics),duration,-4.9
 2026,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,2,148,0,148,False,0,93300,0,0,78050,courses BSc (Geomatics),duration,19.5
-2026,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,3,142,0,154,False,-12,91050,0,0,101910,courses BSc (Geomatics),duration,-10.7
+2026,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,3,154,0,154,False,0,98077,7027,0,101910,courses BSc (Geomatics),duration,-3.8
 2026,EBE,EB019APG09,BSc(Geomatics),Surveying Stream,regular,4,150,0,150,False,0,97850,0,0,97850,courses BSc (Geomatics),duration,0.0
 2026,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,1,117,0,117,False,0,70310,0,0,73930,courses BSc (Geomatics),duration,-4.9
 2026,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,2,148,0,148,False,0,93300,0,0,78050,courses BSc (Geomatics),duration,19.5
 2026,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,3,154,0,154,False,0,95550,0,0,101910,courses BSc (Geomatics),duration,-6.2
 2026,EBE,EB019APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,regular,4,180,0,180,False,0,114670,0,0,97850,courses BSc (Geomatics),duration,17.2
-2026,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,160,0,,False,,102300,0,0,100370,BSc Eng (Electrical & Computer),duration,1.9
-2026,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,170,0,,False,,108420,0,0,97560,BSc Eng (Electrical & Computer),duration,11.1
+2026,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,1,132,0,132,False,0,83200,0,0,82820,BSc Eng (Electrical & Computer),duration,0.5
+2026,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,2,144,0,136,False,8,96100,0,0,90610,BSc Eng (Electrical & Computer),duration,6.1
+2026,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,3,162,0,154,True,8,102710,10640,0,100370,BSc Eng (Electrical & Computer),duration,2.3
+2026,EBE,EB022EEE02,BSc(Eng),Electrical and Computer Engineering,regular,4,138,0,138,True,0,86800,28960,0,97560,BSc Eng (Electrical & Computer),duration,-11.0
 2026,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,1,102,0,102,False,0,61550,0,0,,,unmatched,
 2026,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,2,83,0,83,True,0,56070,9050,0,,,unmatched,
 2026,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,3,91,0,91,True,0,62280,9050,0,,,unmatched,
 2026,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,4,94,0,114,True,-20,60133,9653,0,,,unmatched,
-2026,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,112,0,128,False,-16,80260,0,0,,,unmatched,
+2026,EBE,EB801CHE01,BSc(Eng),Chemical Engineering,extended,5,128,0,128,False,0,89913,9653,0,,,unmatched,
 2026,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,1,112,0,112,False,0,68140,0,0,,,unmatched,
 2026,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,2,112,0,112,False,0,72770,0,0,,,unmatched,
 2026,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,3,103,0,103,False,0,58720,0,0,,,unmatched,
@@ -2295,25 +2302,27 @@
 2026,EBE,EB802CIV01,BSc(Eng),Civil Engineering,extended,5,126,0,126,False,0,88940,0,0,,,unmatched,
 2026,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,1,114,0,114,False,0,72700,0,0,,,unmatched,
 2026,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,2,80,0,80,False,0,44990,0,1,,,unmatched,
-2026,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,100,0,115,False,-15,67190,0,0,,,unmatched,
+2026,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,3,115,0,115,False,0,76240,9050,0,,,unmatched,
 2026,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,4,132,0,132,False,0,88820,0,0,,,unmatched,
-2026,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,126,0,126,False,0,83710,14480,0,,,unmatched,
-2026,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,1,204,0,108,False,96,128250,0,0,,,unmatched,
+2026,EBE,EB805MEC01,BSc(Eng),Mechanical Engineering,extended,5,129,1,126,False,3,85520,16290,1,,,unmatched,
+2026,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,1,96,0,96,False,0,61960,0,0,,,unmatched,
+2026,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,2,108,0,108,False,0,66290,0,0,,,unmatched,
 2026,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,3,104,0,104,False,0,71510,0,0,,,unmatched,
-2026,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,106,0,,False,,67890,0,0,,,unmatched,
-2026,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,176,0,,False,,113800,0,0,,,unmatched,
+2026,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,4,124,0,124,True,0,78530,10640,0,,,unmatched,
+2026,EBE,EB809EEE01,BSc(Eng),Electrical Engineering,extended,5,128,0,128,True,0,81320,28960,0,,,unmatched,
 2026,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,1,114,0,114,False,0,72700,0,0,,,unmatched,
 2026,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,2,80,0,,False,,44990,0,1,,,unmatched,
-2026,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,100,0,115,False,-15,67190,0,0,,,unmatched,
+2026,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,3,115,0,115,False,0,76240,9050,0,,,unmatched,
 2026,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,4,132,0,132,False,0,88970,0,0,,,unmatched,
-2026,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,129,0,129,False,0,86460,9050,0,,,unmatched,
-2026,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,204,0,,False,,128250,0,0,,,unmatched,
-2026,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,104,0,,False,,71510,0,0,,,unmatched,
-2026,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,96,0,,False,,65250,0,0,,,unmatched,
-2026,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,186,0,,False,,119280,0,0,,,unmatched,
+2026,EBE,EB810MEC05,BSc(Eng),Mechanical & Mechatronic Engineering,extended,5,129,1,129,False,0,86460,9050,1,,,unmatched,
+2026,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,1,96,0,96,True,0,61960,0,0,,,unmatched,
+2026,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,2,108,0,108,True,0,66290,0,0,,,unmatched,
+2026,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,3,104,0,104,True,0,71510,0,0,,,unmatched,
+2026,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,4,114,0,114,True,0,76110,10860,0,,,unmatched,
+2026,EBE,EB811EEE05,BSc(Eng),Mechatronics,extended,5,138,0,138,True,0,86800,28960,0,,,unmatched,
 2026,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,1,87,0,87,False,0,51840,0,0,,,unmatched,
-2026,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,110,0,128,False,-18,68550,0,0,,,unmatched,
-2026,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,90,0,102,False,-12,57910,0,0,,,unmatched,
+2026,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,2,128,0,128,False,0,79410,10860,0,,,unmatched,
+2026,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,3,102,0,102,False,0,64833,6923,0,,,unmatched,
 2026,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,4,134,0,134,False,0,88770,0,0,,,unmatched,
 2026,EBE,EB819APG09,BSc(Geomatics),Surveying Stream,extended,5,106,0,106,False,0,66970,0,0,,,unmatched,
 2026,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,1,87,0,87,False,0,51840,0,0,,,unmatched,
@@ -2321,10 +2330,11 @@
 2026,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,3,150,0,150,False,0,93670,0,0,,,unmatched,
 2026,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,4,142,0,142,False,0,89950,0,0,,,unmatched,
 2026,EBE,EB819APG11,BSc(Geomatics),Geoinformatics Stream Environmental and Geographical Science Specialisation,extended,5,80,0,80,False,0,51350,0,0,,,unmatched,
-2026,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,204,0,,False,,128250,0,0,,,unmatched,
-2026,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,96,0,,False,,65090,0,0,,,unmatched,
-2026,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,146,0,,False,,93740,0,0,,,unmatched,
-2026,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,160,0,,False,,102940,0,0,,,unmatched,
+2026,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,1,96,0,96,True,0,61960,0,0,,,unmatched,
+2026,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,2,108,0,108,True,0,66290,0,0,,,unmatched,
+2026,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,3,114,0,114,True,0,75950,10860,0,,,unmatched,
+2026,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,4,130,0,122,True,8,83510,0,0,,,unmatched,
+2026,EBE,EB822EEE02,BSc(Eng),Electrical and Computer Engineering,extended,5,128,0,128,True,0,81320,28960,0,,,unmatched,
 2026,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,1,135,0,135,False,0,77920,27150,0,80410,Degrees Undergraduate LLB Regular curriculum 1st Year-depending on electives,flat_annual,-3.1
 2026,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,2,142,0,142,False,0,79232,39322,0,80410,Degrees Undergraduate LLB Regular curriculum 1st Year-depending on electives,flat_annual,-1.5
 2026,LAW,LB002,LLB,Four-year undergraduate LLB stream,regular,3,180,0,180,False,0,93640,0,0,80410,Degrees Undergraduate LLB Regular curriculum 1st Year-depending on electives,flat_annual,16.5

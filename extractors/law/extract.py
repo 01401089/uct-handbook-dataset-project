@@ -79,11 +79,15 @@ CONFIG = FacultyConfig(
         "DOL": "Faculty of Law (skills/community)", "SLL": "School for Legal Practice",
     },
     variant_from_code=variant_from_code,
-    # Two printed wordings; the stream grand totals ("... for the
-    # undergraduate LLB stream") deliberately do NOT match.
+    # Three printed wordings — "Total credits for Preliminary Level",
+    # "... for first (Preliminary) year", and the legacy five-year stream's
+    # "... for first year" (no parenthetical). The stream grand totals
+    # ("... for the undergraduate LLB stream") deliberately do NOT match here;
+    # they are captured by the rules layer (degree_rules.csv) instead.
     total_line=re.compile(
         r"^Total credits for (?:(?:Preliminary|Intermediate|Final) Level"
-        r"|(?:first|second|third|fourth|fifth) \((?:Preliminary|Intermediate|Final)\) year)"
+        r"|(?:first|second|third|fourth|fifth)"
+        r"(?: \((?:Preliminary|Intermediate|Final)\))? year)"
         r"[\s.…]*(?P<credits>\d{2,3})(?P<plus>\+)?\s*$"),
     # Cross-faculty / language / research requirement lines that carry their
     # own credits ("AND two semester courses in another faculty ... 36 5",
@@ -98,6 +102,15 @@ CONFIG = FacultyConfig(
     # full stop) never matches.
     extra_elective_nocred=re.compile(
         r"^(?P<desc>(?:One|Two|Three|AND|and)\b[^.…]*\bcourses?\b[^.…]*[a-z])\s*$"),
+    # LB003 wraps discontinued-course rows before their credits:
+    # "PVL1006W Foundations of South African Law (5YP) (No longer on" +
+    # "offer after 2019) ... 36 5".
+    course_row_nocred=re.compile(
+        r"^(?P<code>[A-Z]{3}\d{4}[A-Z])\s+"
+        r"(?P<title>.*(?:\(5YP\).*|\(No(?: longer on)?))\s*$"),
+    course_cred_cont=re.compile(
+        r"^(?P<tail>[^.…]{0,60}?\))[\s.…]*"
+        r"(?P<credits>\d{1,3})\s+(?P<level>\d)\s*$"),
     content_reclassify=True,
 )
 

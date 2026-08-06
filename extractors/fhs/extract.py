@@ -342,6 +342,12 @@ def main():
     merge(ROOT / "data" / "processed" / "curriculum_totals.csv", totals)
     merge(ROOT / "data" / "processed" / "courses.csv", courses)
 
+    # Rules layer (durations + the FBC3.1 intercalated-BSc credit rule).
+    from common.degree_rules import extract_degree_rules
+    degree_rules = extract_degree_rules(FACULTY, args.year, dump)
+    if degree_rules:
+        merge(ROOT / "data" / "processed" / "degree_rules.csv", degree_rules)
+
     print(f"specialisations: {len(programmes)}  curriculum rows: {len(curriculum)}  "
           f"totals: {len(totals)}  courses: {len(courses)}")
 

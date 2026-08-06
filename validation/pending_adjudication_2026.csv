@@ -53,33 +53,14 @@
 2026,CB024FTX05,3,MISMATCH,144,162,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2026,EB001CHE01,3,MISMATCH,94,114,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2026,EB002CIV01,3,MISMATCH,134,152,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2026,EB009EEE01,3,NO_STATED_TOTAL,128,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB009EEE01,4,NO_STATED_TOTAL,186,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB011EEE05,1,NO_STATED_TOTAL,276,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB011EEE05,3,NO_STATED_TOTAL,128,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB011EEE05,4,NO_STATED_TOTAL,186,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB019APG09,3,MISMATCH,142,154,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2026,EB022EEE02,3,NO_STATED_TOTAL,160,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB022EEE02,4,NO_STATED_TOTAL,170,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,EB005MEC01,4,UNRESOLVED_SLOTS,144,144,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,EB010MEC05,4,UNRESOLVED_SLOTS,144,144,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,EB022EEE02,2,MISMATCH,144,136,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2026,EB801CHE01,4,MISMATCH,94,114,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2026,EB801CHE01,5,MISMATCH,112,128,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2026,EB802CIV01,4,MISMATCH,108,126,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2026,EB805MEC01,3,MISMATCH,100,115,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2026,EB809EEE01,1,MISMATCH,204,108,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2026,EB809EEE01,4,NO_STATED_TOTAL,106,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB809EEE01,5,NO_STATED_TOTAL,176,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,EB805MEC01,5,UNRESOLVED_SLOTS,129,126,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
 2026,EB810MEC05,2,NO_STATED_TOTAL,80,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB810MEC05,3,MISMATCH,100,115,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2026,EB811EEE05,1,NO_STATED_TOTAL,204,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB811EEE05,3,NO_STATED_TOTAL,104,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB811EEE05,4,NO_STATED_TOTAL,96,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB811EEE05,5,NO_STATED_TOTAL,186,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB819APG09,2,MISMATCH,110,128,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2026,EB819APG09,3,MISMATCH,90,102,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
-2026,EB822EEE02,1,NO_STATED_TOTAL,204,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB822EEE02,3,NO_STATED_TOTAL,96,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB822EEE02,4,NO_STATED_TOTAL,146,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
-2026,EB822EEE02,5,NO_STATED_TOTAL,160,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,EB810MEC05,5,UNRESOLVED_SLOTS,129,129,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
 2026,MB001DOM02,,NO_STATED_TOTAL,455,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
 2026,MB003AHS09,2,MISMATCH,139,123,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2026,MB004AHS08,2,MISMATCH,182,164,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules

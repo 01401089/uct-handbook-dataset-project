@@ -271,17 +271,19 @@
 2026,EB005MEC01,1,regular,Mechanical Engineering,130,130,0,False,OK
 2026,EB005MEC01,2,regular,Mechanical Engineering,144,144,0,False,OK
 2026,EB005MEC01,3,regular,Mechanical Engineering,144,144,0,False,OK
-2026,EB005MEC01,4,regular,Mechanical Engineering,144,144,0,False,OK
+2026,EB005MEC01,4,regular,Mechanical Engineering,144,144,0,False,UNRESOLVED_SLOTS
+2026,EB009EEE01,1,regular,Electrical Engineering,132,132,0,False,OK
 2026,EB009EEE01,2,regular,Electrical Engineering,144,144,0,False,OK
-2026,EB009EEE01,3,regular,Electrical Engineering,128,,,False,NO_STATED_TOTAL
-2026,EB009EEE01,4,regular,Electrical Engineering,186,,,False,NO_STATED_TOTAL
+2026,EB009EEE01,3,regular,Electrical Engineering,146,146,0,True,OK
+2026,EB009EEE01,4,regular,Electrical Engineering,138,138,0,True,OK
 2026,EB010MEC05,1,regular,Mechanical & Mechatronic Engineering,130,130,0,False,OK
 2026,EB010MEC05,2,regular,Mechanical & Mechatronic Engineering,144,144,0,False,OK
 2026,EB010MEC05,3,regular,Mechanical & Mechatronic Engineering,144,144,0,False,OK
-2026,EB010MEC05,4,regular,Mechanical & Mechatronic Engineering,144,144,0,False,OK
-2026,EB011EEE05,1,regular,Mechatronics,276,,,False,NO_STATED_TOTAL
-2026,EB011EEE05,3,regular,Mechatronics,128,,,False,NO_STATED_TOTAL
-2026,EB011EEE05,4,regular,Mechatronics,186,,,False,NO_STATED_TOTAL
+2026,EB010MEC05,4,regular,Mechanical & Mechatronic Engineering,144,144,0,False,UNRESOLVED_SLOTS
+2026,EB011EEE05,1,regular,Mechatronics,132,132,0,True,OK
+2026,EB011EEE05,2,regular,Mechatronics,144,136,8,True,OK
+2026,EB011EEE05,3,regular,Mechatronics,146,146,0,True,OK
+2026,EB011EEE05,4,regular,Mechatronics,138,138,0,True,OK
 2026,EB012APG01,1,regular,,120,120,0,False,OK
 2026,EB012APG01,2,regular,,128,128,0,False,OK
 2026,EB012APG01,3,regular,,128,128,0,False,OK
@@ -293,19 +295,21 @@
 2026,EB017CON03,3,regular,,126,126,0,False,OK
 2026,EB019APG09,1,regular,Surveying Stream,117,117,0,False,OK
 2026,EB019APG09,2,regular,Surveying Stream,148,148,0,False,OK
-2026,EB019APG09,3,regular,Surveying Stream,142,154,-12,False,MISMATCH
+2026,EB019APG09,3,regular,Surveying Stream,154,154,0,False,OK
 2026,EB019APG09,4,regular,Surveying Stream,150,150,0,False,OK
 2026,EB019APG11,1,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,117,117,0,False,OK
 2026,EB019APG11,2,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,148,148,0,False,OK
 2026,EB019APG11,3,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,154,154,0,False,OK
 2026,EB019APG11,4,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,180,180,0,False,OK
-2026,EB022EEE02,3,regular,Electrical and Computer Engineering,160,,,False,NO_STATED_TOTAL
-2026,EB022EEE02,4,regular,Electrical and Computer Engineering,170,,,False,NO_STATED_TOTAL
+2026,EB022EEE02,1,regular,Electrical and Computer Engineering,132,132,0,False,OK
+2026,EB022EEE02,2,regular,Electrical and Computer Engineering,144,136,8,False,MISMATCH
+2026,EB022EEE02,3,regular,Electrical and Computer Engineering,162,154,8,True,OK
+2026,EB022EEE02,4,regular,Electrical and Computer Engineering,138,138,0,True,OK
 2026,EB801CHE01,1,extended,Chemical Engineering,102,102,0,False,OK
 2026,EB801CHE01,2,extended,Chemical Engineering,83,83,0,True,OK
 2026,EB801CHE01,3,extended,Chemical Engineering,91,91,0,True,OK
 2026,EB801CHE01,4,extended,Chemical Engineering,94,114,-20,True,MISMATCH
-2026,EB801CHE01,5,extended,Chemical Engineering,112,128,-16,False,MISMATCH
+2026,EB801CHE01,5,extended,Chemical Engineering,128,128,0,False,OK
 2026,EB802CIV01,1,extended,Civil Engineering,112,112,0,False,OK
 2026,EB802CIV01,2,extended,Civil Engineering,112,112,0,False,OK
 2026,EB802CIV01,3,extended,Civil Engineering,103,103,0,False,OK
@@ -313,25 +317,27 @@
 2026,EB802CIV01,5,extended,Civil Engineering,126,126,0,False,OK
 2026,EB805MEC01,1,extended,Mechanical Engineering,114,114,0,False,OK
 2026,EB805MEC01,2,extended,Mechanical Engineering,80,80,0,False,OK
-2026,EB805MEC01,3,extended,Mechanical Engineering,100,115,-15,False,MISMATCH
+2026,EB805MEC01,3,extended,Mechanical Engineering,115,115,0,False,OK
 2026,EB805MEC01,4,extended,Mechanical Engineering,132,132,0,False,OK
-2026,EB805MEC01,5,extended,Mechanical Engineering,126,126,0,False,OK
-2026,EB809EEE01,1,extended,Electrical Engineering,204,108,96,False,MISMATCH
+2026,EB805MEC01,5,extended,Mechanical Engineering,129,126,3,False,UNRESOLVED_SLOTS
+2026,EB809EEE01,1,extended,Electrical Engineering,96,96,0,False,OK
+2026,EB809EEE01,2,extended,Electrical Engineering,108,108,0,False,OK
 2026,EB809EEE01,3,extended,Electrical Engineering,104,104,0,False,OK
-2026,EB809EEE01,4,extended,Electrical Engineering,106,,,False,NO_STATED_TOTAL
-2026,EB809EEE01,5,extended,Electrical Engineering,176,,,False,NO_STATED_TOTAL
+2026,EB809EEE01,4,extended,Electrical Engineering,124,124,0,True,OK
+2026,EB809EEE01,5,extended,Electrical Engineering,128,128,0,True,OK
 2026,EB810MEC05,1,extended,Mechanical & Mechatronic Engineering,114,114,0,False,OK
 2026,EB810MEC05,2,extended,Mechanical & Mechatronic Engineering,80,,,False,NO_STATED_TOTAL
-2026,EB810MEC05,3,extended,Mechanical & Mechatronic Engineering,100,115,-15,False,MISMATCH
+2026,EB810MEC05,3,extended,Mechanical & Mechatronic Engineering,115,115,0,False,OK
 2026,EB810MEC05,4,extended,Mechanical & Mechatronic Engineering,132,132,0,False,OK
-2026,EB810MEC05,5,extended,Mechanical & Mechatronic Engineering,129,129,0,False,OK
-2026,EB811EEE05,1,extended,Mechatronics,204,,,False,NO_STATED_TOTAL
-2026,EB811EEE05,3,extended,Mechatronics,104,,,False,NO_STATED_TOTAL
-2026,EB811EEE05,4,extended,Mechatronics,96,,,False,NO_STATED_TOTAL
-2026,EB811EEE05,5,extended,Mechatronics,186,,,False,NO_STATED_TOTAL
+2026,EB810MEC05,5,extended,Mechanical & Mechatronic Engineering,129,129,0,False,UNRESOLVED_SLOTS
+2026,EB811EEE05,1,extended,Mechatronics,96,96,0,True,OK
+2026,EB811EEE05,2,extended,Mechatronics,108,108,0,True,OK
+2026,EB811EEE05,3,extended,Mechatronics,104,104,0,True,OK
+2026,EB811EEE05,4,extended,Mechatronics,114,114,0,True,OK
+2026,EB811EEE05,5,extended,Mechatronics,138,138,0,True,OK
 2026,EB819APG09,1,extended,Surveying Stream,87,87,0,False,OK
-2026,EB819APG09,2,extended,Surveying Stream,110,128,-18,False,MISMATCH
-2026,EB819APG09,3,extended,Surveying Stream,90,102,-12,False,MISMATCH
+2026,EB819APG09,2,extended,Surveying Stream,128,128,0,False,OK
+2026,EB819APG09,3,extended,Surveying Stream,102,102,0,False,OK
 2026,EB819APG09,4,extended,Surveying Stream,134,134,0,False,OK
 2026,EB819APG09,5,extended,Surveying Stream,106,106,0,False,OK
 2026,EB819APG11,1,extended,Geoinformatics Stream Environmental and Geographical Science Specialisation,87,87,0,False,OK
@@ -339,10 +345,11 @@
 2026,EB819APG11,3,extended,Geoinformatics Stream Environmental and Geographical Science Specialisation,150,150,0,False,OK
 2026,EB819APG11,4,extended,Geoinformatics Stream Environmental and Geographical Science Specialisation,142,142,0,False,OK
 2026,EB819APG11,5,extended,Geoinformatics Stream Environmental and Geographical Science Specialisation,80,80,0,False,OK
-2026,EB822EEE02,1,extended,Electrical and Computer Engineering,204,,,False,NO_STATED_TOTAL
-2026,EB822EEE02,3,extended,Electrical and Computer Engineering,96,,,False,NO_STATED_TOTAL
-2026,EB822EEE02,4,extended,Electrical and Computer Engineering,146,,,False,NO_STATED_TOTAL
-2026,EB822EEE02,5,extended,Electrical and Computer Engineering,160,,,False,NO_STATED_TOTAL
+2026,EB822EEE02,1,extended,Electrical and Computer Engineering,96,96,0,True,OK
+2026,EB822EEE02,2,extended,Electrical and Computer Engineering,108,108,0,True,OK
+2026,EB822EEE02,3,extended,Electrical and Computer Engineering,114,114,0,True,OK
+2026,EB822EEE02,4,extended,Electrical and Computer Engineering,130,122,8,True,OK
+2026,EB822EEE02,5,extended,Electrical and Computer Engineering,128,128,0,True,OK
 2026,LB002,1,regular,Four-year undergraduate LLB stream,135,135,0,False,OK
 2026,LB002,2,regular,Four-year undergraduate LLB stream,142,142,0,False,OK
 2026,LB002,3,regular,Four-year undergraduate LLB stream,180,180,0,False,OK

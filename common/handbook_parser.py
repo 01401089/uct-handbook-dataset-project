@@ -50,9 +50,10 @@ ELECTIVE_NOCRED = re.compile(
     r"|(?:One|Two|Three|Four|Five|Six|\d+|An?)\b[^.]*?electives?\b[^.]*?)[\s.…]*$", re.I)
 ELECTIVE_OPEN = re.compile(r"^(?P<desc>Any\b.*electives?\b.*)$", re.I)
 ELECTIVE_MIN = re.compile(r"minimum of (?P<credits>\d{1,3}) credits", re.I)
-# Stated totals; EBE prints ranges ("108-156") — max group optional.
+# Stated totals; EBE prints ranges ("108-156") — max group optional — and
+# "(minimum)"-qualified totals ("Total credits per year (minimum) ... 138").
 TOTAL_LINE = re.compile(
-    r"^Total(?: credits)?(?: (?:per|for the|for) year)?[\s.…]*"
+    r"^Total(?: credits)?(?: (?:per|for the|for) year)?(?:\s*\((?P<minw>minimum)\))?[\s.…]*"
     r"(?P<gte>>=|\+)?\s*(?P<credits>\d{2,3})(?:\s*-\s*(?P<max>\d{2,3}))?(?P<plus>\+)?\s*$")
 TOTAL_PROSE = re.compile(
     r"^The total credits for year (?P<year>\d) equals (?P<credits>\d{2,3})\.?\s*$")
@@ -101,6 +102,19 @@ class FacultyConfig:
     advdip_labels: list = field(default_factory=list)
     pool_marker: Optional[Pattern] = None  # "ELECTIVE COURSES" pool sections
     extra_elective: Optional[Pattern] = None  # e.g. EBE "Approved elective courses 0-48"
+    elective_core_heading: Optional[Pattern] = None  # in-year menu heading
+                                           # ("Fourth Year Elective Core Courses
+                                           # (EE)"): rows below are alternatives
+                                           # for a slot, group 1 = ordinal
+    optional_heading: Optional[Pattern] = None  # "Optional Courses": rows below
+                                           # are never-taken alternatives
+    select_min_instruction: Optional[Pattern] = None  # "Select courses amounting
+                                           # to at least NN credits from the
+                                           # following" -> min elective slot;
+                                           # must expose a `credits` group
+    select_pick_instruction: Optional[Pattern] = None  # "Select two out of the
+                                           # following three courses" -> pick-n
+                                           # menu; must expose an `n` group
     suppress_duplicate_blocks: bool = False
     total_line: Optional[Pattern] = None   # faculty-specific stated-total grammar
                                            # (LAW: "Total credits for Preliminary
@@ -109,6 +123,13 @@ class FacultyConfig:
                                            # groups optional
     extra_elective_nocred: Optional[Pattern] = None  # slot desc line whose credits
                                            # arrive on a continuation line
+    course_row_nocred: Optional[Pattern] = None  # course row wrapped before its
+                                           # credits (LAW LB003: "PVL1006W ...
+                                           # (No longer on" + "offer after
+                                           # 2019) ... 36 5"); needs `code`
+                                           # and `title` groups
+    course_cred_cont: Optional[Pattern] = None  # its continuation line; needs
+                                           # `tail`, `credits`, `level` groups
     content_reclassify: bool = False       # flip catalogue-classified pages whose
                                            # body shows programme signatures (LAW
                                            # 2026 mislabels the rules section's
@@ -220,16 +241,19 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
     elective_open = None   # buffered "Any ... electives" line
     await_credits = None   # elective row waiting for a credits continuation line
     pool_mode = False      # inside an alternatives pool ("ELECTIVE COURSES")
+    alt_mode = None        # in-table alternatives section: the note to carry
+                           # ("elective core menu" / "optional courses")
     suppressed = False     # duplicate plan-code block whose rows are skipped
     seen_codes = set()
 
     def reset_table_state():
         nonlocal seq, group_n, pending_or, pending_and, option_set, menu, \
-            elective_open, await_credits, pool_mode
+            elective_open, await_credits, pool_mode, alt_mode
         seq, group_n = 0, 0
         pending_or, pending_and = False, False
         option_set, menu, elective_open, await_credits = None, None, None, None
         pool_mode = False
+        alt_mode = None
 
     def start_programme(plan_raw: str, title: str, page_no: int):
         nonlocal prog, study_year, table_index, advdip_req, suppressed
@@ -326,6 +350,25 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
             pool_mode = True
             continue
 
+        # In-year elective menus ("Fourth Year Elective Core Courses (EE)"):
+        # the year table continues, but rows below are candidates for a slot
+        # (emitted by select_min_instruction) or a pick-n menu
+        # (select_pick_instruction), never additional core load.
+        if cfg.elective_core_heading:
+            m = cfg.elective_core_heading.match(line)
+            if m:
+                ny = ORDINALS.get(m.group(1))
+                if ny and ny != study_year:
+                    study_year, table_index = ny, 1
+                menu, option_set, await_credits = None, None, None
+                pending_or = pending_and = False
+                alt_mode = "elective core menu"
+                continue
+        if cfg.optional_heading and cfg.optional_heading.match(line):
+            menu, option_set = None, None
+            alt_mode = "optional courses"
+            continue
+
         if cfg.advdip_prefix and prog["plan_code"].startswith(cfg.advdip_prefix):
             for pat, (req, note) in cfg.advdip_labels:
                 lm = pat.match(line)
@@ -361,16 +404,25 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
                     "study_year": study_year, "table_index": table_index,
                     "stated_total_credits": int(gd["credits"]),
                     "stated_total_max": int(gd["max"]) if gd.get("max") else "",
-                    # a range total is a minimum-anchored statement
+                    # a range or "(minimum)" total is minimum-anchored
                     "is_minimum": bool(gd.get("gte") or gd.get("plus")
-                                       or gd.get("max")),
+                                       or gd.get("max") or gd.get("minw")),
                     "source_page": page_no,
                 }
             menu, option_set, await_credits = None, None, None
+            alt_mode = None
             continue
 
         # Credits continuation for a wrapped elective row ("... 18+ 7").
         if await_credits is not None:
+            if cfg.course_cred_cont and await_credits.get("course_code"):
+                cm2 = cfg.course_cred_cont.match(line)
+                if cm2:
+                    await_credits["course_title"] += " " + cm2.group("tail").strip()
+                    await_credits["nqf_credits"] = int(cm2.group("credits"))
+                    await_credits["nqf_level"] = int(cm2.group("level"))
+                    await_credits = None
+                    continue
             cm = CRED_CONT.match(line)
             if cm:
                 await_credits["nqf_credits"] = int(cm.group("credits"))
@@ -450,6 +502,8 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
             req, group, member, pick_n, note = "core", "", "", "", ""
             if pool_mode:
                 req, note = "alternative", "elective pool"
+            elif alt_mode and not menu:
+                req, note = "alternative", alt_mode
             elif menu:
                 menu["member"] += 1
                 req, group, member, pick_n = ("option", menu["group"],
@@ -497,6 +551,30 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
             pending_or, pending_and = row_or, row_and
             continue
 
+        # Course row wrapped before its credits — emit with blank credits and
+        # await the continuation line (cfg.course_cred_cont) to fill them.
+        if cfg.course_row_nocred and study_year:
+            m = cfg.course_row_nocred.match(line)
+            if m:
+                seq += 1
+                row = {
+                    "year": year, "faculty": cfg.faculty,
+                    "plan_code": prog["plan_code"], "study_year": study_year,
+                    "table_index": table_index, "seq": seq,
+                    "course_code_raw": m.group("code"),
+                    "course_code": resolve_course_code(m.group("code")),
+                    "course_title": re.sub(r"\s+", " ", m.group("title")).strip(),
+                    "nqf_credits": "", "nqf_level": "",
+                    "requirement": "core", "choice_group": "",
+                    "choice_member": "", "choice_pick_n": "",
+                    "choice_note": "credits from continuation line",
+                    "is_minimum": False, "source_page": page_no,
+                }
+                emit(row)
+                await_credits = row
+                pending_or = pending_and = False
+                continue
+
         # A non-course line ends any open pick-n menu — unless the menu has no
         # rows yet, in which case it may be the instruction preamble that sets
         # the pick count ("... required to take two options ...").
@@ -531,9 +609,31 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
             lvl = next((g for g in dm.groups() if g), "") if dm else ""
             return int(lvl) if lvl else ""
 
+        if cfg.select_min_instruction:
+            m = cfg.select_min_instruction.match(line)
+            if m and study_year:
+                # The instruction line IS the printed slot statement; the menu
+                # rows below it are alternatives (alt_mode), not extra load.
+                emit_elective(re.sub(r"[:\s]+$", "", line),
+                              int(m.group("credits")), "", True,
+                              note="elective core menu: choose from the "
+                                   "alternative rows below")
+                pending_or = pending_and = False
+                continue
+        if cfg.select_pick_instruction:
+            m = cfg.select_pick_instruction.match(line)
+            if m and study_year:
+                group_n += 1
+                n = m.group("n").lower()
+                pick = WORD_N.get(n) if n in WORD_N else int(n)
+                menu = {"group": f"Y{study_year}G{group_n}", "member": 0,
+                        "pick": pick}
+                option_set = None
+                continue
+
         if cfg.extra_elective:
             m = cfg.extra_elective.match(line)
-            if m and study_year:
+            if m and study_year and not pool_mode:
                 gd = m.groupdict()
                 lo = int(gd["credits"])
                 hi = int(gd["max"]) if gd.get("max") else ""
@@ -684,10 +784,18 @@ def run_extractor(cfg: FacultyConfig, args, root: Path):
             keep=lambda r: (r.get("faculty") or r.get("faculty_book") or "")
             not in ("", cfg.faculty))
 
+    # Rules layer: degree-level minima/durations from the rules sections
+    # (see common/degree_rules.py and the rules-layer section of
+    # docs/REPLICATION.md).
+    from common.degree_rules import extract_degree_rules
+    degree_rules = extract_degree_rules(cfg.faculty, args.year, dump)
+
     merge(root / "data" / "processed" / "specialisations.csv", programmes)
     merge(root / "data" / "processed" / "curriculum.csv", curriculum)
     merge(root / "data" / "processed" / "curriculum_totals.csv", totals)
     merge(root / "data" / "processed" / "courses.csv", courses)
+    if degree_rules:
+        merge(root / "data" / "processed" / "degree_rules.csv", degree_rules)
     if unp1 or unp2:
         write_csv(root / "validation" / f"{cfg.slug}_unparsed_{args.year}.csv",
                   unp1 + unp2)

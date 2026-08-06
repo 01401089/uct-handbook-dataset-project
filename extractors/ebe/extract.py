@@ -100,11 +100,28 @@ CONFIG = FacultyConfig(
         r"|RULES FOR UNDERGRADUATE DEGREES|GENERAL INFORMATION"
         r"|CENTRES AND OTHER ENTITIES.*|SCHOLARSHIPS, PRIZES.*)"
         r"(?:\s+\d+)?\s*$", re.I),
-    # EBE mixes "Core Courses" and "Core Modules" within one edition (2021)
-    # and suffixes headings with parentheticals ("(from 2020)", "(EE)").
+    # EBE mixes "Core Courses" and "Core Modules" within one edition (2021),
+    # suffixes headings with parentheticals ("(from 2020)", "(EE)") and, in
+    # 2025/2026, with footnote markers ("First Year Core Courses (EE)*†").
     year_heading=re.compile(
         r"^(First|Second|Third|Fourth|Fifth) Year Core (?:Courses|Modules)"
-        r"(?:\s*\([^)]*\))?\s*$"),
+        r"(?:\s*\([^)]*\))?[\s*†‡]*$"),
+    # In-year elective menus: "(Ordinal) Year (Further) Elective Core Courses
+    # (EE)". Their rows are candidates for the year's elective slot (or a
+    # pick-n choice), NOT additional core load.
+    elective_core_heading=re.compile(
+        r"^(First|Second|Third|Fourth|Fifth) Year (?:Further )?Elective Core "
+        r"(?:Courses|Modules)(?:\s*\([^)]*\))?[\s*†‡]*$"),
+    optional_heading=re.compile(r"^Optional Courses\s*$"),
+    # "Select courses amounting to at least 48 credits from the following:"
+    # -> a minimum elective slot; the menu rows below are alternatives.
+    select_min_instruction=re.compile(
+        r"^Select courses amounting to at least (?P<credits>\d{1,3}) credits"
+        r" from the following:?\s*$", re.I),
+    # "Select two out of the following three courses." -> pick-n menu.
+    select_pick_instruction=re.compile(
+        r"^Select (?P<n>one|two|three|four|\d+) out of the following "
+        r"(?:one|two|three|four|five|six|\d+) courses\b", re.I),
     dept_by_prefix={
         "CHE": "Chemical Engineering", "CIV": "Civil Engineering",
         "EEE": "Electrical Engineering", "MEC": "Mechanical Engineering",
@@ -117,9 +134,20 @@ CONFIG = FacultyConfig(
     },
     variant_from_code=variant_from_code,
     pool_marker=re.compile(r"^ELECTIVE COURSES\s*$"),
+    # Slot lines, all requiring a dotted leader before the credits so prose
+    # never matches: the range form ("Approved elective courses ... 0-48"),
+    # bare in-table forms ("Electives ... 18" [2021 Property Studies],
+    # "Elective ... 18 5" [Geomatics]), the complementary-studies line with a
+    # period-code prefix ("F/S/P/L *Approved Complementary Studies Elective
+    # F/S/P/L ... 18 7"), and the Mechanical year-4 slots with level-range
+    # tails ("*Approved Complementary Studies (b) elective ... 18 5-8",
+    # "**Approved F and S Open electives ...Totalling at least ... 24 5-8").
     extra_elective=re.compile(
-        r"^(?P<desc>Approved elective courses?[^.]*?)[\s.…]*"
-        r"(?P<credits>\d{1,3})\s*-\s*(?P<max>\d{1,3})\s*$", re.I),
+        r"^(?:[FSWPLZ/]+\s+)?\*{0,2}"
+        r"(?P<desc>Approved\b[^\n]*?electives?\b[^\n]*?|Electives?)"
+        r"[\s.…]*[.…]{2}[\s.…]*"
+        r"(?P<credits>\d{1,3})(?:\s*-\s*(?P<max>\d{1,3}))?"
+        r"(?:\s+(?P<level>\d)(?:\s*-\s*\d)?)?\s*$", re.I),
     suppress_duplicate_blocks=True,
 )
 
