@@ -52,15 +52,23 @@ pending reports. Known clusters to adjudicate (same workflow as §1):
   suffix scheme (e.g. `EB019APG11/B`) if stream-level analysis is wanted;
   also applies to the transferee access routes reusing EB001CHE01/EB002CIV01.
 
-## 3. Remaining faculties
+## 3. LAW follow-ups
 
-- LAW, FHS (likely the shared engine + a FacultyConfig), then SCI and HUM
+- Adjudicate the legacy five-year stream (LB003): no printed totals →
+  25 spec-years flagged unresolved; `accept_computed` entries with rationale
+  would clear them (stream retired after 2019, absent from 2026).
+- The two-year graduate LLB stream shares LP001's printed table; if
+  stream-level analysis is wanted, model it as a variant.
+
+## 4. Remaining faculties
+
+- FHS (likely the shared engine + a FacultyConfig), then SCI and HUM
   (major + composition rules — the ideal student is constructed from the
   faculty rules section, not read off a table; probably a bespoke parser).
 - Each faculty gets `extractors/<fac>/`, a `resolutions/<fac>.csv`, and its
   own hazard notes in REPLICATION.md.
 
-## 4. Analysis layer
+## 5. Analysis layer
 
 - `analysis/` trend queries over `ideal_student_summary_final.csv`:
   credit-load and cost per specialisation across editions, faculty-level
@@ -68,7 +76,7 @@ pending reports. Known clusters to adjudicate (same workflow as §1):
 - Flag credit-re-think transition points automatically (year-over-year
   final_credits changes per plan code).
 
-## 5. Smaller engineering items
+## 6. Smaller engineering items
 
 - `run_pipeline.py`: parallelise the per-year loop (years are independent).
 - Course catalogue coverage: ~50-100 curriculum courses per year have no

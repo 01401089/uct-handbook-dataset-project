@@ -25,18 +25,22 @@ number can be traced back to the page of the handbook it came from.
 |---|---|---|
 | Faculty of Commerce undergraduate handbook | 2021–2026 | complete |
 | Engineering & the Built Environment undergraduate handbook | 2021–2026 | complete (adjudication review pending) |
+| Faculty of Law undergraduate handbook (LLB streams) | 2021–2026 | complete |
 | Student Fees handbook (course fees + published programme fees) | 2021–2026 | complete |
-| Health Sciences, Humanities, Law, Science handbooks | 2025 books on file | extraction pending |
+| Health Sciences, Humanities, Science handbooks | 2025 books on file | extraction pending |
 
 The 2025 edition is treated as the **baseline** — the recorded state of the
 curriculum against which the credit re-think editions are compared. Across
-the six editions the dataset holds **18,818 curriculum records**: 71–75
+the six editions the dataset holds **19,251 curriculum records**: 71–75
 Commerce specialisations per year (including the Academic Development
-augmented and extended variants and the Advanced Diplomas) and ~25 EBE
+augmented and extended variants and the Advanced Diplomas), ~25 EBE
 specialisations per year (including the 5-year Extended Curriculum
-Programmes). In EBE, elective loads are printed as ranges ("0–48 credits");
-the ideal student takes the minimum, and both ends of the range are
-retained.
+Programmes), and the three LLB streams (graduate, four-year undergraduate,
+and the legacy five-year stream). In EBE, elective loads are printed as
+ranges ("0–48 credits"); the ideal student takes the minimum, and both ends
+of the range are retained. Law publishes one flat annual fee per stream
+rather than per-year figures; the dataset applies it to every year of the
+stream and labels the match accordingly.
 
 The dataset now comes in **two layers**:
 
@@ -216,21 +220,25 @@ validation triangle:
 Results for the current load, after the final-clean layer
 (consistent / resolved / unresolved per faculty):
 
-| Year | Commerce | EBE |
-|---|---|---|
-| 2021 | 227 / 17 / 30 | 62 / 1 / 27 |
-| 2022 | 240 / 11 / 24 | 57 / 0 / 33 |
-| 2023 | 225 / 15 / 36 | 59 / 0 / 31 |
-| 2024 | 203 / 13 / 55 | 57 / 0 / 33 |
-| 2025 | 219 / 13 / 36 | 55 / 0 / 32 |
-| 2026 | 202 / 11 / 48 | 54 / 0 / 29 |
+| Year | Commerce | EBE | Law |
+|---|---|---|---|
+| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 |
+| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 |
+| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 |
+| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 |
+| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 |
+| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 |
 
-81% of the 2,155 specialisation-years are fully resolved at high or medium
+80% of the 2,222 specialisation-years are fully resolved at high or medium
 confidence. The unresolved remainder carries the computed value at low
 confidence and is individually listed, with suggested actions, in
 `validation/pending_adjudication_<year>.csv`. Commerce's register has been
 provisionally seeded; **EBE's adjudication pass has not yet been done**,
-which is why its unresolved counts are proportionally higher.
+which is why its unresolved counts are proportionally higher. Law's
+unresolved rows are all the legacy five-year stream, which prints no credit
+totals; its two active streams reconcile exactly in every edition (and the
+graduate stream's computed first-year cost matches the published fee to the
+rand).
 
 Where computed fees can be compared with published fees, the **median
 difference is 0.0%** — for most programmes the computation reproduces UCT's

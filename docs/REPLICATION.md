@@ -232,6 +232,9 @@ Layout drift encountered and handled across editions:
 | H26 | Mixed year-heading nouns within one edition | EBE 2021: "Second Year Core **Modules**" inside a "Core Courses" book | EBE heading grammar accepts both nouns |
 | H27 | Year headings with parenthetical suffixes | EBE: "First Year Core Courses (from 2020)", "… (EE)" | optional trailing parenthetical in the heading grammar |
 | H28 | Pages with no running header (bare page number) | EBE 2023 in-faculty departments section (107 pages) | content-signature classification + sandwich fill for bare-number pages |
+| H29 | Level-based totals with two wordings | LAW: "Total credits for Preliminary Level … 144" vs "… for first (Preliminary) year … 144"; stream grand totals must NOT match | faculty `total_line` override; grand totals excluded by pattern |
+| H30 | Slot credits on a continuation line | LAW: "Two semester courses in a single language, …" + "…… 36 5" | `extra_elective_nocred` + credits-continuation merge |
+| H31 | Section running header mislabelled by the book | LAW 2026 prints "COURSE OUTLINES (LLB)" over the rules-section pages | content reclassification (`content_reclassify`): programme signatures override the header |
 
 Failing to recognise a heading is the costliest hazard class: the previous
 block silently **swallows** the next programme's tables (doubling its row
@@ -278,28 +281,54 @@ Tables shared by several faculties are written **merge-by-faculty-within-
 year** (`write_year_rows(..., keep=...)`): an extractor re-run replaces only
 its own faculty's rows.
 
-## 8. Multi-year status (COM + EBE, final layer 2026-08-06)
+**LAW config deltas** (stable across 2021-2026 except H31 in 2026):
 
-| Year | COM consistent/resolved/unresolved | EBE consistent/resolved/unresolved |
-|---|---|---|
-| 2021 | 227 / 17 / 30 | 62 / 1 / 27 |
-| 2022 | 240 / 11 / 24 | 57 / 0 / 33 |
-| 2023 | 225 / 15 / 36 | 59 / 0 / 31 |
-| 2024 | 203 / 13 / 55 | 57 / 0 / 33 |
-| 2025 | 219 / 13 / 36 | 55 / 0 / 32 |
-| 2026 | 202 / 11 / 48 | 54 / 0 / 29 |
+- Undergraduate content is the "RULES FOR LLB DEGREE STREAMS" section: three
+  streams with 5-character programme codes and no department suffix —
+  `[LP001]` graduate LLB, `[LB002]` four-year undergraduate LLB, `[LB003]`
+  legacy five-year stream (no new intake after 2019 → variant `extended`;
+  absent from 2026; prints no credit totals, so its spec-years are flagged
+  unresolved by design).
+- Year headings: "First Year YEAR 1 (PRELIMINARY LEVEL)" (LB003 uses
+  COM-style "Core Modules"); totals are per level with two wordings (H29).
+- Cross-faculty requirement lines ("AND two semester courses in another
+  faculty … 36 5") are captured as elective slots via the LAW
+  `extra_elective` grammar; wrapped descriptions merge with their
+  continuation line (H30).
+- The many bracketed postgraduate codes (LM…/LG002…) sit in postgraduate
+  sections excluded by page classification.
+- Published fees (fees book §11.6) are **flat annual amounts per stream**
+  ("Undergraduate LLB … R 76 810") — applied to every study year with match
+  method `flat_annual`; per-year divergence from the flat figure is expected
+  and is not a data defect.
 
-Main dataset: **18,818 rows** (COM 14,282 + EBE 4,536); 596 specialisation
-register entries; 2,155 specialisation-years (1,660 consistent, 81
-resolved, 414 unresolved pending adjudication — the EBE register
-`resolutions/ebe.csv` is empty until its review pass, see DEV-TODO.md).
-Median computed-vs-published fee delta is 0.0% for both faculties.
+## 8. Multi-year status (COM + EBE + LAW, final layer 2026-08-06)
+
+Consistent / resolved / unresolved per faculty:
+
+| Year | COM | EBE | LAW |
+|---|---|---|---|
+| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 |
+| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 |
+| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 |
+| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 |
+| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 |
+| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 |
+
+Main dataset: **19,251 rows** (COM 14,282 + EBE 4,536 + LAW 433); 613
+specialisation register entries; 2,222 specialisation-years (1,702
+consistent, 81 resolved, 439 unresolved pending adjudication — the EBE and
+LAW registers are empty until their review passes, see DEV-TODO.md; LAW's
+unresolved rows are entirely the legacy LB003 stream, which prints no
+totals). Median computed-vs-published fee delta is 0.0% for COM and EBE;
+LAW's flat-annual published fees make per-year deltas structurally
+divergent (LP001 year 1 matches to the rand).
 
 ## 9. Extending to the remaining faculties
 
-LAW and FHS next (likely the same publisher template → a `FacultyConfig`
-each), then SCI and HUM — for those two the unit of extraction is the
-*major* (`SB…`/`HB…` plan codes) plus the degree-composition rules from the
-faculty rules section, from which the ideal student's curriculum is
-constructed rather than read off a table; they will likely need their own
-parser rather than the shared engine.
+FHS next (likely the same publisher template → a `FacultyConfig`), then SCI
+and HUM — for those two the unit of extraction is the *major* (`SB…`/`HB…`
+plan codes) plus the degree-composition rules from the faculty rules
+section, from which the ideal student's curriculum is constructed rather
+than read off a table; they will likely need their own parser rather than
+the shared engine.

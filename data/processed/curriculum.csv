@@ -3227,6 +3227,83 @@
 2021,EBE,EB810MEC05,5,1,5,MEC4126F,MEC4126F,Integrating Embedded Systems,16,8,core,,,,,False,67
 2021,EBE,EB810MEC05,5,1,6,MEC4127F,MEC4127F,Mechatronic Systems,16,8,core,,,,,False,67
 2021,EBE,EB810MEC05,5,1,7,MEC4128S,MEC4128S,Final Year Engineering Project,20,8,core,,,,,False,67
+2021,LAW,LP001,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,39
+2021,LAW,LP001,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,39
+2021,LAW,LP001,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,39
+2021,LAW,LP001,1,1,4,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,39
+2021,LAW,LP001,1,1,5,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,39
+2021,LAW,LP001,1,1,6,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,39
+2021,LAW,LP001,2,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,39
+2021,LAW,LP001,2,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,39
+2021,LAW,LP001,2,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,39
+2021,LAW,LP001,2,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,39
+2021,LAW,LP001,2,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,39
+2021,LAW,LP001,2,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,39
+2021,LAW,LP001,2,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,39
+2021,LAW,LP001,2,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,39
+2021,LAW,LP001,2,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,39
+2021,LAW,LP001,3,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,39
+2021,LAW,LP001,3,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,39
+2021,LAW,LP001,3,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,39
+2021,LAW,LP001,3,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,39
+2021,LAW,LP001,3,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,39
+2021,LAW,LP001,3,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,39
+2021,LAW,LP001,3,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,39
+2021,LAW,LP001,3,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,39
+2021,LAW,LB002,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,40
+2021,LAW,LB002,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,40
+2021,LAW,LB002,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,40
+2021,LAW,LB002,1,1,4,,,One English (ELL) course OR SLL1002S Word Power,18,5,elective,,,,,False,40
+2021,LAW,LB002,1,1,5,MAM1013F,MAM1013F,Law That Counts,18,5,option,Y1G1,1,1,,False,40
+2021,LAW,LB002,1,1,6,MAM1013S,MAM1013S,Law That Counts,18,5,option,Y1G1,2,1,,False,40
+2021,LAW,LB002,1,1,7,,,AND two semester courses in another faculty,36,5,elective,,,,,False,41
+2021,LAW,LB002,2,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,41
+2021,LAW,LB002,2,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,41
+2021,LAW,LB002,2,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,41
+2021,LAW,LB002,2,1,4,,,"Two semester courses in a single language, or a whole course in a language",36,5,elective,,,,,False,41
+2021,LAW,LB002,2,1,5,,,Two 2000-level semester courses in one discipline,,,elective,,,,,False,41
+2021,LAW,LB002,3,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,41
+2021,LAW,LB002,3,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,41
+2021,LAW,LB002,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,41
+2021,LAW,LB002,3,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,41
+2021,LAW,LB002,3,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,41
+2021,LAW,LB002,3,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,41
+2021,LAW,LB002,3,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,41
+2021,LAW,LB002,3,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,41
+2021,LAW,LB002,3,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,41
+2021,LAW,LB002,4,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,41
+2021,LAW,LB002,4,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,41
+2021,LAW,LB002,4,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,41
+2021,LAW,LB002,4,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,41
+2021,LAW,LB002,4,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,41
+2021,LAW,LB002,4,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,41
+2021,LAW,LB002,4,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,41
+2021,LAW,LB002,4,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,41
+2021,LAW,LB003,1,1,1,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,42
+2021,LAW,LB003,1,1,2,SLL1002S,SLL1002S,Word Power,18,5,core,,,,,False,42
+2021,LAW,LB003,2,1,1,PBL2002W,PBL2002W,Constitutional Law (5YP) (No longer on offer after 2020),36,7,core,,,,,False,42
+2021,LAW,LB003,2,1,2,,,Two semester courses in another faculty,36,5,elective,,,,,False,42
+2021,LAW,LB003,3,1,1,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,42
+2021,LAW,LB003,3,1,2,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,42
+2021,LAW,LB003,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,42
+2021,LAW,LB003,3,1,4,,,"Two semester courses in a single language, or a whole course in a language",36,5,elective,,,,,False,42
+2021,LAW,LB003,3,1,5,,,Two 2000-level semester courses in one discipline,,,elective,,,,,False,42
+2021,LAW,LB003,4,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,42
+2021,LAW,LB003,4,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,42
+2021,LAW,LB003,4,1,3,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,42
+2021,LAW,LB003,4,1,4,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,42
+2021,LAW,LB003,4,1,5,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,42
+2021,LAW,LB003,4,1,6,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,42
+2021,LAW,LB003,4,1,7,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,42
+2021,LAW,LB003,4,1,8,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,42
+2021,LAW,LB003,5,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,43
+2021,LAW,LB003,5,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,43
+2021,LAW,LB003,5,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,43
+2021,LAW,LB003,5,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,43
+2021,LAW,LB003,5,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,43
+2021,LAW,LB003,5,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,43
+2021,LAW,LB003,5,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,43
+2021,LAW,LB003,5,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,43
 2022,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stocastic Processes & Time Series,36,7,core,,,,,False,21
 2022,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,21
 2022,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,21
@@ -6459,6 +6536,82 @@
 2022,EBE,EB810MEC05,5,1,5,MEC4126F,MEC4126F,Integrating Embedded Systems,16,8,core,,,,,False,67
 2022,EBE,EB810MEC05,5,1,6,MEC4127F,MEC4127F,Mechatronic Systems,16,8,core,,,,,False,67
 2022,EBE,EB810MEC05,5,1,7,MEC4128S,MEC4128S,Final Year Engineering Project,20,8,core,,,,,False,67
+2022,LAW,LP001,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,41
+2022,LAW,LP001,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,41
+2022,LAW,LP001,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,41
+2022,LAW,LP001,1,1,4,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,41
+2022,LAW,LP001,1,1,5,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,41
+2022,LAW,LP001,1,1,6,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,41
+2022,LAW,LP001,2,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,41
+2022,LAW,LP001,2,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,41
+2022,LAW,LP001,2,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,41
+2022,LAW,LP001,2,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,41
+2022,LAW,LP001,2,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,41
+2022,LAW,LP001,2,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,41
+2022,LAW,LP001,2,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,41
+2022,LAW,LP001,2,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,41
+2022,LAW,LP001,2,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,41
+2022,LAW,LP001,3,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,41
+2022,LAW,LP001,3,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,41
+2022,LAW,LP001,3,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,41
+2022,LAW,LP001,3,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,41
+2022,LAW,LP001,3,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,41
+2022,LAW,LP001,3,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,41
+2022,LAW,LP001,3,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,41
+2022,LAW,LP001,3,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,41
+2022,LAW,LB002,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,42
+2022,LAW,LB002,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,42
+2022,LAW,LB002,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,42
+2022,LAW,LB002,1,1,4,,,One English (ELL) course OR SLL1002S Word Power,18,5,elective,,,,,False,42
+2022,LAW,LB002,1,1,5,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,42
+2022,LAW,LB002,1,1,6,,,AND two semester courses in another faculty,36,5,elective,,,,,False,43
+2022,LAW,LB002,2,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,43
+2022,LAW,LB002,2,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,43
+2022,LAW,LB002,2,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,43
+2022,LAW,LB002,2,1,4,,,"Two semester courses in a single language, or a whole course in a language",36,5,elective,,,,,False,43
+2022,LAW,LB002,2,1,5,,,Two 2000-level semester courses in one discipline,,,elective,,,,,False,43
+2022,LAW,LB002,3,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,43
+2022,LAW,LB002,3,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,43
+2022,LAW,LB002,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,43
+2022,LAW,LB002,3,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,43
+2022,LAW,LB002,3,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,43
+2022,LAW,LB002,3,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,43
+2022,LAW,LB002,3,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,43
+2022,LAW,LB002,3,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,43
+2022,LAW,LB002,3,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,43
+2022,LAW,LB002,4,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,43
+2022,LAW,LB002,4,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,43
+2022,LAW,LB002,4,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,43
+2022,LAW,LB002,4,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,43
+2022,LAW,LB002,4,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,43
+2022,LAW,LB002,4,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,43
+2022,LAW,LB002,4,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,43
+2022,LAW,LB002,4,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,43
+2022,LAW,LB003,1,1,1,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,44
+2022,LAW,LB003,1,1,2,SLL1002S,SLL1002S,Word Power,18,5,core,,,,,False,44
+2022,LAW,LB003,2,1,1,PBL2002W,PBL2002W,Constitutional Law (5YP) (No longer on offer after 2020),36,7,core,,,,,False,44
+2022,LAW,LB003,2,1,2,,,Two semester courses in another faculty,36,5,elective,,,,,False,44
+2022,LAW,LB003,3,1,1,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,44
+2022,LAW,LB003,3,1,2,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,44
+2022,LAW,LB003,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,44
+2022,LAW,LB003,3,1,4,,,"Two semester courses in a single language, or a whole course in a language",36,5,elective,,,,,False,44
+2022,LAW,LB003,3,1,5,,,Two 2000-level semester courses in one discipline,,,elective,,,,,False,44
+2022,LAW,LB003,4,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,44
+2022,LAW,LB003,4,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,44
+2022,LAW,LB003,4,1,3,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,44
+2022,LAW,LB003,4,1,4,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,44
+2022,LAW,LB003,4,1,5,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,44
+2022,LAW,LB003,4,1,6,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,44
+2022,LAW,LB003,4,1,7,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,44
+2022,LAW,LB003,4,1,8,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,44
+2022,LAW,LB003,5,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,44
+2022,LAW,LB003,5,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,44
+2022,LAW,LB003,5,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,44
+2022,LAW,LB003,5,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,44
+2022,LAW,LB003,5,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,44
+2022,LAW,LB003,5,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,44
+2022,LAW,LB003,5,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,44
+2022,LAW,LB003,5,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,45
 2023,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,21
 2023,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,21
 2023,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,21
@@ -9716,6 +9869,82 @@
 2023,EBE,EB810MEC05,5,1,5,MEC4126F,MEC4126F,Integrating Embedded Systems,16,8,core,,,,,False,68
 2023,EBE,EB810MEC05,5,1,6,MEC4127F,MEC4127F,Mechatronic Systems,16,8,core,,,,,False,68
 2023,EBE,EB810MEC05,5,1,7,MEC4128S,MEC4128S,Final Year Engineering Project,20,8,core,,,,,False,68
+2023,LAW,LP001,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,41
+2023,LAW,LP001,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,41
+2023,LAW,LP001,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,41
+2023,LAW,LP001,1,1,4,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,41
+2023,LAW,LP001,1,1,5,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,41
+2023,LAW,LP001,1,1,6,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,41
+2023,LAW,LP001,2,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,41
+2023,LAW,LP001,2,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,41
+2023,LAW,LP001,2,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,41
+2023,LAW,LP001,2,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,41
+2023,LAW,LP001,2,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,41
+2023,LAW,LP001,2,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,41
+2023,LAW,LP001,2,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,41
+2023,LAW,LP001,2,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,41
+2023,LAW,LP001,2,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,41
+2023,LAW,LP001,3,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,41
+2023,LAW,LP001,3,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,41
+2023,LAW,LP001,3,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,41
+2023,LAW,LP001,3,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,41
+2023,LAW,LP001,3,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,41
+2023,LAW,LP001,3,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,41
+2023,LAW,LP001,3,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,41
+2023,LAW,LP001,3,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,41
+2023,LAW,LB002,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,43
+2023,LAW,LB002,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,43
+2023,LAW,LB002,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,43
+2023,LAW,LB002,1,1,4,,,One English (ELL) course OR SLL1002S Word Power,18,5,elective,,,,,False,43
+2023,LAW,LB002,1,1,5,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,43
+2023,LAW,LB002,1,1,6,,,AND two semester courses in another faculty,36,5,elective,,,,,False,43
+2023,LAW,LB002,2,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,43
+2023,LAW,LB002,2,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,43
+2023,LAW,LB002,2,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,43
+2023,LAW,LB002,2,1,4,,,"Two semester courses in a single language, or a whole course in a language",36,5,elective,,,,,False,43
+2023,LAW,LB002,2,1,5,,,Two 2000-level semester courses in one discipline,,,elective,,,,,False,43
+2023,LAW,LB002,3,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,43
+2023,LAW,LB002,3,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,43
+2023,LAW,LB002,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,43
+2023,LAW,LB002,3,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,43
+2023,LAW,LB002,3,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,43
+2023,LAW,LB002,3,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,43
+2023,LAW,LB002,3,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,43
+2023,LAW,LB002,3,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,43
+2023,LAW,LB002,3,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,43
+2023,LAW,LB002,4,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,43
+2023,LAW,LB002,4,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,43
+2023,LAW,LB002,4,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,43
+2023,LAW,LB002,4,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,43
+2023,LAW,LB002,4,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,43
+2023,LAW,LB002,4,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,43
+2023,LAW,LB002,4,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,43
+2023,LAW,LB002,4,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,43
+2023,LAW,LB003,1,1,1,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,44
+2023,LAW,LB003,1,1,2,SLL1002S,SLL1002S,Word Power,18,5,core,,,,,False,44
+2023,LAW,LB003,2,1,1,PBL2002W,PBL2002W,Constitutional Law (5YP) (No longer on offer after 2020),36,7,core,,,,,False,44
+2023,LAW,LB003,2,1,2,,,Two semester courses in another faculty,36,5,elective,,,,,False,44
+2023,LAW,LB003,3,1,1,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,44
+2023,LAW,LB003,3,1,2,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,44
+2023,LAW,LB003,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,44
+2023,LAW,LB003,3,1,4,,,"Two semester courses in a single language, or a whole course in a language",36,5,elective,,,,,False,44
+2023,LAW,LB003,3,1,5,,,Two 2000-level semester courses in one discipline,,,elective,,,,,False,44
+2023,LAW,LB003,4,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,44
+2023,LAW,LB003,4,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,44
+2023,LAW,LB003,4,1,3,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,44
+2023,LAW,LB003,4,1,4,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,44
+2023,LAW,LB003,4,1,5,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,44
+2023,LAW,LB003,4,1,6,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,44
+2023,LAW,LB003,4,1,7,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,44
+2023,LAW,LB003,4,1,8,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,44
+2023,LAW,LB003,5,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,45
+2023,LAW,LB003,5,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,45
+2023,LAW,LB003,5,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,45
+2023,LAW,LB003,5,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,45
+2023,LAW,LB003,5,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,45
+2023,LAW,LB003,5,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,45
+2023,LAW,LB003,5,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,45
+2023,LAW,LB003,5,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,45
 2024,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,16
 2024,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,16
 2024,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,16
@@ -12797,6 +13026,82 @@
 2024,EBE,EB810MEC05,5,1,5,MEC4126F,MEC4126F,Integrating Embedded Systems,16,8,core,,,,,False,70
 2024,EBE,EB810MEC05,5,1,6,MEC4127F,MEC4127F,Mechatronic Systems,16,8,core,,,,,False,70
 2024,EBE,EB810MEC05,5,1,7,MEC4128S,MEC4128S,Final Year Engineering Project,20,8,core,,,,,False,70
+2024,LAW,LP001,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,40
+2024,LAW,LP001,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,40
+2024,LAW,LP001,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,40
+2024,LAW,LP001,1,1,4,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,40
+2024,LAW,LP001,1,1,5,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,40
+2024,LAW,LP001,1,1,6,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,40
+2024,LAW,LP001,2,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,40
+2024,LAW,LP001,2,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,40
+2024,LAW,LP001,2,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,40
+2024,LAW,LP001,2,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,40
+2024,LAW,LP001,2,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,40
+2024,LAW,LP001,2,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,40
+2024,LAW,LP001,2,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,40
+2024,LAW,LP001,2,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,40
+2024,LAW,LP001,2,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,40
+2024,LAW,LP001,3,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,40
+2024,LAW,LP001,3,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,40
+2024,LAW,LP001,3,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,40
+2024,LAW,LP001,3,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,40
+2024,LAW,LP001,3,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,40
+2024,LAW,LP001,3,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,40
+2024,LAW,LP001,3,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,40
+2024,LAW,LP001,3,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,40
+2024,LAW,LB002,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,41
+2024,LAW,LB002,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,41
+2024,LAW,LB002,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,41
+2024,LAW,LB002,1,1,4,,,One English (ELL) course OR SLL1002S Word Power,18,5,elective,,,,,False,41
+2024,LAW,LB002,1,1,5,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,41
+2024,LAW,LB002,1,1,6,,,AND two semester courses in another faculty,36,5,elective,,,,,False,41
+2024,LAW,LB002,2,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,41
+2024,LAW,LB002,2,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,41
+2024,LAW,LB002,2,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,41
+2024,LAW,LB002,2,1,4,,,"Two semester courses in a single language, or a whole course in a language",36,5,elective,,,,,False,41
+2024,LAW,LB002,2,1,5,,,Two 2000-level semester courses in one discipline,,,elective,,,,,False,41
+2024,LAW,LB002,3,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,41
+2024,LAW,LB002,3,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,41
+2024,LAW,LB002,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,42
+2024,LAW,LB002,3,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,42
+2024,LAW,LB002,3,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,42
+2024,LAW,LB002,3,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,42
+2024,LAW,LB002,3,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,42
+2024,LAW,LB002,3,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,42
+2024,LAW,LB002,3,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,42
+2024,LAW,LB002,4,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,42
+2024,LAW,LB002,4,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,42
+2024,LAW,LB002,4,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,42
+2024,LAW,LB002,4,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,42
+2024,LAW,LB002,4,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,42
+2024,LAW,LB002,4,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,42
+2024,LAW,LB002,4,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,42
+2024,LAW,LB002,4,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,42
+2024,LAW,LB003,1,1,1,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,42
+2024,LAW,LB003,1,1,2,SLL1002S,SLL1002S,Word Power,18,5,core,,,,,False,42
+2024,LAW,LB003,2,1,1,PBL2002W,PBL2002W,Constitutional Law (5YP) (No longer on offer after 2020),36,7,core,,,,,False,42
+2024,LAW,LB003,2,1,2,,,Two semester courses in another faculty,36,5,elective,,,,,False,42
+2024,LAW,LB003,3,1,1,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,43
+2024,LAW,LB003,3,1,2,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,43
+2024,LAW,LB003,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,43
+2024,LAW,LB003,3,1,4,,,"Two semester courses in a single language, or a whole course in a language",36,5,elective,,,,,False,43
+2024,LAW,LB003,3,1,5,,,Two 2000-level semester courses in one discipline,,,elective,,,,,False,43
+2024,LAW,LB003,4,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,43
+2024,LAW,LB003,4,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,43
+2024,LAW,LB003,4,1,3,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,43
+2024,LAW,LB003,4,1,4,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,43
+2024,LAW,LB003,4,1,5,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,43
+2024,LAW,LB003,4,1,6,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,43
+2024,LAW,LB003,4,1,7,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,43
+2024,LAW,LB003,4,1,8,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,43
+2024,LAW,LB003,5,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,43
+2024,LAW,LB003,5,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,43
+2024,LAW,LB003,5,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,43
+2024,LAW,LB003,5,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,43
+2024,LAW,LB003,5,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,43
+2024,LAW,LB003,5,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,43
+2024,LAW,LB003,5,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,43
+2024,LAW,LB003,5,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,43
 2025,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,20
 2025,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,20
 2025,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,20
@@ -15854,6 +16159,83 @@
 2025,EBE,EB810MEC05,5,1,5,MEC4126F,MEC4126F,Integrating Embedded Systems,16,8,core,,,,,False,74
 2025,EBE,EB810MEC05,5,1,6,MEC4127F,MEC4127F,Mechatronic Systems,16,8,core,,,,,False,74
 2025,EBE,EB810MEC05,5,1,7,MEC4128S,MEC4128S,Final Year Engineering Project,20,8,core,,,,,False,74
+2025,LAW,LP001,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,41
+2025,LAW,LP001,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,41
+2025,LAW,LP001,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,41
+2025,LAW,LP001,1,1,4,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,41
+2025,LAW,LP001,1,1,5,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,41
+2025,LAW,LP001,1,1,6,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,41
+2025,LAW,LP001,2,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,41
+2025,LAW,LP001,2,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,41
+2025,LAW,LP001,2,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,41
+2025,LAW,LP001,2,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,41
+2025,LAW,LP001,2,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,41
+2025,LAW,LP001,2,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,41
+2025,LAW,LP001,2,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,41
+2025,LAW,LP001,2,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,41
+2025,LAW,LP001,2,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,41
+2025,LAW,LP001,3,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,41
+2025,LAW,LP001,3,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,41
+2025,LAW,LP001,3,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,41
+2025,LAW,LP001,3,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,41
+2025,LAW,LP001,3,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,41
+2025,LAW,LP001,3,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,41
+2025,LAW,LP001,3,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,41
+2025,LAW,LP001,3,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,41
+2025,LAW,LB002,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,42
+2025,LAW,LB002,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,42
+2025,LAW,LB002,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,42
+2025,LAW,LB002,1,1,4,,,One English (ELL) course OR SLL1002S Word Power,18,5,elective,,,,,False,43
+2025,LAW,LB002,1,1,5,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,43
+2025,LAW,LB002,1,1,6,,,AND two semester courses in another faculty,36,5,elective,,,,,False,43
+2025,LAW,LB002,2,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,43
+2025,LAW,LB002,2,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,43
+2025,LAW,LB002,2,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,43
+2025,LAW,LB002,2,1,4,,,"Two semester courses in a single language, or a whole course in a language",36,5,elective,,,,,False,43
+2025,LAW,LB002,2,1,5,,,another faculty,48,6,elective,,,,,False,43
+2025,LAW,LB002,3,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,43
+2025,LAW,LB002,3,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,43
+2025,LAW,LB002,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,43
+2025,LAW,LB002,3,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,43
+2025,LAW,LB002,3,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,43
+2025,LAW,LB002,3,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,43
+2025,LAW,LB002,3,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,43
+2025,LAW,LB002,3,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,43
+2025,LAW,LB002,3,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,43
+2025,LAW,LB002,4,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,43
+2025,LAW,LB002,4,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,43
+2025,LAW,LB002,4,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,43
+2025,LAW,LB002,4,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,43
+2025,LAW,LB002,4,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,43
+2025,LAW,LB002,4,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,43
+2025,LAW,LB002,4,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,43
+2025,LAW,LB002,4,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,43
+2025,LAW,LB003,1,1,1,PVL1009S,PVL1009S,Law of Persons and Family (5YP) (No longer on offer after 2019),18,5,core,,,,,False,44
+2025,LAW,LB003,1,1,2,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,44
+2025,LAW,LB003,1,1,3,SLL1002S,SLL1002S,Word Power,18,5,core,,,,,False,44
+2025,LAW,LB003,2,1,1,PBL2002W,PBL2002W,Constitutional Law (5YP) (No longer on offer after 2020),36,7,core,,,,,False,44
+2025,LAW,LB003,2,1,2,,,Two semester courses in another faculty,36,5,elective,,,,,False,44
+2025,LAW,LB003,3,1,1,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,44
+2025,LAW,LB003,3,1,2,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,44
+2025,LAW,LB003,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,44
+2025,LAW,LB003,3,1,4,,,another faculty,48,6,elective,,,,,False,44
+2025,LAW,LB003,4,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,44
+2025,LAW,LB003,4,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,44
+2025,LAW,LB003,4,1,3,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,44
+2025,LAW,LB003,4,1,4,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,44
+2025,LAW,LB003,4,1,5,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,44
+2025,LAW,LB003,4,1,6,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,44
+2025,LAW,LB003,4,1,7,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,44
+2025,LAW,LB003,4,1,8,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,44
+2025,LAW,LB003,5,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,44
+2025,LAW,LB003,5,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,44
+2025,LAW,LB003,5,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,44
+2025,LAW,LB003,5,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,44
+2025,LAW,LB003,5,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,45
+2025,LAW,LB003,5,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,45
+2025,LAW,LB003,5,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,45
+2025,LAW,LB003,5,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,45
+2025,LAW,LB003,5,1,9,,,"and Research Paper Elective courses) in order to obtain credit for that course, subject",,,elective,,,,,False,49
 2026,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,21
 2026,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,21
 2026,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,21
@@ -18817,3 +19199,54 @@
 2026,EBE,EB810MEC05,5,1,6,MEC4127F,MEC4127F,Mechatronic Systems,16,8,core,,,,,False,70
 2026,EBE,EB810MEC05,5,1,7,MEC4128Z,MEC4128Z,Final Year Engineering Project,20,8,core,,,,,False,70
 2026,EBE,EB810MEC05,5,1,8,,,"15 credits of complementary B credits that are needed to take are limited, open elective courses are",,,elective,,,,,False,70
+2026,LAW,LP001,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,42
+2026,LAW,LP001,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,42
+2026,LAW,LP001,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,42
+2026,LAW,LP001,1,1,4,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,42
+2026,LAW,LP001,1,1,5,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,42
+2026,LAW,LP001,1,1,6,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,42
+2026,LAW,LP001,2,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,42
+2026,LAW,LP001,2,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,42
+2026,LAW,LP001,2,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,42
+2026,LAW,LP001,2,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,42
+2026,LAW,LP001,2,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,42
+2026,LAW,LP001,2,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,42
+2026,LAW,LP001,2,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,42
+2026,LAW,LP001,2,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,43
+2026,LAW,LP001,2,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,43
+2026,LAW,LP001,3,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,43
+2026,LAW,LP001,3,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,43
+2026,LAW,LP001,3,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,43
+2026,LAW,LP001,3,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,43
+2026,LAW,LP001,3,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,43
+2026,LAW,LP001,3,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,43
+2026,LAW,LP001,3,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,43
+2026,LAW,LP001,3,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,43
+2026,LAW,LB002,1,1,1,PVL1003W,PVL1003W,Foundations of South African Law,36,5,core,,,,,False,44
+2026,LAW,LB002,1,1,2,PVL1004F,PVL1004F,South African Private Law: System and Context,18,5,core,,,,,False,44
+2026,LAW,LB002,1,1,3,PVL1008H,PVL1008H,Law of Persons and Family,18,5,core,,,,,False,44
+2026,LAW,LB002,1,1,4,,,One English (ELL) course OR SLL1002S Word Power,15,5,elective,,,,,False,44
+2026,LAW,LB002,1,1,5,MAM1013F,MAM1013F,Law That Counts,18,5,core,,,,,False,44
+2026,LAW,LB002,1,1,6,,,AND two semester courses in another faculty,30,5,elective,,,,,False,44
+2026,LAW,LB002,2,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,44
+2026,LAW,LB002,2,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,44
+2026,LAW,LB002,2,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,44
+2026,LAW,LB002,2,1,4,,,"Two semester courses in a single language, or a whole course in a language",30,5,elective,,,,,False,44
+2026,LAW,LB002,2,1,5,,,another faculty,40,6,elective,,,,,False,44
+2026,LAW,LB002,3,1,1,CML3001W,CML3001W,Corporation Law,36,7,core,,,,,False,45
+2026,LAW,LB002,3,1,2,PBL3001F,PBL3001F,International Law,18,7,core,,,,,False,45
+2026,LAW,LB002,3,1,3,PBL3801W,PBL3801W,Criminal Law,36,7,core,,,,,False,45
+2026,LAW,LB002,3,1,4,PVL3003S,PVL3003S,African Customary Law,18,7,core,,,,,False,45
+2026,LAW,LB002,3,1,5,PVL3003F,PVL3003F,Law of Delict,18,7,core,,,,,False,45
+2026,LAW,LB002,3,1,6,PVL3005W,PVL3005W,Law of Contract,36,7,core,,,,,False,45
+2026,LAW,LB002,3,1,7,PVL3006S,PVL3006S,Jurisprudence,18,7,core,,,,,False,45
+2026,LAW,LB002,3,1,8,DOL3001X,DOL3001X,Community Service,0,7,core,,,,,False,45
+2026,LAW,LB002,3,1,9,DOL3002X,DOL3002X,Intermediate Year Skills Component,0,7,core,,,,,False,45
+2026,LAW,LB002,4,1,1,CML4004S,CML4004S,Labour Law,18,8,core,,,,,False,45
+2026,LAW,LB002,4,1,2,CML4006W,CML4006W,Commercial Transactions Law,36,8,core,,,,,False,45
+2026,LAW,LB002,4,1,3,PBL4001W,PBL4001W,Administrative Law,36,8,core,,,,,False,45
+2026,LAW,LB002,4,1,4,PBL4801F,PBL4801F,Law of Evidence,18,8,core,,,,,False,45
+2026,LAW,LB002,4,1,5,PBL4802F,PBL4802F,Criminal Procedure,18,8,core,,,,,False,45
+2026,LAW,LB002,4,1,6,PVL4008H,PVL4008H,Civil Procedure,18,8,core,,,,,False,45
+2026,LAW,LB002,4,1,7,DOL4000H,DOL4000H,Integrative Assessment Moot,0,8,core,,,,,False,45
+2026,LAW,LB002,4,1,8,,,Research Component (elective courses and research paper),36,8,elective,,,,,False,45

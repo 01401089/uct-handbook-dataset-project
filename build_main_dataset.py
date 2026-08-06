@@ -145,13 +145,17 @@ def match_published_fees(prog_fees, specialisations, duration_by_plan):
                norm_spec(s["specialisation"]))
         by_key[key].append(s["plan_code"])
 
-    # Group the published rows into blocks per (section, label).
+    # Group the published rows into blocks per (section, label). LAW publishes
+    # single year-less amounts, kept under study_year "".
     blocks = defaultdict(dict)  # (section, label) -> {study_year: fee}
     for r in prog_fees:
         section = ("Commerce" if r["faculty_section"] == "Commerce"
                    else "EBE" if r["faculty_section"].startswith("Engineering")
+                   else "LAW" if r["faculty_section"].startswith("Law")
                    else None)
-        if section is None or not r["study_year"]:
+        if section is None:
+            continue
+        if not r["study_year"] and section != "LAW":
             continue
         blocks[(section, r["programme_label"])][r["study_year"]] = int(r["fee_zar"])
 
@@ -174,6 +178,27 @@ def match_published_fees(prog_fees, specialisations, duration_by_plan):
                     method = "ad_shared"
             else:
                 method = "label_match"
+        elif section == "LAW":
+            # "Undergraduate LLB ... R 76 810" / "Graduate LLB ... R 76 240":
+            # one flat annual fee per stream, applied to every study year.
+            low = label.lower()
+            if "undergraduate llb" in low:
+                plans = [p for (a, _ad, s), ps in by_key.items()
+                         if a == "LLB" and "undergraduate" in s for p in ps]
+            elif "graduate llb" in low:
+                plans = [p for (a, _ad, s), ps in by_key.items()
+                         if a == "LLB" and s.startswith("graduate") for p in ps]
+            else:
+                unmatched.append(label)
+                continue
+            if not plans:
+                unmatched.append(label)
+                continue
+            fee = next(iter(years.values()))
+            for p in plans:
+                for sy in range(1, (duration_by_plan.get(p) or 1) + 1):
+                    fee_map[(p, str(sy))] = (fee, label, "flat_annual")
+            continue
         else:  # Engineering & the Built Environment
             parsed = parse_fee_label_ebe(label)
             if not parsed:

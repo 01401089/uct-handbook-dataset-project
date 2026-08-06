@@ -28,7 +28,7 @@ python build_main_dataset.py      --year YYYY
 python validation/validate.py     --year YYYY
 ```
 
-COM + EBE + fees are loaded for **2021-2026**. Faculty extractors are thin
+COM + EBE + LAW + fees are loaded for **2021-2026**. Faculty extractors are thin
 configs (`extractors/<fac>/extract.py` defines a `FacultyConfig`) over the
 **shared engine** `common/handbook_parser.py` — promoted from the COM
 extractor once the grammar proved general (identical publisher template).

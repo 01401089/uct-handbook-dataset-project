@@ -216,3 +216,10 @@
 2022,EB802CIV01,1,extended,Civil Engineering,52070,0,74600,-30.2,shared,MISMATCH
 2022,EB802CIV01,2,extended,Civil Engineering,52390,0,73590,-28.8,shared,MISMATCH
 2022,EB802CIV01,3,extended,Civil Engineering,55150,0,63980,-13.8,shared,MISMATCH
+2022,LB002,1,regular,Four-year undergraduate LLB stream,68410,26730,66010,3.6,flat_annual,OK
+2022,LB002,2,regular,Four-year undergraduate LLB stream,74350,41580,66010,12.6,flat_annual,MISMATCH
+2022,LB002,3,regular,Four-year undergraduate LLB stream,76860,0,66010,16.4,flat_annual,MISMATCH
+2022,LB002,4,regular,Four-year undergraduate LLB stream,76450,14840,66010,15.8,flat_annual,MISMATCH
+2022,LP001,1,regular,Graduate LLB Stream,65540,0,65540,0.0,flat_annual,OK
+2022,LP001,2,regular,Graduate LLB Stream,76860,0,65540,17.3,flat_annual,MISMATCH
+2022,LP001,3,regular,Graduate LLB Stream,70350,8740,65540,7.3,flat_annual,MISMATCH

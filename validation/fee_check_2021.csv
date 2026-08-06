@@ -212,3 +212,10 @@
 2021,EB022EEE02,2,regular,Electrical and Computer Engineering,78840,0,75150,4.9,duration,OK
 2021,EB022EEE02,3,regular,Electrical and Computer Engineering,72020,0,62860,14.6,duration,MISMATCH
 2021,EB022EEE02,4,regular,Electrical and Computer Engineering,88790,0,33670,163.7,duration,MISMATCH
+2021,LB002,1,regular,Four-year undergraduate LLB stream,65580,25620,63300,3.6,flat_annual,OK
+2021,LB002,2,regular,Four-year undergraduate LLB stream,71273,39853,63300,12.6,flat_annual,MISMATCH
+2021,LB002,3,regular,Four-year undergraduate LLB stream,71700,0,63300,13.3,flat_annual,MISMATCH
+2021,LB002,4,regular,Four-year undergraduate LLB stream,74390,15320,63300,17.5,flat_annual,MISMATCH
+2021,LP001,1,regular,Graduate LLB Stream,62840,0,62840,0.0,flat_annual,OK
+2021,LP001,2,regular,Graduate LLB Stream,71700,0,62840,14.1,flat_annual,MISMATCH
+2021,LP001,3,regular,Graduate LLB Stream,73290,14220,62840,16.6,flat_annual,MISMATCH

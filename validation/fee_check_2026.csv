@@ -212,3 +212,10 @@
 2026,EB019APG11,4,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,114670,0,97850,17.2,duration,MISMATCH
 2026,EB022EEE02,3,regular,Electrical and Computer Engineering,102300,0,100370,1.9,duration,OK
 2026,EB022EEE02,4,regular,Electrical and Computer Engineering,108420,0,97560,11.1,duration,MISMATCH
+2026,LB002,1,regular,Four-year undergraduate LLB stream,77920,27150,80410,-3.1,flat_annual,OK
+2026,LB002,2,regular,Four-year undergraduate LLB stream,79232,39322,80410,-1.5,flat_annual,OK
+2026,LB002,3,regular,Four-year undergraduate LLB stream,93640,0,80410,16.5,flat_annual,MISMATCH
+2026,LB002,4,regular,Four-year undergraduate LLB stream,93190,18100,80410,15.9,flat_annual,MISMATCH
+2026,LP001,1,regular,Graduate LLB Stream,79820,0,79820,0.0,flat_annual,OK
+2026,LP001,2,regular,Graduate LLB Stream,93640,0,79820,17.3,flat_annual,MISMATCH
+2026,LP001,3,regular,Graduate LLB Stream,86050,10960,79820,7.8,flat_annual,MISMATCH

@@ -102,6 +102,17 @@ class FacultyConfig:
     pool_marker: Optional[Pattern] = None  # "ELECTIVE COURSES" pool sections
     extra_elective: Optional[Pattern] = None  # e.g. EBE "Approved elective courses 0-48"
     suppress_duplicate_blocks: bool = False
+    total_line: Optional[Pattern] = None   # faculty-specific stated-total grammar
+                                           # (LAW: "Total credits for Preliminary
+                                           # Level ... 144"); must expose a
+                                           # `credits` group; `max`/`gte`/`plus`
+                                           # groups optional
+    extra_elective_nocred: Optional[Pattern] = None  # slot desc line whose credits
+                                           # arrive on a continuation line
+    content_reclassify: bool = False       # flip catalogue-classified pages whose
+                                           # body shows programme signatures (LAW
+                                           # 2026 mislabels the rules section's
+                                           # running header)
 
 
 def classify_pages(cfg: FacultyConfig, dump_path: Path) -> tuple[dict, dict]:
@@ -157,6 +168,16 @@ def classify_pages(cfg: FacultyConfig, dump_path: Path) -> tuple[dict, dict]:
             for p in range(page_no + 1, nxt):
                 if p in bare:
                     sections.setdefault(p, sections[page_no])
+
+    if cfg.content_reclassify:
+        for page_no, text in texts.items():
+            if sections.get(page_no) != "catalogue":
+                continue
+            body = [l.strip() for l in text.splitlines()]
+            if any(cfg.year_heading.match(l)
+                   or (cfg.plan_code_any.match(l) and ".." not in l)
+                   or (cfg.total_line and cfg.total_line.match(l)) for l in body):
+                sections[page_no] = "programmes"
     return sections, hints
 
 
@@ -330,18 +351,19 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
                     "is_minimum": False, "source_page": page_no,
                 })
             continue
-        m = TOTAL_LINE.match(line)
+        m = (cfg.total_line or TOTAL_LINE).match(line)
         if m and study_year:
+            gd = m.groupdict()
             if not suppressed:
                 totals[(prog["plan_code"], study_year, table_index)] = {
                     "year": year, "faculty": cfg.faculty,
                     "plan_code": prog["plan_code"],
                     "study_year": study_year, "table_index": table_index,
-                    "stated_total_credits": int(m.group("credits")),
-                    "stated_total_max": int(m.group("max")) if m.group("max") else "",
+                    "stated_total_credits": int(gd["credits"]),
+                    "stated_total_max": int(gd["max"]) if gd.get("max") else "",
                     # a range total is a minimum-anchored statement
-                    "is_minimum": bool(m.group("gte") or m.group("plus")
-                                       or m.group("max")),
+                    "is_minimum": bool(gd.get("gte") or gd.get("plus")
+                                       or gd.get("max")),
                     "source_page": page_no,
                 }
             menu, option_set, await_credits = None, None, None
@@ -358,6 +380,18 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
                     await_credits["nqf_level"] = int(cm.group("level"))
                 await_credits = None
                 continue
+            # Wrapped desc whose tail carries the credits ("... offered in" /
+            # "another faculty .... 48 6"): merge into the pending slot.
+            if cfg.extra_elective:
+                em = cfg.extra_elective.match(line)
+                if em:
+                    gd = em.groupdict()
+                    await_credits["course_title"] += " " + em.group("desc").rstrip(" .")
+                    await_credits["nqf_credits"] = int(gd["credits"])
+                    if gd.get("level"):
+                        await_credits["nqf_level"] = int(gd["level"])
+                    await_credits = None
+                    continue
             await_credits = None
 
         if OR_LINE.match(line):
@@ -503,8 +537,9 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
                 gd = m.groupdict()
                 lo = int(gd["credits"])
                 hi = int(gd["max"]) if gd.get("max") else ""
-                emit_elective(m.group("desc").rstrip(" ."), lo, "",
-                              is_min=True,
+                lvl = int(gd["level"]) if gd.get("level") else ""
+                emit_elective(m.group("desc").rstrip(" ."), lo, lvl,
+                              is_min=hi != "",  # a range is minimum-anchored
                               note=f"range {lo}-{hi}" if hi != "" else "")
                 pending_or = pending_and = False
                 continue
@@ -531,6 +566,8 @@ def parse_programmes(cfg: FacultyConfig, dump_path: Path, sections: dict,
             continue
 
         m = ELECTIVE_NOCRED.match(line)
+        if not (m and study_year) and cfg.extra_elective_nocred and study_year:
+            m = cfg.extra_elective_nocred.match(line)
         if m and study_year:
             desc = re.sub(r"[\s.…]+$", "", m.group("desc"))
             # Credits may follow on a continuation line; else inferred downstream.
