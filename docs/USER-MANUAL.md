@@ -30,9 +30,20 @@ number can be traced back to the page of the handbook it came from.
 The 2025 edition is treated as the **baseline** — the recorded state of the
 curriculum against which the credit re-think editions are compared. Across the
 six Commerce editions the dataset holds **14,282 curriculum records** covering
-roughly **70 specialisations per year** (69–73, as offerings opened and
-closed), including the Academic Development (augmented and extended)
-variants and the Advanced Diplomas.
+**71–75 specialisations per year** as offerings opened and closed, including
+the Academic Development (augmented and extended) variants and the Advanced
+Diplomas.
+
+The dataset now comes in **two layers**:
+
+- the **as-printed layer** — exactly what the handbooks print, including
+  their own defects, preserved for audit;
+- the **final-clean layer** (`main_dataset_final.csv`,
+  `ideal_student_summary_final.csv`) — the same data with those defects
+  resolved by documented, justified rules and case-by-case adjudications.
+
+**Analysts should use the final-clean tables; auditors and replicators the
+as-printed ones.** Section 6 describes both.
 
 ## 3. How the dataset was produced — and why it can be trusted
 
@@ -153,6 +164,39 @@ The roll-up used for most review questions:
 `course_fees` (every course's fee), `programme_fees_published` (the fees
 book's typical annual fees as printed).
 
+### 6.4 `main_dataset_final.csv` — the final-clean dataset
+
+Every row of `main_dataset.csv` with its original columns untouched, plus:
+
+| Column | Meaning |
+|---|---|
+| `final_included` | True if the row counts in the final ideal-student selection (differs from `ideal_student` only where an adjudication changed a choice) |
+| `resolution_class` | `none` / `R1a` (arithmetic rule) / `R2a` (cross-edition rule) / `R3` (adjudication) |
+| `resolution_ref` | the rule or register entry (e.g. `COM-2025-008`) that applied |
+| `final_note` | explanation where the row's inclusion changed |
+
+### 6.5 `ideal_student_summary_final.csv` — the final roll-up
+
+The summary table analysts should use. Adds to §6.2's columns:
+
+| Column | Meaning |
+|---|---|
+| `final_credits` | the resolved credit load for the year |
+| `credits_stated_corrected` | filled where a misprinted total was corrected by adjudication |
+| `final_credit_status` | `consistent` / `resolved_computed` / `resolved_manual` / `unresolved` |
+| `final_fee_zar` / `final_fee_status` | resolved cost; `reconciled` / `published_divergent` / `no_published` |
+| `confidence` | `high` (arithmetic or adjudicated) / `medium` (cross-edition) / `low` (default policy) |
+| `resolution_rationale` | the written justification, in full sentences |
+
+How discrepancies are resolved — the rule order, the evidence each rule
+demands, and worked examples — is documented in
+[FINAL-DATASET-METHOD.md](FINAL-DATASET-METHOD.md). In short: printed
+arithmetic identities and corroborated cross-edition evidence resolve
+automatically; genuine ambiguities are adjudicated case-by-case in a
+reviewable register (`resolutions/com.csv`) with rationale and page
+evidence; everything else is flagged `unresolved` at `low` confidence rather
+than silently guessed.
+
 ## 7. How the data is validated
 
 Each specialisation-year is checked from two independent directions — a
@@ -165,16 +209,21 @@ validation triangle:
    "Total credits per year"                     typical fee for that year
 ```
 
-Results for the current load:
+Results for the current load, after the final-clean layer:
 
-| Year | Credit check OK | Fee coverage (published fee matched) |
-|---|---|---|
-| 2021 | 218 of 269 | 164 of 269 |
-| 2022 | 216 of 261 | 160 of 261 |
-| 2023 | 209 of 265 | 158 of 265 |
-| 2024 | 181 of 255 | 178 of 255 |
-| 2025 | 217 of 266 | 180 of 266 |
-| 2026 | 199 of 258 | 172 of 258 |
+| Year | Spec-years | Consistent as printed | Resolved by rule/adjudication | Unresolved (flagged) |
+|---|---|---|---|---|
+| 2021 | 274 | 227 | 17 | 30 |
+| 2022 | 275 | 240 | 11 | 24 |
+| 2023 | 276 | 225 | 15 | 36 |
+| 2024 | 271 | 203 | 13 | 55 |
+| 2025 | 268 | 219 | 13 | 36 |
+| 2026 | 261 | 201 | 11 | 49 |
+
+86% of all specialisation-years are fully resolved at high or medium
+confidence; the unresolved remainder (mostly small ±6–24 credit gaps) carry
+the computed value at low confidence and are individually listed, with
+suggested actions, in `validation/pending_adjudication_<year>.csv`.
 
 Where computed fees can be compared with published fees, the **median
 difference is 0.0%** — for most programmes the computation reproduces UCT's
@@ -264,12 +313,19 @@ If a reviewer finds a value that misrepresents the handbook:
 
 1. Check the row's `source_page` against the PDF in
    `faculty-handbooks-undergraduate/`.
-2. If the software misread the page, report it — the parser is fixed and the
-   year re-run (other years are provably unaffected).
-3. If the handbook itself is wrong, the agreed correction is entered in the
-   extractor's overrides file with the reason and page reference, and the
-   pipeline re-run. Corrections are therefore visible, attributable, and
-   reversible — the printed value is never silently replaced.
+2. **If the software misread the page** (the PDF prints the right value), the
+   parser or its overrides file is fixed and the year re-run — other years
+   are provably unaffected.
+3. **If the handbook itself is wrong or ambiguous**, the decision is entered
+   in the adjudication register (`resolutions/com.csv`) with its rationale
+   and page evidence, and the final layer re-run. The as-printed record is
+   never altered; the final tables carry the resolution with its register
+   reference, so every correction is visible, attributable, and reversible.
+
+Forty-four provisional adjudications (marked *"provisional (Claude), pending
+review"*) currently await confirmation — reviewing them is the most valuable
+contribution a reader of this manual can make. They are listed in
+`resolutions/com.csv` with their reasoning spelled out.
 
 ## 11. Glossary
 
@@ -291,9 +347,13 @@ If a reviewer finds a value that misrepresents the handbook:
 | Location | Contents |
 |---|---|
 | `faculty-handbooks-undergraduate/` | source PDFs, read-only |
-| `data/processed/main_dataset.csv` | the single source of truth (§6.1) |
-| `data/processed/ideal_student_summary.csv` | per specialisation-year roll-up (§6.2) |
+| `data/processed/main_dataset_final.csv` | **the final-clean dataset — use this for analysis** (§6.4) |
+| `data/processed/ideal_student_summary_final.csv` | final per specialisation-year roll-up (§6.5) |
+| `data/processed/main_dataset.csv` | as-printed dataset (§6.1) — audit/replication |
+| `data/processed/ideal_student_summary.csv` | as-printed roll-up (§6.2) |
 | `data/processed/*.csv` | supporting tables (§6.3) |
-| `validation/*.csv` | per-year exception reports (§7) |
+| `resolutions/com.csv` | the adjudication register with rationales (§10) |
+| `validation/*.csv` | exception reports, resolution logs, pending adjudications (§7) |
+| `docs/FINAL-DATASET-METHOD.md` | how the final layer resolves discrepancies |
 | `docs/REPLICATION.md` | technical process log and hazard catalogue |
 | `docs/commerce-review-and-proposal.md` | original design document |

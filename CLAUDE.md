@@ -31,9 +31,23 @@ python validation/validate.py     --year YYYY
 COM + fees are loaded for **2021-2026**. Writers are merge-by-year
 (`common/csv_io.py`): re-running a year replaces only that year's rows —
 after any parser change, verify prior years' rows are byte-identical (the
-2025 baseline especially). `data/processed/main_dataset.csv` is the **single
-source of truth**: one row per specialisation x study-year x course-slot with
-degree, credit, course and fee columns and an `ideal_student` boolean.
+2025 baseline especially). `data/processed/main_dataset.csv` is the
+**as-printed single source of truth**: one row per specialisation x
+study-year x course-slot with degree, credit, course and fee columns and an
+`ideal_student` boolean. `main_dataset_final.csv` /
+`ideal_student_summary_final.csv` are the **final-clean layer** built by
+`build_final_dataset.py` (step 5) and checked by
+`validation/validate_final.py` (step 6) — see
+`docs/FINAL-DATASET-METHOD.md` for the rule taxonomy (R0/R3/R1/R2/R4).
+
+**Final-layer ground rule:** never "fix" a handbook print error in an
+extractor or an as-printed output. Parse artifacts (PDF prints right, we
+read wrong) go in extractor `overrides`; print errors/ambiguities get a row
+in `resolutions/com.csv` with rationale + page evidence, applied only in the
+final layer. The finaliser fails on stale register entries; detectors R1b/
+R2b feed `validation/pending_adjudication_<year>.csv` — check that report
+after onboarding any new year. A doubled row-sum (exactly 2x stated) means a
+swallowed programme heading — see hazards H22-H24.
 
 `docs/REPLICATION.md` is the authoritative process log: read it (especially
 the hazard catalogue H1-H21, which includes per-edition layout drift — 2024

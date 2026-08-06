@@ -31,8 +31,10 @@ python run_pipeline.py --years all
 ```
 
 The batch runner discovers every year with both a Commerce and a fees PDF in
-`faculty-handbooks-undergraduate/`, and runs the full pipeline per year
-(fees extractor → Commerce extractor → main-dataset assembly → validation).
+`faculty-handbooks-undergraduate/`, runs the as-printed pipeline per year
+(fees extractor → Commerce extractor → main-dataset assembly → validation),
+then builds the **final-clean layer** for all loaded years (resolution rules
++ adjudication register → `main_dataset_final.csv` → final validation).
 Writers are **merge-by-year**: re-running a year replaces exactly that year's
 rows and leaves every other year byte-identical, so pipeline runs are
 reviewable as single-year git diffs.
@@ -44,6 +46,8 @@ python -m extractors.fees.extract --year 2025
 python -m extractors.com.extract --year 2025
 python build_main_dataset.py --year 2025
 python validation/validate.py --year 2025
+python build_final_dataset.py --year 2025
+python validation/validate_final.py --year 2025
 ```
 
 ## Repository layout
@@ -71,39 +75,44 @@ uct-handbook-project/
     └── commerce-review-and-proposal.md  # original design document
 ```
 
-## The main dataset (single source of truth)
+## The datasets: as-printed and final-clean
 
-**`data/processed/main_dataset.csv`** — one row per specialisation ×
-study-year × course-slot, joining degree, credit, course and fee information,
-with an **`ideal_student`** boolean marking the rows a deterministic "ideal
-student" takes. Everything else is a building block or a check against it.
-All tables carry a `year` column so editions sit side by side.
+The data comes in two layers. The **as-printed layer** records exactly what
+the handbooks print, defects included, for audit and replication. The
+**final-clean layer** resolves those defects through documented rules and a
+reviewable adjudication register — *analysts should use the final tables*:
 
 | Table | Grain | Purpose |
 |---|---|---|
-| `main_dataset` | specialisation × study-year × course-slot | **single source of truth** incl. `ideal_student` flag |
-| `ideal_student_summary` | specialisation × study-year | computed credits + cost vs stated/published values |
+| **`main_dataset_final`** | specialisation × study-year × course-slot | **final-clean dataset for analysis** — as-printed columns + `final_included`, resolution class/ref, notes |
+| **`ideal_student_summary_final`** | specialisation × study-year | final credits + cost with status, confidence, and written rationale |
+| `main_dataset` | specialisation × study-year × course-slot | as-printed single source of truth incl. `ideal_student` flag |
+| `ideal_student_summary` | specialisation × study-year | as-printed credits + cost vs stated/published values |
 | `specialisations` | one row per plan/specialisation code per year | degree + specialisation register |
-| `curriculum` | one row per course-slot per spec-year | the curriculum tables as data |
-| `curriculum_totals` | one row per spec-year | handbook-stated total credits (validation anchor) |
-| `courses` | one row per course per year | catalogue: credits, NQF level, convener, requirements |
-| `course_fees` | one row per course code per year | Rand fee from the fees book |
-| `programme_fees_published` | one row per programme-year | published "typical" annual fee |
+| `curriculum` / `curriculum_totals` | course-slots / stated totals | the curriculum tables as data |
+| `courses` / `course_fees` / `programme_fees_published` | catalogue / fees | supporting joins |
 
-## Data quality at a glance (2021–2026)
+Discrepancy resolution (rule order, evidence requirements, worked examples):
+[docs/FINAL-DATASET-METHOD.md](docs/FINAL-DATASET-METHOD.md). Case-by-case
+adjudications live in [resolutions/com.csv](resolutions/com.csv) with written
+rationale and PDF page evidence.
 
-| Year | Specialisations | Curriculum rows | Credit check OK | Published-fee coverage |
-|---|---|---|---|---|
-| 2021 | 71 | 2,434 | 218/269 | 164/269 |
-| 2022 | 69 | 2,468 | 216/261 | 160/261 |
-| 2023 | 71 | 2,491 | 209/265 | 158/265 |
-| 2024 | 72 | 2,318 | 181/255 | 178/255 |
-| 2025 | 73 | 2,323 | 217/266 | 180/266 |
-| 2026 | 70 | 2,248 | 199/258 | 172/258 |
+## Data quality at a glance (2021–2026, final layer)
 
-Every discrepancy is itemised with page provenance in `validation/`; most
-"mismatches" are the handbooks' own arithmetic quirks, preserved rather than
-silently corrected (see the user manual's caveats section).
+| Year | Specialisations | Curriculum rows | Consistent | Rule/register resolved | Unresolved (flagged) |
+|---|---|---|---|---|---|
+| 2021 | 73 | 2,434 | 227 | 17 | 30 |
+| 2022 | 74 | 2,468 | 240 | 11 | 24 |
+| 2023 | 75 | 2,491 | 225 | 15 | 36 |
+| 2024 | 75 | 2,318 | 203 | 13 | 55 |
+| 2025 | 73 | 2,323 | 219 | 13 | 36 |
+| 2026 | 71 | 2,248 | 201 | 11 | 49 |
+
+86% of 1,625 specialisation-years fully resolve at high/medium confidence;
+the rest carry the computed value at low confidence and are enumerated with
+suggested actions in `validation/pending_adjudication_<year>.csv`. As-printed
+handbook defects are preserved in the base layer and resolved — never
+silently corrected — in the final layer.
 
 ## Key identifiers
 
@@ -137,6 +146,8 @@ silently corrected (see the user manual's caveats section).
 - [x] `validation` — credit totals + fee cross-checks, per-year reports
 - [x] Batch processing (`run_pipeline.py`) with merge-by-year writers
 - [x] User manual for reviewers/deans
+- [x] Final-clean layer: rules engine + adjudication register + final validation
+- [ ] Review of the 44 provisional adjudications in `resolutions/com.csv`
 - [ ] Remaining faculties: EBE, LAW, FHS, then SCI, HUM
 - [ ] Trend analysis across editions (`analysis/`)
 

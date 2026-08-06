@@ -37,7 +37,19 @@ python -m extractors.fees.extract --year 2025
 python -m extractors.com.extract --year 2025
 python build_main_dataset.py --year 2025
 python validation/validate.py --year 2025
+python build_final_dataset.py --year 2025      # step 5: final-clean layer
+python validation/validate_final.py --year 2025  # step 6: final-layer assertions
 ```
+
+Steps 1–4 build and check the **as-printed layer** (exactly what the
+handbooks print, defects preserved). Steps 5–6 build and check the
+**final-clean layer** (`main_dataset_final.csv`,
+`ideal_student_summary_final.csv`): discrepancies resolved by the ordered
+rule set R0/R3/R1/R2/R4 with the curated register `resolutions/com.csv` —
+full method and justification in
+[FINAL-DATASET-METHOD.md](FINAL-DATASET-METHOD.md). The batch runner
+executes steps 5–6 for **every loaded year** after the per-year loop
+(cross-edition rules make the final layer a whole-dataset computation).
 
 Each step is deterministic and re-runnable; interim page dumps go to
 `data/interim/` (gitignored), outputs to `data/processed/` (committed), and
@@ -167,8 +179,8 @@ files with written rationale, never by editing outputs.
 | H8 | Zero-credit courses | `CSC2004Z Programming Assessment 0 6` | allowed |
 | H9 | Prose totals as remnants | "The total credits for year 2 equals 186." after an unrelated table | fill-only, never overwrite |
 | H10 | Handbook arithmetic quirks | total counts both OR branches (CB004INF01 y1) | surfaced in credit_check, not "fixed" |
-| H11 | Stated-total misprint | CB025BUS09 y1 "Total … 382" | exception report; overrides if pinned |
-| H12 | Un-labelled choice menus | CSC 4th-year module list | exception report; overrides |
+| H11 | Stated-total misprint | CB025BUS09 y1 "Total … 382" | adjudicated in `resolutions/com.csv` (COM-2025-008), resolved in the final layer |
+| H12 | Un-labelled choice menus | CSC 4th-year module list | adjudicated in `resolutions/com.csv` (`accept_stated`), resolved in the final layer |
 | H13 | Character-interleaved fee rows | p.82 of fees book, two rows merged | de-interleaved via `extractors/fees/overrides.py` |
 | H14 | Fees-book code variants | `ACC1011N` (R600 exam-only rows), `X` codes | kept in `course_fees`; costing joins exact codes |
 | H15 | PG fee rows bleeding into UG labels | part-time year rows after dotted fees | dotted-label fallback; PG labels excluded from matching |
@@ -196,22 +208,25 @@ byte-identical (verified for the 2025 baseline on every change). Then:
 3. Commit the updated CSVs and validation reports; existing years' rows must
    show no diff.
 
-## 6. Multi-year status (2021-2026 COM + fees, processed 2026-08-05)
+## 6. Multi-year status (2021-2026 COM + fees, final layer 2026-08-06)
 
-| Year | Specialisations | Curriculum rows | Credit check OK | Published-fee coverage |
-|---|---|---|---|---|
-| 2021 | 71 | 2,434 | 218/269 | 164/269 |
-| 2022 | 69 | 2,468 | 216/261 | 160/261 |
-| 2023 | 71 | 2,491 | 209/265 | 158/265 |
-| 2024 | 72 | 2,318 | 181/255 | 178/255 |
-| 2025 (baseline) | 73 | 2,323 | 217/266 | 180/266 |
-| 2026 | 70 | 2,248 | 199/258 | 172/258 |
+| Year | Specialisations | Curriculum rows | Consistent | Rule/register resolved | Unresolved |
+|---|---|---|---|---|---|
+| 2021 | 73 | 2,434 | 227 | 17 | 30 |
+| 2022 | 74 | 2,468 | 240 | 11 | 24 |
+| 2023 | 75 | 2,491 | 225 | 15 | 36 |
+| 2024 | 75 | 2,318 | 203 | 13 | 55 |
+| 2025 (baseline) | 73 | 2,323 | 219 | 13 | 36 |
+| 2026 | 71 | 2,248 | 201 | 11 | 49 |
+| **total** | **431** | **14,282** | **1,315** | **80** | **230** |
 
-Main dataset: **14,282 rows** across six editions; summary: 1,574
-specialisation-years. The credit re-think is visible directly, e.g.
-CB019BUS01 (BCom Actuarial Science) year 1: 185 credits (2021-2023) → 180
-credits (2024-2026), with computed ideal fees equal to the published fee to
-the rand in 2021-2025.
+86% of the 1,625 specialisation-years are fully resolved at high/medium
+confidence; the 230 unresolved (mostly small ±6…±24 credit gaps) carry the
+computed value at low confidence and are enumerated with suggested actions in
+`validation/pending_adjudication_<year>.csv`. The credit re-think is visible
+directly, e.g. CB019BUS01 (BCom Actuarial Science) year 1: 185 credits
+(2021-2023) → 180 credits (2024-2026), with computed ideal fees equal to the
+published fee to the rand in 2021-2025.
 
 Layout drift encountered and handled across editions:
 
@@ -221,6 +236,15 @@ Layout drift encountered and handled across editions:
 | H19 | Plan codes printed inline at the end of the title line (Title Case and UPPERCASE) | 2024 | generalised inline-heading rule; case-insensitive degree parsing |
 | H20 | Per-degree/per-department running headers ("BACHELOR OF COMMERCE AUGMENTED 15"), no "Programmes of Study" header | 2026 | degree/department header families; variant read from the page header |
 | H21 | "NQF credits at HEQSF level N" wording | 2026 | credits-line accepts NQF and HEQSF |
+| H22 | Trailing brackets on plan-code lines | `[CB003BUS01][SAQA ID:4411]` (2021/2022) | unified heading rule tolerates extra brackets |
+| H23 | Wrapped heading tails | "…specialising in Quantitative ⏎ Finance [CB025BUS09]" (2024) | pre-bracket tail joined to buffered title lines |
+| H24 | Markers/misprints inside the code bracket | `[CB011ECO03#]` (2022/2023), `[CB0015ECO03]` extra zero (2024) | bracket grammar tolerates `#`/`*`; extra-zero normalisation |
+| H25 | Unseparated / comma-format published fees | `R 84690` (2023), `R 68,900` (2024) | sec-11 amount grammar accepts all three formats |
+
+Failing to recognise a heading is the costliest hazard class: the previous
+block silently **swallows** the next programme's tables (doubling its row
+sums) — exactly what detector R2b in the final layer flags as
+`check_extraction`. H22–H24 were all found this way.
 
 Variant assignment precedence (robust across all layouts): page-header hint
 (2026) → known programme-code family map (`VARIANT_BY_PROGCODE`) → umbrella-
