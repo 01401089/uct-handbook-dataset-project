@@ -17,11 +17,12 @@ handbooks (PDF) and the student fees handbooks into relational tables so that:
    can be costed in credits and Rand.
 3. Credit-load and fee trends can be compared across handbook editions.
 
-**Current coverage: Commerce + Fees for 2021–2026** (six editions,
-14,282 main-dataset rows). The credit re-think is already visible in the
-data — e.g. BCom Actuarial Science year 1 drops from 185 to 180 credits at
-the 2024 edition. Other faculties (EBE, FHS, HUM, LAW, SCI) have 2025 books
-loaded and extractors pending.
+**Current coverage: Commerce + EBE + Fees for 2021–2026** (six editions,
+18,818 main-dataset rows across 596 specialisation register entries). The
+credit re-think is already visible in the data — e.g. BCom Actuarial Science
+year 1 drops from 185 to 180 credits at the 2024 edition. Remaining
+faculties (FHS, HUM, LAW, SCI) have 2025 books loaded and extractors
+pending.
 
 ## Quick start
 
@@ -59,11 +60,15 @@ uct-handbook-project/
 │   └── YYYY-_fees.pdf                 #   fees books:    YYYY-_fees.pdf
 ├── run_pipeline.py                    # batch runner (all years / range / list)
 ├── build_main_dataset.py              # assembles the single source of truth
-├── common/                            # shared utilities (PDF text, grammar, CSV io)
-├── extractors/                        # ONE extractor package PER faculty
+├── build_final_dataset.py             # final-clean layer (rules + register)
+├── common/                            # shared engine + utilities
+│   └── handbook_parser.py             #   faculty-configurable parsing engine
+├── extractors/                        # ONE config/extractor package PER faculty
 │   ├── com/                           #   built (2021-2026)
+│   ├── ebe/                           #   built (2021-2026)
 │   ├── fees/                          #   built (2021-2026)
-│   └── ebe/ fhs/ hum/ law/ sci/       #   pending
+│   └── fhs/ hum/ law/ sci/            #   pending
+├── resolutions/                       # per-faculty adjudication registers
 ├── data/
 │   ├── interim/                       # per-page text dumps (gitignored)
 │   └── processed/                     # output tables, all years side by side (committed)
@@ -99,20 +104,24 @@ rationale and PDF page evidence.
 
 ## Data quality at a glance (2021–2026, final layer)
 
-| Year | Specialisations | Curriculum rows | Consistent | Rule/register resolved | Unresolved (flagged) |
-|---|---|---|---|---|---|
-| 2021 | 73 | 2,434 | 227 | 17 | 30 |
-| 2022 | 74 | 2,468 | 240 | 11 | 24 |
-| 2023 | 75 | 2,491 | 225 | 15 | 36 |
-| 2024 | 75 | 2,318 | 203 | 13 | 55 |
-| 2025 | 73 | 2,323 | 219 | 13 | 36 |
-| 2026 | 71 | 2,248 | 201 | 11 | 49 |
+| Year | COM consistent / resolved / unresolved | EBE consistent / resolved / unresolved |
+|---|---|---|
+| 2021 | 227 / 17 / 30 | 62 / 1 / 27 |
+| 2022 | 240 / 11 / 24 | 57 / 0 / 33 |
+| 2023 | 225 / 15 / 36 | 59 / 0 / 31 |
+| 2024 | 203 / 13 / 55 | 57 / 0 / 33 |
+| 2025 | 219 / 13 / 36 | 55 / 0 / 32 |
+| 2026 | 202 / 11 / 48 | 54 / 0 / 29 |
 
-86% of 1,625 specialisation-years fully resolve at high/medium confidence;
-the rest carry the computed value at low confidence and are enumerated with
-suggested actions in `validation/pending_adjudication_<year>.csv`. As-printed
-handbook defects are preserved in the base layer and resolved — never
-silently corrected — in the final layer.
+Across 2,155 specialisation-years: **1,660 consistent, 81 resolved by
+rules/adjudications, 414 unresolved** (flagged at low confidence, carried at
+the computed value, enumerated with suggested actions in
+`validation/pending_adjudication_<year>.csv`). Commerce's register has been
+provisionally seeded; **EBE's adjudication pass is still pending** (see
+DEV-TODO.md), which is why its unresolved counts are higher. Computed fees
+reconcile with published fees at **median delta 0.0% for both faculties**.
+As-printed handbook defects are preserved in the base layer and resolved —
+never silently corrected — in the final layer.
 
 ## Key identifiers
 
@@ -147,8 +156,10 @@ silently corrected — in the final layer.
 - [x] Batch processing (`run_pipeline.py`) with merge-by-year writers
 - [x] User manual for reviewers/deans
 - [x] Final-clean layer: rules engine + adjudication register + final validation
-- [ ] Review of the 44 provisional adjudications in `resolutions/com.csv`
-- [ ] Remaining faculties: EBE, LAW, FHS, then SCI, HUM
+- [x] EBE extractor (2021–2026) on the shared engine (`common/handbook_parser.py`)
+- [ ] Review of the 44 provisional COM adjudications; EBE adjudication pass
+      (`DEV-TODO.md` documents the workflow)
+- [ ] Remaining faculties: LAW, FHS, then SCI, HUM
 - [ ] Trend analysis across editions (`analysis/`)
 
 Git tags: `baseline-2025` (the pre-change initial state) and

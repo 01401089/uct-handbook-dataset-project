@@ -85,8 +85,11 @@ row-sets rather than stable stated totals.
 
 ## 4. The adjudication register
 
-`resolutions/com.csv` — schema and workflow in `resolutions/README.md`. The
-2026-08 seeding contains **44 provisional entries**
+One register per faculty (`resolutions/com.csv`, `resolutions/ebe.csv`, …),
+all consumed together by the finaliser — schema and workflow in
+`resolutions/README.md`. The EBE register is currently empty (its
+adjudication pass is queued in DEV-TODO.md). The 2026-08 Commerce seeding
+contains **44 provisional entries**
 (`decided_by = "provisional (Claude), pending review"`), covering:
 
 - **Unlabelled choice menus** (CSC 4th year, PPE year 2, senior Economics

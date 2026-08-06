@@ -275,3 +275,93 @@
 2023,CU017ACC01,1,regular,Accounting,138,144,-6,False,MISMATCH
 2023,CU020BUS01,1,regular,Actuarial Science,180,126,54,True,OK
 2023,CU021GSB48,1,regular,Management Development,120,,,False,NO_STATED_TOTAL
+2023,EB001CHE01,1,regular,,146,146,0,False,OK
+2023,EB001CHE01,2,regular,,144,144,0,True,OK
+2023,EB001CHE01,3,regular,,142,142,0,True,OK
+2023,EB001CHE01,4,regular,,128,128,0,True,OK
+2023,EB002CIV01,1,regular,Civil Engineering,144,144,0,False,OK
+2023,EB002CIV01,2,regular,Civil Engineering,144,144,0,False,OK
+2023,EB002CIV01,3,regular,Civil Engineering,134,152,-18,False,MISMATCH
+2023,EB002CIV01,4,regular,Civil Engineering,144,144,0,False,OK
+2023,EB005MEC01,1,regular,Mechanical Engineering,144,144,0,False,OK
+2023,EB005MEC01,2,regular,Mechanical Engineering,144,144,0,False,OK
+2023,EB005MEC01,3,regular,Mechanical Engineering,144,144,0,False,OK
+2023,EB005MEC01,4,regular,Mechanical Engineering,102,144,-42,False,MISMATCH
+2023,EB009EEE01,1,regular,Electrical Engineering,148,148,0,False,OK
+2023,EB009EEE01,2,regular,Electrical Engineering,144,144,0,False,OK
+2023,EB009EEE01,3,regular,Electrical Engineering,128,,,False,NO_STATED_TOTAL
+2023,EB009EEE01,4,regular,Electrical Engineering,206,,,False,NO_STATED_TOTAL
+2023,EB010MEC05,1,regular,Mechanical & Mechatronic Engineering,144,144,0,False,OK
+2023,EB010MEC05,2,regular,Mechanical & Mechatronic Engineering,144,144,0,False,OK
+2023,EB010MEC05,3,regular,Mechanical & Mechatronic Engineering,144,144,0,False,OK
+2023,EB010MEC05,4,regular,Mechanical & Mechatronic Engineering,114,144,-30,False,MISMATCH
+2023,EB011EEE05,1,regular,Mechatronics,148,,,False,NO_STATED_TOTAL
+2023,EB011EEE05,2,regular,Mechatronics,144,,,False,NO_STATED_TOTAL
+2023,EB011EEE05,3,regular,Mechatronics,128,,,False,NO_STATED_TOTAL
+2023,EB011EEE05,4,regular,Mechatronics,206,,,False,NO_STATED_TOTAL
+2023,EB012APG01,1,regular,,144,144,0,False,OK
+2023,EB012APG01,2,regular,,144,144,0,False,OK
+2023,EB012APG01,3,regular,,144,144,0,False,OK
+2023,EB015CON04,1,regular,,154,154,0,False,OK
+2023,EB015CON04,2,regular,,154,154,0,False,OK
+2023,EB015CON04,3,regular,,156,156,0,False,OK
+2023,EB017CON03,1,regular,,152,152,0,False,OK
+2023,EB017CON03,2,regular,,154,154,0,False,OK
+2023,EB017CON03,3,regular,,162,162,0,False,OK
+2023,EB019APG09,1,regular,Surveying Stream,106,124,-18,False,MISMATCH
+2023,EB019APG09,2,regular,Surveying Stream,148,148,0,False,OK
+2023,EB019APG09,3,regular,Surveying Stream,144,144,0,False,OK
+2023,EB019APG09,4,regular,Surveying Stream,150,150,0,False,OK
+2023,EB019APG11,1,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,126,126,0,False,OK
+2023,EB019APG11,2,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,148,148,0,False,OK
+2023,EB019APG11,3,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,154,154,0,False,OK
+2023,EB019APG11,4,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,180,180,0,False,OK
+2023,EB022EEE02,1,regular,Electrical and Computer Engineering,148,148,0,False,OK
+2023,EB022EEE02,2,regular,Electrical and Computer Engineering,144,144,0,False,OK
+2023,EB022EEE02,3,regular,Electrical and Computer Engineering,160,,,False,NO_STATED_TOTAL
+2023,EB022EEE02,4,regular,Electrical and Computer Engineering,182,,,False,NO_STATED_TOTAL
+2023,EB801CHE01,1,extended,Chemical Engineering,102,102,0,False,OK
+2023,EB801CHE01,2,extended,Chemical Engineering,112,112,0,True,OK
+2023,EB801CHE01,3,extended,Chemical Engineering,112,112,0,True,OK
+2023,EB801CHE01,4,extended,Chemical Engineering,126,126,0,True,OK
+2023,EB801CHE01,5,extended,Chemical Engineering,112,128,-16,False,MISMATCH
+2023,EB802CIV01,1,extended,Civil Engineering,104,104,0,False,OK
+2023,EB802CIV01,2,extended,Civil Engineering,104,104,0,False,OK
+2023,EB802CIV01,3,extended,Civil Engineering,124,124,0,False,OK
+2023,EB802CIV01,4,extended,Civil Engineering,108,126,-18,False,MISMATCH
+2023,EB802CIV01,5,extended,Civil Engineering,126,126,0,False,OK
+2023,EB805MEC01,1,extended,Mechanical Engineering,102,102,0,False,OK
+2023,EB805MEC01,2,extended,Mechanical Engineering,98,98,0,False,OK
+2023,EB805MEC01,3,extended,Mechanical Engineering,100,118,-18,False,MISMATCH
+2023,EB805MEC01,4,extended,Mechanical Engineering,132,132,0,False,OK
+2023,EB805MEC01,5,extended,Mechanical Engineering,102,126,-24,False,MISMATCH
+2023,EB809EEE01,1,extended,Electrical Engineering,96,96,0,False,OK
+2023,EB809EEE01,2,extended,Electrical Engineering,116,116,0,False,OK
+2023,EB809EEE01,3,extended,Electrical Engineering,112,112,0,False,OK
+2023,EB809EEE01,4,extended,Electrical Engineering,106,,,False,NO_STATED_TOTAL
+2023,EB809EEE01,5,extended,Electrical Engineering,196,,,False,NO_STATED_TOTAL
+2023,EB810MEC05,1,extended,Mechanical & Mechatronic Engineering,102,102,0,False,OK
+2023,EB810MEC05,2,extended,Mechanical & Mechatronic Engineering,98,98,0,False,OK
+2023,EB810MEC05,3,extended,Mechanical & Mechatronic Engineering,100,118,-18,False,MISMATCH
+2023,EB810MEC05,4,extended,Mechanical & Mechatronic Engineering,132,132,0,False,OK
+2023,EB810MEC05,5,extended,Mechanical & Mechatronic Engineering,114,126,-12,False,MISMATCH
+2023,EB811EEE05,1,extended,Mechatronics,96,,,False,NO_STATED_TOTAL
+2023,EB811EEE05,2,extended,Mechatronics,116,,,False,NO_STATED_TOTAL
+2023,EB811EEE05,3,extended,Mechatronics,112,,,False,NO_STATED_TOTAL
+2023,EB811EEE05,4,extended,Mechatronics,106,,,False,NO_STATED_TOTAL
+2023,EB811EEE05,5,extended,Mechatronics,204,,,False,NO_STATED_TOTAL
+2023,EB819APG09,1,extended,Surveying Stream,124,124,0,False,OK
+2023,EB819APG09,2,extended,Surveying Stream,92,110,-18,False,MISMATCH
+2023,EB819APG09,3,extended,Surveying Stream,90,90,0,False,OK
+2023,EB819APG09,4,extended,Surveying Stream,136,136,0,False,OK
+2023,EB819APG09,5,extended,Surveying Stream,106,106,0,False,OK
+2023,EB819APG11,1,extended,Geoinformatics Stream Environmental and Geographical Science Specialisation,126,126,0,False,OK
+2023,EB819APG11,2,extended,Geoinformatics Stream Environmental and Geographical Science Specialisation,110,110,0,False,OK
+2023,EB819APG11,3,extended,Geoinformatics Stream Environmental and Geographical Science Specialisation,150,150,0,False,OK
+2023,EB819APG11,4,extended,Geoinformatics Stream Environmental and Geographical Science Specialisation,142,142,0,False,OK
+2023,EB819APG11,5,extended,Geoinformatics Stream Environmental and Geographical Science Specialisation,80,80,0,False,OK
+2023,EB822EEE02,1,extended,Electrical and Computer Engineering,96,,,False,NO_STATED_TOTAL
+2023,EB822EEE02,2,extended,Electrical and Computer Engineering,116,,,False,NO_STATED_TOTAL
+2023,EB822EEE02,3,extended,Electrical and Computer Engineering,104,,,False,NO_STATED_TOTAL
+2023,EB822EEE02,4,extended,Electrical and Computer Engineering,146,,,False,NO_STATED_TOTAL
+2023,EB822EEE02,5,extended,Electrical and Computer Engineering,172,,,False,NO_STATED_TOTAL

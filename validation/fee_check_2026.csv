@@ -171,3 +171,44 @@
 2026,CB025BUS09,2,augmented,Actuarial Science: Quantitative Finance,111950,0,65880,69.9,label_match,MISMATCH
 2026,CB025BUS09,3,augmented,Actuarial Science: Quantitative Finance,96960,0,89870,7.9,label_match,MISMATCH
 2026,CB025BUS09,4,augmented,Actuarial Science: Quantitative Finance,77050,0,75880,1.5,label_match,OK
+2026,EB001CHE01,1,regular,,89470,0,89470,0.0,duration,OK
+2026,EB001CHE01,2,regular,,72330,0,101050,-28.4,duration,MISMATCH
+2026,EB001CHE01,3,regular,,60471,9991,92230,-34.4,duration,MISMATCH
+2026,EB001CHE01,4,regular,,90251,9991,100980,-10.6,duration,MISMATCH
+2026,EB002CIV01,1,regular,Civil Engineering,89780,0,89780,0.0,duration,OK
+2026,EB002CIV01,2,regular,Civil Engineering,81280,0,81280,0.0,duration,OK
+2026,EB002CIV01,3,regular,Civil Engineering,78100,0,87980,-11.2,duration,MISMATCH
+2026,EB002CIV01,4,regular,Civil Engineering,100360,0,100360,0.0,duration,OK
+2026,EB005MEC01,1,regular,Mechanical Engineering,83320,0,83320,0.0,duration,OK
+2026,EB005MEC01,2,regular,Mechanical Engineering,93400,0,93400,0.0,duration,OK
+2026,EB005MEC01,3,regular,Mechanical Engineering,96980,0,96980,0.0,duration,OK
+2026,EB005MEC01,4,regular,Mechanical Engineering,94570,25340,93260,1.4,duration,OK
+2026,EB009EEE01,2,regular,Electrical Engineering,96100,0,96100,0.0,duration,OK
+2026,EB009EEE01,3,regular,Electrical Engineering,82870,0,92750,-10.7,duration,MISMATCH
+2026,EB009EEE01,4,regular,Electrical Engineering,119280,0,84310,41.5,duration,MISMATCH
+2026,EB010MEC05,1,regular,Mechanical & Mechatronic Engineering,83320,0,83320,0.0,duration,OK
+2026,EB010MEC05,2,regular,Mechanical & Mechatronic Engineering,93400,0,93400,0.0,duration,OK
+2026,EB010MEC05,3,regular,Mechanical & Mechatronic Engineering,97130,0,97130,0.0,duration,OK
+2026,EB010MEC05,4,regular,Mechanical & Mechatronic Engineering,95510,18100,101440,-5.8,duration,MISMATCH
+2026,EB011EEE05,1,regular,Mechatronics,179300,0,82820,116.5,duration,MISMATCH
+2026,EB011EEE05,3,regular,Mechatronics,85710,0,93380,-8.2,duration,MISMATCH
+2026,EB011EEE05,4,regular,Mechatronics,119280,0,100650,18.5,duration,MISMATCH
+2026,EB012APG01,1,regular,,75610,0,75610,0.0,label_match,OK
+2026,EB012APG01,2,regular,,78840,0,80070,-1.5,label_match,OK
+2026,EB012APG01,3,regular,,82510,0,82510,0.0,label_match,OK
+2026,EB015CON04,1,regular,,94600,0,94600,0.0,label_match,OK
+2026,EB015CON04,2,regular,,84940,0,84940,0.0,label_match,OK
+2026,EB015CON04,3,regular,,90560,0,90560,0.0,label_match,OK
+2026,EB017CON03,1,regular,,92270,0,49190,87.6,label_match,MISMATCH
+2026,EB017CON03,2,regular,,91350,0,42480,115.0,label_match,MISMATCH
+2026,EB017CON03,3,regular,,87260,0,87260,0.0,label_match,OK
+2026,EB019APG09,1,regular,Surveying Stream,70310,0,73930,-4.9,duration,OK
+2026,EB019APG09,2,regular,Surveying Stream,93300,0,78050,19.5,duration,MISMATCH
+2026,EB019APG09,3,regular,Surveying Stream,91050,0,101910,-10.7,duration,MISMATCH
+2026,EB019APG09,4,regular,Surveying Stream,97850,0,97850,0.0,duration,OK
+2026,EB019APG11,1,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,70310,0,73930,-4.9,duration,OK
+2026,EB019APG11,2,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,93300,0,78050,19.5,duration,MISMATCH
+2026,EB019APG11,3,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,95550,0,101910,-6.2,duration,MISMATCH
+2026,EB019APG11,4,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,114670,0,97850,17.2,duration,MISMATCH
+2026,EB022EEE02,3,regular,Electrical and Computer Engineering,102300,0,100370,1.9,duration,OK
+2026,EB022EEE02,4,regular,Electrical and Computer Engineering,108420,0,97560,11.1,duration,MISMATCH

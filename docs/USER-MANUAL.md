@@ -23,16 +23,20 @@ number can be traced back to the page of the handbook it came from.
 
 | Content | Editions | Status |
 |---|---|---|
-| Faculty of Commerce undergraduate handbook | 2021, 2022, 2023, 2024, 2025, 2026 | complete |
+| Faculty of Commerce undergraduate handbook | 2021–2026 | complete |
+| Engineering & the Built Environment undergraduate handbook | 2021–2026 | complete (adjudication review pending) |
 | Student Fees handbook (course fees + published programme fees) | 2021–2026 | complete |
-| EBE, Health Sciences, Humanities, Law, Science handbooks | 2025 books on file | extraction pending |
+| Health Sciences, Humanities, Law, Science handbooks | 2025 books on file | extraction pending |
 
 The 2025 edition is treated as the **baseline** — the recorded state of the
-curriculum against which the credit re-think editions are compared. Across the
-six Commerce editions the dataset holds **14,282 curriculum records** covering
-**71–75 specialisations per year** as offerings opened and closed, including
-the Academic Development (augmented and extended) variants and the Advanced
-Diplomas.
+curriculum against which the credit re-think editions are compared. Across
+the six editions the dataset holds **18,818 curriculum records**: 71–75
+Commerce specialisations per year (including the Academic Development
+augmented and extended variants and the Advanced Diplomas) and ~25 EBE
+specialisations per year (including the 5-year Extended Curriculum
+Programmes). In EBE, elective loads are printed as ranges ("0–48 credits");
+the ideal student takes the minimum, and both ends of the range are
+retained.
 
 The dataset now comes in **two layers**:
 
@@ -209,21 +213,24 @@ validation triangle:
    "Total credits per year"                     typical fee for that year
 ```
 
-Results for the current load, after the final-clean layer:
+Results for the current load, after the final-clean layer
+(consistent / resolved / unresolved per faculty):
 
-| Year | Spec-years | Consistent as printed | Resolved by rule/adjudication | Unresolved (flagged) |
-|---|---|---|---|---|
-| 2021 | 274 | 227 | 17 | 30 |
-| 2022 | 275 | 240 | 11 | 24 |
-| 2023 | 276 | 225 | 15 | 36 |
-| 2024 | 271 | 203 | 13 | 55 |
-| 2025 | 268 | 219 | 13 | 36 |
-| 2026 | 261 | 201 | 11 | 49 |
+| Year | Commerce | EBE |
+|---|---|---|
+| 2021 | 227 / 17 / 30 | 62 / 1 / 27 |
+| 2022 | 240 / 11 / 24 | 57 / 0 / 33 |
+| 2023 | 225 / 15 / 36 | 59 / 0 / 31 |
+| 2024 | 203 / 13 / 55 | 57 / 0 / 33 |
+| 2025 | 219 / 13 / 36 | 55 / 0 / 32 |
+| 2026 | 202 / 11 / 48 | 54 / 0 / 29 |
 
-86% of all specialisation-years are fully resolved at high or medium
-confidence; the unresolved remainder (mostly small ±6–24 credit gaps) carry
-the computed value at low confidence and are individually listed, with
-suggested actions, in `validation/pending_adjudication_<year>.csv`.
+81% of the 2,155 specialisation-years are fully resolved at high or medium
+confidence. The unresolved remainder carries the computed value at low
+confidence and is individually listed, with suggested actions, in
+`validation/pending_adjudication_<year>.csv`. Commerce's register has been
+provisionally seeded; **EBE's adjudication pass has not yet been done**,
+which is why its unresolved counts are proportionally higher.
 
 Where computed fees can be compared with published fees, the **median
 difference is 0.0%** — for most programmes the computation reproduces UCT's

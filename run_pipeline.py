@@ -18,12 +18,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 RAW = ROOT / "faculty-handbooks-undergraduate"
 
-STEPS = [
-    ("fees", [sys.executable, "-m", "extractors.fees.extract"]),
-    ("com", [sys.executable, "-m", "extractors.com.extract"]),
-    ("assemble", [sys.executable, str(ROOT / "build_main_dataset.py")]),
-    ("validate", [sys.executable, str(ROOT / "validation" / "validate.py")]),
+# Faculty extractors run when the year's PDF is present; fees always runs.
+FACULTY_EXTRACTORS = [
+    ("com", "com"), ("ebe", "ebe"),   # (step name, pdf slug)
 ]
+
+
+def steps_for(year: int):
+    steps = [("fees", [sys.executable, "-m", "extractors.fees.extract"])]
+    for name, slug in FACULTY_EXTRACTORS:
+        if (RAW / f"{year}-{slug}-ug.pdf").exists():
+            steps.append((name, [sys.executable, "-m", f"extractors.{name}.extract"]))
+    steps += [
+        ("assemble", [sys.executable, str(ROOT / "build_main_dataset.py")]),
+        ("validate", [sys.executable, str(ROOT / "validation" / "validate.py")]),
+    ]
+    return steps
 
 # Final-clean layer: run for EVERY year in the dataset after the per-year
 # loop, because cross-edition rules (R2) mean any year's change can
@@ -70,9 +80,10 @@ def main():
     for year in years:
         print(f"{'=' * 60}\nYEAR {year}\n{'=' * 60}")
         log = []
-        for name, cmd in STEPS:
+        year_steps = steps_for(year)
+        for name, cmd in year_steps:
             full = cmd + ["--year", str(year)]
-            if args.skip_dump and name in ("fees", "com"):
+            if args.skip_dump and name in ("fees", "com", "ebe"):
                 full.append("--skip-dump")
             r = subprocess.run(full, cwd=ROOT, capture_output=True, text=True)
             out = (r.stdout + r.stderr).strip()
@@ -106,10 +117,11 @@ def main():
     print(f"{'=' * 60}\nSUMMARY\n{'=' * 60}")
     failed = False
     for year, log in results.items():
+        n_steps = len(steps_for(year))
         steps_ok = sum(1 for _, rc, _ in log if rc == 0)
-        status = "OK" if steps_ok == len(STEPS) else f"FAILED at {log[-1][0]}"
-        failed = failed or steps_ok != len(STEPS)
-        print(f"{year}: {steps_ok}/{len(STEPS)} steps — {status}")
+        status = "OK" if steps_ok == n_steps else f"FAILED at {log[-1][0]}"
+        failed = failed or steps_ok != n_steps
+        print(f"{year}: {steps_ok}/{n_steps} steps — {status}")
     print(f"final-clean layer: {'OK' if final_ok else 'FAILED'}")
     sys.exit(1 if failed or not final_ok else 0)
 

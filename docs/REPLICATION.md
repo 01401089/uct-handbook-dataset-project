@@ -208,25 +208,14 @@ byte-identical (verified for the 2025 baseline on every change). Then:
 3. Commit the updated CSVs and validation reports; existing years' rows must
    show no diff.
 
-## 6. Multi-year status (2021-2026 COM + fees, final layer 2026-08-06)
+## 6. Commerce yield reference (per-edition, as-printed layer)
 
-| Year | Specialisations | Curriculum rows | Consistent | Rule/register resolved | Unresolved |
-|---|---|---|---|---|---|
-| 2021 | 73 | 2,434 | 227 | 17 | 30 |
-| 2022 | 74 | 2,468 | 240 | 11 | 24 |
-| 2023 | 75 | 2,491 | 225 | 15 | 36 |
-| 2024 | 75 | 2,318 | 203 | 13 | 55 |
-| 2025 (baseline) | 73 | 2,323 | 219 | 13 | 36 |
-| 2026 | 71 | 2,248 | 201 | 11 | 49 |
-| **total** | **431** | **14,282** | **1,315** | **80** | **230** |
-
-86% of the 1,625 specialisation-years are fully resolved at high/medium
-confidence; the 230 unresolved (mostly small ±6…±24 credit gaps) carry the
-computed value at low confidence and are enumerated with suggested actions in
-`validation/pending_adjudication_<year>.csv`. The credit re-think is visible
-directly, e.g. CB019BUS01 (BCom Actuarial Science) year 1: 185 credits
-(2021-2023) → 180 credits (2024-2026), with computed ideal fees equal to the
-published fee to the rand in 2021-2025.
+Per-edition COM yields for regression comparison when parsers change:
+73/74/75/75/73/71 specialisations and 2,434/2,468/2,491/2,318/2,323/2,248
+curriculum rows for 2021→2026. Current cross-faculty status lives in §8.
+The credit re-think is visible directly, e.g. CB019BUS01 (BCom Actuarial
+Science) year 1: 185 credits (2021-2023) → 180 credits (2024-2026), with
+computed ideal fees equal to the published fee to the rand in 2021-2025.
 
 Layout drift encountered and handled across editions:
 
@@ -240,21 +229,77 @@ Layout drift encountered and handled across editions:
 | H23 | Wrapped heading tails | "…specialising in Quantitative ⏎ Finance [CB025BUS09]" (2024) | pre-bracket tail joined to buffered title lines |
 | H24 | Markers/misprints inside the code bracket | `[CB011ECO03#]` (2022/2023), `[CB0015ECO03]` extra zero (2024) | bracket grammar tolerates `#`/`*`; extra-zero normalisation |
 | H25 | Unseparated / comma-format published fees | `R 84690` (2023), `R 68,900` (2024) | sec-11 amount grammar accepts all three formats |
+| H26 | Mixed year-heading nouns within one edition | EBE 2021: "Second Year Core **Modules**" inside a "Core Courses" book | EBE heading grammar accepts both nouns |
+| H27 | Year headings with parenthetical suffixes | EBE: "First Year Core Courses (from 2020)", "… (EE)" | optional trailing parenthetical in the heading grammar |
+| H28 | Pages with no running header (bare page number) | EBE 2023 in-faculty departments section (107 pages) | content-signature classification + sandwich fill for bare-number pages |
 
 Failing to recognise a heading is the costliest hazard class: the previous
 block silently **swallows** the next programme's tables (doubling its row
 sums) — exactly what detector R2b in the final layer flags as
-`check_extraction`. H22–H24 were all found this way.
+`check_extraction`. H22–H24, H26 and the EB015CON04 case were all found this
+way; **an exactly-2× row-sum is the diagnostic signature**.
 
 Variant assignment precedence (robust across all layouts): page-header hint
 (2026) → known programme-code family map (`VARIANT_BY_PROGCODE`) → umbrella-
 line tracking (2021-2025).
 
-## 7. Extending to the other faculties
+## 7. The shared engine and the EBE faculty (added 2026-08-06)
 
-One extractor package per faculty (`extractors/ebe/` etc.), same output
-schemas, same pipeline position as `extractors/com/`. Recommended order:
-EBE and LAW (Commerce-like curriculum tables), FHS, then SCI and HUM — for
-those two the unit of extraction is the *major* (`SB…`/`HB…` plan codes) plus
-the degree-composition rules from the faculty rules section, from which the
-ideal student's curriculum is constructed rather than read off a table.
+The COM parser was promoted to a faculty-configurable engine,
+`common/handbook_parser.py`, once EBE proved to use the same publisher
+template. Each faculty supplies a `FacultyConfig`
+(`extractors/<fac>/extract.py`): plan-code grammar, degree parser, page
+classification, heading grammar, variant resolution, department map, and
+optional extras. The promotion was verified value-identical for all six COM
+editions (curriculum and courses byte-equal; one deliberate improvement —
+range-total support now captures a 2026 AdvDip total that previously sat in
+notes).
+
+**EBE config deltas** (stable across 2021-2026 — EBE shows no cross-edition
+layout drift, unlike COM):
+
+- Plan codes `EB###XXX##`; the **800-series are the 5-year Extended
+  Curriculum Programmes** → variant `extended`.
+- Year headings say "Core Courses" (with H26/H27 tolerances).
+- Stated totals are often **ranges** ("108-156") because elective loads are
+  ranges ("Approved elective courses … 0-48"): the minimum anchors the ideal
+  student (`is_minimum=True`), the maximum is kept in `stated_total_max`.
+- Every programme is followed by an "ELECTIVE COURSES" pool section →
+  `requirement=alternative`.
+- Specialisation sub-streams (Geomatics Geoinformatics: Computer Science vs
+  EGS) share one plan code — the second block is DUPLICATE-flagged and its
+  rows suppressed (first-listed stream is the ideal), as is the transferee
+  access programme that reuses `EB001CHE01`/`EB002CIV01` (see DEV-TODO).
+- Published-fee labels ("BSc Eng (Chemical)") are matched by an EBE-specific
+  label parser; ECP variants are not published separately — duration
+  matching assigns each block to the right variant.
+
+Tables shared by several faculties are written **merge-by-faculty-within-
+year** (`write_year_rows(..., keep=...)`): an extractor re-run replaces only
+its own faculty's rows.
+
+## 8. Multi-year status (COM + EBE, final layer 2026-08-06)
+
+| Year | COM consistent/resolved/unresolved | EBE consistent/resolved/unresolved |
+|---|---|---|
+| 2021 | 227 / 17 / 30 | 62 / 1 / 27 |
+| 2022 | 240 / 11 / 24 | 57 / 0 / 33 |
+| 2023 | 225 / 15 / 36 | 59 / 0 / 31 |
+| 2024 | 203 / 13 / 55 | 57 / 0 / 33 |
+| 2025 | 219 / 13 / 36 | 55 / 0 / 32 |
+| 2026 | 202 / 11 / 48 | 54 / 0 / 29 |
+
+Main dataset: **18,818 rows** (COM 14,282 + EBE 4,536); 596 specialisation
+register entries; 2,155 specialisation-years (1,660 consistent, 81
+resolved, 414 unresolved pending adjudication — the EBE register
+`resolutions/ebe.csv` is empty until its review pass, see DEV-TODO.md).
+Median computed-vs-published fee delta is 0.0% for both faculties.
+
+## 9. Extending to the remaining faculties
+
+LAW and FHS next (likely the same publisher template → a `FacultyConfig`
+each), then SCI and HUM — for those two the unit of extraction is the
+*major* (`SB…`/`HB…` plan codes) plus the degree-composition rules from the
+faculty rules section, from which the ideal student's curriculum is
+constructed rather than read off a table; they will likely need their own
+parser rather than the shared engine.

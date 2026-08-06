@@ -21,6 +21,7 @@ Run from the repo root:
 """
 import argparse
 import csv
+import re
 import sys
 from pathlib import Path
 
@@ -51,7 +52,9 @@ def main():
     base = [r for r in read(PROC / "main_dataset.csv") if r["year"] == y]
     final = [r for r in read(PROC / "main_dataset_final.csv") if r["year"] == y]
     summ = [r for r in read(PROC / "ideal_student_summary_final.csv") if r["year"] == y]
-    register = {r["res_id"] for r in read(ROOT / "resolutions" / "com.csv")}
+    register = {r["res_id"]
+                for path in sorted((ROOT / "resolutions").glob("*.csv"))
+                for r in read(path)}
 
     # 1. grain + as-printed immutability
     if len(base) != len(final):
@@ -82,16 +85,16 @@ def main():
                 fail(f"{k}: final_credits {s['final_credits']} != row sum {credits}")
         if s["final_fee_zar"] not in ("", str(fee)):
             # allowed only when a set_final_fee adjudication exists
-            if not s["resolution_ref"].startswith("COM-"):
+            if not re.match(r"^[A-Z]{2,3}-\d{4}-", s["resolution_ref"]):
                 fail(f"{k}: final_fee {s['final_fee_zar']} != row sum {fee} "
                      f"with no adjudication")
 
     # 3. register refs
     for s in summ:
         for ref in s["resolution_ref"].split("+"):
-            if ref.startswith("COM-") and ref not in register:
+            if re.match(r"^[A-Z]{2,3}-\d{4}-", ref) and ref not in register:
                 fail(f"{s['plan_code']} y{s['study_year']}: resolution_ref "
-                     f"{ref} not in resolutions/com.csv")
+                     f"{ref} not in resolutions/*.csv")
 
     # 4. enums + confidence
     for s in summ:

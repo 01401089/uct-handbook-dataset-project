@@ -9,12 +9,17 @@ import csv
 from pathlib import Path
 
 
-def write_year_rows(path: str | Path, rows: list[dict], year: int | str):
+def write_year_rows(path: str | Path, rows: list[dict], year: int | str,
+                    keep=None):
     """Replace `year`'s rows in the CSV at `path`, preserving other years.
 
     Existing rows of other years keep their stored order; the new rows are
     appended after them in extraction order. Field names come from the new
     rows (the current schema); older rows missing a newer column get "".
+
+    `keep(row) -> bool`: optionally preserve some same-year rows too (e.g.
+    another faculty's rows in a shared table). Rows for which keep returns
+    True survive the replacement.
     """
     path = Path(path)
     year = str(year)
@@ -24,7 +29,8 @@ def write_year_rows(path: str | Path, rows: list[dict], year: int | str):
     existing = []
     if path.exists():
         with open(path, encoding="utf-8-sig") as f:
-            existing = [r for r in csv.DictReader(f) if r.get("year") != year]
+            existing = [r for r in csv.DictReader(f)
+                        if r.get("year") != year or (keep is not None and keep(r))]
 
     fieldnames = list(rows[0].keys())
     for r in existing:

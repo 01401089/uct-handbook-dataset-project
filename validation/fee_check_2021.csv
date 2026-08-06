@@ -171,3 +171,44 @@
 2021,CB025BUS09,2,augmented,Actuarial Science: Quantitative Finance,87680,0,51290,70.9,label_match,MISMATCH
 2021,CB025BUS09,3,augmented,Actuarial Science: Quantitative Finance,92620,0,70480,31.4,label_match,MISMATCH
 2021,CB025BUS09,4,augmented,Actuarial Science: Quantitative Finance,68510,0,92620,-26.0,label_match,MISMATCH
+2021,EB001CHE01,1,regular,,70130,0,70130,0.0,duration,OK
+2021,EB001CHE01,2,regular,,77650,20660,76990,0.9,duration,OK
+2021,EB001CHE01,3,regular,,40494,28694,79500,-49.1,duration,MISMATCH
+2021,EB001CHE01,4,regular,,72422,9182,78240,-7.4,duration,MISMATCH
+2021,EB002CIV01,1,regular,Civil Engineering,67510,0,70490,-4.2,duration,OK
+2021,EB002CIV01,2,regular,Civil Engineering,70570,0,70570,0.0,duration,OK
+2021,EB002CIV01,3,regular,Civil Engineering,47350,0,70270,-32.6,duration,MISMATCH
+2021,EB002CIV01,4,regular,Civil Engineering,79050,0,95440,-17.2,duration,MISMATCH
+2021,EB005MEC01,1,regular,Mechanical Engineering,68350,0,72350,-5.5,duration,MISMATCH
+2021,EB005MEC01,2,regular,Mechanical Engineering,59470,0,73470,-19.1,duration,MISMATCH
+2021,EB005MEC01,3,regular,Mechanical Engineering,68210,0,76210,-10.5,duration,MISMATCH
+2021,EB005MEC01,4,regular,Mechanical Engineering,54480,0,54480,0.0,duration,OK
+2021,EB009EEE01,1,regular,Electrical Engineering,71700,0,78840,-9.1,duration,MISMATCH
+2021,EB009EEE01,2,regular,Electrical Engineering,78840,0,78840,0.0,duration,OK
+2021,EB009EEE01,3,regular,Electrical Engineering,56700,0,65700,-13.7,duration,MISMATCH
+2021,EB009EEE01,4,regular,Electrical Engineering,109700,0,44650,145.7,duration,MISMATCH
+2021,EB011EEE05,1,regular,Mechatronics,71700,0,71700,0.0,duration,OK
+2021,EB011EEE05,2,regular,Mechatronics,78840,0,78540,0.4,duration,OK
+2021,EB011EEE05,3,regular,Mechatronics,58930,0,76930,-23.4,duration,MISMATCH
+2021,EB011EEE05,4,regular,Mechatronics,93500,0,65450,42.9,duration,MISMATCH
+2021,EB012APG01,1,regular,,71440,0,71440,0.0,label_match,OK
+2021,EB012APG01,2,regular,,68170,0,68170,0.0,label_match,OK
+2021,EB012APG01,3,regular,,71240,0,71240,0.0,label_match,OK
+2021,EB015CON04,1,regular,,62320,0,68240,-8.7,label_match,MISMATCH
+2021,EB015CON04,2,regular,,67770,0,73470,-7.8,label_match,MISMATCH
+2021,EB015CON04,3,regular,,57350,0,71350,-19.6,label_match,MISMATCH
+2021,EB017CON03,1,regular,,71690,0,57600,24.5,label_match,MISMATCH
+2021,EB017CON03,2,regular,,59680,0,52200,14.3,label_match,MISMATCH
+2021,EB017CON03,3,regular,,161450,0,61920,160.7,label_match,MISMATCH
+2021,EB019APG09,1,regular,Surveying Stream,49850,0,67280,-25.9,duration,MISMATCH
+2021,EB019APG09,2,regular,Surveying Stream,72630,0,84650,-14.2,duration,MISMATCH
+2021,EB019APG09,3,regular,Surveying Stream,52650,0,75750,-30.5,duration,MISMATCH
+2021,EB019APG09,4,regular,Surveying Stream,77070,0,77070,0.0,duration,OK
+2021,EB019APG11,1,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,59120,0,67280,-12.1,duration,MISMATCH
+2021,EB019APG11,2,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,72630,0,84650,-14.2,duration,MISMATCH
+2021,EB019APG11,3,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,63100,0,75750,-16.7,duration,MISMATCH
+2021,EB019APG11,4,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,90340,0,77070,17.2,duration,MISMATCH
+2021,EB022EEE02,1,regular,Electrical and Computer Engineering,71700,0,71700,0.0,duration,OK
+2021,EB022EEE02,2,regular,Electrical and Computer Engineering,78840,0,75150,4.9,duration,OK
+2021,EB022EEE02,3,regular,Electrical and Computer Engineering,72020,0,62860,14.6,duration,MISMATCH
+2021,EB022EEE02,4,regular,Electrical and Computer Engineering,88790,0,33670,163.7,duration,MISMATCH

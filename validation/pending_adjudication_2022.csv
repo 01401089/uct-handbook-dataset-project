@@ -24,3 +24,36 @@
 2022,CB024BUS08,3,MISMATCH,198,180,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2022,CB024FTX05,3,MISMATCH,162,180,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
 2022,CU021GSB48,1,NO_STATED_TOTAL,120,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB001CHE01,3,MISMATCH,126,142,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB002CIV01,3,MISMATCH,134,152,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB005MEC01,4,MISMATCH,102,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB009EEE01,3,NO_STATED_TOTAL,128,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB009EEE01,4,NO_STATED_TOTAL,224,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB010MEC05,4,MISMATCH,114,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB011EEE05,1,NO_STATED_TOTAL,148,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB011EEE05,2,NO_STATED_TOTAL,144,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB011EEE05,3,NO_STATED_TOTAL,128,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB011EEE05,4,NO_STATED_TOTAL,206,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB019APG09,1,MISMATCH,106,124,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB022EEE02,3,NO_STATED_TOTAL,160,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB022EEE02,4,NO_STATED_TOTAL,184,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB801CHE01,4,MISMATCH,110,126,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB801CHE01,5,MISMATCH,112,128,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB802CIV01,4,MISMATCH,108,126,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB805MEC01,3,MISMATCH,96,114,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB805MEC01,5,MISMATCH,102,126,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB809EEE01,4,NO_STATED_TOTAL,106,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB809EEE01,5,NO_STATED_TOTAL,214,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB810MEC05,3,MISMATCH,96,114,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB810MEC05,5,MISMATCH,114,126,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB811EEE05,1,NO_STATED_TOTAL,96,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB811EEE05,2,NO_STATED_TOTAL,116,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB811EEE05,3,NO_STATED_TOTAL,112,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB811EEE05,4,NO_STATED_TOTAL,106,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB811EEE05,5,NO_STATED_TOTAL,206,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB819APG09,2,MISMATCH,92,110,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2022,EB822EEE02,1,NO_STATED_TOTAL,96,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB822EEE02,2,NO_STATED_TOTAL,116,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB822EEE02,3,NO_STATED_TOTAL,104,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB822EEE02,4,NO_STATED_TOTAL,146,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2022,EB822EEE02,5,NO_STATED_TOTAL,174,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against

@@ -169,3 +169,50 @@
 2022,CB025BUS09,2,augmented,Actuarial Science: Quantitative Finance,91430,0,53500,70.9,label_match,MISMATCH
 2022,CB025BUS09,3,augmented,Actuarial Science: Quantitative Finance,96590,0,73490,31.4,label_match,MISMATCH
 2022,CB025BUS09,4,augmented,Actuarial Science: Quantitative Finance,71450,0,95590,-25.3,label_match,MISMATCH
+2022,EB001CHE01,1,regular,,73140,0,73140,0.0,duration,OK
+2022,EB001CHE01,2,regular,,80960,21540,85820,-5.7,duration,MISMATCH
+2022,EB001CHE01,3,regular,,71407,29917,82150,-13.1,duration,MISMATCH
+2022,EB001CHE01,4,regular,,75513,9573,89040,-15.2,duration,MISMATCH
+2022,EB002CIV01,1,regular,Civil Engineering,73740,0,74600,-1.2,shared,OK
+2022,EB002CIV01,2,regular,Civil Engineering,72140,0,73590,-2.0,shared,OK
+2022,EB002CIV01,3,regular,Civil Engineering,47720,0,63980,-25.4,shared,MISMATCH
+2022,EB005MEC01,1,regular,Mechanical Engineering,75480,0,75480,0.0,duration,OK
+2022,EB005MEC01,2,regular,Mechanical Engineering,76630,0,76630,0.0,duration,OK
+2022,EB005MEC01,3,regular,Mechanical Engineering,79520,0,79520,0.0,duration,OK
+2022,EB005MEC01,4,regular,Mechanical Engineering,56830,0,79930,-28.9,duration,MISMATCH
+2022,EB009EEE01,1,regular,Electrical Engineering,74800,0,74800,0.0,duration,OK
+2022,EB009EEE01,2,regular,Electrical Engineering,82230,0,82230,0.0,duration,OK
+2022,EB009EEE01,3,regular,Electrical Engineering,67520,0,77520,-12.9,duration,MISMATCH
+2022,EB009EEE01,4,regular,Electrical Engineering,119530,0,73890,61.8,duration,MISMATCH
+2022,EB010MEC05,1,regular,Mechanical & Mechatronic Engineering,75480,0,75480,0.0,duration,OK
+2022,EB010MEC05,2,regular,Mechanical & Mechatronic Engineering,76630,0,76630,0.0,duration,OK
+2022,EB010MEC05,3,regular,Mechanical & Mechatronic Engineering,79650,0,79650,0.0,duration,OK
+2022,EB010MEC05,4,regular,Mechanical & Mechatronic Engineering,63530,0,80030,-20.6,duration,MISMATCH
+2022,EB011EEE05,1,regular,Mechatronics,74800,0,74800,0.0,duration,OK
+2022,EB011EEE05,2,regular,Mechatronics,82230,0,82230,0.0,duration,OK
+2022,EB011EEE05,3,regular,Mechatronics,69840,0,79840,-12.5,duration,MISMATCH
+2022,EB011EEE05,4,regular,Mechatronics,110420,0,73890,49.4,duration,MISMATCH
+2022,EB012APG01,1,regular,,74490,0,74490,0.0,label_match,OK
+2022,EB012APG01,2,regular,,71100,0,71100,0.0,label_match,OK
+2022,EB012APG01,3,regular,,74300,0,74300,0.0,label_match,OK
+2022,EB015CON04,1,regular,,64980,0,72300,-10.1,label_match,MISMATCH
+2022,EB015CON04,2,regular,,70670,0,70670,0.0,label_match,OK
+2022,EB015CON04,3,regular,,74380,0,74380,0.0,label_match,OK
+2022,EB017CON03,1,regular,,74760,0,40390,85.1,label_match,MISMATCH
+2022,EB017CON03,2,regular,,74750,0,34890,114.2,label_match,MISMATCH
+2022,EB017CON03,3,regular,,79360,0,79360,0.0,label_match,OK
+2022,EB019APG09,1,regular,Surveying Stream,52000,0,64000,-18.8,duration,MISMATCH
+2022,EB019APG09,2,regular,Surveying Stream,75740,0,85120,-11.0,duration,MISMATCH
+2022,EB019APG09,3,regular,Surveying Stream,74730,0,74730,0.0,duration,OK
+2022,EB019APG09,4,regular,Surveying Stream,80360,0,80360,0.0,duration,OK
+2022,EB019APG11,1,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,61670,0,64000,-3.6,duration,OK
+2022,EB019APG11,2,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,75740,0,85120,-11.0,duration,MISMATCH
+2022,EB019APG11,3,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,78330,0,74730,4.8,duration,OK
+2022,EB019APG11,4,regular,Geoinformatics Stream Environmental and Geographical Science Specialisation,94200,0,80360,17.2,duration,MISMATCH
+2022,EB022EEE02,1,regular,Electrical and Computer Engineering,74800,0,74800,0.0,duration,OK
+2022,EB022EEE02,2,regular,Electrical and Computer Engineering,82230,0,82230,0.0,duration,OK
+2022,EB022EEE02,3,regular,Electrical and Computer Engineering,83480,0,75080,11.2,duration,MISMATCH
+2022,EB022EEE02,4,regular,Electrical and Computer Engineering,97710,0,73890,32.2,duration,MISMATCH
+2022,EB802CIV01,1,extended,Civil Engineering,52070,0,74600,-30.2,shared,MISMATCH
+2022,EB802CIV01,2,extended,Civil Engineering,52390,0,73590,-28.8,shared,MISMATCH
+2022,EB802CIV01,3,extended,Civil Engineering,55150,0,63980,-13.8,shared,MISMATCH

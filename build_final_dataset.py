@@ -60,11 +60,11 @@ def read(path):
         return list(csv.DictReader(f))
 
 
-def load_register(faculty="com"):
-    path = ROOT / "resolutions" / f"{faculty}.csv"
-    if not path.exists():
-        return []
-    rows = read(path)
+def load_register():
+    """All per-faculty registers (resolutions/*.csv) combined."""
+    rows = []
+    for path in sorted((ROOT / "resolutions").glob("*.csv")):
+        rows += read(path)
     ids = [r["res_id"] for r in rows]
     dupes = {i for i in ids if ids.count(i) > 1}
     if dupes:

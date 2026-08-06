@@ -28,10 +28,15 @@ python build_main_dataset.py      --year YYYY
 python validation/validate.py     --year YYYY
 ```
 
-COM + fees are loaded for **2021-2026**. Writers are merge-by-year
-(`common/csv_io.py`): re-running a year replaces only that year's rows —
-after any parser change, verify prior years' rows are byte-identical (the
-2025 baseline especially). `data/processed/main_dataset.csv` is the
+COM + EBE + fees are loaded for **2021-2026**. Faculty extractors are thin
+configs (`extractors/<fac>/extract.py` defines a `FacultyConfig`) over the
+**shared engine** `common/handbook_parser.py` — promoted from the COM
+extractor once the grammar proved general (identical publisher template).
+Fix parsing bugs in the engine, faculty quirks in the config; after any
+engine change re-run BOTH faculties and verify prior years' rows are
+value-identical (the 2025 baseline especially). Writers are merge-by-year
+AND merge-by-faculty-within-year (`common/csv_io.py` `keep=` filter): an
+extractor re-run replaces only its own faculty's rows for that year. `data/processed/main_dataset.csv` is the
 **as-printed single source of truth**: one row per specialisation x
 study-year x course-slot with degree, credit, course and fee columns and an
 `ideal_student` boolean. `main_dataset_final.csv` /
@@ -58,10 +63,14 @@ tables, rules, or coverage change.
 
 ## Ground rules
 
-- **One extractor per faculty.** Faculties present curricula differently; do not
-  try to share a parser across faculties. Shared, provably-general helpers
-  (course-code regex, credit-line parsing, PDF text dump) go in `common/`;
-  everything else lives in `extractors/<fac>/`.
+- **One extractor config per faculty.** Faculties present curricula
+  differently; each gets its own `extractors/<fac>/` package. The parsing
+  engine itself (`common/handbook_parser.py`) is shared because it proved
+  general across COM and EBE (same publisher template) — faculty differences
+  are expressed as `FacultyConfig` fields (heading grammars, plan-code
+  prefixes, degree parsers, page classification), never as engine forks. A
+  faculty whose books genuinely don't fit the template (likely SCI/HUM)
+  writes its own parser rather than bending the engine.
 - **Raw PDFs are immutable.** They live in `faculty-handbooks-undergraduate/`
   with the naming convention `YYYY-<fac>-ug.pdf` and `YYYY-_fees.pdf`. Never
   edit or move them; new handbook years are added alongside.

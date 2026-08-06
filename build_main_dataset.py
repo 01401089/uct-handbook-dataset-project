@@ -72,7 +72,7 @@ def norm_spec(text: str) -> str:
 
 
 def parse_fee_label(label: str):
-    """-> (degree_abbrev, is_academic_development, normalised spec) or None."""
+    """Commerce labels -> (degree_abbrev, is_academic_development, spec) or None."""
     l = label.strip()
     if re.search(r"Honours|Master|Doctor|PhD|Postgraduate", l, re.I):
         return None  # postgraduate blocks are out of scope for UG spec-years
@@ -91,6 +91,44 @@ def parse_fee_label(label: str):
     return deg, is_ad, norm_spec(spec)
 
 
+EBE_SPEC_ALIASES = {
+    "chemical": "chemical engineering", "civil": "civil engineering",
+    "electrical": "electrical engineering",
+    "electrical and computer": "electrical and computer engineering",
+    "mechanical": "mechanical engineering",
+    "mechanical and mechatronic": "mechanical and mechatronic engineering",
+}
+
+
+def parse_fee_label_ebe(label: str):
+    """EBE labels -> (degree_abbrev, normalised spec) or None.
+
+    Published forms: "BSc Eng (Chemical)", "BSc in Construction Studies",
+    "Bachelor of Architectural Studies", "courses BSc (Geomatics)" (margin
+    noise). ECP variants are not published separately — duration matching in
+    match_published_fees assigns the block to the right variant.
+    """
+    l = label.strip()
+    if re.search(r"Hons|Honours|Master|Doctor|PhD|Postgraduate|Diploma", l, re.I):
+        return None
+    m = re.search(r"BSc\.?\s*Eng\.?\s*\(([^)]+)\)", l, re.I)
+    if m:
+        spec = norm_spec(m.group(1))
+        spec = EBE_SPEC_ALIASES.get(spec, spec)
+        if not spec.endswith("engineering") and "mechatronics" not in spec:
+            spec = EBE_SPEC_ALIASES.get(spec, spec)
+        return "BSc(Eng)", spec
+    if re.search(r"Bachelor of Architectural Studies|\bBAS\b", l, re.I):
+        return "BAS", ""
+    if re.search(r"BSc.*Construction Studies", l, re.I):
+        return "BSc(ConStud)", ""
+    if re.search(r"BSc.*Property Studies", l, re.I):
+        return "BSc(PropStud)", ""
+    if re.search(r"BSc\s*\(?\s*Geomatics", l, re.I):
+        return "BSc(Geomatics)", "*"   # matches every Geomatics stream
+    return None
+
+
 def match_published_fees(prog_fees, specialisations, duration_by_plan):
     """Map fees-book programme labels to plan codes.
 
@@ -107,31 +145,59 @@ def match_published_fees(prog_fees, specialisations, duration_by_plan):
                norm_spec(s["specialisation"]))
         by_key[key].append(s["plan_code"])
 
-    # Group the published rows into blocks per label.
-    blocks = defaultdict(dict)  # label -> {study_year: fee}
+    # Group the published rows into blocks per (section, label).
+    blocks = defaultdict(dict)  # (section, label) -> {study_year: fee}
     for r in prog_fees:
-        if r["faculty_section"] != "Commerce" or not r["study_year"]:
+        section = ("Commerce" if r["faculty_section"] == "Commerce"
+                   else "EBE" if r["faculty_section"].startswith("Engineering")
+                   else None)
+        if section is None or not r["study_year"]:
             continue
-        blocks[r["programme_label"]][r["study_year"]] = int(r["fee_zar"])
+        blocks[(section, r["programme_label"])][r["study_year"]] = int(r["fee_zar"])
 
     fee_map = {}   # (plan_code, study_year) -> (fee, label, method)
     unmatched = []
-    for label, years in blocks.items():
-        parsed = parse_fee_label(label)
-        plans = by_key.get(parsed) if parsed else None
-        if not plans:
-            unmatched.append(label)
-            continue
-        deg, is_ad, spec = parsed
-        if is_ad and len(plans) > 1:
-            matching = [p for p in plans
-                        if duration_by_plan.get(p) == len(years)]
-            if len(matching) == 1:
-                plans, method = matching, "ad_duration"
+    for (section, label), years in blocks.items():
+        if section == "Commerce":
+            parsed = parse_fee_label(label)
+            plans = by_key.get(parsed) if parsed else None
+            if not plans:
+                unmatched.append(label)
+                continue
+            deg, is_ad, spec = parsed
+            if is_ad and len(plans) > 1:
+                matching = [p for p in plans
+                            if duration_by_plan.get(p) == len(years)]
+                if len(matching) == 1:
+                    plans, method = matching, "ad_duration"
+                else:
+                    method = "ad_shared"
             else:
-                method = "ad_shared"
-        else:
-            method = "label_match"
+                method = "label_match"
+        else:  # Engineering & the Built Environment
+            parsed = parse_fee_label_ebe(label)
+            if not parsed:
+                unmatched.append(label)
+                continue
+            deg, spec = parsed
+            if spec == "*":  # every stream of the degree (Geomatics)
+                plans = [p for (a, _ad, _s), ps in by_key.items() if a == deg
+                         for p in ps]
+            else:
+                plans = (by_key.get((deg, False, spec), [])
+                         + by_key.get((deg, True, spec), []))
+            if not plans:
+                unmatched.append(label)
+                continue
+            if len(plans) > 1:
+                matching = [p for p in plans
+                            if duration_by_plan.get(p) == len(years)]
+                if matching:
+                    plans, method = matching, "duration"
+                else:
+                    method = "shared"
+            else:
+                method = "label_match"
         for p in plans:
             for sy, fee in years.items():
                 fee_map[(p, sy)] = (fee, label, method)
@@ -288,7 +354,7 @@ def main():
         pub = fee_map.get((plan, sy))
         fee_total = fee_exact + fee_est
         summary.append({
-            "year": y, "faculty": "COM", "plan_code": plan,
+            "year": y, "faculty": s["faculty"], "plan_code": plan,
             "degree_abbrev": s["degree_abbrev"], "specialisation": s["specialisation"],
             "variant": s["variant"], "study_year": sy,
             "credits_ideal": credits, "credits_unresolved_slots": unknown_credits,
