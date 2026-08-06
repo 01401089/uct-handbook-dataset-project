@@ -45,7 +45,7 @@
 2023,CB004CSC05,2,regular,Computer Science,83260,0,83260,0.0,label_match,OK
 2023,CB004CSC05,3,regular,Computer Science,92190,0,92190,0.0,label_match,OK
 2023,CB004CSC05,4,regular,Computer Science,113750,0,70830,60.6,label_match,MISMATCH
-2023,CB004ECO01,1,regular,Economics,84690,0,846,9910.6,label_match,MISMATCH
+2023,CB004ECO01,1,regular,Economics,84690,0,84690,0.0,label_match,OK
 2023,CB004ECO01,2,regular,Economics,80010,0,86100,-7.1,label_match,MISMATCH
 2023,CB004ECO01,3,regular,Economics,118080,9430,84620,39.5,label_match,MISMATCH
 2023,CB004ECO01,4,regular,Economics,94180,0,94180,0.0,label_match,OK

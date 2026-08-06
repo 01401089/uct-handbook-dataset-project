@@ -19,11 +19,14 @@ Run AFTER build_main_dataset.py, from the repo root:
 """
 import argparse
 import csv
+import sys
 from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FEE_TOLERANCE_PCT = 5.0
+sys.path.insert(0, str(ROOT))
+
+from common.checks import credit_status, fee_status  # noqa: E402
 
 
 def read(name):
@@ -31,11 +34,11 @@ def read(name):
         return list(csv.DictReader(f))
 
 
-def write(path, rows):
-    if not rows:
-        rows = [{"status": "no findings"}]
+def write(path, rows, fieldnames):
+    """Write findings with an explicit header; an empty findings list writes
+    the real header with zero data rows (a schema-stable empty file)."""
     with open(path, "w", newline="", encoding="utf-8-sig") as f:
-        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
         w.writerows(rows)
 
@@ -52,17 +55,7 @@ def main():
     # 1. credit check ------------------------------------------------------
     credit_rows = []
     for s in summary:
-        if s["credits_stated"] == "":
-            status = "NO_STATED_TOTAL"
-        elif s["credits_unresolved_slots"] != "0":
-            status = "UNRESOLVED_SLOTS"
-        else:
-            delta = int(s["credit_delta"])
-            is_min = s["stated_is_minimum"] == "True"
-            if delta == 0 or (is_min and delta > 0):
-                status = "OK"
-            else:
-                status = "MISMATCH"
+        status = credit_status(s)
         credit_rows.append({
             "year": y, "plan_code": s["plan_code"], "study_year": s["study_year"],
             "variant": s["variant"], "specialisation": s["specialisation"],
@@ -74,11 +67,9 @@ def main():
     # 2. fee check ---------------------------------------------------------
     fee_rows = []
     for s in summary:
-        if not s["fee_published_zar"]:
+        status = fee_status(s)
+        if status is None:
             continue
-        d = float(s["fee_delta_pct"]) if s["fee_delta_pct"] != "" else None
-        status = ("NO_COMPUTED_FEE" if d is None
-                  else "OK" if abs(d) <= FEE_TOLERANCE_PCT else "MISMATCH")
         fee_rows.append({
             "year": y, "plan_code": s["plan_code"], "study_year": s["study_year"],
             "variant": s["variant"], "specialisation": s["specialisation"],
@@ -98,9 +89,16 @@ def main():
                      "used_by": ";".join(sorted(set(p)))}
                     for c, p in sorted(missing.items())]
 
-    write(ROOT / "validation" / f"credit_check_{args.year}.csv", credit_rows)
-    write(ROOT / "validation" / f"fee_check_{args.year}.csv", fee_rows)
-    write(ROOT / "validation" / f"missing_fees_{args.year}.csv", missing_rows)
+    write(ROOT / "validation" / f"credit_check_{args.year}.csv", credit_rows,
+          ["year", "plan_code", "study_year", "variant", "specialisation",
+           "credits_ideal", "credits_stated", "credit_delta",
+           "stated_is_minimum", "status"])
+    write(ROOT / "validation" / f"fee_check_{args.year}.csv", fee_rows,
+          ["year", "plan_code", "study_year", "variant", "specialisation",
+           "fee_ideal_zar", "fee_estimated_component_zar", "fee_published_zar",
+           "fee_delta_pct", "fee_match_method", "status"])
+    write(ROOT / "validation" / f"missing_fees_{args.year}.csv", missing_rows,
+          ["year", "course_code", "used_by"])
 
     from collections import Counter
     cc = Counter(r["status"] for r in credit_rows)

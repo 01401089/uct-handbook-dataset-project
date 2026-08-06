@@ -13,7 +13,7 @@
 2024,CB001ECO02,1,regular,Economics and Finance,78700,0,78700,0.0,label_match,OK
 2024,CB001ECO02,2,regular,Economics and Finance,70980,9860,80840,-12.2,label_match,MISMATCH
 2024,CB001ECO02,3,regular,Economics and Finance,78620,9860,68760,14.3,label_match,MISMATCH
-2024,CB001ECO03,1,regular,Economics with Law,68900,0,68,101223.5,label_match,MISMATCH
+2024,CB001ECO03,1,regular,Economics with Law,68900,0,68900,0.0,label_match,OK
 2024,CB001ECO03,2,regular,Economics with Law,84990,9800,75190,13.0,label_match,MISMATCH
 2024,CB001ECO03,3,regular,Economics with Law,114890,0,85310,34.7,label_match,MISMATCH
 2024,CB001ECO04,1,regular,Economics and Statistics,78700,0,78700,0.0,label_match,OK
@@ -24,7 +24,7 @@
 2024,CB001INF01,3,regular,Information Systems,88340,19720,88340,0.0,label_match,OK
 2024,CB001INF06,1,regular,Information Systems and Computer Science,78140,0,68340,14.3,label_match,MISMATCH
 2024,CB001INF06,2,regular,Information Systems and Computer Science,86200,0,86200,0.0,label_match,OK
-2024,CB001INF06,3,regular,Information Systems and Computer Science,39440,0,77500,-49.1,label_match,MISMATCH
+2024,CB001INF06,3,regular,Information Systems and Computer Science,77500,0,77500,0.0,label_match,OK
 2024,CB001INF11,1,regular,Information Systems and Finance,78700,0,78700,0.0,label_match,OK
 2024,CB001INF11,2,regular,Information Systems and Finance,87980,0,87980,0.0,label_match,OK
 2024,CB001INF11,3,regular,Information Systems and Finance,81430,0,81430,0.0,label_match,OK
@@ -53,7 +53,7 @@
 2024,CB004BUS22,4,regular,Analytics,81340,0,81340,0.0,label_match,OK
 2024,CB004CSC05,1,regular,Computer Science,78140,0,78140,0.0,label_match,OK
 2024,CB004CSC05,2,regular,Computer Science,77190,0,96910,-20.3,label_match,MISMATCH
-2024,CB004CSC05,3,regular,Computer Science,58310,0,96370,-39.5,label_match,MISMATCH
+2024,CB004CSC05,3,regular,Computer Science,96370,0,96370,0.0,label_match,OK
 2024,CB004CSC05,4,regular,Computer Science,118930,0,74050,60.6,label_match,MISMATCH
 2024,CB004ECO01,1,regular,Economics,78700,0,78700,0.0,label_match,OK
 2024,CB004ECO01,2,regular,Economics,83650,0,83650,0.0,label_match,OK
@@ -108,7 +108,7 @@
 2024,CB011INF06,1,extended,Information Systems and Computer Science,50170,0,59970,-16.3,ad_duration,MISMATCH
 2024,CB011INF06,2,extended,Information Systems and Computer Science,57650,0,67450,-14.5,ad_duration,MISMATCH
 2024,CB011INF06,3,extended,Information Systems and Computer Science,57790,0,57790,0.0,ad_duration,OK
-2024,CB011INF06,4,extended,Information Systems and Computer Science,29580,0,67640,-56.3,ad_duration,MISMATCH
+2024,CB011INF06,4,extended,Information Systems and Computer Science,67640,0,67640,0.0,ad_duration,OK
 2024,CB011INF11,1,extended,Information Systems and Finance,60310,0,60310,0.0,ad_duration,OK
 2024,CB011INF11,2,extended,Information Systems and Finance,59190,0,59190,0.0,ad_duration,OK
 2024,CB011INF11,3,extended,Information Systems and Finance,68960,0,68960,0.0,ad_duration,OK
@@ -135,7 +135,7 @@
 2024,CB015CSC05,1,extended,Computer Science,68980,0,68980,0.0,ad_duration,OK
 2024,CB015CSC05,2,extended,Computer Science,58500,0,68360,-14.4,ad_duration,MISMATCH
 2024,CB015CSC05,3,extended,Computer Science,67590,0,67590,0.0,ad_duration,OK
-2024,CB015CSC05,4,extended,Computer Science,29580,0,67640,-56.3,ad_duration,MISMATCH
+2024,CB015CSC05,4,extended,Computer Science,67640,0,67640,0.0,ad_duration,OK
 2024,CB015CSC05,5,extended,Computer Science,118930,0,63490,87.3,ad_duration,MISMATCH
 2024,CB015ECO01,1,extended,Economics,120620,0,60310,100.0,ad_duration,MISMATCH
 2024,CB015ECO01,2,extended,Economics,129900,0,68050,90.9,ad_duration,MISMATCH

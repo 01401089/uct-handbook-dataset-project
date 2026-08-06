@@ -578,7 +578,7 @@
 2023,COM,CB004CSC05,BBusSc,Computer Science,regular,2,162,0,162,False,0,83260,0,0,83260,BBusSc specialising in Computer Science,label_match,0.0
 2023,COM,CB004CSC05,BBusSc,Computer Science,regular,3,180,0,180,False,0,92190,0,0,92190,BBusSc specialising in Computer Science,label_match,0.0
 2023,COM,CB004CSC05,BBusSc,Computer Science,regular,4,262,0,160,False,102,113750,0,0,70830,BBusSc specialising in Computer Science,label_match,60.6
-2023,COM,CB004ECO01,BBusSc,Economics,regular,1,167,0,167,False,0,84690,0,0,846,BBusSc specialising in Economics,label_match,9910.6
+2023,COM,CB004ECO01,BBusSc,Economics,regular,1,167,0,167,False,0,84690,0,0,84690,BBusSc specialising in Economics,label_match,0.0
 2023,COM,CB004ECO01,BBusSc,Economics,regular,2,156,0,150,False,6,80010,0,0,86100,BBusSc specialising in Economics,label_match,-7.1
 2023,COM,CB004ECO01,BBusSc,Economics,regular,3,228,1,162,False,66,118080,9430,1,84620,BBusSc specialising in Economics,label_match,39.5
 2023,COM,CB004ECO01,BBusSc,Economics,regular,4,156,0,156,False,0,94180,0,0,94180,BBusSc specialising in Economics,label_match,0.0
@@ -808,7 +808,7 @@
 2024,COM,CB001ECO02,BCom,Economics and Finance,regular,1,150,0,150,False,0,78700,0,0,78700,BCom specialising in Economics & Finance,label_match,0.0
 2024,COM,CB001ECO02,BCom,Economics and Finance,regular,2,132,0,150,True,-18,70980,9860,0,80840,BCom specialising in Economics & Finance,label_match,-12.2
 2024,COM,CB001ECO02,BCom,Economics and Finance,regular,3,144,0,144,True,0,78620,9860,0,68760,BCom specialising in Economics & Finance,label_match,14.3
-2024,COM,CB001ECO03,BCom,Economics with Law,regular,1,132,0,132,False,0,68900,0,0,68,BCom specialising in Economics with Law,label_match,101223.5
+2024,COM,CB001ECO03,BCom,Economics with Law,regular,1,132,0,132,False,0,68900,0,0,68900,BCom specialising in Economics with Law,label_match,0.0
 2024,COM,CB001ECO03,BCom,Economics with Law,regular,2,162,0,162,True,0,84990,9800,0,75190,BCom specialising in Economics with Law,label_match,13.0
 2024,COM,CB001ECO03,BCom,Economics with Law,regular,3,216,1,162,False,54,114890,0,1,85310,BCom specialising in Economics with Law,label_match,34.7
 2024,COM,CB001ECO04,BCom,Economics and Statistics,regular,1,150,0,150,False,0,78700,0,0,78700,BCom specialising in Economics & Statistics,label_match,0.0
@@ -819,7 +819,7 @@
 2024,COM,CB001INF01,BCom,Information Systems,regular,3,156,0,156,False,0,88340,19720,0,88340,BCom specialising in Information Systems,label_match,0.0
 2024,COM,CB001INF06,BCom,Information Systems and Computer Science,regular,1,150,0,132,False,18,78140,0,0,68340,BCom specialising in Information Systems & Computer Science,label_match,14.3
 2024,COM,CB001INF06,BCom,Information Systems and Computer Science,regular,2,162,0,162,False,0,86200,0,0,86200,BCom specialising in Information Systems & Computer Science,label_match,0.0
-2024,COM,CB001INF06,BCom,Information Systems and Computer Science,regular,3,144,0,144,False,0,39440,0,2,77500,BCom specialising in Information Systems & Computer Science,label_match,-49.1
+2024,COM,CB001INF06,BCom,Information Systems and Computer Science,regular,3,144,0,144,False,0,77500,0,0,77500,BCom specialising in Information Systems & Computer Science,label_match,0.0
 2024,COM,CB001INF11,BCom,Information Systems and Finance,regular,1,150,0,167,False,-17,78700,0,0,78700,BCom specialising in Information Systems & Finance,label_match,0.0
 2024,COM,CB001INF11,BCom,Information Systems and Finance,regular,2,162,0,162,False,0,87980,0,0,87980,BCom specialising in Information Systems & Finance,label_match,0.0
 2024,COM,CB001INF11,BCom,Information Systems and Finance,regular,3,150,0,150,False,0,81430,0,0,81430,BCom specialising in Information Systems & Finance,label_match,0.0
@@ -848,7 +848,7 @@
 2024,COM,CB004BUS22,BBusSc,Analytics,regular,4,178,0,178,False,0,81340,0,0,81340,BBusSc specialising in Analytics,label_match,0.0
 2024,COM,CB004CSC05,BBusSc,Computer Science,regular,1,144,0,162,False,-18,78140,0,0,78140,BBusSc specialising in Computer Science,label_match,0.0
 2024,COM,CB004CSC05,BBusSc,Computer Science,regular,2,150,0,162,True,-12,77190,0,0,96910,BBusSc specialising in Computer Science,label_match,-20.3
-2024,COM,CB004CSC05,BBusSc,Computer Science,regular,3,180,0,180,False,0,58310,0,2,96370,BBusSc specialising in Computer Science,label_match,-39.5
+2024,COM,CB004CSC05,BBusSc,Computer Science,regular,3,180,0,180,False,0,96370,0,0,96370,BBusSc specialising in Computer Science,label_match,0.0
 2024,COM,CB004CSC05,BBusSc,Computer Science,regular,4,262,0,160,False,102,118930,0,0,74050,BBusSc specialising in Computer Science,label_match,60.6
 2024,COM,CB004ECO01,BBusSc,Economics,regular,1,150,0,150,False,0,78700,0,0,78700,BBusSc specialising in Economics,label_match,0.0
 2024,COM,CB004ECO01,BBusSc,Economics,regular,2,156,0,150,False,6,83650,0,0,83650,BBusSc specialising in Economics,label_match,0.0
@@ -903,7 +903,7 @@
 2024,COM,CB011INF06,BCom,Information Systems and Computer Science,extended,1,98,0,110,False,-12,50170,0,0,59970,BCom Academic Development specialising in Information Systems & Computer Science,ad_duration,-16.3
 2024,COM,CB011INF06,BCom,Information Systems and Computer Science,extended,2,108,0,108,False,0,57650,0,0,67450,BCom Academic Development specialising in Information Systems & Computer Science,ad_duration,-14.5
 2024,COM,CB011INF06,BCom,Information Systems and Computer Science,extended,3,108,0,108,False,0,57790,0,0,57790,BCom Academic Development specialising in Information Systems & Computer Science,ad_duration,0.0
-2024,COM,CB011INF06,BCom,Information Systems and Computer Science,extended,4,126,0,126,False,0,29580,0,2,67640,BCom Academic Development specialising in Information Systems & Computer Science,ad_duration,-56.3
+2024,COM,CB011INF06,BCom,Information Systems and Computer Science,extended,4,126,0,126,False,0,67640,0,0,67640,BCom Academic Development specialising in Information Systems & Computer Science,ad_duration,0.0
 2024,COM,CB011INF11,BCom,Information Systems and Finance,extended,1,116,0,128,False,-12,60310,0,0,60310,BCom Academic Development specialising in Information Systems & Finance,ad_duration,0.0
 2024,COM,CB011INF11,BCom,Information Systems and Finance,extended,2,108,0,108,False,0,59190,0,0,59190,BCom Academic Development specialising in Information Systems & Finance,ad_duration,0.0
 2024,COM,CB011INF11,BCom,Information Systems and Finance,extended,3,126,0,126,False,0,68960,0,0,68960,BCom Academic Development specialising in Information Systems & Finance,ad_duration,0.0
@@ -930,7 +930,7 @@
 2024,COM,CB015CSC05,BBusSc,Computer Science,extended,1,128,0,128,False,0,68980,0,0,68980,BBusSc Academic Development specialising in Computer Science,ad_duration,0.0
 2024,COM,CB015CSC05,BBusSc,Computer Science,extended,2,114,0,126,False,-12,58500,0,0,68360,BBusSc Academic Development specialising in Computer Science,ad_duration,-14.4
 2024,COM,CB015CSC05,BBusSc,Computer Science,extended,3,126,0,126,False,0,67590,0,0,67590,BBusSc Academic Development specialising in Computer Science,ad_duration,0.0
-2024,COM,CB015CSC05,BBusSc,Computer Science,extended,4,126,0,126,False,0,29580,0,2,67640,BBusSc Academic Development specialising in Computer Science,ad_duration,-56.3
+2024,COM,CB015CSC05,BBusSc,Computer Science,extended,4,126,0,126,False,0,67640,0,0,67640,BBusSc Academic Development specialising in Computer Science,ad_duration,0.0
 2024,COM,CB015CSC05,BBusSc,Computer Science,extended,5,262,0,160,False,102,118930,0,0,63490,BBusSc Academic Development specialising in Computer Science,ad_duration,87.3
 2024,COM,CB015ECO01,BBusSc,Economics,extended,1,232,0,116,False,116,120620,0,0,60310,BBusSc Academic Development specialising in Economics,ad_duration,100.0
 2024,COM,CB015ECO01,BBusSc,Economics,extended,2,240,0,114,False,126,129900,0,0,68050,BBusSc Academic Development specialising in Economics,ad_duration,90.9
@@ -996,7 +996,7 @@
 2024,COM,CB023INF01,BCom,Information Systems,augmented,3,156,0,156,False,0,88340,19720,0,,,unmatched,
 2024,COM,CB023INF06,BCom,Information Systems and Computer Science,augmented,1,146,0,134,False,12,79350,0,0,,,unmatched,
 2024,COM,CB023INF06,BCom,Information Systems and Computer Science,augmented,2,162,0,162,False,0,86200,0,0,,,unmatched,
-2024,COM,CB023INF06,BCom,Information Systems and Computer Science,augmented,3,144,0,144,False,0,39440,0,2,,,unmatched,
+2024,COM,CB023INF06,BCom,Information Systems and Computer Science,augmented,3,144,0,144,False,0,77500,0,0,,,unmatched,
 2024,COM,CB023INF11,BCom,Information Systems and Finance,augmented,1,152,0,152,False,0,79910,0,0,,,unmatched,
 2024,COM,CB023INF11,BCom,Information Systems and Finance,augmented,2,162,0,162,False,0,87980,0,0,,,unmatched,
 2024,COM,CB023INF11,BCom,Information Systems and Finance,augmented,3,150,0,150,False,0,81430,0,0,,,unmatched,
@@ -1017,7 +1017,7 @@
 2024,COM,CB024BUS22,BBusSc,Analytics,augmented,4,178,0,178,False,0,81340,0,0,,,unmatched,
 2024,COM,CB024CSC05,BBusSc,Computer Science,augmented,1,162,0,164,False,-2,87940,0,0,,,unmatched,
 2024,COM,CB024CSC05,BBusSc,Computer Science,augmented,2,150,0,162,True,-12,77190,0,0,,,unmatched,
-2024,COM,CB024CSC05,BBusSc,Computer Science,augmented,3,180,0,180,False,0,58310,0,2,,,unmatched,
+2024,COM,CB024CSC05,BBusSc,Computer Science,augmented,3,180,0,180,False,0,96370,0,0,,,unmatched,
 2024,COM,CB024CSC05,BBusSc,Computer Science,augmented,4,262,0,160,False,102,118930,0,0,,,unmatched,
 2024,COM,CB024ECO01,BBusSc,Economics,augmented,1,152,0,152,False,0,79910,0,0,,,unmatched,
 2024,COM,CB024ECO01,BBusSc,Economics,augmented,2,156,0,156,True,0,83650,0,0,,,unmatched,

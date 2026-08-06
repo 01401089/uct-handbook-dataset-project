@@ -40,15 +40,15 @@ FACULTY_HEADING = re.compile(r"^11\.\d+\s+(?:FACULTY OF\s+)?(.+?)\s*$")
 # "1st Year…………R 91 190" possibly with margin-note text before/after.
 YEAR_FEE = re.compile(
     r"(?P<pre>.*?)(?P<year>\d)(?:st|nd|rd|th)\s+Year[\s.…]*"
-    r"R?\s*(?P<amount>\d{1,3}(?:[\s ]?\d{3})*)(?P<post>.*)$"
+    r"R?\s*(?P<amount>\d{1,3}(?:[,\s ]\d{3})+|\d{4,6}|\d{1,3})(?P<post>.*)$"
 )
 DOTTED_FEE = re.compile(  # "Undergraduate LLB ......... R 76 810"
-    r"^(?P<label>[^.…]{4,}?)[\s.…]{3,}R\s*(?P<amount>\d{1,3}(?:[\s ]?\d{3})*)\s*$"
+    r"^(?P<label>[^.…]{4,}?)[\s.…]{3,}R\s*(?P<amount>\d{1,3}(?:[,\s ]\d{3})+|\d{4,6}|\d{1,3})\s*$"
 )
 
 
 def parse_rand(text: str) -> int:
-    return int(re.sub(r"[\s ]", "", text))
+    return int(re.sub(r"[,\s ]", "", text))
 
 
 def find_section_pages(dump_path: Path) -> dict:
