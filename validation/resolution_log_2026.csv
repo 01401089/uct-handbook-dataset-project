@@ -1,0 +1,12 @@
+﻿year,plan_code,study_year,rule,action,res_id,credits_ideal,credits_stated,final_credits,evidence,confidence
+2026,CB001ECO03,3,R3,accept_stated,COM-2026-001,252,144,144,row sum 252 vs stated 144 (handbook p100); stated totals across affected editions: ['144'],high
+2026,CB001ECO04,2,R3,accept_stated,COM-2026-002,302,156,156,row sum 302 vs stated 156 (handbook p99); stated totals across affected editions: ['156'],high
+2026,CB004CSC05,1,R1a,accept_computed,R1a,144,162,144,non-taken choice credits = 18 (all choice groups),high
+2026,CB004CSC05,4,R3,accept_stated,COM-2026-003,244,160,160,row sum 244 vs stated 160 (handbook p52); stated totals across affected editions: ['160'],high
+2026,CB011ACC04,4,R2a,accept_computed,R2a,112,224,112,"corroborated by 2024, 2025",medium
+2026,CB015ECO01,3,R1a,accept_computed,R1a,120,138,120,non-taken choice credits = 18 (one choice group),high
+2026,CB015INF01,4,R1a,accept_computed,R1a,90,138,90,non-taken choice credits = 48 (all choice groups),high
+2026,CB018BUS01,1,R1a,accept_computed,R1a,110,128,110,non-taken choice credits = 18 (all choice groups),high
+2026,CB018BUS09,1,R1a,accept_computed,R1a,110,128,110,non-taken choice credits = 18 (all choice groups),high
+2026,CB023ECO04,1,R1a,accept_computed,R1a,134,152,134,non-taken choice credits = 18 (one choice group),high
+2026,CB023ECO04,3,R3,accept_stated,COM-2026-004,324,144,144,row sum 324 vs stated 144 (handbook p112); stated totals across affected editions: ['144'],high

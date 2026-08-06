@@ -137,11 +137,16 @@
 2024,CB015CSC05,3,extended,Computer Science,126,126,0,False,OK
 2024,CB015CSC05,4,extended,Computer Science,126,126,0,False,OK
 2024,CB015CSC05,5,extended,Computer Science,262,160,102,False,MISMATCH
-2024,CB015ECO01,1,extended,Economics,232,116,116,False,MISMATCH
-2024,CB015ECO01,2,extended,Economics,240,114,126,False,MISMATCH
-2024,CB015ECO01,3,extended,Economics,282,126,156,False,MISMATCH
-2024,CB015ECO01,4,extended,Economics,288,144,144,False,UNRESOLVED_SLOTS
-2024,CB015ECO01,5,extended,Economics,312,166,146,False,MISMATCH
+2024,CB015ECO01,1,extended,Economics,116,114,2,False,MISMATCH
+2024,CB015ECO01,2,extended,Economics,126,126,0,False,OK
+2024,CB015ECO01,3,extended,Economics,138,156,-18,False,MISMATCH
+2024,CB015ECO01,4,extended,Economics,144,90,54,False,UNRESOLVED_SLOTS
+2024,CB015ECO01,5,extended,Economics,156,156,0,False,OK
+2024,CB015ECO03,1,extended,Economics with Law,116,116,0,False,OK
+2024,CB015ECO03,2,extended,Economics with Law,114,114,0,False,OK
+2024,CB015ECO03,3,extended,Economics with Law,144,126,18,False,MISMATCH
+2024,CB015ECO03,4,extended,Economics with Law,144,144,0,False,OK
+2024,CB015ECO03,5,extended,Economics with Law,156,166,-10,False,MISMATCH
 2024,CB015FTX04,1,extended,Finance with Accounting,125,125,0,False,OK
 2024,CB015FTX04,2,extended,Finance with Accounting,138,138,0,False,OK
 2024,CB015FTX04,3,extended,Finance with Accounting,150,150,0,False,OK
@@ -157,11 +162,16 @@
 2024,CB015INF01,3,extended,Information Systems,132,132,0,False,OK
 2024,CB015INF01,4,extended,Information Systems,120,120,0,False,OK
 2024,CB015INF01,5,extended,Information Systems,176,176,0,False,OK
-2024,CB018BUS01,1,extended,Actuarial Science,220,110,110,False,MISMATCH
-2024,CB018BUS01,2,extended,Actuarial Science,192,108,84,False,MISMATCH
-2024,CB018BUS01,3,extended,Actuarial Science,318,150,168,False,MISMATCH
-2024,CB018BUS01,4,extended,Actuarial Science,378,198,180,False,MISMATCH
-2024,CB018BUS01,5,extended,Actuarial Science,321,147,174,False,MISMATCH
+2024,CB018BUS01,1,extended,Actuarial Science,110,110,0,False,OK
+2024,CB018BUS01,2,extended,Actuarial Science,108,108,0,False,OK
+2024,CB018BUS01,3,extended,Actuarial Science,150,150,0,False,OK
+2024,CB018BUS01,4,extended,Actuarial Science,180,180,0,False,OK
+2024,CB018BUS01,5,extended,Actuarial Science,174,174,0,False,OK
+2024,CB018BUS09,1,extended,Actuarial Science: Quantitative Finance,110,110,0,False,OK
+2024,CB018BUS09,2,extended,Actuarial Science: Quantitative Finance,84,108,-24,False,MISMATCH
+2024,CB018BUS09,3,extended,Actuarial Science: Quantitative Finance,168,150,18,False,MISMATCH
+2024,CB018BUS09,4,extended,Actuarial Science: Quantitative Finance,198,198,0,False,OK
+2024,CB018BUS09,5,extended,Actuarial Science: Quantitative Finance,147,147,0,False,OK
 2024,CB019BUS01,1,regular,Actuarial Science,180,180,0,False,OK
 2024,CB019BUS01,2,regular,Actuarial Science,186,186,0,False,OK
 2024,CB019BUS01,3,regular,Actuarial Science,162,162,0,False,OK
@@ -244,13 +254,19 @@
 2024,CB024INF01,2,augmented,Information Systems,168,168,0,False,OK
 2024,CB024INF01,3,augmented,Information Systems,156,156,0,False,OK
 2024,CB024INF01,4,augmented,Information Systems,176,176,0,False,OK
-2024,CB025BUS01,1,augmented,Actuarial Science,364,182,182,False,MISMATCH
-2024,CB025BUS01,2,augmented,Actuarial Science,372,186,186,False,MISMATCH
-2024,CB025BUS01,3,augmented,Actuarial Science,378,198,180,False,MISMATCH
-2024,CB025BUS01,4,augmented,Actuarial Science,321,147,174,False,MISMATCH
+2024,CB025BUS01,1,augmented,Actuarial Science,182,182,0,False,OK
+2024,CB025BUS01,2,augmented,Actuarial Science,186,186,0,False,OK
+2024,CB025BUS01,3,augmented,Actuarial Science,180,180,0,False,OK
+2024,CB025BUS01,4,augmented,Actuarial Science,174,174,0,False,OK
+2024,CB025BUS09,1,augmented,Actuarial Science: Quantitative Finance,182,182,0,False,OK
+2024,CB025BUS09,2,augmented,Actuarial Science: Quantitative Finance,186,186,0,False,OK
+2024,CB025BUS09,3,augmented,Actuarial Science: Quantitative Finance,198,198,0,False,OK
+2024,CB025BUS09,4,augmented,Actuarial Science: Quantitative Finance,147,147,0,False,OK
 2024,CB026BUS01,1,augmented,Actuarial Science,182,182,0,False,OK
 2024,CB026BUS01,2,augmented,Actuarial Science,186,186,0,False,OK
 2024,CB026BUS01,3,augmented,Actuarial Science,162,162,0,False,OK
 2024,CB026BUS09,1,augmented,Actuarial Science: Quantitative Finance,182,182,0,False,OK
 2024,CB026BUS09,2,augmented,Actuarial Science: Quantitative Finance,186,186,0,False,OK
 2024,CB026BUS09,3,augmented,Actuarial Science: Quantitative Finance,180,180,0,False,OK
+2024,CU017ACC01,1,regular,Accounting,174,174,0,False,OK
+2024,CU020BUS01,1,regular,Actuarial Science,180,126,54,True,UNRESOLVED_SLOTS

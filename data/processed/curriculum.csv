@@ -1,100 +1,100 @@
 ﻿year,faculty,plan_code,study_year,table_index,seq,course_code_raw,course_code,course_title,nqf_credits,nqf_level,requirement,choice_group,choice_member,choice_pick_n,choice_note,is_minimum,source_page
-2021,COM,CU020BUS01,1,0,1,STA3041F,STA3041F,Markov Processes & Time Series,36,7,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,9,ACC1006F/S,ACC1006F,Financial Accounting,18,5,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,10,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,6,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,14,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,17
-2021,COM,CU020BUS01,1,0,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,16,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,17,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,core,,,,,False,18
-2021,COM,CU020BUS01,1,0,26,GSB3002F/S,GSB3002F,Leadership and Communication,20,7,core,,,,,False,19
-2021,COM,CU020BUS01,1,0,27,GSB3003F/S,GSB3003F,Economics of Emerging Markets,20,7,core,,,,,False,19
-2021,COM,CU020BUS01,1,0,28,GSB3004F/S,GSB3004F,Finance and Accounting Management,20,7,core,,,,,False,19
-2021,COM,CU020BUS01,1,0,29,GSB3005F/S,GSB3005F,Marketing Management,15,7,core,,,,,False,19
-2021,COM,CU020BUS01,1,0,30,GSB3006F/S,GSB3006F,Human Resources Management,15,7,core,,,,,False,19
-2021,COM,CU020BUS01,1,0,31,GSB3007F/S,GSB3007F,Operations Management,15,7,core,,,,,False,19
-2021,COM,CU020BUS01,1,0,32,GSB3008F/S,GSB3008F,Strategy and Innovation Lab,15,7,core,,,,,False,19
-2021,COM,CU020BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,4,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,5,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,6,MAM1000W,MAM1000W,Mathematics I,36,5,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,7,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,8,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,9,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,10,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,35
-2021,COM,CU020BUS01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,35
-2021,COM,CU020BUS01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,35
-2021,COM,CU020BUS01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,35
-2021,COM,CU020BUS01,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,35
-2021,COM,CU020BUS01,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,6,core,,,,,False,35
-2021,COM,CU020BUS01,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,35
-2021,COM,CU020BUS01,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,35
-2021,COM,CU020BUS01,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,35
-2021,COM,CU020BUS01,3,1,1,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,35
-2021,COM,CU020BUS01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,35
-2021,COM,CU020BUS01,3,1,3,STA3041F,STA3041F,Markov Processes & Time Series,36,7,core,,,,,False,35
-2021,COM,CU020BUS01,3,1,4,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,35
-2021,COM,CU020BUS01,3,1,5,BUS3024S,BUS3024S,ActuarialScienceII: Contingencies,18,7,core,,,,,False,35
-2021,COM,CU020BUS01,3,1,6,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,35
-2021,COM,CU020BUS01,3,1,7,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,35
-2021,COM,CU020BUS01,3,1,8,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,35
-2021,COM,CU020BUS01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,35
-2021,COM,CU020BUS01,4,1,2,BUS4027W,BUS4027W,Actuarial Science III: Actuarial Risk Management,54,8,core,,,,,False,35
-2021,COM,CU020BUS01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,35
-2021,COM,CU020BUS01,4,1,4,BUS4029H,BUS4029H,Actuarial Research Project,36,8,core,,,,,False,35
-2021,COM,CU020BUS01,4,1,5,BUS4034S,BUS4034S,Professional Communication (Actuarial Science),27,8,core,,,,,False,35
-2021,COM,CU020BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,36
-2021,COM,CU020BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,36
-2021,COM,CU020BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,36
-2021,COM,CU020BUS01,1,1,4,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,36
-2021,COM,CU020BUS01,1,1,5,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,36
-2021,COM,CU020BUS01,1,1,6,MAM1000W,MAM1000W,Mathematics I,36,5,core,,,,,False,36
-2021,COM,CU020BUS01,1,1,7,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,36
-2021,COM,CU020BUS01,1,1,8,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,36
-2021,COM,CU020BUS01,1,1,9,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,36
-2021,COM,CU020BUS01,1,1,10,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,36
-2021,COM,CU020BUS01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,36
-2021,COM,CU020BUS01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,36
-2021,COM,CU020BUS01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,36
-2021,COM,CU020BUS01,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,36
-2021,COM,CU020BUS01,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,6,core,,,,,False,36
-2021,COM,CU020BUS01,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,36
-2021,COM,CU020BUS01,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,36
-2021,COM,CU020BUS01,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,36
-2021,COM,CU020BUS01,3,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,7,core,,,,,False,36
-2021,COM,CU020BUS01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,36
-2021,COM,CU020BUS01,3,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,36
-2021,COM,CU020BUS01,3,1,4,STA3041F,STA3041F,Markov processes & Time Series,36,7,core,,,,,False,36
-2021,COM,CU020BUS01,3,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,36
-2021,COM,CU020BUS01,3,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,36
-2021,COM,CU020BUS01,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,36
-2021,COM,CU020BUS01,3,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,36
-2021,COM,CU020BUS01,3,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,36
-2021,COM,CU020BUS01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,37
-2021,COM,CU020BUS01,4,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,core,,,,,False,37
-2021,COM,CU020BUS01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,37
-2021,COM,CU020BUS01,4,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,core,,,,,False,37
-2021,COM,CU020BUS01,4,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,core,,,,,False,37
-2021,COM,CU020BUS01,4,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,core,,,,,False,37
+2021,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Markov Processes & Time Series,36,7,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,9,ACC1006F/S,ACC1006F,Financial Accounting,18,5,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,10,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,6,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,14,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,17
+2021,COM,CU020BUS01,1,1,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,16,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,17,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,core,,,,,False,18
+2021,COM,CU020BUS01,1,1,26,GSB3002F/S,GSB3002F,Leadership and Communication,20,7,core,,,,,False,19
+2021,COM,CU020BUS01,1,1,27,GSB3003F/S,GSB3003F,Economics of Emerging Markets,20,7,core,,,,,False,19
+2021,COM,CU020BUS01,1,1,28,GSB3004F/S,GSB3004F,Finance and Accounting Management,20,7,core,,,,,False,19
+2021,COM,CU020BUS01,1,1,29,GSB3005F/S,GSB3005F,Marketing Management,15,7,core,,,,,False,19
+2021,COM,CU020BUS01,1,1,30,GSB3006F/S,GSB3006F,Human Resources Management,15,7,core,,,,,False,19
+2021,COM,CU020BUS01,1,1,31,GSB3007F/S,GSB3007F,Operations Management,15,7,core,,,,,False,19
+2021,COM,CU020BUS01,1,1,32,GSB3008F/S,GSB3008F,Strategy and Innovation Lab,15,7,core,,,,,False,19
+2021,COM,CB003BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,35
+2021,COM,CB003BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,35
+2021,COM,CB003BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,35
+2021,COM,CB003BUS01,1,1,4,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,35
+2021,COM,CB003BUS01,1,1,5,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,35
+2021,COM,CB003BUS01,1,1,6,MAM1000W,MAM1000W,Mathematics I,36,5,core,,,,,False,35
+2021,COM,CB003BUS01,1,1,7,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,35
+2021,COM,CB003BUS01,1,1,8,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,35
+2021,COM,CB003BUS01,1,1,9,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,35
+2021,COM,CB003BUS01,1,1,10,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,35
+2021,COM,CB003BUS01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,35
+2021,COM,CB003BUS01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,35
+2021,COM,CB003BUS01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,35
+2021,COM,CB003BUS01,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,35
+2021,COM,CB003BUS01,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,6,core,,,,,False,35
+2021,COM,CB003BUS01,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,35
+2021,COM,CB003BUS01,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,35
+2021,COM,CB003BUS01,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,35
+2021,COM,CB003BUS01,3,1,1,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,35
+2021,COM,CB003BUS01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,35
+2021,COM,CB003BUS01,3,1,3,STA3041F,STA3041F,Markov Processes & Time Series,36,7,core,,,,,False,35
+2021,COM,CB003BUS01,3,1,4,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,35
+2021,COM,CB003BUS01,3,1,5,BUS3024S,BUS3024S,ActuarialScienceII: Contingencies,18,7,core,,,,,False,35
+2021,COM,CB003BUS01,3,1,6,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,35
+2021,COM,CB003BUS01,3,1,7,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,35
+2021,COM,CB003BUS01,3,1,8,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,35
+2021,COM,CB003BUS01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,35
+2021,COM,CB003BUS01,4,1,2,BUS4027W,BUS4027W,Actuarial Science III: Actuarial Risk Management,54,8,core,,,,,False,35
+2021,COM,CB003BUS01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,35
+2021,COM,CB003BUS01,4,1,4,BUS4029H,BUS4029H,Actuarial Research Project,36,8,core,,,,,False,35
+2021,COM,CB003BUS01,4,1,5,BUS4034S,BUS4034S,Professional Communication (Actuarial Science),27,8,core,,,,,False,35
+2021,COM,CB003BUS09,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,36
+2021,COM,CB003BUS09,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,36
+2021,COM,CB003BUS09,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,36
+2021,COM,CB003BUS09,1,1,4,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,36
+2021,COM,CB003BUS09,1,1,5,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,36
+2021,COM,CB003BUS09,1,1,6,MAM1000W,MAM1000W,Mathematics I,36,5,core,,,,,False,36
+2021,COM,CB003BUS09,1,1,7,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,36
+2021,COM,CB003BUS09,1,1,8,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,36
+2021,COM,CB003BUS09,1,1,9,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,36
+2021,COM,CB003BUS09,1,1,10,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,36
+2021,COM,CB003BUS09,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,36
+2021,COM,CB003BUS09,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,36
+2021,COM,CB003BUS09,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,36
+2021,COM,CB003BUS09,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,36
+2021,COM,CB003BUS09,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,6,core,,,,,False,36
+2021,COM,CB003BUS09,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,36
+2021,COM,CB003BUS09,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,36
+2021,COM,CB003BUS09,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,36
+2021,COM,CB003BUS09,3,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,7,core,,,,,False,36
+2021,COM,CB003BUS09,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,36
+2021,COM,CB003BUS09,3,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,36
+2021,COM,CB003BUS09,3,1,4,STA3041F,STA3041F,Markov processes & Time Series,36,7,core,,,,,False,36
+2021,COM,CB003BUS09,3,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,36
+2021,COM,CB003BUS09,3,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,36
+2021,COM,CB003BUS09,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,36
+2021,COM,CB003BUS09,3,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,36
+2021,COM,CB003BUS09,3,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,36
+2021,COM,CB003BUS09,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,37
+2021,COM,CB003BUS09,4,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,core,,,,,False,37
+2021,COM,CB003BUS09,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,37
+2021,COM,CB003BUS09,4,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,core,,,,,False,37
+2021,COM,CB003BUS09,4,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,core,,,,,False,37
+2021,COM,CB003BUS09,4,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,core,,,,,False,37
 2021,COM,CB004BUS22,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,37
 2021,COM,CB004BUS22,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,37
 2021,COM,CB004BUS22,1,1,3,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,37
@@ -2433,102 +2433,102 @@
 2021,COM,CB011BUS06,3,1,8,,,Plus 2 approved 2000 level electives (see Page 96-97),36,6,elective,,,,,False,127
 2021,COM,CB011BUS06,4,1,1,BUS3039F,BUS3039F,People Management#,18,7,core,,,,,False,127
 2021,COM,CB011BUS06,4,1,2,,,Plus 6 approved 3000 level electives,0,0,elective,,,,,False,127
-2022,COM,CU020BUS01,1,0,1,STA3041F,STA3041F,Stocastic Processes & Time Series,36,7,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,9,ACC1006F/S,ACC1006F,Financial Accounting,18,5,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,10,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,7,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,14,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,21
-2022,COM,CU020BUS01,1,0,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,16,FTX3044F,FTX3044F,Finance IIA,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,17,FTX3045S,FTX3045S,Finance IIB,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,22
-2022,COM,CU020BUS01,1,0,26,GSB3002F/S,GSB3002F,Leadership and Communication,20,7,alternative,,,,approved elective pool,False,23
-2022,COM,CU020BUS01,1,0,27,GSB3003F/S,GSB3003F,Economics of Emerging Markets,20,7,alternative,,,,approved elective pool,False,23
-2022,COM,CU020BUS01,1,0,28,GSB3004F/S,GSB3004F,Finance and Accounting Management,20,7,alternative,,,,approved elective pool,False,23
-2022,COM,CU020BUS01,1,0,29,GSB3005F/S,GSB3005F,Marketing Management,15,7,alternative,,,,approved elective pool,False,23
-2022,COM,CU020BUS01,1,0,30,GSB3006F/S,GSB3006F,Human Resources Management,15,7,alternative,,,,approved elective pool,False,23
-2022,COM,CU020BUS01,1,0,31,GSB3007F/S,GSB3007F,Operations Management,15,7,alternative,,,,approved elective pool,False,23
-2022,COM,CU020BUS01,1,0,32,GSB3008F/S,GSB3008F,Strategy and Innovation Lab,15,7,alternative,,,,approved elective pool,False,23
-2022,COM,CU020BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,4,ECO1010F,ECO1010F,Microeconomics,18,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,5,DOC1003H,DOC1003H,Commerce Case Study,5,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,6,MAM1000W,MAM1000W,Mathematics I,36,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,7,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,8,ACC2011S,ACC2011S,Financial Reporting I,18,6,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,9,ECO1011S,ECO1011S,Macroeconomics,18,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,10,STA1006S,STA1006S,Mathematical Statistics I,18,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,7,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,2,1,8,STA2005S,STA2005S,Linear Models,24,6,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,3,1,1,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,3,1,3,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,3,1,4,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,3,1,5,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,3,1,6,PHI2043S,PHI2043S,Business Ethics,18,6,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,3,1,7,STA3047S,STA3047S,Introduction to Machine Learning,6,7,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,3,1,8,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,4,1,2,BUS4027W,BUS4027W,Actuarial Science III: Actuarial Risk Management,54,8,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,4,1,4,BUS4029H,BUS4029H,Actuarial Research Project,36,8,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,4,1,5,BUS4034S,BUS4034S,Professional Communication (Actuarial Science),27,8,alternative,,,,approved elective pool,False,37
-2022,COM,CU020BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,1,1,4,DOC1003H,DOC1003H,Commerce Case Study,5,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,1,1,5,ECO1010F,ECO1010F,Microeconomics,18,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,1,1,6,MAM1000W,MAM1000W,Mathematics I,36,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,1,1,7,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,1,1,8,ACC2011S,ACC2011S,Financial Reporting I,18,6,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,1,1,9,ECO1011S,ECO1011S,Macroeconomics,18,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,1,1,10,STA1006S,STA1006S,Mathematical Statistics I,18,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,7,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,2,1,8,STA2005S,STA2005S,Linear Models,24,6,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,3,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,6,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,3,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,3,1,4,STA3041F,STA3041F,Stochastic processes & Time Series,36,7,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,3,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,3,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,3,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,3,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,alternative,,,,approved elective pool,False,38
-2022,COM,CU020BUS01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,alternative,,,,approved elective pool,False,39
-2022,COM,CU020BUS01,4,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,alternative,,,,approved elective pool,False,39
-2022,COM,CU020BUS01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,alternative,,,,approved elective pool,False,39
-2022,COM,CU020BUS01,4,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,alternative,,,,approved elective pool,False,39
-2022,COM,CU020BUS01,4,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,alternative,,,,approved elective pool,False,39
-2022,COM,CU020BUS01,4,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,alternative,,,,approved elective pool,False,39
+2022,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stocastic Processes & Time Series,36,7,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,9,ACC1006F/S,ACC1006F,Financial Accounting,18,5,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,10,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,7,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,14,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,21
+2022,COM,CU020BUS01,1,1,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,16,FTX3044F,FTX3044F,Finance IIA,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,17,FTX3045S,FTX3045S,Finance IIB,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU020BUS01,1,1,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,22
+2022,COM,CU021GSB48,1,1,1,GSB3002F/S,GSB3002F,Leadership and Communication,20,7,core,,,,,False,23
+2022,COM,CU021GSB48,1,1,2,GSB3003F/S,GSB3003F,Economics of Emerging Markets,20,7,core,,,,,False,23
+2022,COM,CU021GSB48,1,1,3,GSB3004F/S,GSB3004F,Finance and Accounting Management,20,7,core,,,,,False,23
+2022,COM,CU021GSB48,1,1,4,GSB3005F/S,GSB3005F,Marketing Management,15,7,core,,,,,False,23
+2022,COM,CU021GSB48,1,1,5,GSB3006F/S,GSB3006F,Human Resources Management,15,7,core,,,,,False,23
+2022,COM,CU021GSB48,1,1,6,GSB3007F/S,GSB3007F,Operations Management,15,7,core,,,,,False,23
+2022,COM,CU021GSB48,1,1,7,GSB3008F/S,GSB3008F,Strategy and Innovation Lab,15,7,core,,,,,False,23
+2022,COM,CB003BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,37
+2022,COM,CB003BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,37
+2022,COM,CB003BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,37
+2022,COM,CB003BUS01,1,1,4,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,37
+2022,COM,CB003BUS01,1,1,5,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,37
+2022,COM,CB003BUS01,1,1,6,MAM1000W,MAM1000W,Mathematics I,36,5,core,,,,,False,37
+2022,COM,CB003BUS01,1,1,7,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,37
+2022,COM,CB003BUS01,1,1,8,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,37
+2022,COM,CB003BUS01,1,1,9,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,37
+2022,COM,CB003BUS01,1,1,10,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,37
+2022,COM,CB003BUS01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,37
+2022,COM,CB003BUS01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,37
+2022,COM,CB003BUS01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,37
+2022,COM,CB003BUS01,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,37
+2022,COM,CB003BUS01,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,7,core,,,,,False,37
+2022,COM,CB003BUS01,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,37
+2022,COM,CB003BUS01,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,37
+2022,COM,CB003BUS01,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,37
+2022,COM,CB003BUS01,3,1,1,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,37
+2022,COM,CB003BUS01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,37
+2022,COM,CB003BUS01,3,1,3,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,37
+2022,COM,CB003BUS01,3,1,4,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,37
+2022,COM,CB003BUS01,3,1,5,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,37
+2022,COM,CB003BUS01,3,1,6,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,37
+2022,COM,CB003BUS01,3,1,7,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,37
+2022,COM,CB003BUS01,3,1,8,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,37
+2022,COM,CB003BUS01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,37
+2022,COM,CB003BUS01,4,1,2,BUS4027W,BUS4027W,Actuarial Science III: Actuarial Risk Management,54,8,core,,,,,False,37
+2022,COM,CB003BUS01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,37
+2022,COM,CB003BUS01,4,1,4,BUS4029H,BUS4029H,Actuarial Research Project,36,8,core,,,,,False,37
+2022,COM,CB003BUS01,4,1,5,BUS4034S,BUS4034S,Professional Communication (Actuarial Science),27,8,core,,,,,False,37
+2022,COM,CB003BUS09,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,38
+2022,COM,CB003BUS09,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,38
+2022,COM,CB003BUS09,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,38
+2022,COM,CB003BUS09,1,1,4,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,38
+2022,COM,CB003BUS09,1,1,5,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,38
+2022,COM,CB003BUS09,1,1,6,MAM1000W,MAM1000W,Mathematics I,36,5,core,,,,,False,38
+2022,COM,CB003BUS09,1,1,7,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,38
+2022,COM,CB003BUS09,1,1,8,ACC2011S,ACC2011S,Financial Reporting I,18,6,core,,,,,False,38
+2022,COM,CB003BUS09,1,1,9,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,38
+2022,COM,CB003BUS09,1,1,10,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,38
+2022,COM,CB003BUS09,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,38
+2022,COM,CB003BUS09,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,38
+2022,COM,CB003BUS09,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,38
+2022,COM,CB003BUS09,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,38
+2022,COM,CB003BUS09,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,7,core,,,,,False,38
+2022,COM,CB003BUS09,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,38
+2022,COM,CB003BUS09,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,38
+2022,COM,CB003BUS09,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,38
+2022,COM,CB003BUS09,3,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,6,core,,,,,False,38
+2022,COM,CB003BUS09,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,38
+2022,COM,CB003BUS09,3,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,38
+2022,COM,CB003BUS09,3,1,4,STA3041F,STA3041F,Stochastic processes & Time Series,36,7,core,,,,,False,38
+2022,COM,CB003BUS09,3,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,38
+2022,COM,CB003BUS09,3,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,38
+2022,COM,CB003BUS09,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,38
+2022,COM,CB003BUS09,3,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,38
+2022,COM,CB003BUS09,3,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,38
+2022,COM,CB003BUS09,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,39
+2022,COM,CB003BUS09,4,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,core,,,,,False,39
+2022,COM,CB003BUS09,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,39
+2022,COM,CB003BUS09,4,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,core,,,,,False,39
+2022,COM,CB003BUS09,4,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,core,,,,,False,39
+2022,COM,CB003BUS09,4,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,core,,,,,False,39
 2022,COM,CB004BUS22,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,39
 2022,COM,CB004BUS22,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,39
 2022,COM,CB004BUS22,1,1,3,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,39
@@ -4613,28 +4613,28 @@
 2022,COM,CB011ACC04,4,1,3,ACC3022H,ACC3022H,"Governance, Audit and Assurance II",18,7,core,,,,,False,120
 2022,COM,CB011ACC04,4,1,4,ACC4000H,ACC4000H,Business Analysis & Governance,18,8,core,,,,,False,120
 2022,COM,CB011ACC04,4,1,5,ACC3023H,ACC3023H,Management Accounting II,18,7,core,,,,,False,120
-2022,COM,CB011ACC04,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,121
-2022,COM,CB011ACC04,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,121
-2022,COM,CB011ACC04,1,1,3,DOC1103H,DOC1103H,Commerce Case Study,5,5,core,,,,,False,121
-2022,COM,CB011ACC04,1,1,4,INF1102F,INF1102F,Information Systems I,18,5,core,,,,,False,121
-2022,COM,CB011ACC04,1,1,5,MAM1110H,MAM1110H,Mathematics 1010,18,5,core,,,,,False,121
-2022,COM,CB011ACC04,1,1,6,ACC2111S,ACC2111S,Financial Reporting I,18,6,core,,,,,False,121
-2022,COM,CB011ACC04,1,1,7,ECO1110S,ECO1110S,Microeconomics,18,5,core,,,,,False,121
-2022,COM,CB011ACC04,2,1,1,PHI2043F,PHI2043F,Business Ethics,18,6,core,,,,,False,121
-2022,COM,CB011ACC04,2,1,2,ECO1011F,ECO1011F,Macroeconomics I,18,7,core,,,,,False,121
-2022,COM,CB011ACC04,2,1,3,ACC2023H,ACC2023H,Taxation I,18,6,core,,,,,False,121
-2022,COM,CB011ACC04,2,1,4,ACC2012W,ACC2012W,Financial Reporting II,36,7,core,,,,,False,121
-2022,COM,CB011ACC04,2,1,5,ACC2018H,ACC2018H,"Governance, Audit and Assurance I",18,6,core,,,,,False,121
-2022,COM,CB011ACC04,2,1,6,STA1100S,STA1100S,Introductory Statistics,18,5,core,,,,,False,121
-2022,COM,CB011ACC04,3,1,1,ACC2022H,ACC2022H,Management Accounting 1,18,6,core,,,,,False,121
-2022,COM,CB011ACC04,3,1,2,ACC3020W,ACC3020W,Financial Reporting & Analysis,36,7,core,,,,,False,121
-2022,COM,CB011ACC04,3,1,3,PVL1003W,PVL1003W,Foundations of South African Law*,36,5,core,,,,,False,121
-2022,COM,CB011ACC04,3,1,4,PVL1008H,PVL1008H,Law of Persons and Family*,18,5,core,,,,,False,121
-2022,COM,CB011ACC04,3,1,5,PVL1004F,PVL1004F,South African Private Law: System and Context*,18,5,core,,,,,False,121
-2022,COM,CB011ACC04,4,1,1,FTX2024F,FTX2024F,Financial Management,18,6,core,,,,,False,121
-2022,COM,CB011ACC04,4,1,2,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,121
-2022,COM,CB011ACC04,4,1,3,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,121
-2022,COM,CB011ACC04,4,1,4,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,121
+2022,COM,CB011ACC03,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,121
+2022,COM,CB011ACC03,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,121
+2022,COM,CB011ACC03,1,1,3,DOC1103H,DOC1103H,Commerce Case Study,5,5,core,,,,,False,121
+2022,COM,CB011ACC03,1,1,4,INF1102F,INF1102F,Information Systems I,18,5,core,,,,,False,121
+2022,COM,CB011ACC03,1,1,5,MAM1110H,MAM1110H,Mathematics 1010,18,5,core,,,,,False,121
+2022,COM,CB011ACC03,1,1,6,ACC2111S,ACC2111S,Financial Reporting I,18,6,core,,,,,False,121
+2022,COM,CB011ACC03,1,1,7,ECO1110S,ECO1110S,Microeconomics,18,5,core,,,,,False,121
+2022,COM,CB011ACC03,2,1,1,PHI2043F,PHI2043F,Business Ethics,18,6,core,,,,,False,121
+2022,COM,CB011ACC03,2,1,2,ECO1011F,ECO1011F,Macroeconomics I,18,7,core,,,,,False,121
+2022,COM,CB011ACC03,2,1,3,ACC2023H,ACC2023H,Taxation I,18,6,core,,,,,False,121
+2022,COM,CB011ACC03,2,1,4,ACC2012W,ACC2012W,Financial Reporting II,36,7,core,,,,,False,121
+2022,COM,CB011ACC03,2,1,5,ACC2018H,ACC2018H,"Governance, Audit and Assurance I",18,6,core,,,,,False,121
+2022,COM,CB011ACC03,2,1,6,STA1100S,STA1100S,Introductory Statistics,18,5,core,,,,,False,121
+2022,COM,CB011ACC03,3,1,1,ACC2022H,ACC2022H,Management Accounting 1,18,6,core,,,,,False,121
+2022,COM,CB011ACC03,3,1,2,ACC3020W,ACC3020W,Financial Reporting & Analysis,36,7,core,,,,,False,121
+2022,COM,CB011ACC03,3,1,3,PVL1003W,PVL1003W,Foundations of South African Law*,36,5,core,,,,,False,121
+2022,COM,CB011ACC03,3,1,4,PVL1008H,PVL1008H,Law of Persons and Family*,18,5,core,,,,,False,121
+2022,COM,CB011ACC03,3,1,5,PVL1004F,PVL1004F,South African Private Law: System and Context*,18,5,core,,,,,False,121
+2022,COM,CB011ACC03,4,1,1,FTX2024F,FTX2024F,Financial Management,18,6,core,,,,,False,121
+2022,COM,CB011ACC03,4,1,2,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,121
+2022,COM,CB011ACC03,4,1,3,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,121
+2022,COM,CB011ACC03,4,1,4,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,121
 2022,COM,CB011PHI03,1,1,1,DOC1103H,DOC1103H,Commerce Case Study,5,5,core,,,,,False,122
 2022,COM,CB011PHI03,1,1,2,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,122
 2022,COM,CB011PHI03,1,1,3,PHI1024F,PHI1024F,Introduction to Philosophy,18,5,core,,,,,False,122
@@ -4752,42 +4752,42 @@
 2022,COM,CB011ECO04,4,1,11,ECO3023S,ECO3023S,Public Sector Economics,18,7,option,Y4G2,5,2,pick 2 from menu,False,126
 2022,COM,CB011ECO04,4,1,12,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y4G2,6,2,pick 2 from menu,False,126
 2022,COM,CB011ECO04,4,1,13,,,Plus one 2000 or 3000 level course,18,,elective,,,,,False,126
-2022,COM,CB011ECO04,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,126
-2022,COM,CB011ECO04,1,1,2,DOC1103H,DOC1103H,Commerce Case Study,5,5,core,,,,,False,126
-2022,COM,CB011ECO04,1,1,3,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,126
-2022,COM,CB011ECO04,1,1,4,MAM1110H,MAM1110H,Mathematics 1010,18,5,core,,,,,False,126
-2022,COM,CB011ECO04,1,1,5,INF1102F,INF1102F,Information Systems I,18,5,core,,,,,False,126
-2022,COM,CB011ECO04,1,1,6,ACC1012S,ACC1012S,Business Accounting,18,5,option,Y1G1,1,1,,False,126
-2022,COM,CB011ECO04,1,1,7,ACC2111S,ACC2111S,Financial Reporting I,18,6,option,Y1G1,2,1,,False,126
-2022,COM,CB011ECO04,1,1,8,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,126
-2022,COM,CB011ECO04,1,1,9,STA1100S,STA1100S,Introductory Statistics,18,5,core,,,,,False,126
-2022,COM,CB011ECO04,2,1,1,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,126
-2022,COM,CB011ECO04,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,126
-2022,COM,CB011ECO04,2,1,3,PHI2043F/S,PHI2043F,Business Ethics,18,6,core,,,,,False,126
-2022,COM,CB011ECO04,2,1,4,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,126
-2022,COM,CB011ECO04,2,1,5,ECO2007S,ECO2007S,Co-operation and Competition,18,6,core,,,,,False,126
-2022,COM,CB011ECO04,2,1,6,PHI1024F,PHI1024F,Introduction to Philosophy,18,5,option,Y2G1,1,1,pick 1 from menu,False,126
-2022,COM,CB011ECO04,2,1,7,PHI2037F,PHI2037F,Applied Ethics,24,6,option,Y2G1,2,1,pick 1 from menu,False,126
-2022,COM,CB011ECO04,2,1,8,POL1004F,POL1004F,Introduction to Politics,18,5,option,Y2G1,3,1,pick 1 from menu,False,126
-2022,COM,CB011ECO04,2,1,9,ECO2008S,ECO2008S,Development Economics,18,6,option,Y2G1,4,1,pick 1 from menu,False,126
-2022,COM,CB011ECO04,2,1,10,POL1005S,POL1005S,Introduction to Politics B,18,5,option,Y2G1,5,1,pick 1 from menu,False,126
-2022,COM,CB011ECO04,2,1,11,SOC1005S,SOC1005S,Individual & Society,18,5,option,Y2G1,6,1,pick 1 from menu,False,126
-2022,COM,CB011ECO04,3,1,1,ECO3020F,ECO3020F,Advanced Macro & Microeconomics,18,7,core,,,,,False,126
-2022,COM,CB011ECO04,3,1,2,PVL1003W,PVL1003W,Foundations of South African Law**,36,5,core,,,,,False,126
-2022,COM,CB011ECO04,3,1,3,PVL1004F,PVL1004F,South African Private Law: System and Context**,18,5,core,,,,,False,126
-2022,COM,CB011ECO04,3,1,4,PVL1008H,PVL1008H,Law of Persons and Family**,18,5,core,,,,,False,126
-2022,COM,CB011ECO04,3,1,5,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y3G1,1,1,,False,126
-2022,COM,CB011ECO04,3,1,6,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,option,Y3G1,2,1,,False,126
-2022,COM,CB011ECO04,4,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,127
-2022,COM,CB011ECO04,4,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,127
-2022,COM,CB011ECO04,4,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,127
-2022,COM,CB011ECO04,4,1,4,ECO3009F,ECO3009F,Natural Resource Economics,18,7,option,Y4G1,1,2,pick 2 from menu,False,127
-2022,COM,CB011ECO04,4,1,5,ECO3024F,ECO3024F,International Trade and Finance,18,7,option,Y4G1,2,2,pick 2 from menu,False,127
-2022,COM,CB011ECO04,4,1,6,ECO3016F,ECO3016F,History of Economic Thought,18,7,option,Y4G1,3,2,pick 2 from menu,False,127
-2022,COM,CB011ECO04,4,1,7,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,option,Y4G1,4,2,pick 2 from menu,False,127
-2022,COM,CB011ECO04,4,1,8,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y4G1,5,2,pick 2 from menu,False,127
-2022,COM,CB011ECO04,4,1,9,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,option,Y4G1,6,2,pick 2 from menu,False,127
-2022,COM,CB011ECO04,4,1,10,ECO3023S,ECO3023S,Public Sector Economics,18,7,option,Y4G1,7,2,pick 2 from menu,False,127
+2022,COM,CB011ECO03,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,126
+2022,COM,CB011ECO03,1,1,2,DOC1103H,DOC1103H,Commerce Case Study,5,5,core,,,,,False,126
+2022,COM,CB011ECO03,1,1,3,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,126
+2022,COM,CB011ECO03,1,1,4,MAM1110H,MAM1110H,Mathematics 1010,18,5,core,,,,,False,126
+2022,COM,CB011ECO03,1,1,5,INF1102F,INF1102F,Information Systems I,18,5,core,,,,,False,126
+2022,COM,CB011ECO03,1,1,6,ACC1012S,ACC1012S,Business Accounting,18,5,option,Y1G1,1,1,,False,126
+2022,COM,CB011ECO03,1,1,7,ACC2111S,ACC2111S,Financial Reporting I,18,6,option,Y1G1,2,1,,False,126
+2022,COM,CB011ECO03,1,1,8,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,126
+2022,COM,CB011ECO03,1,1,9,STA1100S,STA1100S,Introductory Statistics,18,5,core,,,,,False,126
+2022,COM,CB011ECO03,2,1,1,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,126
+2022,COM,CB011ECO03,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,126
+2022,COM,CB011ECO03,2,1,3,PHI2043F/S,PHI2043F,Business Ethics,18,6,core,,,,,False,126
+2022,COM,CB011ECO03,2,1,4,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,126
+2022,COM,CB011ECO03,2,1,5,ECO2007S,ECO2007S,Co-operation and Competition,18,6,core,,,,,False,126
+2022,COM,CB011ECO03,2,1,6,PHI1024F,PHI1024F,Introduction to Philosophy,18,5,option,Y2G1,1,1,pick 1 from menu,False,126
+2022,COM,CB011ECO03,2,1,7,PHI2037F,PHI2037F,Applied Ethics,24,6,option,Y2G1,2,1,pick 1 from menu,False,126
+2022,COM,CB011ECO03,2,1,8,POL1004F,POL1004F,Introduction to Politics,18,5,option,Y2G1,3,1,pick 1 from menu,False,126
+2022,COM,CB011ECO03,2,1,9,ECO2008S,ECO2008S,Development Economics,18,6,option,Y2G1,4,1,pick 1 from menu,False,126
+2022,COM,CB011ECO03,2,1,10,POL1005S,POL1005S,Introduction to Politics B,18,5,option,Y2G1,5,1,pick 1 from menu,False,126
+2022,COM,CB011ECO03,2,1,11,SOC1005S,SOC1005S,Individual & Society,18,5,option,Y2G1,6,1,pick 1 from menu,False,126
+2022,COM,CB011ECO03,3,1,1,ECO3020F,ECO3020F,Advanced Macro & Microeconomics,18,7,core,,,,,False,126
+2022,COM,CB011ECO03,3,1,2,PVL1003W,PVL1003W,Foundations of South African Law**,36,5,core,,,,,False,126
+2022,COM,CB011ECO03,3,1,3,PVL1004F,PVL1004F,South African Private Law: System and Context**,18,5,core,,,,,False,126
+2022,COM,CB011ECO03,3,1,4,PVL1008H,PVL1008H,Law of Persons and Family**,18,5,core,,,,,False,126
+2022,COM,CB011ECO03,3,1,5,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y3G1,1,1,,False,126
+2022,COM,CB011ECO03,3,1,6,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,option,Y3G1,2,1,,False,126
+2022,COM,CB011ECO03,4,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,127
+2022,COM,CB011ECO03,4,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,127
+2022,COM,CB011ECO03,4,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,127
+2022,COM,CB011ECO03,4,1,4,ECO3009F,ECO3009F,Natural Resource Economics,18,7,option,Y4G1,1,2,pick 2 from menu,False,127
+2022,COM,CB011ECO03,4,1,5,ECO3024F,ECO3024F,International Trade and Finance,18,7,option,Y4G1,2,2,pick 2 from menu,False,127
+2022,COM,CB011ECO03,4,1,6,ECO3016F,ECO3016F,History of Economic Thought,18,7,option,Y4G1,3,2,pick 2 from menu,False,127
+2022,COM,CB011ECO03,4,1,7,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,option,Y4G1,4,2,pick 2 from menu,False,127
+2022,COM,CB011ECO03,4,1,8,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y4G1,5,2,pick 2 from menu,False,127
+2022,COM,CB011ECO03,4,1,9,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,option,Y4G1,6,2,pick 2 from menu,False,127
+2022,COM,CB011ECO03,4,1,10,ECO3023S,ECO3023S,Public Sector Economics,18,7,option,Y4G1,7,2,pick 2 from menu,False,127
 2022,COM,CB011INF01,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,127
 2022,COM,CB011INF01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,127
 2022,COM,CB011INF01,1,1,3,DOC1103H,DOC1103H,Commerce Case Study,5,5,core,,,,,False,127
@@ -4901,111 +4901,111 @@
 2022,COM,CB011BUS06,3,1,8,,,Plus 2 approved 2000 level electives (see Page 97),36,6,elective,,,,,False,131
 2022,COM,CB011BUS06,4,1,1,BUS3039F,BUS3039F,People Management#,18,7,core,,,,,False,131
 2022,COM,CB011BUS06,4,1,2,,,Plus 6 approved 3000 level electives,0,0,elective,,,,,False,131
-2023,COM,CU020BUS01,1,0,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,21
-2023,COM,CU020BUS01,1,0,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,21
-2023,COM,CU020BUS01,1,0,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,21
-2023,COM,CU020BUS01,1,0,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,21
-2023,COM,CU020BUS01,1,0,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,21
-2023,COM,CU020BUS01,1,0,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,21
-2023,COM,CU020BUS01,1,0,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,option,ADVDIP-EL,1,2,choose two of the listed electives,False,21
-2023,COM,CU020BUS01,1,0,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,option,ADVDIP-EL,2,2,choose two of the listed electives,False,21
-2023,COM,CU020BUS01,1,0,9,ACC1006F,ACC1006F,Financial Accounting,18,5,option,ADVDIP-EL,3,2,choose two of the listed electives,False,21
-2023,COM,CU020BUS01,1,0,10,ACC1011S,ACC1011S,Financial Reporting I,18,5,option,ADVDIP-EL,4,2,choose two of the listed electives,False,21
-2023,COM,CU020BUS01,1,0,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,7,option,ADVDIP-EL,5,2,choose two of the listed electives,False,21
-2023,COM,CU020BUS01,1,0,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,option,ADVDIP-EL,6,2,choose two of the listed electives,False,21
-2023,COM,CU020BUS01,1,0,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,option,ADVDIP-EL,7,2,choose two of the listed electives,False,21
-2023,COM,CU020BUS01,1,0,14,STA2005S,STA2005S,Linear Models,24,6,option,ADVDIP-EL,8,2,choose two of the listed electives,False,21
-2023,COM,CU020BUS01,1,0,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,16,FTX3044F,FTX3044F,Finance IIA,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,17,FTX3045S,FTX3045S,Finance IIB,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,22
-2023,COM,CU020BUS01,1,0,26,GSB3002F/S,GSB3002F,Leadership and Communication,20,7,alternative,,,,approved elective pool,False,23
-2023,COM,CU020BUS01,1,0,27,GSB3003F/S,GSB3003F,Economics of Emerging Markets,20,7,alternative,,,,approved elective pool,False,23
-2023,COM,CU020BUS01,1,0,28,GSB3004F/S,GSB3004F,Finance and Accounting Management,20,7,alternative,,,,approved elective pool,False,23
-2023,COM,CU020BUS01,1,0,29,GSB3005F/S,GSB3005F,Marketing Management,15,7,alternative,,,,approved elective pool,False,23
-2023,COM,CU020BUS01,1,0,30,GSB3006F/S,GSB3006F,Human Resources Management,15,7,alternative,,,,approved elective pool,False,23
-2023,COM,CU020BUS01,1,0,31,GSB3007F/S,GSB3007F,Operations Management,15,7,alternative,,,,approved elective pool,False,23
-2023,COM,CU020BUS01,1,0,32,GSB3008F/S,GSB3008F,Strategy and Innovation Lab,15,7,alternative,,,,approved elective pool,False,23
-2023,COM,CU017ACC01,1,0,1,ACC3004H,ACC3004H,Taxation II,18,7,core,,,,,False,24
-2023,COM,CU017ACC01,1,0,2,ACC3009W,ACC3009W,Financial Reporting III,36,7,core,,,,,False,24
-2023,COM,CU017ACC01,1,0,3,ACC3022H,ACC3022H,"Governance, Audit and Assurance II",18,7,core,,,,,False,24
-2023,COM,CU017ACC01,1,0,4,ACC3022H,ACC3022H,Management Accounting II,18,7,core,,,,,False,24
-2023,COM,CU017ACC01,1,0,5,ACC3000H,ACC3000H,Business Analysis and Governance,18,7,core,,,,,False,24
-2023,COM,CU017ACC01,1,0,6,CML2001F,CML2001F,Company Law,18,6,core,,,,,False,24
-2023,COM,CU017ACC01,1,0,7,CML2010Z,CML2010Z,Business Law II,12,6,core,,,,,False,24
-2023,COM,CU017ACC01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,4,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,5,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,6,MAM1031F,MAM1031F,Mathematics 131,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,7,MAM1032S,MAM1032S,Mathematics 132,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,8,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,9,ACC1011S,ACC1011S,Financial Reporting I,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,10,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,1,1,11,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,37
-2023,COM,CU017ACC01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,37
-2023,COM,CU017ACC01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,37
-2023,COM,CU017ACC01,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,37
-2023,COM,CU017ACC01,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,7,core,,,,,False,37
-2023,COM,CU017ACC01,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,37
-2023,COM,CU017ACC01,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,37
-2023,COM,CU017ACC01,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,37
-2023,COM,CU017ACC01,3,1,1,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,37
-2023,COM,CU017ACC01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,37
-2023,COM,CU017ACC01,3,1,3,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,37
-2023,COM,CU017ACC01,3,1,4,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,37
-2023,COM,CU017ACC01,3,1,5,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,37
-2023,COM,CU017ACC01,3,1,6,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,37
-2023,COM,CU017ACC01,3,1,7,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,37
-2023,COM,CU017ACC01,3,1,8,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,37
-2023,COM,CU017ACC01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,37
-2023,COM,CU017ACC01,4,1,2,BUS4027W,BUS4027W,Actuarial Science III: Actuarial Risk Management,54,8,core,,,,,False,37
-2023,COM,CU017ACC01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,37
-2023,COM,CU017ACC01,4,1,4,BUS4029H,BUS4029H,Actuarial Research Project,36,8,core,,,,,False,38
-2023,COM,CU017ACC01,4,1,5,BUS4034S,BUS4034S,Professional Communication (Actuarial Science),27,8,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,4,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,5,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,6,MAM1031F,MAM1031F,Mathematics 131,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,7,MAM1032S,MAM1032S,Mathematics 132,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,8,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,9,ACC1011S,ACC1011S,Financial Reporting I,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,10,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,1,1,11,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,38
-2023,COM,CU017ACC01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,38
-2023,COM,CU017ACC01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,38
-2023,COM,CU017ACC01,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,38
-2023,COM,CU017ACC01,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,7,core,,,,,False,38
-2023,COM,CU017ACC01,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,38
-2023,COM,CU017ACC01,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,38
-2023,COM,CU017ACC01,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,38
-2023,COM,CU017ACC01,3,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,6,core,,,,,False,38
-2023,COM,CU017ACC01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,38
-2023,COM,CU017ACC01,3,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,38
-2023,COM,CU017ACC01,3,1,4,STA3041F,STA3041F,Stochastic processes & Time Series,36,7,core,,,,,False,38
-2023,COM,CU017ACC01,3,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,38
-2023,COM,CU017ACC01,3,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,38
-2023,COM,CU017ACC01,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,38
-2023,COM,CU017ACC01,3,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,38
-2023,COM,CU017ACC01,3,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,38
-2023,COM,CU017ACC01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,39
-2023,COM,CU017ACC01,4,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,core,,,,,False,39
-2023,COM,CU017ACC01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,39
-2023,COM,CU017ACC01,4,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,core,,,,,False,39
-2023,COM,CU017ACC01,4,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,core,,,,,False,39
-2023,COM,CU017ACC01,4,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,core,,,,,False,39
+2023,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,21
+2023,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,21
+2023,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,21
+2023,COM,CU020BUS01,1,1,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,21
+2023,COM,CU020BUS01,1,1,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,21
+2023,COM,CU020BUS01,1,1,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,21
+2023,COM,CU020BUS01,1,1,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,option,ADVDIP-EL,1,2,choose two of the listed electives,False,21
+2023,COM,CU020BUS01,1,1,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,option,ADVDIP-EL,2,2,choose two of the listed electives,False,21
+2023,COM,CU020BUS01,1,1,9,ACC1006F,ACC1006F,Financial Accounting,18,5,option,ADVDIP-EL,3,2,choose two of the listed electives,False,21
+2023,COM,CU020BUS01,1,1,10,ACC1011S,ACC1011S,Financial Reporting I,18,5,option,ADVDIP-EL,4,2,choose two of the listed electives,False,21
+2023,COM,CU020BUS01,1,1,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,7,option,ADVDIP-EL,5,2,choose two of the listed electives,False,21
+2023,COM,CU020BUS01,1,1,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,option,ADVDIP-EL,6,2,choose two of the listed electives,False,21
+2023,COM,CU020BUS01,1,1,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,option,ADVDIP-EL,7,2,choose two of the listed electives,False,21
+2023,COM,CU020BUS01,1,1,14,STA2005S,STA2005S,Linear Models,24,6,option,ADVDIP-EL,8,2,choose two of the listed electives,False,21
+2023,COM,CU020BUS01,1,1,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,16,FTX3044F,FTX3044F,Finance IIA,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,17,FTX3045S,FTX3045S,Finance IIB,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU020BUS01,1,1,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,22
+2023,COM,CU021GSB48,1,1,1,GSB3002F/S,GSB3002F,Leadership and Communication,20,7,core,,,,,False,23
+2023,COM,CU021GSB48,1,1,2,GSB3003F/S,GSB3003F,Economics of Emerging Markets,20,7,core,,,,,False,23
+2023,COM,CU021GSB48,1,1,3,GSB3004F/S,GSB3004F,Finance and Accounting Management,20,7,core,,,,,False,23
+2023,COM,CU021GSB48,1,1,4,GSB3005F/S,GSB3005F,Marketing Management,15,7,core,,,,,False,23
+2023,COM,CU021GSB48,1,1,5,GSB3006F/S,GSB3006F,Human Resources Management,15,7,core,,,,,False,23
+2023,COM,CU021GSB48,1,1,6,GSB3007F/S,GSB3007F,Operations Management,15,7,core,,,,,False,23
+2023,COM,CU021GSB48,1,1,7,GSB3008F/S,GSB3008F,Strategy and Innovation Lab,15,7,core,,,,,False,23
+2023,COM,CU017ACC01,1,1,1,ACC3004H,ACC3004H,Taxation II,18,7,core,,,,,False,24
+2023,COM,CU017ACC01,1,1,2,ACC3009W,ACC3009W,Financial Reporting III,36,7,core,,,,,False,24
+2023,COM,CU017ACC01,1,1,3,ACC3022H,ACC3022H,"Governance, Audit and Assurance II",18,7,core,,,,,False,24
+2023,COM,CU017ACC01,1,1,4,ACC3022H,ACC3022H,Management Accounting II,18,7,core,,,,,False,24
+2023,COM,CU017ACC01,1,1,5,ACC3000H,ACC3000H,Business Analysis and Governance,18,7,core,,,,,False,24
+2023,COM,CU017ACC01,1,1,6,CML2001F,CML2001F,Company Law,18,6,core,,,,,False,24
+2023,COM,CU017ACC01,1,1,7,CML2010Z,CML2010Z,Business Law II,12,6,core,,,,,False,24
+2023,COM,CB003BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,4,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,5,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,6,MAM1031F,MAM1031F,Mathematics 131,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,7,MAM1032S,MAM1032S,Mathematics 132,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,8,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,9,ACC1011S,ACC1011S,Financial Reporting I,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,10,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,1,1,11,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,37
+2023,COM,CB003BUS01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,37
+2023,COM,CB003BUS01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,37
+2023,COM,CB003BUS01,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,37
+2023,COM,CB003BUS01,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,7,core,,,,,False,37
+2023,COM,CB003BUS01,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,37
+2023,COM,CB003BUS01,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,37
+2023,COM,CB003BUS01,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,37
+2023,COM,CB003BUS01,3,1,1,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,37
+2023,COM,CB003BUS01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,37
+2023,COM,CB003BUS01,3,1,3,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,37
+2023,COM,CB003BUS01,3,1,4,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,37
+2023,COM,CB003BUS01,3,1,5,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,37
+2023,COM,CB003BUS01,3,1,6,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,37
+2023,COM,CB003BUS01,3,1,7,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,37
+2023,COM,CB003BUS01,3,1,8,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,37
+2023,COM,CB003BUS01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,37
+2023,COM,CB003BUS01,4,1,2,BUS4027W,BUS4027W,Actuarial Science III: Actuarial Risk Management,54,8,core,,,,,False,37
+2023,COM,CB003BUS01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,37
+2023,COM,CB003BUS01,4,1,4,BUS4029H,BUS4029H,Actuarial Research Project,36,8,core,,,,,False,38
+2023,COM,CB003BUS01,4,1,5,BUS4034S,BUS4034S,Professional Communication (Actuarial Science),27,8,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,4,DOC1003H,DOC1003H,Commerce Case Study,5,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,5,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,6,MAM1031F,MAM1031F,Mathematics 131,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,7,MAM1032S,MAM1032S,Mathematics 132,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,8,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,9,ACC1011S,ACC1011S,Financial Reporting I,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,10,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,1,1,11,STA1006S,STA1006S,Mathematical Statistics I,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,38
+2023,COM,CB003BUS09,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,38
+2023,COM,CB003BUS09,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,38
+2023,COM,CB003BUS09,2,1,4,MAM2000W,MAM2000W,Mathematics II,48,6,core,,,,,False,38
+2023,COM,CB003BUS09,2,1,5,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,7,core,,,,,False,38
+2023,COM,CB003BUS09,2,1,6,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,38
+2023,COM,CB003BUS09,2,1,7,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,38
+2023,COM,CB003BUS09,2,1,8,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,38
+2023,COM,CB003BUS09,3,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,6,core,,,,,False,38
+2023,COM,CB003BUS09,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,38
+2023,COM,CB003BUS09,3,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,38
+2023,COM,CB003BUS09,3,1,4,STA3041F,STA3041F,Stochastic processes & Time Series,36,7,core,,,,,False,38
+2023,COM,CB003BUS09,3,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,38
+2023,COM,CB003BUS09,3,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,38
+2023,COM,CB003BUS09,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,38
+2023,COM,CB003BUS09,3,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,38
+2023,COM,CB003BUS09,3,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,38
+2023,COM,CB003BUS09,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,39
+2023,COM,CB003BUS09,4,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,core,,,,,False,39
+2023,COM,CB003BUS09,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,39
+2023,COM,CB003BUS09,4,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,core,,,,,False,39
+2023,COM,CB003BUS09,4,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,core,,,,,False,39
+2023,COM,CB003BUS09,4,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,core,,,,,False,39
 2023,COM,CB004BUS22,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,39
 2023,COM,CB004BUS22,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,39
 2023,COM,CB004BUS22,1,1,3,ECO1010F,ECO1010F,Microeconomics,18,5,core,,,,,False,39
@@ -7243,42 +7243,42 @@
 2023,COM,CB011ECO04,4,1,11,ECO3023S,ECO3023S,Public Sector Economics,18,7,option,Y4G2,5,2,pick 2 from menu,False,122
 2023,COM,CB011ECO04,4,1,12,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y4G2,6,2,pick 2 from menu,False,122
 2023,COM,CB011ECO04,4,1,13,,,Plus one 2000 or 3000 level course,18,,elective,,,,,False,122
-2023,COM,CB011ECO04,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,122
-2023,COM,CB011ECO04,1,1,2,DOC1103H,DOC1103H,Commerce Case Study,5,5,core,,,,,False,122
-2023,COM,CB011ECO04,1,1,3,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,122
-2023,COM,CB011ECO04,1,1,4,MAM1110H,MAM1110H,Mathematics 1010,18,5,core,,,,,False,122
-2023,COM,CB011ECO04,1,1,5,INF1102F,INF1102F,Foundations of Information Systems,18,5,core,,,,,False,122
-2023,COM,CB011ECO04,1,1,6,ACC1012S,ACC1012S,Business Accounting,18,5,option,Y1G1,1,1,,False,122
-2023,COM,CB011ECO04,1,1,7,ACC1111S,ACC1111S,Financial Reporting I,18,5,option,Y1G1,2,1,,False,122
-2023,COM,CB011ECO04,1,1,8,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,122
-2023,COM,CB011ECO04,1,1,9,STA1100S,STA1100S,Introductory Statistics,18,5,core,,,,,False,122
-2023,COM,CB011ECO04,2,1,1,BUS1036S,BUS1036S,Evidence based Management,18,5,core,,,,,False,122
-2023,COM,CB011ECO04,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,122
-2023,COM,CB011ECO04,2,1,3,PHI2043F/S,PHI2043F,Business Ethics,18,6,core,,,,,False,122
-2023,COM,CB011ECO04,2,1,4,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,122
-2023,COM,CB011ECO04,2,1,5,ECO2007S,ECO2007S,Co-operation and Competition,18,6,core,,,,,False,122
-2023,COM,CB011ECO04,2,1,6,PHI1024F,PHI1024F,Introduction to Philosophy,18,5,option,Y2G1,1,1,pick 1 from menu,False,122
-2023,COM,CB011ECO04,2,1,7,PHI2037F,PHI2037F,Applied Ethics,24,6,option,Y2G1,2,1,pick 1 from menu,False,122
-2023,COM,CB011ECO04,2,1,8,POL1004F,POL1004F,Introduction to Politics,18,5,option,Y2G1,3,1,pick 1 from menu,False,122
-2023,COM,CB011ECO04,2,1,9,ECO2008S,ECO2008S,Development Economics,18,6,option,Y2G1,4,1,pick 1 from menu,False,122
-2023,COM,CB011ECO04,2,1,10,POL1005S,POL1005S,Introduction to Politics B,18,5,option,Y2G1,5,1,pick 1 from menu,False,122
-2023,COM,CB011ECO04,2,1,11,SOC1005S,SOC1005S,Individual & Society,18,5,option,Y2G1,6,1,pick 1 from menu,False,123
-2023,COM,CB011ECO04,3,1,1,ECO3020F,ECO3020F,Advanced Macro & Microeconomics,18,7,core,,,,,False,123
-2023,COM,CB011ECO04,3,1,2,PVL1003W,PVL1003W,Foundations of South African Law**,36,5,core,,,,,False,123
-2023,COM,CB011ECO04,3,1,3,PVL1004F,PVL1004F,South African Private Law: System and Context**,18,5,core,,,,,False,123
-2023,COM,CB011ECO04,3,1,4,PVL1008H,PVL1008H,Law of Persons and Family**,18,5,core,,,,,False,123
-2023,COM,CB011ECO04,3,1,5,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y3G1,1,1,,False,123
-2023,COM,CB011ECO04,3,1,6,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,option,Y3G1,2,1,,False,123
-2023,COM,CB011ECO04,4,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,123
-2023,COM,CB011ECO04,4,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,123
-2023,COM,CB011ECO04,4,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,123
-2023,COM,CB011ECO04,4,1,4,ECO3009F,ECO3009F,Natural Resource Economics,18,7,option,Y4G1,1,2,pick 2 from menu,False,123
-2023,COM,CB011ECO04,4,1,5,ECO3024F,ECO3024F,International Trade and Finance,18,7,option,Y4G1,2,2,pick 2 from menu,False,123
-2023,COM,CB011ECO04,4,1,6,ECO3016F,ECO3016F,History of Economic Thought,18,7,option,Y4G1,3,2,pick 2 from menu,False,123
-2023,COM,CB011ECO04,4,1,7,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,option,Y4G1,4,2,pick 2 from menu,False,123
-2023,COM,CB011ECO04,4,1,8,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y4G1,5,2,pick 2 from menu,False,123
-2023,COM,CB011ECO04,4,1,9,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,option,Y4G1,6,2,pick 2 from menu,False,123
-2023,COM,CB011ECO04,4,1,10,ECO3023S,ECO3023S,Public Sector Economics,18,7,option,Y4G1,7,2,pick 2 from menu,False,123
+2023,COM,CB011ECO03,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,122
+2023,COM,CB011ECO03,1,1,2,DOC1103H,DOC1103H,Commerce Case Study,5,5,core,,,,,False,122
+2023,COM,CB011ECO03,1,1,3,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,122
+2023,COM,CB011ECO03,1,1,4,MAM1110H,MAM1110H,Mathematics 1010,18,5,core,,,,,False,122
+2023,COM,CB011ECO03,1,1,5,INF1102F,INF1102F,Foundations of Information Systems,18,5,core,,,,,False,122
+2023,COM,CB011ECO03,1,1,6,ACC1012S,ACC1012S,Business Accounting,18,5,option,Y1G1,1,1,,False,122
+2023,COM,CB011ECO03,1,1,7,ACC1111S,ACC1111S,Financial Reporting I,18,5,option,Y1G1,2,1,,False,122
+2023,COM,CB011ECO03,1,1,8,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,122
+2023,COM,CB011ECO03,1,1,9,STA1100S,STA1100S,Introductory Statistics,18,5,core,,,,,False,122
+2023,COM,CB011ECO03,2,1,1,BUS1036S,BUS1036S,Evidence based Management,18,5,core,,,,,False,122
+2023,COM,CB011ECO03,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,122
+2023,COM,CB011ECO03,2,1,3,PHI2043F/S,PHI2043F,Business Ethics,18,6,core,,,,,False,122
+2023,COM,CB011ECO03,2,1,4,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,122
+2023,COM,CB011ECO03,2,1,5,ECO2007S,ECO2007S,Co-operation and Competition,18,6,core,,,,,False,122
+2023,COM,CB011ECO03,2,1,6,PHI1024F,PHI1024F,Introduction to Philosophy,18,5,option,Y2G1,1,1,pick 1 from menu,False,122
+2023,COM,CB011ECO03,2,1,7,PHI2037F,PHI2037F,Applied Ethics,24,6,option,Y2G1,2,1,pick 1 from menu,False,122
+2023,COM,CB011ECO03,2,1,8,POL1004F,POL1004F,Introduction to Politics,18,5,option,Y2G1,3,1,pick 1 from menu,False,122
+2023,COM,CB011ECO03,2,1,9,ECO2008S,ECO2008S,Development Economics,18,6,option,Y2G1,4,1,pick 1 from menu,False,122
+2023,COM,CB011ECO03,2,1,10,POL1005S,POL1005S,Introduction to Politics B,18,5,option,Y2G1,5,1,pick 1 from menu,False,122
+2023,COM,CB011ECO03,2,1,11,SOC1005S,SOC1005S,Individual & Society,18,5,option,Y2G1,6,1,pick 1 from menu,False,123
+2023,COM,CB011ECO03,3,1,1,ECO3020F,ECO3020F,Advanced Macro & Microeconomics,18,7,core,,,,,False,123
+2023,COM,CB011ECO03,3,1,2,PVL1003W,PVL1003W,Foundations of South African Law**,36,5,core,,,,,False,123
+2023,COM,CB011ECO03,3,1,3,PVL1004F,PVL1004F,South African Private Law: System and Context**,18,5,core,,,,,False,123
+2023,COM,CB011ECO03,3,1,4,PVL1008H,PVL1008H,Law of Persons and Family**,18,5,core,,,,,False,123
+2023,COM,CB011ECO03,3,1,5,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y3G1,1,1,,False,123
+2023,COM,CB011ECO03,3,1,6,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,option,Y3G1,2,1,,False,123
+2023,COM,CB011ECO03,4,1,1,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,123
+2023,COM,CB011ECO03,4,1,2,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,123
+2023,COM,CB011ECO03,4,1,3,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,123
+2023,COM,CB011ECO03,4,1,4,ECO3009F,ECO3009F,Natural Resource Economics,18,7,option,Y4G1,1,2,pick 2 from menu,False,123
+2023,COM,CB011ECO03,4,1,5,ECO3024F,ECO3024F,International Trade and Finance,18,7,option,Y4G1,2,2,pick 2 from menu,False,123
+2023,COM,CB011ECO03,4,1,6,ECO3016F,ECO3016F,History of Economic Thought,18,7,option,Y4G1,3,2,pick 2 from menu,False,123
+2023,COM,CB011ECO03,4,1,7,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,option,Y4G1,4,2,pick 2 from menu,False,123
+2023,COM,CB011ECO03,4,1,8,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,option,Y4G1,5,2,pick 2 from menu,False,123
+2023,COM,CB011ECO03,4,1,9,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,option,Y4G1,6,2,pick 2 from menu,False,123
+2023,COM,CB011ECO03,4,1,10,ECO3023S,ECO3023S,Public Sector Economics,18,7,option,Y4G1,7,2,pick 2 from menu,False,123
 2023,COM,CB011INF01,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,123
 2023,COM,CB011INF01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,123
 2023,COM,CB011INF01,1,1,3,DOC1103H,DOC1103H,Commerce Case Study,5,5,core,,,,,False,123
@@ -7392,40 +7392,40 @@
 2023,COM,CB011BUS06,3,1,8,,,Plus 2 approved 2000 level electives (see Page 96-97),36,6,elective,,,,,False,127
 2023,COM,CB011BUS06,4,1,1,BUS3039F,BUS3039F,People Management#,18,7,core,,,,,False,127
 2023,COM,CB011BUS06,4,1,2,,,Plus 6 approved 3000 level electives,0,0,elective,,,,,False,127
-2024,COM,CU020BUS01,1,0,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,16
-2024,COM,CU020BUS01,1,0,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,16
-2024,COM,CU020BUS01,1,0,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,16
-2024,COM,CU020BUS01,1,0,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,16
-2024,COM,CU020BUS01,1,0,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,16
-2024,COM,CU020BUS01,1,0,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,16
-2024,COM,CU020BUS01,1,0,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,option,ADVDIP-EL,1,2,choose two of the listed electives,False,16
-2024,COM,CU020BUS01,1,0,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,option,ADVDIP-EL,2,2,choose two of the listed electives,False,16
-2024,COM,CU020BUS01,1,0,9,ACC1006F,ACC1006F,Financial Accounting,18,5,option,ADVDIP-EL,3,2,choose two of the listed electives,False,16
-2024,COM,CU020BUS01,1,0,10,ACC1011S,ACC1011S,"Financial Reporting, I",18,5,option,ADVDIP-EL,4,2,choose two of the listed electives,False,16
-2024,COM,CU020BUS01,1,0,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,6,option,ADVDIP-EL,5,2,choose two of the listed electives,False,16
-2024,COM,CU020BUS01,1,0,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,option,ADVDIP-EL,6,2,choose two of the listed electives,False,16
-2024,COM,CU020BUS01,1,0,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,option,ADVDIP-EL,7,2,choose two of the listed electives,False,16
-2024,COM,CU020BUS01,1,0,14,STA2005S,STA2005S,Linear Models,24,6,option,ADVDIP-EL,8,2,choose two of the listed electives,False,16
-2024,COM,CU020BUS01,1,0,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,16,FTX3044F,FTX3044F,Finance IIA,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,17,FTX3045S,FTX3045S,Finance IIB,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,16
-2024,COM,CU020BUS01,1,0,26,,,A candidate may obtain credits in respect of equivalent courses completed elsewhere for one prescribed course and up to two elective courses,,,elective,,,,,False,17
-2024,COM,CU017ACC01,1,0,1,ACC3004W,ACC3004W,Taxation II,32,7,core,,,,,False,18
-2024,COM,CU017ACC01,1,0,2,ACC3009W,ACC3009W,Financial Reporting III,36,7,core,,,,,False,18
-2024,COM,CU017ACC01,1,0,3,ACC3022W,ACC3022W,"Governance, Audit and Assurance II",26,7,core,,,,,False,18
-2024,COM,CU017ACC01,1,0,4,ACC3023W,ACC3023W,Management Accounting II,26,7,core,,,,,False,18
-2024,COM,CU017ACC01,1,0,5,ACC3001F,ACC3001F,Business Analysis and Governance I,13,7,core,,,,,False,18
-2024,COM,CU017ACC01,1,0,6,ACC3002S,ACC3002S,Business Analysis and Governance II,11,7,core,,,,,False,18
-2024,COM,CU017ACC01,1,0,7,CML2001F,CML2001F,Company Law,18,6,core,,,,,False,18
-2024,COM,CU017ACC01,1,0,8,CML2010Z,CML2010Z,Business Law II,12,6,core,,,,,False,18
+2024,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,16
+2024,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,16
+2024,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,16
+2024,COM,CU020BUS01,1,1,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,16
+2024,COM,CU020BUS01,1,1,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,16
+2024,COM,CU020BUS01,1,1,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,16
+2024,COM,CU020BUS01,1,1,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,option,ADVDIP-EL,1,2,choose two of the listed electives,False,16
+2024,COM,CU020BUS01,1,1,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,option,ADVDIP-EL,2,2,choose two of the listed electives,False,16
+2024,COM,CU020BUS01,1,1,9,ACC1006F,ACC1006F,Financial Accounting,18,5,option,ADVDIP-EL,3,2,choose two of the listed electives,False,16
+2024,COM,CU020BUS01,1,1,10,ACC1011S,ACC1011S,"Financial Reporting, I",18,5,option,ADVDIP-EL,4,2,choose two of the listed electives,False,16
+2024,COM,CU020BUS01,1,1,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,6,option,ADVDIP-EL,5,2,choose two of the listed electives,False,16
+2024,COM,CU020BUS01,1,1,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,option,ADVDIP-EL,6,2,choose two of the listed electives,False,16
+2024,COM,CU020BUS01,1,1,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,option,ADVDIP-EL,7,2,choose two of the listed electives,False,16
+2024,COM,CU020BUS01,1,1,14,STA2005S,STA2005S,Linear Models,24,6,option,ADVDIP-EL,8,2,choose two of the listed electives,False,16
+2024,COM,CU020BUS01,1,1,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,16,FTX3044F,FTX3044F,Finance IIA,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,17,FTX3045S,FTX3045S,Finance IIB,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,16
+2024,COM,CU020BUS01,1,1,26,,,A candidate may obtain credits in respect of equivalent courses completed elsewhere for one prescribed course and up to two elective courses,,,elective,,,,,False,17
+2024,COM,CU017ACC01,1,1,1,ACC3004W,ACC3004W,Taxation II,32,7,core,,,,,False,18
+2024,COM,CU017ACC01,1,1,2,ACC3009W,ACC3009W,Financial Reporting III,36,7,core,,,,,False,18
+2024,COM,CU017ACC01,1,1,3,ACC3022W,ACC3022W,"Governance, Audit and Assurance II",26,7,core,,,,,False,18
+2024,COM,CU017ACC01,1,1,4,ACC3023W,ACC3023W,Management Accounting II,26,7,core,,,,,False,18
+2024,COM,CU017ACC01,1,1,5,ACC3001F,ACC3001F,Business Analysis and Governance I,13,7,core,,,,,False,18
+2024,COM,CU017ACC01,1,1,6,ACC3002S,ACC3002S,Business Analysis and Governance II,11,7,core,,,,,False,18
+2024,COM,CU017ACC01,1,1,7,CML2001F,CML2001F,Company Law,18,6,core,,,,,False,18
+2024,COM,CU017ACC01,1,1,8,CML2010Z,CML2010Z,Business Law II,12,6,core,,,,,False,18
 2024,COM,CB003BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,27
 2024,COM,CB003BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,27
 2024,COM,CB003BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,27
@@ -7872,43 +7872,43 @@
 2024,COM,CB025BUS01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,38
 2024,COM,CB025BUS01,4,1,4,BUS4029H,BUS4029H,Actuarial Research Project,36,8,core,,,,,False,38
 2024,COM,CB025BUS01,4,1,5,BUS4034S,BUS4034S,Professional Communication (Actuarial Science),27,8,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,4,DOC1103H,DOC1103H,Skills for Commerce,2,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,5,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,6,MAM1031F,MAM1031F,Mathematics 131,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,7,MAM1032S,MAM1032S,Mathematics 132,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,8,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,9,ACC1111S,ACC1111S,Financial Reporting I,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,10,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,1,1,11,STA1106H,STA1106H,Mathematical Statistics I,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,4,MAM2010F,MAM2010F,Advanced Calculus (2AC),12,6,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,5,MAM2011F,MAM2011F,Linear Algebra (2LA),12,6,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,6,MAM2012S,MAM2012S,Differential Equations (2DE),12,6,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,7,MAM2014S,MAM2014S,Real Analysis (2RA),12,6,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,8,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,6,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,9,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,10,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,38
-2024,COM,CB025BUS01,2,1,11,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,38
-2024,COM,CB025BUS01,3,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,7,core,,,,,False,38
-2024,COM,CB025BUS01,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,38
-2024,COM,CB025BUS01,3,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,38
-2024,COM,CB025BUS01,3,1,4,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,38
-2024,COM,CB025BUS01,3,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,38
-2024,COM,CB025BUS01,3,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,38
-2024,COM,CB025BUS01,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,38
-2024,COM,CB025BUS01,3,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,38
-2024,COM,CB025BUS01,3,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,38
-2024,COM,CB025BUS01,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,39
-2024,COM,CB025BUS01,4,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,core,,,,,False,39
-2024,COM,CB025BUS01,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,39
-2024,COM,CB025BUS01,4,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,core,,,,,False,39
-2024,COM,CB025BUS01,4,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,core,,,,,False,39
-2024,COM,CB025BUS01,4,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,core,,,,,False,39
+2024,COM,CB025BUS09,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,4,DOC1103H,DOC1103H,Skills for Commerce,2,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,5,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,6,MAM1031F,MAM1031F,Mathematics 131,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,7,MAM1032S,MAM1032S,Mathematics 132,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,8,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,9,ACC1111S,ACC1111S,Financial Reporting I,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,10,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,1,1,11,STA1106H,STA1106H,Mathematical Statistics I,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,2,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,3,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,4,MAM2010F,MAM2010F,Advanced Calculus (2AC),12,6,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,5,MAM2011F,MAM2011F,Linear Algebra (2LA),12,6,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,6,MAM2012S,MAM2012S,Differential Equations (2DE),12,6,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,7,MAM2014S,MAM2014S,Real Analysis (2RA),12,6,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,8,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,6,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,9,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,10,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,38
+2024,COM,CB025BUS09,2,1,11,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,38
+2024,COM,CB025BUS09,3,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,7,core,,,,,False,38
+2024,COM,CB025BUS09,3,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,38
+2024,COM,CB025BUS09,3,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,38
+2024,COM,CB025BUS09,3,1,4,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,38
+2024,COM,CB025BUS09,3,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,38
+2024,COM,CB025BUS09,3,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,38
+2024,COM,CB025BUS09,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,38
+2024,COM,CB025BUS09,3,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,38
+2024,COM,CB025BUS09,3,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,38
+2024,COM,CB025BUS09,4,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,39
+2024,COM,CB025BUS09,4,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,core,,,,,False,39
+2024,COM,CB025BUS09,4,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,39
+2024,COM,CB025BUS09,4,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,core,,,,,False,39
+2024,COM,CB025BUS09,4,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,core,,,,,False,39
+2024,COM,CB025BUS09,4,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,core,,,,,False,39
 2024,COM,CB024BUS22,1,1,1,ACC1020H,ACC1020H,Accounting for Non-Specialists,24,5,core,,,,,False,39
 2024,COM,CB024BUS22,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,39
 2024,COM,CB024BUS22,1,1,3,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,39
@@ -8282,43 +8282,43 @@
 2024,COM,CB018BUS01,5,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,48
 2024,COM,CB018BUS01,5,1,4,BUS4029H,BUS4029H,Actuarial Research Project,36,8,core,,,,,False,48
 2024,COM,CB018BUS01,5,1,5,BUS4034S,BUS4034S,Professional Communication (Actuarial Science),27,8,core,,,,,False,48
-2024,COM,CB018BUS01,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,48
-2024,COM,CB018BUS01,1,1,2,DOC1103H,DOC1103H,Skills for Commerce,2,5,core,,,,,False,48
-2024,COM,CB018BUS01,1,1,3,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,48
-2024,COM,CB018BUS01,1,1,4,CSC1010H,CSC1010H,Computer Science 1010,18,5,core,,,,,False,48
-2024,COM,CB018BUS01,1,1,5,MAM1005H,MAM1005H,Mathematics 1005,18,5,core,,,,,False,48
-2024,COM,CB018BUS01,1,1,6,ACC1111S,ACC1111S,Financial Reporting I,18,5,core,,,,,False,48
-2024,COM,CB018BUS01,1,1,7,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,48
-2024,COM,CB018BUS01,2,1,1,BUS1036S,BUS1036S,Evidence-based Management,18,5,core,,,,,False,49
-2024,COM,CB018BUS01,2,1,2,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,49
-2024,COM,CB018BUS01,2,1,3,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,49
-2024,COM,CB018BUS01,2,1,4,STA1106H,STA1106H,Mathematical Statistics I,18,5,core,,,,,False,49
-2024,COM,CB018BUS01,2,1,5,MAM1006H,MAM1006H,Mathematics 1006,12,6,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,2,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,3,MAM2010F,MAM2010F,Advanced Calculus (2AC),12,6,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,4,MAM2011F,MAM2011F,Linear Algebra (2LA),12,6,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,5,MAM2012S,MAM2012S,Differential Equations (2DE),12,6,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,6,MAM2014S,MAM2014S,Real Analysis (2RA),12,6,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,7,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,6,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,8,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,9,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,49
-2024,COM,CB018BUS01,3,1,10,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,49
-2024,COM,CB018BUS01,4,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,7,core,,,,,False,49
-2024,COM,CB018BUS01,4,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,49
-2024,COM,CB018BUS01,4,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,49
-2024,COM,CB018BUS01,4,1,4,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,49
-2024,COM,CB018BUS01,4,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,49
-2024,COM,CB018BUS01,4,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,49
-2024,COM,CB018BUS01,4,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,49
-2024,COM,CB018BUS01,4,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,49
-2024,COM,CB018BUS01,4,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,49
-2024,COM,CB018BUS01,5,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,49
-2024,COM,CB018BUS01,5,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,core,,,,,False,49
-2024,COM,CB018BUS01,5,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,49
-2024,COM,CB018BUS01,5,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,core,,,,,False,49
-2024,COM,CB018BUS01,5,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,core,,,,,False,49
-2024,COM,CB018BUS01,5,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,core,,,,,False,49
+2024,COM,CB018BUS09,1,1,1,ACC1106F,ACC1106F,Financial Accounting,18,5,core,,,,,False,48
+2024,COM,CB018BUS09,1,1,2,DOC1103H,DOC1103H,Skills for Commerce,2,5,core,,,,,False,48
+2024,COM,CB018BUS09,1,1,3,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,48
+2024,COM,CB018BUS09,1,1,4,CSC1010H,CSC1010H,Computer Science 1010,18,5,core,,,,,False,48
+2024,COM,CB018BUS09,1,1,5,MAM1005H,MAM1005H,Mathematics 1005,18,5,core,,,,,False,48
+2024,COM,CB018BUS09,1,1,6,ACC1111S,ACC1111S,Financial Reporting I,18,5,core,,,,,False,48
+2024,COM,CB018BUS09,1,1,7,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,48
+2024,COM,CB018BUS09,2,1,1,BUS1036S,BUS1036S,Evidence-based Management,18,5,core,,,,,False,49
+2024,COM,CB018BUS09,2,1,2,BUS1003H,BUS1003H,Introduction to Financial Risk,18,5,core,,,,,False,49
+2024,COM,CB018BUS09,2,1,3,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,49
+2024,COM,CB018BUS09,2,1,4,STA1106H,STA1106H,Mathematical Statistics I,18,5,core,,,,,False,49
+2024,COM,CB018BUS09,2,1,5,MAM1006H,MAM1006H,Mathematics 1006,12,6,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,1,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,2,STA2004F,STA2004F,Statistical Theory & Inference,24,6,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,3,MAM2010F,MAM2010F,Advanced Calculus (2AC),12,6,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,4,MAM2011F,MAM2011F,Linear Algebra (2LA),12,6,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,5,MAM2012S,MAM2012S,Differential Equations (2DE),12,6,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,6,MAM2014S,MAM2014S,Real Analysis (2RA),12,6,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,7,BUS2016H,BUS2016H,Actuarial Science I: Financial Mathematics,18,6,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,8,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,9,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,49
+2024,COM,CB018BUS09,3,1,10,STA2005S,STA2005S,Linear Models,24,6,core,,,,,False,49
+2024,COM,CB018BUS09,4,1,1,BUS2033F/S,BUS2033F,Professional Communication,18,7,core,,,,,False,49
+2024,COM,CB018BUS09,4,1,2,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,49
+2024,COM,CB018BUS09,4,1,3,FTX3044F,FTX3044F,Finance IIA,18,7,core,,,,,False,49
+2024,COM,CB018BUS09,4,1,4,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,49
+2024,COM,CB018BUS09,4,1,5,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,49
+2024,COM,CB018BUS09,4,1,6,FTX3045S,FTX3045S,Finance IIB,18,7,core,,,,,False,49
+2024,COM,CB018BUS09,4,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,49
+2024,COM,CB018BUS09,4,1,8,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,49
+2024,COM,CB018BUS09,4,1,9,STA3048S,STA3048S,Statistical Modelling and Bayesian Analysis,30,7,core,,,,,False,49
+2024,COM,CB018BUS09,5,1,1,BUS4028F,BUS4028F,Actuarial Science III: Financial Economics,21,8,core,,,,,False,49
+2024,COM,CB018BUS09,5,1,2,FTX4086F,FTX4086F,Alternative Investments,18,8,core,,,,,False,49
+2024,COM,CB018BUS09,5,1,3,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,49
+2024,COM,CB018BUS09,5,1,4,BUS4053H,BUS4053H,Quantitative Finance Project,36,8,core,,,,,False,49
+2024,COM,CB018BUS09,5,1,5,BUS4087S,BUS4087S,Quantitative Finance Selected Topics,18,8,core,,,,,False,49
+2024,COM,CB018BUS09,5,1,6,FTX4056S,FTX4056S,Applied Investments,18,8,core,,,,,False,49
 2024,COM,CB015BUS22,1,1,1,ACC1020H,ACC1020H,Accounting for non-specialists,24,5,core,,,,,False,49
 2024,COM,CB015BUS22,1,1,2,BUS1036S,BUS1036S,Evidenced-based Management,18,5,core,,,,,False,49
 2024,COM,CB015BUS22,1,1,3,DOC1103H,DOC1103H,Skills for Commerce,2,5,core,,,,,False,49
@@ -8558,53 +8558,53 @@
 2024,COM,CB015ECO01,5,1,18,ECO4114S,ECO4114S,The Economics of Conflict,14,8,option,Y5G1,12,3,pick 3 from menu,False,55
 2024,COM,CB015ECO01,5,1,19,ECO4131S,ECO4131S,Digital Economics,14,8,option,Y5G1,13,3,pick 3 from menu,False,55
 2024,COM,CB015ECO01,5,1,20,ECO4132S,ECO4132S,"Economics of Inequality: Causes, Consequences and Policy",14,8,option,Y5G1,14,3,pick 3 from menu,False,55
-2024,COM,CB015ECO01,1,1,1,ACC1020H,ACC1020H,Accounting for non-specialists,24,5,core,,,,,False,55
-2024,COM,CB015ECO01,1,1,2,DOC1103H,DOC1103H,Skills for Commerce,2,5,core,,,,,False,55
-2024,COM,CB015ECO01,1,1,3,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,55
-2024,COM,CB015ECO01,1,1,4,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,55
-2024,COM,CB015ECO01,1,1,5,INF1102F,INF1102F,Foundations of Information Systems,18,5,core,,,,,False,55
-2024,COM,CB015ECO01,1,1,6,MAM1110F,MAM1110F,Mathematics 1010,18,5,core,,,,,False,55
-2024,COM,CB015ECO01,1,1,7,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,55
-2024,COM,CB015ECO01,2,1,1,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,56
-2024,COM,CB015ECO01,2,1,2,STA1000F,STA1000F,Introductory Statistics,18,5,core,,,,,False,56
-2024,COM,CB015ECO01,2,1,3,STA2020S,STA2020S,Applied Statistics,24,6,core,,,,,False,56
-2024,COM,CB015ECO01,2,1,4,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,56
-2024,COM,CB015ECO01,2,1,5,ECO2007S,ECO2007S,Co-operation and Competition,18,6,core,,,,,False,56
-2024,COM,CB015ECO01,2,1,6,MAM1112S,MAM1112S,Mathematics 1012,18,5,core,,,,,False,56
-2024,COM,CB015ECO01,3,1,1,BUS2010F,BUS2010F,Marketing I,18,6,core,,,,,False,56
-2024,COM,CB015ECO01,3,1,2,FTX2020F,FTX2020F,Business Finance,18,6,core,,,,,False,56
-2024,COM,CB015ECO01,3,1,3,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,56
-2024,COM,CB015ECO01,3,1,4,PVL1003W,PVL1003W,Foundations of South African Law**,36,5,core,,,,,False,56
-2024,COM,CB015ECO01,3,1,5,PVL1004F,PVL1004F,South African Private Law: System and Context**,18,5,core,,,,,False,56
-2024,COM,CB015ECO01,3,1,6,PVL1008H,PVL1008H,Law of Persons and Family**,18,5,core,,,,,False,56
-2024,COM,CB015ECO01,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,56
-2024,COM,CB015ECO01,4,1,1,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,56
-2024,COM,CB015ECO01,4,1,2,ECO3020F,ECO3020F,Advanced Macro & Microeconomics,18,7,core,,,,,False,56
-2024,COM,CB015ECO01,4,1,3,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,56
-2024,COM,CB015ECO01,4,1,4,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,56
-2024,COM,CB015ECO01,4,1,5,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,56
-2024,COM,CB015ECO01,4,1,6,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,core,,,,,False,56
-2024,COM,CB015ECO01,4,1,7,,,Plus 1 other NQF level 7 ECO course,18,7,elective,,,,,False,56
-2024,COM,CB015ECO01,5,1,1,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,56
-2024,COM,CB015ECO01,5,1,2,ECO4006F,ECO4006F,Macroeconomics,16,8,core,,,,,False,56
-2024,COM,CB015ECO01,5,1,3,ECO4007F,ECO4007F,Microeconomics,16,8,core,,,,,False,56
-2024,COM,CB015ECO01,5,1,4,ECO4016F,ECO4016F,Econometrics,16,8,core,,,,,False,56
-2024,COM,CB015ECO01,5,1,5,ECO4112F,ECO4112F,Mathematics and Statistics for Economists,0,8,core,,,,,False,56
-2024,COM,CB015ECO01,5,1,6,ECO4021W,ECO4021W,Research and Writing I (Long Paper),30,8,core,,,,,False,56
-2024,COM,CB015ECO01,5,1,7,ECO4013S,ECO4013S,International Finance,14,8,option,Y5G1,1,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,8,ECO4020S,ECO4020S,Economic Challenges in Africa,14,8,option,Y5G1,2,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,9,ECO4026S,ECO4026S,The Economy and its Financial Markets,14,8,option,Y5G1,3,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,10,ECO4027S,ECO4027S,The Analysis of Survey Data,14,8,option,Y5G1,4,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,11,ECO4028S,ECO4028S,Policy Analysis,14,8,option,Y5G1,5,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,12,ECO4029S,ECO4029S,Experiments in Economics,14,8,option,Y5G1,6,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,13,ECO4032S,ECO4032S,"Economics of Industry, Regulation and Firms",14,8,option,Y5G1,7,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,14,ECO4051S,ECO4051S,Development Economics,14,8,option,Y5G1,8,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,15,ECO4052S,ECO4052S,Environmental Economics,14,8,option,Y5G1,9,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,16,ECO4053S,ECO4053S,Financial Economics,14,8,option,Y5G1,10,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,17,ECO4113S,ECO4113S,Labour Economics,14,8,option,Y5G1,11,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,18,ECO4114S,ECO4114S,The Economics of Conflict,14,8,option,Y5G1,12,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,19,ECO4131S,ECO4131S,Digital Economics,14,8,option,Y5G1,13,3,pick 3 from menu,False,56
-2024,COM,CB015ECO01,5,1,20,ECO4132S,ECO4132S,"Economics of Inequality: Causes, Consequences and Policy",14,8,option,Y5G1,14,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,1,1,1,ACC1020H,ACC1020H,Accounting for non-specialists,24,5,core,,,,,False,55
+2024,COM,CB015ECO03,1,1,2,DOC1103H,DOC1103H,Skills for Commerce,2,5,core,,,,,False,55
+2024,COM,CB015ECO03,1,1,3,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,55
+2024,COM,CB015ECO03,1,1,4,ECO1110F,ECO1110F,Microeconomics,18,5,core,,,,,False,55
+2024,COM,CB015ECO03,1,1,5,INF1102F,INF1102F,Foundations of Information Systems,18,5,core,,,,,False,55
+2024,COM,CB015ECO03,1,1,6,MAM1110F,MAM1110F,Mathematics 1010,18,5,core,,,,,False,55
+2024,COM,CB015ECO03,1,1,7,ECO1011S,ECO1011S,Macroeconomics,18,5,core,,,,,False,55
+2024,COM,CB015ECO03,2,1,1,ECO2003F,ECO2003F,Microeconomics II,18,6,core,,,,,False,56
+2024,COM,CB015ECO03,2,1,2,STA1000F,STA1000F,Introductory Statistics,18,5,core,,,,,False,56
+2024,COM,CB015ECO03,2,1,3,STA2020S,STA2020S,Applied Statistics,24,6,core,,,,,False,56
+2024,COM,CB015ECO03,2,1,4,ECO2004S,ECO2004S,Macroeconomics II,18,6,core,,,,,False,56
+2024,COM,CB015ECO03,2,1,5,ECO2007S,ECO2007S,Co-operation and Competition,18,6,core,,,,,False,56
+2024,COM,CB015ECO03,2,1,6,MAM1112S,MAM1112S,Mathematics 1012,18,5,core,,,,,False,56
+2024,COM,CB015ECO03,3,1,1,BUS2010F,BUS2010F,Marketing I,18,6,core,,,,,False,56
+2024,COM,CB015ECO03,3,1,2,FTX2020F,FTX2020F,Business Finance,18,6,core,,,,,False,56
+2024,COM,CB015ECO03,3,1,3,FTX2024S,FTX2024S,Financial Management,18,6,core,,,,,False,56
+2024,COM,CB015ECO03,3,1,4,PVL1003W,PVL1003W,Foundations of South African Law**,36,5,core,,,,,False,56
+2024,COM,CB015ECO03,3,1,5,PVL1004F,PVL1004F,South African Private Law: System and Context**,18,5,core,,,,,False,56
+2024,COM,CB015ECO03,3,1,6,PVL1008H,PVL1008H,Law of Persons and Family**,18,5,core,,,,,False,56
+2024,COM,CB015ECO03,3,1,7,PHI2043S,PHI2043S,Business Ethics,18,6,core,,,,,False,56
+2024,COM,CB015ECO03,4,1,1,BUS3039F,BUS3039F,People Management,18,7,core,,,,,False,56
+2024,COM,CB015ECO03,4,1,2,ECO3020F,ECO3020F,Advanced Macro & Microeconomics,18,7,core,,,,,False,56
+2024,COM,CB015ECO03,4,1,3,PBL2000W,PBL2000W,Constitutional Law,36,7,core,,,,,False,56
+2024,COM,CB015ECO03,4,1,4,PVL2003H,PVL2003H,Law of Succession,18,7,core,,,,,False,56
+2024,COM,CB015ECO03,4,1,5,PVL2002H,PVL2002H,Law of Property,18,6,core,,,,,False,56
+2024,COM,CB015ECO03,4,1,6,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,core,,,,,False,56
+2024,COM,CB015ECO03,4,1,7,,,Plus 1 other NQF level 7 ECO course,18,7,elective,,,,,False,56
+2024,COM,CB015ECO03,5,1,1,BUS4050W,BUS4050W,Strategic Thinking,36,8,core,,,,,False,56
+2024,COM,CB015ECO03,5,1,2,ECO4006F,ECO4006F,Macroeconomics,16,8,core,,,,,False,56
+2024,COM,CB015ECO03,5,1,3,ECO4007F,ECO4007F,Microeconomics,16,8,core,,,,,False,56
+2024,COM,CB015ECO03,5,1,4,ECO4016F,ECO4016F,Econometrics,16,8,core,,,,,False,56
+2024,COM,CB015ECO03,5,1,5,ECO4112F,ECO4112F,Mathematics and Statistics for Economists,0,8,core,,,,,False,56
+2024,COM,CB015ECO03,5,1,6,ECO4021W,ECO4021W,Research and Writing I (Long Paper),30,8,core,,,,,False,56
+2024,COM,CB015ECO03,5,1,7,ECO4013S,ECO4013S,International Finance,14,8,option,Y5G1,1,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,8,ECO4020S,ECO4020S,Economic Challenges in Africa,14,8,option,Y5G1,2,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,9,ECO4026S,ECO4026S,The Economy and its Financial Markets,14,8,option,Y5G1,3,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,10,ECO4027S,ECO4027S,The Analysis of Survey Data,14,8,option,Y5G1,4,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,11,ECO4028S,ECO4028S,Policy Analysis,14,8,option,Y5G1,5,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,12,ECO4029S,ECO4029S,Experiments in Economics,14,8,option,Y5G1,6,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,13,ECO4032S,ECO4032S,"Economics of Industry, Regulation and Firms",14,8,option,Y5G1,7,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,14,ECO4051S,ECO4051S,Development Economics,14,8,option,Y5G1,8,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,15,ECO4052S,ECO4052S,Environmental Economics,14,8,option,Y5G1,9,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,16,ECO4053S,ECO4053S,Financial Economics,14,8,option,Y5G1,10,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,17,ECO4113S,ECO4113S,Labour Economics,14,8,option,Y5G1,11,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,18,ECO4114S,ECO4114S,The Economics of Conflict,14,8,option,Y5G1,12,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,19,ECO4131S,ECO4131S,Digital Economics,14,8,option,Y5G1,13,3,pick 3 from menu,False,56
+2024,COM,CB015ECO03,5,1,20,ECO4132S,ECO4132S,"Economics of Inequality: Causes, Consequences and Policy",14,8,option,Y5G1,14,3,pick 3 from menu,False,56
 2024,COM,CB015BUS07,1,1,1,ACC1020H,ACC1020H,Accounting for non-specialists,24,5,core,,,,,False,57
 2024,COM,CB015BUS07,1,1,2,CML1001F,CML1001F,Business Law I,18,5,core,,,,,False,57
 2024,COM,CB015BUS07,1,1,3,BUS1036S,BUS1036S,Evidence-Based Management,18,5,core,,,,,False,57
@@ -9710,39 +9710,39 @@
 2024,COM,CB011BUS06,3,1,7,,,Plus 2 approved 2000 level electives,36,6,elective,,,,,False,90
 2024,COM,CB011BUS06,4,1,1,BUS3039F,BUS3039F,People Management#,18,7,core,,,,,False,90
 2024,COM,CB011BUS06,4,1,2,,,Plus 3 approved 3000 level electives totalling a minimum of 102 credits at,,,elective,,,,,False,90
-2025,COM,CU020BUS01,1,0,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,20
-2025,COM,CU020BUS01,1,0,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,20
-2025,COM,CU020BUS01,1,0,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,20
-2025,COM,CU020BUS01,1,0,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,20
-2025,COM,CU020BUS01,1,0,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,20
-2025,COM,CU020BUS01,1,0,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,20
-2025,COM,CU020BUS01,1,0,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,option,ADVDIP-EL,1,2,choose two of the listed electives,False,20
-2025,COM,CU020BUS01,1,0,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,option,ADVDIP-EL,2,2,choose two of the listed electives,False,20
-2025,COM,CU020BUS01,1,0,9,ACC1006F,ACC1006F,Financial Accounting,18,5,option,ADVDIP-EL,3,2,choose two of the listed electives,False,20
-2025,COM,CU020BUS01,1,0,10,ACC1011S,ACC1011S,Financial Reporting I,18,5,option,ADVDIP-EL,4,2,choose two of the listed electives,False,20
-2025,COM,CU020BUS01,1,0,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,6,option,ADVDIP-EL,5,2,choose two of the listed electives,False,20
-2025,COM,CU020BUS01,1,0,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,option,ADVDIP-EL,6,2,choose two of the listed electives,False,20
-2025,COM,CU020BUS01,1,0,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,option,ADVDIP-EL,7,2,choose two of the listed electives,False,20
-2025,COM,CU020BUS01,1,0,14,STA2005S,STA2005S,Linear Models,24,6,option,ADVDIP-EL,8,2,choose two of the listed electives,False,20
-2025,COM,CU020BUS01,1,0,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,16,FTX3044F,FTX3044F,Investment Management A,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,17,FTX3045S,FTX3045S,Investment Management B,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU020BUS01,1,0,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,21
-2025,COM,CU017ACC01,1,0,1,ACC3004W,ACC3004W,Taxation II,32,7,core,,,,,False,23
-2025,COM,CU017ACC01,1,0,2,ACC3009W,ACC3009W,Financial Reporting III,36,7,core,,,,,False,23
-2025,COM,CU017ACC01,1,0,3,ACC3022W,ACC3022W,"Governance, Audit and Assurance II",26,7,core,,,,,False,23
-2025,COM,CU017ACC01,1,0,4,ACC3023W,ACC3023W,Management Accounting II,26,7,core,,,,,False,23
-2025,COM,CU017ACC01,1,0,5,ACC3001F,ACC3001F,Business Analysis and Governance I,13,7,core,,,,,False,23
-2025,COM,CU017ACC01,1,0,6,ACC3002S,ACC3002S,Business Analysis and Governance II,11,7,core,,,,,False,23
-2025,COM,CU017ACC01,1,0,7,CML2001F,CML2001F,Company Law,18,6,core,,,,,False,23
-2025,COM,CU017ACC01,1,0,8,CML2010Z,CML2010Z,Business Law II,12,6,core,,,,,False,23
+2025,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,20
+2025,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,20
+2025,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,20
+2025,COM,CU020BUS01,1,1,4,STA3048S,STA3048S,Statistical Modelling,30,7,core,,,,,False,20
+2025,COM,CU020BUS01,1,1,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,20
+2025,COM,CU020BUS01,1,1,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,20
+2025,COM,CU020BUS01,1,1,7,ECO1010F/S,ECO1010F,Microeconomics 1010,18,5,option,ADVDIP-EL,1,2,choose two of the listed electives,False,20
+2025,COM,CU020BUS01,1,1,8,ECO1011F/S,ECO1011F,Macroeconomics 1011,18,5,option,ADVDIP-EL,2,2,choose two of the listed electives,False,20
+2025,COM,CU020BUS01,1,1,9,ACC1006F,ACC1006F,Financial Accounting,18,5,option,ADVDIP-EL,3,2,choose two of the listed electives,False,20
+2025,COM,CU020BUS01,1,1,10,ACC1011S,ACC1011S,Financial Reporting I,18,5,option,ADVDIP-EL,4,2,choose two of the listed electives,False,20
+2025,COM,CU020BUS01,1,1,11,BUS2016H,BUS2016H,Actuarial Science: Financial Mathematics,18,6,option,ADVDIP-EL,5,2,choose two of the listed electives,False,20
+2025,COM,CU020BUS01,1,1,12,FTX2024S,FTX2024S,Financial Management or an approved elective,18,6,option,ADVDIP-EL,6,2,choose two of the listed electives,False,20
+2025,COM,CU020BUS01,1,1,13,STA2004F,STA2004F,Statistical Theory and Inference,24,6,option,ADVDIP-EL,7,2,choose two of the listed electives,False,20
+2025,COM,CU020BUS01,1,1,14,STA2005S,STA2005S,Linear Models,24,6,option,ADVDIP-EL,8,2,choose two of the listed electives,False,20
+2025,COM,CU020BUS01,1,1,15,MAM3000W,MAM3000W,Mathematics 3000*,72,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,16,FTX3044F,FTX3044F,Investment Management A,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,17,FTX3045S,FTX3045S,Investment Management B,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,18,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,19,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,20,ECO3020F,ECO3020F,Advanced Macro & Micro Economics,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,21,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,22,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,23,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,24,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU020BUS01,1,1,25,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,21
+2025,COM,CU017ACC01,1,1,1,ACC3004W,ACC3004W,Taxation II,32,7,core,,,,,False,23
+2025,COM,CU017ACC01,1,1,2,ACC3009W,ACC3009W,Financial Reporting III,36,7,core,,,,,False,23
+2025,COM,CU017ACC01,1,1,3,ACC3022W,ACC3022W,"Governance, Audit and Assurance II",26,7,core,,,,,False,23
+2025,COM,CU017ACC01,1,1,4,ACC3023W,ACC3023W,Management Accounting II,26,7,core,,,,,False,23
+2025,COM,CU017ACC01,1,1,5,ACC3001F,ACC3001F,Business Analysis and Governance I,13,7,core,,,,,False,23
+2025,COM,CU017ACC01,1,1,6,ACC3002S,ACC3002S,Business Analysis and Governance II,11,7,core,,,,,False,23
+2025,COM,CU017ACC01,1,1,7,CML2001F,CML2001F,Company Law,18,6,core,,,,,False,23
+2025,COM,CU017ACC01,1,1,8,CML2010Z,CML2010Z,Business Law II,12,6,core,,,,,False,23
 2025,COM,CB003BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,39
 2025,COM,CB003BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,39
 2025,COM,CB003BUS01,1,1,3,CSC1015F,CSC1015F,Computer Science 1015,18,5,core,,,,,False,39
@@ -12033,52 +12033,52 @@
 2025,COM,CB011BUS06,3,1,3,FTX2024S,FTX2024S,Financial Management,18,6,option,Y3G1,2,1,,False,128
 2025,COM,CB011BUS06,3,1,4,,,PLUS four electives of NQF level 6,72,6,elective,,,,,False,128
 2025,COM,CB011BUS06,4,1,1,,,Any NQF level 7 electives for which students meet the prerequisites totalling,120,7,elective,,,,,True,129
-2026,COM,CU020BUS01,1,0,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,21
-2026,COM,CU020BUS01,1,0,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,21
-2026,COM,CU020BUS01,1,0,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,21
-2026,COM,CU020BUS01,1,0,4,STA3048S,STA3048S,Statistical Modelling & Bayesian Analysis,30,7,core,,,,,False,21
-2026,COM,CU020BUS01,1,0,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,21
-2026,COM,CU020BUS01,1,0,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,21
-2026,COM,CU020BUS01,1,0,7,,,"Plus, two electives from the list below:",,,elective,,,,,False,21
-2026,COM,CU020BUS01,1,0,8,ECO1010F/S,ECO1010F,Microeconomics,18,5,option,Y1G1,1,1,pick 1 from menu,False,21
-2026,COM,CU020BUS01,1,0,9,ECO1011F/S,ECO1011F,Macroeconomics,18,5,option,Y1G1,2,1,pick 1 from menu,False,21
-2026,COM,CU020BUS01,1,0,10,ACC1006F,ACC1006F,Financial Accounting,18,5,option,Y1G1,3,1,pick 1 from menu,False,21
-2026,COM,CU020BUS01,1,0,11,ACC1011S,ACC1011S,Financial Reporting I,18,5,option,Y1G1,4,1,pick 1 from menu,False,21
-2026,COM,CU020BUS01,1,0,12,BUS2016H,BUS2016H,Financial Mathematics,18,6,option,Y1G1,5,1,pick 1 from menu,False,21
-2026,COM,CU020BUS01,1,0,13,FTX2024F/S,FTX2024F,Financial Management or an approved elective,18,6,option,Y1G1,6,1,pick 1 from menu,False,21
-2026,COM,CU020BUS01,1,0,14,STA2004F,STA2004F,Statistical Theory and Inference,24,6,option,Y1G1,7,1,pick 1 from menu,False,22
-2026,COM,CU020BUS01,1,0,15,STA2005S,STA2005S,Linear Models,24,6,option,Y1G1,8,1,pick 1 from menu,False,22
-2026,COM,CU020BUS01,1,0,16,MAM3010F,MAM3010F,Metric Spaces (3MS),18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,17,MAM3011F,MAM3011F,Modern Abstract Algebra (3AL),18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,18,MAM3012F,MAM3012F,Discrete Mathematics (3DM),18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,19,MAM3013S,MAM3013S,Topics In Algebra (3TA),18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,20,MAM3014S,MAM3014S,Topics in Analysis (3TN),18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,21,MAM3015S,MAM3015S,Complex Analysis (3CA),18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,22,FTX3044F,FTX3044F,Investment Management A,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,23,FTX3045S,FTX3045S,Investment Management B,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,24,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,25,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,26,ECO3020F,ECO3020F,Advanced Macro & Microeconomics,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,27,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,28,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,29,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,30,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,31,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,22
-2026,COM,CU020BUS01,1,0,32,GSB3002F/S,GSB3002F,Leadership and Communication,20,7,alternative,,,,approved elective pool,False,23
-2026,COM,CU020BUS01,1,0,33,GSB3003F/S,GSB3003F,Economics of Emerging Markets,20,7,alternative,,,,approved elective pool,False,23
-2026,COM,CU020BUS01,1,0,34,GSB3004F/S,GSB3004F,Finance and Accounting Management,20,7,alternative,,,,approved elective pool,False,23
-2026,COM,CU020BUS01,1,0,35,GSB3005F/S,GSB3005F,Marketing Management,15,7,alternative,,,,approved elective pool,False,23
-2026,COM,CU020BUS01,1,0,36,GSB3006F/S,GSB3006F,Human Resources Management,15,7,alternative,,,,approved elective pool,False,23
-2026,COM,CU020BUS01,1,0,37,GSB3007F/S,GSB3007F,Operations Management,15,7,alternative,,,,approved elective pool,False,23
-2026,COM,CU020BUS01,1,0,38,GSB3008F/S,GSB3008F,Strategy and Innovation Lab,15,7,alternative,,,,approved elective pool,False,23
-2026,COM,CU017ACC01,1,0,1,ACC3004W,ACC3004W,Taxation II,32,7,core,,,,,False,24
-2026,COM,CU017ACC01,1,0,2,ACC3009W,ACC3009W,Financial Reporting III,36,7,core,,,,,False,24
-2026,COM,CU017ACC01,1,0,3,ACC3022W,ACC3022W,"Governance, Audit and Assurance II",26,7,core,,,,,False,24
-2026,COM,CU017ACC01,1,0,4,ACC3023W,ACC3023W,Management Accounting II,26,7,core,,,,,False,24
-2026,COM,CU017ACC01,1,0,5,ACC3001F,ACC3001F,Business Analysis and Governance I,13,7,core,,,,,False,24
-2026,COM,CU017ACC01,1,0,6,ACC3002S,ACC3002S,Business Analysis and Governance II,11,7,core,,,,,False,24
-2026,COM,CU017ACC01,1,0,7,CML2001F,CML2001F,Company Law,18,6,core,,,,,False,24
-2026,COM,CU017ACC01,1,0,8,CML2010Z,CML2010Z,Business Law II,12,6,core,,,,,False,24
+2026,COM,CU020BUS01,1,1,1,STA3041F,STA3041F,Stochastic Processes & Time Series,36,7,core,,,,,False,21
+2026,COM,CU020BUS01,1,1,2,STA3045F,STA3045F,Stochastic Processes and Distribution,36,7,core,,,,,False,21
+2026,COM,CU020BUS01,1,1,3,STA3047S,STA3047S,Introduction to Machine Learning,6,7,core,,,,,False,21
+2026,COM,CU020BUS01,1,1,4,STA3048S,STA3048S,Statistical Modelling & Bayesian Analysis,30,7,core,,,,,False,21
+2026,COM,CU020BUS01,1,1,5,BUS3018F,BUS3018F,Actuarial Science II: Models,18,7,core,,,,,False,21
+2026,COM,CU020BUS01,1,1,6,BUS3024S,BUS3024S,Actuarial Science II: Contingencies,18,7,core,,,,,False,21
+2026,COM,CU020BUS01,1,1,7,,,"Plus, two electives from the list below:",,,elective,,,,,False,21
+2026,COM,CU020BUS01,1,1,8,ECO1010F/S,ECO1010F,Microeconomics,18,5,option,Y1G1,1,1,pick 1 from menu,False,21
+2026,COM,CU020BUS01,1,1,9,ECO1011F/S,ECO1011F,Macroeconomics,18,5,option,Y1G1,2,1,pick 1 from menu,False,21
+2026,COM,CU020BUS01,1,1,10,ACC1006F,ACC1006F,Financial Accounting,18,5,option,Y1G1,3,1,pick 1 from menu,False,21
+2026,COM,CU020BUS01,1,1,11,ACC1011S,ACC1011S,Financial Reporting I,18,5,option,Y1G1,4,1,pick 1 from menu,False,21
+2026,COM,CU020BUS01,1,1,12,BUS2016H,BUS2016H,Financial Mathematics,18,6,option,Y1G1,5,1,pick 1 from menu,False,21
+2026,COM,CU020BUS01,1,1,13,FTX2024F/S,FTX2024F,Financial Management or an approved elective,18,6,option,Y1G1,6,1,pick 1 from menu,False,21
+2026,COM,CU020BUS01,1,1,14,STA2004F,STA2004F,Statistical Theory and Inference,24,6,option,Y1G1,7,1,pick 1 from menu,False,22
+2026,COM,CU020BUS01,1,1,15,STA2005S,STA2005S,Linear Models,24,6,option,Y1G1,8,1,pick 1 from menu,False,22
+2026,COM,CU020BUS01,1,1,16,MAM3010F,MAM3010F,Metric Spaces (3MS),18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,17,MAM3011F,MAM3011F,Modern Abstract Algebra (3AL),18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,18,MAM3012F,MAM3012F,Discrete Mathematics (3DM),18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,19,MAM3013S,MAM3013S,Topics In Algebra (3TA),18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,20,MAM3014S,MAM3014S,Topics in Analysis (3TN),18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,21,MAM3015S,MAM3015S,Complex Analysis (3CA),18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,22,FTX3044F,FTX3044F,Investment Management A,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,23,FTX3045S,FTX3045S,Investment Management B,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,24,ECO3009F,ECO3009F,Natural Resource Economics,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,25,ECO3016F,ECO3016F,History of Economic Thought,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,26,ECO3020F,ECO3020F,Advanced Macro & Microeconomics,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,27,ECO3021S,ECO3021S,Quantitative Methods in Economics,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,28,ECO3022S,ECO3022S,Advanced Labour Economics,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,29,ECO3023S,ECO3023S,Public Sector Economics,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,30,ECO3024F,ECO3024F,International Trade and Finance,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU020BUS01,1,1,31,ECO3025S,ECO3025S,Applied International Trade Bargaining,18,7,alternative,,,,approved elective pool,False,22
+2026,COM,CU021GSB48,1,1,1,GSB3002F/S,GSB3002F,Leadership and Communication,20,7,core,,,,,False,23
+2026,COM,CU021GSB48,1,1,2,GSB3003F/S,GSB3003F,Economics of Emerging Markets,20,7,core,,,,,False,23
+2026,COM,CU021GSB48,1,1,3,GSB3004F/S,GSB3004F,Finance and Accounting Management,20,7,core,,,,,False,23
+2026,COM,CU021GSB48,1,1,4,GSB3005F/S,GSB3005F,Marketing Management,15,7,core,,,,,False,23
+2026,COM,CU021GSB48,1,1,5,GSB3006F/S,GSB3006F,Human Resources Management,15,7,core,,,,,False,23
+2026,COM,CU021GSB48,1,1,6,GSB3007F/S,GSB3007F,Operations Management,15,7,core,,,,,False,23
+2026,COM,CU021GSB48,1,1,7,GSB3008F/S,GSB3008F,Strategy and Innovation Lab,15,7,core,,,,,False,23
+2026,COM,CU017ACC01,1,1,1,ACC3004W,ACC3004W,Taxation II,32,7,core,,,,,False,24
+2026,COM,CU017ACC01,1,1,2,ACC3009W,ACC3009W,Financial Reporting III,36,7,core,,,,,False,24
+2026,COM,CU017ACC01,1,1,3,ACC3022W,ACC3022W,"Governance, Audit and Assurance II",26,7,core,,,,,False,24
+2026,COM,CU017ACC01,1,1,4,ACC3023W,ACC3023W,Management Accounting II,26,7,core,,,,,False,24
+2026,COM,CU017ACC01,1,1,5,ACC3001F,ACC3001F,Business Analysis and Governance I,13,7,core,,,,,False,24
+2026,COM,CU017ACC01,1,1,6,ACC3002S,ACC3002S,Business Analysis and Governance II,11,7,core,,,,,False,24
+2026,COM,CU017ACC01,1,1,7,CML2001F,CML2001F,Company Law,18,6,core,,,,,False,24
+2026,COM,CU017ACC01,1,1,8,CML2010Z,CML2010Z,Business Law II,12,6,core,,,,,False,24
 2026,COM,CB003BUS01,1,1,1,ACC1006F,ACC1006F,Financial Accounting,18,5,core,,,,,False,45
 2026,COM,CB003BUS01,1,1,2,BUS1036F,BUS1036F,Evidence-based Management,18,5,core,,,,,False,45
 2026,COM,CB003BUS01,1,1,3,CSC1015F/S,CSC1015F,Computer Science 1015,18,5,option,Y1G1,1,1,,False,45

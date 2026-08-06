@@ -41,12 +41,19 @@ FACULTY = "COM"
 # Grammar
 # ---------------------------------------------------------------------------
 
-PLAN_CODE_LINE = re.compile(r"^\[(C[BU][0-9O]{2,3}[A-Z]{3}\d{2})\]\s*$")
-# 2024-style headings carry the code inline at the end of the title line
-# (any case); the [^.\[] guard excludes dotted TOC entries.
-PLAN_CODE_INLINE = re.compile(
-    r"^(?P<title>(?:Bachelor of|Advanced Diploma|Postgraduate Diploma)[^.\[]{3,120}?)\s*"
-    r"\[(?P<code>C[BU][0-9O]{2,3}[A-Z]{3}\d{2})\]\s*$", re.I)
+# A programme block starts at any non-TOC line ending with a [PLANCODE]
+# bracket. Observed forms across editions:
+#   "[CB004FTX04]"                                    (code alone, 2025/2026)
+#   "[CB003BUS01][SAQA ID:4411]"                      (trailing bracket, 2021/2022)
+#   "Bachelor of ... [CB004FTX05]"                    (inline, 2024)
+#   "Finance [CB025BUS09]"                            (wrapped title tail, 2024)
+# The title is reconstructed from the pre-bracket text plus buffered lines.
+#   "[CB011ECO03#]"                                   (footnote marker inside
+#                                                      the bracket, 2022/2023)
+#   "[CB0015ECO03]"                                    (extra-zero misprint, 2024)
+PLAN_CODE_ANY = re.compile(
+    r"^(?P<pre>.*?)\s*\[(?P<code>C[BU][0-9O]{2,4}[A-Z]{3}\d{2})[#*\s]*\]"
+    r"(?:\s*\[[^\]]+\])*\s*$")
 
 # Known programme-code families (documented in CLAUDE.md). Used as the variant
 # fallback when neither a page-header hint nor an umbrella line applies.
@@ -56,7 +63,7 @@ VARIANT_BY_PROGCODE = {
     "CB011": "extended", "CB015": "extended", "CB018": "extended", "CB020": "extended",
 }
 
-TITLE_START = re.compile(r"^(Bachelor of|Advanced Diploma in|Postgraduate Diploma in)")
+TITLE_START = re.compile(r"^(Bachelor of|Advanced Diploma in|Postgraduate Diploma in)", re.I)
 UMBRELLA = re.compile(
     r"^Bachelor of (Business Science|Commerce)\b(?!.* specialising)(?!.* in [A-Z]{2})")
 
@@ -149,11 +156,14 @@ DEPT_BY_PREFIX = {
 
 
 def normalise_plan_code(raw: str) -> str:
-    """CBO18BUS01 -> CB018BUS01; CB25BUS09 -> CB025BUS09."""
-    m = re.match(r"^(C[BU])([0-9O]{2,3})([A-Z]{3}\d{2})$", raw)
+    """CBO18BUS01 -> CB018BUS01; CB25BUS09 -> CB025BUS09;
+    CB0015ECO03 -> CB015ECO03 (extra-zero misprint)."""
+    m = re.match(r"^(C[BU])([0-9O]{2,4})([A-Z]{3}\d{2})$", raw)
     head, num, tail = m.groups()
-    num = num.replace("O", "0").zfill(3)
-    return head + num + tail
+    num = num.replace("O", "0")
+    while len(num) > 3 and num.startswith("0"):
+        num = num[1:]
+    return head + num.zfill(3) + tail
 
 
 def resolve_course_code(raw: str) -> str:
@@ -313,7 +323,10 @@ def parse_programmes(dump_path: Path, sections: dict, hints: dict, year: int):
         study_year, table_index, advdip_req = 0, 0, None
         reset_table_state()
         if code.startswith("CU"):
-            study_year = 1  # Advanced Diplomas have no year headings
+            # Advanced Diplomas have no year headings: their single table is
+            # year 1, table 1 (table_index must be 1 or the assembly layer
+            # treats every AdvDip row as a secondary table).
+            study_year, table_index = 1, 1
 
     def emit(row):
         curriculum.append(row)
@@ -321,25 +334,26 @@ def parse_programmes(dump_path: Path, sections: dict, hints: dict, year: int):
     title_buf = []  # trailing non-matching lines, newest last (for headings)
     for page_no, line in lines:
         # -- programme boundaries ------------------------------------------
-        m = PLAN_CODE_INLINE.match(line)
-        if m:
-            start_programme(m.group("code"), m.group("title"), page_no)
-            title_buf = []
-            continue
-        m = PLAN_CODE_LINE.match(line)
-        if m:
-            # Reconstruct the 1-2 line title from the trailing buffer.
-            parts = []
-            for prev in reversed(title_buf[-3:]):
-                parts.insert(0, prev)
-                if TITLE_START.match(prev):
-                    break
-            title = " ".join(parts)
-            # Drop umbrella text that got glued in front of the real title.
-            last = max(title.rfind("Bachelor of"), title.rfind("Advanced Diploma"))
+        m = PLAN_CODE_ANY.match(line)
+        if m and ".." not in line:  # dotted TOC entries are not headings
+            pre = m.group("pre").strip()
+            if TITLE_START.match(pre):
+                title = pre
+            else:
+                # Walk back through buffered lines to the title start; `pre`
+                # (a wrapped title tail like "Finance") stays last.
+                parts = [pre] if pre else []
+                for prev in reversed(title_buf[-3:]):
+                    parts.insert(0, prev)
+                    if TITLE_START.match(prev):
+                        break
+                title = " ".join(parts)
+            # Drop umbrella text glued in front of the real title.
+            low = title.lower()
+            last = max(low.rfind("bachelor of"), low.rfind("advanced diploma"))
             if last > 0:
                 title = title[last:]
-            start_programme(m.group(1), title, page_no)
+            start_programme(m.group("code"), title, page_no)
             title_buf = []
             continue
 

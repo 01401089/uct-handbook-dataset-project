@@ -29,6 +29,14 @@
 2021,CB001PHI03,1,regular,"Philosophy, Politics & Economics",66280,0,66280,0.0,label_match,OK
 2021,CB001PHI03,2,regular,"Philosophy, Politics & Economics",110240,0,79130,39.3,label_match,MISMATCH
 2021,CB001PHI03,3,regular,"Philosophy, Politics & Economics",88020,10370,74110,18.8,label_match,MISMATCH
+2021,CB003BUS01,1,regular,Actuarial Science,85250,0,85250,0.0,label_match,OK
+2021,CB003BUS01,2,regular,Actuarial Science,87680,0,87680,0.0,label_match,OK
+2021,CB003BUS01,3,regular,Actuarial Science,86140,0,86240,-0.1,label_match,OK
+2021,CB003BUS01,4,regular,Actuarial Science,73530,0,73000,0.7,label_match,OK
+2021,CB003BUS09,1,regular,Actuarial Science: Quantitative Finance,85250,0,85250,0.0,label_match,OK
+2021,CB003BUS09,2,regular,Actuarial Science: Quantitative Finance,87680,0,86900,0.9,label_match,OK
+2021,CB003BUS09,3,regular,Actuarial Science: Quantitative Finance,92620,0,92620,0.0,label_match,OK
+2021,CB003BUS09,4,regular,Actuarial Science: Quantitative Finance,68510,0,68510,0.0,label_match,OK
 2021,CB004BUS07,1,regular,Marketing,77030,0,77030,0.0,label_match,OK
 2021,CB004BUS07,2,regular,Marketing,78890,0,78890,0.0,label_match,OK
 2021,CB004BUS07,3,regular,Marketing,85410,8600,76810,11.2,label_match,MISMATCH

@@ -25,6 +25,14 @@ STEPS = [
     ("validate", [sys.executable, str(ROOT / "validation" / "validate.py")]),
 ]
 
+# Final-clean layer: run for EVERY year in the dataset after the per-year
+# loop, because cross-edition rules (R2) mean any year's change can
+# legitimately update other years' final rows.
+FINAL_STEPS = [
+    ("finalise", [sys.executable, str(ROOT / "build_final_dataset.py")]),
+    ("validate-final", [sys.executable, str(ROOT / "validation" / "validate_final.py")]),
+]
+
 
 def discover_years():
     """Years for which both the COM and the fees handbook are present."""
@@ -76,6 +84,25 @@ def main():
         results[year] = log
         print()
 
+    # ---- final-clean layer over ALL loaded years -------------------------
+    import csv as _csv
+    md = ROOT / "data" / "processed" / "main_dataset.csv"
+    all_years = sorted({r["year"] for r in _csv.DictReader(
+        open(md, encoding="utf-8-sig"))}) if md.exists() else []
+    print(f"{'=' * 60}\nFINAL-CLEAN LAYER (all loaded years: {all_years})\n{'=' * 60}")
+    final_ok = True
+    for year in all_years:
+        for name, cmd in FINAL_STEPS:
+            r = subprocess.run(cmd + ["--year", str(year)], cwd=ROOT,
+                               capture_output=True, text=True)
+            out = (r.stdout + r.stderr).strip()
+            print(f"--- {name} {year}\n{out}")
+            if r.returncode != 0:
+                print(f"!!! {name} FAILED for {year}")
+                final_ok = False
+                break
+    print()
+
     print(f"{'=' * 60}\nSUMMARY\n{'=' * 60}")
     failed = False
     for year, log in results.items():
@@ -83,7 +110,8 @@ def main():
         status = "OK" if steps_ok == len(STEPS) else f"FAILED at {log[-1][0]}"
         failed = failed or steps_ok != len(STEPS)
         print(f"{year}: {steps_ok}/{len(STEPS)} steps — {status}")
-    sys.exit(1 if failed else 0)
+    print(f"final-clean layer: {'OK' if final_ok else 'FAILED'}")
+    sys.exit(1 if failed or not final_ok else 0)
 
 
 if __name__ == "__main__":

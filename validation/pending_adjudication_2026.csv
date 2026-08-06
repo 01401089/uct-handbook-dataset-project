@@ -1,0 +1,54 @@
+﻿year,plan_code,study_year,status,credits_ideal,credits_stated,detector,suggested_action,detail
+2026,CB001ACC04,3,MISMATCH,174,192,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB001BUS06,2,MISMATCH,72,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB001ECO02,2,MISMATCH,132,156,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB001ECO03,2,UNRESOLVED_SLOTS,144,144,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB001PHI03,1,MISMATCH,123,132,R2b,check_extraction,"stated total matches OK editions 2024, 2025 but the extracted course set is unique to this edition — possible extraction gap"
+2026,CB001PHI03,1,MISMATCH,123,132,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB001PHI03,2,UNRESOLVED_SLOTS,225,156,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB001PHI03,3,UNRESOLVED_SLOTS,222,150,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB004BUS28,3,MISMATCH,136,154,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB004ECO01,3,UNRESOLVED_SLOTS,216,162,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB011ACC08,2,MISMATCH,126,108,R2b,check_extraction,"stated total matches OK editions 2022, 2023 but the extracted course set is unique to this edition — possible extraction gap"
+2026,CB011ACC08,2,MISMATCH,126,108,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB011ACC08,4,MISMATCH,82,100,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB011BUS06,1,NO_STATED_TOTAL,98,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,CB011BUS06,2,MISMATCH,72,108,R2b,check_extraction,"stated total matches OK editions 2021, 2022, 2023 but the extracted course set is unique to this edition — possible extraction gap"
+2026,CB011BUS06,2,MISMATCH,72,108,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB011BUS06,3,NO_STATED_TOTAL,108,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,CB011BUS06,4,NO_STATED_TOTAL,120,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,CB011ECO02,3,MISMATCH,96,114,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB011ECO02,4,UNRESOLVED_SLOTS,198,162,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB011ECO03,4,UNRESOLVED_SLOTS,198,198,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB011ECO04,4,UNRESOLVED_SLOTS,126,126,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB011PHI03,1,MISMATCH,101,110,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB011PHI03,2,MISMATCH,111,114,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB011PHI03,3,UNRESOLVED_SLOTS,174,102,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB011PHI03,4,UNRESOLVED_SLOTS,175,114,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB015BUS28,3,MISMATCH,126,108,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB015BUS28,4,MISMATCH,76,94,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB015ECO01,4,UNRESOLVED_SLOTS,162,108,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB015ECO03,1,MISMATCH,116,98,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB015ECO03,3,MISMATCH,132,114,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB015ECO03,5,MISMATCH,140,158,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB015FTX05,5,NO_STATED_TOTAL,126,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,CB023ACC08,2,MISMATCH,126,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB023BUS06,1,NO_STATED_TOTAL,152,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,CB023BUS06,2,NO_STATED_TOTAL,72,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,CB023BUS06,3,NO_STATED_TOTAL,120,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against
+2026,CB023ECO02,2,MISMATCH,132,150,R2b,check_extraction,"stated total matches OK editions 2022, 2023 but the extracted course set is unique to this edition — possible extraction gap"
+2026,CB023ECO02,2,MISMATCH,132,150,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB023ECO02,3,UNRESOLVED_SLOTS,216,144,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB023ECO03,3,UNRESOLVED_SLOTS,216,144,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB023ECO04,2,UNRESOLVED_SLOTS,186,156,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB023PHI03,1,MISMATCH,134,146,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB023PHI03,2,UNRESOLVED_SLOTS,196,147,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB023PHI03,3,UNRESOLVED_SLOTS,229,150,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB024BUS28,3,MISMATCH,136,154,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB024CSC05,2,MISMATCH,168,174,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB024CSC05,3,MISMATCH,162,144,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB024CSC05,4,MISMATCH,142,160,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB024ECO01,3,UNRESOLVED_SLOTS,216,162,R4,adjudicate in resolutions/com.csv,elective slot credits unresolved
+2026,CB024ECO03,1,MISMATCH,116,134,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CB024FTX05,3,MISMATCH,144,162,R4,adjudicate in resolutions/com.csv,credit mismatch unexplained by rules
+2026,CU020BUS01,1,NO_STATED_TOTAL,162,,R4,adjudicate in resolutions/com.csv,no stated total printed — nothing to reconcile against

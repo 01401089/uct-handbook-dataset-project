@@ -32,6 +32,14 @@
 2021,CB001PHI03,1,regular,"Philosophy, Politics & Economics",149,149,0,False,OK
 2021,CB001PHI03,2,regular,"Philosophy, Politics & Economics",246,174,72,False,MISMATCH
 2021,CB001PHI03,3,regular,"Philosophy, Politics & Economics",222,168,54,False,UNRESOLVED_SLOTS
+2021,CB003BUS01,1,regular,Actuarial Science,185,185,0,False,OK
+2021,CB003BUS01,2,regular,Actuarial Science,186,186,0,False,OK
+2021,CB003BUS01,3,regular,Actuarial Science,180,180,0,False,OK
+2021,CB003BUS01,4,regular,Actuarial Science,174,174,0,False,OK
+2021,CB003BUS09,1,regular,Actuarial Science: Quantitative Finance,185,185,0,False,OK
+2021,CB003BUS09,2,regular,Actuarial Science: Quantitative Finance,186,186,0,False,OK
+2021,CB003BUS09,3,regular,Actuarial Science: Quantitative Finance,198,198,0,False,OK
+2021,CB003BUS09,4,regular,Actuarial Science: Quantitative Finance,147,147,0,False,OK
 2021,CB004BUS07,1,regular,Marketing,167,167,0,False,OK
 2021,CB004BUS07,2,regular,Marketing,168,168,0,False,OK
 2021,CB004BUS07,3,regular,Marketing,198,180,18,False,MISMATCH
@@ -264,7 +272,4 @@
 2021,CB026BUS09,1,augmented,Actuarial Science: Quantitative Finance,185,185,0,False,OK
 2021,CB026BUS09,2,augmented,Actuarial Science: Quantitative Finance,186,186,0,False,OK
 2021,CB026BUS09,3,augmented,Actuarial Science: Quantitative Finance,180,180,0,False,OK
-2021,CU020BUS01,1,regular,Actuarial Science,370,185,185,False,MISMATCH
-2021,CU020BUS01,2,regular,Actuarial Science,372,186,186,False,MISMATCH
-2021,CU020BUS01,3,regular,Actuarial Science,378,198,180,False,MISMATCH
-2021,CU020BUS01,4,regular,Actuarial Science,321,147,174,False,MISMATCH
+2021,CU020BUS01,1,regular,Actuarial Science,672,126,546,True,OK

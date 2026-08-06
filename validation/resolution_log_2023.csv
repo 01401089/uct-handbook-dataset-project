@@ -1,0 +1,16 @@
+﻿year,plan_code,study_year,rule,action,res_id,credits_ideal,credits_stated,final_credits,evidence,confidence
+2023,CB001BUS06,3,R3,accept_stated,COM-2023-001,43,144,144,row sum 43 vs stated 144 (handbook p94); stated totals across affected editions: ['144'],high
+2023,CB001ECO03,3,R1a,accept_computed,R1a,144,162,144,non-taken choice credits = 18 (one choice group),high
+2023,CB004BUS08,3,R3,accept_stated,COM-2023-002,298,180,180,row sum 298 vs stated 180 (handbook p51); stated totals across affected editions: ['180'],high
+2023,CB004CSC05,1,R1a,accept_computed,R1a,149,185,149,non-taken choice credits = 36 (all choice groups),high
+2023,CB004CSC05,4,R3,accept_stated,COM-2023-003,262,160,160,row sum 262 vs stated 160 (handbook p44); stated totals across affected editions: ['160'],high
+2023,CB004ECO01,2,R2a,accept_computed,R2a,156,150,156,"corroborated by 2022, 2025, 2026",medium
+2023,CB004FTX05,1,R1a,accept_computed,R1a,167,185,167,non-taken choice credits = 18 (all choice groups),high
+2023,CB011BUS06,4,R3,accept_stated,COM-2023-004,18,126,126,row sum 18 vs stated 126 (handbook p127); stated totals across affected editions: ['126'],high
+2023,CB011ECO03,4,R1a,accept_computed,R1a,108,198,108,non-taken choice credits = 90 (all choice groups),high
+2023,CB011PHI03,3,R3,accept_stated,COM-2023-005,198,102,102,row sum 198 vs stated 102 (handbook p119); stated totals across affected editions: ['102'],high
+2023,CB015BUS08,5,R3,accept_stated,COM-2023-006,36,156,156,row sum 36 vs stated 156 (handbook p81); stated totals across affected editions: ['156'],high
+2023,CB015CSC05,5,R3,accept_stated,COM-2023-007,262,160,160,row sum 262 vs stated 160 (handbook p74); stated totals across affected editions: ['160'],high
+2023,CB024BUS08,4,R3,accept_stated,COM-2023-008,36,156,156,row sum 36 vs stated 156 (handbook p66); stated totals across affected editions: ['156'],high
+2023,CB024CSC05,1,R1a,accept_computed,R1a,149,185,149,non-taken choice credits = 36 (all choice groups),high
+2023,CB024CSC05,4,R3,accept_stated,COM-2023-009,262,160,160,row sum 262 vs stated 160 (handbook p58); stated totals across affected editions: ['160'],high

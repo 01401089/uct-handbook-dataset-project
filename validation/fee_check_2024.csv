@@ -137,11 +137,16 @@
 2024,CB015CSC05,3,extended,Computer Science,67590,0,67590,0.0,ad_duration,OK
 2024,CB015CSC05,4,extended,Computer Science,67640,0,67640,0.0,ad_duration,OK
 2024,CB015CSC05,5,extended,Computer Science,118930,0,63490,87.3,ad_duration,MISMATCH
-2024,CB015ECO01,1,extended,Economics,120620,0,60310,100.0,ad_duration,MISMATCH
-2024,CB015ECO01,2,extended,Economics,129900,0,68050,90.9,ad_duration,MISMATCH
-2024,CB015ECO01,3,extended,Economics,149570,9860,71140,110.2,ad_duration,MISMATCH
-2024,CB015ECO01,4,extended,Economics,152950,9860,77500,97.4,ad_duration,MISMATCH
-2024,CB015ECO01,5,extended,Economics,196940,0,68890,185.9,ad_duration,MISMATCH
+2024,CB015ECO01,1,extended,Economics,60310,0,60310,0.0,ad_duration,OK
+2024,CB015ECO01,2,extended,Economics,68050,0,68050,0.0,ad_duration,OK
+2024,CB015ECO01,3,extended,Economics,74380,9860,71140,4.6,ad_duration,OK
+2024,CB015ECO01,4,extended,Economics,77500,0,77500,0.0,ad_duration,OK
+2024,CB015ECO01,5,extended,Economics,98470,0,68890,42.9,ad_duration,MISMATCH
+2024,CB015ECO03,1,extended,Economics with Law,60310,0,60310,0.0,ad_duration,OK
+2024,CB015ECO03,2,extended,Economics with Law,61850,0,61850,0.0,ad_duration,OK
+2024,CB015ECO03,3,extended,Economics with Law,75190,0,65330,15.1,ad_duration,MISMATCH
+2024,CB015ECO03,4,extended,Economics with Law,75450,9860,65590,15.0,ad_duration,MISMATCH
+2024,CB015ECO03,5,extended,Economics with Law,98470,0,68890,42.9,ad_duration,MISMATCH
 2024,CB015FTX04,1,extended,Finance with Accounting,67690,0,69040,-2.0,ad_duration,OK
 2024,CB015FTX04,2,extended,Finance with Accounting,77650,0,48840,59.0,ad_duration,MISMATCH
 2024,CB015FTX04,3,extended,Finance with Accounting,81560,0,90440,-9.8,ad_duration,MISMATCH
@@ -173,7 +178,7 @@
 2024,CB020BUS09,4,extended,Actuarial Science: Quantitative Finance,96300,0,96300,0.0,ad_duration,OK
 2024,CB023ACC03,2,augmented,Financial Accounting: Accounting with Law,84920,0,84920,0.0,ad_shared,OK
 2024,CB023ACC03,3,augmented,Financial Accounting: Accounting with Law,75320,0,75320,0.0,ad_shared,OK
-2024,CB024ECO03,1,augmented,Economics with Law,79910,0,60310,32.5,label_match,MISMATCH
-2024,CB024ECO03,2,augmented,Economics with Law,88120,0,61850,42.5,label_match,MISMATCH
-2024,CB024ECO03,3,augmented,Economics with Law,85050,9860,65330,30.2,label_match,MISMATCH
-2024,CB024ECO03,4,augmented,Economics with Law,108330,0,65590,65.2,label_match,MISMATCH
+2024,CB025BUS09,1,augmented,Actuarial Science: Quantitative Finance,99350,0,99350,0.0,ad_duration,OK
+2024,CB025BUS09,2,augmented,Actuarial Science: Quantitative Finance,100600,0,100600,0.0,ad_duration,OK
+2024,CB025BUS09,3,augmented,Actuarial Science: Quantitative Finance,106160,0,106160,0.0,ad_duration,OK
+2024,CB025BUS09,4,augmented,Actuarial Science: Quantitative Finance,78520,0,78520,0.0,ad_duration,OK

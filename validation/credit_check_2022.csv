@@ -32,6 +32,14 @@
 2022,CB001PHI03,1,regular,"Philosophy, Politics & Economics",149,149,0,False,OK
 2022,CB001PHI03,2,regular,"Philosophy, Politics & Economics",246,174,72,False,MISMATCH
 2022,CB001PHI03,3,regular,"Philosophy, Politics & Economics",222,168,54,False,UNRESOLVED_SLOTS
+2022,CB003BUS01,1,regular,Actuarial Science,185,185,0,False,OK
+2022,CB003BUS01,2,regular,Actuarial Science,186,186,0,False,OK
+2022,CB003BUS01,3,regular,Actuarial Science,180,180,0,False,OK
+2022,CB003BUS01,4,regular,Actuarial Science,174,174,0,False,OK
+2022,CB003BUS09,1,regular,Actuarial Science: Quantitative Finance,185,185,0,False,OK
+2022,CB003BUS09,2,regular,Actuarial Science: Quantitative Finance,186,186,0,False,OK
+2022,CB003BUS09,3,regular,Actuarial Science: Quantitative Finance,198,198,0,False,OK
+2022,CB003BUS09,4,regular,Actuarial Science: Quantitative Finance,147,147,0,False,OK
 2022,CB004BUS07,1,regular,Marketing,167,167,0,False,OK
 2022,CB004BUS07,2,regular,Marketing,168,168,0,False,OK
 2022,CB004BUS07,3,regular,Marketing,198,180,18,False,MISMATCH
@@ -68,10 +76,14 @@
 2022,CB004INF01,2,regular,Information Systems,168,168,0,False,OK
 2022,CB004INF01,3,regular,Information Systems,156,156,0,False,OK
 2022,CB004INF01,4,regular,Information Systems,176,176,0,False,OK
-2022,CB011ACC04,1,extended,Financial Accounting: Chartered Accountant,244,113,131,False,MISMATCH
-2022,CB011ACC04,2,extended,Financial Accounting: Chartered Accountant,252,126,126,False,MISMATCH
-2022,CB011ACC04,3,extended,Financial Accounting: Chartered Accountant,252,126,126,False,MISMATCH
-2022,CB011ACC04,4,extended,Financial Accounting: Chartered Accountant,198,90,108,False,MISMATCH
+2022,CB011ACC03,1,extended,Financial Accounting: Accounting with Law#,113,113,0,False,OK
+2022,CB011ACC03,2,extended,Financial Accounting: Accounting with Law#,126,126,0,False,OK
+2022,CB011ACC03,3,extended,Financial Accounting: Accounting with Law#,126,126,0,False,OK
+2022,CB011ACC03,4,extended,Financial Accounting: Accounting with Law#,90,90,0,False,OK
+2022,CB011ACC04,1,extended,Financial Accounting: Chartered Accountant,131,131,0,False,OK
+2022,CB011ACC04,2,extended,Financial Accounting: Chartered Accountant,126,126,0,False,OK
+2022,CB011ACC04,3,extended,Financial Accounting: Chartered Accountant,126,126,0,False,OK
+2022,CB011ACC04,4,extended,Financial Accounting: Chartered Accountant,108,108,0,False,OK
 2022,CB011ACC08,1,extended,Financial Accounting: General Accounting,131,131,0,False,OK
 2022,CB011ACC08,2,extended,Financial Accounting: General Accounting,108,108,0,False,OK
 2022,CB011ACC08,3,extended,Financial Accounting: General Accounting,90,90,0,False,OK
@@ -84,10 +96,14 @@
 2022,CB011ECO02,2,extended,Economics and Finance,108,108,0,False,OK
 2022,CB011ECO02,3,extended,Economics and Finance,114,132,-18,False,MISMATCH
 2022,CB011ECO02,4,extended,Economics and Finance,126,108,18,False,MISMATCH
-2022,CB011ECO04,1,extended,Economics and Statistics,244,131,113,False,MISMATCH
-2022,CB011ECO04,2,extended,Economics and Statistics,216,108,108,False,MISMATCH
-2022,CB011ECO04,3,extended,Economics and Statistics,252,108,144,False,MISMATCH
-2022,CB011ECO04,4,extended,Economics and Statistics,270,198,72,False,MISMATCH
+2022,CB011ECO03,1,extended,Economics with Law,131,131,0,False,OK
+2022,CB011ECO03,2,extended,Economics with Law,108,108,0,False,OK
+2022,CB011ECO03,3,extended,Economics with Law,108,108,0,False,OK
+2022,CB011ECO03,4,extended,Economics with Law,108,198,-90,False,MISMATCH
+2022,CB011ECO04,1,extended,Economics and Statistics,113,113,0,False,OK
+2022,CB011ECO04,2,extended,Economics and Statistics,108,108,0,False,OK
+2022,CB011ECO04,3,extended,Economics and Statistics,144,144,0,True,OK
+2022,CB011ECO04,4,extended,Economics and Statistics,162,162,0,False,OK
 2022,CB011INF01,1,extended,Information Systems,113,113,0,False,OK
 2022,CB011INF01,2,extended,Information Systems,108,108,0,False,OK
 2022,CB011INF01,3,extended,Information Systems,120,120,0,False,OK
@@ -256,7 +272,5 @@
 2022,CB026BUS09,1,augmented,Actuarial Science: Quantitative Finance,185,185,0,False,OK
 2022,CB026BUS09,2,augmented,Actuarial Science: Quantitative Finance,186,186,0,False,OK
 2022,CB026BUS09,3,augmented,Actuarial Science: Quantitative Finance,180,180,0,False,OK
-2022,CU020BUS01,1,regular,Actuarial Science,0,185,-185,False,MISMATCH
-2022,CU020BUS01,2,regular,Actuarial Science,0,186,-186,False,MISMATCH
-2022,CU020BUS01,3,regular,Actuarial Science,0,198,-198,False,MISMATCH
-2022,CU020BUS01,4,regular,Actuarial Science,0,147,-147,False,MISMATCH
+2022,CU020BUS01,1,regular,Actuarial Science,300,126,174,True,OK
+2022,CU021GSB48,1,regular,Management Development,120,,,False,NO_STATED_TOTAL

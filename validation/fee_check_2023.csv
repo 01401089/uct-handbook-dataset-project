@@ -29,6 +29,14 @@
 2023,CB001PHI03,1,regular,"Philosophy, Politics & Economics",72680,0,72680,0.0,label_match,OK
 2023,CB001PHI03,2,regular,"Philosophy, Politics & Economics",121090,0,86980,39.2,label_match,MISMATCH
 2023,CB001PHI03,3,regular,"Philosophy, Politics & Economics",94570,9430,81260,16.4,label_match,MISMATCH
+2023,CB003BUS01,1,regular,Actuarial Science,93850,0,93850,0.0,label_match,OK
+2023,CB003BUS01,2,regular,Actuarial Science,96110,0,96110,0.0,label_match,OK
+2023,CB003BUS01,3,regular,Actuarial Science,94450,0,94450,0.0,label_match,OK
+2023,CB003BUS01,4,regular,Actuarial Science,80600,0,80600,0.0,label_match,OK
+2023,CB003BUS09,1,regular,Actuarial Science: Quantitative Finance,93850,0,93850,0.0,label_match,OK
+2023,CB003BUS09,2,regular,Actuarial Science: Quantitative Finance,96110,0,95260,0.9,label_match,OK
+2023,CB003BUS09,3,regular,Actuarial Science: Quantitative Finance,101550,0,101550,0.0,label_match,OK
+2023,CB003BUS09,4,regular,Actuarial Science: Quantitative Finance,75110,0,75110,0.0,label_match,OK
 2023,CB004BUS07,1,regular,Marketing,84690,0,84690,0.0,label_match,OK
 2023,CB004BUS07,2,regular,Marketing,86500,0,86500,0.0,label_match,OK
 2023,CB004BUS07,3,regular,Marketing,93650,9430,84220,11.2,label_match,MISMATCH
@@ -81,10 +89,14 @@
 2023,CB011ECO02,2,extended,Economics and Finance,55710,0,55710,0.0,ad_duration,OK
 2023,CB011ECO02,3,extended,Economics and Finance,59020,0,59020,0.0,ad_duration,OK
 2023,CB011ECO02,4,extended,Economics and Finance,66010,9430,66010,0.0,ad_duration,OK
-2023,CB011ECO04,1,extended,Economics and Statistics,122410,0,56520,116.6,ad_duration,MISMATCH
-2023,CB011ECO04,2,extended,Economics and Statistics,111080,0,55650,99.6,ad_duration,MISMATCH
-2023,CB011ECO04,3,extended,Economics and Statistics,127370,9430,61710,106.4,ad_duration,MISMATCH
-2023,CB011ECO04,4,extended,Economics and Statistics,136880,9430,83570,63.8,ad_duration,MISMATCH
+2023,CB011ECO03,1,extended,Economics with Law,65890,0,65890,0.0,ad_duration,OK
+2023,CB011ECO03,2,extended,Economics with Law,55430,0,56330,-1.6,ad_duration,OK
+2023,CB011ECO03,3,extended,Economics with Law,53310,0,53310,0.0,ad_duration,OK
+2023,CB011ECO03,4,extended,Economics with Law,53310,0,53310,0.0,ad_duration,OK
+2023,CB011ECO04,1,extended,Economics and Statistics,56520,0,56520,0.0,ad_duration,OK
+2023,CB011ECO04,2,extended,Economics and Statistics,55650,0,55650,0.0,ad_duration,OK
+2023,CB011ECO04,3,extended,Economics and Statistics,74060,9430,61710,20.0,ad_duration,MISMATCH
+2023,CB011ECO04,4,extended,Economics and Statistics,83570,9430,83570,0.0,ad_duration,OK
 2023,CB011INF01,1,extended,Information Systems,56520,0,56520,0.0,ad_duration,OK
 2023,CB011INF01,2,extended,Information Systems,56660,0,56660,0.0,ad_duration,OK
 2023,CB011INF01,3,extended,Information Systems,65770,9370,65830,-0.1,ad_duration,OK
@@ -118,9 +130,6 @@
 2023,CB023BUS06,1,augmented,Management Studies,102680,0,65140,57.6,label_match,MISMATCH
 2023,CB023BUS06,2,augmented,Management Studies,87310,18860,56460,54.6,label_match,MISMATCH
 2023,CB023BUS06,3,augmented,Management Studies,9430,0,68450,-86.2,label_match,MISMATCH
-2023,CB023ECO03,1,augmented,Economics with Law,75320,0,65890,14.3,label_match,MISMATCH
-2023,CB023ECO03,2,augmented,Economics with Law,80450,0,56330,42.8,label_match,MISMATCH
-2023,CB023ECO03,3,augmented,Economics with Law,72170,0,53310,35.4,label_match,MISMATCH
 2023,CB024BUS07,1,augmented,Marketing,84690,0,65080,30.1,label_match,MISMATCH
 2023,CB024BUS07,2,augmented,Marketing,86500,0,68640,26.0,label_match,MISMATCH
 2023,CB024BUS07,3,augmented,Marketing,93650,9430,56330,66.3,label_match,MISMATCH

@@ -1,0 +1,15 @@
+﻿year,plan_code,study_year,rule,action,res_id,credits_ideal,credits_stated,final_credits,evidence,confidence
+2025,CB001PHI03,2,R3,accept_stated,COM-2025-001,252,156,156,"row sum 252 vs stated 156 (handbook p93); stated totals across affected editions: ['156', '174']",high
+2025,CB004CSC05,4,R3,accept_stated,COM-2025-002,244,160,160,row sum 244 vs stated 160 (handbook p46); stated totals across affected editions: ['160'],high
+2025,CB004INF01,1,R1a,accept_computed,R1a,150,168,150,non-taken choice credits = 18 (all choice groups),high
+2025,CB011BUS06,2,R1a,accept_computed,R1a,90,108,90,non-taken choice credits = 18 (one choice group),high
+2025,CB011PHI03,3,R3,accept_stated,COM-2025-003,198,102,102,row sum 198 vs stated 102 (handbook p120); stated totals across affected editions: ['102'],high
+2025,CB015BUS08,1,R1a,accept_computed,R1a,128,146,128,non-taken choice credits = 18 (all choice groups),high
+2025,CB015CSC05,5,R3,accept_stated,COM-2025-004,244,160,160,row sum 244 vs stated 160 (handbook p77); stated totals across affected editions: ['160'],high
+2025,CB015INF01,2,R1a,accept_computed,R1a,96,114,96,non-taken choice credits = 18 (all choice groups),high
+2025,CB015INF01,4,R1a,accept_computed,R1a,90,138,90,non-taken choice credits = 48 (all choice groups),high
+2025,CB023ECO04,3,R3,accept_stated,COM-2025-005,234,144,144,row sum 234 vs stated 144 (handbook p108); stated totals across affected editions: ['144'],high
+2025,CB023PHI03,2,R3,accept_stated,COM-2025-006,252,147,147,"row sum 252 vs stated 147 (handbook p105); stated totals across affected editions: ['147', '174']",high
+2025,CB024CSC05,4,R3,accept_stated,COM-2025-007,244,160,160,row sum 244 vs stated 160 (handbook p62); stated totals across affected editions: ['160'],high
+2025,CB025BUS09,1,R3,set_stated_corrected,COM-2025-008,164,382,,handbook 2025 p55; CB025BUS01 y1 stated 182; OR pair CSC1015F/ECO1110F 18cr,high
+2025,CB025BUS09,1,R1a,accept_computed,COM-2025-008,164,182,164,non-taken choice credits = 18 (all choice groups),high

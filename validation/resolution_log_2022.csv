@@ -1,0 +1,12 @@
+﻿year,plan_code,study_year,rule,action,res_id,credits_ideal,credits_stated,final_credits,evidence,confidence
+2022,CB001BUS06,3,R3,accept_stated,COM-2022-001,43,144,144,row sum 43 vs stated 144 (handbook p97); stated totals across affected editions: ['144'],high
+2022,CB004CSC05,4,R3,accept_stated,COM-2022-002,262,160,160,row sum 262 vs stated 160 (handbook p44); stated totals across affected editions: ['160'],high
+2022,CB004ECO01,3,R3,accept_stated,COM-2022-003,264,162,162,row sum 264 vs stated 162 (handbook p47); stated totals across affected editions: ['162'],high
+2022,CB011BUS06,4,R3,accept_stated,COM-2022-004,18,126,126,row sum 18 vs stated 126 (handbook p131); stated totals across affected editions: ['126'],high
+2022,CB011ECO03,4,R1a,accept_computed,R1a,108,198,108,non-taken choice credits = 90 (all choice groups),high
+2022,CB011PHI03,3,R3,accept_stated,COM-2022-005,198,102,102,row sum 198 vs stated 102 (handbook p122); stated totals across affected editions: ['102'],high
+2022,CB015CSC05,5,R3,accept_stated,COM-2022-006,262,160,160,row sum 262 vs stated 160 (handbook p75); stated totals across affected editions: ['160'],high
+2022,CB015ECO01,4,R3,accept_stated,COM-2022-007,192,90,90,row sum 192 vs stated 90 (handbook p78); stated totals across affected editions: ['90'],high
+2022,CB015INF01,4,R1a,accept_computed,R1a,120,138,120,non-taken choice credits = 18 (all choice groups),high
+2022,CB024CSC05,4,R3,accept_stated,COM-2022-008,262,160,160,row sum 262 vs stated 160 (handbook p59); stated totals across affected editions: ['160'],high
+2022,CB024ECO01,3,R3,accept_stated,COM-2022-009,264,162,162,row sum 264 vs stated 162 (handbook p62); stated totals across affected editions: ['162'],high
