@@ -15,14 +15,21 @@ handbooks (PDF) and the student fees handbooks into relational tables so that:
 2. An **"ideal student"** — a deterministic, documented selection of courses
    per specialisation-year, including a defensible treatment of electives —
    can be costed in credits and Rand.
-3. Credit-load and fee trends can be compared across handbook editions.
+3. Credit-load and fee trends can be compared across handbook editions — and
+   against what the **faculty rules** say each whole degree must total
+   (the rules layer, `degree_rules.csv`).
 
-**Current coverage: Commerce + EBE + Law + Health Sciences + Fees for
-2021–2026** (six editions, 20,438 main-dataset rows across 696
-specialisation register entries). The credit re-think is already visible in
-the data — e.g. BCom Actuarial Science year 1 drops from 185 to 180 credits
-at the 2024 edition. Remaining faculties (HUM, SCI) have 2025 books loaded
-and extractors pending.
+**Current coverage: all six faculties (Commerce, EBE, Law, Health Sciences,
+Science, Humanities) + Fees for 2021–2026** — six editions, 24,536
+main-dataset rows across 1,066 register entries (specialisations and
+majors). The credit re-think is visible in the data from both directions:
+in the curriculum tables (e.g. BCom Actuarial Science year 1 drops from 185
+to 180 credits at the 2024 edition) and in the printed degree rules
+(BBusSc minimum 623→528 credits at 2025, EBE's 4-year minimum 576→560 at
+2026, undergraduate LLB 660→637 at 2026). In Science and Humanities the
+curriculum unit is the **major** (a BSc/BA/BSocSc student combines majors
+under composition rules), so their credit anchors are degree-level rather
+than per-year — see caveat 8 of the user manual.
 
 ## Quick start
 
@@ -31,20 +38,22 @@ pip install -r requirements.txt
 python run_pipeline.py --years all
 ```
 
-The batch runner discovers every year with both a Commerce and a fees PDF in
-`faculty-handbooks-undergraduate/`, runs the as-printed pipeline per year
-(fees extractor → Commerce extractor → main-dataset assembly → validation),
-then builds the **final-clean layer** for all loaded years (resolution rules
-+ adjudication register → `main_dataset_final.csv` → final validation).
-Writers are **merge-by-year**: re-running a year replaces exactly that year's
-rows and leaves every other year byte-identical, so pipeline runs are
-reviewable as single-year git diffs.
+The batch runner discovers every year with a fees PDF plus a Commerce PDF in
+`faculty-handbooks-undergraduate/`, then per year runs the fees extractor,
+**every faculty extractor whose PDF is present** (com, ebe, law, fhs, sci,
+hum), main-dataset assembly and validation; afterwards it builds the
+**final-clean layer** for all loaded years (resolution rules + adjudication
+registers → `main_dataset_final.csv` → final validation). Writers are
+**merge-by-year and merge-by-faculty-within-year**: re-running one
+extractor replaces exactly its own faculty's rows for that year and leaves
+everything else byte-identical, so pipeline runs are reviewable as small
+git diffs.
 
 Individual steps can also be run per year:
 
 ```bash
 python -m extractors.fees.extract --year 2025
-python -m extractors.com.extract --year 2025
+python -m extractors.com.extract --year 2025   # likewise ebe/law/fhs/sci/hum
 python build_main_dataset.py --year 2025
 python validation/validate.py --year 2025
 python build_final_dataset.py --year 2025
@@ -60,16 +69,14 @@ uct-handbook-project/
 │   └── YYYY-_fees.pdf                 #   fees books:    YYYY-_fees.pdf
 ├── run_pipeline.py                    # batch runner (all years / range / list)
 ├── build_main_dataset.py              # assembles the single source of truth
-├── build_final_dataset.py             # final-clean layer (rules + register)
+├── build_final_dataset.py             # final-clean layer (rules + registers)
 ├── common/                            # shared engine + utilities
-│   └── handbook_parser.py             #   faculty-configurable parsing engine
+│   ├── handbook_parser.py             #   faculty-configurable parsing engine
+│   └── degree_rules.py                #   rules-layer extractor (degree minima)
 ├── extractors/                        # ONE config/extractor package PER faculty
-│   ├── com/                           #   built (2021-2026)
-│   ├── ebe/                           #   built (2021-2026)
-│   ├── law/                           #   built (2021-2026)
-│   ├── fhs/                           #   built (2021-2026, bespoke parser)
-│   ├── fees/                          #   built (2021-2026)
-│   └── hum/ sci/                      #   pending
+│   ├── com/ ebe/ law/                 #   shared-engine configs (2021-2026)
+│   ├── fhs/ sci/ hum/                 #   bespoke parsers (2021-2026)
+│   └── fees/                          #   fees handbook (2021-2026)
 ├── resolutions/                       # per-faculty adjudication registers
 ├── data/
 │   ├── interim/                       # per-page text dumps (gitignored)
@@ -79,6 +86,7 @@ uct-handbook-project/
 └── docs/
     ├── USER-MANUAL.md                 # manual for reviewers / deans
     ├── REPLICATION.md                 # detailed process log + hazard catalogue
+    ├── FINAL-DATASET-METHOD.md        # final-layer rule taxonomy + register
     └── commerce-review-and-proposal.md  # original design document
 ```
 
@@ -95,42 +103,56 @@ reviewable adjudication register — *analysts should use the final tables*:
 | **`ideal_student_summary_final`** | specialisation × study-year | final credits + cost with status, confidence, and written rationale |
 | `main_dataset` | specialisation × study-year × course-slot | as-printed single source of truth incl. `ideal_student` flag |
 | `ideal_student_summary` | specialisation × study-year | as-printed credits + cost vs stated/published values |
-| `specialisations` | one row per plan/specialisation code per year | degree + specialisation register |
+| `specialisations` | one row per plan/specialisation/major code per year | degree + specialisation register |
+| `degree_rules` | one row per printed rule statement | the **rules layer**: degree minimum credits, durations, stream totals, composition rules — with rule ref, page and verbatim quote |
 | `curriculum` / `curriculum_totals` | course-slots / stated totals | the curriculum tables as data |
 | `courses` / `course_fees` / `programme_fees_published` | catalogue / fees | supporting joins |
 
 Discrepancy resolution (rule order, evidence requirements, worked examples):
 [docs/FINAL-DATASET-METHOD.md](docs/FINAL-DATASET-METHOD.md). Case-by-case
-adjudications live in [resolutions/com.csv](resolutions/com.csv) with written
-rationale and PDF page evidence.
+adjudications live in per-faculty registers
+(`resolutions/<faculty>.csv`) with written rationale and PDF page evidence;
+Commerce's ([resolutions/com.csv](resolutions/com.csv)) is the only seeded
+one so far.
 
 ## Data quality at a glance (2021–2026, final layer)
 
-Consistent / resolved / unresolved per faculty:
+Consistent / resolved / unresolved per faculty; Science and Humanities
+major-years carry `no_anchor` (majors print no per-year totals — their
+anchors are the degree-level rules):
 
-| Year | COM | EBE | LAW | FHS |
-|---|---|---|---|---|
-| 2021 | 227 / 17 / 30 | 62 / 1 / 27 | 7 / 0 / 5 | 7 / 0 / 12 |
-| 2022 | 240 / 11 / 24 | 57 / 0 / 33 | 7 / 0 / 5 | 8 / 0 / 11 |
-| 2023 | 225 / 15 / 36 | 59 / 0 / 31 | 7 / 0 / 5 | 14 / 0 / 11 |
-| 2024 | 203 / 13 / 55 | 57 / 0 / 33 | 7 / 0 / 5 | 14 / 0 / 11 |
-| 2025 | 219 / 13 / 36 | 55 / 0 / 32 | 7 / 0 / 5 | 11 / 0 / 12 |
-| 2026 | 202 / 11 / 48 | 54 / 0 / 29 | 7 / 0 / 0 | 10 / 0 / 13 |
+| Year | COM | EBE | LAW | FHS | SCI | HUM |
+|---|---|---|---|---|---|---|
+| 2021 | 227 / 17 / 30 | 85 / 0 / 5 | 11 / 0 / 1 | 7 / 0 / 12 | 66 no-anchor | 89 no-anchor |
+| 2022 | 240 / 11 / 24 | 86 / 0 / 4 | 11 / 0 / 1 | 8 / 0 / 11 | 66 no-anchor | 88 no-anchor |
+| 2023 | 225 / 15 / 36 | 88 / 0 / 2 | 11 / 0 / 1 | 14 / 0 / 11 | 60 no-anchor | 88 no-anchor |
+| 2024 | 203 / 13 / 55 | 86 / 0 / 4 | 10 / 0 / 2 | 14 / 0 / 11 | 63 no-anchor | 91 no-anchor |
+| 2025 | 219 / 13 / 36 | 84 / 0 / 6 | 10 / 0 / 2 | 11 / 0 / 12 | 66 no-anchor | 91 no-anchor |
+| 2026 | 202 / 11 / 48 | 80 / 0 / 10 | 7 / 0 / 0 | 10 / 0 / 13 | 66 no-anchor | 87 no-anchor |
 
-Across 2,356 specialisation-years: **1,766 consistent, 81 resolved by
-rules/adjudications, 509 unresolved** (flagged at low confidence, carried at
+Across 3,287 specialisation-years: **1,949 consistent, 80 resolved by
+rules/adjudications, 337 unresolved** (flagged at low confidence, carried at
 the computed value, enumerated with suggested actions in
-`validation/pending_adjudication_<year>.csv`). Commerce's register has been
-provisionally seeded; the EBE, LAW and FHS adjudication passes are pending
-(DEV-TODO.md). LAW's unresolved rows are all the legacy five-year stream
-(prints no totals); FHS's are dominated by the combined Audiology /
-Speech-Language block, whose interleaved sub-tables need a dedicated
-splitter. The MBChB reconciles all six years exactly, with years 1–3 fees
-matching published figures to the rand. Computed fees reconcile at **median
-delta 0.0%** for COM, EBE and FHS; LAW publishes one flat annual fee per
-stream (`flat_annual`), so per-year comparisons legitimately diverge.
-As-printed handbook defects are preserved in the base layer and resolved —
-never silently corrected — in the final layer.
+`validation/pending_adjudication_<year>.csv`) and **921 `no_anchor`**
+Science/Humanities major-years. Commerce's register has been provisionally
+seeded; the EBE, LAW and FHS adjudication passes are pending (DEV-TODO.md)
+— though the August 2026 engine refinements (hazards H37–H40) resolved most
+of what those passes had queued: EBE went from 344/185
+consistent/unresolved to 509/31, and LAW's legacy five-year stream turned
+out to print totals in an unrecognised wording and now reconciles to its
+printed 660-credit stream total (7 spec-years remain, where the 2024/2025
+editions genuinely drop discontinued rows). FHS's unresolved rows are
+dominated by the combined Audiology / Speech-Language block, whose
+interleaved sub-tables need a dedicated splitter. The MBChB reconciles all
+six years exactly, with years 1–3 fees matching published figures to the
+rand. Computed fees reconcile at **median delta 0.0%** for COM, EBE and
+FHS; LAW publishes one flat annual fee per stream (`flat_annual`) and
+SCI/HUM one fee per degree covering every major (`degree_flat`), so their
+per-year comparisons legitimately diverge. As-printed handbook defects are
+preserved in the base layer and resolved — never silently corrected — in
+the final layer. A third validation leg
+(`validation/degree_check_<year>.csv`) reconciles each specialisation's
+whole-degree credit sum against the rules layer.
 
 ## Key identifiers
 
@@ -149,10 +171,15 @@ never silently corrected — in the final layer.
 - **[docs/USER-MANUAL.md](docs/USER-MANUAL.md)** — for reviewers and deans:
   what the dataset contains, how to read it, the ideal-student definition,
   validation results, caveats, and how to query it (no technical background
-  assumed). A Word copy for circulation sits alongside it.
+  assumed). A Word copy for circulation sits alongside it, regenerated from
+  the markdown by `docs/make_user_manual_docx.js`.
 - **[docs/REPLICATION.md](docs/REPLICATION.md)** — the authoritative process
-  log: pipeline details, per-edition layout contracts, the 21-entry hazard
-  catalogue, and the procedure for onboarding new years and faculties.
+  log: pipeline details, per-edition layout contracts, the 40-entry hazard
+  catalogue (H1–H40), the shared-engine / bespoke-parser architecture, and
+  the procedure for onboarding new years and faculties.
+- **[docs/FINAL-DATASET-METHOD.md](docs/FINAL-DATASET-METHOD.md)** — how the
+  final-clean layer resolves discrepancies: the rule taxonomy
+  (R0/R3/R1/R2/R4), the adjudication registers, worked examples.
 - **[docs/commerce-review-and-proposal.md](docs/commerce-review-and-proposal.md)**
   — the original Commerce review and design document.
 
@@ -170,9 +197,14 @@ never silently corrected — in the final layer.
       flat-annual published fees
 - [x] FHS extractor (2021–2026): bespoke parser (multi-code blocks,
       trailing totals, six-year MBChB) reusing the shared grammar
+- [x] SCI + HUM extractors (2021–2026): bespoke parsers with the **major**
+      as the curriculum unit; `no_anchor` status; degree-flat fee matching
+- [x] Rules layer: `degree_rules.csv` + whole-degree validation
+      (`degree_check_<year>.csv`) across all six faculties
 - [ ] Review of the 44 provisional COM adjudications; EBE + LAW + FHS
       adjudication passes (`DEV-TODO.md` documents the workflow)
-- [ ] Remaining faculties: SCI, HUM (majors + composition rules)
+- [ ] Composed-degree ideal student for SCI/HUM (majors + electives to the
+      degree minimum, via the composition rules in `degree_rules.csv`)
 - [ ] Trend analysis across editions (`analysis/`)
 
 Git tags: `baseline-2025` (the pre-change initial state) and

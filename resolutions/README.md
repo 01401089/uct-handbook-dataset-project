@@ -1,7 +1,10 @@
 # Adjudication register
 
-One CSV per faculty (`com.csv`, later `ebe.csv` …) holding **per-case
-adjudications** of handbook print errors and ambiguities. Consumed by
+One CSV per faculty (`com.csv` … `hum.csv` — all six exist) holding
+**per-case adjudications** of handbook print errors and ambiguities.
+Commerce's is the only seeded register so far (44 provisional entries);
+EBE/LAW/FHS passes are queued in DEV-TODO.md, and SCI/HUM are empty by
+design (major-years carry `no_anchor` — nothing to adjudicate per year). Consumed by
 `build_final_dataset.py` (rule R3, which pre-empts all auto-rules). The
 as-printed tables are never touched — every adjudication is applied only in
 the final-clean layer, with the original values retained alongside.
@@ -11,7 +14,8 @@ the final-clean layer, with the original values retained alongside.
 1. Confirm the discrepancy against the PDF (the `source_page` column in the
    as-printed tables points at the page).
 2. Append a row (columns below). `res_id` must be unique and stable
-   (`COM-<year>-<seq>`); one row per (year, plan_code, study_year) — a case
+   (`<FAC>-<year>-<seq>`, e.g. `COM-2025-008`); one row per
+   (year, plan_code, study_year) — a case
    recurring across editions gets one row per year, sharing the rationale.
 3. Re-run `python build_final_dataset.py --year <year>` (or the batch
    runner). `validation/validate_final.py` fails if a register row goes

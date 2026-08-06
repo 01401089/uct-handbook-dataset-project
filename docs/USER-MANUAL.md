@@ -1,8 +1,8 @@
 # UCT Handbook Dataset — User Manual
 
 *For reviewers, deans, and faculty planning teams.*
-*Dataset version: Commerce + EBE + Law + Health Sciences + Fees,
-2021–2026 editions (August 2026).*
+*Dataset version: all six faculties (Commerce, EBE, Law, Health Sciences,
+Science, Humanities) + Fees, 2021–2026 editions (August 2026).*
 
 ---
 
@@ -224,10 +224,11 @@ How discrepancies are resolved — the rule order, the evidence each rule
 demands, and worked examples — is documented in
 [FINAL-DATASET-METHOD.md](FINAL-DATASET-METHOD.md). In short: printed
 arithmetic identities and corroborated cross-edition evidence resolve
-automatically; genuine ambiguities are adjudicated case-by-case in a
-reviewable register (`resolutions/com.csv`) with rationale and page
-evidence; everything else is flagged `unresolved` at `low` confidence rather
-than silently guessed.
+automatically; genuine ambiguities are adjudicated case-by-case in
+reviewable per-faculty registers (`resolutions/<faculty>.csv` — Commerce's
+is the only seeded one so far) with rationale and page evidence; everything
+else is flagged `unresolved` at `low` confidence rather than silently
+guessed.
 
 ## 7. How the data is validated
 
@@ -403,7 +404,8 @@ If a reviewer finds a value that misrepresents the handbook:
    parser or its overrides file is fixed and the year re-run — other years
    are provably unaffected.
 3. **If the handbook itself is wrong or ambiguous**, the decision is entered
-   in the adjudication register (`resolutions/com.csv`) with its rationale
+   in the faculty's adjudication register (`resolutions/<faculty>.csv`,
+   e.g. `resolutions/com.csv`) with its rationale
    and page evidence, and the final layer re-run. The as-printed record is
    never altered; the final tables carry the resolution with its register
    reference, so every correction is visible, attributable, and reversible.
@@ -440,7 +442,7 @@ contribution a reader of this manual can make. They are listed in
 | `data/processed/degree_rules.csv` | the rules layer: printed degree minimums, durations, stream totals (§6.3) |
 | `validation/degree_check_<year>.csv` | whole-degree reconciliation against the rules layer (§7) |
 | `data/processed/*.csv` | supporting tables (§6.3) |
-| `resolutions/com.csv` | the adjudication register with rationales (§10) |
+| `resolutions/<faculty>.csv` | per-faculty adjudication registers with rationales (§10) |
 | `validation/*.csv` | exception reports, resolution logs, pending adjudications (§7) |
 | `docs/FINAL-DATASET-METHOD.md` | how the final layer resolves discrepancies |
 | `docs/REPLICATION.md` | technical process log and hazard catalogue |

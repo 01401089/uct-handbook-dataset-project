@@ -85,10 +85,12 @@ row-sets rather than stable stated totals.
 
 ## 4. The adjudication register
 
-One register per faculty (`resolutions/com.csv`, `resolutions/ebe.csv`, …),
+One register per faculty (`resolutions/com.csv` … `resolutions/hum.csv`),
 all consumed together by the finaliser — schema and workflow in
-`resolutions/README.md`. The EBE register is currently empty (its
-adjudication pass is queued in DEV-TODO.md). The 2026-08 Commerce seeding
+`resolutions/README.md`. The EBE, LAW and FHS registers are currently empty
+(their adjudication passes are queued in DEV-TODO.md); SCI and HUM's are
+empty by design — their major-years carry `no_anchor`, so there is nothing
+to adjudicate per year. The 2026-08 Commerce seeding
 contains **44 provisional entries**
 (`decided_by = "provisional (Claude), pending review"`), covering:
 
@@ -125,10 +127,12 @@ adjudicate against — the computed value is carried, and the degree-level
 anchors live in `degree_rules.csv`; these rows are deliberately kept out
 of the pending reports).
 
-**State of the 2021–2026 load (2026-08-06):** of 1,625 specialisation-years,
-**1,315 consistent**, **80 resolved** by rules or adjudications, **230
-unresolved** (14%) — almost all small ±6…±24 credit gaps, carried at the
-computed value with low confidence and enumerated in the pending reports.
+**State of the 2021–2026 load (2026-08-06, all six faculties):** of 3,287
+specialisation-years, **1,949 consistent**, **80 resolved** by rules or
+adjudications, **337 unresolved** (10%) — almost all small ±6…±24 credit
+gaps, carried at the computed value with low confidence and enumerated in
+the pending reports — and **921 `no_anchor`** Science/Humanities
+major-years.
 
 ## 6. Pipeline integration
 

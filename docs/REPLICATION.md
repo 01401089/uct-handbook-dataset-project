@@ -25,7 +25,7 @@ Raw PDFs live in `faculty-handbooks-undergraduate/` and are **immutable**:
 |---|---|
 | `2025-com-ug.pdf` | Faculty of Commerce UG handbook (303 pp) |
 | `2025-_fees.pdf` | Student Fees handbook (154 pp) |
-| `2025-{ebe,fhs,hum,law,sci}-ug.pdf` | remaining faculties (extractors pending) |
+| `YYYY-{com,ebe,fhs,hum,law,sci}-ug.pdf`, `YYYY-_fees.pdf` | all six faculties + fees, loaded for 2021–2026 (§7–§9) |
 
 Convention for future years: `YYYY-<fac>-ug.pdf`, `YYYY-_fees.pdf`. Drop the
 files in, never rename or edit existing ones.
@@ -45,8 +45,8 @@ Steps 1–4 build and check the **as-printed layer** (exactly what the
 handbooks print, defects preserved). Steps 5–6 build and check the
 **final-clean layer** (`main_dataset_final.csv`,
 `ideal_student_summary_final.csv`): discrepancies resolved by the ordered
-rule set R0/R3/R1/R2/R4 with the curated register `resolutions/com.csv` —
-full method and justification in
+rule set R0/R3/R1/R2/R4 with the curated per-faculty registers
+(`resolutions/<fac>.csv`) — full method and justification in
 [FINAL-DATASET-METHOD.md](FINAL-DATASET-METHOD.md). The batch runner
 executes steps 5–6 for **every loaded year** after the per-year loop
 (cross-edition rules make the final layer a whole-dataset computation).
@@ -189,15 +189,16 @@ files with written rationale, never by editing outputs.
 
 ## 5. Adding a new handbook year — batch processing
 
-Drop `YYYY-com-ug.pdf` and `YYYY-_fees.pdf` into
-`faculty-handbooks-undergraduate/`, then:
+Drop the year's PDFs (`YYYY-<fac>-ug.pdf` for each faculty, plus
+`YYYY-_fees.pdf`) into `faculty-handbooks-undergraduate/`, then:
 
 ```bash
 python run_pipeline.py --years all        # or --years 2027, or --years 2021-2027
 ```
 
-The runner executes fees → com → assemble → validate per year and prints a
-yield summary. Writers are **merge-by-year**: re-running a year replaces
+The runner executes fees → every faculty extractor whose PDF is present →
+assemble → validate per year, then the final-clean layer for all loaded
+years, and prints a yield summary. Writers are **merge-by-year**: re-running a year replaces
 exactly that year's rows in the processed CSVs and leaves every other year
 byte-identical (verified for the 2025 baseline on every change). Then:
 
