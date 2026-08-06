@@ -118,7 +118,12 @@ caught mechanically.
 
 `final_credit_status` values: `consistent` (no discrepancy), `resolved_computed`
 (R1a/R2a), `resolved_manual` / `resolved_stated` (register), `unresolved`
-(default policy applied; treat with care and see the pending report).
+(default policy applied; treat with care and see the pending report), and
+`no_anchor` (Science/Humanities majors: the handbooks print no per-year
+totals for majors by design, so there is nothing to reconcile or
+adjudicate against — the computed value is carried, and the degree-level
+anchors live in `degree_rules.csv`; these rows are deliberately kept out
+of the pending reports).
 
 **State of the 2021–2026 load (2026-08-06):** of 1,625 specialisation-years,
 **1,315 consistent**, **80 resolved** by rules or adjudications, **230

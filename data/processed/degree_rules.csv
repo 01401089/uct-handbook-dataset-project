@@ -1,310 +1,388 @@
-﻿year,faculty,degree_scope,plan_code_hint,rule_ref,min_total_credits,min_level_credits,min_level,max_total_credits,duration_years,cohort,is_stream_total,source_page,quote
-2021,COM,Advanced Diploma in Management Development,,,120,,,,,,False,19,is accredited with 120 NQF credits
-2021,COM,Bachelor of Business Science,,FBB1,,,,,4,,False,25,FBB1 The curriculum shall extend over a minimum of four years
-2021,COM,Bachelor of Business Science,,FBB2,623,96,8,,,,False,25,FBB2 The curriculum for this degree shall consist of a minimum of 623 NQF credits with a minimum of 96 credits at HEQSF level 8
-2021,COM,Bachelor of Business Science in Actuarial Science,,FBC1,,,,,4,,False,27,FBC1 The curriculum shall extend over a minimum of four years
-2021,COM,Bachelor of Business Science in Actuarial Science,,FBC2,681,96,8,,,,False,27,FBC2 The curriculum for this degree shall consist of a minimum of 681 NQF credits with a minimum of 96 credits at HEQSF level 8
-2021,COM,Bachelor of Business Science in Actuarial Science,,FBD1.1,,,,,4-5,,False,28,FBD1.1 The curriculum for the degree shall extend over four or five years
-2021,COM,Bachelor of Business Science in Actuarial Science,,FBE1.1,,,,,4-5,,False,28,FBE1.1 The curriculum for the degree shall extend over four or five years
-2021,COM,Bachelor of Commerce,,FBF1,,,,,3,,False,30,FBF1 The curriculum for the degree shall extend over three years
-2021,COM,Bachelor of Commerce,,FBF2,450,120,7,,,,False,30,FBF2 The curriculum for this degree shall consist of a minimum of 450 NQF credits of which 120 NQF credits will be at NQF Level 7
-2021,COM,Bachelor of Commerce in Actuarial Science,,FBG1,,,,,3,,False,31,FBG1 The curriculum for the degree shall extend over three years
-2021,COM,Bachelor of Commerce in Actuarial Science,,FBG2,528,120,7,,,,False,31,FBG2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
-2021,COM,Bachelor of Commerce Academic Development,,FBH1,,,,,3-4,,False,32,FBH1 The curriculum for the degree shall extend over three or four years
-2021,COM,Bachelor of Commerce in Actuarial Science Academic Development,,FBI1,,,,,3-4,,False,33,FBI1 The curriculum for the degree shall extend over three or four years
-2021,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,4,,False,38,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
-2021,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,5,,False,38,the curriculum for the five-year undergraduate curriculum stream will extend over five years
-2021,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,3,,False,38,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
-2021,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,2,,False,38,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
-2021,LAW,LLB graduate LLB stream,LP001,,504,,,,,,True,39,Total credits for the graduate LLB stream ............................. 504
-2021,LAW,LLB Final Level electives,,FP4.6,,,,54,,,False,40,The maximum number of credits for elective courses in the Final Level is 54
-2021,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,True,41,Total credits for the undergraduate LLB stream ................... 660
-2021,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,True,43,Total credits for the five-year undergraduate LLB stream ... 660
-2021,LAW,LLB Final Level electives,,FP4.4,36,,,,,,False,63,must choose elective courses totalling a minimum of 36 NQF credits
-2021,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBChB),,FBA2,,,,,6,,False,20,FBA2 The curriculum for the degree extends over at least six years of full-time study
-2021,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBChB),,FBB2,,,,,,,False,26,FBB2 The programme extends over three semesters (18 months) of full-time study
-2021,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,False,29,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
-2021,FHS,BACHELOR OF SCIENCE IN MEDICINE (BSC MEDICINE),,FBD1,,,,,4,,False,31,FBD1 Each curriculum extends over four years of full-time study
-2021,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,4-5,,False,37,FBE1 The degree programme extends over either four or (for students passing through the Intervention Programme) five years of full-time study
-2021,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBF1,,,,,4,,False,41,FBF1 The curriculum for the degree extends over four years of full-time study
-2022,COM,Advanced Diploma in Management Development,,,120,,,,,,False,23,is accredited with 120 NQF credits
-2022,COM,Bachelor of Business Science,,FBB1,,,,,4,,False,28,FBB1 The curriculum shall extend over a minimum of four years
-2022,COM,Bachelor of Business Science,,FBB2,623,96,8,,,,False,28,FBB2 The curriculum for this degree shall consist of a minimum of 623 NQF credits with a minimum of 96 credits at NQF level 8
-2022,COM,Bachelor of Business Science in Actuarial Science,,FBC1,681,96,8,,,,False,29,FBC1 The curriculum for this degree shall consist of a minimum of 681 NQF credits with a minimum of 96 credits at NQF level 8
-2022,COM,Bachelor of Business Science in Actuarial Science,,FBD1.1,,,,,4-5,,False,30,FBD1.1 The curriculum for the degree shall extend over four or five years
-2022,COM,Bachelor of Business Science in Actuarial Science,,FBE1.1,,,,,4-5,,False,30,FBE1.1 The curriculum for the degree shall extend over four or five years
-2022,COM,Bachelor of Commerce,,FBF1,,,,,3,,False,32,FBF1 The curriculum for the degree shall extend over three years
-2022,COM,Bachelor of Commerce,,FBF2,440,120,7,,,,False,32,FBF2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120 NQF credits will be at NQF Level 7
-2022,COM,Bachelor of Commerce in Actuarial Science,,FBG1,,,,,3,,False,33,FBG1 The curriculum for the degree shall extend over three years
-2022,COM,Bachelor of Commerce in Actuarial Science,,FBG2,528,120,7,,,,False,33,FBG2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
-2022,COM,Bachelor of Commerce Academic Development,,FBH1,,,,,3-4,,False,34,FBH1 The curriculum for the degree shall extend over three or four years
-2022,COM,Bachelor of Commerce in Actuarial Science Academic Development,,FBI1,,,,,3-4,,False,35,FBI1 The curriculum for the degree shall extend over three or four years
-2022,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,4,,False,40,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
-2022,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,5,,False,40,the curriculum for the five-year undergraduate curriculum stream will extend over five years
-2022,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,3,,False,40,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
-2022,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,2,,False,40,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
-2022,LAW,LLB graduate LLB stream,LP001,,504,,,,,,True,41,Total credits for the graduate LLB stream ............................. 504
-2022,LAW,LLB Final Level electives,,FP4.6,,,,54,,,False,42,The maximum number of credits for elective courses in the Final Level is 54
-2022,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,True,43,Total credits for the undergraduate LLB stream ................... 660
-2022,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,True,45,Total credits for the five-year undergraduate LLB stream... 660
-2022,LAW,LLB Final Level electives,,FP4.4,36,,,,,,False,64,must choose elective courses totalling a minimum of 36 NQF credits
-2022,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY,,FBA2,,,,,6,,False,66,FBA2 The curriculum for the degree extends over at least six years of full-time study
-2022,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY 69,,FBB2,,,,,,,False,73,FBB2 The programme extends over three semesters (18 months) of full-time study
-2022,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,False,76,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
-2022,FHS,BACHELOR OF SCIENCE IN AUDIOLOGY AND BACHELOR,,FBD1,,,,,4,,False,78,FBD1 Each curriculum extends over four years of full-time study
-2022,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,4-5,,False,84,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
-2022,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBF1,,,,,4,,False,88,FBF1 The curriculum for the degree extends over four years of full-time study
-2023,COM,Advanced Diploma in Management Development,,,120,,,,,,False,23,is accredited with 120 NQF credits
-2023,COM,Bachelor of Business Science,,FBB1,,,,,4,,False,29,FBB1 The curriculum shall extend over a minimum of four years
-2023,COM,Bachelor of Business Science,,FBB2,623,96,8,,,,False,29,FBB2 The curriculum for this degree shall consist of a minimum of 623 NQF credits with a minimum of 96 credits at NQF level 8
-2023,COM,Bachelor of Business Science in Actuarial Science,,FBC1,681,96,8,,,,False,30,FBC1 The curriculum for this degree shall consist of a minimum of 681 NQF credits with a minimum of 96 credits at NQF level 8
-2023,COM,Bachelor of Business Science in Actuarial Science,,FBD1.1,,,,,4-5,,False,31,FBD1.1 The curriculum for the degree shall extend over four or five years
-2023,COM,Bachelor of Business Science in Actuarial Science,,FBE1.1,,,,,4-5,,False,31,FBE1.1 The curriculum for the degree shall extend over four or five years
-2023,COM,Bachelor of Commerce,,FBF1,,,,,3,,False,32,FBF1 The curriculum for the degree shall extend over three years
-2023,COM,Bachelor of Commerce,,FBF2,440,120,7,,,,False,32,FBF2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120 NQF credits will be at NQF Level 7
-2023,COM,Bachelor of Commerce in Actuarial Science,,FBG1,,,,,3,,False,33,FBG1 The curriculum for the degree shall extend over three years
-2023,COM,Bachelor of Commerce in Actuarial Science,,FBG2,528,120,7,,,,False,33,FBG2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
-2023,COM,Bachelor of Commerce Academic Development,,FBH1,,,,,3-4,,False,34,FBH1 The curriculum for the degree shall extend over three or four years
-2023,COM,Bachelor of Commerce in Actuarial Science Academic Development,,FBI1,,,,,3-4,,False,35,FBI1 The curriculum for the degree shall extend over three or four years
-2023,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,4,,False,40,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
-2023,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,5,,False,40,the curriculum for the five-year undergraduate curriculum stream will extend over five years
-2023,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,3,,False,40,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
-2023,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,2,,False,40,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
-2023,LAW,LLB graduate LLB stream,LP001,,504,,,,,,True,41,Total credits for the graduate LLB stream ............................. 504
-2023,LAW,LLB Final Level electives,,FP4.4,36,,,,,,False,42,must choose elective courses totalling a minimum of 36 NQF credits
-2023,LAW,LLB Final Level electives,,FP4.6,,,,54,,,False,42,The maximum number of credits for elective courses in the Final Level is 54
-2023,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,True,43,Total credits for the undergraduate LLB stream ................... 660
-2023,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,True,45,Total credits for the five-year undergraduate LLB stream... 660
-2023,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY,,FBA2,,,,,6,,False,66,FBA2 The curriculum for the degree extends over at least six years of on a full-time study basis
-2023,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,False,73,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
-2023,FHS,BACHELOR OF SCIENCE IN AUDIOLOGY AND BACHELOR,,FBD1,,,,,4,,False,75,FBD1 Each curriculum extends over four years of full-time study
-2023,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,4-5,,False,81,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
-2023,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBF1,,,,,4,,False,85,FBF1 The curriculum for the degree extends over four years of full-time study
-2023,FHS,MBChB (Fundamentals of Health Sciences route),,FBA9.13,,,,,4-5,,False,90,FBA9.13 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
-2023,FHS,MBChB courses.,,FBB2,,,,,,,False,93,FBB2 The programme extends over three semesters (18 months) of full-time study
-2024,COM,Advanced Diploma in Management Development,,,120,,,,,,False,17,is accredited with 120 NQF credits
-2024,COM,Bachelor of Business Science,,FBB2,623,96,8,,,,False,22,FBB2 The curriculum for this degree shall consist of a minimum of 623 NQF credits of which 96 NQF credits will be at NQF level 8
-2024,COM,Bachelor of Business Science in Actuarial Science,,FBC2,681,96,8,,,,False,22,FBC2 The curriculum for this degree shall consist of a minimum of 681 NQF credits with a minimum of 96 credits at NQF level 8
-2024,COM,Bachelor of Business Science Academic Development,,FBD1,,,,,4-5,,False,23,FBD1 The curriculum for the degree shall extend over four or five years
-2024,COM,Bachelor of Business Science Academic Development,,FBD3,,,,,4-5,,False,23,FBD3 The curriculum for the degree shall extend over four or five years
-2024,COM,Bachelor of Commerce,,FBE2,440,120,7,,,,False,24,FBE2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120NQF credits will be at NQF Level 7
-2024,COM,Bachelor of Commerce in Actuarial Science,,FBF2,528,120,7,,,,False,25,FBF2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120NQF credits will be at NQF Level 7
-2024,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,4,,False,39,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
-2024,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,5,,False,39,the curriculum for the five-year undergraduate curriculum stream will extend over five years
-2024,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,3,,False,39,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
-2024,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,2,,False,39,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
-2024,LAW,LLB graduate LLB stream,LP001,,504,,,,,,True,40,Total credits for the graduate LLB stream ............................. 504
-2024,LAW,LLB Final Level electives,,FP4.4,36,,,,,,False,40,must choose elective courses totalling a minimum of 36 NQF credits
-2024,LAW,LLB Final Level electives,,FP4.6,,,,54,,,False,40,The maximum number of credits for elective courses in the Final Level is 54
-2024,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,True,42,Total credits for the undergraduate LLB stream ................... 660
-2024,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,True,43,Total credits for the five-year undergraduate LLB stream... 660
-2024,FHS,MBChB:,,FBD1,,,,,4,,False,65,FBD1 Each curriculum extends over four years of full-time study
-2024,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBChB),,FBA2,,,,,6,,False,71,FBA2 The curriculum for the degree extends over at least six years of on a full-time study basis
-2024,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,False,79,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
-2024,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,4-5,,False,81,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
-2024,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBF1,,,,,4,,False,84,FBF1 The curriculum for the degree extends over four years of full-time study
-2024,FHS,MBChB (Fundamentals of Health Sciences route),,FBA9.13,,,,,4-5,,False,89,FBA9.13 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
-2024,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBB2,,,,,,,False,92,FBB2 The programme extends over three semesters (18 months) of full-time study
-2025,COM,Advanced Diploma in Management Development,,,120,,,,,,False,22,is accredited with 120 NQF credits
-2025,COM,Bachelor of Business Science,,FBB2,528,120,8,,,,False,30,FBB2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits must be at NQF level 8
-2025,COM,Bachelor of Business Science in Actuarial Science,,FBC2,528,120,8,,,,False,32,FBC2 The curriculum for this degree shall consist of a minimum of 528 NQF credits with a minimum of 120 credits at NQF level 8
-2025,COM,Bachelor of Business Science Academic Development,,FBD1.1,,,,,4-5,,False,33,FBD1.1 The curriculum for the degree shall extend over four or five years
-2025,COM,Bachelor of Business Science Academic Development,,FBD2.1,,,,,4-5,,False,33,FBD2.1 The curriculum for the degree shall extend over four or five years
-2025,COM,Bachelor of Commerce,,FBE2,440,120,7,,,,False,34,FBE2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120 NQF credits must be at NQF Level 7
-2025,COM,Bachelor of Commerce in Actuarial Science,,FBF2,528,120,7,,,,False,36,FBF2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
-2025,COM,Bachelor of Commerce Academic Development,,FBG1.1,,,,,3-4,,False,37,FBG1.1 The curriculum for the degree shall extend over three or four years
-2025,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,4,,False,40,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
-2025,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,5,,False,40,the curriculum for the five-year undergraduate curriculum stream will extend over five years
-2025,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,3,,False,40,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
-2025,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,2,,False,40,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
-2025,LAW,LLB graduate LLB stream,LP001,,504,,,,,,True,41,Total credits for the graduate LLB stream ............................. 504
-2025,LAW,LLB Final Level electives,,FP4.4,36,,,,,,False,42,must choose elective courses totalling a minimum of 36 NQF credits
-2025,LAW,LLB Final Level electives,,FP4.6,,,,54,,,False,42,The maximum number of credits for elective courses in the Final Level is 54
-2025,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,True,43,Total credits for the undergraduate LLB stream ................... 660
-2025,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,True,45,Total credits for the five-year undergraduate LLB stream ... 660
-2025,FHS,MBChB:,,FBD1,,,,,4,,False,73,FBD1 Each curriculum extends over four years of full-time study
-2025,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBChB),,FBA2,,,,,6,,False,78,FBA2 The curriculum for the degree extends over at least six years of on a full-time study basis
-2025,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,False,85,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
-2025,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,4-5,,False,87,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
-2025,FHS,Bachelor of Science in Physiotherapy,,FBF1,,,,,4,,False,90,FBF1 The curriculum for the degree extends over four years of full-time study
-2025,FHS,MBChB (Fundamentals of Health Sciences route),,FBA9.13,,,,,4-5,,False,94,FBA9.13 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
-2025,FHS,Bachelor of Science in Physiotherapy,,FBB2,,,,,,,False,97,FBB2 The programme extends over three semesters (18 months) of full-time study
-2026,COM,Advanced Diploma in Management,,,120,,,,,,False,23,is accredited with 120 NQF credits
-2026,COM,Bachelor of Business Science,,FBB2,528,120,8,,,,False,31,FBB2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits must be at NQF level 8
-2026,COM,Bachelor of Business Science in Actuarial Science,,FBC2,528,120,8,,,,False,32,FBC2 The curriculum for this degree shall consist of a minimum of 528 NQF credits with a minimum of 120 credits at NQF level 8
-2026,COM,Bachelor of Business Science,,FBD1.1,,,,,4-5,,False,34,FBD1.1 The curriculum for the degree shall extend over four or five years
-2026,COM,Bachelor of Business Science,,FBD2.1,,,,,4-5,,False,34,FBD2.1 The curriculum for the degree shall extend over four or five years
-2026,COM,Bachelor of Commerce,,FBE2,440,120,7,,,,False,36,FBE2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120 NQF credits must be at NQF Level 7
-2026,COM,Bachelor of Commerce in Actuarial Science,,FBF2,528,120,7,,,,False,38,FBF2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
-2026,COM,Bachelor of Commerce Academic Development,,FBG1.1,,,,,3-4,,False,40,FBG1.1 The curriculum for the degree shall extend over three or four years
-2026,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,4,,False,42,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
-2026,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,5,,False,42,the curriculum for the five-year undergraduate curriculum stream will extend over five years
-2026,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,3,,False,42,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
-2026,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,2,,False,42,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
-2026,LAW,LLB graduate LLB stream,LP001,,504,,,,,,True,43,Total credits for the graduate LLB stream ............................. 504
-2026,LAW,LLB Final Level electives,,FP4.4,36,,,,,,False,43,must choose elective courses totalling a minimum of 36 NQF credits
-2026,LAW,LLB Final Level electives,,FP4.6,,,,54,,,False,43,The maximum number of credits for elective courses in the Final Level is 54
-2026,LAW,LLB undergraduate LLB stream,LB002,,637,,,,,,True,45,Total credits for the undergraduate LLB stream ................... 637
-2026,FHS,BSc Audiology and BSc Speech Language-Pathology,,FBD1,,,,,4,,False,44,FBD1 Each curriculum extends over four years of full-time study
-2026,FHS,Bachelor of Medicine and Bachelor of Surgery (MBChB),,FBA2,,,,,6,,False,50,FBA2 The curriculum for the degree extends over at least six years of on a full-time study basis
-2026,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,False,56,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
-2026,FHS,BSc Occupational Therapy,,FBE1,,,,,4-5,,False,57,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
-2026,FHS,BSc Physiotherapy,,FBF1,,,,,4,,False,60,FBF1 The curriculum for the degree extends over four years of full-time study
-2026,FHS,MBChB (Fundamentals of Health Sciences route),,FBA9.13,,,,,4-5,,False,64,FBA9.13 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
-2026,FHS,BSc Physiotherapy,,FBB1,,,,,,,False,67,FBB1 The programme extends over three semesters (18 months) of full-time study
-2021,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,False,14,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2021,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,False,14,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2021,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,3,,False,14,FB2.1 The curriculum shall extend over not less than 3 academic years
-2021,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,4,,False,14,FB2.2 The curriculum shall extend over not less than 4 academic years
-2021,EBE,EB019APG09,EB019APG09,,576,,,,,,False,22,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB819APG09,EB819APG09,,576,,,,,,False,23,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB019APG11,EB019APG11,,576,,,,,,False,25,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB819APG11,EB819APG11,,576,,,,,,False,26,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB001CHE06 transferee/access route,EB001CHE06,,464,,,,,,False,35,transferee programme are required to complete 464 credits
-2021,EBE,EB001CHE01 transferee/access route,EB001CHE01,,452,,,,,,False,36,conversion programme are required to complete 452 credits
-2021,EBE,EB002CIV01,EB002CIV01,,576,,,,,,False,38,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB015CON04,EB015CON04,,450,,,,,,False,43,A candidate shall complete approved courses of a value not less than 450 credits
-2021,EBE,EB017CON03,EB017CON03,,454,,,,,,False,44,A candidate shall complete approved courses of a value not less than 454 credits
-2021,EBE,EB009EEE01,EB009EEE01,,576,,,,,,False,46,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB809EEE01,EB809EEE01,,576,,,,,,False,48,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB022EEE02,EB022EEE02,,576,,,,,,False,50,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB822EEE02,EB822EEE02,,576,,,,,,False,52,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB011EEE05,EB011EEE05,,576,,,,,,False,55,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB811EEE05,EB811EEE05,,576,,,,,,False,57,A candidate shall complete approved courses of a value not less than 576 credits
-2021,EBE,EB005MEC01,EB005MEC01,,576,,,,,,False,60,A candidate shall complete approved courses to a value of at least 576 credits
-2021,EBE,EB805MEC01,EB805MEC01,,576,,,,,,False,62,A candidate shall complete approved courses to a value of at least 576 credits
-2021,EBE,EB010MEC05,EB010MEC05,,576,,,,,,False,64,A candidate shall complete approved courses to a value of at least 576 credits
-2021,EBE,EB810MEC05,EB810MEC05,,576,,,,,,False,66,A candidate shall complete approved courses to a value of at least 576 credits
-2022,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2022,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2022,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,3,,False,15,FB2.1 The curriculum shall extend over not less than 3 academic years
-2022,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,4,,False,15,FB2.2 The curriculum shall extend over not less than 4 academic years
-2022,EBE,EB019APG09,EB019APG09,,576,,,,,,False,23,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB819APG09,EB819APG09,,576,,,,,,False,24,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB019APG11,EB019APG11,,576,,,,,,False,26,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB819APG11,EB819APG11,,576,,,,,,False,27,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB001CHE06 transferee/access route,EB001CHE06,,464,,,,,,False,36,transferee programme are required to complete 464 credits
-2022,EBE,EB001CHE01 transferee/access route,EB001CHE01,,452,,,,,,False,37,conversion programme are required to complete 452 credits
-2022,EBE,EB002CIV01,EB002CIV01,,576,,,,,,False,39,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB015CON04,EB015CON04,,450,,,,,,False,44,A candidate shall complete approved courses of a value not less than 450 credits
-2022,EBE,EB017CON03,EB017CON03,,468,,,,,,False,45,A candidate shall complete approved courses of a value not less than 468 credits
-2022,EBE,EB009EEE01,EB009EEE01,,576,,,,,,False,47,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB809EEE01,EB809EEE01,,576,,,,,,False,49,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB022EEE02,EB022EEE02,,576,,,,,,False,51,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB822EEE02,EB822EEE02,,576,,,,,,False,53,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB011EEE05,EB011EEE05,,576,,,,,,False,55,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB811EEE05,EB811EEE05,,576,,,,,,False,57,A candidate shall complete approved courses of a value not less than 576 credits
-2022,EBE,EB005MEC01,EB005MEC01,,576,,,,,,False,60,A candidate shall complete approved courses to a value of at least 576 credits
-2022,EBE,EB805MEC01,EB805MEC01,,576,,,,,,False,62,A candidate shall complete approved courses to a value of at least 576 credits
-2022,EBE,EB010MEC05,EB010MEC05,,576,,,,,,False,64,A candidate shall complete approved courses to a value of at least 576 credits
-2022,EBE,EB810MEC05,EB810MEC05,,576,,,,,,False,66,A candidate shall complete approved courses to a value of at least 576 credits
-2023,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2023,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2023,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,3,,False,15,FB2.1 The curriculum shall extend over not less than 3 academic years
-2023,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,4,,False,15,FB2.2 The curriculum shall extend over not less than 4 academic years
-2023,EBE,EB019APG09,EB019APG09,,576,,,,,,False,23,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB819APG09,EB819APG09,,576,,,,,,False,24,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB019APG11,EB019APG11,,576,,,,,,False,26,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB819APG11,EB819APG11,,576,,,,,,False,27,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB001CHE06 transferee/access route,EB001CHE06,,464,,,,,,False,37,transferee programme are required to complete 464 credits
-2023,EBE,EB001CHE01 transferee/access route,EB001CHE01,,452,,,,,,False,38,conversion programme are required to complete 452 credits
-2023,EBE,EB002CIV01,EB002CIV01,,576,,,,,,False,39,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB015CON04,EB015CON04,,464,,,,,,False,44,A candidate shall complete approved courses of a value not less than 464 credits
-2023,EBE,EB017CON03,EB017CON03,,468,,,,,,False,46,A candidate shall complete approved courses of a value not less than 468 credits
-2023,EBE,EB009EEE01,EB009EEE01,,576,,,,,,False,47,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB809EEE01,EB809EEE01,,576,,,,,,False,49,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB022EEE02,EB022EEE02,,576,,,,,,False,51,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB822EEE02,EB822EEE02,,576,,,,,,False,53,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB011EEE05,EB011EEE05,,576,,,,,,False,56,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB811EEE05,EB811EEE05,,576,,,,,,False,58,A candidate shall complete approved courses of a value not less than 576 credits
-2023,EBE,EB005MEC01,EB005MEC01,,576,,,,,,False,61,A candidate shall complete approved courses to a value of at least 576 credits
-2023,EBE,EB805MEC01,EB805MEC01,,576,,,,,,False,63,A candidate shall complete approved courses to a value of at least 576 credits
-2023,EBE,EB010MEC05,EB010MEC05,,576,,,,,,False,64,A candidate shall complete approved courses to a value of at least 576 credits
-2023,EBE,EB810MEC05,EB810MEC05,,576,,,,,,False,67,A candidate shall complete approved courses to a value of at least 576 credits
-2024,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,False,16,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2024,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,False,16,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2024,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,3,,False,16,FB2.1 The curriculum shall extend over not less than 3 academic years
-2024,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,4,,False,16,FB2.2 The curriculum shall extend over not less than 4 academic years
-2024,EBE,EB019APG09,EB019APG09,,576,,,,,,False,24,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB819APG09,EB819APG09,,576,,,,,,False,25,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB019APG11,EB019APG11,,576,,,,,,False,27,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB819APG11,EB819APG11,,576,,,,,,False,28,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB001CHE06 transferee/access route,EB001CHE06,,464,,,,,,False,38,transferee programme are required to complete 464 credits
-2024,EBE,EB001CHE01 transferee/access route,EB001CHE01,,452,,,,,,False,39,conversion programme are required to complete 452 credits
-2024,EBE,EB002CIV01,EB002CIV01,,576,,,,,,False,40,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB015CON04,EB015CON04,,458,,,,,,False,45,A candidate shall complete approved courses of a value not less than 458 credits
-2024,EBE,EB017CON03,EB017CON03,,452,,,,,,False,47,A candidate shall complete approved courses of a value not less than 452 credits
-2024,EBE,EB009EEE01,EB009EEE01,,576,,,,,,False,48,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB809EEE01,EB809EEE01,,576,,,,,,False,50,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB022EEE02,EB022EEE02,,576,,,,,,False,52,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB822EEE02,EB822EEE02,,576,,,,,,False,55,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB011EEE05,EB011EEE05,,576,,,,,,False,57,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB811EEE05,EB811EEE05,,576,,,,,,False,59,A candidate shall complete approved courses of a value not less than 576 credits
-2024,EBE,EB005MEC01,EB005MEC01,,576,,,,,,False,62,A candidate shall complete approved courses to a value of at least 576 credits
-2024,EBE,EB805MEC01,EB805MEC01,,576,,,,,,False,64,A candidate shall complete approved courses to a value of at least 576 credits
-2024,EBE,EB010MEC05,EB010MEC05,,576,,,,,,False,66,A candidate shall complete approved courses to a value of at least 576 credits
-2024,EBE,EB810MEC05,EB810MEC05,,576,,,,,,False,68,A candidate shall complete approved courses to a value of at least 576 credits
-2025,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2025,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2025,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,3,,False,15,FB2.1 The curriculum shall extend over not less than 3 academic years
-2025,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,4,,False,15,FB2.2 The curriculum shall extend over not less than 4 academic years
-2025,EBE,EB019APG09,EB019APG09,,576,,,,,,False,28,A candidate shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB819APG09,EB819APG09,,576,,,,,,False,29,A candidate shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB019APG11,EB019APG11,,576,,,,,,False,31,A candidate shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB819APG11,EB819APG11,,576,,,,,,False,32,A candidate shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB001CHE06 transferee/access route,EB001CHE06,,448,,,,,,False,42,transferee programme are required to complete 448 credits
-2025,EBE,EB001CHE01 transferee/access route,EB001CHE01,,436,,,,,,False,43,conversion programme are required to complete 436 credits
-2025,EBE,EB002CIV01,EB002CIV01,,576,,,,,,False,44,A candidate shall complete approved courses of a value not less than 576 credits (or 560 credits if admitted to the programme in the first year from 2025 and enrolled onto the new curriculum)
-2025,EBE,EB002CIV01,EB002CIV01,,560,,,,,registered in 2025,False,44,A candidate shall complete approved courses of a value not less than 576 credits (or 560 credits if admitted to the programme in the first year from 2025 and enrolled onto the new curriculum)
-2025,EBE,EB015CON04,EB015CON04,,458,,,,,,False,49,A candidate shall complete approved courses of a value not less than 458 credits
-2025,EBE,EB017CON03,EB017CON03,,452,,,,,,False,50,A candidate shall complete approved courses of a value not less than 452 credits
-2025,EBE,EB009EEE01,EB009EEE01,,560,,,,,registered in 2025,False,52,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2025,EBE,EB009EEE01,EB009EEE01,,576,,,,,registered before 2025,False,52,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB809EEE01,EB809EEE01,,560,,,,,registered in 2025,False,54,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2025,EBE,EB809EEE01,EB809EEE01,,576,,,,,registered before 2025,False,54,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB022EEE02,EB022EEE02,,560,,,,,registered in 2025,False,56,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2025,EBE,EB022EEE02,EB022EEE02,,576,,,,,registered before 2025,False,56,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB822EEE02,EB822EEE02,,560,,,,,registered in 2025,False,59,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2025,EBE,EB822EEE02,EB822EEE02,,576,,,,,registered before 2025,False,59,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB011EEE05,EB011EEE05,,560,,,,,registered in 2025,False,62,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2025,EBE,EB011EEE05,EB011EEE05,,576,,,,,registered before 2025,False,62,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB811EEE05,EB811EEE05,,560,,,,,registered in 2025,False,64,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2025,EBE,EB811EEE05,EB811EEE05,,576,,,,,registered before 2025,False,64,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2025,EBE,EB005MEC01,EB005MEC01,,576,,,,,,False,67,A candidate shall complete approved courses to a value of at least 576 credits
-2025,EBE,EB805MEC01,EB805MEC01,,576,,,,,,False,69,A candidate shall complete approved courses to a value of at least 576 credits
-2025,EBE,EB010MEC05,EB010MEC05,,576,,,,,,False,71,A candidate shall complete approved courses to a value of at least 576 credits
-2025,EBE,EB810MEC05,EB810MEC05,,576,,,,,,False,73,A candidate shall complete approved courses to a value of at least 576 credits
-2026,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,560,,,,,,False,14,FB3.2 Candidates must complete approved courses of not less than 560 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2026,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,False,14,FB3.2 Candidates must complete approved courses of not less than 560 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
-2026,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,3,,False,14,FB2.1 The curriculum shall extend over not less than 3 academic years
-2026,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,4,,False,14,FB2.2 The curriculum shall extend over not less than 4 academic years
-2026,EBE,EB019APG09,EB019APG09,,519,,,,,,False,26,A candidate shall complete approved courses of a value not less than 519 credits
-2026,EBE,EB019APG09,EB019APG09,,576,,,,,,False,26,A candidate shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB819APG09,EB819APG09,,519,,,,,,False,27,A candidate shall complete approved courses of a value not less than 519 credits
-2026,EBE,EB819APG09,EB819APG09,,576,,,,,,False,28,A candidate shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB019APG11,EB019APG11,,511,,,,,,False,29,A candidate shall complete approved courses of a value not less than 511 credits
-2026,EBE,EB019APG11,EB019APG11,,576,,,,,,False,29,A candidate shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB819APG11,EB819APG11,,511,,,,,,False,30,A candidate shall complete approved courses of a value not less than 511 credits
-2026,EBE,EB819APG11,EB819APG11,,576,,,,,,False,31,A candidate shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB001CHE06 transferee/access route,EB001CHE06,,448,,,,,,False,40,transferee programme are required to complete 448 credits
-2026,EBE,EB001CHE01 transferee/access route,EB001CHE01,,436,,,,,,False,41,conversion programme are required to complete 436 credits
-2026,EBE,EB002CIV01,EB002CIV01,,576,,,,,,False,41,A candidate shall complete approved courses of a value not less than 576 credits (or 560 credits if admitted to the programme in the first year from 2025 and enrolled onto the new curriculum)
-2026,EBE,EB002CIV01,EB002CIV01,,560,,,,,registered in 2025,False,41,A candidate shall complete approved courses of a value not less than 576 credits (or 560 credits if admitted to the programme in the first year from 2025 and enrolled onto the new curriculum)
-2026,EBE,EB015CON04,EB015CON04,,422,,,,,,False,46,A candidate shall complete approved courses of a value not less than 422 credits
-2026,EBE,EB017CON03,EB017CON03,,452,,,,,,False,48,A candidate shall complete approved courses of a value not less than 452 credits
-2026,EBE,EB009EEE01,EB009EEE01,,560,,,,,registered in 2025,False,49,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2026,EBE,EB009EEE01,EB009EEE01,,576,,,,,registered before 2025,False,49,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB809EEE01,EB809EEE01,,560,,,,,registered in 2025,False,51,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2026,EBE,EB809EEE01,EB809EEE01,,576,,,,,registered before 2025,False,51,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB022EEE02,EB022EEE02,,560,,,,,registered in 2025,False,53,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2026,EBE,EB022EEE02,EB022EEE02,,576,,,,,registered before 2025,False,53,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB822EEE02,EB822EEE02,,560,,,,,registered in 2025,False,55,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2026,EBE,EB822EEE02,EB822EEE02,,576,,,,,registered before 2025,False,55,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB011EEE05,EB011EEE05,,560,,,,,registered in 2025,False,58,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2026,EBE,EB011EEE05,EB011EEE05,,576,,,,,registered before 2025,False,58,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB811EEE05,EB811EEE05,,560,,,,,registered in 2025,False,60,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
-2026,EBE,EB811EEE05,EB811EEE05,,576,,,,,registered before 2025,False,60,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
-2026,EBE,EB005MEC01,EB005MEC01,,560,,,,,registered in 2026,False,62,A candidate who first registers in 2026 shall complete approved courses of a value not less than 560 credits
-2026,EBE,EB805MEC01,EB805MEC01,,560,,,,,registered in 2026,False,64,A candidate who first registers in 2026 shall complete approved courses of a value not less than 560 credits
-2026,EBE,EB010MEC05,EB010MEC05,,560,,,,,registered in 2026,False,67,A candidate who first registers in 2026 shall complete approved courses of a value not less than 560 credits
-2026,EBE,EB810MEC05,EB810MEC05,,560,,,,,registered in 2026,False,69,A candidate who first registers in 2026 shall complete approved courses of a value not less than 560 credits
+﻿year,faculty,degree_scope,plan_code_hint,rule_ref,min_total_credits,min_level_credits,min_level,max_total_credits,min_total_courses,min_senior_courses,min_majors,course_unit,duration_years,cohort,is_stream_total,source_page,quote
+2021,COM,Advanced Diploma in Management Development,,,120,,,,,,,,,,False,19,is accredited with 120 NQF credits
+2021,COM,Bachelor of Business Science,,FBB1,,,,,,,,,4,,False,25,FBB1 The curriculum shall extend over a minimum of four years
+2021,COM,Bachelor of Business Science,,FBB2,623,96,8,,,,,,,,False,25,FBB2 The curriculum for this degree shall consist of a minimum of 623 NQF credits with a minimum of 96 credits at HEQSF level 8
+2021,COM,Bachelor of Business Science in Actuarial Science,,FBC1,,,,,,,,,4,,False,27,FBC1 The curriculum shall extend over a minimum of four years
+2021,COM,Bachelor of Business Science in Actuarial Science,,FBC2,681,96,8,,,,,,,,False,27,FBC2 The curriculum for this degree shall consist of a minimum of 681 NQF credits with a minimum of 96 credits at HEQSF level 8
+2021,COM,Bachelor of Business Science in Actuarial Science,,FBD1.1,,,,,,,,,4-5,,False,28,FBD1.1 The curriculum for the degree shall extend over four or five years
+2021,COM,Bachelor of Business Science in Actuarial Science,,FBE1.1,,,,,,,,,4-5,,False,28,FBE1.1 The curriculum for the degree shall extend over four or five years
+2021,COM,Bachelor of Commerce,,FBF1,,,,,,,,,3,,False,30,FBF1 The curriculum for the degree shall extend over three years
+2021,COM,Bachelor of Commerce,,FBF2,450,120,7,,,,,,,,False,30,FBF2 The curriculum for this degree shall consist of a minimum of 450 NQF credits of which 120 NQF credits will be at NQF Level 7
+2021,COM,Bachelor of Commerce in Actuarial Science,,FBG1,,,,,,,,,3,,False,31,FBG1 The curriculum for the degree shall extend over three years
+2021,COM,Bachelor of Commerce in Actuarial Science,,FBG2,528,120,7,,,,,,,,False,31,FBG2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
+2021,COM,Bachelor of Commerce Academic Development,,FBH1,,,,,,,,,3-4,,False,32,FBH1 The curriculum for the degree shall extend over three or four years
+2021,COM,Bachelor of Commerce in Actuarial Science Academic Development,,FBI1,,,,,,,,,3-4,,False,33,FBI1 The curriculum for the degree shall extend over three or four years
+2021,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,,,,,False,14,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2021,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,,,,,False,14,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2021,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,,,,,3,,False,14,FB2.1 The curriculum shall extend over not less than 3 academic years
+2021,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,,,,,4,,False,14,FB2.2 The curriculum shall extend over not less than 4 academic years
+2021,EBE,EB019APG09,EB019APG09,,576,,,,,,,,,,False,22,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB819APG09,EB819APG09,,576,,,,,,,,,,False,23,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB019APG11,EB019APG11,,576,,,,,,,,,,False,25,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB819APG11,EB819APG11,,576,,,,,,,,,,False,26,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB001CHE06 transferee/access route,EB001CHE06,,464,,,,,,,,,,False,35,transferee programme are required to complete 464 credits
+2021,EBE,EB001CHE01 transferee/access route,EB001CHE01,,452,,,,,,,,,,False,36,conversion programme are required to complete 452 credits
+2021,EBE,EB002CIV01,EB002CIV01,,576,,,,,,,,,,False,38,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB015CON04,EB015CON04,,450,,,,,,,,,,False,43,A candidate shall complete approved courses of a value not less than 450 credits
+2021,EBE,EB017CON03,EB017CON03,,454,,,,,,,,,,False,44,A candidate shall complete approved courses of a value not less than 454 credits
+2021,EBE,EB009EEE01,EB009EEE01,,576,,,,,,,,,,False,46,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB809EEE01,EB809EEE01,,576,,,,,,,,,,False,48,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB022EEE02,EB022EEE02,,576,,,,,,,,,,False,50,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB822EEE02,EB822EEE02,,576,,,,,,,,,,False,52,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB011EEE05,EB011EEE05,,576,,,,,,,,,,False,55,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB811EEE05,EB811EEE05,,576,,,,,,,,,,False,57,A candidate shall complete approved courses of a value not less than 576 credits
+2021,EBE,EB005MEC01,EB005MEC01,,576,,,,,,,,,,False,60,A candidate shall complete approved courses to a value of at least 576 credits
+2021,EBE,EB805MEC01,EB805MEC01,,576,,,,,,,,,,False,62,A candidate shall complete approved courses to a value of at least 576 credits
+2021,EBE,EB010MEC05,EB010MEC05,,576,,,,,,,,,,False,64,A candidate shall complete approved courses to a value of at least 576 credits
+2021,EBE,EB810MEC05,EB810MEC05,,576,,,,,,,,,,False,66,A candidate shall complete approved courses to a value of at least 576 credits
+2021,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,,,,,4,,False,38,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
+2021,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,,,,,5,,False,38,the curriculum for the five-year undergraduate curriculum stream will extend over five years
+2021,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,,,,,3,,False,38,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
+2021,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,,,,,2,,False,38,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
+2021,LAW,LLB graduate LLB stream,LP001,,504,,,,,,,,,,True,39,Total credits for the graduate LLB stream ............................. 504
+2021,LAW,LLB Final Level electives,,FP4.6,,,,54,,,,,,,False,40,The maximum number of credits for elective courses in the Final Level is 54
+2021,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,,,,,True,41,Total credits for the undergraduate LLB stream ................... 660
+2021,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,,,,,True,43,Total credits for the five-year undergraduate LLB stream ... 660
+2021,LAW,LLB Final Level electives,,FP4.4,36,,,,,,,,,,False,63,must choose elective courses totalling a minimum of 36 NQF credits
+2021,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBChB),,FBA2,,,,,,,,,6,,False,20,FBA2 The curriculum for the degree extends over at least six years of full-time study
+2021,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBChB),,FBB2,,,,,,,,,,,False,26,FBB2 The programme extends over three semesters (18 months) of full-time study
+2021,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,,,,,False,29,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
+2021,FHS,BACHELOR OF SCIENCE IN MEDICINE (BSC MEDICINE),,FBD1,,,,,,,,,4,,False,31,FBD1 Each curriculum extends over four years of full-time study
+2021,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,,,,,4-5,,False,37,FBE1 The degree programme extends over either four or (for students passing through the Intervention Programme) five years of full-time study
+2021,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBF1,,,,,,,,,4,,False,41,FBF1 The curriculum for the degree extends over four years of full-time study
+2021,SCI,Bachelor of Science (BSc),,FB2.1,,,,,,,,,3,,False,12,FB2.1 The curriculum for the Bachelor of Science degree shall extend over not less than three academic years
+2021,SCI,BSc Extended Degree Programme (SB016),,FB2.2,,,,,,,,,4,,False,12,FB2.2 The curriculum which includes the Extended Degree Programme for Science (EDP) will usually extend over four academic years
+2021,SCI,Bachelor of Science (BSc),,FB7.1,,,,,9,,,full-year courses,,,False,16,FB7.1 The curriculum shall include the equivalent of at least nine full-year courses
+2021,SCI,Bachelor of Science (BSc),,FB7.2,,,,,,4,,full-year courses,,,False,16,FB7.2 The curriculum shall include the equivalent of at least four full-year senior courses
+2021,SCI,Bachelor of Science (BSc) — Mathematics requirement,,FB7.3,,,,,,,,,,,False,16,"FB7.3 The curriculum shall include at least a half Science course in Mathematics (18 NQF credits, level 5) plus a half Science course in Statistics (18 NQF credits, level 5), or a full Science course in Mathematics (36 NQF credits, level 5)"
+2021,SCI,Bachelor of Science (BSc),,FB7.6,,,,,,,1,,,,False,17,FB7.6 The curriculum shall include at least one major
+2021,HUM,BA/BSocSc (HB003/HB001),,FB3,,,,,,,2,,,,False,31,FB3 (a) The curriculum shall include at least two major subjects
+2021,HUM,BA/BSocSc (HB003/HB001),,FB4,,,,,,10,,semester courses,,,False,33,FB4 Candidates shall complete at least ten senior semester subject courses
+2021,HUM,BA/BSocSc — required Humanities courses,,FB5,,,,,12,,,semester courses,,,False,33,"FB5 Except by permission of the Senate, the curriculum shall include at least 12 semester subject courses (or equivalent) offered by departments established in the Faculty of Humanities"
+2021,HUM,BA/BSocSc regular programme (HB003/HB001),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,3,,False,36, Minimum duration: 3 years. |  Minimum number of courses: 20 semester courses (or equivalent). |  Minimum number of senior courses: 10 semester courses (or equivalent). |  Minimum number of majors: 2.
+2021,HUM,BA/BSocSc extended programme (HB061/HB062),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,4,,False,38,(1) Minimum duration: 4 years |  20 semester subject courses (or equivalent) |  10 senior semester courses (or equivalent) |  2 majors
+2021,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB008],,,,,,,27,,,semester courses,,,False,54,The Curriculum requires a minimum of 27 semester subject courses or the equivalent.
+2021,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB064],,,,,,,27,,,semester courses,,,False,57,The curriculum requires a minimum of 27 semester courses or the equivalent.
+2022,COM,Advanced Diploma in Management Development,,,120,,,,,,,,,,False,23,is accredited with 120 NQF credits
+2022,COM,Bachelor of Business Science,,FBB1,,,,,,,,,4,,False,28,FBB1 The curriculum shall extend over a minimum of four years
+2022,COM,Bachelor of Business Science,,FBB2,623,96,8,,,,,,,,False,28,FBB2 The curriculum for this degree shall consist of a minimum of 623 NQF credits with a minimum of 96 credits at NQF level 8
+2022,COM,Bachelor of Business Science in Actuarial Science,,FBC1,681,96,8,,,,,,,,False,29,FBC1 The curriculum for this degree shall consist of a minimum of 681 NQF credits with a minimum of 96 credits at NQF level 8
+2022,COM,Bachelor of Business Science in Actuarial Science,,FBD1.1,,,,,,,,,4-5,,False,30,FBD1.1 The curriculum for the degree shall extend over four or five years
+2022,COM,Bachelor of Business Science in Actuarial Science,,FBE1.1,,,,,,,,,4-5,,False,30,FBE1.1 The curriculum for the degree shall extend over four or five years
+2022,COM,Bachelor of Commerce,,FBF1,,,,,,,,,3,,False,32,FBF1 The curriculum for the degree shall extend over three years
+2022,COM,Bachelor of Commerce,,FBF2,440,120,7,,,,,,,,False,32,FBF2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120 NQF credits will be at NQF Level 7
+2022,COM,Bachelor of Commerce in Actuarial Science,,FBG1,,,,,,,,,3,,False,33,FBG1 The curriculum for the degree shall extend over three years
+2022,COM,Bachelor of Commerce in Actuarial Science,,FBG2,528,120,7,,,,,,,,False,33,FBG2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
+2022,COM,Bachelor of Commerce Academic Development,,FBH1,,,,,,,,,3-4,,False,34,FBH1 The curriculum for the degree shall extend over three or four years
+2022,COM,Bachelor of Commerce in Actuarial Science Academic Development,,FBI1,,,,,,,,,3-4,,False,35,FBI1 The curriculum for the degree shall extend over three or four years
+2022,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2022,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2022,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,,,,,3,,False,15,FB2.1 The curriculum shall extend over not less than 3 academic years
+2022,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,,,,,4,,False,15,FB2.2 The curriculum shall extend over not less than 4 academic years
+2022,EBE,EB019APG09,EB019APG09,,576,,,,,,,,,,False,23,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB819APG09,EB819APG09,,576,,,,,,,,,,False,24,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB019APG11,EB019APG11,,576,,,,,,,,,,False,26,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB819APG11,EB819APG11,,576,,,,,,,,,,False,27,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB001CHE06 transferee/access route,EB001CHE06,,464,,,,,,,,,,False,36,transferee programme are required to complete 464 credits
+2022,EBE,EB001CHE01 transferee/access route,EB001CHE01,,452,,,,,,,,,,False,37,conversion programme are required to complete 452 credits
+2022,EBE,EB002CIV01,EB002CIV01,,576,,,,,,,,,,False,39,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB015CON04,EB015CON04,,450,,,,,,,,,,False,44,A candidate shall complete approved courses of a value not less than 450 credits
+2022,EBE,EB017CON03,EB017CON03,,468,,,,,,,,,,False,45,A candidate shall complete approved courses of a value not less than 468 credits
+2022,EBE,EB009EEE01,EB009EEE01,,576,,,,,,,,,,False,47,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB809EEE01,EB809EEE01,,576,,,,,,,,,,False,49,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB022EEE02,EB022EEE02,,576,,,,,,,,,,False,51,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB822EEE02,EB822EEE02,,576,,,,,,,,,,False,53,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB011EEE05,EB011EEE05,,576,,,,,,,,,,False,55,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB811EEE05,EB811EEE05,,576,,,,,,,,,,False,57,A candidate shall complete approved courses of a value not less than 576 credits
+2022,EBE,EB005MEC01,EB005MEC01,,576,,,,,,,,,,False,60,A candidate shall complete approved courses to a value of at least 576 credits
+2022,EBE,EB805MEC01,EB805MEC01,,576,,,,,,,,,,False,62,A candidate shall complete approved courses to a value of at least 576 credits
+2022,EBE,EB010MEC05,EB010MEC05,,576,,,,,,,,,,False,64,A candidate shall complete approved courses to a value of at least 576 credits
+2022,EBE,EB810MEC05,EB810MEC05,,576,,,,,,,,,,False,66,A candidate shall complete approved courses to a value of at least 576 credits
+2022,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,,,,,4,,False,40,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
+2022,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,,,,,5,,False,40,the curriculum for the five-year undergraduate curriculum stream will extend over five years
+2022,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,,,,,3,,False,40,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
+2022,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,,,,,2,,False,40,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
+2022,LAW,LLB graduate LLB stream,LP001,,504,,,,,,,,,,True,41,Total credits for the graduate LLB stream ............................. 504
+2022,LAW,LLB Final Level electives,,FP4.6,,,,54,,,,,,,False,42,The maximum number of credits for elective courses in the Final Level is 54
+2022,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,,,,,True,43,Total credits for the undergraduate LLB stream ................... 660
+2022,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,,,,,True,45,Total credits for the five-year undergraduate LLB stream... 660
+2022,LAW,LLB Final Level electives,,FP4.4,36,,,,,,,,,,False,64,must choose elective courses totalling a minimum of 36 NQF credits
+2022,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY,,FBA2,,,,,,,,,6,,False,66,FBA2 The curriculum for the degree extends over at least six years of full-time study
+2022,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY 69,,FBB2,,,,,,,,,,,False,73,FBB2 The programme extends over three semesters (18 months) of full-time study
+2022,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,,,,,False,76,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
+2022,FHS,BACHELOR OF SCIENCE IN AUDIOLOGY AND BACHELOR,,FBD1,,,,,,,,,4,,False,78,FBD1 Each curriculum extends over four years of full-time study
+2022,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,,,,,4-5,,False,84,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
+2022,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBF1,,,,,,,,,4,,False,88,FBF1 The curriculum for the degree extends over four years of full-time study
+2022,SCI,Bachelor of Science (BSc),,FB2.1,,,,,,,,,3,,False,13,FB2.1 The curriculum for the Bachelor of Science degree shall extend over not less than three academic years
+2022,SCI,BSc Extended Degree Programme (SB016),,FB2.2,,,,,,,,,4,,False,13,FB2.2 The curriculum which includes the Extended Degree Programme for Science (EDP) will usually extend over four academic years
+2022,SCI,Bachelor of Science (BSc),,FB7.1,,,,,9,,,full-year courses,,,False,17,FB7.1 The curriculum shall include the equivalent of at least nine full-year courses
+2022,SCI,Bachelor of Science (BSc),,FB7.2,,,,,,4,,full-year courses,,,False,17,FB7.2 The curriculum shall include the equivalent of at least four full-year senior courses
+2022,SCI,Bachelor of Science (BSc) — Mathematics requirement,,FB7.3,,,,,,,,,,,False,17,"FB7.3 The curriculum shall include at least a half Science course in Mathematics (18 NQF credits, level 5) plus a half Science course in Statistics (18 NQF credits, level 5), or a full Science course in Mathematics (36 NQF credits, level 5)"
+2022,SCI,Bachelor of Science (BSc),,FB7.6,,,,,,,1,,,,False,18,FB7.6 The curriculum shall include at least one major
+2022,HUM,BA/BSocSc (HB003/HB001),,FB3,,,,,,,2,,,,False,32,FB3 (a) The curriculum shall include at least two major subjects
+2022,HUM,BA/BSocSc (HB003/HB001),,FB4,,,,,,10,,semester courses,,,False,34,FB4 Candidates shall complete at least ten senior semester subject courses
+2022,HUM,BA/BSocSc — required Humanities courses,,FB5,,,,,12,,,semester courses,,,False,34,"FB5 Except by permission of the Senate, the curriculum shall include at least 12 semester subject courses (or equivalent) offered by departments established in the Faculty of Humanities"
+2022,HUM,BA/BSocSc regular programme (HB003/HB001),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,3,,False,37, Minimum duration: 3 years. |  Minimum number of courses: 20 semester courses (or equivalent). |  Minimum number of senior courses: 10 semester courses (or equivalent). |  Minimum number of majors: 2.
+2022,HUM,BA/BSocSc extended programme (HB061/HB062),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,4,,False,40,(1) Minimum duration: 4 years |  20 semester subject courses (or equivalent) |  10 senior semester courses (or equivalent) |  2 majors
+2022,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB008],,,,,,,27,,,semester courses,,,False,58,The Curriculum requires a minimum of 27 semester subject courses or the equivalent.
+2022,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB064],,,,,,,27,,,semester courses,,,False,61,The curriculum requires a minimum of 27 semester courses or the equivalent.
+2023,COM,Advanced Diploma in Management Development,,,120,,,,,,,,,,False,23,is accredited with 120 NQF credits
+2023,COM,Bachelor of Business Science,,FBB1,,,,,,,,,4,,False,29,FBB1 The curriculum shall extend over a minimum of four years
+2023,COM,Bachelor of Business Science,,FBB2,623,96,8,,,,,,,,False,29,FBB2 The curriculum for this degree shall consist of a minimum of 623 NQF credits with a minimum of 96 credits at NQF level 8
+2023,COM,Bachelor of Business Science in Actuarial Science,,FBC1,681,96,8,,,,,,,,False,30,FBC1 The curriculum for this degree shall consist of a minimum of 681 NQF credits with a minimum of 96 credits at NQF level 8
+2023,COM,Bachelor of Business Science in Actuarial Science,,FBD1.1,,,,,,,,,4-5,,False,31,FBD1.1 The curriculum for the degree shall extend over four or five years
+2023,COM,Bachelor of Business Science in Actuarial Science,,FBE1.1,,,,,,,,,4-5,,False,31,FBE1.1 The curriculum for the degree shall extend over four or five years
+2023,COM,Bachelor of Commerce,,FBF1,,,,,,,,,3,,False,32,FBF1 The curriculum for the degree shall extend over three years
+2023,COM,Bachelor of Commerce,,FBF2,440,120,7,,,,,,,,False,32,FBF2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120 NQF credits will be at NQF Level 7
+2023,COM,Bachelor of Commerce in Actuarial Science,,FBG1,,,,,,,,,3,,False,33,FBG1 The curriculum for the degree shall extend over three years
+2023,COM,Bachelor of Commerce in Actuarial Science,,FBG2,528,120,7,,,,,,,,False,33,FBG2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
+2023,COM,Bachelor of Commerce Academic Development,,FBH1,,,,,,,,,3-4,,False,34,FBH1 The curriculum for the degree shall extend over three or four years
+2023,COM,Bachelor of Commerce in Actuarial Science Academic Development,,FBI1,,,,,,,,,3-4,,False,35,FBI1 The curriculum for the degree shall extend over three or four years
+2023,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2023,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2023,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,,,,,3,,False,15,FB2.1 The curriculum shall extend over not less than 3 academic years
+2023,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,,,,,4,,False,15,FB2.2 The curriculum shall extend over not less than 4 academic years
+2023,EBE,EB019APG09,EB019APG09,,576,,,,,,,,,,False,23,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB819APG09,EB819APG09,,576,,,,,,,,,,False,24,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB019APG11,EB019APG11,,576,,,,,,,,,,False,26,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB819APG11,EB819APG11,,576,,,,,,,,,,False,27,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB001CHE06 transferee/access route,EB001CHE06,,464,,,,,,,,,,False,37,transferee programme are required to complete 464 credits
+2023,EBE,EB001CHE01 transferee/access route,EB001CHE01,,452,,,,,,,,,,False,38,conversion programme are required to complete 452 credits
+2023,EBE,EB002CIV01,EB002CIV01,,576,,,,,,,,,,False,39,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB015CON04,EB015CON04,,464,,,,,,,,,,False,44,A candidate shall complete approved courses of a value not less than 464 credits
+2023,EBE,EB017CON03,EB017CON03,,468,,,,,,,,,,False,46,A candidate shall complete approved courses of a value not less than 468 credits
+2023,EBE,EB009EEE01,EB009EEE01,,576,,,,,,,,,,False,47,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB809EEE01,EB809EEE01,,576,,,,,,,,,,False,49,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB022EEE02,EB022EEE02,,576,,,,,,,,,,False,51,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB822EEE02,EB822EEE02,,576,,,,,,,,,,False,53,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB011EEE05,EB011EEE05,,576,,,,,,,,,,False,56,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB811EEE05,EB811EEE05,,576,,,,,,,,,,False,58,A candidate shall complete approved courses of a value not less than 576 credits
+2023,EBE,EB005MEC01,EB005MEC01,,576,,,,,,,,,,False,61,A candidate shall complete approved courses to a value of at least 576 credits
+2023,EBE,EB805MEC01,EB805MEC01,,576,,,,,,,,,,False,63,A candidate shall complete approved courses to a value of at least 576 credits
+2023,EBE,EB010MEC05,EB010MEC05,,576,,,,,,,,,,False,64,A candidate shall complete approved courses to a value of at least 576 credits
+2023,EBE,EB810MEC05,EB810MEC05,,576,,,,,,,,,,False,67,A candidate shall complete approved courses to a value of at least 576 credits
+2023,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,,,,,4,,False,40,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
+2023,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,,,,,5,,False,40,the curriculum for the five-year undergraduate curriculum stream will extend over five years
+2023,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,,,,,3,,False,40,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
+2023,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,,,,,2,,False,40,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
+2023,LAW,LLB graduate LLB stream,LP001,,504,,,,,,,,,,True,41,Total credits for the graduate LLB stream ............................. 504
+2023,LAW,LLB Final Level electives,,FP4.4,36,,,,,,,,,,False,42,must choose elective courses totalling a minimum of 36 NQF credits
+2023,LAW,LLB Final Level electives,,FP4.6,,,,54,,,,,,,False,42,The maximum number of credits for elective courses in the Final Level is 54
+2023,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,,,,,True,43,Total credits for the undergraduate LLB stream ................... 660
+2023,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,,,,,True,45,Total credits for the five-year undergraduate LLB stream... 660
+2023,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY,,FBA2,,,,,,,,,6,,False,66,FBA2 The curriculum for the degree extends over at least six years of on a full-time study basis
+2023,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,,,,,False,73,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
+2023,FHS,BACHELOR OF SCIENCE IN AUDIOLOGY AND BACHELOR,,FBD1,,,,,,,,,4,,False,75,FBD1 Each curriculum extends over four years of full-time study
+2023,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,,,,,4-5,,False,81,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
+2023,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBF1,,,,,,,,,4,,False,85,FBF1 The curriculum for the degree extends over four years of full-time study
+2023,FHS,MBChB (Fundamentals of Health Sciences route),,FBA9.13,,,,,,,,,4-5,,False,90,FBA9.13 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
+2023,FHS,MBChB courses.,,FBB2,,,,,,,,,,,False,93,FBB2 The programme extends over three semesters (18 months) of full-time study
+2023,SCI,Bachelor of Science (BSc),,FB2.1,,,,,,,,,3,,False,13,FB2.1 The curriculum for the Bachelor of Science degree shall extend over not less than three academic years
+2023,SCI,BSc Extended Degree Programme (SB016),,FB2.2,,,,,,,,,4,,False,13,FB2.2 The curriculum which includes the Extended Degree Programme for Science (EDP) will usually extend over four academic years
+2023,SCI,Bachelor of Science (BSc),,FB7.1,,,,,9,,,full-year courses,,,False,18,FB7.1 The curriculum shall include the equivalent of at least nine full-year courses
+2023,SCI,Bachelor of Science (BSc),,FB7.2,,,,,,4,,full-year courses,,,False,18,FB7.2 The curriculum shall include the equivalent of at least four full-year senior courses
+2023,SCI,Bachelor of Science (BSc) — Mathematics requirement,,FB7.3,,,,,,,,,,,False,18,"FB7.3 The curriculum shall include at least a half Science course in Mathematics (18 NQF credits, level 5) plus a half Science course in Statistics (18 NQF credits, level 5), or a full Science course in Mathematics (36 NQF credits, level 5)"
+2023,SCI,Bachelor of Science (BSc),,FB7.6,,,,,,,1,,,,False,19,FB7.6 The curriculum shall include at least one major
+2023,HUM,BA/BSocSc (HB003/HB001),,FB3,,,,,,,2,,,,False,33,FB3 (a) The curriculum shall include at least two major subjects
+2023,HUM,BA/BSocSc (HB003/HB001),,FB4,,,,,,10,,semester courses,,,False,35,FB4 Candidates shall complete at least ten senior semester subject courses
+2023,HUM,BA/BSocSc — required Humanities courses,,FB5,,,,,12,,,semester courses,,,False,35,"FB5 Except by permission of the Senate, the curriculum shall include at least 12 semester subject courses (or equivalent) offered by departments established in the Faculty of Humanities"
+2023,HUM,BA/BSocSc regular programme (HB003/HB001),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,3,,False,38, Minimum duration: 3 years. |  Minimum number of courses: 20 semester courses (or equivalent). |  Minimum number of senior courses: 10 semester courses (or equivalent). |  Minimum number of majors: 2.
+2023,HUM,BA/BSocSc extended programme (HB061/HB062),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,4,,False,41,(1) Minimum duration: 4 years |  20 semester subject courses (or equivalent) |  10 senior semester courses (or equivalent) |  2 majors
+2023,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB008],,,,,,,27,,,semester courses,,,False,60,The Curriculum requires a minimum of 27 semester subject courses or the equivalent.
+2023,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB064],,,,,,,27,,,semester courses,,,False,63,The curriculum requires a minimum of 27 semester courses or the equivalent.
+2024,COM,Advanced Diploma in Management Development,,,120,,,,,,,,,,False,17,is accredited with 120 NQF credits
+2024,COM,Bachelor of Business Science,,FBB2,623,96,8,,,,,,,,False,22,FBB2 The curriculum for this degree shall consist of a minimum of 623 NQF credits of which 96 NQF credits will be at NQF level 8
+2024,COM,Bachelor of Business Science in Actuarial Science,,FBC2,681,96,8,,,,,,,,False,22,FBC2 The curriculum for this degree shall consist of a minimum of 681 NQF credits with a minimum of 96 credits at NQF level 8
+2024,COM,Bachelor of Business Science Academic Development,,FBD1,,,,,,,,,4-5,,False,23,FBD1 The curriculum for the degree shall extend over four or five years
+2024,COM,Bachelor of Business Science Academic Development,,FBD3,,,,,,,,,4-5,,False,23,FBD3 The curriculum for the degree shall extend over four or five years
+2024,COM,Bachelor of Commerce,,FBE2,440,120,7,,,,,,,,False,24,FBE2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120NQF credits will be at NQF Level 7
+2024,COM,Bachelor of Commerce in Actuarial Science,,FBF2,528,120,7,,,,,,,,False,25,FBF2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120NQF credits will be at NQF Level 7
+2024,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,,,,,False,16,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2024,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,,,,,False,16,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2024,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,,,,,3,,False,16,FB2.1 The curriculum shall extend over not less than 3 academic years
+2024,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,,,,,4,,False,16,FB2.2 The curriculum shall extend over not less than 4 academic years
+2024,EBE,EB019APG09,EB019APG09,,576,,,,,,,,,,False,24,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB819APG09,EB819APG09,,576,,,,,,,,,,False,25,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB019APG11,EB019APG11,,576,,,,,,,,,,False,27,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB819APG11,EB819APG11,,576,,,,,,,,,,False,28,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB001CHE06 transferee/access route,EB001CHE06,,464,,,,,,,,,,False,38,transferee programme are required to complete 464 credits
+2024,EBE,EB001CHE01 transferee/access route,EB001CHE01,,452,,,,,,,,,,False,39,conversion programme are required to complete 452 credits
+2024,EBE,EB002CIV01,EB002CIV01,,576,,,,,,,,,,False,40,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB015CON04,EB015CON04,,458,,,,,,,,,,False,45,A candidate shall complete approved courses of a value not less than 458 credits
+2024,EBE,EB017CON03,EB017CON03,,452,,,,,,,,,,False,47,A candidate shall complete approved courses of a value not less than 452 credits
+2024,EBE,EB009EEE01,EB009EEE01,,576,,,,,,,,,,False,48,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB809EEE01,EB809EEE01,,576,,,,,,,,,,False,50,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB022EEE02,EB022EEE02,,576,,,,,,,,,,False,52,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB822EEE02,EB822EEE02,,576,,,,,,,,,,False,55,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB011EEE05,EB011EEE05,,576,,,,,,,,,,False,57,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB811EEE05,EB811EEE05,,576,,,,,,,,,,False,59,A candidate shall complete approved courses of a value not less than 576 credits
+2024,EBE,EB005MEC01,EB005MEC01,,576,,,,,,,,,,False,62,A candidate shall complete approved courses to a value of at least 576 credits
+2024,EBE,EB805MEC01,EB805MEC01,,576,,,,,,,,,,False,64,A candidate shall complete approved courses to a value of at least 576 credits
+2024,EBE,EB010MEC05,EB010MEC05,,576,,,,,,,,,,False,66,A candidate shall complete approved courses to a value of at least 576 credits
+2024,EBE,EB810MEC05,EB810MEC05,,576,,,,,,,,,,False,68,A candidate shall complete approved courses to a value of at least 576 credits
+2024,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,,,,,4,,False,39,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
+2024,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,,,,,5,,False,39,the curriculum for the five-year undergraduate curriculum stream will extend over five years
+2024,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,,,,,3,,False,39,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
+2024,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,,,,,2,,False,39,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
+2024,LAW,LLB graduate LLB stream,LP001,,504,,,,,,,,,,True,40,Total credits for the graduate LLB stream ............................. 504
+2024,LAW,LLB Final Level electives,,FP4.4,36,,,,,,,,,,False,40,must choose elective courses totalling a minimum of 36 NQF credits
+2024,LAW,LLB Final Level electives,,FP4.6,,,,54,,,,,,,False,40,The maximum number of credits for elective courses in the Final Level is 54
+2024,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,,,,,True,42,Total credits for the undergraduate LLB stream ................... 660
+2024,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,,,,,True,43,Total credits for the five-year undergraduate LLB stream... 660
+2024,FHS,MBChB:,,FBD1,,,,,,,,,4,,False,65,FBD1 Each curriculum extends over four years of full-time study
+2024,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBChB),,FBA2,,,,,,,,,6,,False,71,FBA2 The curriculum for the degree extends over at least six years of on a full-time study basis
+2024,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,,,,,False,79,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
+2024,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,,,,,4-5,,False,81,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
+2024,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBF1,,,,,,,,,4,,False,84,FBF1 The curriculum for the degree extends over four years of full-time study
+2024,FHS,MBChB (Fundamentals of Health Sciences route),,FBA9.13,,,,,,,,,4-5,,False,89,FBA9.13 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
+2024,FHS,BACHELOR OF SCIENCE IN PHYSIOTHERAPY,,FBB2,,,,,,,,,,,False,92,FBB2 The programme extends over three semesters (18 months) of full-time study
+2024,SCI,Bachelor of Science (BSc),,FB2.1,,,,,,,,,3,,False,13,FB2.1 The curriculum for the Bachelor of Science degree shall extend over not less than three academic years
+2024,SCI,BSc Extended Degree Programme (SB016),,FB2.2,,,,,,,,,4,,False,13,FB2.2 The curriculum which includes the Extended Degree Programme for Science (EDP) will usually extend over four academic years
+2024,SCI,Bachelor of Science (BSc),,FB7.1,,,,,9,,,full-year courses,,,False,18,FB7.1 The curriculum shall include the equivalent of at least nine full-year courses
+2024,SCI,Bachelor of Science (BSc),,FB7.2,,,,,,4,,full-year courses,,,False,18,FB7.2 The curriculum shall include the equivalent of at least four full-year senior courses
+2024,SCI,Bachelor of Science (BSc) — Mathematics requirement,,FB7.3,,,,,,,,,,,False,18,"FB7.3 The curriculum shall include at least a half Science course in Mathematics (18 NQF credits, level 5) plus a half Science course in Statistics (18 NQF credits, level 5), or a full Science course in Mathematics (36 NQF credits, level 5)"
+2024,SCI,Bachelor of Science (BSc),,FB7.6,,,,,,,1,,,,False,19,FB7.6 The curriculum shall include at least one major
+2024,HUM,BA/BSocSc (HB003/HB001),,FB3,,,,,,,2,,,,False,32,FB3 (a) The curriculum shall include at least two major subjects
+2024,HUM,BA/BSocSc (HB003/HB001),,FB4,,,,,,10,,semester courses,,,False,33,FB4 Candidates shall complete at least ten senior semester subject courses
+2024,HUM,BA/BSocSc — required Humanities courses,,FB5,,,,,12,,,semester courses,,,False,34,"FB5 Except by permission of the Senate, the curriculum shall include at least 12 semester subject courses (or equivalent) offered by departments established in the Faculty of Humanities"
+2024,HUM,BA/BSocSc regular programme (HB003/HB001),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,3,,False,36,• Minimum duration: 3 years. | • Minimum number of courses: 20 semester courses (or equivalent). | • Minimum number of senior courses: 10 semester courses (or equivalent). | • Minimum number of majors: 2.
+2024,HUM,BA/BSocSc extended programme (HB061/HB062),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,4,,False,39,(1) Minimum duration: 4 years |  20 semester subject courses (or equivalent) |  10 senior semester courses (or equivalent) |  2 majors
+2024,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB008],,,,,,,27,,,semester courses,,,False,58,The Curriculum requires a minimum of 27 semester subject courses or the equivalent.
+2024,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB064],,,,,,,27,,,semester courses,,,False,61,The curriculum requires a minimum of 27 semester courses or the equivalent.
+2025,COM,Advanced Diploma in Management Development,,,120,,,,,,,,,,False,22,is accredited with 120 NQF credits
+2025,COM,Bachelor of Business Science,,FBB2,528,120,8,,,,,,,,False,30,FBB2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits must be at NQF level 8
+2025,COM,Bachelor of Business Science in Actuarial Science,,FBC2,528,120,8,,,,,,,,False,32,FBC2 The curriculum for this degree shall consist of a minimum of 528 NQF credits with a minimum of 120 credits at NQF level 8
+2025,COM,Bachelor of Business Science Academic Development,,FBD1.1,,,,,,,,,4-5,,False,33,FBD1.1 The curriculum for the degree shall extend over four or five years
+2025,COM,Bachelor of Business Science Academic Development,,FBD2.1,,,,,,,,,4-5,,False,33,FBD2.1 The curriculum for the degree shall extend over four or five years
+2025,COM,Bachelor of Commerce,,FBE2,440,120,7,,,,,,,,False,34,FBE2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120 NQF credits must be at NQF Level 7
+2025,COM,Bachelor of Commerce in Actuarial Science,,FBF2,528,120,7,,,,,,,,False,36,FBF2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
+2025,COM,Bachelor of Commerce Academic Development,,FBG1.1,,,,,,,,,3-4,,False,37,FBG1.1 The curriculum for the degree shall extend over three or four years
+2025,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,576,,,,,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2025,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,,,,,False,15,FB3.2 Candidates must complete approved courses of not less than 576 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2025,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,,,,,3,,False,15,FB2.1 The curriculum shall extend over not less than 3 academic years
+2025,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,,,,,4,,False,15,FB2.2 The curriculum shall extend over not less than 4 academic years
+2025,EBE,EB019APG09,EB019APG09,,576,,,,,,,,,,False,28,A candidate shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB819APG09,EB819APG09,,576,,,,,,,,,,False,29,A candidate shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB019APG11,EB019APG11,,576,,,,,,,,,,False,31,A candidate shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB819APG11,EB819APG11,,576,,,,,,,,,,False,32,A candidate shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB001CHE06 transferee/access route,EB001CHE06,,448,,,,,,,,,,False,42,transferee programme are required to complete 448 credits
+2025,EBE,EB001CHE01 transferee/access route,EB001CHE01,,436,,,,,,,,,,False,43,conversion programme are required to complete 436 credits
+2025,EBE,EB002CIV01,EB002CIV01,,576,,,,,,,,,,False,44,A candidate shall complete approved courses of a value not less than 576 credits (or 560 credits if admitted to the programme in the first year from 2025 and enrolled onto the new curriculum)
+2025,EBE,EB002CIV01,EB002CIV01,,560,,,,,,,,,registered in 2025,False,44,A candidate shall complete approved courses of a value not less than 576 credits (or 560 credits if admitted to the programme in the first year from 2025 and enrolled onto the new curriculum)
+2025,EBE,EB015CON04,EB015CON04,,458,,,,,,,,,,False,49,A candidate shall complete approved courses of a value not less than 458 credits
+2025,EBE,EB017CON03,EB017CON03,,452,,,,,,,,,,False,50,A candidate shall complete approved courses of a value not less than 452 credits
+2025,EBE,EB009EEE01,EB009EEE01,,560,,,,,,,,,registered in 2025,False,52,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2025,EBE,EB009EEE01,EB009EEE01,,576,,,,,,,,,registered before 2025,False,52,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB809EEE01,EB809EEE01,,560,,,,,,,,,registered in 2025,False,54,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2025,EBE,EB809EEE01,EB809EEE01,,576,,,,,,,,,registered before 2025,False,54,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB022EEE02,EB022EEE02,,560,,,,,,,,,registered in 2025,False,56,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2025,EBE,EB022EEE02,EB022EEE02,,576,,,,,,,,,registered before 2025,False,56,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB822EEE02,EB822EEE02,,560,,,,,,,,,registered in 2025,False,59,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2025,EBE,EB822EEE02,EB822EEE02,,576,,,,,,,,,registered before 2025,False,59,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB011EEE05,EB011EEE05,,560,,,,,,,,,registered in 2025,False,62,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2025,EBE,EB011EEE05,EB011EEE05,,576,,,,,,,,,registered before 2025,False,62,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB811EEE05,EB811EEE05,,560,,,,,,,,,registered in 2025,False,64,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2025,EBE,EB811EEE05,EB811EEE05,,576,,,,,,,,,registered before 2025,False,64,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2025,EBE,EB005MEC01,EB005MEC01,,576,,,,,,,,,,False,67,A candidate shall complete approved courses to a value of at least 576 credits
+2025,EBE,EB805MEC01,EB805MEC01,,576,,,,,,,,,,False,69,A candidate shall complete approved courses to a value of at least 576 credits
+2025,EBE,EB010MEC05,EB010MEC05,,576,,,,,,,,,,False,71,A candidate shall complete approved courses to a value of at least 576 credits
+2025,EBE,EB810MEC05,EB810MEC05,,576,,,,,,,,,,False,73,A candidate shall complete approved courses to a value of at least 576 credits
+2025,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,,,,,4,,False,40,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
+2025,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,,,,,5,,False,40,the curriculum for the five-year undergraduate curriculum stream will extend over five years
+2025,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,,,,,3,,False,40,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
+2025,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,,,,,2,,False,40,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
+2025,LAW,LLB graduate LLB stream,LP001,,504,,,,,,,,,,True,41,Total credits for the graduate LLB stream ............................. 504
+2025,LAW,LLB Final Level electives,,FP4.4,36,,,,,,,,,,False,42,must choose elective courses totalling a minimum of 36 NQF credits
+2025,LAW,LLB Final Level electives,,FP4.6,,,,54,,,,,,,False,42,The maximum number of credits for elective courses in the Final Level is 54
+2025,LAW,LLB undergraduate LLB stream,LB002,,660,,,,,,,,,,True,43,Total credits for the undergraduate LLB stream ................... 660
+2025,LAW,LLB five-year undergraduate LLB stream,LB003,,660,,,,,,,,,,True,45,Total credits for the five-year undergraduate LLB stream ... 660
+2025,FHS,MBChB:,,FBD1,,,,,,,,,4,,False,73,FBD1 Each curriculum extends over four years of full-time study
+2025,FHS,BACHELOR OF MEDICINE AND BACHELOR OF SURGERY (MBChB),,FBA2,,,,,,,,,6,,False,78,FBA2 The curriculum for the degree extends over at least six years of on a full-time study basis
+2025,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,,,,,False,85,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
+2025,FHS,BACHELOR OF SCIENCE IN OCCUPATIONAL THERAPY,,FBE1,,,,,,,,,4-5,,False,87,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
+2025,FHS,Bachelor of Science in Physiotherapy,,FBF1,,,,,,,,,4,,False,90,FBF1 The curriculum for the degree extends over four years of full-time study
+2025,FHS,MBChB (Fundamentals of Health Sciences route),,FBA9.13,,,,,,,,,4-5,,False,94,FBA9.13 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
+2025,FHS,Bachelor of Science in Physiotherapy,,FBB2,,,,,,,,,,,False,97,FBB2 The programme extends over three semesters (18 months) of full-time study
+2025,SCI,Bachelor of Science (BSc),,FB2.1,,,,,,,,,3,,False,13,FB2.1 The curriculum for the Bachelor of Science degree shall extend over not less than three academic years
+2025,SCI,BSc Extended Degree Programme (SB016),,FB2.2,,,,,,,,,4,,False,13,FB2.2 The curriculum which includes the Extended Degree Programme for Science (EDP) will usually extend over four academic years
+2025,SCI,Bachelor of Science (BSc),,FB7.1,360,,,,,,,,,,False,17,FB7.1 The curriculum shall include the equivalent of at least 360 NQF credits of which at least 180 must be Science credits
+2025,SCI,Bachelor of Science (BSc),,FB7.2,,120,7,,,,,,,,False,18,FB7.2 The curriculum shall include at least 120 credits at level 7
+2025,SCI,Bachelor of Science (BSc) — Mathematics requirement,,FB7.3,,,,,,,,,,,False,18,"FB7.3 The curriculum shall include at least a Science Mathematics course of 18 NQF credits (level 5) plus a Science Statistics course of 18 NQF credits (level 5), or Science Mathematics courses totalling 36 NQF credits (level 5)"
+2025,SCI,Bachelor of Science (BSc),,FB7.5,,,,,,,1,,,,False,18,FB7.5 The curriculum shall include at least one major
+2025,HUM,BA/BSocSc (HB003/HB001),,FB3,,,,,,,2,,,,False,30,FB3 (a) The curriculum shall include at least two major subjects
+2025,HUM,BA/BSocSc (HB003/HB001),,FB4,,,,,,10,,semester courses,,,False,32,FB4 Candidates shall complete at least ten senior semester subject courses
+2025,HUM,BA/BSocSc — required Humanities courses,,FB5,,,,,12,,,semester courses,,,False,32,"FB5 Except by permission of the Senate, the curriculum shall include at least 12 semester subject courses (or equivalent) offered by departments established in the Faculty of Humanities"
+2025,HUM,BA/BSocSc regular programme (HB003/HB001),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,3,,False,35,• Minimum duration: 3 years. | • Minimum number of courses: 20 semester courses (or equivalent). | • Minimum number of senior courses: 10 semester courses (or equivalent). | • Minimum number of majors: 2.
+2025,HUM,BA/BSocSc extended programme (HB061/HB062),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,4,,False,36,(1) Minimum duration: 4 years | • 20 semester subject courses (or equivalent) | • 10 senior semester courses (or equivalent) | • 2 majors
+2025,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB008],,,,,,,27,,,semester courses,,,False,53,The Curriculum requires a minimum of 27 semester subject courses or the equivalent.
+2025,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB064],,,,,,,27,,,semester courses,,,False,56,The curriculum requires a minimum of 27 semester courses or the equivalent.
+2026,COM,Advanced Diploma in Management,,,120,,,,,,,,,,False,23,is accredited with 120 NQF credits
+2026,COM,Bachelor of Business Science,,FBB2,528,120,8,,,,,,,,False,31,FBB2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits must be at NQF level 8
+2026,COM,Bachelor of Business Science in Actuarial Science,,FBC2,528,120,8,,,,,,,,False,32,FBC2 The curriculum for this degree shall consist of a minimum of 528 NQF credits with a minimum of 120 credits at NQF level 8
+2026,COM,Bachelor of Business Science,,FBD1.1,,,,,,,,,4-5,,False,34,FBD1.1 The curriculum for the degree shall extend over four or five years
+2026,COM,Bachelor of Business Science,,FBD2.1,,,,,,,,,4-5,,False,34,FBD2.1 The curriculum for the degree shall extend over four or five years
+2026,COM,Bachelor of Commerce,,FBE2,440,120,7,,,,,,,,False,36,FBE2 The curriculum for this degree shall consist of a minimum of 440 NQF credits of which 120 NQF credits must be at NQF Level 7
+2026,COM,Bachelor of Commerce in Actuarial Science,,FBF2,528,120,7,,,,,,,,False,38,FBF2 The curriculum for this degree shall consist of a minimum of 528 NQF credits of which 120 NQF credits will be at NQF Level 7
+2026,COM,Bachelor of Commerce Academic Development,,FBG1.1,,,,,,,,,3-4,,False,40,FBG1.1 The curriculum for the degree shall extend over three or four years
+2026,EBE,4-year degrees (faculty rule FB3.2),,FB3.2,560,,,,,,,,,,False,14,FB3.2 Candidates must complete approved courses of not less than 560 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2026,EBE,3-year degrees (faculty rule FB3.2),,FB3.2,432,,,,,,,,,,False,14,FB3.2 Candidates must complete approved courses of not less than 560 credits in the case of the degrees which have a minimum duration of 4 years and not less than 432 credits in the case of degrees which have a minimum duration of 3 years
+2026,EBE,"BAS, BSc(ConstStudies), BSc(PropStudies)",,FB2.1,,,,,,,,,3,,False,14,FB2.1 The curriculum shall extend over not less than 3 academic years
+2026,EBE,"BSc(Eng), BSc(Geomatics)",,FB2.2,,,,,,,,,4,,False,14,FB2.2 The curriculum shall extend over not less than 4 academic years
+2026,EBE,EB019APG09,EB019APG09,,519,,,,,,,,,,False,26,A candidate shall complete approved courses of a value not less than 519 credits
+2026,EBE,EB019APG09,EB019APG09,,576,,,,,,,,,,False,26,A candidate shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB819APG09,EB819APG09,,519,,,,,,,,,,False,27,A candidate shall complete approved courses of a value not less than 519 credits
+2026,EBE,EB819APG09,EB819APG09,,576,,,,,,,,,,False,28,A candidate shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB019APG11,EB019APG11,,511,,,,,,,,,,False,29,A candidate shall complete approved courses of a value not less than 511 credits
+2026,EBE,EB019APG11,EB019APG11,,576,,,,,,,,,,False,29,A candidate shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB819APG11,EB819APG11,,511,,,,,,,,,,False,30,A candidate shall complete approved courses of a value not less than 511 credits
+2026,EBE,EB819APG11,EB819APG11,,576,,,,,,,,,,False,31,A candidate shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB001CHE06 transferee/access route,EB001CHE06,,448,,,,,,,,,,False,40,transferee programme are required to complete 448 credits
+2026,EBE,EB001CHE01 transferee/access route,EB001CHE01,,436,,,,,,,,,,False,41,conversion programme are required to complete 436 credits
+2026,EBE,EB002CIV01,EB002CIV01,,576,,,,,,,,,,False,41,A candidate shall complete approved courses of a value not less than 576 credits (or 560 credits if admitted to the programme in the first year from 2025 and enrolled onto the new curriculum)
+2026,EBE,EB002CIV01,EB002CIV01,,560,,,,,,,,,registered in 2025,False,41,A candidate shall complete approved courses of a value not less than 576 credits (or 560 credits if admitted to the programme in the first year from 2025 and enrolled onto the new curriculum)
+2026,EBE,EB015CON04,EB015CON04,,422,,,,,,,,,,False,46,A candidate shall complete approved courses of a value not less than 422 credits
+2026,EBE,EB017CON03,EB017CON03,,452,,,,,,,,,,False,48,A candidate shall complete approved courses of a value not less than 452 credits
+2026,EBE,EB009EEE01,EB009EEE01,,560,,,,,,,,,registered in 2025,False,49,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2026,EBE,EB009EEE01,EB009EEE01,,576,,,,,,,,,registered before 2025,False,49,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB809EEE01,EB809EEE01,,560,,,,,,,,,registered in 2025,False,51,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2026,EBE,EB809EEE01,EB809EEE01,,576,,,,,,,,,registered before 2025,False,51,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB022EEE02,EB022EEE02,,560,,,,,,,,,registered in 2025,False,53,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2026,EBE,EB022EEE02,EB022EEE02,,576,,,,,,,,,registered before 2025,False,53,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB822EEE02,EB822EEE02,,560,,,,,,,,,registered in 2025,False,55,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2026,EBE,EB822EEE02,EB822EEE02,,576,,,,,,,,,registered before 2025,False,55,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB011EEE05,EB011EEE05,,560,,,,,,,,,registered in 2025,False,58,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2026,EBE,EB011EEE05,EB011EEE05,,576,,,,,,,,,registered before 2025,False,58,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB811EEE05,EB811EEE05,,560,,,,,,,,,registered in 2025,False,60,A candidate who registers in 2025 shall complete approved courses of a value not less than 560 credits
+2026,EBE,EB811EEE05,EB811EEE05,,576,,,,,,,,,registered before 2025,False,60,A candidate who registered before 2025 shall complete approved courses of a value not less than 576 credits
+2026,EBE,EB005MEC01,EB005MEC01,,560,,,,,,,,,registered in 2026,False,62,A candidate who first registers in 2026 shall complete approved courses of a value not less than 560 credits
+2026,EBE,EB805MEC01,EB805MEC01,,560,,,,,,,,,registered in 2026,False,64,A candidate who first registers in 2026 shall complete approved courses of a value not less than 560 credits
+2026,EBE,EB010MEC05,EB010MEC05,,560,,,,,,,,,registered in 2026,False,67,A candidate who first registers in 2026 shall complete approved courses of a value not less than 560 credits
+2026,EBE,EB810MEC05,EB810MEC05,,560,,,,,,,,,registered in 2026,False,69,A candidate who first registers in 2026 shall complete approved courses of a value not less than 560 credits
+2026,LAW,LLB four-year undergraduate stream,LB002,FP1-FP3,,,,,,,,,4,,False,42,the curriculum for the four-year undergraduate stream of the Basic Legal Education programme will extend over four years
+2026,LAW,LLB five-year undergraduate curriculum stream,LB003,FP1-FP3,,,,,,,,,5,,False,42,the curriculum for the five-year undergraduate curriculum stream will extend over five years
+2026,LAW,LLB three-year graduate stream,LP001,FP1-FP3,,,,,,,,,3,,False,42,the curriculum for the three-year graduate stream of the Basic Legal Education programme will extend over three years
+2026,LAW,LLB two-year graduate stream,LP001,FP1-FP3,,,,,,,,,2,,False,42,the curriculum for the two-year graduate stream of the Basic Legal Education programme will extend over two years
+2026,LAW,LLB graduate LLB stream,LP001,,504,,,,,,,,,,True,43,Total credits for the graduate LLB stream ............................. 504
+2026,LAW,LLB Final Level electives,,FP4.4,36,,,,,,,,,,False,43,must choose elective courses totalling a minimum of 36 NQF credits
+2026,LAW,LLB Final Level electives,,FP4.6,,,,54,,,,,,,False,43,The maximum number of credits for elective courses in the Final Level is 54
+2026,LAW,LLB undergraduate LLB stream,LB002,,637,,,,,,,,,,True,45,Total credits for the undergraduate LLB stream ................... 637
+2026,FHS,BSc Audiology and BSc Speech Language-Pathology,,FBD1,,,,,,,,,4,,False,44,FBD1 Each curriculum extends over four years of full-time study
+2026,FHS,Bachelor of Medicine and Bachelor of Surgery (MBChB),,FBA2,,,,,,,,,6,,False,50,FBA2 The curriculum for the degree extends over at least six years of on a full-time study basis
+2026,FHS,Intercalated BSc (Medicine),,FBC3.1,360,120,,,,,,,,,False,56,"FBC3.1 The BSc (Medicine) shall have at least 360 credits, of which a minimum of 120 credits"
+2026,FHS,BSc Occupational Therapy,,FBE1,,,,,,,,,4-5,,False,57,FBE1 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
+2026,FHS,BSc Physiotherapy,,FBF1,,,,,,,,,4,,False,60,FBF1 The curriculum for the degree extends over four years of full-time study
+2026,FHS,MBChB (Fundamentals of Health Sciences route),,FBA9.13,,,,,,,,,4-5,,False,64,FBA9.13 The degree programme extends over either four or (for students passing through the Fundamentals of Health Sciences Programme) five years of full-time stud
+2026,FHS,BSc Physiotherapy,,FBB1,,,,,,,,,,,False,67,FBB1 The programme extends over three semesters (18 months) of full-time study
+2026,SCI,Bachelor of Science (BSc),,FB2.1,,,,,,,,,3,,False,14,FB2.1 The curriculum for the Bachelor of Science degree shall extend over not less than three academic years
+2026,SCI,BSc Extended Degree Programme (SB016),,FB2.2,,,,,,,,,4,,False,14,FB2.2 The curriculum which includes the Extended Degree Programme for Science (EDP) will usually extend over four academic years
+2026,SCI,Bachelor of Science (BSc),,FB7.1,360,,,,,,,,,,False,19,FB7.1 The curriculum shall include the equivalent of at least 360 NQF credits of which at least 180 must be Science credits
+2026,SCI,Bachelor of Science (BSc),,FB7.2,,120,7,,,,,,,,False,19,FB7.2 The curriculum shall include the equivalent of at least 120 credits at level 7
+2026,SCI,Bachelor of Science (BSc) — Mathematics requirement,,FB7.3,,,,,,,,,,,False,19,"FB7.3 The curriculum shall include at least a Science Mathematics course of 18 NQF credits (level 5), plus a Science Statistics course of 18 NQF credits (level 5), or Science Mathematics courses totalling 36 NQF credits (level 5)"
+2026,SCI,Bachelor of Science (BSc),,FB7.5,,,,,,,1,,,,False,19,FB7.5 The curriculum shall include at least one major
+2026,HUM,BA/BSocSc (HB003/HB001),,FB3,,,,,,,2,,,,False,31,FB3 (a) The curriculum shall include at least two major subjects
+2026,HUM,BA/BSocSc (HB003/HB001),,FB4,,,,,,10,,semester courses,,,False,33,FB4 Candidates shall complete at least ten senior semester subject courses
+2026,HUM,BA/BSocSc — required Humanities courses,,FB5,,,,,12,,,semester courses,,,False,33,"FB5 Except by permission of the Senate, the curriculum shall include at least 12 semester subject courses (or equivalent) offered by departments established in the Faculty of Humanities"
+2026,HUM,BA/BSocSc regular programme (HB003/HB001),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,3,,False,36,• Minimum duration: 3 years. | • Minimum number of courses: 20 semester courses (or equivalent). | • Minimum number of senior courses: 10 semester courses (or equivalent). | • Minimum number of majors: 2.
+2026,HUM,BA/BSocSc extended programme (HB061/HB062),,award minima (FB2-FB6 summary),,,,,20,10,2,semester courses,4,,False,38,(1) Minimum duration: 4 years | • 20 semester subject courses (or equivalent) | • 10 senior semester courses (or equivalent) | • 2 majors
+2026,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB008],,,,,,,27,,,semester courses,,,False,53,The Curriculum requires a minimum of 27 semester subject courses or the equivalent.
+2026,HUM,BACHELOR OF ARTS IN FINE ART REGULAR PROGRAMME OF STUDY [HB064],,,,,,,27,,,semester courses,,,False,56,The curriculum requires a minimum of 27 semester courses or the equivalent.

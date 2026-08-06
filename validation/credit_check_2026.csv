@@ -350,6 +350,93 @@
 2026,EB822EEE02,3,extended,Electrical and Computer Engineering,114,114,0,True,OK
 2026,EB822EEE02,4,extended,Electrical and Computer Engineering,130,122,8,True,OK
 2026,EB822EEE02,5,extended,Electrical and Computer Engineering,128,128,0,True,OK
+2026,HB001AFS01,1,regular,Gender Studies,15,,,False,NO_STATED_TOTAL
+2026,HB001AFS01,2,regular,Gender Studies,40,,,False,NO_STATED_TOTAL
+2026,HB001AFS01,3,regular,Gender Studies,60,,,False,NO_STATED_TOTAL
+2026,HB001AGE01,2,regular,Archaeology,48,,,False,NO_STATED_TOTAL
+2026,HB001AGE01,3,regular,Archaeology,36,,,False,NO_STATED_TOTAL
+2026,HB001ANS01,1,regular,Anthropology,15,,,False,NO_STATED_TOTAL
+2026,HB001ANS01,2,regular,Anthropology,40,,,False,NO_STATED_TOTAL
+2026,HB001ANS01,3,regular,Anthropology,60,,,False,NO_STATED_TOTAL
+2026,HB001ASL01,1,regular,African Studies,15,,,False,NO_STATED_TOTAL
+2026,HB001ASL01,2,regular,African Studies,40,,,False,NO_STATED_TOTAL
+2026,HB001ASL01,3,regular,African Studies,60,,,False,NO_STATED_TOTAL
+2026,HB001ASL02,1,regular,Linguistics,15,,,False,NO_STATED_TOTAL
+2026,HB001ASL02,2,regular,Linguistics,40,,,False,NO_STATED_TOTAL
+2026,HB001ASL02,3,regular,Linguistics,60,,,False,NO_STATED_TOTAL
+2026,HB001CSC05,1,regular,Computer Science,36,,,False,NO_STATED_TOTAL
+2026,HB001CSC05,2,regular,Computer Science,18,,,False,NO_STATED_TOTAL
+2026,HB001CSC05,3,regular,Computer Science,0,,,False,NO_STATED_TOTAL
+2026,HB001ECO01,2,regular,Economics,36,,,False,NO_STATED_TOTAL
+2026,HB001EGS02,1,regular,Environmental and Geographical Science,36,,,False,NO_STATED_TOTAL
+2026,HB001EGS02,2,regular,Environmental and Geographical Science,48,,,False,NO_STATED_TOTAL
+2026,HB001EGS02,3,regular,Environmental and Geographical Science,72,,,False,NO_STATED_TOTAL
+2026,HB001ELL10,1,regular,Literary Studies,30,,,False,NO_STATED_TOTAL
+2026,HB001ELL10,2,regular,Literary Studies,40,,,False,NO_STATED_TOTAL
+2026,HB001ELL10,3,regular,Literary Studies,60,,,False,NO_STATED_TOTAL
+2026,HB001FAM01,1,regular,Film and Television Studies,15,,,False,NO_STATED_TOTAL
+2026,HB001FAM01,2,regular,Film and Television Studies,40,,,False,NO_STATED_TOTAL
+2026,HB001FAM01,3,regular,Film and Television Studies,60,,,False,NO_STATED_TOTAL
+2026,HB001FAM07,1,regular,Media and Writing,15,,,False,NO_STATED_TOTAL
+2026,HB001FAM07,2,regular,Media and Writing,40,,,False,NO_STATED_TOTAL
+2026,HB001FAM07,3,regular,Media and Writing,60,,,False,NO_STATED_TOTAL
+2026,HB001FIN05,1,regular,Art History and Discourse of Art,30,,,False,NO_STATED_TOTAL
+2026,HB001FIN05,2,regular,Art History and Discourse of Art,40,,,False,NO_STATED_TOTAL
+2026,HB001FIN05,3,regular,Art History and Discourse of Art,30,,,False,NO_STATED_TOTAL
+2026,HB001HST04,1,regular,History,30,,,False,NO_STATED_TOTAL
+2026,HB001HST04,2,regular,History,0,,,False,NO_STATED_TOTAL
+2026,HB001HST04,3,regular,History,60,,,False,NO_STATED_TOTAL
+2026,HB001INF09,1,regular,Informatics,0,,,False,NO_STATED_TOTAL
+2026,HB001MAM01,2,regular,Applied Mathematics,48,,,False,NO_STATED_TOTAL
+2026,HB001MAM02,1,regular,Mathematics,54,,,False,NO_STATED_TOTAL
+2026,HB001MAM02,2,regular,Mathematics,48,,,False,NO_STATED_TOTAL
+2026,HB001PHI01,1,regular,Philosophy,30,,,False,NO_STATED_TOTAL
+2026,HB001PHI01,2,regular,Philosophy,40,,,False,NO_STATED_TOTAL
+2026,HB001PHI01,3,regular,Philosophy,60,,,False,NO_STATED_TOTAL
+2026,HB001POL10,1,regular,Politics & Governance,15,,,False,NO_STATED_TOTAL
+2026,HB001PSY01,1,regular,Psychology,30,,,False,NO_STATED_TOTAL
+2026,HB001PSY01,2,regular,Psychology,60,,,False,NO_STATED_TOTAL
+2026,HB001PSY01,3,regular,Psychology,90,,,False,NO_STATED_TOTAL
+2026,HB001SLL01,1,regular,African Languages & Literatures,30,,,False,NO_STATED_TOTAL
+2026,HB001SLL01,2,regular,African Languages & Literatures,40,,,False,NO_STATED_TOTAL
+2026,HB001SLL01,3,regular,African Languages & Literatures,60,,,False,NO_STATED_TOTAL
+2026,HB001SLL02,2,regular,Afrikaans,40,,,False,NO_STATED_TOTAL
+2026,HB001SLL02,3,regular,Afrikaans,60,,,False,NO_STATED_TOTAL
+2026,HB001SLL03,2,regular,Arabic Language and Literature,40,,,False,NO_STATED_TOTAL
+2026,HB001SLL03,3,regular,Arabic Language and Literature,60,,,False,NO_STATED_TOTAL
+2026,HB001SLL04,2,regular,Business French,40,,,False,NO_STATED_TOTAL
+2026,HB001SLL04,3,regular,Business French,60,,,False,NO_STATED_TOTAL
+2026,HB001SLL05,2,regular,Classical Studies,44,,,False,NO_STATED_TOTAL
+2026,HB001SLL05,3,regular,Classical Studies,60,,,False,NO_STATED_TOTAL
+2026,HB001SLL09,2,regular,Hebrew Language and Literature,48,,,False,NO_STATED_TOTAL
+2026,HB001SLL09,3,regular,Hebrew Language and Literature,0,,,False,NO_STATED_TOTAL
+2026,HB001SLL10,2,regular,Italian,40,,,False,NO_STATED_TOTAL
+2026,HB001SLL10,3,regular,Italian,60,,,False,NO_STATED_TOTAL
+2026,HB001SLL13,2,regular,Spanish,40,,,False,NO_STATED_TOTAL
+2026,HB001SLL13,3,regular,Spanish,60,,,False,NO_STATED_TOTAL
+2026,HB001SLL15,2,regular,Xhosa Communication,40,,,False,NO_STATED_TOTAL
+2026,HB001SLL15,3,regular,Xhosa Communication,60,,,False,NO_STATED_TOTAL
+2026,HB001SLL21,1,regular,Chinese Studies,30,,,False,NO_STATED_TOTAL
+2026,HB001SLL21,2,regular,Chinese Studies,40,,,False,NO_STATED_TOTAL
+2026,HB001SLL21,3,regular,Chinese Studies,60,,,False,NO_STATED_TOTAL
+2026,HB001SOC01,3,regular,Sociology,60,,,False,NO_STATED_TOTAL
+2026,HB001SOC02,2,regular,Industrial Sociology,20,,,False,NO_STATED_TOTAL
+2026,HB001SOC02,3,regular,Industrial Sociology,60,,,False,NO_STATED_TOTAL
+2026,HB001STA01,1,regular,Applied Statistics,18,,,False,NO_STATED_TOTAL
+2026,HB001STA01,2,regular,Applied Statistics,48,,,False,NO_STATED_TOTAL
+2026,HB001STA01,3,regular,Applied Statistics,72,,,False,NO_STATED_TOTAL
+2026,HB001SWK03,1,regular,Social Development,30,,,False,NO_STATED_TOTAL
+2026,HB001SWK03,2,regular,Social Development,40,,,False,NO_STATED_TOTAL
+2026,HB001SWK03,3,regular,Social Development,50,,,False,NO_STATED_TOTAL
+2026,HB001TDP09,1,regular,Theatre and Dance Studies,15,,,False,NO_STATED_TOTAL
+2026,HB001TDP09,2,regular,Theatre and Dance Studies,40,,,False,NO_STATED_TOTAL
+2026,HB001TDP09,3,regular,Theatre and Dance Studies,120,,,False,NO_STATED_TOTAL
+2026,HB001XX21,2,regular,French,40,,,False,NO_STATED_TOTAL
+2026,HB001XX21,3,regular,French,120,,,False,NO_STATED_TOTAL
+2026,HB001XX23,2,regular,German,40,,,False,NO_STATED_TOTAL
+2026,HB001XX23,3,regular,German,120,,,False,NO_STATED_TOTAL
+2026,HB001XX26,2,regular,Portuguese,40,,,False,NO_STATED_TOTAL
+2026,HB001XX26,3,regular,Portuguese,120,,,False,NO_STATED_TOTAL
 2026,LB002,1,regular,Four-year undergraduate LLB stream,135,135,0,False,OK
 2026,LB002,2,regular,Four-year undergraduate LLB stream,142,142,0,False,OK
 2026,LB002,3,regular,Four-year undergraduate LLB stream,180,180,0,False,OK
@@ -380,3 +467,69 @@
 2026,MU002AHS21,1,regular,Higher Certificate in Disability Practice,275,120,155,False,MISMATCH
 2026,MU002AHS21,2,regular,Higher Certificate in Disability Practice,221,,,False,NO_STATED_TOTAL
 2026,MU003MDN27,1,regular,Advanced Diploma In Cosmetic Formulation Science,105,120,-15,False,MISMATCH
+2026,SB001AGE01,1,regular,Archaeology,72,,,False,NO_STATED_TOTAL
+2026,SB001AGE01,2,regular,Archaeology,48,,,False,NO_STATED_TOTAL
+2026,SB001AGE01,3,regular,Archaeology,108,,,False,NO_STATED_TOTAL
+2026,SB001AST02,1,regular,Astrophysics,108,,,False,NO_STATED_TOTAL
+2026,SB001AST02,2,regular,Astrophysics,144,,,False,NO_STATED_TOTAL
+2026,SB001AST02,3,regular,Astrophysics,72,,,False,NO_STATED_TOTAL
+2026,SB001BIO05,1,regular,Marine Biology,108,,,False,NO_STATED_TOTAL
+2026,SB001BIO05,2,regular,Marine Biology,120,,,False,NO_STATED_TOTAL
+2026,SB001BIO05,3,regular,Marine Biology,72,,,False,NO_STATED_TOTAL
+2026,SB001BIO12,1,regular,Biology,108,,,False,NO_STATED_TOTAL
+2026,SB001BIO12,2,regular,Biology,96,,,False,NO_STATED_TOTAL
+2026,SB001BIO12,3,regular,Biology,180,,,False,NO_STATED_TOTAL
+2026,SB001BIO13,1,regular,Quantitative Biology,54,,,False,NO_STATED_TOTAL
+2026,SB001BIO13,2,regular,Quantitative Biology,96,,,False,NO_STATED_TOTAL
+2026,SB001BIO13,3,regular,Quantitative Biology,36,,,False,NO_STATED_TOTAL
+2026,SB001CEM01,1,regular,Chemistry,108,,,False,NO_STATED_TOTAL
+2026,SB001CEM01,2,regular,Chemistry,48,,,False,NO_STATED_TOTAL
+2026,SB001CEM01,3,regular,Chemistry,72,,,False,NO_STATED_TOTAL
+2026,SB001CSC02,1,regular,Business Computing,69,,,False,NO_STATED_TOTAL
+2026,SB001CSC02,2,regular,Business Computing,42,,,False,NO_STATED_TOTAL
+2026,SB001CSC02,3,regular,Business Computing,54,,,False,NO_STATED_TOTAL
+2026,SB001CSC03,1,regular,Computer Engineering,72,,,False,NO_STATED_TOTAL
+2026,SB001CSC03,2,regular,Computer Engineering,48,,,False,NO_STATED_TOTAL
+2026,SB001CSC03,3,regular,Computer Engineering,72,,,False,NO_STATED_TOTAL
+2026,SB001CSC05,1,regular,Computer Science,54,,,False,NO_STATED_TOTAL
+2026,SB001CSC05,2,regular,Computer Science,66,,,False,NO_STATED_TOTAL
+2026,SB001CSC05,3,regular,Computer Science,72,,,False,NO_STATED_TOTAL
+2026,SB001CSC08,1,regular,Artificial Intelligence,90,,,False,NO_STATED_TOTAL
+2026,SB001CSC08,2,regular,Artificial Intelligence,96,,,False,NO_STATED_TOTAL
+2026,SB001CSC08,3,regular,Artificial Intelligence,72,,,False,NO_STATED_TOTAL
+2026,SB001EGS02,1,regular,Environmental & Geographical Science,72,,,False,NO_STATED_TOTAL
+2026,SB001EGS02,2,regular,Environmental & Geographical Science,48,,,False,NO_STATED_TOTAL
+2026,SB001EGS02,3,regular,Environmental & Geographical Science,144,,,False,NO_STATED_TOTAL
+2026,SB001GEO02,1,regular,Geology,126,,,False,NO_STATED_TOTAL
+2026,SB001GEO02,2,regular,Geology,48,,,False,NO_STATED_TOTAL
+2026,SB001GEO02,3,regular,Geology,72,,,False,NO_STATED_TOTAL
+2026,SB001HUB17,1,regular,Human Anatomy & Physiology,108,,,False,NO_STATED_TOTAL
+2026,SB001HUB17,2,regular,Human Anatomy & Physiology,48,,,False,NO_STATED_TOTAL
+2026,SB001HUB17,3,regular,Human Anatomy & Physiology,72,,,False,NO_STATED_TOTAL
+2026,SB001MAM01,1,regular,Applied Mathematics,72,,,False,NO_STATED_TOTAL
+2026,SB001MAM01,2,regular,Applied Mathematics,48,,,False,NO_STATED_TOTAL
+2026,SB001MAM01,3,regular,Applied Mathematics,108,,,False,NO_STATED_TOTAL
+2026,SB001MAM02,1,regular,Mathematics,54,,,False,NO_STATED_TOTAL
+2026,SB001MAM02,2,regular,Mathematics,48,,,False,NO_STATED_TOTAL
+2026,SB001MAM02,3,regular,Mathematics,108,,,False,NO_STATED_TOTAL
+2026,SB001MCB01,1,regular,Biochemistry,108,,,False,NO_STATED_TOTAL
+2026,SB001MCB01,2,regular,Biochemistry,72,,,False,NO_STATED_TOTAL
+2026,SB001MCB01,3,regular,Biochemistry,72,,,False,NO_STATED_TOTAL
+2026,SB001MCB04,1,regular,Genetics,108,,,False,NO_STATED_TOTAL
+2026,SB001MCB04,2,regular,Genetics,72,,,False,NO_STATED_TOTAL
+2026,SB001MCB04,3,regular,Genetics,72,,,False,NO_STATED_TOTAL
+2026,SB001PHY01,1,regular,Physics,126,,,False,NO_STATED_TOTAL
+2026,SB001PHY01,2,regular,Physics,96,,,False,NO_STATED_TOTAL
+2026,SB001PHY01,3,regular,Physics,72,,,False,NO_STATED_TOTAL
+2026,SB001SEA03,1,regular,Ocean & Atmosphere Science,108,,,False,NO_STATED_TOTAL
+2026,SB001SEA03,2,regular,Ocean & Atmosphere Science,48,,,False,NO_STATED_TOTAL
+2026,SB001SEA03,3,regular,Ocean & Atmosphere Science,72,,,False,NO_STATED_TOTAL
+2026,SB001STA01,1,regular,Applied Statistics,54,,,False,NO_STATED_TOTAL
+2026,SB001STA01,2,regular,Applied Statistics,24,,,False,NO_STATED_TOTAL
+2026,SB001STA01,3,regular,Applied Statistics,72,,,False,NO_STATED_TOTAL
+2026,SB001STA02,1,regular,Mathematical Statistics,54,,,False,NO_STATED_TOTAL
+2026,SB001STA02,2,regular,Mathematical Statistics,48,,,False,NO_STATED_TOTAL
+2026,SB001STA02,3,regular,Mathematical Statistics,72,,,False,NO_STATED_TOTAL
+2026,SB001STA13,1,regular,Statistics & Data Science,72,,,False,NO_STATED_TOTAL
+2026,SB001STA13,2,regular,Statistics & Data Science,168,,,False,NO_STATED_TOTAL
+2026,SB001STA13,3,regular,Statistics & Data Science,4298,,,False,NO_STATED_TOTAL

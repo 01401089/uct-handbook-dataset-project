@@ -80,13 +80,21 @@ slot-line shapes) resolved most of what this pass had queued — EBE is now
   context) — inspect and either home or exclude via register.
 - FHS adjudication pass (registers empty).
 
-## 5. Remaining faculties
+## 5. SCI/HUM follow-ups (extraction + rules layer landed 2026-08-06)
 
-- SCI and HUM (major + composition rules — the ideal student is constructed
-  from the faculty rules section, not read off a table; bespoke parsers in
-  the FHS mould reusing the shared grammar).
-- Each faculty gets `extractors/<fac>/`, a `resolutions/<fac>.csv`, and its
-  own hazard notes in REPLICATION.md.
+- **Composed-degree ideal student** (the big one): majors are now data and
+  the composition rules are in `degree_rules.csv` (SCI FB7.1-7.5, HUM
+  award minima) — a builder could synthesise a full BSc/BA/BSocSc
+  curriculum (2 majors + electives to the minimum) and give SCI/HUM true
+  whole-degree credit/fee series comparable to the other faculties.
+- Blank-credit rows: a residue of SCI/HUM curriculum rows have no credits
+  (no catalogue entry to join from); revisit joins or flag per row.
+- Specialised HUM programmes (Fine Art, BMus, BSW, PPE, Film & Media)
+  publish their own fee blocks but have no major rows — decide whether to
+  extract them as programmes (they print COM-style curricula with own
+  plan codes) or leave them out of scope.
+- SCI/HUM adjudication registers are empty (nothing pending by design —
+  major-years are `no_anchor`).
 
 ## 6. Analysis layer
 

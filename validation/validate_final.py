@@ -47,7 +47,10 @@ ROOT = Path(__file__).resolve().parents[1]
 PROC = ROOT / "data" / "processed"
 
 STATUSES = {"consistent", "resolved_computed", "resolved_stated",
-            "resolved_manual", "unresolved"}
+            "resolved_manual", "unresolved",
+            # SCI/HUM majors: no per-year totals are printed for majors, so
+            # there is no anchor to reconcile or adjudicate against.
+            "no_anchor"}
 FEE_STATUSES = {"reconciled", "published_divergent", "no_published"}
 
 
@@ -172,6 +175,13 @@ def degree_check(year: str, summ: list[dict], final_rows: list[dict]) -> None:
             rule = law_by_code.get(code)
             basis = "printed stream total" if rule else ""
 
+        if fac in ("SCI", "HUM"):
+            # The curriculum unit here is a MAJOR, not a full degree: a
+            # major's credit sum is deliberately below the degree minimum.
+            # The composition minima (SCI FB7.1: >=360 credits; HUM award
+            # minima: 20 semester courses / 2 majors) live in
+            # degree_rules.csv and apply at degree level.
+            rule, basis = None, "unit is a major — see degree_rules.csv"
         if rule is None:
             status, minimum, surplus = "NO_RULE", "", ""
         else:

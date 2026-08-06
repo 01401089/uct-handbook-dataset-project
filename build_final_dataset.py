@@ -374,7 +374,13 @@ def main():
 
             if sy.final_credits is None:
                 # ---- R4 residual ------------------------------------------
-                sy.status = "unresolved"
+                # SCI/HUM curricula are MAJORS: the handbooks print no
+                # per-year totals for them by design, so there is nothing to
+                # adjudicate — status `no_anchor`, kept out of the pending
+                # queue. Degree-level anchors live in degree_rules.csv.
+                no_anchor_unit = (status0 == "NO_STATED_TOTAL"
+                                  and s["faculty"] in ("SCI", "HUM"))
+                sy.status = "no_anchor" if no_anchor_unit else "unresolved"
                 sy.confidence = "low"
                 if args.default_trust == "computed":
                     sy.final_credits = sy.computed_credits()
@@ -382,14 +388,17 @@ def main():
                     sy.final_credits = anchor
                 else:
                     sy.final_credits = ""
-                if status0 == "NO_STATED_TOTAL":
+                if no_anchor_unit:
+                    sy.final_note = ("majors print no per-year totals; "
+                                     "degree-level anchors are in degree_rules.csv")
+                elif status0 == "NO_STATED_TOTAL":
                     sy.final_note = "no stated total printed — nothing to reconcile against"
                 elif status0 == "UNRESOLVED_SLOTS":
                     sy.final_note = "elective slot credits unresolved"
                 sy.rationale = sy.rationale or (
                     f"no rule or adjudication applies; default-trust="
                     f"{args.default_trust}")
-                if status0 != "OK":
+                if status0 != "OK" and not no_anchor_unit:
                     pending.append({
                         "year": y, "plan_code": s["plan_code"],
                         "study_year": s["study_year"], "status": status0,

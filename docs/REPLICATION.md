@@ -347,39 +347,63 @@ known residual — the combined Audiology/Speech-Language block interleaves
 both degrees' sub-tables before shared totals and needs a dedicated
 splitter (its spec-years are flagged unresolved; see DEV-TODO.md).
 
-## 8. Multi-year status (COM + EBE + LAW + FHS, final layer 2026-08-06,
+## 8. Multi-year status (all six faculties, final layer 2026-08-06,
 after the H37-H40 engine fixes)
 
-Consistent / resolved / unresolved per faculty:
+Consistent / resolved / unresolved per faculty (SCI and HUM spec-years are
+majors and carry `no_anchor` — no per-year totals exist for them, §9):
 
-| Year | COM | EBE | LAW | FHS |
-|---|---|---|---|---|
-| 2021 | 227 / 17 / 30 | 85 / 0 / 5 | 11 / 0 / 1 | 7 / 0 / 12 |
-| 2022 | 240 / 11 / 24 | 86 / 0 / 4 | 11 / 0 / 1 | 8 / 0 / 11 |
-| 2023 | 225 / 15 / 36 | 88 / 0 / 2 | 11 / 0 / 1 | 14 / 0 / 11 |
-| 2024 | 203 / 13 / 55 | 86 / 0 / 4 | 10 / 0 / 2 | 14 / 0 / 11 |
-| 2025 | 219 / 13 / 36 | 84 / 0 / 6 | 10 / 0 / 2 | 11 / 0 / 12 |
-| 2026 | 202 / 11 / 48 | 80 / 0 / 10 | 7 / 0 / 0 | 10 / 0 / 13 |
+| Year | COM | EBE | LAW | FHS | SCI (majors) | HUM (majors) |
+|---|---|---|---|---|---|---|
+| 2021 | 227 / 17 / 30 | 85 / 0 / 5 | 11 / 0 / 1 | 7 / 0 / 12 | 66 | 89 |
+| 2022 | 240 / 11 / 24 | 86 / 0 / 4 | 11 / 0 / 1 | 8 / 0 / 11 | 66 | 88 |
+| 2023 | 225 / 15 / 36 | 88 / 0 / 2 | 11 / 0 / 1 | 14 / 0 / 11 | 60 | 88 |
+| 2024 | 203 / 13 / 55 | 86 / 0 / 4 | 10 / 0 / 2 | 14 / 0 / 11 | 63 | 91 |
+| 2025 | 219 / 13 / 36 | 84 / 0 / 6 | 10 / 0 / 2 | 11 / 0 / 12 | 66 | 91 |
+| 2026 | 202 / 11 / 48 | 80 / 0 / 10 | 7 / 0 / 0 | 10 / 0 / 13 | 66 | 87 |
 
-Main dataset: **20,649 rows** (COM 14,282 + EBE 4,729 + LAW 451 + FHS
-1,187); 2,366 specialisation-years (1,949 consistent, 80 resolved, 337
-unresolved pending adjudication). The H37-H40 fixes resolved what DEV-TODO
-had queued as adjudication clusters: EBE went from 344/185
+Main dataset: **24,536 rows** (COM 14,282 + EBE 4,729 + SCI 2,515 + HUM
+1,372 + FHS 1,187 + LAW 451); 3,287 specialisation-years (1,949
+consistent, 80 resolved, 337 unresolved pending adjudication, 921
+`no_anchor` major-years). The H37-H40 fixes resolved what DEV-TODO had
+queued as adjudication clusters: EBE went from 344/185
 consistent/unresolved to **509/31**, LAW from 42/25 to **60/7** (the
 remaining LAW 7 are LB003 2024/2025 years whose printed tables drop
 discontinued courses — genuine print drift, listed in the pending
 reports). Median computed-vs-published fee delta is 0.0% for COM, EBE and
-FHS (the MBChB's years 1-3 match to the rand); LAW's flat-annual published
-fees make per-year deltas structurally divergent (LP001 year 1 matches to
-the rand).
+FHS (the MBChB's years 1-3 match to the rand); LAW's flat-annual and
+SCI/HUM's degree-flat published fees make per-year/per-major deltas
+structurally divergent (LP001 year 1 matches to the rand).
 
-## 9. Extending to the remaining faculties
+## 9. SCI and HUM — majors as the curriculum unit (added 2026-08-06)
 
-SCI and HUM remain — the unit of extraction there is the *major*
-(`SB…`/`HB…` plan codes) plus the degree-composition rules from the faculty
-rules section, from which the ideal student's curriculum is constructed
-rather than read off a table; expect bespoke parsers in the FHS mould
-(reusing the shared grammar and catalogue parser).
+Science and Humanities complete the six-faculty load, on bespoke parsers in
+the FHS mould (`extractors/sci/`, `extractors/hum/`). Their unit of
+curriculum is the **major**, not the specialisation:
+
+- **SCI**: ~22 "Major in X" blocks with `[MAM01]`-style stream brackets in
+  the "DEGREES OFFERED IN THE FACULTY" section; plan codes synthesised as
+  `SB001` + stream (`SB001MAM01`). "Either / Or both" alternatives and
+  "And two of …" menus; credits printed inline, wrapped rows completed
+  from the book's own catalogue.
+- **HUM**: ~40 "Requirements for a major in X" blocks with `[AFS01]`-style
+  brackets printed INSIDE the department sections; plan codes `HB001` +
+  stream. Rows are bare "CODE Title" lines — credits and NQF levels are
+  joined from the catalogue. Majors serve both the BA and the BSocSc.
+
+**Majors print no per-year credit totals — by design.** The credit anchors
+for these faculties are degree-level (the rules layer, §10): SCI FB7.1
+(≥ 360 NQF credits from 2025; "nine full-year courses" before), HUM's
+award minima (20 semester courses / 10 senior / 2 majors / 3 years,
+extended programme 4 years). The finaliser therefore gives SCI/HUM
+spec-years the status **`no_anchor`** instead of `unresolved` — there is
+nothing to adjudicate against per year — and keeps them out of the pending
+reports. Published fees are per degree, not per major: the fees book's
+"Bachelor of Science" block prices every SCI major and "Bachelor of Arts
+and Bachelor of Social Science" every HUM major (match method
+`degree_flat`, like LAW's `flat_annual`); the specialised Humanities
+programmes' own blocks (Fine Art, BMus, BSW, PPE, Film & Media) have no
+major rows to price and surface in the unmatched report by design.
 
 ## 10. The rules layer (`degree_rules.csv`, added 2026-08-06)
 
@@ -409,6 +433,21 @@ LAW prints stream grand totals every edition: graduate LLB 504 (flat),
 4-year undergraduate LLB 660 → **637 in 2026**, legacy LB003 660. FHS
 professional degrees are duration-ruled, not credit-ruled (the one credit
 rule is FBC3.1, intercalated BSc(Med) ≥ 360).
+
+**SCI re-based its composition rules at the 2025 edition** — from
+full-year-course counts to credits: FB7.1 "at least nine full-year
+courses" (2021-2024) becomes "at least 360 NQF credits of which at least
+180 must be Science credits" (2025-2026); FB7.2 "four full-year senior
+courses" becomes "120 credits at level 7". The majors rule renumbered
+FB7.6 → FB7.5 at the same moment (H35 again). **HUM's award minima are
+stable** across all six editions: BA/BSocSc = 3 years, 20 semester
+courses, 10 senior, **2 majors** (≥ 1 from Humanities departments, FB3);
+the extended programme (HB061/HB062) the same over 4 years; specialised
+programmes (Fine Art) print "a minimum of 27 semester courses". Because
+SCI (pre-2025) and HUM count in courses, `degree_rules.csv` carries
+`min_total_courses` / `min_senior_courses` / `min_majors` with a
+`course_unit` column ("full-year courses" vs "semester courses") — the
+numbers are recorded as printed, never converted.
 
 Notable negative finding: the rules sections do **not** print the missing
 selection rules for the COM unlabelled choice menus (CSC 4th year, PPE

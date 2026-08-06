@@ -45,6 +45,11 @@ def _row(year, faculty, **kw):
         "year": year, "faculty": faculty, "degree_scope": "",
         "plan_code_hint": "", "rule_ref": "", "min_total_credits": "",
         "min_level_credits": "", "min_level": "", "max_total_credits": "",
+        # SCI/HUM count their composition rules in COURSES, not credits
+        # (SCI in full-year courses through 2024, credits from 2025; HUM in
+        # semester courses throughout) — `course_unit` names the unit.
+        "min_total_courses": "", "min_senior_courses": "", "min_majors": "",
+        "course_unit": "",
         "duration_years": "", "cohort": "", "is_stream_total": False,
         "source_page": "", "quote": "",
     }
@@ -429,10 +434,224 @@ def _fhs_rules(year, dump_path):
     return rows
 
 
+# --- SCI -------------------------------------------------------------------
+# The BSc composition rules (FB7.x) were re-based at the 2025 edition: from
+# full-year-course counts ("at least nine full-year courses", "four
+# full-year senior courses") to NQF credits ("at least 360 NQF credits of
+# which at least 180 must be Science credits", "120 credits at level 7").
+# Both forms are captured as printed.
+
+SCI_DUR = re.compile(
+    r"(?P<ref>FB2\.\d)\s+The curriculum (?:for the Bachelor of Science degree "
+    r"|which includes the Extended Degree Programme[^.]*?)"
+    r"(?:shall extend over not less than|will usually extend over)\s+"
+    r"(?P<dur>\w+)\s+(?:academic\s+)?years", re.I)
+SCI_FB71_CR = re.compile(
+    r"FB7\.1\s+The curriculum shall include the equivalent of at least\s+"
+    r"(?P<cr>\d{3})\s+NQF credits of which at least\s+\d{2,3}\s+must be "
+    r"Science credits", re.I)
+SCI_FB71_CO = re.compile(
+    r"FB7\.1\s+The curriculum shall include the equivalent of at least\s+"
+    r"(?P<n>\w+)\s+full[- ]year courses", re.I)
+SCI_FB72_CR = re.compile(
+    r"FB7\.2\s+The curriculum shall include (?:the equivalent of )?at least"
+    r"\s+(?P<cr>\d{2,3})\s+credits at level\s+(?P<lvl>\d)", re.I)
+SCI_FB72_CO = re.compile(
+    r"FB7\.2\s+The curriculum shall include the equivalent of at least\s+"
+    r"(?P<n>\w+)\s+full[- ]year senior courses", re.I)
+SCI_FB73 = re.compile(
+    r"FB7\.3\s+The curriculum shall include at least[^.]*", re.I)
+# The majors rule is FB7.5 in 2025-2026 and FB7.6 in 2021-2024 (H35 again).
+SCI_FB75 = re.compile(
+    r"(?P<ref>FB7\.[56])\s+The curriculum shall include at least\s+"
+    r"(?P<n>\w+)\s+majors?\b", re.I)
+
+
+def _sci_rules(year, dump_path):
+    rows, seen = [], set()
+    scope = "Bachelor of Science (BSc)"
+    for page_no, lines, _page_text in _pages(dump_path):
+        for i, line in enumerate(lines):
+            win = _window(lines, i)
+            for pat, build in (
+                (SCI_DUR, lambda m: dict(
+                    rule_ref=m.group("ref"),
+                    degree_scope=("BSc Extended Degree Programme (SB016)"
+                                  if m.group("ref") == "FB2.2" else scope),
+                    duration_years=_dur_value(m.group("dur")))),
+                (SCI_FB71_CR, lambda m: dict(
+                    rule_ref="FB7.1", degree_scope=scope,
+                    min_total_credits=int(m.group("cr")))),
+                (SCI_FB71_CO, lambda m: dict(
+                    rule_ref="FB7.1", degree_scope=scope,
+                    min_total_courses=WORD_NUM.get(m.group("n").lower(), ""),
+                    course_unit="full-year courses")),
+                (SCI_FB72_CR, lambda m: dict(
+                    rule_ref="FB7.2", degree_scope=scope,
+                    min_level_credits=int(m.group("cr")),
+                    min_level=int(m.group("lvl")))),
+                (SCI_FB72_CO, lambda m: dict(
+                    rule_ref="FB7.2", degree_scope=scope,
+                    min_senior_courses=WORD_NUM.get(m.group("n").lower(), ""),
+                    course_unit="full-year courses")),
+                (SCI_FB73, lambda m: dict(
+                    rule_ref="FB7.3",
+                    degree_scope=scope + " — Mathematics requirement")),
+                (SCI_FB75, lambda m: dict(
+                    rule_ref=m.group("ref"), degree_scope=scope,
+                    min_majors=WORD_NUM.get(m.group("n").lower(), 1))),
+            ):
+                m = pat.match(win)
+                if not m:
+                    continue
+                key = build(m)["rule_ref"] + str(build(m).get("degree_scope"))
+                if key in seen:
+                    continue
+                seen.add(key)
+                rows.append(_row(year, "SCI", source_page=page_no,
+                                 quote=_collapse(m.group(0))[:300], **build(m)))
+                break
+    return rows
+
+
+# --- HUM -------------------------------------------------------------------
+# The BA/BSocSc award minima are printed as bullet blocks ("Minimum
+# duration: 3 years / Minimum number of courses: 20 semester courses /
+# ... senior courses: 10 ... / ... majors: 2") for the regular
+# [HB003 & HB001] and extended [HB061 & HB062] programmes; FB3/FB4/FB5 are
+# the underlying composition rules; specialised programmes (Fine Art, BMus,
+# BSW, ...) print "The curriculum requires a minimum of NN semester
+# courses".
+
+HUM_DUR_BULLET = re.compile(
+    r"(?:•\s*|\(\d\)\s*)?Minimum duration:\s*(?P<n>\d)\s*years?", re.I)
+HUM_BULLETS = (
+    (re.compile(r"Minimum number of courses:\s*(?P<n>\d+)\s+semester", re.I),
+     "min_total_courses"),
+    (re.compile(r"(?:Minimum number of senior courses:\s*(?P<n>\d+)"
+                r"|(?P<n2>\d+)\s+senior semester courses)", re.I),
+     "min_senior_courses"),
+    (re.compile(r"(?:Minimum number of majors:\s*(?P<n>\d+)"
+                r"|(?P<n2>\d+)\s+majors)", re.I), "min_majors"),
+    (re.compile(r"(?P<n>\d+)\s+semester subject courses(?:\s*\(or "
+                r"equivalent\))?\s*$", re.I), "min_total_courses"),
+)
+HUM_FB3 = re.compile(
+    r"FB3\s+\(a\)\s+The curriculum shall include at least\s+(?P<n>\w+)\s+"
+    r"major subjects", re.I)
+HUM_FB4 = re.compile(
+    r"FB4\s+Candidates shall complete at least\s+(?P<n>\w+)\s+senior "
+    r"semester subject courses", re.I)
+HUM_FB5 = re.compile(
+    r"FB5\s+Except by permission of the Senate, the curriculum shall include "
+    r"at least\s+(?P<n>\d+)\s+semester\s+subject courses[^.]*?Faculty of "
+    r"Humanities", re.I)
+HUM_SPECIALISED = re.compile(
+    r"The [Cc]urriculum requires a minimum of\s+(?P<n>\d+)\s+semester "
+    r"(?:subject )?courses")
+HUM_PROG_HEADING = re.compile(r"^BACHELOR OF [A-Z][A-Z ,&()]{2,70}\s*$")
+HUM_PROG_BRACKET = re.compile(r"^\[HB\d{3}[^\]]*\]\s*$")
+
+
+def _hum_rules(year, dump_path):
+    rows, seen = [], set()
+    prog_heading = ""
+    prog_bracket = ""
+    block = None      # collecting an award-minima bullet block
+    for page_no, lines, _page_text in _pages(dump_path):
+        for i, line in enumerate(lines):
+            if HUM_PROG_HEADING.match(line):
+                prog_heading, prog_bracket = _collapse(line), ""
+            elif HUM_PROG_BRACKET.match(line):
+                prog_bracket = _collapse(line)
+
+            m = HUM_DUR_BULLET.search(line)
+            if m and "Minimum duration" in line:
+                scope = ("BA/BSocSc extended programme (HB061/HB062)"
+                         if int(m.group("n")) == 4 and
+                         any("extended" in l.lower() for l in
+                             lines[max(0, i - 12):i])
+                         else "BA/BSocSc regular programme (HB003/HB001)")
+                block = _row(year, "HUM", degree_scope=scope,
+                             rule_ref="award minima (FB2-FB6 summary)",
+                             duration_years=int(m.group("n")),
+                             course_unit="semester courses",
+                             source_page=page_no, quote=_collapse(line))
+                continue
+            if block is not None:
+                matched = False
+                for pat, field in HUM_BULLETS:
+                    bm = pat.search(line)
+                    if bm:
+                        n = bm.groupdict().get("n") or bm.groupdict().get("n2")
+                        if n and not block[field]:
+                            block[field] = int(n)
+                            block["quote"] += " | " + _collapse(line)
+                            matched = True
+                        break
+                if not matched and not re.match(
+                        r"^(?:•|\(\d\)|Minimum|\d+\s+(?:senior )?semester"
+                        r"|\d+\s+majors|Below are|RULES AND|===)", line):
+                    if block["min_majors"] != "" or block["min_total_courses"] != "":
+                        key = ("award", block["degree_scope"])
+                        if key not in seen:
+                            seen.add(key)
+                            rows.append(block)
+                    block = None
+                continue
+
+            win = _window(lines, i)
+            m = HUM_FB3.match(win)
+            if m and ("fb3",) not in seen:
+                seen.add(("fb3",))
+                rows.append(_row(year, "HUM",
+                                 degree_scope="BA/BSocSc (HB003/HB001)",
+                                 rule_ref="FB3",
+                                 min_majors=WORD_NUM.get(m.group("n").lower()),
+                                 source_page=page_no,
+                                 quote=_collapse(m.group(0))[:300]))
+                continue
+            m = HUM_FB4.match(win)
+            if m and ("fb4",) not in seen:
+                seen.add(("fb4",))
+                rows.append(_row(year, "HUM",
+                                 degree_scope="BA/BSocSc (HB003/HB001)",
+                                 rule_ref="FB4",
+                                 min_senior_courses=WORD_NUM.get(
+                                     m.group("n").lower()),
+                                 course_unit="semester courses",
+                                 source_page=page_no,
+                                 quote=_collapse(m.group(0))[:300]))
+                continue
+            m = HUM_FB5.match(win)
+            if m and ("fb5",) not in seen:
+                seen.add(("fb5",))
+                rows.append(_row(
+                    year, "HUM",
+                    degree_scope="BA/BSocSc — required Humanities courses",
+                    rule_ref="FB5", min_total_courses=int(m.group("n")),
+                    course_unit="semester courses", source_page=page_no,
+                    quote=_collapse(m.group(0))[:300]))
+                continue
+            m = HUM_SPECIALISED.search(line)
+            if m:
+                scope_txt = " ".join(x for x in (prog_heading, prog_bracket)
+                                     if x) or "(specialised programme)"
+                key = ("spec", scope_txt, m.group("n"))
+                if key in seen:
+                    continue
+                seen.add(key)
+                rows.append(_row(year, "HUM", degree_scope=scope_txt,
+                                 min_total_courses=int(m.group("n")),
+                                 course_unit="semester courses",
+                                 source_page=page_no, quote=_collapse(line)))
+    return rows
+
+
 # --- dispatch --------------------------------------------------------------
 
 _PARSERS = {"COM": _com_rules, "EBE": _ebe_rules, "LAW": _law_rules,
-            "FHS": _fhs_rules}
+            "FHS": _fhs_rules, "SCI": _sci_rules, "HUM": _hum_rules}
 
 
 def extract_degree_rules(faculty: str, year: int, dump_path: Path) -> list[dict]:

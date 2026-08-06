@@ -224,6 +224,97 @@
 2025,EB022EEE02,2,regular,Electrical and Computer Engineering,95660,0,95660,0.0,duration,OK
 2025,EB022EEE02,3,regular,Electrical and Computer Engineering,98191,10260,97930,0.3,duration,OK
 2025,EB022EEE02,4,regular,Electrical and Computer Engineering,82610,27360,96130,-14.1,duration,MISMATCH
+2025,HB001AFS01,1,regular,Gender Studies,9440,0,75500,-87.5,degree_flat,MISMATCH
+2025,HB001AFS01,2,regular,Gender Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001AFS01,3,regular,Gender Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001AGE01,2,regular,Archaeology,27340,0,75500,-63.8,degree_flat,MISMATCH
+2025,HB001AGE01,3,regular,Archaeology,41100,0,75500,-45.6,degree_flat,MISMATCH
+2025,HB001ANS01,1,regular,Anthropology,9440,0,75500,-87.5,degree_flat,MISMATCH
+2025,HB001ANS01,2,regular,Anthropology,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001ANS01,3,regular,Anthropology,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001ASL01,1,regular,African Studies,9440,0,75500,-87.5,degree_flat,MISMATCH
+2025,HB001ASL01,2,regular,African Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001ASL01,3,regular,African Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001ASL02,1,regular,Linguistics,9440,0,75500,-87.5,degree_flat,MISMATCH
+2025,HB001ASL02,2,regular,Linguistics,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001ASL02,3,regular,Linguistics,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001BUS08,1,regular,Organisational Psychology,29320,0,75500,-61.2,degree_flat,MISMATCH
+2025,HB001BUS08,2,regular,Organisational Psychology,20880,0,75500,-72.3,degree_flat,MISMATCH
+2025,HB001BUS08,3,regular,Organisational Psychology,20880,0,75500,-72.3,degree_flat,MISMATCH
+2025,HB001CSC05,1,regular,Computer Science,30650,0,75500,-59.4,degree_flat,MISMATCH
+2025,HB001CSC05,2,regular,Computer Science,50671,0,75500,-32.9,degree_flat,MISMATCH
+2025,HB001CSC05,3,regular,Computer Science,40280,0,75500,-46.6,degree_flat,MISMATCH
+2025,HB001ECO01,2,regular,Economics,31320,0,75500,-58.5,degree_flat,MISMATCH
+2025,HB001ECO01,3,regular,Economics,31320,0,75500,-58.5,degree_flat,MISMATCH
+2025,HB001EGS02,1,regular,Environmental and Geographical Science,20740,0,75500,-72.5,degree_flat,MISMATCH
+2025,HB001EGS02,2,regular,Environmental and Geographical Science,27340,0,75500,-63.8,degree_flat,MISMATCH
+2025,HB001EGS02,3,regular,Environmental and Geographical Science,41100,0,75500,-45.6,degree_flat,MISMATCH
+2025,HB001ELL10,1,regular,Literary Studies,18880,0,75500,-75.0,degree_flat,MISMATCH
+2025,HB001ELL10,2,regular,Literary Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001ELL10,3,regular,Literary Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001FAM01,1,regular,Film and Television Studies,9440,0,75500,-87.5,degree_flat,MISMATCH
+2025,HB001FAM01,2,regular,Film and Television Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001FAM01,3,regular,Film and Television Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001FAM07,1,regular,Media and Writing,9440,0,75500,-87.5,degree_flat,MISMATCH
+2025,HB001FAM07,2,regular,Media and Writing,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001FAM07,3,regular,Media and Writing,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001FIN05,1,regular,Art History and Discourse of Art,18880,0,75500,-75.0,degree_flat,MISMATCH
+2025,HB001FIN05,2,regular,Art History and Discourse of Art,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001FIN05,3,regular,Art History and Discourse of Art,12580,0,75500,-83.3,degree_flat,MISMATCH
+2025,HB001HST04,1,regular,History,18880,0,75500,-75.0,degree_flat,MISMATCH
+2025,HB001HST04,2,regular,History,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001HST04,3,regular,History,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001INF09,1,regular,Informatics,20580,0,75500,-72.7,degree_flat,MISMATCH
+2025,HB001INF09,3,regular,Informatics,31320,0,75500,-58.5,degree_flat,MISMATCH
+2025,HB001MAM02,1,regular,Mathematics,31110,0,75500,-58.8,degree_flat,MISMATCH
+2025,HB001MAM02,2,regular,Mathematics,27440,0,75500,-63.7,degree_flat,MISMATCH
+2025,HB001PHI01,1,regular,Philosophy,18880,0,75500,-75.0,degree_flat,MISMATCH
+2025,HB001PHI01,2,regular,Philosophy,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001PHI01,3,regular,Philosophy,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001POL10,1,regular,Politics & Governance,9440,0,75500,-87.5,degree_flat,MISMATCH
+2025,HB001PSY01,1,regular,Psychology,18880,0,75500,-75.0,degree_flat,MISMATCH
+2025,HB001PSY01,2,regular,Psychology,37740,0,75500,-50.0,degree_flat,MISMATCH
+2025,HB001PSY01,3,regular,Psychology,37740,0,75500,-50.0,degree_flat,MISMATCH
+2025,HB001SLL01,1,regular,African Languages & Literatures,18880,0,75500,-75.0,degree_flat,MISMATCH
+2025,HB001SLL01,2,regular,African Languages & Literatures,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL01,3,regular,African Languages & Literatures,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL02,2,regular,Afrikaans,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL02,3,regular,Afrikaans,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL03,2,regular,Arabic Language and Literature,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL03,3,regular,Arabic Language and Literature,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL04,2,regular,Business French,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL04,3,regular,Business French,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL05,2,regular,Classical Studies,12580,0,75500,-83.3,degree_flat,MISMATCH
+2025,HB001SLL05,3,regular,Classical Studies,0,0,75500,,degree_flat,NO_COMPUTED_FEE
+2025,HB001SLL09,2,regular,Hebrew Language and Literature,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL09,3,regular,Hebrew Language and Literature,0,0,75500,,degree_flat,NO_COMPUTED_FEE
+2025,HB001SLL10,2,regular,Italian,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL10,3,regular,Italian,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL13,2,regular,Spanish,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL13,3,regular,Spanish,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL15,2,regular,Xhosa Communication,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL15,3,regular,Xhosa Communication,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL21,1,regular,Chinese Studies,18880,0,75500,-75.0,degree_flat,MISMATCH
+2025,HB001SLL21,2,regular,Chinese Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SLL21,3,regular,Chinese Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SOC01,3,regular,Sociology,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SOC02,2,regular,Industrial Sociology,12580,0,75500,-83.3,degree_flat,MISMATCH
+2025,HB001SOC02,3,regular,Industrial Sociology,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001STA01,1,regular,Applied Statistics,10370,0,75500,-86.3,degree_flat,MISMATCH
+2025,HB001STA01,2,regular,Applied Statistics,40230,0,75500,-46.7,degree_flat,MISMATCH
+2025,HB001STA01,3,regular,Applied Statistics,40280,0,75500,-46.6,degree_flat,MISMATCH
+2025,HB001SWK03,1,regular,Social Development,18880,0,75500,-75.0,degree_flat,MISMATCH
+2025,HB001SWK03,2,regular,Social Development,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001SWK03,3,regular,Social Development,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001TDP09,1,regular,Theatre and Dance Studies,9440,0,75500,-87.5,degree_flat,MISMATCH
+2025,HB001TDP09,2,regular,Theatre and Dance Studies,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001TDP09,3,regular,Theatre and Dance Studies,50320,0,75500,-33.4,degree_flat,MISMATCH
+2025,HB001XX21,2,regular,French,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001XX21,3,regular,French,50320,0,75500,-33.4,degree_flat,MISMATCH
+2025,HB001XX23,2,regular,German,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001XX23,3,regular,German,50320,0,75500,-33.4,degree_flat,MISMATCH
+2025,HB001XX26,2,regular,Portuguese,25160,0,75500,-66.7,degree_flat,MISMATCH
+2025,HB001XX26,3,regular,Portuguese,50320,0,75500,-33.4,degree_flat,MISMATCH
 2025,LB002,1,regular,Four-year undergraduate LLB stream,79600,31110,76810,3.6,flat_annual,OK
 2025,LB002,2,regular,Four-year undergraduate LLB stream,83180,45060,76810,8.3,flat_annual,MISMATCH
 2025,LB002,3,regular,Four-year undergraduate LLB stream,89440,0,76810,16.4,flat_annual,MISMATCH
@@ -249,3 +340,69 @@
 2025,MB014,4,regular,Medicine,39710,0,143590,-72.3,duration,MISMATCH
 2025,MB014,5,regular,Medicine,28230,0,120090,-76.5,duration,MISMATCH
 2025,MB014,6,regular,Medicine,20550,0,132140,-84.4,duration,MISMATCH
+2025,SB001AGE01,1,regular,Archaeology,20740,0,83000,-75.0,degree_flat,MISMATCH
+2025,SB001AGE01,2,regular,Archaeology,27340,0,82000,-66.7,degree_flat,MISMATCH
+2025,SB001AGE01,3,regular,Archaeology,61650,0,82000,-24.8,degree_flat,MISMATCH
+2025,SB001AST02,1,regular,Astrophysics,30920,0,83000,-62.7,degree_flat,MISMATCH
+2025,SB001AST02,2,regular,Astrophysics,68500,0,82000,-16.5,degree_flat,MISMATCH
+2025,SB001AST02,3,regular,Astrophysics,41100,0,82000,-49.9,degree_flat,MISMATCH
+2025,SB001BIO05,1,regular,Marine Biology,62030,0,83000,-25.3,degree_flat,MISMATCH
+2025,SB001BIO05,2,regular,Marine Biology,68350,0,82000,-16.6,degree_flat,MISMATCH
+2025,SB001BIO05,3,regular,Marine Biology,41100,0,82000,-49.9,degree_flat,MISMATCH
+2025,SB001BIO12,1,regular,Biology,62030,0,83000,-25.3,degree_flat,MISMATCH
+2025,SB001BIO12,2,regular,Biology,54680,0,82000,-33.3,degree_flat,MISMATCH
+2025,SB001BIO12,3,regular,Biology,82200,0,82000,0.2,degree_flat,OK
+2025,SB001BIO13,1,regular,Quantitative Biology,31110,0,83000,-62.5,degree_flat,MISMATCH
+2025,SB001BIO13,2,regular,Quantitative Biology,54680,0,82000,-33.3,degree_flat,MISMATCH
+2025,SB001BIO13,3,regular,Quantitative Biology,20550,0,82000,-74.9,degree_flat,MISMATCH
+2025,SB001CEM01,1,regular,Chemistry,41100,0,83000,-50.5,degree_flat,MISMATCH
+2025,SB001CEM01,2,regular,Chemistry,27300,0,82000,-66.7,degree_flat,MISMATCH
+2025,SB001CEM01,3,regular,Chemistry,40950,0,82000,-50.1,degree_flat,MISMATCH
+2025,SB001CSC02,1,regular,Business Computing,41090,0,83000,-50.5,degree_flat,MISMATCH
+2025,SB001CSC02,2,regular,Business Computing,23920,0,82000,-70.8,degree_flat,MISMATCH
+2025,SB001CSC02,3,regular,Business Computing,31320,0,82000,-61.8,degree_flat,MISMATCH
+2025,SB001CSC03,1,regular,Computer Engineering,20280,0,83000,-75.6,degree_flat,MISMATCH
+2025,SB001CSC03,2,regular,Computer Engineering,26010,0,82000,-68.3,degree_flat,MISMATCH
+2025,SB001CSC03,3,regular,Computer Engineering,32030,0,82000,-60.9,degree_flat,MISMATCH
+2025,SB001CSC05,1,regular,Computer Science,30650,0,83000,-63.1,degree_flat,MISMATCH
+2025,SB001CSC05,2,regular,Computer Science,50671,0,82000,-38.2,degree_flat,MISMATCH
+2025,SB001CSC05,3,regular,Computer Science,40280,0,82000,-50.9,degree_flat,MISMATCH
+2025,SB001CSC08,1,regular,Artificial Intelligence,51390,0,83000,-38.1,degree_flat,MISMATCH
+2025,SB001CSC08,2,regular,Artificial Intelligence,53950,0,82000,-34.2,degree_flat,MISMATCH
+2025,SB001CSC08,3,regular,Artificial Intelligence,0,0,82000,,degree_flat,NO_COMPUTED_FEE
+2025,SB001EGS02,1,regular,Environmental & Geographical Science,20740,0,83000,-75.0,degree_flat,MISMATCH
+2025,SB001EGS02,2,regular,Environmental & Geographical Science,27340,0,82000,-66.7,degree_flat,MISMATCH
+2025,SB001EGS02,3,regular,Environmental & Geographical Science,82200,0,82000,0.2,degree_flat,OK
+2025,SB001GEO02,1,regular,Geology,52170,0,83000,-37.1,degree_flat,MISMATCH
+2025,SB001GEO02,2,regular,Geology,27340,0,82000,-66.7,degree_flat,MISMATCH
+2025,SB001GEO02,3,regular,Geology,41100,0,82000,-49.9,degree_flat,MISMATCH
+2025,SB001HUB17,1,regular,Human Anatomy & Physiology,41290,0,83000,-50.3,degree_flat,MISMATCH
+2025,SB001HUB17,2,regular,Human Anatomy & Physiology,27340,0,82000,-66.7,degree_flat,MISMATCH
+2025,SB001HUB17,3,regular,Human Anatomy & Physiology,41340,0,82000,-49.6,degree_flat,MISMATCH
+2025,SB001MAM01,1,regular,Applied Mathematics,20740,0,83000,-75.0,degree_flat,MISMATCH
+2025,SB001MAM01,2,regular,Applied Mathematics,27440,0,82000,-66.5,degree_flat,MISMATCH
+2025,SB001MAM01,3,regular,Applied Mathematics,61560,0,82000,-24.9,degree_flat,MISMATCH
+2025,SB001MAM02,1,regular,Mathematics,10370,0,83000,-87.5,degree_flat,MISMATCH
+2025,SB001MAM02,2,regular,Mathematics,27440,0,82000,-66.5,degree_flat,MISMATCH
+2025,SB001MAM02,3,regular,Mathematics,61560,0,82000,-24.9,degree_flat,MISMATCH
+2025,SB001MCB01,1,regular,Biochemistry,62030,0,83000,-25.3,degree_flat,MISMATCH
+2025,SB001MCB01,2,regular,Biochemistry,41010,0,82000,-50.0,degree_flat,MISMATCH
+2025,SB001MCB01,3,regular,Biochemistry,41100,0,82000,-49.9,degree_flat,MISMATCH
+2025,SB001MCB04,1,regular,Genetics,62030,0,83000,-25.3,degree_flat,MISMATCH
+2025,SB001MCB04,2,regular,Genetics,41010,0,82000,-50.0,degree_flat,MISMATCH
+2025,SB001MCB04,3,regular,Genetics,41100,0,82000,-49.9,degree_flat,MISMATCH
+2025,SB001PHY01,1,regular,Physics,41290,0,83000,-50.3,degree_flat,MISMATCH
+2025,SB001PHY01,2,regular,Physics,41160,0,82000,-49.8,degree_flat,MISMATCH
+2025,SB001PHY01,3,regular,Physics,40950,0,82000,-50.1,degree_flat,MISMATCH
+2025,SB001SEA03,1,regular,Ocean & Atmosphere Science,41800,0,83000,-49.6,degree_flat,MISMATCH
+2025,SB001SEA03,2,regular,Ocean & Atmosphere Science,27340,0,82000,-66.7,degree_flat,MISMATCH
+2025,SB001SEA03,3,regular,Ocean & Atmosphere Science,41100,0,82000,-49.9,degree_flat,MISMATCH
+2025,SB001STA01,1,regular,Applied Statistics,10370,0,83000,-87.5,degree_flat,MISMATCH
+2025,SB001STA01,2,regular,Applied Statistics,13410,0,82000,-83.6,degree_flat,MISMATCH
+2025,SB001STA01,3,regular,Applied Statistics,40280,0,82000,-50.9,degree_flat,MISMATCH
+2025,SB001STA02,1,regular,Mathematical Statistics,10370,0,83000,-87.5,degree_flat,MISMATCH
+2025,SB001STA02,2,regular,Mathematical Statistics,26820,0,82000,-67.3,degree_flat,MISMATCH
+2025,SB001STA02,3,regular,Mathematical Statistics,40280,0,82000,-50.9,degree_flat,MISMATCH
+2025,SB001STA13,1,regular,Statistics & Data Science,41020,0,83000,-50.6,degree_flat,MISMATCH
+2025,SB001STA13,2,regular,Statistics & Data Science,94180,0,82000,14.9,degree_flat,MISMATCH
+2025,SB001STA13,3,regular,Statistics & Data Science,2331720,0,82000,2743.6,degree_flat,MISMATCH

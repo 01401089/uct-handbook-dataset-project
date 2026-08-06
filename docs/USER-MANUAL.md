@@ -35,8 +35,9 @@ number can be traced back to the page of the handbook it came from.
 | Engineering & the Built Environment undergraduate handbook | 2021–2026 | complete (adjudication review pending) |
 | Faculty of Law undergraduate handbook (LLB streams) | 2021–2026 | complete |
 | Faculty of Health Sciences undergraduate handbook | 2021–2026 | complete (adjudication review pending) |
+| Faculty of Science undergraduate handbook (majors) | 2021–2026 | complete |
+| Faculty of Humanities undergraduate handbook (majors) | 2021–2026 | complete |
 | Student Fees handbook (course fees + published programme fees) | 2021–2026 | complete |
-| Humanities, Science handbooks | 2025 books on file | extraction pending |
 
 The 2025 edition is treated as the **baseline** — the recorded state of the
 curriculum against which the credit re-think editions are compared (note
@@ -44,17 +45,20 @@ that the rules layer shows some re-think changes landing *at* or *before*
 that baseline: the BBusSc minimum-credit cut arrives in the 2025 edition
 itself, the BCom's 450→440 as early as 2022 — the `degree_rules` table
 dates each change per degree). Across the six editions the dataset holds
-**20,649 curriculum records**: 71–75 Commerce specialisations per year
-(including the Academic Development augmented and extended variants and
-the Advanced Diplomas), ~26 EBE specialisations per year (including the
-5-year Extended Curriculum Programmes), the three LLB streams (graduate,
-four-year undergraduate, and the legacy five-year stream), and the Health
-Sciences professional degrees (MBChB and the four-year AHS programmes with
-their intervention-programme variants). In EBE, elective loads are printed
-as ranges ("0–48 credits"); the ideal student takes the minimum, and both
-ends of the range are retained. Law publishes one flat annual fee per
-stream rather than per-year figures; the dataset applies it to every year
-of the stream and labels the match accordingly.
+**24,536 curriculum records** spanning all six faculties: 71–75 Commerce
+specialisations per year (including the Academic Development augmented and
+extended variants and the Advanced Diplomas), ~26 EBE specialisations per
+year (including the 5-year Extended Curriculum Programmes), the three LLB
+streams (graduate, four-year undergraduate, and the legacy five-year
+stream), the Health Sciences professional degrees (MBChB and the four-year
+AHS programmes with their intervention-programme variants), ~22 Science
+majors, and ~40 Humanities majors serving both the BA and the BSocSc. In
+EBE, elective loads are printed as ranges ("0–48 credits"); the ideal
+student takes the minimum, and both ends of the range are retained. Law
+publishes one flat annual fee per stream rather than per-year figures, and
+Science/Humanities one per-year fee per degree covering every major; the
+dataset applies these to the relevant years and labels the match
+accordingly (§8, caveat 8).
 
 The dataset now comes in **two layers**:
 
@@ -211,7 +215,7 @@ The summary table analysts should use. Adds to §6.2's columns:
 |---|---|
 | `final_credits` | the resolved credit load for the year |
 | `credits_stated_corrected` | filled where a misprinted total was corrected by adjudication |
-| `final_credit_status` | `consistent` / `resolved_computed` / `resolved_manual` / `unresolved` |
+| `final_credit_status` | `consistent` / `resolved_computed` / `resolved_manual` / `unresolved` / `no_anchor` (Science and Humanities majors — no per-year total exists to reconcile against) |
 | `final_fee_zar` / `final_fee_status` | resolved cost; `reconciled` / `published_divergent` / `no_published` |
 | `confidence` | `high` (arithmetic or adjudicated) / `medium` (cross-edition) / `low` (default policy) |
 | `resolution_rationale` | the written justification, in full sentences |
@@ -251,17 +255,20 @@ while its own year tables sum to 411.
 Results for the current load, after the final-clean layer
 (consistent / resolved / unresolved per faculty):
 
-| Year | Commerce | EBE | Law | Health Sciences |
-|---|---|---|---|---|
-| 2021 | 227 / 17 / 30 | 85 / 0 / 5 | 11 / 0 / 1 | 7 / 0 / 12 |
-| 2022 | 240 / 11 / 24 | 86 / 0 / 4 | 11 / 0 / 1 | 8 / 0 / 11 |
-| 2023 | 225 / 15 / 36 | 88 / 0 / 2 | 11 / 0 / 1 | 14 / 0 / 11 |
-| 2024 | 203 / 13 / 55 | 86 / 0 / 4 | 10 / 0 / 2 | 14 / 0 / 11 |
-| 2025 | 219 / 13 / 36 | 84 / 0 / 6 | 10 / 0 / 2 | 11 / 0 / 12 |
-| 2026 | 202 / 11 / 48 | 80 / 0 / 10 | 7 / 0 / 0 | 10 / 0 / 13 |
+| Year | Commerce | EBE | Law | Health Sciences | Science / Humanities majors |
+|---|---|---|---|---|---|
+| 2021 | 227 / 17 / 30 | 85 / 0 / 5 | 11 / 0 / 1 | 7 / 0 / 12 | 155 no-anchor |
+| 2022 | 240 / 11 / 24 | 86 / 0 / 4 | 11 / 0 / 1 | 8 / 0 / 11 | 154 no-anchor |
+| 2023 | 225 / 15 / 36 | 88 / 0 / 2 | 11 / 0 / 1 | 14 / 0 / 11 | 148 no-anchor |
+| 2024 | 203 / 13 / 55 | 86 / 0 / 4 | 10 / 0 / 2 | 14 / 0 / 11 | 154 no-anchor |
+| 2025 | 219 / 13 / 36 | 84 / 0 / 6 | 10 / 0 / 2 | 11 / 0 / 12 | 157 no-anchor |
+| 2026 | 202 / 11 / 48 | 80 / 0 / 10 | 7 / 0 / 0 | 10 / 0 / 13 | 153 no-anchor |
 
-86% of the 2,366 specialisation-years are consistent or resolved at high
-or medium confidence. The unresolved remainder carries the computed value
+Of the 2,366 specialisation-years that have a printed per-year anchor, 86%
+are consistent or resolved at high or medium confidence; the 921 Science
+and Humanities major-years carry `no_anchor` — the handbooks print no
+per-year totals for majors, so there is nothing to reconcile against
+(caveat 8). The unresolved remainder carries the computed value
 at low confidence and is individually listed, with suggested actions, in
 `validation/pending_adjudication_<year>.csv`. Commerce's register has been
 provisionally seeded; the EBE, Law and Health Sciences adjudication passes
@@ -338,10 +345,16 @@ published handbooks would benefit from editorial correction.
    editions.
 7. **Zero-credit and cross-listed courses exist** (e.g. a 0-credit
    programming assessment) and are represented as printed.
-8. **Science and Humanities are not yet covered.** Their handbook
-   structures differ fundamentally (majors plus composition rules rather
-   than per-specialisation tables); conclusions about those faculties must
-   wait for their extractors.
+8. **Science and Humanities curricula are majors, not whole degrees.**
+   A BSc/BA/BSocSc student combines majors and electives under the
+   faculty's composition rules, so a major's credit sum is deliberately
+   below the degree total. Majors print no per-year credit totals; their
+   spec-years carry the status `no_anchor` (nothing to reconcile against
+   per year), and the degree-level minima — SCI: 360 credits from the 2025
+   edition ("nine full-year courses" before); HUM: 20 semester courses,
+   10 senior, 2 majors — live in `degree_rules.csv`. Published fees for
+   these faculties are per degree, applied to every major
+   (`degree_flat`), so per-major fee deltas are indicative only.
 
 ## 9. Worked examples
 

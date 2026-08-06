@@ -237,6 +237,13 @@ def main():
     merge(ROOT / "data" / "processed" / "curriculum.csv", curriculum)
     merge(ROOT / "data" / "processed" / "courses.csv", courses)
 
+    # Rules layer: the degree-composition rules (how majors make a degree)
+    # -- see common/degree_rules.py and docs/REPLICATION.md sec 10.
+    from common.degree_rules import extract_degree_rules
+    degree_rules = extract_degree_rules(FACULTY, args.year, dump)
+    if degree_rules:
+        merge(ROOT / "data" / "processed" / "degree_rules.csv", degree_rules)
+
     blank = sum(1 for r in curriculum if r["nqf_credits"] == "")
     print(f"majors: {len(programmes)}  curriculum rows: {len(curriculum)}  "
           f"courses: {len(courses)}  (credits filled: {filled}, blank: {blank})")

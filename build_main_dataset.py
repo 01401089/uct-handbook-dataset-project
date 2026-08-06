@@ -153,6 +153,8 @@ def match_published_fees(prog_fees, specialisations, duration_by_plan):
                    else "EBE" if r["faculty_section"].startswith("Engineering")
                    else "LAW" if r["faculty_section"].startswith("Law")
                    else "FHS" if r["faculty_section"].startswith("Health")
+                   else "SCI" if r["faculty_section"].startswith("Science")
+                   else "HUM" if r["faculty_section"].startswith("Humanities")
                    else None)
         if section is None:
             continue
@@ -230,6 +232,29 @@ def match_published_fees(prog_fees, specialisations, duration_by_plan):
                 for sy in range(1, (duration_by_plan.get(p) or 1) + 1):
                     fee_map[(p, str(sy))] = (fee, label, "flat_annual")
             continue
+        elif section in ("SCI", "HUM"):
+            # One published block per degree covers every major: "Bachelor
+            # of Science" prices all SCI majors, "Bachelor of Arts and
+            # Bachelor of Social Science" all HUM majors (the handbooks'
+            # majors serve both degrees). Specialised Humanities programmes
+            # (Fine Art, BMus, BSW, PPE, Film & Media) publish their own
+            # blocks but have no major rows to price — they surface in the
+            # unmatched report by design.
+            low = label.lower().strip()
+            if section == "SCI" and low == "bachelor of science":
+                abbrev = "BSc"
+            elif section == "HUM" and \
+                    "bachelor of arts and bachelor of social science" in low:
+                abbrev = "BA/BSocSc"
+            else:
+                unmatched.append(label)
+                continue
+            plans = [p for (a, _ad, _s), ps in by_key.items() if a == abbrev
+                     for p in ps]
+            if not plans:
+                unmatched.append(label)
+                continue
+            method = "degree_flat"
         else:  # Engineering & the Built Environment
             parsed = parse_fee_label_ebe(label)
             if not parsed:

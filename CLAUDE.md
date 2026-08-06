@@ -28,9 +28,13 @@ python build_main_dataset.py      --year YYYY
 python validation/validate.py     --year YYYY
 ```
 
-COM + EBE + LAW + FHS + fees are loaded for **2021-2026** (FHS via a bespoke
-parser in `extractors/fhs/` that reuses the shared grammar — see H32-H34). Faculty extractors are thin
-configs (`extractors/<fac>/extract.py` defines a `FacultyConfig`) over the
+All six faculties (COM, EBE, LAW, FHS, SCI, HUM) + fees are loaded for
+**2021-2026**. FHS, SCI and HUM use bespoke parsers that reuse the shared
+grammar (see H32-H34 and REPLICATION §9); SCI/HUM's curriculum unit is the
+**major** (`SB001…`/`HB001…` plan codes), whose spec-years carry
+`no_anchor` (majors print no per-year totals — degree-level anchors live
+in the rules layer). The other faculty extractors are thin configs
+(`extractors/<fac>/extract.py` defines a `FacultyConfig`) over the
 **shared engine** `common/handbook_parser.py` — promoted from the COM
 extractor once the grammar proved general (identical publisher template).
 Fix parsing bugs in the engine, faculty quirks in the config; after any
