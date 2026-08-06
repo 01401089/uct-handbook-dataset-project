@@ -62,7 +62,7 @@ after onboarding any new year. A doubled row-sum (exactly 2x stated) means a
 swallowed programme heading — see hazards H22-H24.
 
 `docs/REPLICATION.md` is the authoritative process log: read it (especially
-the hazard catalogue H1-H40, which includes per-edition layout drift — 2024
+the hazard catalogue H1-H41, which includes per-edition layout drift — 2024
 Title-Case/inline-code headings, 2026 per-degree headers and HEQSF wording)
 before touching any parser or onboarding a new handbook year.
 `docs/USER-MANUAL.md` is the reviewer/dean-facing manual — update it when

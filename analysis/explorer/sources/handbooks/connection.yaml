@@ -1,0 +1,4 @@
+name: handbooks
+type: duckdb
+options:
+  filename: ../../../handbooks.duckdb

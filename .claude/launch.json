@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "explorer",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "analysis/explorer", "run", "preview"],
+      "port": 3000
+    },
+    {
+      "name": "explorer-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "analysis/explorer", "run", "dev"],
+      "port": 3000
+    }
+  ]
+}

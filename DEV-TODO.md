@@ -33,6 +33,13 @@ confidence (`validation/pending_adjudication_<year>.csv`).
    - the `N`-suffix fee-book rows (~R600, assumed exam-only, excluded from
      costing);
    - the AD published-fee variant mapping (`ad_duration` method).
+4. **CU020BUS01 (AdvDip Actuarial Science) 2021/2022**: the early-edition
+   AdvDip layout prints an approved-course *pool* (pp17-18 of the 2021
+   book — every 3000-level ECO course etc.) which the engine read as a
+   672-credit year-1 curriculum (300 in 2022; found 2026-08-06 by a
+   >250-credit spec-year scan, alongside SCI hazard H41 which was fixed).
+   Needs a COM-config fix (recognise the pool as `alternative` rows or an
+   elective list), not an adjudication.
 
 **Tooling idea (nice-to-have):** a small `review.py` that walks the pending
 report interactively (show row + PDF page reference, prompt for a decision,
@@ -87,8 +94,10 @@ slot-line shapes) resolved most of what this pass had queued — EBE is now
   award minima) — a builder could synthesise a full BSc/BA/BSocSc
   curriculum (2 majors + electives to the minimum) and give SCI/HUM true
   whole-degree credit/fee series comparable to the other faculties.
-- Blank-credit rows: a residue of SCI/HUM curriculum rows have no credits
-  (no catalogue entry to join from); revisit joins or flag per row.
+- Blank-credit rows: HUM retains 124 curriculum rows with no credits (no
+  catalogue entry to join from); revisit joins or flag per row. SCI's
+  blanks all turned out to be the H41 postgraduate spill and are gone
+  since the 2026-08-06 fix.
 - Specialised HUM programmes (Fine Art, BMus, BSW, PPE, Film & Media)
   publish their own fee blocks but have no major rows — decide whether to
   extract them as programmes (they print COM-style curricula with own
@@ -98,9 +107,49 @@ slot-line shapes) resolved most of what this pass had queued — EBE is now
 
 ## 6. Analysis layer
 
-- `analysis/` trend queries over `ideal_student_summary_final.csv`:
-  credit-load and cost per specialisation across editions, faculty-level
-  aggregates, augmented/extended vs regular comparisons.
+- ~~DuckDB semantic layer~~ — **done 2026-08-06**:
+  `analysis/build_database.py` builds `handbooks.duckdb` (all processed
+  tables + unioned validation reports + `v_*` semantic views, with
+  build-time sanity checks). Trend queries now run against
+  `v_credit_series` / `v_degree_credit_series` / `v_rule_changes`.
+- ~~Visual explorer~~ — **done 2026-08-06**: Evidence site in
+  `analysis/explorer/` (overview, credit re-think, faculty and programme
+  drill-downs, fees, quality/adjudication queue, method — run
+  instructions in `analysis/README.md`). Optional Streamlit
+  adjudication-review companion still open if register review wants
+  interactivity.
+- Remaining query work: faculty-level aggregates, augmented/extended vs
+  regular comparisons.
+- ~~Real-rand (2025) fee normalisation~~ — **built 2026-08-06**:
+  `fee_index` table (matched-course deflator: ~3,850-3,930 matched codes
+  per consecutive pair, IQR ≈ ±0.05pp; 2021→22 +4.27%, 22→23 +5.14%,
+  23→24 +4.55%, 24→25 +5.83%, 25→26 +4.67%; chained, 2025=1) +
+  `v_fee_real` view + `degree_fee_real_2025` in
+  `v_degree_credit_series`, with build-time sanity checks (base-year
+  index = 1.0, full edition coverage, plausible escalation band).
+  Explorer: "In 2025 rands" section on the fees page, real-terms chart +
+  column on programme profiles, method note. The as-printed and final
+  CSV layers stay nominal (as-printed principle). Still open: optional
+  re-pricing-at-2025 cross-check (same-code coverage 87.6-97.6%/year);
+  fallback for future sparse years is per-faculty indices, then
+  published programme-fee ratios.
+- **Composed-degree archetype for SCI/HUM** (design sharpened
+  2026-08-06; supersedes the sketch in §5): per major and edition,
+  synthesise "major + rules-minimum completion": the major's own courses
+  as core, plus elective-slot filler priced at the faculty's median
+  fee-per-credit at the levels the rules require, sized to the printed
+  composition rules (SCI FB7.1 360 cr with FB7.2 120@L7, FB7.5 ≥1
+  major; HUM FB2-FB6 20 semester courses / 10 senior / 2 majors — the
+  second HUM major is represented statistically by the filler, never by
+  pairing with a real partner major, so a partner's own curriculum
+  changes cannot contaminate the analysed major's trend). Hold the SCI
+  target at 360 credits for pre-2025 editions (the faculty itself
+  equated "nine full-year courses" with 360 in the 2025 re-basing;
+  record as assumption). Output: a derived `composed_degree_summary`
+  (prototype in the analysis layer first; promote to a pipeline step
+  once the conventions are signed off), status `rule_anchor`, validated
+  against `degree_rules`, and — the payoff — finally comparable to the
+  `degree_flat` published BSc/BA fees.
 - Flag credit-re-think transition points automatically (year-over-year
   final_credits changes per plan code) — and join them against
   `degree_rules.csv` rule changes (BBusSc 623→528 at 2025, EBE FB3.2

@@ -16,6 +16,13 @@ Distinct structures (bespoke parser, FHS mould, reusing the shared grammar):
   degree-rules layer, not this parser (totals output is empty by design).
 - Rows whose credits wrap to the next line are completed from the book's own
   course catalogue (credits + NQF level joined by course code).
+- The POSTGRADUATE rules and curricula (Honours/Masters, from "Rules for the
+  degree of Bachelor of Science Honours") print under the SAME running
+  header as the majors, so page classification cannot separate them; the
+  major parser stops at that heading (hazard H41 — without the stop, the
+  last major's open year-3 table swallows the whole PG section, thousands
+  of phantom credits). The heading wraps mid-parenthesis in 2023, so the
+  pattern matches the unwrapped prefix.
 
 Run from the repo root:
     python -m extractors.sci.extract --year 2025 [--skip-dump]
@@ -36,6 +43,9 @@ FACULTY = "SCI"
 PROGRAMME_CODE = "SB001"   # the BSc programme family per the UCT code scheme
 
 MAJOR_HEADING = re.compile(r"^Major in (?P<name>[A-Z][^.\[]{2,70}?)\s*$")
+# Undergraduate majors end where the postgraduate rules begin (same running
+# header, all six editions; 2023 wraps after "(BSc" -> match the prefix only).
+PG_BOUNDARY = re.compile(r"^Rules for the degree of Bachelor of Science Honours\b")
 STREAM_BRACKET = re.compile(r"^\[(?P<code>[A-Z]{2,3}\d{2})\]\s*$")
 YEAR_HEADING = re.compile(r"^(First|Second|Third|Fourth) Year Core Courses\s*$")
 ORD = {"First": 1, "Second": 2, "Third": 3, "Fourth": 4}
@@ -129,6 +139,8 @@ def parse_majors(dump_path: Path, sections: dict, year: int):
         menu = None
 
     for page_no, line in lines:
+        if PG_BOUNDARY.match(line):
+            break                      # postgraduate section: majors are done
         m = MAJOR_HEADING.match(line)
         if m:
             pending_name = (m.group("name"), page_no)

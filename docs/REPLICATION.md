@@ -245,6 +245,7 @@ Layout drift encountered and handled across editions:
 | H38 | In-year elective menus and optional courses counted as core | EBE "(Ordinal) Year (Further) Elective Core Courses (EE/EC/ME)", "Optional Courses"; totals "Total credits per year (minimum) … 138" | `elective_core_heading`/`optional_heading` → alternative rows; select-instructions → min-credit slot or pick-n menu; "(minimum)" totals accepted |
 | H39 | Elective slot lines in five shapes, incl. level-range tails | "Electives … 18", "Elective … 18 5", "F/S/P/L *Approved Complementary Studies Elective … 18 7", "…Open electives …Totalling at least … 24 5-8" | widened EBE `extra_elective` with a dotted-leader guard so prose never matches |
 | H40 | Course rows wrapped before their credits; third totals wording | LAW LB003: "PVL1006W … (No longer on" / "offer after 2019) … 36 5"; "Total credits for first year … 90" | `course_row_nocred` + `course_cred_cont` continuation; total grammar accepts the bare-ordinal wording |
+| H41 | UG majors and PG rules share one running header | SCI: Honours/Masters rules and curricula print under "DEGREES OFFERED IN THE FACULTY"; the last major's open year-3 table swallowed the whole PG section (3.3-4.0k phantom credits on SB001BIO13 2021-2024 / SB001STA13 2025-2026) | majors parser stops at "Rules for the degree of Bachelor of Science Honours" (wraps after "(BSc" in 2023 — match the prefix); found via a >250-credit spec-year scan |
 
 Failing to recognise a heading is the costliest hazard class: the previous
 block silently **swallows** the next programme's tables (doubling its row
@@ -363,7 +364,7 @@ majors and carry `no_anchor` — no per-year totals exist for them, §9):
 | 2025 | 219 / 13 / 36 | 84 / 0 / 6 | 10 / 0 / 2 | 11 / 0 / 12 | 66 | 91 |
 | 2026 | 202 / 11 / 48 | 80 / 0 / 10 | 7 / 0 / 0 | 10 / 0 / 13 | 66 | 87 |
 
-Main dataset: **24,536 rows** (COM 14,282 + EBE 4,729 + SCI 2,515 + HUM
+Main dataset: **23,592 rows** (COM 14,282 + EBE 4,729 + SCI 1,571 + HUM
 1,372 + FHS 1,187 + LAW 451); 3,287 specialisation-years (1,949
 consistent, 80 resolved, 337 unresolved pending adjudication, 921
 `no_anchor` major-years). The H37-H40 fixes resolved what DEV-TODO had
@@ -386,7 +387,9 @@ curriculum is the **major**, not the specialisation:
   the "DEGREES OFFERED IN THE FACULTY" section; plan codes synthesised as
   `SB001` + stream (`SB001MAM01`). "Either / Or both" alternatives and
   "And two of …" menus; credits printed inline, wrapped rows completed
-  from the book's own catalogue.
+  from the book's own catalogue. The postgraduate rules and curricula
+  print under the SAME running header, so the majors parser stops at the
+  BSc Honours rules heading (H41).
 - **HUM**: ~40 "Requirements for a major in X" blocks with `[AFS01]`-style
   brackets printed INSIDE the department sections; plan codes `HB001` +
   stream. Rows are bare "CODE Title" lines — credits and NQF levels are

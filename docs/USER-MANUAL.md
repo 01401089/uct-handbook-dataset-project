@@ -45,7 +45,7 @@ that the rules layer shows some re-think changes landing *at* or *before*
 that baseline: the BBusSc minimum-credit cut arrives in the 2025 edition
 itself, the BCom's 450→440 as early as 2022 — the `degree_rules` table
 dates each change per degree). Across the six editions the dataset holds
-**24,536 curriculum records** spanning all six faculties: 71–75 Commerce
+**23,592 curriculum records** spanning all six faculties: 71–75 Commerce
 specialisations per year (including the Academic Development augmented and
 extended variants and the Advanced Diplomas), ~26 EBE specialisations per
 year (including the 5-year Extended Curriculum Programmes), the three LLB

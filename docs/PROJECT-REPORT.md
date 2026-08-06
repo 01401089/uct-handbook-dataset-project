@@ -19,7 +19,7 @@ was printed on**, and in which credit loads and their Rand cost can be
 compared across editions, faculties, and degree programmes.
 
 The dataset now covers **all six faculties** (Commerce, Engineering & the
-Built Environment, Law, Health Sciences, Science, Humanities): 24,536
+Built Environment, Law, Health Sciences, Science, Humanities): 23,592
 curriculum records across 1,066 programme register entries, a 9,821-entry
 course catalogue, 26,298 course-fee rows, 3,197 published programme fees,
 and — critically — a **387-row rules layer** extracted from the
@@ -105,7 +105,7 @@ Science and Humanities genuinely do not fit the template (multi-code
 programme blocks; majors printed inside department sections) and have
 bespoke parsers that still reuse the shared row grammar and catalogue
 parser. Parsing was hardened against a catalogue of **40 documented
-hazards** (H1–H40 in `docs/REPLICATION.md`) discovered by inspection —
+hazards** (H1–H41 in `docs/REPLICATION.md`) discovered by inspection —
 from plan-code typos (`CBO18BUS01`, letter O for zero) to per-edition
 layout drift (2024's Title-Case headers, 2026's per-degree running
 headers) to the costliest failure class: an unrecognised heading silently
@@ -245,8 +245,9 @@ Academic Development augmented, AD extended), and its six editions drift
 the most in layout: 2024 switched to Title-Case headers and inline plan
 codes; 2026 to per-degree running headers and "HEQSF" wording.
 
-**Accurate.** Most curricula reconcile: 219 of 268 anchored
-specialisation-years in the 2025 baseline are consistent or resolved,
+**Accurate.** Most curricula reconcile: of the 268 anchored
+specialisation-years in the 2025 baseline, 219 are consistent as printed
+and a further 13 resolve under the final-layer rules,
 and computed fees match published fees at 0.0% median absolute delta —
 for most programmes to the rand, e.g. BCom Actuarial Science year 1
 matches exactly in all of 2021–2025.
@@ -308,7 +309,10 @@ Engineering's whole-degree load falls **544 → 496 → 468** across the
 ("registers in 2025 … 560 / registered before 2025 … 576"); Civil prints
 "576 (or 560 if admitted from 2025)"; the faculty's blanket rule FB3.2
 (4-year ≥ 576, 3-year ≥ 432) only drops to 560 in 2026, *after* the
-departments. Geomatics phases in 519/511 totals in 2026.
+departments. Geomatics phases in 519/511 totals in 2026, and the
+built-environment programmes' own rule totals move repeatedly across
+the six editions (Construction Studies 450→464→458→422; Property
+Studies 454→468→452).
 
 **Inconsistent / erroneous.** The 2026 Bachelor of Architectural Studies
 curriculum sums 376 credits — 56 below the faculty's own 432 three-year
@@ -381,7 +385,7 @@ context.
 
 ### 7.5 Science (SCI) — majors, and a degree re-based from courses to credits
 
-*20–23 majors per edition; 2,515 rows; plan codes synthesised as
+*20–23 majors per edition; 1,571 rows; plan codes synthesised as
 `SB001` + stream.*
 
 Science's curriculum unit is the **major** ("Major in Mathematics",
@@ -525,36 +529,47 @@ on top of it.
 
 ### 10.2 The database design
 
-A ~60-line build script (`analysis/build_database.py`) creates the file:
-raw tables loaded 1:1 from `data/processed/*.csv` and
-`validation/*_<year>.csv` (typed, with a `report` column for the
-per-year files), plus semantic views. The essential views:
+The build script (`analysis/build_database.py` — **implemented**, see
+`analysis/README.md`) creates the file: raw tables loaded 1:1 from
+`data/processed/*.csv`, each validation report family unioned across its
+per-year files, the adjudication registers as one table, plus semantic
+views, with build-time sanity checks that fail loudly if the semantic
+layer disagrees with the source tables. The essential views:
 
 ```sql
--- Credit trajectory per programme-year across editions (the core chart)
+-- Credit trajectory per programme-year across editions (the core chart).
+-- Provenance drill-down joins main_dataset_final on (year, plan_code,
+-- study_year) for the per-row source_page.
 CREATE VIEW v_credit_series AS
 SELECT plan_code, faculty, degree_abbrev, specialisation, variant,
        study_year, year AS edition, final_credits, final_credit_status,
-       confidence, credits_stated, source_page
+       confidence, credits_stated
 FROM ideal_student_summary_final;
 
--- Whole-degree load vs the printed rules floor, per edition
+-- Whole-degree load vs the printed rules floor: do NOT re-derive the
+-- rule join in SQL — the pipeline already did the careful matching
+-- (heading text, cohort splits, stream totals). Load its reports.
 CREATE VIEW v_degree_vs_rule AS
-SELECT s.year, s.faculty, s.plan_code, s.degree_abbrev,
-       sum(s.final_credits) AS degree_credits,
-       r.min_total_credits  AS rule_floor,
-       sum(s.final_credits) - r.min_total_credits AS surplus
-FROM ideal_student_summary_final s
-LEFT JOIN degree_rules r
-  ON r.year = s.year AND r.degree_scope = s.degree_abbrev
-GROUP BY ALL;
+SELECT year, faculty, plan_code, degree_abbrev, specialisation, variant,
+       n_years, final_credits_total, rule_min_credits, rule_basis,
+       surplus, status, unresolved_years
+FROM degree_check;   -- union of validation/degree_check_<year>.csv
 
--- Rule changes: every degree-level requirement that moved between editions
+-- Rule changes: every degree whose minimum-credit floor moved between
+-- editions. Two EBE caveats: filter `cohort` (from 2025 EBE prints
+-- cohort-split minima — "560 if registered from 2025, else 576"), and
+-- expect same-year duplicates where a phase-in prints two totals at
+-- once (Geomatics 2026: 519/511 alongside the blanket 576) — aggregate
+-- per year or filter on rule_ref before diffing.
 CREATE VIEW v_rule_changes AS
-SELECT degree_scope, rule_kind, year, value, quote, source_page,
-       lag(value) OVER (PARTITION BY degree_scope, rule_kind
-                        ORDER BY year) AS previous_value
-FROM degree_rules QUALIFY value IS DISTINCT FROM previous_value;
+SELECT faculty, degree_scope, year, min_total_credits, rule_ref,
+       source_page, quote,
+       lag(min_total_credits) OVER (PARTITION BY degree_scope
+                                    ORDER BY year) AS previous_value
+FROM degree_rules
+WHERE min_total_credits IS NOT NULL AND cohort IS NULL
+QUALIFY min_total_credits IS DISTINCT FROM previous_value
+    AND previous_value IS NOT NULL;
 
 -- Fee reconciliation with structural labels first-class
 CREATE VIEW v_fee_reconciliation AS
@@ -569,11 +584,14 @@ CREATE VIEW v_quality AS
 SELECT year, faculty, final_credit_status, confidence, count(*) AS n
 FROM ideal_student_summary_final GROUP BY ALL;
 CREATE VIEW v_pending_queue AS
-SELECT * FROM pending_adjudication ORDER BY abs(credits_ideal - credits_stated) DESC;
+SELECT * FROM pending_adjudication   -- union of the per-year reports
+ORDER BY abs(credits_ideal - credits_stated) DESC;
 ```
 
-(Column names above follow the current CSVs; the build script is the one
-place to adjust if they evolve.)
+These views were tested against the current CSVs while writing this
+report (`v_credit_series` returns all 3,287 specialisation-years;
+`v_rule_changes` surfaces exactly the §5 headline changes); the build
+script is the one place to adjust if column names evolve.
 
 ### 10.3 The interface
 
@@ -626,13 +644,13 @@ the interface's too.
 
 ### 10.4 Suggested build order
 
-1. `analysis/build_database.py` + views, committed with a `make db`-style
-   one-liner (半 day).
-2. Evidence project under `analysis/explorer/` with pages 1, 2 and 6
-   (the highest-value trio) (1–2 days).
-3. Programme drill-down and faculty pages (1–2 days).
-4. Streamlit adjudication-review companion, if the register review
-   process (§8) wants interactivity (optional).
+1. `analysis/build_database.py` + views (done — `python
+   analysis/build_database.py` builds `analysis/handbooks.duckdb`).
+2. Evidence project under `analysis/explorer/` (done — all seven pages,
+   including the templated per-faculty and per-programme drill-downs;
+   run instructions in `analysis/README.md`).
+3. Streamlit adjudication-review companion, if the register review
+   process (§8) wants interactivity (optional, open).
 
 ---
 

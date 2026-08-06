@@ -20,7 +20,7 @@ handbooks (PDF) and the student fees handbooks into relational tables so that:
    (the rules layer, `degree_rules.csv`).
 
 **Current coverage: all six faculties (Commerce, EBE, Law, Health Sciences,
-Science, Humanities) + Fees for 2021–2026** — six editions, 24,536
+Science, Humanities) + Fees for 2021–2026** — six editions, 23,592
 main-dataset rows across 1,066 register entries (specialisations and
 majors). The credit re-think is visible in the data from both directions:
 in the curriculum tables (e.g. BCom Actuarial Science year 1 drops from 185
@@ -60,6 +60,9 @@ python build_final_dataset.py --year 2025
 python validation/validate_final.py --year 2025
 ```
 
+To browse the results visually, see
+[the Evidence app](#the-visual-explorer-evidence-app) below.
+
 ## Repository layout
 
 ```
@@ -82,7 +85,9 @@ uct-handbook-project/
 │   ├── interim/                       # per-page text dumps (gitignored)
 │   └── processed/                     # output tables, all years side by side (committed)
 ├── validation/                        # validate.py + per-year exception reports
-├── analysis/                          # trend analysis (next phase)
+├── analysis/                          # DuckDB semantic layer (build_database.py
+│   │                                  #   -> handbooks.duckdb, gitignored)
+│   └── explorer/                      # Evidence visual explorer (npm run dev)
 └── docs/
     ├── USER-MANUAL.md                 # manual for reviewers / deans
     ├── REPLICATION.md                 # detailed process log + hazard catalogue
@@ -154,6 +159,47 @@ the final layer. A third validation leg
 (`validation/degree_check_<year>.csv`) reconciles each specialisation's
 whole-degree credit sum against the rules layer.
 
+## The visual explorer (Evidence app)
+
+`analysis/explorer/` is an [Evidence](https://evidence.dev) web app over
+the DuckDB semantic layer — the point-and-click way to consume everything
+above, with UCT branding. Pages:
+
+- **Overview** — KPI band, the rule-change timeline (every degree whose
+  printed floor moved, with page references), reconciliation by faculty.
+- **Trend cards** — a filterable KPI-card wall: per programme, 2025
+  credits and cost in 2025 rands with 2021→2025 deltas and trend
+  sparklines. Colour reads from the university's fee-income perspective
+  (reduced credits green; reduced real cost red). The filter matches plan
+  codes (`CB001`), dept/stream codes (`FTX04`) or names.
+- **The credit re-think** — flagship whole-degree trajectories drawn
+  against their printed rules floors, plus chart-any-programme.
+- **Faculties** and **Programmes** — templated drill-downs: per-faculty
+  findings and queues; per-programme credit/fee series, nominal and
+  real-2025 cost, and the ideal student's course lists with the PDF page
+  on every row.
+- **Fees** — the matched-course fee deflator, computed-vs-published
+  reconciliation, structural divergence, largest gaps.
+- **Data quality & adjudication** — the ledger, BELOW_MIN findings, the
+  pending queue, and the adjudication register with rationales.
+- **Method** and **Documentation** — the condensed trust argument, and
+  every project document rendered in the browser (regenerated from the
+  repo markdown on each build, Word manual downloadable).
+
+Run it (requires Node 18+ in addition to the Python toolchain):
+
+```bash
+python analysis/build_database.py     # 1. build/refresh handbooks.duckdb
+cd analysis/explorer
+npm install                           # 2. first time only
+npm run sources                       # 3. materialise queries from the db
+npm run dev                           # 4. http://localhost:3000
+```
+
+`npm run build` emits a fully static site in `analysis/explorer/build/`
+that can be hosted anywhere or shared as a folder. Re-run steps 1 and 3
+after any pipeline run so the app reflects the current CSVs.
+
 ## Key identifiers
 
 - **Plan / specialisation / major code** (e.g. `CB004FTX04`): the indivisible
@@ -168,14 +214,19 @@ whole-degree credit sum against the rules layer.
 
 ## Documentation
 
+- **[docs/PROJECT-REPORT.md](docs/PROJECT-REPORT.md)** — the standalone
+  end-to-end report: how the books were reverse-engineered into a
+  relational database, faculty-by-faculty findings (accurate /
+  inconsistent / erroneous), the justified final dataset, and the
+  recommended DuckDB exploration layer.
 - **[docs/USER-MANUAL.md](docs/USER-MANUAL.md)** — for reviewers and deans:
   what the dataset contains, how to read it, the ideal-student definition,
   validation results, caveats, and how to query it (no technical background
   assumed). A Word copy for circulation sits alongside it, regenerated from
   the markdown by `docs/make_user_manual_docx.js`.
 - **[docs/REPLICATION.md](docs/REPLICATION.md)** — the authoritative process
-  log: pipeline details, per-edition layout contracts, the 40-entry hazard
-  catalogue (H1–H40), the shared-engine / bespoke-parser architecture, and
+  log: pipeline details, per-edition layout contracts, the 41-entry hazard
+  catalogue (H1–H41), the shared-engine / bespoke-parser architecture, and
   the procedure for onboarding new years and faculties.
 - **[docs/FINAL-DATASET-METHOD.md](docs/FINAL-DATASET-METHOD.md)** — how the
   final-clean layer resolves discrepancies: the rule taxonomy
@@ -201,11 +252,16 @@ whole-degree credit sum against the rules layer.
       as the curriculum unit; `no_anchor` status; degree-flat fee matching
 - [x] Rules layer: `degree_rules.csv` + whole-degree validation
       (`degree_check_<year>.csv`) across all six faculties
+- [x] DuckDB semantic layer (`analysis/build_database.py` →
+      `handbooks.duckdb`: all tables + `v_*` views, sanity-checked)
 - [ ] Review of the 44 provisional COM adjudications; EBE + LAW + FHS
       adjudication passes (`DEV-TODO.md` documents the workflow)
 - [ ] Composed-degree ideal student for SCI/HUM (majors + electives to the
       degree minimum, via the composition rules in `degree_rules.csv`)
-- [ ] Trend analysis across editions (`analysis/`)
+- [x] Visual explorer over the DuckDB layer (`analysis/explorer/`, an
+      Evidence site: overview, credit re-think, per-faculty and
+      per-programme drill-downs, fees, quality/adjudication — see
+      `analysis/README.md`)
 
 Git tags: `baseline-2025` (the pre-change initial state) and
 `data-2021-2026` (the multi-year load).

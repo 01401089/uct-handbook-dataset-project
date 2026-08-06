@@ -11,8 +11,9 @@ Assertions:
   2. Arithmetic: for every non-unresolved spec-year, final_credits equals the
      sum of nqf_credits over final_included rows, and final_fee_zar the sum
      of fee_zar (unless a set_final_fee adjudication overrides it).
-  3. Register integrity: every resolution_ref of the form COM-* exists in
-     resolutions/com.csv (consumption is enforced by build_final_dataset).
+  3. Register integrity: every register-style resolution_ref (e.g. COM-*)
+     exists in resolutions/*.csv (consumption is enforced by
+     build_final_dataset).
   4. Legal combinations: confidence populated iff a resolution was applied or
      the row is unresolved; statuses within the allowed enum.
 

@@ -503,7 +503,7 @@
 2021,SCI,SB001BIO12,BSc,Biology (for students registered from 2019 only),regular,3,144,0,,False,,67800,0,0,68000,Bachelor of Science,degree_flat,-0.3
 2021,SCI,SB001BIO13,BSc,Quantitative Biology (for students registered from 2019 only),regular,1,72,0,,False,,34160,0,0,68000,Bachelor of Science,degree_flat,-49.8
 2021,SCI,SB001BIO13,BSc,Quantitative Biology (for students registered from 2019 only),regular,2,96,0,,False,,45120,0,0,68000,Bachelor of Science,degree_flat,-33.6
-2021,SCI,SB001BIO13,BSc,Quantitative Biology (for students registered from 2019 only),regular,3,3595,0,,False,,1468240,0,8,68000,Bachelor of Science,degree_flat,2059.2
+2021,SCI,SB001BIO13,BSc,Quantitative Biology (for students registered from 2019 only),regular,3,36,0,,False,,16950,0,0,68000,Bachelor of Science,degree_flat,-75.1
 2021,SCI,SB001CEM01,BSc,Chemistry,regular,1,108,0,,False,,50980,0,0,68000,Bachelor of Science,degree_flat,-25.0
 2021,SCI,SB001CEM01,BSc,Chemistry,regular,2,48,0,,False,,22520,0,0,68000,Bachelor of Science,degree_flat,-66.9
 2021,SCI,SB001CEM01,BSc,Chemistry,regular,3,72,0,,False,,33800,0,0,68000,Bachelor of Science,degree_flat,-50.3
@@ -1053,7 +1053,7 @@
 2022,SCI,SB001BIO12,BSc,Biology (for students registered from 2019 only),regular,3,144,0,,False,,70680,0,0,71000,Bachelor of Science,degree_flat,-0.5
 2022,SCI,SB001BIO13,BSc,Quantitative Biology (for students registered from 2019 only),regular,1,72,0,,False,,35640,0,0,71000,Bachelor of Science,degree_flat,-49.8
 2022,SCI,SB001BIO13,BSc,Quantitative Biology (for students registered from 2019 only),regular,2,96,0,,False,,47040,0,0,71000,Bachelor of Science,degree_flat,-33.7
-2022,SCI,SB001BIO13,BSc,Quantitative Biology (for students registered from 2019 only),regular,3,3805,0,,False,,1712130,0,5,71000,Bachelor of Science,degree_flat,2311.5
+2022,SCI,SB001BIO13,BSc,Quantitative Biology (for students registered from 2019 only),regular,3,36,0,,False,,17670,0,0,71000,Bachelor of Science,degree_flat,-75.1
 2022,SCI,SB001CEM01,BSc,Chemistry,regular,1,108,0,,False,,53010,0,0,71000,Bachelor of Science,degree_flat,-25.3
 2022,SCI,SB001CEM01,BSc,Chemistry,regular,2,48,0,,False,,23480,0,0,71000,Bachelor of Science,degree_flat,-66.9
 2022,SCI,SB001CEM01,BSc,Chemistry,regular,3,72,0,,False,,35230,0,0,71000,Bachelor of Science,degree_flat,-50.4
@@ -1604,7 +1604,7 @@
 2023,SCI,SB001BIO12,BSc,Biology,regular,3,144,0,,False,,74320,0,0,74500,Bachelor of Science,degree_flat,-0.2
 2023,SCI,SB001BIO13,BSc,Quantitative Biology,regular,1,54,0,,False,,28110,0,0,74500,Bachelor of Science,degree_flat,-62.3
 2023,SCI,SB001BIO13,BSc,Quantitative Biology,regular,2,96,0,,False,,49440,0,0,74500,Bachelor of Science,degree_flat,-33.6
-2023,SCI,SB001BIO13,BSc,Quantitative Biology,regular,3,3617,0,,False,,1716700,0,7,74500,Bachelor of Science,degree_flat,2204.3
+2023,SCI,SB001BIO13,BSc,Quantitative Biology,regular,3,36,0,,False,,18580,0,0,74500,Bachelor of Science,degree_flat,-75.1
 2023,SCI,SB001CEM01,BSc,Chemistry,regular,1,108,0,,False,,37160,0,1,74500,Bachelor of Science,degree_flat,-50.1
 2023,SCI,SB001CEM01,BSc,Chemistry,regular,2,48,0,,False,,24680,0,0,74500,Bachelor of Science,degree_flat,-66.9
 2023,SCI,SB001CEM01,BSc,Chemistry,regular,3,72,0,,False,,37030,0,0,74500,Bachelor of Science,degree_flat,-50.3
@@ -2153,7 +2153,7 @@
 2024,SCI,SB001BIO12,BSc,Biology,regular,3,144,0,,False,,77680,0,0,77500,Bachelor of Science,degree_flat,0.2
 2024,SCI,SB001BIO13,BSc,Quantitative Biology,regular,1,54,0,,False,,29400,0,0,78500,Bachelor of Science,degree_flat,-62.5
 2024,SCI,SB001BIO13,BSc,Quantitative Biology,regular,2,96,0,,False,,51680,0,0,77500,Bachelor of Science,degree_flat,-33.3
-2024,SCI,SB001BIO13,BSc,Quantitative Biology,regular,3,3931,0,,False,,1984900,0,6,77500,Bachelor of Science,degree_flat,2461.2
+2024,SCI,SB001BIO13,BSc,Quantitative Biology,regular,3,36,0,,False,,19420,0,0,77500,Bachelor of Science,degree_flat,-74.9
 2024,SCI,SB001CEM01,BSc,Chemistry,regular,1,108,0,,False,,38840,0,1,78500,Bachelor of Science,degree_flat,-50.5
 2024,SCI,SB001CEM01,BSc,Chemistry,regular,2,48,0,,False,,25800,0,0,77500,Bachelor of Science,degree_flat,-66.7
 2024,SCI,SB001CEM01,BSc,Chemistry,regular,3,72,0,,False,,38700,0,0,77500,Bachelor of Science,degree_flat,-50.1
@@ -2751,7 +2751,7 @@
 2025,SCI,SB001STA02,BSc,Mathematical Statistics,regular,3,72,0,,False,,40280,0,0,82000,Bachelor of Science,degree_flat,-50.9
 2025,SCI,SB001STA13,BSc,Statistics & Data Science,regular,1,72,0,,False,,41020,0,0,83000,Bachelor of Science,degree_flat,-50.6
 2025,SCI,SB001STA13,BSc,Statistics & Data Science,regular,2,168,0,,False,,94180,0,0,82000,Bachelor of Science,degree_flat,14.9
-2025,SCI,SB001STA13,BSc,Statistics & Data Science,regular,3,4392,0,,False,,2331720,0,8,82000,Bachelor of Science,degree_flat,2743.6
+2025,SCI,SB001STA13,BSc,Statistics & Data Science,regular,3,144,0,,False,,80560,0,0,82000,Bachelor of Science,degree_flat,-1.8
 2026,COM,CB001ACC04,BCom,Financial Accounting: Chartered Accountant,regular,1,159,0,159,False,0,96840,0,0,96840,Bachelor of Commerce specialising in Financial | Chartered Accounting Stream,label_match,0.0
 2026,COM,CB001ACC04,BCom,Financial Accounting: Chartered Accountant,regular,2,144,0,144,False,0,87760,0,0,87760,Bachelor of Commerce specialising in Financial | Chartered Accounting Stream,label_match,0.0
 2026,COM,CB001ACC04,BCom,Financial Accounting: Chartered Accountant,regular,3,174,0,192,False,-18,128060,0,0,128060,Bachelor of Commerce specialising in Financial | Chartered Accounting Stream,label_match,0.0
@@ -3285,4 +3285,4 @@
 2026,SCI,SB001STA02,BSc,Mathematical Statistics,regular,3,72,0,,False,,21080,0,2,86000,Bachelor of Science,degree_flat,-75.5
 2026,SCI,SB001STA13,BSc,Statistics & Data Science,regular,1,72,0,,False,,42960,0,0,87000,Bachelor of Science,degree_flat,-50.6
 2026,SCI,SB001STA13,BSc,Statistics & Data Science,regular,2,168,0,,False,,98600,0,0,86000,Bachelor of Science,degree_flat,14.7
-2026,SCI,SB001STA13,BSc,Statistics & Data Science,regular,3,4298,0,,False,,2317360,0,9,86000,Bachelor of Science,degree_flat,2594.6
+2026,SCI,SB001STA13,BSc,Statistics & Data Science,regular,3,144,0,,False,,63240,0,2,86000,Bachelor of Science,degree_flat,-26.5

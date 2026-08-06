@@ -405,7 +405,9 @@ def main():
                         "credits_ideal": sy.computed_credits(),
                         "credits_stated": anchor if anchor is not None else "",
                         "detector": "R4",
-                        "suggested_action": "adjudicate in resolutions/com.csv",
+                        "suggested_action": (
+                            f"adjudicate in resolutions/"
+                            f"{s['faculty'].lower()}.csv"),
                         "detail": sy.final_note or "credit mismatch unexplained by rules",
                     })
 
