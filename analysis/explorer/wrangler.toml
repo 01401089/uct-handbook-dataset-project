@@ -1,0 +1,9 @@
+# Cloudflare Pages project config — read by `wrangler pages deploy`.
+# The LOGS KV namespace stores the admin activity log (logins + page
+# navigations), viewable at /admin by the admin account only.
+name = "uct-handbook-explorer"
+pages_build_output_dir = "build"
+
+[[kv_namespaces]]
+binding = "LOGS"
+id = "5aebc71854654fe3a930315797441991"

@@ -37,14 +37,14 @@ theme:
         - "#9ec5f4"
   colors:
     primary:
-      light: "#2a78d6"
-      dark: "#3987e5"
+      light: "#0074A8"   # UCT web blue (#0098DB), darkened for text contrast
+      dark: "#33B5E8"
     accent:
       light: "#eb6834"
       dark: "#d95926"
     info:
-      light: "#256abf"
-      dark: "#86b6ef"
+      light: "#0074A8"
+      dark: "#7FCDF0"
     positive:
       light: "#0ca30c"
       dark: "#0ca30c"

@@ -108,7 +108,50 @@ npm run dev                             # 4. http://localhost:3000
 ```
 
 `npm run build` produces a static site in `explorer/build/` that can be
-hosted anywhere (or shared as a folder). The site's **Documentation page**
+hosted anywhere (or shared as a folder). **It is deployed on Cloudflare
+Pages at <https://uct-handbook-explorer.pages.dev>** — redeploy after any
+pipeline run with:
+
+```bash
+cd analysis/explorer && npm run deploy
+```
+
+(`deploy` = build → `scripts/patch-wasm-cdn.js` → `scripts/add-auth.js` →
+`wrangler pages deploy`. The wasm patch is required: Cloudflare rejects
+files over 25 MiB, so the two DuckDB-WASM binaries are served from
+jsDelivr at the same pinned version instead of being uploaded. Wrangler
+must be authenticated.)
+
+**Access control (Firebase Google sign-in, @uct.ac.za only).** The
+`explorer/auth/` folder holds a Cloudflare advanced-mode worker
+(`_worker.js`) that verifies a Firebase ID token — signature against
+Google's published keys, issuer/audience for the `uct-handbook` project,
+expiry, `email_verified`, and the `@uct.ac.za` domain — on **every
+request** before serving any asset, plus a self-contained `/login` page
+(Google sign-in popup). `scripts/add-auth.js` injects
+`auth/config.json` and copies both into `build/` at deploy time; while
+`config.json` still holds the `FILL_ME_IN` apiKey placeholder the gate is
+skipped with a warning, so an unconfigured deploy stays public rather
+than locking everyone out. Firebase-side requirements: Google provider
+enabled, and `uct-handbook-explorer.pages.dev` added to Authentication →
+Settings → Authorized domains.
+
+**Activity log (admin).** The worker records logins and page navigations
+(time, account, path, IP, country, browser) to a Cloudflare KV namespace
+(binding `LOGS` in `explorer/wrangler.toml`; entries kept 180 days).
+`/admin` renders the log — searchable, newest first — for the admin
+accounts listed in `ADMIN_EMAILS` in `auth/_worker.js` (currently
+kkefale@gmail.com, which also has a sign-in exception to the UCT-domain
+rule). To switch to the admin account use `/auth/logout` first — it signs
+out of both the session and Firebase so the account chooser reappears.
+The login page discloses the logging.
+
+**UCT design treatment.** Login page and `/admin` use the uct.ac.za
+design language (Montserrat headings, Roboto body, navy `#00243A`, UCT
+web blue `#0098DB`, flat uppercase buttons); the app itself carries the
+same fonts, a UCT-blue header accent line, and UCT-blue primary/link
+colours (`evidence.config.yaml` + `pages/+layout.svelte`). Chart palettes
+are untouched — they remain the validated data-viz set. The site's **Documentation page**
 serves every project document (report, manual, replication log, method,
 READMEs, plus the Word manual for download), rendered to HTML from the
 repo's markdown by `explorer/scripts/sync-docs.js` — this runs

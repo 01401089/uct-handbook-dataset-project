@@ -1,115 +1,115 @@
 ---
-title: UCT Handbook Dataset
+title: "UCT Faculty Handbook Explorer: Change in Credit and Cost Tracker"
+hide_title: true
 ---
 
-Six editions of every faculty's undergraduate handbook (2021–2026), plus the
-student fees handbooks, converted into a relational dataset in which **every
-number traces to the page it was printed on**. This explorer sits on the
-project's DuckDB semantic layer; the full written account is in
-`docs/PROJECT-REPORT.md`.
-
 ```sql counts
-SELECT * FROM handbooks.counts
+SELECT *,
+       (n_consistent + n_resolved)
+         / nullif(spec_years - n_no_anchor, 0)::double AS reconciled_share
+FROM handbooks.counts
 ```
 
-<BigValue data={counts} value=editions title="Editions" />
-<BigValue data={counts} value=faculties title="Faculties" />
-<BigValue data={counts} value=curriculum_records title="Curriculum records" fmt='#,##0' />
-<BigValue data={counts} value=register_entries title="Programmes & majors" fmt='#,##0' />
-<BigValue data={counts} value=rule_statements title="Degree-rule statements" />
+<div style="margin:1.2rem 0 2rem;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:#0098DB; margin:0 0 .4rem;">University of Cape Town</p>
+  <h1 style="font-family:Montserrat,sans-serif; font-weight:300; font-size:2rem; margin:0 0 .3rem; letter-spacing:.01em;"><b style="font-weight:700;">Faculty Handbook</b> Explorer</h1>
+  <p style="font-size:1.05rem; opacity:.75; margin:0 0 1rem;">Change in Credit and Cost Tracker · handbook editions 2021–2026</p>
+  <p style="max-width:44rem; margin:0;">
+    UCT is re-thinking curriculum credit loads. This tool turns six editions
+    of every faculty's undergraduate handbook — and the student fees books —
+    into an explorable dataset, so you can see exactly how credit loads and
+    costs have moved, programme by programme. <b>Every number traces back to
+    the printed page it came from.</b>
+  </p>
+</div>
 
-## The credit re-think, at rules level
+## Three questions this tool answers
 
-The faculty-rules sections print what each whole degree must total. Those
-floors moved — and the dataset dates every move to the edition, with the page
-and the printed sentence.
+<Grid cols=3 gapSize=md>
 
-```sql headline_floors
-SELECT year AS edition, degree_scope, min_total_credits
-FROM handbooks.degree_rules
-WHERE cohort IS NULL AND min_total_credits IS NOT NULL
-  AND degree_scope IN (
-    'Bachelor of Business Science',
-    'Bachelor of Commerce',
-    '4-year degrees (faculty rule FB3.2)',
-    'LLB undergraduate LLB stream')
-GROUP BY ALL
-ORDER BY degree_scope, edition
-```
+<a href="/trends" style="display:block; border:1px solid rgba(128,128,128,.3); border-top:3px solid #0098DB; border-radius:8px; padding:1rem 1.1rem; text-decoration:none; color:inherit;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:#0098DB; margin:0 0 .35rem;">Credits</p>
+  <p style="font-weight:600; margin:0 0 .3rem;">How many credits does a student actually carry — and how has that changed?</p>
+  <p style="font-size:.85rem; opacity:.65; margin:0;">Browse per-programme trend cards with the change from 2021 to the 2025 baseline.</p>
+</a>
 
-<LineChart
-  data={headline_floors}
-  x=edition xFmt=id
-  y=min_total_credits
-  series=degree_scope
-  step=true
-  yAxisTitle="minimum credits for the degree"
-  title="Printed minimum-credit floors, 2021–2026"
-  subtitle="BBusSc 623→528 at 2025 · BCom 450→440 at 2022 · EBE 4-year 576→560 at 2026 · LLB 660→637 at 2026"
-/>
+<a href="/fees" style="display:block; border:1px solid rgba(128,128,128,.3); border-top:3px solid #0098DB; border-radius:8px; padding:1rem 1.1rem; text-decoration:none; color:inherit;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:#0098DB; margin:0 0 .35rem;">Cost</p>
+  <p style="font-weight:600; margin:0 0 .3rem;">What does that credit load cost — in real terms?</p>
+  <p style="font-size:.85rem; opacity:.65; margin:0;">Computed fees checked against UCT's published figures, and restated in constant 2025 rands.</p>
+</a>
 
-```sql rule_changes
-SELECT faculty, degree_scope, year AS edition,
-       previous_value AS was, min_total_credits AS became,
-       min_total_credits - previous_value AS delta,
-       rule_ref, source_page
-FROM handbooks.rule_changes
-ORDER BY faculty, degree_scope, edition
-```
+<a href="/credit-rethink" style="display:block; border:1px solid rgba(128,128,128,.3); border-top:3px solid #0098DB; border-radius:8px; padding:1rem 1.1rem; text-decoration:none; color:inherit;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:#0098DB; margin:0 0 .35rem;">Rules</p>
+  <p style="font-weight:600; margin:0 0 .3rem;">What must a whole degree total — and when did the requirement change?</p>
+  <p style="font-size:.85rem; opacity:.65; margin:0;">Degree trajectories drawn against the minimum-credit floors printed in the faculty rules.</p>
+</a>
 
-Every degree whose printed floor moved between editions:
+</Grid>
 
-<DataTable data={rule_changes} rows=20>
-  <Column id=faculty />
-  <Column id=degree_scope title="Degree / rule scope" />
-  <Column id=edition fmt=id />
-  <Column id=was />
-  <Column id=became />
-  <Column id=delta contentType=delta downIsGood=false />
-  <Column id=rule_ref title="Rule" />
-  <Column id=source_page title="Page" />
-</DataTable>
+## The dataset at a glance
 
-## How much of the dataset reconciles
+<Grid cols=3 gapSize=md>
 
-Each programme-year with a printed credit total is checked against it; Science
-and Humanities **majors** print no per-year totals by design ("no anchor" —
-their accountability is the degree-level rules above).
+<div style="border:1px solid rgba(128,128,128,.3); border-radius:8px; padding:.9rem 1.1rem;">
+  <p style="margin:0; font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; opacity:.6;">Coverage</p>
+  <p style="margin:.2rem 0 0; font-size:1.4rem; font-weight:700;"><Value data={counts} column=faculties /> faculties · <Value data={counts} column=editions /> editions</p>
+  <p style="margin:.15rem 0 0; font-size:.82rem; opacity:.65;">Every UCT undergraduate handbook plus the fees books, 2021–2026</p>
+</div>
 
-```sql quality_by_faculty
-SELECT faculty,
-       CASE
-         WHEN final_credit_status = 'consistent' THEN 'consistent'
-         WHEN final_credit_status LIKE 'resolved%' THEN 'resolved'
-         WHEN final_credit_status = 'no_anchor' THEN 'no anchor (majors)'
-         ELSE 'unresolved'
-       END AS status,
-       sum(n) AS n
-FROM handbooks.quality
-GROUP BY ALL
-```
+<div style="border:1px solid rgba(128,128,128,.3); border-radius:8px; padding:.9rem 1.1rem;">
+  <p style="margin:0; font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; opacity:.6;">Curriculum as data</p>
+  <p style="margin:.2rem 0 0; font-size:1.4rem; font-weight:700;"><Value data={counts} column=curriculum_records fmt='#,##0' /> records</p>
+  <p style="margin:.15rem 0 0; font-size:.82rem; opacity:.65;"><Value data={counts} column=register_entries fmt='#,##0' /> programmes &amp; majors · <Value data={counts} column=rule_statements /> printed degree rules</p>
+</div>
 
-<BarChart
-  data={quality_by_faculty}
-  x=faculty
-  y=n
-  series=status
-  type=stacked
-  seriesOrder={['consistent','resolved','unresolved','no anchor (majors)']}
-  seriesColors={{'consistent':'#0ca30c','resolved':'#fab219','unresolved':'#ec835a','no anchor (majors)':'#898781'}}
-  yAxisTitle="specialisation-years"
-  title="Reconciliation status by faculty, all editions"
-/>
+<div style="border:1px solid rgba(128,128,128,.3); border-radius:8px; padding:.9rem 1.1rem;">
+  <p style="margin:0; font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; opacity:.6;">Verified</p>
+  <p style="margin:.2rem 0 0; font-size:1.4rem; font-weight:700;"><Value data={counts} column=reconciled_share fmt=pct0 /> reconciled</p>
+  <p style="margin:.15rem 0 0; font-size:.82rem; opacity:.65;">Programme-years matching their printed totals or resolved by documented rules — <a href="/method">how we check</a></p>
+</div>
 
-Of the specialisation-years with a printed anchor, **86% are consistent or
-resolved**; every unresolved case is listed with a suggested action on the
-[data-quality page](/quality).
+</Grid>
 
 ## Explore
 
-- **[The credit re-think](/credit-rethink)** — trajectories against the moving floors
-- **[Faculties](/faculties)** — one page per faculty: findings, quality, programmes
-- **[Programmes](/programmes)** — drill into any programme or major, edition by edition
-- **[Fees](/fees)** — computed cost vs UCT's published fees
-- **[Data quality](/quality)** — the reconciliation ledger and the adjudication queue
-- **[Method](/method)** — how the dataset was built and why it can be trusted
+<Grid cols=2 gapSize=md>
+
+<a href="/trends" style="display:block; border:1px solid rgba(128,128,128,.3); border-radius:8px; padding:.85rem 1.1rem; text-decoration:none; color:inherit;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; margin:0;">Trend cards <span style="color:#0098DB;">→</span></p>
+  <p style="font-size:.85rem; opacity:.65; margin:.2rem 0 0;">One card per programme: credits and real-2025 cost, with the 2021→2025 change. Filter by code, department or name.</p>
+</a>
+
+<a href="/credit-rethink" style="display:block; border:1px solid rgba(128,128,128,.3); border-radius:8px; padding:.85rem 1.1rem; text-decoration:none; color:inherit;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; margin:0;">The credit re-think <span style="color:#0098DB;">→</span></p>
+  <p style="font-size:.85rem; opacity:.65; margin:.2rem 0 0;">Flagship degree trajectories against the printed rules floors, and every floor that moved between editions.</p>
+</a>
+
+<a href="/faculties" style="display:block; border:1px solid rgba(128,128,128,.3); border-radius:8px; padding:.85rem 1.1rem; text-decoration:none; color:inherit;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; margin:0;">Faculties <span style="color:#0098DB;">→</span></p>
+  <p style="font-size:.85rem; opacity:.65; margin:.2rem 0 0;">One page per faculty: its programmes, reconciliation record and open findings.</p>
+</a>
+
+<a href="/programmes" style="display:block; border:1px solid rgba(128,128,128,.3); border-radius:8px; padding:.85rem 1.1rem; text-decoration:none; color:inherit;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; margin:0;">Programmes &amp; majors <span style="color:#0098DB;">→</span></p>
+  <p style="font-size:.85rem; opacity:.65; margin:.2rem 0 0;">Drill into any programme: year-by-year credits, fees, and the ideal student's course lists with page references.</p>
+</a>
+
+<a href="/quality" style="display:block; border:1px solid rgba(128,128,128,.3); border-radius:8px; padding:.85rem 1.1rem; text-decoration:none; color:inherit;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; margin:0;">Data quality &amp; adjudication <span style="color:#0098DB;">→</span></p>
+  <p style="font-size:.85rem; opacity:.65; margin:.2rem 0 0;">The reconciliation ledger, handbook defects surfaced as findings, and the review queue.</p>
+</a>
+
+<a href="/documentation" style="display:block; border:1px solid rgba(128,128,128,.3); border-radius:8px; padding:.85rem 1.1rem; text-decoration:none; color:inherit;">
+  <p style="font-family:Montserrat,sans-serif; font-weight:600; margin:0;">Documentation <span style="color:#0098DB;">→</span></p>
+  <p style="font-size:.85rem; opacity:.65; margin:.2rem 0 0;">The full project library: user manual, method, replication log and the end-to-end report.</p>
+</a>
+
+</Grid>
+
+<p style="margin-top:2rem; font-size:.85rem; opacity:.65;">
+Built on a fully documented pipeline: source PDFs are immutable, extraction
+is deterministic, and every value carries its handbook edition and page.
+Read <a href="/method">why these numbers can be trusted</a>, or start from
+the <a href="/documentation">documentation library</a>.
+</p>

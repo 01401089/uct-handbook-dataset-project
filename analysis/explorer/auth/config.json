@@ -1,0 +1,10 @@
+{
+  "_comment": "Firebase web-app config for the login page (public client identifiers, not secrets). projectNumber is used by the worker as an alternative token audience.",
+  "apiKey": "AIzaSyC8utu6sKERDDYlgVzNWwjvdW_0OSRfQjA",
+  "authDomain": "uct-handbook.firebaseapp.com",
+  "projectId": "uct-handbook",
+  "storageBucket": "uct-handbook.firebasestorage.app",
+  "messagingSenderId": "41717367634",
+  "appId": "1:41717367634:web:a379e871127ff3f717b08b",
+  "projectNumber": "41717367634"
+}

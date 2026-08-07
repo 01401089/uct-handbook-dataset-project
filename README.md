@@ -197,8 +197,11 @@ npm run dev                           # 4. http://localhost:3000
 ```
 
 `npm run build` emits a fully static site in `analysis/explorer/build/`
-that can be hosted anywhere or shared as a folder. Re-run steps 1 and 3
-after any pipeline run so the app reflects the current CSVs.
+that can be hosted anywhere or shared as a folder — **live at
+<https://uct-handbook-explorer.pages.dev>** (Cloudflare Pages;
+`npm run deploy` from `analysis/explorer/` rebuilds and redeploys).
+Re-run steps 1 and 3 after any pipeline run so the app reflects the
+current CSVs.
 
 ## Key identifiers
 

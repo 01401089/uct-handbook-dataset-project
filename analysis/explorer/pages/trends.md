@@ -3,11 +3,12 @@ title: Trend cards — credits vs cost
 sidebar_position: 2
 ---
 
-One card per programme: **actual credits** and **cost in 2025 rands**, with
-the percentage change from 2021 to the 2025 baseline. Colour reads from the
-university's perspective: **reduced credits are green** (the re-think goal)
-and **reduced real cost is red** (fee income loss) — the ideal card is green
-on both: fewer credits, no real fee income lost.
+Use this page to scan how every programme's **credit load** and **real
+cost** have moved. Each card shows the 2025 value, the change since 2021,
+and the six-edition trend. Colour reads from the university's perspective:
+**reduced credits are green** (the re-think goal) and **reduced real cost
+is red** (fee income loss) — the ideal card is green on both. Click any
+code for the full programme profile.
 
 <TextInput
   name=q
@@ -90,31 +91,31 @@ programmes — type in the filter to narrow the wall.
 
 {#each list.slice(0, 60) as c}
 
-<div style="border:1px solid rgba(128,128,128,.3); border-radius:12px; padding:.9rem 1.1rem .7rem;">
-  <div style="display:flex; justify-content:space-between; gap:.5rem; font-size:.75rem; opacity:.6;">
+<div style="border:1px solid rgba(128,128,128,.3); border-radius:12px; padding:.9rem 1.1rem .7rem; overflow:hidden;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:.2rem .5rem; font-size:.75rem; opacity:.6;">
     <span>{c.plan_code}</span>
     <span>{c.meta}</span>
   </div>
   <p style="margin:.15rem 0 0; font-weight:700; font-size:1.05rem;"><a href="/programmes/{c.plan_code}" style="color:inherit; text-decoration:none;">{c.degree_abbrev}</a></p>
   <p style="margin:0 0 .6rem; color:#009ADA; font-weight:600;"><a href="/programmes/{c.plan_code}" style="color:inherit; text-decoration:none;">{c.name}</a></p>
-  <div style="border-top:1px solid rgba(128,128,128,.22); padding-top:.55rem; display:flex; justify-content:space-between; align-items:flex-end; gap:1rem;">
-    <div>
+  <div style="border-top:1px solid rgba(128,128,128,.22); padding-top:.55rem; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:.5rem 1rem;">
+    <div style="min-width:0;">
       <p style="margin:0; font-size:.72rem; letter-spacing:.04em; opacity:.65;">{c.credits_label}</p>
-      <p style="margin:.15rem 0 0; white-space:nowrap;">
+      <p style="margin:.15rem 0 0;">
         <span style="font-size:1.3rem; font-weight:700;">{c.anchor_credits}</span>
         <Delta value={c.credit_delta} fmt=pct1 downIsGood=true chip=true />
       </p>
     </div>
-    <div style="text-align:right;">
+    <div style="min-width:0; text-align:right; margin-left:auto;">
       <p style="margin:0; font-size:.72rem; letter-spacing:.04em; opacity:.65;">{c.cost_label}</p>
-      <p style="margin:.15rem 0 0; white-space:nowrap;">
+      <p style="margin:.15rem 0 0;">
         <Delta value={c.cost_delta} fmt=pct1 chip=true />
         <span style="font-size:1.3rem; font-weight:700;">R {Math.round(c.anchor_cost).toLocaleString()}</span>
       </p>
     </div>
   </div>
   <div style="border-top:1px solid rgba(128,128,128,.22); margin-top:.6rem; padding-top:.45rem; display:flex; gap:1.2rem;">
-    <div style="flex:1; min-width:0; text-align:center;">
+    <div style="flex:1; min-width:0; text-align:center; overflow:hidden;">
       <p style="margin:0 0 .2rem; font-size:.75rem; opacity:.65;">Credit trend</p>
       <Sparkline
         data={series.where(`plan_code = '${c.plan_code}'`)}
@@ -126,7 +127,7 @@ programmes — type in the filter to narrow the wall.
         height=40
       />
     </div>
-    <div style="flex:1; min-width:0; text-align:center;">
+    <div style="flex:1; min-width:0; text-align:center; overflow:hidden;">
       <p style="margin:0 0 .2rem; font-size:.75rem; opacity:.65;">Real fee trend</p>
       <Sparkline
         data={series.where(`plan_code = '${c.plan_code}'`)}

@@ -3,8 +3,8 @@ title: Faculties
 sidebar_position: 3
 ---
 
-One page per faculty: its programmes, reconciliation record, credit changes
-and open findings.
+Start here to explore one faculty at a time — each page gathers the
+faculty's programmes, its reconciliation record, and its open findings.
 
 ```sql fac_summary
 SELECT '/faculties/' || faculty AS link, faculty,

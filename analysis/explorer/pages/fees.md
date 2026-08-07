@@ -3,10 +3,12 @@ title: Fees — computed vs published
 sidebar_position: 5
 ---
 
-Each programme-year's cost is computed course-by-course from the fees book,
-then compared with UCT's independently published "typical annual fee". Where
-both sides can be tested, the computation reproduces the published figure —
-the strongest external check on the whole dataset.
+Use this page to examine what the ideal student's curriculum costs —
+and how reliable those numbers are. Each programme-year's cost is computed
+course-by-course from the fees book, then checked against UCT's
+independently published "typical annual fee"; where both sides can be
+tested the computation reproduces the published figure, the strongest
+external check on the dataset.
 
 ```sql med_by_fac
 SELECT faculty,

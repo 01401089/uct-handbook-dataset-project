@@ -3,13 +3,68 @@ title: The credit re-think
 sidebar_position: 1
 ---
 
-Two different mechanisms of change are visible in the books. In **Commerce the
-rules moved first**: the BBusSc floor fell 623→528 at 2025 while its printed
-curricula still sum 544–675 in 2026. In **Engineering the departments moved
-first**: Chemical Engineering's curriculum falls 544→496→468 across 2024→2026,
-a year ahead of the faculty rule (576→560 at 2026). Law cut the four-year LLB
-660→637 at 2026. Humanities' award minima have not moved at all — the control
-group so far.
+This page tracks the credit re-think at **whole-degree level**: what the
+faculty rules say a degree must total, and how printed curricula move
+against those floors. Two different mechanisms are visible in the books —
+in **Commerce the rules moved first** (the BBusSc floor fell 623→528 at
+2025 while its curricula still sum 544–675 in 2026); in **Engineering the
+departments moved first** (Chemical Engineering falls 544→496→468 across
+2024→2026, a year ahead of the faculty rule). Law cut the four-year LLB
+660→637 at 2026; Humanities has not moved — the control group so far.
+
+
+## The printed floors, edition by edition
+
+The faculty-rules sections state the minimum credits each whole degree must
+total. These floors are the re-think's paper trail — each step below is a
+printed rule change, dated to its edition:
+
+```sql headline_floors
+SELECT year AS edition, degree_scope, min_total_credits
+FROM handbooks.degree_rules
+WHERE cohort IS NULL AND min_total_credits IS NOT NULL
+  AND degree_scope IN (
+    'Bachelor of Business Science',
+    'Bachelor of Commerce',
+    '4-year degrees (faculty rule FB3.2)',
+    'LLB undergraduate LLB stream')
+GROUP BY ALL
+ORDER BY degree_scope, edition
+```
+
+<LineChart
+  data={headline_floors}
+  x=edition xFmt=id
+  y=min_total_credits
+  series=degree_scope
+  step=true
+  yAxisTitle="minimum credits"
+  title="Headline minimum-credit floors"
+  subtitle="BBusSc 623→528 at 2025 · BCom 450→440 at 2022 · EBE 576→560 at 2026 · LLB 660→637 at 2026"
+/>
+
+```sql rule_changes
+SELECT faculty, degree_scope, year AS edition,
+       previous_value AS was, min_total_credits AS became,
+       min_total_credits - previous_value AS delta,
+       rule_ref, source_page
+FROM handbooks.rule_changes
+ORDER BY faculty, degree_scope, edition
+```
+
+Every degree whose printed floor moved, with the rule reference and the PDF
+page carrying the sentence:
+
+<DataTable data={rule_changes} rows=20>
+  <Column id=faculty />
+  <Column id=degree_scope title="Degree / rule scope" />
+  <Column id=edition fmt=id />
+  <Column id=was />
+  <Column id=became />
+  <Column id=delta contentType=delta downIsGood=false />
+  <Column id=rule_ref title="Rule" />
+  <Column id=source_page title="Page" />
+</DataTable>
 
 ## Flagship trajectories against their floors
 

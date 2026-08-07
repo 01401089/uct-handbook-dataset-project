@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 120" role="img" aria-label="UCT Handbook Dataset">
-  <!-- UCT brand colours: Pantone 2925 C #009ADA (blue), Pantone 539 C #00243A (dark blue) -->
-  <rect x="2" y="8" width="168" height="104" rx="18" fill="#009ADA"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 120" role="img" aria-label="UCT Faculty Handbook Explorer">
+  <!-- UCT brand colours: Pantone 539 C #00243A (dark blue), 2925 C #009ADA / web #0098DB (blue) -->
+  <rect x="2" y="8" width="168" height="104" rx="18" fill="#0098DB"/>
   <text x="86" y="86" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="800" font-size="64" fill="#00243A" letter-spacing="4">UCT</text>
-  <text x="196" y="82" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="650" font-size="56" fill="#ffffff">Handbook <tspan fill="#009ADA">Dataset</tspan></text>
+  <text x="196" y="82" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-weight="650" font-size="56" fill="#ffffff">Faculty Handbook <tspan fill="#0098DB">Explorer</tspan></text>
 </svg>

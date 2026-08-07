@@ -3,7 +3,9 @@ title: Data quality & adjudication
 sidebar_position: 6
 ---
 
-Every specialisation-year is reconciled against its printed credit total.
+This page is the dataset's open ledger — use it to judge how much to
+trust any number, and to find what still needs human review. Every
+specialisation-year is reconciled against its printed credit total.
 Nothing is silently corrected: what reconciles is `consistent`; what a
 documented rule or adjudication fixes is `resolved`; what remains is
 `unresolved` — carried at the computed value, flagged at low confidence, and

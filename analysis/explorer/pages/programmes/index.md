@@ -3,9 +3,10 @@ title: Programmes & majors
 sidebar_position: 4
 ---
 
-Every programme and major in the dataset. Search by code, degree or name;
-click through for the full profile — credit and fee trajectories, the ideal
-student's course lists, and page-level provenance.
+The full register — every programme and major in the dataset. Search by
+code, degree or name, then click through for the complete profile: credit
+and fee trajectories, the ideal student's course lists, and the handbook
+page behind every number.
 
 ```sql all_programmes
 SELECT '/programmes/' || plan_code AS link, plan_code, faculty,

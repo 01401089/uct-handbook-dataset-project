@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — UCT Faculty Handbook Explorer</title>
+<link rel="icon" href="/favicon.ico" sizes="16x16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font: 16px/1.55 Roboto, system-ui, sans-serif;
+    background: #00243A; color: #0b0b0b; }
+  .card { background: #fff; border-top: 4px solid #0098DB; border-radius: 3px;
+    padding: 2.4rem 2.6rem 2rem; max-width: 25rem; width: 90%;
+    text-align: center; box-shadow: 0 14px 44px rgba(0,0,0,.35); }
+  @media (prefers-color-scheme: dark) {
+    .card { background: #101d29; color: #e8ecef; }
+    .btn-note { color: #9fb2c0; }
+  }
+  .lockup { display: block; margin: 0 auto .9rem; max-width: 100%; height: auto; }
+  @media (prefers-color-scheme: dark) {
+    .lockup { content: url('/uct-official-dark.svg'); }
+  }
+  h1 { font-family: Montserrat, sans-serif; font-weight: 300;
+    font-size: 1.65rem; margin: 0 0 .3rem; letter-spacing: .01em; }
+  .tag { font-size: .85rem; opacity: .65; margin: 0 0 1.6rem; }
+  h1 b { font-weight: 700; }
+  .btn { display: inline-flex; align-items: center; gap: .65rem; cursor: pointer;
+    border: none; background: #0098DB; color: #fff; border-radius: 2px;
+    padding: .75rem 1.5rem; font-family: Montserrat, sans-serif;
+    font-size: .82rem; font-weight: 600; letter-spacing: .08em;
+    text-transform: uppercase; transition: background .15s; }
+  .btn:hover { background: #0074A8; }
+  .btn svg { background: #fff; border-radius: 2px; padding: 2px; }
+  .err { color: #d03b3b; font-size: .85rem; margin-top: 1.1rem; display: none; }
+  .spin { display: none; margin-top: 1.1rem; font-size: .85rem; opacity: .7; }
+  .note { font-size: .8rem; opacity: .65; margin-top: 1.5rem; }
+  .foot { color: #7d97ab; font-family: Montserrat, sans-serif;
+    font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
+    margin-top: 2.2rem; }
+</style>
+</head>
+<body>
+<div class="card">
+  <img class="lockup" src="/uct-official-light.svg" alt="University of Cape Town" width="240" height="35">
+  <h1><b>Faculty Handbook</b> Explorer</h1>
+  <p class="tag">Change in Credit and Cost Tracker</p>
+  <button class="btn" id="signin">
+    <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+    Sign in with Google
+  </button>
+  <p class="spin" id="busy">Signing in…</p>
+  <p class="err" id="err"></p>
+  <p class="note">Access is restricted to <b>UCT</b> accounts.</p>
+</div>
+<p class="foot">University of Cape Town · Handbook editions 2021–2026</p>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script>
+  // Injected from auth/config.json by scripts/add-auth.js at deploy time.
+  const firebaseConfig = __FIREBASE_CONFIG__;
+  const ADMIN_EMAILS = ['kkefale@gmail.com'];
+  function emailAllowed(email) {
+    const e = String(email || '').toLowerCase();
+    if (ADMIN_EMAILS.includes(e)) return true;
+    const domain = e.split('@').pop();
+    return domain === 'uct.ac.za' || domain.endsWith('.uct.ac.za');
+  }
+
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const provider = new firebase.auth.GoogleAuthProvider();
+  provider.setCustomParameters({ prompt: 'select_account' });
+
+  const params = new URLSearchParams(location.search);
+  const next = params.get('next') || '/';
+  // Arriving via /auth/logout: also sign out of Firebase so the account
+  // chooser reappears (needed to switch accounts, e.g. to the admin one).
+  const wantSignout = params.get('signout') === '1';
+  let signoutDone = !wantSignout;
+  if (wantSignout) {
+    auth.signOut().finally(() => { signoutDone = true; });
+  }
+  const err = document.getElementById('err');
+  const busy = document.getElementById('busy');
+
+  function fail(message) {
+    busy.style.display = 'none';
+    err.textContent = message;
+    err.style.display = 'block';
+  }
+
+  async function mintSession(user) {
+    if (!emailAllowed(user.email)) {
+      await auth.signOut();
+      fail('Only UCT accounts (@uct.ac.za or a *.uct.ac.za domain) may access this site.');
+      return;
+    }
+    const token = await user.getIdToken(true);
+    const res = await fetch('/auth/session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token }),
+    });
+    if (res.ok) {
+      location.replace(next.startsWith('/') ? next : '/');
+    } else {
+      let reason = '';
+      try { reason = (await res.json()).reason || ''; } catch (e) {}
+      await auth.signOut();
+      fail('Sign-in was rejected' + (reason ? ' (' + reason + ')' : '') +
+           '. Use a verified UCT account.');
+    }
+  }
+
+  document.getElementById('signin').addEventListener('click', async () => {
+    err.style.display = 'none';
+    busy.style.display = 'block';
+    try {
+      const { user } = await auth.signInWithPopup(provider);
+      await mintSession(user);
+    } catch (e) {
+      const code = e && e.code;
+      if (code === 'auth/popup-blocked' ||
+          code === 'auth/popup-closed-by-user' ||
+          code === 'auth/cancelled-popup-request' ||
+          code === 'auth/operation-not-supported-in-this-environment') {
+        // Popup unavailable: use a full-page redirect instead.
+        try { await auth.signInWithRedirect(provider); }
+        catch (e2) { fail(e2 && e2.message ? e2.message : 'Sign-in failed.'); }
+      } else {
+        fail(e && e.message ? e.message : 'Sign-in failed.');
+      }
+    }
+  });
+
+  // Returning from a redirect sign-in: surface any error; success is
+  // handled by onAuthStateChanged below.
+  auth.getRedirectResult().catch((e) => {
+    fail(e && e.message ? e.message : 'Sign-in failed.');
+  });
+
+  // Session cookie expired but Firebase still remembers the user:
+  // silently mint a fresh session and bounce back.
+  auth.onAuthStateChanged((user) => {
+    if (user && signoutDone) {
+      busy.style.display = 'block';
+      mintSession(user).catch(() => fail('Sign-in failed.'));
+    }
+  });
+</script>
+</body>
+</html>

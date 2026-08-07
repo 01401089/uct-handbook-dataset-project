@@ -23,3 +23,6 @@ Thumbs.db
 # Notebooks checkpoints
 .ipynb_checkpoints/
 
+# Cloudflare Wrangler cache
+.wrangler/
+
